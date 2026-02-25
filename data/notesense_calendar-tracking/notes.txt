@@ -1,0 +1,106 @@
+Notesense_calendar_tracking.json
+
+
+
+Question: 
+Answer:
+Evidence: 
+Category: 
+
+
+
+
+Should we track when folder_id changes or only show notes tha t have a folder id?
+yes
+
+Should we be abel to click on any day modal?
+yes
+
+Should we show count badges and note titles What should we show? Should we highlight the day with an indicator?
+Should show badge count of numbe rof notes updated removed or created
+
+Shoudlw eshow all the activities?
+Yes 
+
+Should we show bth notes and planner tasks? 
+yes
+
+
+How amnhy tpes of note activity should there be?
+created|updated|moved
+
+Wha t is the new schema for the noteAcitivyt? 
+class NoteActivity(BaseModel):
+    type: Literal['created', 'updated', 'moved']
+    timestamp: str
+    details: Optional[Dict] = {}  # e.g., {from_folder: "x", to_folder: "y"}
+
+class Note(BaseModel):
+    # ... existing fields ...
+    activity_history: List[NoteActivity] = []
+
+
+
+What is the activity history design? 
+Simple append-only array (not full audit trail)
+Only track: created, updated (title/body changes), moved (folder changes)
+Store full timestamp for accurate chronological sorting
+No need to track every field change - just meaningful activities
+
+What does the UX lok lke?
+Badge shows total note count (created + updated + moved)
+Modal opens on any day (even if empty) for consistency
+Clear visual separation between notes and tasks in modal
+
+
+
+
+
+
+How did we backfill notes? 
+Just backfilled them all to created
+
+Why was there a bug initially? 
+The calendar isn't automatically refreshing when you create a new note because loadNoteActivities() only runs when:
+FALSE
+
+Why was the bug diagnosed wrong?
+
+Why was there an error?
+127.0.0.1 - - [22/Feb/2026 21:20:46] "GET /api/notes/activities/?params[date]=2026-02-28 HTTP/1.1" 400 -
+
+Found the bug! The query parameters are being double-wrapped.
+
+**The Problem:**
+Your error logs show: `GET /api/notes/activities/?params[date]=2026-02-25`
+
+It should be: `GET /api/notes/activities/?date=2026-02-25`
+
+**What's happening:**
+In `api.ts`, you're passing:
+```typescript
+apiClient.get('/api/notes/activities/', { params: { date } })
+```
+
+But `apiClient.get()` already wraps its second argument in `{ params }`, so it becomes:
+```typescript
+{ params: { params: { date } } }
+```
+
+Which axios serializes as `?params[date]=...` instead of `?date=...`
+
+**The Fix:**
+Change the call in `api.ts` from:
+```typescript
+getActivitiesByDate: (date: string): Promise<DayActivities> => 
+    apiClient.get<DayActivities>('/api/notes/activities/', { params: { date } }),
+```
+
+To:
+```typescript
+getActivitiesByDate: (date: string): Promise<DayActivities> => 
+    apiClient.get<DayActivities>('/api/notes/activities/', { date }),
+```
+
+**Toggle to Act mode** and I'll fix this!
+

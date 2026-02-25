@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: chatqa
+Version: 0.1.0
+Summary: Chat QA cleaner CLI
+Requires-Python: >=3.9
+Requires-Dist: flask>=3.0.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: openai>=1.0.0
+Requires-Dist: tiktoken>=0.7.0
+Requires-Dist: jsonschema>=4.22.0

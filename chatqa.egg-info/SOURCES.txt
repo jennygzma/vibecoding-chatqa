@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+app/__init__.py
+app/processor.py
+app/server.py
+chatqa.egg-info/PKG-INFO
+chatqa.egg-info/SOURCES.txt
+chatqa.egg-info/dependency_links.txt
+chatqa.egg-info/entry_points.txt
+chatqa.egg-info/requires.txt
+chatqa.egg-info/top_level.txt
+cli/__init__.py
+cli/main.py

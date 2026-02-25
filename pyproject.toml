@@ -1,0 +1,22 @@
+[project]
+name = "chatqa"
+version = "0.1.0"
+description = "Chat QA cleaner CLI"
+requires-python = ">=3.9"
+dependencies = [
+  "flask>=3.0.0",
+  "python-dotenv>=1.0.1",
+  "openai>=1.0.0",
+  "tiktoken>=0.7.0",
+  "jsonschema>=4.22.0",
+]
+
+[project.scripts]
+chatqa = "cli.main:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app", "cli"]

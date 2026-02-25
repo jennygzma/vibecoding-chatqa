@@ -1,0 +1,5 @@
+flask>=3.0.0
+python-dotenv>=1.0.1
+openai>=1.0.0
+tiktoken>=0.7.0
+jsonschema>=4.22.0
