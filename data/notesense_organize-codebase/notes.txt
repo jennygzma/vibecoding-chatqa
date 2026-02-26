@@ -1,0 +1,28 @@
+
+Why was build failing initialy? 
+
+Why dd the LLM still mess up after creating the file? What did the LLM miss?
+
+How did it break again and why? What did the LLM make the mistake in? 
+
+How did the user try to fix the apiclient structure in terms of what it returned?
+
+What does this show about the user in terms of what the user values? 
+
+What was the one off bug that the usr tried to fix? 
+
+What folder structure did the user approve in the backend after ? 
+
+What does the user value in terms of backend organization?
+Each service gets their own folder, cares about scaling, etc.
+
+
+How does the new design system work? What is in it?
+
+Did everything automatically get updated to use the new design system? 
+
+How did they want to make the typography and textbox and stuff distinct and stuff? To be specific to this? 
+
+What did they do the LLM ? 
+
+What did LLM suggest and what did humans ? 

@@ -72,15 +72,45 @@ def _load_chat(chat_path: Path) -> Dict[str, Any]:
 def _extract_text_from_message(msg: Dict[str, Any]) -> str:
     # Accept common structures: {"content": "..."} or {"content": [{"type":"text","text":"..."}]}
     content = msg.get("content", "")
+    def _extract_inner_wrapped(text: str) -> str:
+        import re
+
+        m = re.search(r"<task>(.*?)</task>", text, flags=re.S)
+        if m:
+            return m.group(1).strip()
+        m = re.search(r"<user_message>(.*?)</user_message>", text, flags=re.S)
+        if m:
+            return m.group(1).strip()
+        return text.strip()
+
+    def _is_noise(text: str) -> bool:
+        t = text.strip().lower()
+        if not t:
+            return True
+        if "<environment_details" in t:
+            return True
+        if t.startswith("# task_progress") or t.startswith("# todo list") or t.startswith("# current"):
+            return True
+        if t.startswith("<tool") or t.startswith("<read_file") or t.startswith("[read_file") or t.startswith("tool ["):
+            return True
+        if len(text.splitlines()) > 30 and "import " in text:
+            return True
+        return False
+
     if isinstance(content, str):
-        return content
+        if _is_noise(content):
+            return ""
+        return _extract_inner_wrapped(content)
     if isinstance(content, list):
         parts = []
         for block in content:
             if not isinstance(block, dict):
                 continue
             if block.get("type") == "text" and isinstance(block.get("text"), str):
-                parts.append(block["text"])
+                text = block["text"]
+                if _is_noise(text):
+                    continue
+                parts.append(_extract_inner_wrapped(text))
         return "\n".join(parts)
     return ""
 

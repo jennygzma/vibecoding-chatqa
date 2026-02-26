@@ -1,0 +1,13 @@
+What are the new data models added to this? 
+
+What is the chunking strategy
+
+What folder structure?
+Flat
+
+
+How should the chat service search the folders?
+
+What was missed in the first implementation?
+
+What was the inconsistency in the response ? 
