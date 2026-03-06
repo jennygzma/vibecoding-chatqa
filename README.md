@@ -9,6 +9,7 @@ Local folder-based CLI + Flask backend that turns chat history into Q/A JSON usi
     chat-history.json
     notes.txt
     output.json
+    rules.json
     refine.json
 ```
 
@@ -33,7 +34,9 @@ chatqa create my-chat
 chatqa add my-chat --chat-file /path/to/chat.json --notes-file /path/to/notes.txt
 chatqa process my-chat
 chatqa refine my-chat --notes-file /path/to/notes.txt
-chatqa process-all
+chatqa learn-rules my-chat --max-rules 10
+chatqa process-all   # now runs QA + rules together
+chatqa learn-rules-all --max-rules 10
 chatqa status
 ```
 
@@ -47,4 +50,8 @@ Process a folder:
 curl -X POST http://localhost:5000/process \
   -H 'Content-Type: application/json' \
   -d '{"chat_folder":"my-chat","refine":true}'
+
+curl -X POST http://localhost:5000/learn-rules \
+  -H 'Content-Type: application/json' \
+  -d '{"chat_folder":"my-chat","max_rules":10}'
 ```

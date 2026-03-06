@@ -3,9 +3,10 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from dotenv import load_dotenv
 from jsonschema import validate
@@ -21,12 +22,25 @@ NOTES_FILENAME = "notes.txt"
 OUTPUT_FILENAME = "output.json"
 REFINE_FILENAME = "refine.json"
 CLEANED_CHAT_FILENAME = "cleaned-chat.json"
+RULES_FILENAME = "rules.json"
 
 logger = logging.getLogger("chatqa")
+
+USER_TAGS = ["task", "user_message"]
+ASSISTANT_TAGS = ["thinking", "text"]
+ALLOWED_ASSISTANT_TYPES = {"thinking", "text"}
+TAG_RE = re.compile(r"<(?P<tag>[a-zA-Z_][\w-]*)>(?P<body>.*?)</\1>", re.DOTALL)
 
 
 @dataclass
 class ProcessResult:
+    output_text: str
+    output_json: Dict[str, Any]
+    output_path: Path
+
+
+@dataclass
+class RuleLearningResult:
     output_text: str
     output_json: Dict[str, Any]
     output_path: Path
@@ -69,74 +83,116 @@ def _load_chat(chat_path: Path) -> Dict[str, Any]:
     return data
 
 
-def _extract_text_from_message(msg: Dict[str, Any]) -> str:
-    # Accept common structures: {"content": "..."} or {"content": [{"type":"text","text":"..."}]}
-    content = msg.get("content", "")
-    def _extract_inner_wrapped(text: str) -> str:
-        import re
+def _extract_tag_blocks(text: str, allowed_tags: List[str]) -> List[Tuple[str, str]]:
+    blocks: List[Tuple[str, str]] = []
+    for match in TAG_RE.finditer(text):
+        tag = match.group("tag")
+        if tag in allowed_tags:
+            body = match.group("body").strip()
+            if body:
+                blocks.append((tag, body))
+    return blocks
 
-        m = re.search(r"<task>(.*?)</task>", text, flags=re.S)
-        if m:
-            return m.group(1).strip()
-        m = re.search(r"<user_message>(.*?)</user_message>", text, flags=re.S)
-        if m:
-            return m.group(1).strip()
-        return text.strip()
 
-    def _is_noise(text: str) -> bool:
-        t = text.strip().lower()
-        if not t:
-            return True
-        if "<environment_details" in t:
-            return True
-        if t.startswith("# task_progress") or t.startswith("# todo list") or t.startswith("# current"):
-            return True
-        if t.startswith("<tool") or t.startswith("<read_file") or t.startswith("[read_file") or t.startswith("tool ["):
-            return True
-        if len(text.splitlines()) > 30 and "import " in text:
-            return True
-        return False
+def _clean_user_content_item(item: Any) -> List[Dict[str, Any]]:
+    if isinstance(item, dict) and isinstance(item.get("text"), str):
+        blocks = _extract_tag_blocks(item["text"], USER_TAGS)
+        return [{"type": "text", "text": b} for _tag, b in blocks]
+    if isinstance(item, str):
+        blocks = _extract_tag_blocks(item, USER_TAGS)
+        return [{"type": "text", "text": b} for _tag, b in blocks]
+    return []
+
+
+def _clean_assistant_content_item(item: Any) -> List[Dict[str, Any]]:
+    if isinstance(item, dict):
+        text = item.get("text")
+        item_type = item.get("type")
+        if isinstance(text, str):
+            blocks = _extract_tag_blocks(text, ASSISTANT_TAGS)
+            if blocks:
+                return [{"type": tag, "text": body} for tag, body in blocks]
+            if item_type in ALLOWED_ASSISTANT_TYPES:
+                return [{"type": item_type, "text": text}]
+        return []
+    if isinstance(item, str):
+        blocks = _extract_tag_blocks(item, ASSISTANT_TAGS)
+        if blocks:
+            return [{"type": tag, "text": body} for tag, body in blocks]
+        return []
+    return []
+
+
+def _clean_message(msg: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+    role = msg.get("role")
+    content = msg.get("content")
+
+    if role not in {"user", "assistant"}:
+        return None
+
+    if isinstance(content, list):
+        cleaned_items: List[Dict[str, Any]] = []
+        for item in content:
+            if role == "user":
+                cleaned_items.extend(_clean_user_content_item(item))
+            else:
+                cleaned_items.extend(_clean_assistant_content_item(item))
+        if not cleaned_items:
+            return None
+        return {"role": role, "content": cleaned_items}
 
     if isinstance(content, str):
-        if _is_noise(content):
-            return ""
-        return _extract_inner_wrapped(content)
-    if isinstance(content, list):
-        parts = []
-        for block in content:
-            if not isinstance(block, dict):
-                continue
-            if block.get("type") == "text" and isinstance(block.get("text"), str):
-                text = block["text"]
-                if _is_noise(text):
-                    continue
-                parts.append(_extract_inner_wrapped(text))
-        return "\n".join(parts)
-    return ""
+        if role == "user":
+            blocks = _extract_tag_blocks(content, USER_TAGS)
+            if not blocks:
+                return None
+            new_text = "\n\n".join(b for _t, b in blocks)
+            return {"role": role, "content": new_text}
+        if role == "assistant":
+            blocks = _extract_tag_blocks(content, ASSISTANT_TAGS)
+            if not blocks:
+                return None
+            new_text = "\n\n".join(b for _t, b in blocks)
+            return {"role": role, "content": new_text}
+
+    return None
 
 
-def _normalize_messages(chat_json: Dict[str, Any]) -> list[Dict[str, str]]:
+def _clean_chat_messages(chat_json: Dict[str, Any]) -> List[Dict[str, Any]]:
     messages = chat_json.get("messages", [])
-    cleaned = []
+    cleaned: List[Dict[str, Any]] = []
     for msg in messages:
-        if not isinstance(msg, dict):
-            continue
-        role = msg.get("role")
-        if role not in ("user", "assistant"):
-            continue
-        text = _extract_text_from_message(msg).strip()
-        if not text:
-            continue
-        # Skip noisy/system/tool content
-        lowered = text.lower()
-        if any(prefix in lowered for prefix in ("<tool", "<read_file", "[read_file", "tool [", "<environment_details")):
-            continue
-        if text.startswith("# TODO") or text.startswith("# Todo List") or text.startswith("# Current"):
-            continue
-        if len(text.splitlines()) > 30 and "import " in text:
-            continue
-        cleaned.append({"role": role, "content": text})
+        if isinstance(msg, dict):
+            cleaned_msg = _clean_message(msg)
+            if cleaned_msg is not None:
+                cleaned.append(cleaned_msg)
     return cleaned
+
+
+def _normalize_messages(cleaned_messages: List[Dict[str, Any]]) -> List[Dict[str, str]]:
+    normalized: List[Dict[str, str]] = []
+    for msg in cleaned_messages:
+        role = msg.get("role")
+        if role not in {"user", "assistant"}:
+            continue
+
+        content = msg.get("content")
+        if isinstance(content, str):
+            text = content.strip()
+            if text:
+                normalized.append({"role": role, "content": text})
+            continue
+
+        if isinstance(content, list):
+            parts: List[str] = []
+            for item in content:
+                if isinstance(item, dict) and isinstance(item.get("text"), str):
+                    part = item["text"].strip()
+                    if part:
+                        parts.append(part)
+            if parts:
+                normalized.append({"role": role, "content": "\n\n".join(parts)})
+    return normalized
 
 
 def _build_evidence_index(messages: list[Dict[str, str]]) -> Dict[str, str]:
@@ -274,6 +330,50 @@ Selection rules:
     return rules + "\n\nINPUT:\n" + json.dumps(payload, ensure_ascii=True)
 
 
+def _build_rule_learning_prompt(
+    messages: List[Dict[str, str]],
+    notes_text: str,
+    evidence_index: Dict[str, str],
+    max_rules: int,
+) -> str:
+    rules = f"""
+You are a rule-learning system extracting durable user preferences from chat history.
+Return ONLY valid JSON with this exact schema:
+{{
+  "rules": [
+    {{
+      "rule": "...",
+      "evidence": ["D1:3", "D1:8: \\"quote here\\""],
+      "metadata": {{
+        "confidence": 1,
+        "decay": 1,
+        "source_message_ids": ["D1:3"]
+      }}
+    }}
+  ]
+}}
+
+Requirements:
+- Generate between 1 and {max_rules} rules.
+- Rules must be non-overlapping and generalizable beyond this specific task.
+- Do not include task categorization outputs, workflow trajectory fields, or per-task labels.
+- `rule` should be concise and actionable.
+- `evidence` must reference actual message IDs (D1:N). Quotes are optional; IDs are required.
+- `metadata.confidence`: 1-10 support strength for this rule.
+- `metadata.decay`: 1-10 durability over time (10 = long-lasting preference).
+- `metadata.source_message_ids` must list the core D1 IDs supporting the rule.
+- Prefer conservative confidence scores unless evidence is explicit.
+""".strip()
+
+    payload = {
+        "chat": messages,
+        "notes": notes_text,
+        "evidence_index": evidence_index,
+        "max_rules": max_rules,
+    }
+    return rules + "\n\nINPUT:\n" + json.dumps(payload, ensure_ascii=True)
+
+
 def _call_llm(prompt: str) -> str:
     client = _get_openai_client()
     model = _get_model()
@@ -364,6 +464,82 @@ def _merge_outputs(outputs: list[Dict[str, Any]]) -> Dict[str, Any]:
     return merged
 
 
+def _parse_rules_output(text: str) -> Dict[str, Any]:
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Model did not return valid JSON for rules: {e}") from e
+
+    schema = {
+        "type": "object",
+        "properties": {
+            "rules": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "rule": {"type": "string"},
+                        "evidence": {"type": "array", "items": {"type": "string"}},
+                        "metadata": {
+                            "type": "object",
+                            "properties": {
+                                "confidence": {"type": "integer", "minimum": 1, "maximum": 10},
+                                "decay": {"type": "integer", "minimum": 1, "maximum": 10},
+                                "source_message_ids": {"type": "array", "items": {"type": "string"}},
+                            },
+                            "required": ["confidence", "decay", "source_message_ids"],
+                            "additionalProperties": False,
+                        },
+                    },
+                    "required": ["rule", "evidence", "metadata"],
+                    "additionalProperties": False,
+                },
+            }
+        },
+        "required": ["rules"],
+        "additionalProperties": False,
+    }
+
+    try:
+        validate(instance=data, schema=schema)
+    except ValidationError as e:
+        raise ValueError(f"Rules JSON does not match schema: {e.message}") from e
+    return data
+
+
+def _extract_evidence_ids(text: str) -> List[str]:
+    return re.findall(r"D1:\d+", text or "")
+
+
+def _normalize_rules_evidence(output: Dict[str, Any], evidence_index: Dict[str, str]) -> Dict[str, Any]:
+    valid_ids = set(evidence_index.keys())
+
+    for item in output.get("rules", []):
+        metadata = item.get("metadata", {})
+        evidence = item.get("evidence", [])
+
+        candidate_ids: List[str] = []
+        for ev in evidence:
+            candidate_ids.extend(_extract_evidence_ids(ev))
+        for source_id in metadata.get("source_message_ids", []):
+            candidate_ids.extend(_extract_evidence_ids(source_id))
+
+        deduped: List[str] = []
+        for cid in candidate_ids:
+            if cid in valid_ids and cid not in deduped:
+                deduped.append(cid)
+
+        metadata["source_message_ids"] = deduped
+        rebuilt_evidence = []
+        for ev_id in deduped:
+            quote = evidence_index[ev_id].replace("\n", " ").strip()
+            rebuilt_evidence.append(f'{ev_id}: "{quote}"')
+        item["evidence"] = rebuilt_evidence
+
+    output["rules"] = [r for r in output.get("rules", []) if r.get("metadata", {}).get("source_message_ids")]
+    return output
+
+
 def _rerank_and_select(merged: Dict[str, Any], notes_text: str, evidence_index: Dict[str, str]) -> Dict[str, Any]:
     prompt = _build_rerank_prompt(merged, notes_text)
     output_text = _call_llm(prompt)
@@ -410,11 +586,12 @@ def process_chat_folder(folder_name: str, refine: bool = False) -> ProcessResult
 
     chat_json = _load_chat(chat_path)
     notes_text = _load_notes(notes_path)
-    messages = _normalize_messages(chat_json)
+    cleaned_messages = _clean_chat_messages(chat_json)
     cleaned_chat_path.write_text(
-        json.dumps({"messages": messages}, indent=2) + "\n",
+        json.dumps(cleaned_messages, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
+    messages = _normalize_messages(cleaned_messages)
     chunks = _chunk_messages(messages)
     if not chunks:
         raise ValueError("No usable messages found in chat history.")
@@ -480,4 +657,67 @@ def process_chat_folder(folder_name: str, refine: bool = False) -> ProcessResult
         output_text=json.dumps(merged, indent=2),
         output_json=merged,
         output_path=output_path,
+    )
+
+
+def learn_rules_for_chat_folder(folder_name: str, max_rules: int = 10) -> RuleLearningResult:
+    if max_rules < 1:
+        raise ValueError("max_rules must be >= 1")
+    if max_rules > 30:
+        raise ValueError("max_rules must be <= 30")
+
+    logger.info("Starting rule learning for folder: %s", folder_name)
+    folder = DATA_DIR / folder_name
+    chat_path = folder / CHAT_FILENAME
+    alt_chat_path = folder / CHAT_FILENAME_ALT
+    notes_path = folder / NOTES_FILENAME
+    cleaned_chat_path = folder / CLEANED_CHAT_FILENAME
+    rules_path = folder / RULES_FILENAME
+
+    if not chat_path.exists() and alt_chat_path.exists():
+        chat_path = alt_chat_path
+
+    if not chat_path.exists():
+        raise FileNotFoundError(f"Missing {chat_path}")
+
+    chat_json = _load_chat(chat_path)
+    notes_text = _load_notes(notes_path)
+    cleaned_messages = _clean_chat_messages(chat_json)
+    cleaned_chat_path.write_text(
+        json.dumps(cleaned_messages, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    messages = _normalize_messages(cleaned_messages)
+    if not messages:
+        raise ValueError("No usable messages found in chat history.")
+
+    evidence_index = _build_evidence_index(messages)
+    prompt = _build_rule_learning_prompt(messages, notes_text, evidence_index, max_rules=max_rules)
+    output_text = _call_llm(prompt)
+    try:
+        output_json = _parse_rules_output(output_text)
+    except ValueError:
+        logger.warning("Invalid rules JSON, retrying once")
+        repair_prompt = (
+            "The previous response was invalid JSON. "
+            "Return ONLY valid JSON following the schema. "
+            "Do not add any extra text.\n\n"
+            + prompt
+        )
+        output_text = _call_llm(repair_prompt)
+        output_json = _parse_rules_output(output_text)
+
+    output_json = _normalize_rules_evidence(output_json, evidence_index)
+    output_json["rules"] = output_json.get("rules", [])[:max_rules]
+
+    if not output_json["rules"]:
+        raise ValueError("No rules were produced with valid evidence references.")
+
+    rules_path.write_text(json.dumps(output_json, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    logger.info("Wrote rule output: %s (rules=%d)", rules_path, len(output_json["rules"]))
+
+    return RuleLearningResult(
+        output_text=json.dumps(output_json, indent=2),
+        output_json=output_json,
+        output_path=rules_path,
     )

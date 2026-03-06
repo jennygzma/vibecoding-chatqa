@@ -1,0 +1,152 @@
+{
+  "rules": [
+    {
+      "rule": "Prefer API client helpers to return unwrapped domain data (or provide a consistent convention), so UI state setters receive the expected types without needing to pass AxiosResponse objects around.",
+      "evidence": [
+        "D1:3: \"ERROR in src/components/InspirationsView.tsx:46:23 TS2345: Argument of type 'AxiosResponse<InspirationsGrouped, any, {}>' is not assignable to parameter of type 'SetStateAction<InspirationsGrouped>'.   Type 'AxiosResponse<InspirationsGrouped, any, {}>' is not assignable to type 'InspirationsGrouped'.     Index signature for type 'string' is missing in type 'AxiosResponse<InspirationsGrouped, any, {}>'.     44 |     try {     45 |       const inspirations = await inspirationsApi.getAll();   > 46 |       setInspirations(inspirations);        |                       ^^^^^^^^^^^^     47 |     } catch (error) {     48 |       console.error('Failed to load inspirations:', error);     49 |     } finally { ERROR in src/components/NotesView.tsx:68:16 TS2345: Argument of type 'AxiosResponse<Note[], any, {}>' is not assignable to parameter of type 'SetStateAction<Note[]>'.     66 |     try {     67 |       const notes = await notesApi.getAll();   > 68 |       setNotes(notes);        |                ^^^^^     69 |     } catch (error) {     70 |       showSnackbar('Failed to load notes', 'error');     71 |     } ERROR in src/components/NotesView.tsx:77:22 TS2345: Argument of type 'AxiosResponse<PlannerItem[], any, {}>' is not assignable to parameter of type 'SetStateAction<PlannerItem[]>'.     75 |     try {     76 |       const linkedItems = await notesApi.getLinks(noteId);   > 77 |       setLinkedItems(linkedItems);        |                      ^^^^^^^^^^^     78 |     } catch (error) {     79 |       setLinkedItems([]);     80 |     } ERROR in src/components/NotesView.tsx:86:40 TS2339: Property 'length' does not exist on type 'AxiosResponse<{ category: string; ai_confidence: number; inspiration_id: string; }[], any, {}>'.     84 |     try {     85 |       const inspirations = await inspirationsApi.getByNoteId(noteId);   > 86 |       if (inspirations && inspirations.length > 0) {        |                                        ^^^^^^     87 |         setNoteCategory(inspirations[0].category);     88 |       } else {     89 |         setNoteCategory(null); ERROR in src/components/NotesView.tsx:87:25 TS7053: Element implicitly has an 'any' type because expression of type '0' can't be used to index type 'AxiosResponse<{ category: string; ai_confidence: number; inspiration_id: string; }[], any, {}>'.   Property '0' does not exist on type 'AxiosResponse<{ category: string; ai_confidence: number; inspiration_id: string; }[], any, {}>'.     85 |       const inspirations = await inspirationsApi.getByNoteId(noteId);     86 |       if (inspirations && inspirations.length > 0) {   > 87 |         setNoteCategory(inspirations[0].category);        |                         ^^^^^^^^^^^^^^^     88 |       } else {     89 |         setNoteCategory(null);     90 |       } ERROR in src/components/NotesView.tsx:99:17 TS2740: Type 'AxiosResponse<Note, any, {}>' is missing the following properties from type 'Note': id, title, body, is_inspiration, and 3 more.      97 |     try {      98 |       const newNote = await notesApi.create({ title: 'New Note', body: '' });   >  99 |       setNotes([newNote, ...notes]);         |                 ^^^^^^^     100 |       setSelectedNote(newNote);     101 |       showSnackbar('Note created', 'success');     102 |     } catch (error) { ERROR in src/components/NotesView.tsx:100:23 TS2345: Argument of type 'AxiosResponse<Note, any, {}>' is not assignable to parameter of type 'SetStateAction<Note | null>'.      98 |       const newNote = await notesApi.create({ title: 'New Note', body: '' });      99 |       setNotes([newNote, ...notes]);   > 100 |       setSelectedNote(newNote);         |                       ^^^^^^^     101 |       showSnackbar('Note created', 'success');     102 |     } catch (error) {     103 |       showSnackbar('Failed to create note', 'error'); ERROR in src/components/NotesView.tsx:110:16 TS2345: Argument of type '(Note | AxiosResponse<Note, any, {}>)[]' is not assignable to parameter of type 'SetStateAction<Note[]>'.   Type '(Note | AxiosResponse<Note, any, {}>)[]' is not assignable to type 'Note[]'.     Type 'Note | AxiosResponse<Note, any, {}>' is not assignable to type 'Note'.       Type 'AxiosResponse<Note, any, {}>' is not assignable to type 'Note'.     108 |     try {     109 |       const updatedNote = await notesApi.update(id, { title, body });   > 110 |       setNotes(notes.map(n => n.id === id ? updatedNote : n));         |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     111 |       setSelectedNote(updatedNote);     112 |       showSnackbar('Note saved', 'success');     113 |     } catch (error) { ERROR in src/components/NotesView.tsx:111:23 TS2345: Argument of type 'AxiosResponse<Note, any, {}>' is not assignable to parameter of type 'SetStateAction<Note | null>'.     109 |       const updatedNote = await notesApi.update(id, { title, body });     110 |       setNotes(notes.map(n => n.id === id ? updatedNote : n));   > 111 |       setSelectedNote(updatedNote);         |                       ^^^^^^^^^^^     112 |       showSnackbar('Note saved', 'success');     113 |     } catch (error) {     114 |       showSnackbar('Failed to save note', 'error'); ERROR in src/components/NotesView.tsx:135:26 TS2339: Property 'classification' does not exist on type 'AxiosResponse<ClassifyResponse, any, {}>'.     133 |       const classification = await aiApi.classify(noteId);     134 |   > 135 |       if (classification.classification === 'task') {         |                          ^^^^^^^^^^^^^^     136 |         // Route to task conversion     137 |         setCategorizingNoteId(null);     138 |         await handleConvertToTask(noteId); ERROR in src/components/NotesView.tsx:143:20 TS2339: Property 'is_new_category' does not exist on type 'AxiosResponse<CategorizeResponse, any, {}>'.     141 |         const result = await inspirationsApi.categorize(noteId);     142 |   > 143 |         if (result.is_new_category) {         |                    ^^^^^^^^^^^^^^^     144 |           setCategoryDialog({     145 |             open: true,     146 |             category: result.category, ERROR in src/components/NotesView.tsx:146:30 TS2339: Property 'category' does not exist on type 'AxiosResponse<CategorizeResponse, any, {}>'.     144 |           setCategoryDialog({     145 |             open: true,   > 146 |             category: result.category,         |                              ^^^^^^^^     147 |             categoryId: result.category_id!,     148 |             noteId: noteId,     149 |             reasoning: result.reasoning || '', ERROR in src/components/NotesView.tsx:147:32 TS2339: Property 'category_id' does not exist on type 'AxiosResponse<CategorizeResponse, any, {}>'.     145 |             open: true,     146 |             category: result.category,   > 147 |             categoryId: result.category_id!,         |                                ^^^^^^^^^^^     148 |             noteId: noteId,     149 |             reasoning: result.reasoning || '',     150 |           }); ERROR in src/components/NotesView.tsx:149:31 TS2339: Property 'reasoning' does not exist on type 'AxiosResponse<CategorizeResponse, any, {}>'.     147 |             categoryId: result.category_id!,     148 |             noteId: noteId,   > 149 |             reasoning: result.reasoning || '',         |                               ^^^^^^^^^     150 |           });     151 |         } else {     152 |           showSnackbar(`Categorized as \"${result.category}\"`, 'success'); ERROR in src/components/NotesView.tsx:152:50 TS2339: Property 'category' does not exist on type 'AxiosResponse<CategorizeResponse, any, {}>'.     150 |           });     151 |         } else {   > 152 |           showSnackbar(`Categorized as \"${result.category}\"`, 'success');         |                                                  ^^^^^^^^     153 |         }     154 |         setCategorizingNoteId(null);     155 |       } ERROR in src/components/NotesView.tsx:191:31 TS2345: Argument of type 'AxiosResponse<TranslateResponse, any, {}>' is not assignable to parameter of type 'SetStateAction<TranslateResponse | null>'.     189 |     try {     190 |       const suggestions = await aiApi.translate(noteId);   > 191 |       setTranslateSuggestions(suggestions);         |                               ^^^^^^^^^^^     192 |     } catch (error) {     193 |       showSnackbar('Failed to generate task suggestions', 'error');     194 |       setConvertDialogOpen(false); ERROR in src/components/NotesView.tsx:214:58 TS2339: Property 'id' does not exist on type 'AxiosResponse<PlannerItem, any, {}>'.     212 |     213 |       // Create the link between note and task   > 214 |       await linksApi.create(selectedNote.id, createdTask.id);         |                                                          ^^     215 |     216 |       // Mark note as analyzed (classified as task)     217 |       await notesApi.markAnalyzed(selectedNote.id); ERROR in src/components/PlannerView.tsx:79:16 TS2345: Argument of type 'AxiosResponse<PlannerItem[], any, {}>' is not assignable to parameter of type 'SetStateAction<PlannerItem[]>'.     77 |         view_type: viewType     78 |       });   > 79 |       setTasks(tasksData);        |                ^^^^^^^^^     80 |            81 |       // Load linked notes for each task     82 |       const linksMap: Record<string, Note[]> = {}; ERROR in src/components/PlannerView.tsx:83:26 TS2495: Type 'AxiosResponse<PlannerItem[], any, {}>' is not an array type or a string type.     81 |       // Load linked notes for each task     82 |       const linksMap: Record<string, Note[]> = {};   > 83 |       for (const task of tasksData) {        |                          ^^^^^^^^^     84 |         try {     85 |           const linkedNotes = await plannerApi.getLinks(task.id);     86 |           linksMap[task.id] = linkedNotes; ERROR in src/components/PlannerView.tsx:86:11 TS2740: Type 'AxiosResponse<Note[], any, {}>' is missing the following properties from type 'Note[]': length, pop, push, concat, and 29 more.     84 |         try {     85 |           const linkedNotes = await plannerApi.getLinks(task.id);   > 86 |           linksMap[task.id] = linkedNotes;        |           ^^^^^^^^^^^^^^^^^     87 |         } catch {     88 |           linksMap[task.id] = [];     89 |         }\"",
+        "D1:4: \"hmm is this good codeing?? likek doing the likednotes.data thing? or shoulnt it all be like\""
+      ],
+      "metadata": {
+        "confidence": 7,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:3",
+          "D1:4"
+        ]
+      }
+    },
+    {
+      "rule": "Avoid browser-native confirm dialogs; use an in-app inline confirmation/undo pattern for destructive actions like delete.",
+      "evidence": [
+        "D1:6: \"when i click delete note a modal pops up and instead i would like an in-line thing that shows deletion\"",
+        "D1:7: \"replace aLL browser confirm dialogs with this\""
+      ],
+      "metadata": {
+        "confidence": 9,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:6",
+          "D1:7"
+        ]
+      }
+    },
+    {
+      "rule": "Organize frontend components by feature folders (e.g., notes, calendar, inspirations) with separate shared components and a dedicated design-system layer.",
+      "evidence": [
+        "D1:8: \"i would like to organize my frontend so the components are in like diff folders  nspiration gest is own folder  calendar ges its own  notes gest is onw  there are shared componnts  then design system, with like custom button, custom textfield, custom copmonents that i build\"",
+        "D1:9: \"what will the folder scheme be now?\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:8",
+          "D1:9"
+        ]
+      }
+    },
+    {
+      "rule": "Maintain a design system of reusable primitives (e.g., Button, TextField, Dialog) and prefer using these components consistently across the app.",
+      "evidence": [
+        "D1:11: \"ok now what are common components taht are used across the entire app? that i can put in design-system and shared to abstract it  tinking modals for the shared for design system probaly like a custom button, typograrphy, text field maybe?\"",
+        "D1:12: \"u can call it Button, TextField, Dialog in the name\"",
+        "D1:14: \"check to make sure that we are using my design componetns everywhere. how can i test the modal is used ifrom desing system?\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:11",
+          "D1:12",
+          "D1:14"
+        ]
+      }
+    },
+    {
+      "rule": "Use clear, generic component names for design-system primitives (e.g., 'Button', 'TextField', 'Dialog') to standardize usage and discovery.",
+      "evidence": [
+        "D1:12: \"u can call it Button, TextField, Dialog in the name\""
+      ],
+      "metadata": {
+        "confidence": 7,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:12"
+        ]
+      }
+    },
+    {
+      "rule": "Actively look for additional UI elements that can be abstracted into shared/design-system components (e.g., chips/tags) to reduce duplication.",
+      "evidence": [
+        "D1:13: \"wha about lie the chip/tag ?l ike the inspiration thing and then the chip in the inpsiraoint hing\"",
+        "D1:15: \"r u srue everything is ours? is here anythign selse we can abstract out ?\""
+      ],
+      "metadata": {
+        "confidence": 7,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:13",
+          "D1:15"
+        ]
+      }
+    },
+    {
+      "rule": "Prioritize UI polish and readability: ensure inline UI affordances are fully visible and not clipped in their containers.",
+      "evidence": [
+        "D1:16: \"hm i cant see the entire x thing in the deleting a task in the calendar componen, i cant see the full inline thing\""
+      ],
+      "metadata": {
+        "confidence": 6,
+        "decay": 7,
+        "source_message_ids": [
+          "D1:16"
+        ]
+      }
+    },
+    {
+      "rule": "Prefer a distinct, cohesive visual theme with smaller typography and petite form controls; make styling decisions (e.g., corner radius, colors) consistent across components.",
+      "evidence": [
+        "D1:18: \"ok now id like for my buttons to have a dif specific theme. like the text boxes all need to be kinda tiny and petite. and the text inside them .and the buttons idk. should the have rupser rounded corners? or no rounding at all? and diff colors, something to make it distinct .\"",
+        "D1:19: \"i also would ike my typography to be smaller and prettier\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:18",
+          "D1:19"
+        ]
+      }
+    },
+    {
+      "rule": "Refactor backend AI code to be modular and scalable: use an LLM wrapper/client abstraction and keep prompts in a dedicated folder.",
+      "evidence": [
+        "D1:24: \"ok next, i want to refactor backend.   it souldbe an LLM wrapper mthod (that only contains openai rn) and then the prompts should all be in its own folder and stuff\"",
+        "D1:25: \"wha are otherways u would refactor my akend to be better?\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:24",
+          "D1:25"
+        ]
+      }
+    },
+    {
+      "rule": "Remove redundant backend layers when they no longer add value (e.g., delete an AIService layer if the new LLM wrapper makes it unnecessary).",
+      "evidence": [
+        "D1:26: \"yah i like this. and perhaps should i delete the AIService thing entirely?\"",
+        "D1:27: \"yes\""
+      ],
+      "metadata": {
+        "confidence": 7,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:26",
+          "D1:27"
+        ]
+      }
+    }
+  ]
+}
