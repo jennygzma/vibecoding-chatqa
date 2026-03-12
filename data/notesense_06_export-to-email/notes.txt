@@ -1,0 +1,28 @@
+what are the details of the feauter the user wants/
+(first response)
+
+was multiple chunks funciaonality implemneted?
+no, after folowup user said just one chunk sent and llm interpreted as the grond truth 
+
+waht status did the llm propose the user be able to see about hte emials being sent?
+
+what followup questions did the LLM ask?
+
+how did the user clarify how the email should exist? 
+sidebar, freefrom text input
+
+what is the api scope for oauth gmail?
+gmail.send 
+
+what was the initial bug that was brone?
+plannerview wasn't updated to include email_sent property
+
+what was the second bug?
+unable to retriev notes
+
+why did the unable to retreive notes bug occur/
+it is becuase pydantic is receiving activity_hisotyr as a JSON string 
+
+how did the user fix this issue with the activity_hiostyr JSON string bug/
+
+did the user ask for reflection from the errors? 

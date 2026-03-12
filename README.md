@@ -32,6 +32,7 @@ pip install -e .
 ```
 chatqa create my-chat
 chatqa add my-chat --chat-file /path/to/chat.json --notes-file /path/to/notes.txt
+chatqa clean my-chat
 chatqa process my-chat
 chatqa refine my-chat --notes-file /path/to/notes.txt
 chatqa learn-rules my-chat --max-rules 10
@@ -39,6 +40,11 @@ chatqa process-all   # now runs QA + rules together
 chatqa learn-rules-all --max-rules 10
 chatqa status
 ```
+
+Notes:
+- `chatqa process` and `chatqa learn-rules` will reuse `cleaned-chat.json` if it already exists.
+- If `cleaned-chat.json` is missing, they will generate it automatically.
+- Use `chatqa clean <chat-folder> --force` to regenerate cleaned output.
 
 ## Flask API
 Run server:

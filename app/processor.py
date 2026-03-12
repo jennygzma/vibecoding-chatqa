@@ -46,6 +46,12 @@ class RuleLearningResult:
     output_path: Path
 
 
+@dataclass
+class CleanChatResult:
+    cleaned_messages: List[Dict[str, Any]]
+    output_path: Path
+
+
 def _load_env() -> None:
     load_dotenv()
 
@@ -234,6 +240,17 @@ def _load_notes(notes_path: Optional[Path]) -> str:
     if not notes_path or not notes_path.exists():
         return ""
     return notes_path.read_text(encoding="utf-8")
+
+
+def _is_valid_cleaned_messages(data: Any) -> bool:
+    if not isinstance(data, list):
+        return False
+    for item in data:
+        if not isinstance(item, dict):
+            return False
+        if item.get("role") not in {"user", "assistant"}:
+            return False
+    return True
 
 
 def _build_prompt(
@@ -464,6 +481,94 @@ def _merge_outputs(outputs: list[Dict[str, Any]]) -> Dict[str, Any]:
     return merged
 
 
+def _extract_note_topics(notes_text: str) -> List[str]:
+    topics: List[str] = []
+    for raw in (notes_text or "").splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        # Support bullets/numbering in notes.txt.
+        line = re.sub(r"^[\-\*\d\.\)\s]+", "", line).strip()
+        if line:
+            topics.append(line)
+    return topics
+
+
+def _qa_key(item: Dict[str, Any]) -> str:
+    return str(item.get("question", "")).strip().lower()
+
+
+def _tokenize_for_overlap(text: str) -> set[str]:
+    stop_words = {
+        "the", "and", "for", "with", "this", "that", "what", "how", "was", "were",
+        "from", "have", "has", "into", "then", "than", "when", "where", "which", "why",
+        "you", "your", "its", "there", "they", "them", "are", "is", "a", "an", "to",
+        "of", "in", "on", "it", "be", "or",
+    }
+    words = re.findall(r"[a-zA-Z0-9_]+", (text or "").lower())
+    return {w for w in words if len(w) >= 3 and w not in stop_words}
+
+
+def _ensure_notes_coverage(
+    selected: Dict[str, Any], candidates: Dict[str, Any], notes_text: str, max_items: int = 30
+) -> Dict[str, Any]:
+    topics = _extract_note_topics(notes_text)
+    if not topics:
+        return selected
+
+    selected_qas = list(selected.get("qa", []))
+    candidate_qas = list(candidates.get("qa", []))
+    selected_keys = {_qa_key(q) for q in selected_qas}
+    forced_keys: set[str] = set()
+
+    for topic in topics:
+        topic_tokens = _tokenize_for_overlap(topic)
+        if not topic_tokens:
+            continue
+
+        best_item: Optional[Dict[str, Any]] = None
+        best_score = 0
+        for qa in candidate_qas:
+            qa_text = f"{qa.get('question', '')} {qa.get('answer', '')}"
+            score = len(topic_tokens & _tokenize_for_overlap(qa_text))
+            if score > best_score:
+                best_score = score
+                best_item = qa
+
+        if best_item is None or best_score <= 0:
+            continue
+
+        key = _qa_key(best_item)
+        if key not in selected_keys:
+            selected_qas.append(best_item)
+            selected_keys.add(key)
+        forced_keys.add(key)
+
+    if len(selected_qas) <= max_items:
+        selected["qa"] = selected_qas
+        return selected
+
+    # Trim to max_items, preserving forced note-topic matches first.
+    trimmed: List[Dict[str, Any]] = []
+    trimmed_keys: set[str] = set()
+    for qa in selected_qas:
+        key = _qa_key(qa)
+        if key in forced_keys and key not in trimmed_keys:
+            trimmed.append(qa)
+            trimmed_keys.add(key)
+    for qa in selected_qas:
+        if len(trimmed) >= max_items:
+            break
+        key = _qa_key(qa)
+        if key in trimmed_keys:
+            continue
+        trimmed.append(qa)
+        trimmed_keys.add(key)
+
+    selected["qa"] = trimmed[:max_items]
+    return selected
+
+
 def _parse_rules_output(text: str) -> Dict[str, Any]:
     try:
         data = json.loads(text)
@@ -556,10 +661,54 @@ def _rerank_and_select(merged: Dict[str, Any], notes_text: str, evidence_index: 
         output_json = _parse_output(output_text)
 
     output_json = _enrich_and_validate_evidence(output_json, evidence_index)
+    output_json = _ensure_notes_coverage(output_json, merged, notes_text, max_items=30)
+    output_json = _enrich_and_validate_evidence(output_json, evidence_index)
     count = len(output_json.get("qa", []))
     if count < 5 or count > 30:
         raise ValueError(f"Rerank output must contain 5-30 QA items, got {count}.")
     return output_json
+
+
+def _slice_evidence_index(
+    evidence_index: Dict[str, str], start_idx_1based: int, count: int
+) -> Dict[str, str]:
+    sliced: Dict[str, str] = {}
+    for i in range(start_idx_1based, start_idx_1based + count):
+        key = f"D1:{i}"
+        if key in evidence_index:
+            sliced[key] = evidence_index[key]
+    return sliced
+
+
+def clean_chat_folder(folder_name: str, force: bool = False) -> CleanChatResult:
+    folder = DATA_DIR / folder_name
+    chat_path = folder / CHAT_FILENAME
+    alt_chat_path = folder / CHAT_FILENAME_ALT
+    cleaned_chat_path = folder / CLEANED_CHAT_FILENAME
+
+    if not chat_path.exists() and alt_chat_path.exists():
+        chat_path = alt_chat_path
+    if not chat_path.exists():
+        raise FileNotFoundError(f"Missing {chat_path}")
+
+    if cleaned_chat_path.exists() and not force:
+        try:
+            existing = json.loads(cleaned_chat_path.read_text(encoding="utf-8"))
+            if _is_valid_cleaned_messages(existing):
+                logger.info("Using existing cleaned chat: %s", cleaned_chat_path)
+                return CleanChatResult(cleaned_messages=existing, output_path=cleaned_chat_path)
+            logger.warning("Existing cleaned chat is invalid, regenerating: %s", cleaned_chat_path)
+        except Exception:
+            logger.warning("Could not parse existing cleaned chat, regenerating: %s", cleaned_chat_path)
+
+    chat_json = _load_chat(chat_path)
+    cleaned_messages = _clean_chat_messages(chat_json)
+    cleaned_chat_path.write_text(
+        json.dumps(cleaned_messages, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    logger.info("Wrote cleaned chat: %s (messages=%d)", cleaned_chat_path, len(cleaned_messages))
+    return CleanChatResult(cleaned_messages=cleaned_messages, output_path=cleaned_chat_path)
 
 
 def process_chat_folder(folder_name: str, refine: bool = False) -> ProcessResult:
@@ -570,7 +719,6 @@ def process_chat_folder(folder_name: str, refine: bool = False) -> ProcessResult
     notes_path = folder / NOTES_FILENAME
     output_path = folder / OUTPUT_FILENAME
     refine_path = folder / REFINE_FILENAME
-    cleaned_chat_path = folder / CLEANED_CHAT_FILENAME
 
     if not chat_path.exists() and alt_chat_path.exists():
         chat_path = alt_chat_path
@@ -584,13 +732,9 @@ def process_chat_folder(folder_name: str, refine: bool = False) -> ProcessResult
     if refine and refine_path.exists():
         logger.info("Using refine file: %s", refine_path)
 
-    chat_json = _load_chat(chat_path)
     notes_text = _load_notes(notes_path)
-    cleaned_messages = _clean_chat_messages(chat_json)
-    cleaned_chat_path.write_text(
-        json.dumps(cleaned_messages, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    clean_result = clean_chat_folder(folder_name, force=False)
+    cleaned_messages = clean_result.cleaned_messages
     messages = _normalize_messages(cleaned_messages)
     chunks = _chunk_messages(messages)
     if not chunks:
@@ -614,11 +758,16 @@ def process_chat_folder(folder_name: str, refine: bool = False) -> ProcessResult
                 raise ValueError(f"Could not read refine.json: {e}") from e
 
     outputs = []
+    cursor = 0
     for idx, chunk in enumerate(chunks, 1):
         logger.info("Processing chunk %d/%d (messages: %d)", idx, len(chunks), len(chunk))
         chunk_instruction = instruction
         if len(chunks) > 1:
             chunk_instruction = (instruction + " " if instruction else "") + f"(Chunk {idx}/{len(chunks)} only)"
+        chunk_start = cursor + 1
+        chunk_evidence_index = _slice_evidence_index(evidence_index, chunk_start, len(chunk))
+        cursor += len(chunk)
+        logger.info("Chunk %d evidence IDs: %d", idx, len(chunk_evidence_index))
 
         prompt = _build_prompt(
             chunk,
@@ -626,7 +775,7 @@ def process_chat_folder(folder_name: str, refine: bool = False) -> ProcessResult
             previous_output=previous_output,
             instruction=chunk_instruction,
             incremental=refine,
-            evidence_index=evidence_index,
+            evidence_index=chunk_evidence_index,
         )
 
         output_text = _call_llm(prompt)
@@ -671,7 +820,6 @@ def learn_rules_for_chat_folder(folder_name: str, max_rules: int = 10) -> RuleLe
     chat_path = folder / CHAT_FILENAME
     alt_chat_path = folder / CHAT_FILENAME_ALT
     notes_path = folder / NOTES_FILENAME
-    cleaned_chat_path = folder / CLEANED_CHAT_FILENAME
     rules_path = folder / RULES_FILENAME
 
     if not chat_path.exists() and alt_chat_path.exists():
@@ -680,13 +828,9 @@ def learn_rules_for_chat_folder(folder_name: str, max_rules: int = 10) -> RuleLe
     if not chat_path.exists():
         raise FileNotFoundError(f"Missing {chat_path}")
 
-    chat_json = _load_chat(chat_path)
     notes_text = _load_notes(notes_path)
-    cleaned_messages = _clean_chat_messages(chat_json)
-    cleaned_chat_path.write_text(
-        json.dumps(cleaned_messages, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    clean_result = clean_chat_folder(folder_name, force=False)
+    cleaned_messages = clean_result.cleaned_messages
     messages = _normalize_messages(cleaned_messages)
     if not messages:
         raise ValueError("No usable messages found in chat history.")

@@ -1,0 +1,21 @@
+should search and history feature ove entire app?
+-no, just over notes part of the app
+
+what color should version history be?
+light purple color
+
+how else should the version history veatures work?
+there should be an orange diff 
+
+should there be a migration?
+yes
+
+what did the LLM ask the user for clarification? 
+should search be full-text? or should it be all version sor limit it or do you want limne by line revert, do you want pagination?
+
+what did user say?
+everything, keep all versions, can do apragraph by paragarph (not line by line) and paginate version history? 
+
+what did the LLM forget to build? 
+
+How did the LLM fix it ? 

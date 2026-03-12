@@ -1,0 +1,108 @@
+{
+  "rules": [
+    {
+      "rule": "When organizing many items with AI, automatically chunk the workload to avoid context-window limits and process in batches.",
+      "evidence": [
+        "D1:1: \"I have a ton of notes and I want to use AI to auto organize them into folders for me  Basically if they are currently unorganized, AI needs to put them in an existing folder or create a new folder for it  Iff the number of notes is too much or pass the context window AI should chunk the requests for me. I should be able to preview the folders   And then, I should also be able to drag and drop notes that I dont like the folder to move it into a different folder if I dont like what AI did. So that means I can remove items from folders and add items to folders via drag and drop.   And then I would like to have a feature that allows me to chat with AI so I can ask it a question and it can ground the answer in a note I have and even find it for me, find a particular note. It should locate and ground the context in two steps — first figuring out the relevant folders it might be in, and then returning the notes in those folders and using that as the basis of their answer. And the thinking of that needs to be surfaced to the user, ie which folders it selected, and which notes is looking through. And the chatbot should answer my question and link me to the notes that are relevant to my topic. Like I click the button in the chatbot and it will bring me to the note that it is referencing. The chatbot needs to be grounded in evidence\""
+      ],
+      "metadata": {
+        "confidence": 9,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "Provide a preview/review step before applying AI-driven organization changes so the user can approve or adjust the plan.",
+      "evidence": [
+        "D1:1: \"I have a ton of notes and I want to use AI to auto organize them into folders for me  Basically if they are currently unorganized, AI needs to put them in an existing folder or create a new folder for it  Iff the number of notes is too much or pass the context window AI should chunk the requests for me. I should be able to preview the folders   And then, I should also be able to drag and drop notes that I dont like the folder to move it into a different folder if I dont like what AI did. So that means I can remove items from folders and add items to folders via drag and drop.   And then I would like to have a feature that allows me to chat with AI so I can ask it a question and it can ground the answer in a note I have and even find it for me, find a particular note. It should locate and ground the context in two steps — first figuring out the relevant folders it might be in, and then returning the notes in those folders and using that as the basis of their answer. And the thinking of that needs to be surfaced to the user, ie which folders it selected, and which notes is looking through. And the chatbot should answer my question and link me to the notes that are relevant to my topic. Like I click the button in the chatbot and it will bring me to the note that it is referencing. The chatbot needs to be grounded in evidence\""
+      ],
+      "metadata": {
+        "confidence": 9,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "Support manual override of AI organization via drag-and-drop moves between folders (including removing from a folder and adding to another).",
+      "evidence": [
+        "D1:1: \"I have a ton of notes and I want to use AI to auto organize them into folders for me  Basically if they are currently unorganized, AI needs to put them in an existing folder or create a new folder for it  Iff the number of notes is too much or pass the context window AI should chunk the requests for me. I should be able to preview the folders   And then, I should also be able to drag and drop notes that I dont like the folder to move it into a different folder if I dont like what AI did. So that means I can remove items from folders and add items to folders via drag and drop.   And then I would like to have a feature that allows me to chat with AI so I can ask it a question and it can ground the answer in a note I have and even find it for me, find a particular note. It should locate and ground the context in two steps — first figuring out the relevant folders it might be in, and then returning the notes in those folders and using that as the basis of their answer. And the thinking of that needs to be surfaced to the user, ie which folders it selected, and which notes is looking through. And the chatbot should answer my question and link me to the notes that are relevant to my topic. Like I click the button in the chatbot and it will bring me to the note that it is referencing. The chatbot needs to be grounded in evidence\""
+      ],
+      "metadata": {
+        "confidence": 9,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "For Q&A over personal content, answers should be grounded in the user's notes with explicit citations/links back to the source notes.",
+      "evidence": [
+        "D1:1: \"I have a ton of notes and I want to use AI to auto organize them into folders for me  Basically if they are currently unorganized, AI needs to put them in an existing folder or create a new folder for it  Iff the number of notes is too much or pass the context window AI should chunk the requests for me. I should be able to preview the folders   And then, I should also be able to drag and drop notes that I dont like the folder to move it into a different folder if I dont like what AI did. So that means I can remove items from folders and add items to folders via drag and drop.   And then I would like to have a feature that allows me to chat with AI so I can ask it a question and it can ground the answer in a note I have and even find it for me, find a particular note. It should locate and ground the context in two steps — first figuring out the relevant folders it might be in, and then returning the notes in those folders and using that as the basis of their answer. And the thinking of that needs to be surfaced to the user, ie which folders it selected, and which notes is looking through. And the chatbot should answer my question and link me to the notes that are relevant to my topic. Like I click the button in the chatbot and it will bring me to the note that it is referencing. The chatbot needs to be grounded in evidence\""
+      ],
+      "metadata": {
+        "confidence": 10,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "For note-grounded chat, use a two-step retrieval flow: first select likely relevant folders, then search notes within those folders, and surface what was searched to the user.",
+      "evidence": [
+        "D1:1: \"I have a ton of notes and I want to use AI to auto organize them into folders for me  Basically if they are currently unorganized, AI needs to put them in an existing folder or create a new folder for it  Iff the number of notes is too much or pass the context window AI should chunk the requests for me. I should be able to preview the folders   And then, I should also be able to drag and drop notes that I dont like the folder to move it into a different folder if I dont like what AI did. So that means I can remove items from folders and add items to folders via drag and drop.   And then I would like to have a feature that allows me to chat with AI so I can ask it a question and it can ground the answer in a note I have and even find it for me, find a particular note. It should locate and ground the context in two steps — first figuring out the relevant folders it might be in, and then returning the notes in those folders and using that as the basis of their answer. And the thinking of that needs to be surfaced to the user, ie which folders it selected, and which notes is looking through. And the chatbot should answer my question and link me to the notes that are relevant to my topic. Like I click the button in the chatbot and it will bring me to the note that it is referencing. The chatbot needs to be grounded in evidence\""
+      ],
+      "metadata": {
+        "confidence": 10,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "Prefer a flat folder structure (no nesting) unless the user explicitly requests hierarchy.",
+      "evidence": [
+        "D1:3: \"1. no 2. flat 3. yea 4. searc all 5. idk?\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:3"
+        ]
+      }
+    },
+    {
+      "rule": "Persist chat history across sessions rather than treating chat as ephemeral.",
+      "evidence": [
+        "D1:3: \"1. no 2. flat 3. yea 4. searc all 5. idk?\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:3"
+        ]
+      }
+    },
+    {
+      "rule": "Default chat search scope should cover all folders/notes unless the user asks to constrain it.",
+      "evidence": [
+        "D1:3: \"1. no 2. flat 3. yea 4. searc all 5. idk?\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:3"
+        ]
+      }
+    }
+  ]
+}

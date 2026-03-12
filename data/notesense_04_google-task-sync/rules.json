@@ -1,0 +1,114 @@
+{
+  "rules": [
+    {
+      "rule": "When implementing bidirectional sync, always provide a clear preview of creates/updates/deletes and surface conflicts for manual resolution before applying changes.",
+      "evidence": [
+        "D1:1: \"create me a thing to bidirectioally sync the tasks i have in googel to the stuff i hac in my ntoes app. and if i caeated stuff here it also nees to go to my google tasks.  we shoudl get also a preview of what was changed/updated and make sure this is all getting changed in the DB. Needs to be very clear what is happening in the preview. Same as potential deletes or updates or conflicts… the user can manually handle these uncertain things but it does need to be surfaced in this preview thing.   And if here is no google account connected for the task api when we click the sync button an option should pop up to tell us to Link it and have set up instructions   Also we should Migrate planner.json tasks to task db If something came from google task u cant update it twice (like if google task came with like “task 1” and became a local task then u cant send “task 1” back to google aPI   The frontend needs to show  task db instead of plannerItem and probably deprecate it\""
+      ],
+      "metadata": {
+        "confidence": 9,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "If an external account/integration is not connected, the UI should prompt the user to link it and provide setup instructions at the moment they try to use the feature.",
+      "evidence": [
+        "D1:1: \"create me a thing to bidirectioally sync the tasks i have in googel to the stuff i hac in my ntoes app. and if i caeated stuff here it also nees to go to my google tasks.  we shoudl get also a preview of what was changed/updated and make sure this is all getting changed in the DB. Needs to be very clear what is happening in the preview. Same as potential deletes or updates or conflicts… the user can manually handle these uncertain things but it does need to be surfaced in this preview thing.   And if here is no google account connected for the task api when we click the sync button an option should pop up to tell us to Link it and have set up instructions   Also we should Migrate planner.json tasks to task db If something came from google task u cant update it twice (like if google task came with like “task 1” and became a local task then u cant send “task 1” back to google aPI   The frontend needs to show  task db instead of plannerItem and probably deprecate it\""
+      ],
+      "metadata": {
+        "confidence": 9,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "Support syncing deletions in both directions as part of the sync feature (not just create/update).",
+      "evidence": [
+        "D1:4: \"1 yes u must sync 2 u must normalize and convert 3. ? waat this mean 4. ,manual\"",
+        "D1:5: \"<plan_mode_respond> <response> Thanks for the answers! Let me clarify question 3:  **Question 3 was about Google Task Lists:** Google Tasks lets you have multiple lists (like \"Personal\", \"Work\", \"Shopping\"). Currently the code is hardcoded to only sync with your default list (`@default`).   Should I: - **Keep it simple**: Only sync with default list (easier, covers most use cases) - **Support multiple lists**: Let you choose which Google list to sync with (more complex, more flexible)  I recommend keeping it simple for now - just sync the default list. You can always add multi-list support later if needed.  ---  ## Updated Plan Based on Your Answers  **Answers confirmed:** 1. ✅ **Sync deletions** - If you delete a task in Google, it deletes locally (and vice versa) 2. ✅ **Normalize timestamps** - Google uses RFC 3339, we'll convert to ISO 8601 with Z 3. ⏳ **Multiple lists** - (waiting for your answer) 4. ✅ **Manual sync only** - No auto-sync on load, user clicks \"Sync\" button  ---  ## Key Changes to Original Plan  ### Deletion Handling I'll add to the sync preview: - `to_delete_local`: Tasks that exist locally but were deleted in Google - `to_delete_google`: Tasks that exist in Google but were deleted locally  These will show in the preview with a red warning, and the user must explicitly approve deletions.  ### Timestamp Normalization Google Tasks API returns timestamps in RFC 3339 format (`2026-02-28T14:30:00.000Z`). I'll: - Convert Google timestamps → ISO 8601 with Z (our format) - Use these normalized timestamps for `last_synced_at` comparisons - Store `due_date` as YYYY-MM-DD only (date part, no time)  ### Manual Sync Flow The sync button will: 1. Check if Google account is connected 2. If not → show \"Link Google Account\" dialog with OAuth instructions 3. If yes → fetch both sides → show preview dialog 4. User reviews and approves → execute sync 5. No background syncing, ever  ---  Ready to implement once you answer question 3 about multiple task lists! </response> <needs_more_exploration>false</needs_more_exploration> <task_progress> - [ ] Phase 1: Backend Sync Engine   - [ ] Enhance SyncService with comparison logic (including deletion detection)   - [ ] Add timestamp normalization helper   - [ ] Add sync preview endpoint   - [ ] Add sync execute endpoint   - [ ] Update schemas for sync models - [ ] Phase 2: Migration   - [ ] Create migration script   - [ ] Add migration endpoint   - [ ] Test migration with existing planner_items.json - [ ] Phase 3: Frontend Integration   - [ ] Add task API methods   - [ ] Add Task types   - [ ] Create SyncPreviewDialog component (with deletion warnings)   - [ ] Update PlannerView to use tasks instead of planner items   - [ ] Add sync button with OAuth check   - [ ] Add migration button   - [ ] Add \"Link Google Account\" dialog - [ ] Phase 4: Testing & Polish   - [ ] Test bidirectional sync   - [ ] Test deletion sync   - [ ] Test conflict resolution   - [ ] Test duplicate prevention   - [ ] Test OAuth connection prompt   - [ ] Test timestamp normalization </task_progress> </plan_mode_respond>\"",
+        "D1:1: \"create me a thing to bidirectioally sync the tasks i have in googel to the stuff i hac in my ntoes app. and if i caeated stuff here it also nees to go to my google tasks.  we shoudl get also a preview of what was changed/updated and make sure this is all getting changed in the DB. Needs to be very clear what is happening in the preview. Same as potential deletes or updates or conflicts… the user can manually handle these uncertain things but it does need to be surfaced in this preview thing.   And if here is no google account connected for the task api when we click the sync button an option should pop up to tell us to Link it and have set up instructions   Also we should Migrate planner.json tasks to task db If something came from google task u cant update it twice (like if google task came with like “task 1” and became a local task then u cant send “task 1” back to google aPI   The frontend needs to show  task db instead of plannerItem and probably deprecate it\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:4",
+          "D1:5",
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "Normalize and convert timestamps between systems before comparing or syncing records.",
+      "evidence": [
+        "D1:4: \"1 yes u must sync 2 u must normalize and convert 3. ? waat this mean 4. ,manual\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:4"
+        ]
+      }
+    },
+    {
+      "rule": "Prefer manual, user-initiated sync over automatic/background syncing.",
+      "evidence": [
+        "D1:4: \"1 yes u must sync 2 u must normalize and convert 3. ? waat this mean 4. ,manual\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 7,
+        "source_message_ids": [
+          "D1:4"
+        ]
+      }
+    },
+    {
+      "rule": "Default to the simplest configuration when given a choice (e.g., use the default list) unless the user explicitly requests advanced options.",
+      "evidence": [
+        "D1:6: \"defauly\"",
+        "D1:5: \"<plan_mode_respond> <response> Thanks for the answers! Let me clarify question 3:  **Question 3 was about Google Task Lists:** Google Tasks lets you have multiple lists (like \"Personal\", \"Work\", \"Shopping\"). Currently the code is hardcoded to only sync with your default list (`@default`).   Should I: - **Keep it simple**: Only sync with default list (easier, covers most use cases) - **Support multiple lists**: Let you choose which Google list to sync with (more complex, more flexible)  I recommend keeping it simple for now - just sync the default list. You can always add multi-list support later if needed.  ---  ## Updated Plan Based on Your Answers  **Answers confirmed:** 1. ✅ **Sync deletions** - If you delete a task in Google, it deletes locally (and vice versa) 2. ✅ **Normalize timestamps** - Google uses RFC 3339, we'll convert to ISO 8601 with Z 3. ⏳ **Multiple lists** - (waiting for your answer) 4. ✅ **Manual sync only** - No auto-sync on load, user clicks \"Sync\" button  ---  ## Key Changes to Original Plan  ### Deletion Handling I'll add to the sync preview: - `to_delete_local`: Tasks that exist locally but were deleted in Google - `to_delete_google`: Tasks that exist in Google but were deleted locally  These will show in the preview with a red warning, and the user must explicitly approve deletions.  ### Timestamp Normalization Google Tasks API returns timestamps in RFC 3339 format (`2026-02-28T14:30:00.000Z`). I'll: - Convert Google timestamps → ISO 8601 with Z (our format) - Use these normalized timestamps for `last_synced_at` comparisons - Store `due_date` as YYYY-MM-DD only (date part, no time)  ### Manual Sync Flow The sync button will: 1. Check if Google account is connected 2. If not → show \"Link Google Account\" dialog with OAuth instructions 3. If yes → fetch both sides → show preview dialog 4. User reviews and approves → execute sync 5. No background syncing, ever  ---  Ready to implement once you answer question 3 about multiple task lists! </response> <needs_more_exploration>false</needs_more_exploration> <task_progress> - [ ] Phase 1: Backend Sync Engine   - [ ] Enhance SyncService with comparison logic (including deletion detection)   - [ ] Add timestamp normalization helper   - [ ] Add sync preview endpoint   - [ ] Add sync execute endpoint   - [ ] Update schemas for sync models - [ ] Phase 2: Migration   - [ ] Create migration script   - [ ] Add migration endpoint   - [ ] Test migration with existing planner_items.json - [ ] Phase 3: Frontend Integration   - [ ] Add task API methods   - [ ] Add Task types   - [ ] Create SyncPreviewDialog component (with deletion warnings)   - [ ] Update PlannerView to use tasks instead of planner items   - [ ] Add sync button with OAuth check   - [ ] Add migration button   - [ ] Add \"Link Google Account\" dialog - [ ] Phase 4: Testing & Polish   - [ ] Test bidirectional sync   - [ ] Test deletion sync   - [ ] Test conflict resolution   - [ ] Test duplicate prevention   - [ ] Test OAuth connection prompt   - [ ] Test timestamp normalization </task_progress> </plan_mode_respond>\""
+      ],
+      "metadata": {
+        "confidence": 7,
+        "decay": 7,
+        "source_message_ids": [
+          "D1:6",
+          "D1:5"
+        ]
+      }
+    },
+    {
+      "rule": "Include a migration path to move legacy data/models into the new database-backed model when deprecating an old system.",
+      "evidence": [
+        "D1:1: \"create me a thing to bidirectioally sync the tasks i have in googel to the stuff i hac in my ntoes app. and if i caeated stuff here it also nees to go to my google tasks.  we shoudl get also a preview of what was changed/updated and make sure this is all getting changed in the DB. Needs to be very clear what is happening in the preview. Same as potential deletes or updates or conflicts… the user can manually handle these uncertain things but it does need to be surfaced in this preview thing.   And if here is no google account connected for the task api when we click the sync button an option should pop up to tell us to Link it and have set up instructions   Also we should Migrate planner.json tasks to task db If something came from google task u cant update it twice (like if google task came with like “task 1” and became a local task then u cant send “task 1” back to google aPI   The frontend needs to show  task db instead of plannerItem and probably deprecate it\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "Prevent duplicate or circular sync by tracking source identifiers and avoiding re-sending items back to their origin without a clear update rule.",
+      "evidence": [
+        "D1:1: \"create me a thing to bidirectioally sync the tasks i have in googel to the stuff i hac in my ntoes app. and if i caeated stuff here it also nees to go to my google tasks.  we shoudl get also a preview of what was changed/updated and make sure this is all getting changed in the DB. Needs to be very clear what is happening in the preview. Same as potential deletes or updates or conflicts… the user can manually handle these uncertain things but it does need to be surfaced in this preview thing.   And if here is no google account connected for the task api when we click the sync button an option should pop up to tell us to Link it and have set up instructions   Also we should Migrate planner.json tasks to task db If something came from google task u cant update it twice (like if google task came with like “task 1” and became a local task then u cant send “task 1” back to google aPI   The frontend needs to show  task db instead of plannerItem and probably deprecate it\""
+      ],
+      "metadata": {
+        "confidence": 7,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    }
+  ]
+}

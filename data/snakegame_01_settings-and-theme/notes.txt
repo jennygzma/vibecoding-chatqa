@@ -1,0 +1,21 @@
+what does the user want for feature in terms of the themes that can be chagned?
+colors of buttons, backgorun,d snake, font 
+
+where will the leaderboard be?
+LLM has to move it to another pageeee
+
+what was the error that the LLM made? 
+cannot start service, host service does not match binary version
+
+what was the user confused by? 
+where to place the actual themes, service mode
+
+how did the LLM answer/respond? 
+
+
+whhy did the user say ok lets do local storage?
+
+what was not working?
+snake and food werent canging colors, neither were the game buttons
+
+what was broken? 

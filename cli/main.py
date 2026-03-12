@@ -10,6 +10,7 @@ from app.processor import (
     CHAT_FILENAME,
     NOTES_FILENAME,
     RULES_FILENAME,
+    clean_chat_folder,
     learn_rules_for_chat_folder,
     process_chat_folder,
 )
@@ -85,6 +86,12 @@ def cmd_process(args: argparse.Namespace) -> None:
     print(f"Wrote {result.output_path}")
     print(f"QA count: {len(result.output_json.get('qa', []))}")
     _mark_processed(args.chat_folder)
+
+
+def cmd_clean(args: argparse.Namespace) -> None:
+    result = clean_chat_folder(args.chat_folder, force=args.force)
+    print(f"Wrote {result.output_path}")
+    print(f"Cleaned message count: {len(result.cleaned_messages)}")
 
 
 def cmd_refine(args: argparse.Namespace) -> None:
@@ -209,6 +216,11 @@ def build_parser() -> argparse.ArgumentParser:
     p_process = sub.add_parser("process", help="Process a chat folder")
     p_process.add_argument("chat_folder")
     p_process.set_defaults(func=cmd_process)
+
+    p_clean = sub.add_parser("clean", help="Clean a chat folder into cleaned-chat.json")
+    p_clean.add_argument("chat_folder")
+    p_clean.add_argument("--force", action="store_true", help="Regenerate cleaned-chat.json even if it exists")
+    p_clean.set_defaults(func=cmd_clean)
 
     p_refine = sub.add_parser("refine", help="Refine output using existing output.json and optional notes/instruction")
     p_refine.add_argument("chat_folder")

@@ -1,0 +1,25 @@
+what do we do with old tasks?
+- we should migrate it 
+
+what happens if there is not yet a google task account linked?
+- tehre should be a button and as separate gogoel oauth  flow 
+
+what hsould be handled int h epreview?
+    - what is updated, what is removed, what is conflicting if there is a sync conflicting
+
+what did the user answer to the assistnat's initial plannig questions? 
+- user wanted deltion to be supportwed, and there to be conversion oftimestamps, and no autosyncing
+
+what did the assstatn ttyr to clarify with the user/
+- if deletion should be supported, how to handle timestamps, different google task lips, and if there shoudl be autosyncing
+
+how did the plan change after the user clarified what they wanted?
+- it got more deatiled and XYZ was added
+
+what bug happened after the assistant made its first pass?
+- dict not defined 
+
+what button was missing?
+- the sync with google button was not there 
+
+how did the user fix the bugs? ß

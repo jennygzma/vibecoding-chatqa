@@ -1,0 +1,114 @@
+{
+  "rules": [
+    {
+      "rule": "Prefer an AI feedback UI that opens in a sidebar with a free-form prompt input.",
+      "evidence": [
+        "D1:3: \"1. it should appear as a sidebar, freeform text input. just one chunk sent in one requiest 2. yeah sure. down to have a chip to do that .it should appear in a dialog. setn status is fine 3. email_sent is okay. and yeah link back tot he note that was sent 4. ya\""
+      ],
+      "metadata": {
+        "confidence": 9,
+        "decay": 7,
+        "source_message_ids": [
+          "D1:3"
+        ]
+      }
+    },
+    {
+      "rule": "When sending text to an LLM from an editor, default to sending a single selected chunk per request unless explicitly requested otherwise.",
+      "evidence": [
+        "D1:3: \"1. it should appear as a sidebar, freeform text input. just one chunk sent in one requiest 2. yeah sure. down to have a chip to do that .it should appear in a dialog. setn status is fine 3. email_sent is okay. and yeah link back tot he note that was sent 4. ya\"",
+        "D1:1: \"I want to integrate llm to help me in this notes app where i can highlight a specific chunk (like a paragraph or something) and then send it to teh LLM and the LLM will give me feedbac. So i highlight, then tell the LLM what type of advice im looking for, and then send it to the LLM. the llm will return some feedback for me, and if relevant, a “rewrite’ block where i can click apply and rewrite the section i had highlighted with what the llm returned (but only if i approve of it). I can also send multiple chunks at a time.   There is no need to persist this data also, but if i click save it needs to save the note in the DB yes.   And also, lets say im doing an email draft. If im done with the note, i want to be abel to send it to google API gmail and have it send teh email for me. I should be able to specify the email i want to send  it to on my application and also probably need ot handle oauth to do my emails. I should be able to see the status of the email if ive sent it before on the actual note itself and also probably be able to track it in the calendar (since right now we track note update creations, so basically i need to be able to track to see which days i sent an emial etc.) so theres a new type.\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 7,
+        "source_message_ids": [
+          "D1:3",
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "LLM rewrite suggestions should be optional and only applied after explicit user approval (e.g., an 'Apply rewrite' action).",
+      "evidence": [
+        "D1:1: \"I want to integrate llm to help me in this notes app where i can highlight a specific chunk (like a paragraph or something) and then send it to teh LLM and the LLM will give me feedbac. So i highlight, then tell the LLM what type of advice im looking for, and then send it to the LLM. the llm will return some feedback for me, and if relevant, a “rewrite’ block where i can click apply and rewrite the section i had highlighted with what the llm returned (but only if i approve of it). I can also send multiple chunks at a time.   There is no need to persist this data also, but if i click save it needs to save the note in the DB yes.   And also, lets say im doing an email draft. If im done with the note, i want to be abel to send it to google API gmail and have it send teh email for me. I should be able to specify the email i want to send  it to on my application and also probably need ot handle oauth to do my emails. I should be able to see the status of the email if ive sent it before on the actual note itself and also probably be able to track it in the calendar (since right now we track note update creations, so basically i need to be able to track to see which days i sent an emial etc.) so theres a new type.\""
+      ],
+      "metadata": {
+        "confidence": 9,
+        "decay": 9,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "Do not persist LLM interaction data by default; only persist the user’s note when they explicitly save.",
+      "evidence": [
+        "D1:1: \"I want to integrate llm to help me in this notes app where i can highlight a specific chunk (like a paragraph or something) and then send it to teh LLM and the LLM will give me feedbac. So i highlight, then tell the LLM what type of advice im looking for, and then send it to the LLM. the llm will return some feedback for me, and if relevant, a “rewrite’ block where i can click apply and rewrite the section i had highlighted with what the llm returned (but only if i approve of it). I can also send multiple chunks at a time.   There is no need to persist this data also, but if i click save it needs to save the note in the DB yes.   And also, lets say im doing an email draft. If im done with the note, i want to be abel to send it to google API gmail and have it send teh email for me. I should be able to specify the email i want to send  it to on my application and also probably need ot handle oauth to do my emails. I should be able to see the status of the email if ive sent it before on the actual note itself and also probably be able to track it in the calendar (since right now we track note update creations, so basically i need to be able to track to see which days i sent an emial etc.) so theres a new type.\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "For sending notes as emails, use a dialog-based UI and keep email tracking to a simple 'sent' status unless more detail is requested.",
+      "evidence": [
+        "D1:3: \"1. it should appear as a sidebar, freeform text input. just one chunk sent in one requiest 2. yeah sure. down to have a chip to do that .it should appear in a dialog. setn status is fine 3. email_sent is okay. and yeah link back tot he note that was sent 4. ya\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 7,
+        "source_message_ids": [
+          "D1:3"
+        ]
+      }
+    },
+    {
+      "rule": "When adding a new activity/event type, ensure it is linked back to the originating entity (e.g., email_sent links to the note) and appears in calendar/activity views.",
+      "evidence": [
+        "D1:3: \"1. it should appear as a sidebar, freeform text input. just one chunk sent in one requiest 2. yeah sure. down to have a chip to do that .it should appear in a dialog. setn status is fine 3. email_sent is okay. and yeah link back tot he note that was sent 4. ya\"",
+        "D1:1: \"I want to integrate llm to help me in this notes app where i can highlight a specific chunk (like a paragraph or something) and then send it to teh LLM and the LLM will give me feedbac. So i highlight, then tell the LLM what type of advice im looking for, and then send it to the LLM. the llm will return some feedback for me, and if relevant, a “rewrite’ block where i can click apply and rewrite the section i had highlighted with what the llm returned (but only if i approve of it). I can also send multiple chunks at a time.   There is no need to persist this data also, but if i click save it needs to save the note in the DB yes.   And also, lets say im doing an email draft. If im done with the note, i want to be abel to send it to google API gmail and have it send teh email for me. I should be able to specify the email i want to send  it to on my application and also probably need ot handle oauth to do my emails. I should be able to see the status of the email if ive sent it before on the actual note itself and also probably be able to track it in the calendar (since right now we track note update creations, so basically i need to be able to track to see which days i sent an emial etc.) so theres a new type.\""
+      ],
+      "metadata": {
+        "confidence": 8,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:3",
+          "D1:1"
+        ]
+      }
+    },
+    {
+      "rule": "For Gmail integration, use the minimal OAuth scope needed for the feature (e.g., gmail.send) and confirm user comfort with that scope.",
+      "evidence": [
+        "D1:3: \"1. it should appear as a sidebar, freeform text input. just one chunk sent in one requiest 2. yeah sure. down to have a chip to do that .it should appear in a dialog. setn status is fine 3. email_sent is okay. and yeah link back tot he note that was sent 4. ya\"",
+        "D1:2: \"I'll analyze your request and the current codebase to create a comprehensive plan. Let me gather some context first.  <read_file> <path>backend/integrations/llm/openai_client.py</path> </read_file>  <read_file> <path>backend/schemas.py</path> </read_file>  <read_file> <path>backend/integrations/google/auth.py</path> </read_file>  <read_file> <path>backend/repositories/note_repo.py</path> </read_file>  <read_file> <path>frontend/src/views/notes/NoteDetail.tsx</path> </read_file>  <read_file> <path>backend/api/ai.py</path> </read_file>  <read_file> <path>backend/services/note_service.py</path> </read_file>  Now let me check the current activity tracking system:  <search_files> <path>backend</path> <regex>activity.*type|note.*activity</regex> <file_pattern>*.py</file_pattern> </search_files>  <read_file> <path>backend/backfill_note_activities.py</path> </read_file>  <plan_mode_respond> <response> ## Analysis Summary  I've reviewed the codebase and understand your request. Here's what you want to build:  ### **Feature 1: LLM Feedback on Highlighted Text** - Select text chunks in a note - Specify feedback type (e.g., \"improve clarity\", \"make professional\", \"check grammar\") - Get LLM response with feedback + optional rewrite - Apply rewrites selectively (no persistence of LLM conversation, just the final note) - Support multiple chunks at once  ### **Feature 2: Gmail Integration for Email Drafts** - Send notes as emails via Gmail API - OAuth flow for Gmail access - Specify recipient in the UI - Track email send status on the note - Show \"email sent\" activities in calendar (new activity type: `email_sent`)  ## Key Architecture Observations  **Current State:** - ✅ LLM client exists (`GPTClient`) with prompt templates - ✅ Google OAuth flow exists for Tasks (can extend for Gmail) - ✅ Note activities tracking exists (`note_activities` table with `activity_type`) - ✅ Calendar shows note creation/updates - ❌ No text selection/highlighting UI yet - ❌ No Gmail integration yet - ❌ No email-specific activity tracking  ## Questions Before Planning  **1. LLM Feedback UI:**    - Should the feedback panel appear as a sidebar, modal, or inline below the note?    - Do you want preset feedback types (dropdown) or free-form text input?    - Should multiple chunks be sent in one request or separately?  **2. Email Features:**    - Should the note editor have an \"Email\" mode/flag to distinguish drafts from regular notes?    - Where should the recipient email input appear (in note metadata, or in a \"Send Email\" dialog)?    - Do you want to track: just \"sent\" status, or also track \"delivered\", \"opened\", \"replied\"?  **3. Calendar Activity:**    - Current activities: `created`, `updated`. You want to add `email_sent`. Anything else (e.g., `llm_feedback_applied`)?    - Should email activities link back to the note that was sent?  **4. OAuth Scope:**    - Gmail requires sensitive scopes. Are you comfortable with `gmail.send` scope (allows sending but not reading emails)?  Let me know your preferences and I'll create a detailed implementation plan! </response> <needs_more_exploration>false</needs_more_exploration> </plan_mode_respond>\""
+      ],
+      "metadata": {
+        "confidence": 7,
+        "decay": 8,
+        "source_message_ids": [
+          "D1:3",
+          "D1:2"
+        ]
+      }
+    },
+    {
+      "rule": "After encountering implementation errors, provide a clear root-cause explanation and propose preventive engineering rules/checks to avoid recurrence.",
+      "evidence": [
+        "D1:19: \"why did these 3 errors happen ? what rules would u add so that tehse errors dont happen again in the future?\""
+      ],
+      "metadata": {
+        "confidence": 7,
+        "decay": 6,
+        "source_message_ids": [
+          "D1:19"
+        ]
+      }
+    }
+  ]
+}
