@@ -1,12 +1,24 @@
 # Chat QA Cleaner
 
-Local folder-based CLI + Flask backend that turns chat history into Q/A JSON using an LLM.
+Simple CLI for turning chat history into:
+- `output.json` (Q/A pairs)
+- `rules.json` (learned user rules)
+
+## Annotator notes
+- Read `cleaned-chat.json` first to understand what is actually in scope. Raw chat files usually include extra metadata/noise.
+- Add your guidance/questions in `notes.txt` inside each folder.
+- Run `chatqa process <folder>` to generate Q/A in `output.json`.
+- Run `chatqa learn-rules <folder>` to generate `rules.json`.
+- Q/A generation is notes-guided: items in `notes.txt` should be covered, plus extra useful items the model finds from chat context.
+- Do a manual review after generation: make outputs human-readable, grounded in the chat, and easy to understand.
+- Keep an eye on category quality (multi-hop, temporal, open-domain, single-hop, adversarial) and fix weak labels during review/refine.
+
 
 ## Folder layout
 ```
 /data
   /<chat-folder-name>
-    chat-history.json
+    chat-history.json (Jenny uploaded)
     notes.txt
     output.json
     rules.json
@@ -14,50 +26,47 @@ Local folder-based CLI + Flask backend that turns chat history into Q/A JSON usi
 ```
 
 ## Setup
-1. Create a `.env` file (copy from `.env.example`):
+1. Create `.env` (copy from `.env.example`):
 ```
 OPENAI_API_KEY=...
 OPENAI_MODEL=gpt-4o-mini
 ```
-2. Install deps:
+2. Activate env (if you use conda):
+```
+conda activate chatqa
+```
+3. Install:
 ```
 pip install -r requirements.txt
 ```
-Or install as a CLI:
+Or:
 ```
 pip install -e .
 ```
 
-## CLI usage
+## Typical usage
 ```
-chatqa create my-chat
-chatqa add my-chat --chat-file /path/to/chat.json --notes-file /path/to/notes.txt
-chatqa clean my-chat
-chatqa process my-chat
-chatqa refine my-chat --notes-file /path/to/notes.txt
-chatqa learn-rules my-chat --max-rules 10
-chatqa process-all   # now runs QA + rules together
+chatqa clean <folder>
+chatqa process <folder>
+chatqa learn-rules <folder>
+```
+
+## What each command writes
+- `chatqa clean <folder>` -> `data/<folder>/cleaned-chat.json`
+- `chatqa process <folder>` -> `data/<folder>/output.json`
+- `chatqa learn-rules <folder>` -> `data/<folder>/rules.json`
+
+## Batch commands
+```
+chatqa process-all
 chatqa learn-rules-all --max-rules 10
 chatqa status
 ```
 
-Notes:
-- `chatqa process` and `chatqa learn-rules` will reuse `cleaned-chat.json` if it already exists.
-- If `cleaned-chat.json` is missing, they will generate it automatically.
-- Use `chatqa clean <chat-folder> --force` to regenerate cleaned output.
+`process-all` runs both QA + rules for folders with chat files and no `output.json`.
 
-## Flask API
-Run server:
-```
-python -m app.server
-```
-Process a folder:
-```
-curl -X POST http://localhost:5000/process \
-  -H 'Content-Type: application/json' \
-  -d '{"chat_folder":"my-chat","refine":true}'
+## Notes
+- `process` and `learn-rules` auto-create `cleaned-chat.json` if missing.
+- Use `chatqa clean <folder> --force` to regenerate cleaning.
+- `chatqa process` does not write `rules.json` (run `learn-rules` for that).
 
-curl -X POST http://localhost:5000/learn-rules \
-  -H 'Content-Type: application/json' \
-  -d '{"chat_folder":"my-chat","max_rules":10}'
-```
