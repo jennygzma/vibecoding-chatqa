@@ -1,0 +1,10 @@
+{
+  "name": "willow-table",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check game.js && node --check transitions.js && node --check hand-controls.js && node --check claim-controller.js && node --check persistence.js && node --check app.js"
+  }
+}

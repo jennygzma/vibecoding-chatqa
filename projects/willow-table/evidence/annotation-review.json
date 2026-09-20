@@ -1,0 +1,13 @@
+{
+  "reviewed_items": 100,
+  "reviewed_citations": 130,
+  "checks": [
+    "Each question has a distinct, useful purpose and natural English wording.",
+    "Answers were checked against their quoted sources and later corrections.",
+    "Quotes retain exact source wording and whitespace.",
+    "Category labels describe reasoning rather than the subject matter.",
+    "Temporal and multi-hop items cite distinct messages.",
+    "Raw records, original roles, message IDs, and timestamps are preserved."
+  ],
+  "review_approval": "pending"
+}

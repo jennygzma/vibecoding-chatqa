@@ -1,0 +1,23 @@
+{
+  "annotations": 100,
+  "citations": 130,
+  "cleaned_messages": 103,
+  "roles": {
+    "user": 9,
+    "assistant": 94
+  },
+  "categories": {
+    "1": 4,
+    "2": 7,
+    "4": 83,
+    "5": 6
+  },
+  "session_coverage": {
+    "1789871314281_7q4jt": 40,
+    "1789871968283_zgmsn": 20,
+    "1789872259218_ixf55": 32,
+    "1789872899823_oln5b": 10
+  },
+  "raw_archives": 4,
+  "errors": []
+}

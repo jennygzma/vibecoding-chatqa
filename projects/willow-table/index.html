@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#102f29" />
+  <title>Willow Table — Local Mahjong</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div><p class="eyebrow">LOCAL FOUR-PLAYER MAHJONG</p><h1>Willow Table</h1></div>
+      <div class="header-actions"><span id="save-status" class="save-status">Saved locally</span><details class="settings"><summary>Settings</summary><div class="settings-panel"><label>Computer turns <select id="computer-speed"><option value="slow">Slow</option><option value="normal" selected>Normal</option><option value="fast">Fast</option></select></label><label>Tile text <select id="tile-text"><option value="standard" selected>Standard</option><option value="large">Large</option></select></label><label>Reduced motion <select id="reduced-motion"><option value="system" selected>Follow device</option><option value="reduce">Reduce motion</option><option value="full">Full motion</option></select></label></div></details><button id="new-game" class="quiet-button">New hand</button></div>
+    </header>
+    <section class="table" aria-label="Mahjong table">
+      <div class="table-felt">
+        <section id="seat-2" class="opponent west"></section>
+        <section id="seat-3" class="opponent north"></section>
+        <section class="center-panel">
+          <p id="round-label" class="round-label"></p>
+          <div id="last-discard" class="last-discard empty">—</div>
+          <p id="table-message" class="table-message" aria-live="polite" aria-atomic="true"></p>
+          <p id="wall-count" class="wall-count"></p>
+        </section>
+        <section id="seat-1" class="opponent south"></section>
+        <section id="seat-0" class="player-seat"></section>
+      </div>
+    </section>
+    <section class="action-area" aria-label="Turn controls">
+      <div id="claim-controls" class="claim-controls"></div>
+      <div id="turn-controls" class="turn-controls"></div>
+    </section>
+    <section class="history-card" aria-labelledby="history-title">
+      <div class="history-heading"><div><p class="eyebrow">LOCAL SESSION</p><h2 id="history-title">Completed hands</h2><p id="session-totals" class="session-totals"></p></div><label>Show <select id="history-filter"><option value="all">All hands</option><option value="win">Wins</option><option value="draw">Draws</option></select></label></div>
+      <ol id="hand-history" class="hand-history"></ol>
+      <div class="backup-controls"><button id="export-backup" class="quiet-button">Download backup</button><label class="quiet-button">Restore backup <input id="restore-backup" type="file" accept="application/json,.json" hidden></label></div>
+      <p class="backup-copy">Versioned JSON backup includes the current hand, settings, completed hands, and notes. Restore validates the file and asks before replacing local data.</p>
+    </section>
+    <section class="rules-card">
+      <h2>Willow Table house rules</h2>
+      <ul><li>136 tiles: Characters, Dots, Bamboo, winds, and dragons. Seats proceed East (you), South, West, North; East opens the hand.</li><li>Win with four sets (runs or triples) and one pair. No special hands, flowers, or bonus tiles.</li><li>On a discard, <strong>Ron</strong> may be claimed by anyone, <strong>Pon</strong> by anyone, and <strong>Chi</strong> only by the next player. Ron has priority, then Pon, then Chi.</li><li>No Kan, Riichi, betting, or scorekeeping. A hand ends on a win or when the wall is exhausted.</li><li>This hand saves automatically in this browser. Refreshing resumes it; <em>New hand</em> replaces it.</li></ul>
+    </section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

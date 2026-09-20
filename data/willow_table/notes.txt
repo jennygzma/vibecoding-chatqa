@@ -1,0 +1,13 @@
+Willow Table annotation scope
+
+The 100 questions cover the four archived development sessions. They address the game rules, interface, keyboard controls, saved history, backup validation, and the live-play claim-flow correction. Later corrections govern questions about current behavior.
+
+Evidence is an array of strings in the form D1:INDEX: "exact excerpt", indexed from one into cleaned-chat.json. Quotes preserve the original wording and whitespace. source-map.json connects each cleaned entry to its original session, message ID, timestamp, position, and role. Tool payloads remain in the raw archive and merged history; they are not user prose.
+
+Category mapping follows the reference schema: 1 multi-hop, 2 temporal, 3 open-domain, 4 single-hop, 5 adversarial. This set has 4 multi-hop, 7 temporal, 83 single-hop, and 6 adversarial questions. No open-domain items are needed. Multi-hop and temporal entries cite distinct messages. Session coverage follows the material rather than a fixed quota.
+
+All 100 entries were reviewed individually for natural wording, distinct purpose, concise answers, quoted support, and consistency with later corrections. Automated validation checks structure and provenance; it does not claim to prove semantic answer quality. Rebuilding transcript views never changes output.json.
+
+Reference schema: https://github.com/jennygzma/vibecoding-chatqa/blob/main/app/processor.py
+
+Review evidence and validation scripts: projects/willow-table. From that directory, run python3 validate_annotations.py. To rebuild transcript views, use python3 build_annotations.py, which preserves the curated questions and original message mapping.
