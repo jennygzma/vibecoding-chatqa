@@ -1,0 +1,929 @@
+[
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "I'd like a Mahjong game I can play on my laptop. Let's call it Willow Table. I mean a four-player table with me and three computer players, rather than a tile-matching puzzle. Start with a playable round, clear tile faces, legal turns and claims, and a way to come back to the same hand after refreshing. A small, clearly explained house ruleset is fine; I don't need tournament scoring or accounts. Please build it in the empty willow-table folder that is open now, keep everything local, and leave the other Mahjong projects alone. Use English throughout. Tell me what you chose and run checks on the parts that decide a hand. Do not push or deploy anything."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll build a self-contained local browser game in `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table` only. I’ll first inspect the empty workspace and available tooling, then implement a four-seat Mahjong round with an explicitly documented simplified house ruleset, browser-local persistence, and focused automated checks for hand validation and legal claim decisions. Finally, I’ll run those checks and a production build/lint check if the project tooling supports it."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Implementation approach\n\nThe directory is empty and has no existing framework or dependencies to preserve. I’ll use a dependency-free static web app so it can run entirely locally by opening `index.html` (or from any local static server), with:\n\n1. `game.js` as a reusable rules engine: tile construction, sorting/display names, standard winning-hand decomposition, chi/pon/ron eligibility, and deterministic bot discard selection.\n2. `app.js` as the browser controller: deal/play loop, user actions and claim window, automatic computer turns/claims, table rendering, and `localStorage` resume support.\n3. A responsive visual table in `styles.css`, with all text in English.\n4. Node’s built-in test runner to check winning-hand and claim legality independently of the UI.\n\nHouse rules will be visible in the game UI and README: 136 tiles, standard four melds plus pair wins, chi/pon/ron claims, with no kan, flowers, riichi, or tournament scoring."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Gameplay wiring\n\nI’ve established the pure rules module and the documented ruleset. I’ll now add the table interface and controller. The controller will persist a serializable round state after every draw, discard, claim, and finish; restore it on reload; and re-start computer play only when it is their active turn. The test file will exercise the rules engine rather than browser UI state."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The controller and stylesheet payloads exceeded the editor’s per-edit size guidance, so neither was partially written. The rules tests were created successfully. I’ll now write those two files in bounded chunks, then inspect the completed sources and run both syntax and rules checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Verification plan\n\nAll requested source files are now present. I’ll inspect the assembled controller around its function boundaries and run the project’s syntax and rule-engine checks in parallel. I’ll also confirm the workspace contains only Willow Table files, so no adjacent projects were touched."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Final local-only correction\n\nThe functional checks passed. During source review, I found that the visual stylesheet imported Google Fonts, which would make a network request and conflicts with the requirement to keep the game entirely local. I’ll remove that import and use local system font fallbacks instead, then re-run the checks and confirm no external URLs remain."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The external-resource scan is clean. I’ll perform the final validation after the local-only styling change: syntax, rules tests, and an exact file listing from `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table`."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Willow Table is built\n\nCreated a fully local, dependency-free four-player Mahjong game in:\n\n`/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table`\n\nOpen `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/index.html` in a browser to play.\n\n### What I chose\n\n- **Four-player table:** You play East against North, West, and South computer players.\n- **Clear tile faces:** Characters, Dots, Bamboo, winds, and dragons are visibly labeled in English.\n- **Playable hand flow:** Deal, draw, discard, computer turns, wall exhaustion, and new-hand controls.\n- **Legal claims:**\n  - **Ron** from any discard when it completes a valid hand.\n  - **Pon** from any discard with two matching tiles.\n  - **Chi** only from the immediately preceding player’s discard.\n  - Claim priority is Ron → Pon → Chi.\n- **Persistence:** The full current hand is saved in browser `localStorage`; refreshing resumes the same state.\n- **Local-only:** No accounts, backend, deployment setup, requests, or external assets.\n- **House rules:** 136 tiles; a win is four runs/triples plus a pair. Kan, Riichi, special hands, flowers, scoring, and wagering are intentionally excluded. The rules are displayed in-game and documented in `README.md`.\n\n### Important files\n\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/index.html` — game page\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/app.js` — table flow, UI, persistence, bots\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/game.js` — hand and claim rules engine\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/game.test.js` — rules tests\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/README.md` — local usage and house rules\n\n### Checks run\n\nPassed successfully:\n\n```sh\nnpm test\nnpm run check\n```\n\nThe eight rules tests cover:\n\n- Standard winning hands\n- Winning hands with an exposed meld\n- Invalid hand rejection\n- Ron eligibility\n- Pon eligibility\n- Chi option generation\n- Chi turn-direction legality\n- Correct removal of duplicate tiles during claims\n\nNo other Mahjong project was modified, and nothing was pushed or deployed."
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "I've opened the game at http://127.0.0.1:4330 and reviewed the turn loop. Before adding features, please fix the basic play rules. I can't see a self-draw win action for my hand. The player who discarded must never claim their own tile, and my Pon or Chi must not jump ahead of a computer player's Ron. Use distance from the discarder to settle equal-priority claims. Refreshing during a computer discard or a pending claim should resume correctly, and starting a new hand must cancel callbacks from the previous hand. Please extract the turn transitions into something we can test, add regression checks for these cases, and correct the README: this uses modules, so opening index.html directly is not a reliable launch method. Keep the existing simple house rules."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll first trace the existing turn/claim controller and test setup, then refactor the state-changing turn transitions into a pure, testable module. The changes will add a self-draw win action, enforce claim eligibility and priority correctly (including seat-distance tie-breaking), make persisted computer-discard/claim states resume safely, and invalidate stale bot timers when a new hand starts. I’ll add focused regression tests for each reported case, update the module-based launch instructions, and run all checks afterward."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Refactor design\n\nThe current controller mixes UI, timers, and rules, which is why claim ordering and reload behavior are difficult to reason about. I’ll introduce a pure `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/transitions.js` module that:\n\n- derives only legal claim candidates and explicitly excludes the discarder;\n- selects claims by **Ron → Pon → Chi**, then clockwise seat distance from the discarder for equal priorities;\n- applies a selected claim or advances the turn without interacting with the DOM or timers;\n- provides a self-draw eligibility check.\n\nThe browser controller will use this module, save before callbacks are scheduled, resume `draw` and pending `claim` phases correctly, and use a generation token plus timer cancellation to prevent old callbacks affecting a new hand."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Controller update\n\nI’ll now replace the UI controller with a thin adapter over the transition module. A pending claim after a computer discard remains visible for the player on refresh, while a pending claim after the player’s discard is automatically re-settled. A computer turn in either `draw` or `discard` phase is re-scheduled after refresh. Every scheduled callback captures a hand generation identifier, so replacing the hand makes old callbacks harmless even if they have already entered the event queue."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The controller replacement exceeded the filesystem editor’s single-edit payload limit, so it was not applied. I’ll write the already designed controller as one complete local file using a non-interactive workspace command, then immediately inspect it and run the syntax/tests before adding the regression cases."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Regression coverage\n\nThe transition module is now wired into the browser controller. I’ll add regression tests against its pure state transitions for: user self-draw eligibility, discarder exclusion, a computer Ron defeating the user’s requested Pon/Chi, distance-based equal-priority selection, and serialized pending `claim` / computer `discard` states being directly resumable. I’ll also correct the README launch instructions for ES modules."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The README updates succeeded. The test insertion was rejected because that editor operation omitted its target path, so no test content was written. I’ll append the regression suite to the existing test file now, then run it to catch any transition-design issues before final verification."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Test feedback and correction\n\nThe new suite exposed a real transition bug: the selected user claim was being passed as an object where the candidate selector expected a claim-type string, so it was ignored and the turn advanced. This is exactly the kind of state-machine regression the extraction is intended to catch. I’ll correct that selector and re-run the complete suite."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Final validation plan\n\nThe transition bug is corrected and the extracted state machine has been inspected. I’ll now run the full test and syntax suite, check the served module entry point over a local HTTP server, and confirm the final workspace diff/file set."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The complete rules/syntax suite passes. The local HTTP smoke-test command itself used `status`, a read-only zsh variable, so its result is inconclusive despite the test suite succeeding. I’ll rerun that smoke test with a safe variable name, then run the final checks once more after the README test-description update."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## One final turn-loop safeguard\n\nThe refactor correctly restores a computer discard as a claim window, but I identified one final usability edge: when the player has **no** legal response to that computer discard, the round should auto-settle rather than wait for a Pass button that is not shown. I’ll make the resume path distinguish a player-visible claim window from a no-claim computer settlement, and add a direct regression check for that decision."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The restored no-claim path is now explicitly covered. I’ll run the final test/syntax suite and inspect the altered controller/test portions to verify the completed implementation."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Turn-loop rules corrected\n\nUpdated Willow Table in `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table`.\n\n### Gameplay fixes\n\n- Added a **Self-draw win** action for you whenever:\n  - it is your discard phase, and\n  - your current hand is a legal completed hand.\n- The **discarder is excluded** from all claim eligibility. A player can no longer Ron, Pon, or Chi their own discarded tile.\n- Claim settlement now follows the documented order:\n  1. **Ron**\n  2. **Pon**\n  3. **Chi**\n- Within the same claim priority, the winner is selected by **clockwise seat distance from the discarder**.\n- A user-requested **Pon or Chi cannot override a computer player’s legal Ron**.\n- Computer players are also resolved through the same priority and distance rules.\n\n### Persistence and callback handling\n\n- Refreshing during a computer turn resumes its pending draw/discard behavior.\n- Refreshing during a claim window:\n  - restores the player’s available claim controls after a computer discard;\n  - resumes automatic settlement after the player’s discard;\n  - automatically advances a computer discard when the player has no legal claim.\n- Starting a new hand cancels the current timer and increments a generation token, so stale callbacks from the prior hand cannot alter the new hand.\n\n### Testable turn transitions\n\nAdded:\n\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/transitions.js`\n\nIt now owns pure state transitions for drawing, discarding, self-draw validity, claim availability, claim selection, claim settlement, and applying settlements. The browser UI in `app.js` is now a thin persistence/timer/rendering adapter around those transitions.\n\n### Regression checks added\n\nThe suite now includes checks for:\n\n- Self-draw eligibility.\n- Discarder exclusion.\n- Computer Ron beating a user Pon.\n- Computer Ron beating a user Chi.\n- Clockwise distance resolution for equal-priority claims.\n- Serialized pending claim and computer-discard states.\n- Automatic no-claim continuation after a restored computer discard.\n- Immutable draw and settlement transitions.\n\n### README corrected\n\n`README.md` now correctly says to launch through a local HTTP server because the game uses ES modules. For example:\n\n```sh\npython3 -m http.server 4330\n```\n\nThen open:\n\n```text\nhttp://127.0.0.1:4330\n```\n\n### Validation run\n\nPassed:\n\n```sh\nnpm test\nnpm run check\n```\n\nResult: **16 tests passed**, including the new turn-loop regression cases."
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "One more rules edge case before we move on: canSelfDraw currently accepts any completed hand in discard phase, including immediately after claiming Pon or Chi. A claim is not a wall draw. Please track whether the current turn actually came from a draw, while allowing East's opening dealt hand, and make that survive refresh. Also make the seat order East, South, West, North consistently in the rules and labels. Reject unknown tile codes, more than four copies of a tile, impossible exposed-meld counts, and invalid Chi option indexes without throwing or changing the round. Add focused tests for those boundaries and summarize what is supported when the checks pass.One more rules edge case before we move on canSelfDraw currently accepts any completed hand in discard phase including immediately after claiming Pon or Chi. A claim is not a wall draw. Please track whether the current turn actually came from a draw while allowing East's opening dealt hand and make that survive refresh. Also make the seat order East South West North consistently in the rules and labels. Reject unknown tile codes more than four copies of a tile impossible exposed-meld counts and invalid Chi option indexes without throwing or changing the round. Add focused tests for those boundaries and summarize what is supported when the checks pass."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll tighten the pure transition layer before touching the UI. I’ll inspect the current state shape and rule helpers, then add validated state boundaries for tile codes, tile multiplicity, exposed-meld counts, and selected Chi options. I’ll persist a `turnStartedByDraw` flag in the saved round state—true for East’s opening dealt hand and for wall draws, false after Pon/Chi—and use it for self-draw eligibility. I’ll also standardize the clockwise labels/order to East, South, West, North in the table and rules text, add focused tests, and run the complete suite."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Validation design\n\nI’ll make the transition module reject malformed external or persisted round data before it can reach hand evaluation or tile removal. The validation will accept the intentionally compact test states but require four players, known tile codes, no more than four physical copies of any tile, and at most four valid exposed three-tile melds per player. Invalid transition input will return `null`/no legal choices rather than throw. A Chi request must name an in-range integer option; an invalid index will return no settlement and the UI will leave the saved round unchanged."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Transition implementation\n\nI’ll now replace the transition module’s permissive entry points with guarded transitions and add the persisted draw-origin flag. This includes validating the whole round’s physical tile inventory (across wall, hands, melds, and discards), validating each exposed meld shape, and ensuring no invalid action mutates state. Then I’ll update the controller to preserve a rejected round and use the standardized seat names."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Controller and direct-rule safeguards\n\nThe pure transition layer now carries `turnStartedByDraw`, validates round inventory and exposed meld structure, and uses a guarded invalid-action return. I’ll update the browser adapter to initialize/persist the draw-origin flag and leave state untouched when a guarded transition rejects an action. I’ll also tighten direct hand validation so a malformed hand containing a fifth copy cannot be treated as valid outside the transition layer."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Focused boundary tests\n\nThe UI now uses the East → South → West → North seat sequence and new rounds persist `turnStartedByDraw: true` for East’s opening 14-tile hand. I’ll extend the existing transition tests to verify that a Pon/Chi turn cannot self-draw, a wall draw and serialized state can, and malformed/invalid actions return safely without changing input state."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The focused test insertion was rejected only because the editor call omitted its file path; none of that test block was applied. I’ll append it to the correct test file now, then run the suite. If the new validation exposes any compatibility issue in the controller’s persisted state, I’ll address that before finalizing."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Test correction and seat placement alignment\n\nThe failing equal-priority fixture accidentally created six copies of `4m`, so the new physical-tile validator correctly rejected it. I’ll correct that fixture to use only legal tile inventory. I’ll also align the table’s positional class names with the requested compass order: East at the player side, South right, West top, North left."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Final verification\n\nThe equal-priority test fixture now respects the four-copy tile limit, and the visual table plus labels follow East → South → West → North. I’ll run the complete test and syntax suites, scan the final docs/seat mappings, and verify there are no external-resource regressions."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The validator is correctly rejecting the remaining tie fixture because two Pon claimants plus the discard require five physical copies—an impossible Mahjong state. I’ll replace that test with two valid equal-priority **Ron** candidates that use distinct tiles apart from the shared discard, so the distance rule is tested without violating tile inventory."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Final validation\n\nThe distance regression now models two legal Ron claims, avoiding an impossible fifth tile copy. I’ll run all tests and syntax checks one final time, then update the README’s check summary to include the newly enforced validation boundaries."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Completion check\n\nThe new validation and self-draw regressions pass. I’ve also updated the documented check coverage. I’ll run the final syntax/test pass after that documentation edit and confirm the final saved-state field and house-rule wording are present."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Implemented and validated the requested edge cases.\n\n### Changes made\n\n- Added persisted `turnStartedByDraw` round state:\n  - `true` for East’s opening dealt hand.\n  - `true` after a successful wall draw.\n  - `false` after a discard, claim advance, Pon, or Chi.\n  - Because it is part of `state`, it survives localStorage refresh automatically.\n\n- Tightened self-draw eligibility in `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/transitions.js`:\n  - A completed hand may self-draw only during its owner’s discard phase **and** when `turnStartedByDraw === true`.\n  - A completed hand immediately after Pon or Chi cannot self-draw.\n\n- Standardized seats as clockwise:\n  - **East (you), South, West, North**\n  - Updated `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/game.js`, `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/app.js`, `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/index.html`, CSS table positions, and `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/README.md`.\n\n- Added defensive state/action validation:\n  - Rejects unknown tile codes.\n  - Rejects states with more than four physical copies of a tile across wall, hands, discards, and melds.\n  - Rejects invalid exposed melds and more than four exposed melds for a player.\n  - Rejects invalid Chi option indexes.\n  - Invalid transitions/settlements return `null` without throwing or mutating the current round state.\n\n- Added focused regression coverage in:\n  - `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/game.test.js`\n\n### Supported behavior now covered by checks\n\n- Standard four-sets-plus-pair wins, including exposed meld accounting.\n- Ron, Pon, and next-player-only Chi claims.\n- Ron → Pon → Chi precedence and clockwise tie breaking.\n- No self-claim by the discarder.\n- Self-draw only on East’s opening hand or after a wall draw—not after Pon/Chi.\n- Refresh-safe persisted draw-origin state.\n- Valid tile-code enforcement and four-copy physical tile limits.\n- Valid exposed triplets/runs, with at most four exposed melds.\n- Invalid Chi selections and malformed state/action input safely leave the round unchanged.\n\n### Validation\n\nPassed successfully:\n\n```sh\nnpm test\n# 20 passing tests\n\nnpm run check\n# game.js, transitions.js, and app.js syntax checks pass\n```"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "Let's make Willow Table nicer to play now that the rules checks pass. Please continue the existing game in this folder. The green table feels right, but at 1280 by 720 my hand and controls fall below the screen. Make the desktop layout more compact and the phone layout comfortable without shrinking the tile labels; scrolling the hand itself is fine on a narrow screen. I'd like to select a tile first and then press Discard, with arrow keys, Home/End, Enter and Escape working naturally. Keep focus usable when turns change, and announce turn and claim updates politely to screen readers. Add a small Settings panel with slow/normal/fast computer turns, standard/large tile text, and reduced motion that follows my device by default. Save those preferences locally. Show everyone's full discard history, including mine, and explain unfamiliar claim buttons in plain English. Keep the interface entirely English and local, and run the relevant checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll first inspect the existing application structure, game UI, tests, and scripts so the changes match the project’s current framework and conventions. Then I’ll identify the relevant layout, keyboard/focus, accessibility, settings/persistence, and discard-history code paths; implement the requested responsive and interaction improvements; and finally run the applicable checks and inspect the edited files."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The project is a compact, dependency-free browser game with state transitions already covered by Node tests. The initial implementation renders tile buttons as immediate discards and currently has only a single last-discard display, so I’ll now read the complete UI, styling, state-transition behavior, and existing tests before changing those interaction contracts."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Implementation plan\n\n1. Make the table’s desktop geometry substantially shorter and keep the hand/actions within a 720px viewport; on phones, keep tile-label font sizes intact and make only the hand horizontally scrollable.\n2. Replace immediate tile discard with a selected-tile state and explicit **Discard selected tile** control. Add hand navigation for Arrow keys, Home/End, Enter, and Escape, and restore meaningful focus after turn/claim changes.\n3. Preserve a separate, serializable discard history for each seat so claimed discards do not disappear from the historical record; render complete histories for all four players.\n4. Add an English-only Settings disclosure backed by local storage for computer pace, text size, and reduced-motion preference (default: follow the device).\n5. Improve polite status announcements and use plain-English claim labels/explanations. Then run the test suite, syntax checks, and a final source inspection."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I’ve added the settings controls and made discard history backward-compatible with saved rounds: active discards can still be removed when claimed, while `discardHistory` retains every tile ever thrown. Next I’ll replace the UI controller and stylesheet together so selection, keyboard behavior, focus management, responsive layout, and preference application are coherent rather than bolted onto the old immediate-discard rendering."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The editor accepted the state test, but its safe payload limit rejected the two full-file replacements before either source file changed. To avoid a partial implementation, I’ll now write each complete replacement atomically, then immediately syntax-check and test it."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The implementation now passes all automated checks (21 tests). I’ll perform the required final inspection of the modified sources and diff, including checking the compact layout values and the new accessibility/persistence hooks, then make any small correction that inspection reveals."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Inspection found one keyboard-scope refinement: the global shortcut handler could otherwise intercept Arrow keys while a Settings select has focus during the player’s turn. I’ll limit hand-navigation shortcuts to focused hand tiles, preserving native, comfortable controls everywhere else, and re-run the checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The keyboard handler is now constrained to the hand, so form controls retain their expected behavior. I’ll run the final syntax and test validation once more and verify the exact edited handler is present."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Implemented the requested playability, responsive, accessibility, and persistence improvements.\n\n### What changed\n\n- **More compact desktop table**\n  - Reduced desktop table felt height from 630px to 500px.\n  - Tightened header, table, tile, action-area, and rule-card spacing so the hand and controls fit much better at **1280×720**.\n\n- **Comfortable phone layout**\n  - Kept normal tile-label sizing on mobile rather than shrinking it.\n  - Made the player hand a horizontal scrolling strip on narrow screens.\n  - Preserved a readable felt/table layout and compact opponent information.\n\n- **Select, then discard**\n  - Clicking a tile now selects it.\n  - A disabled/enabled **Discard selected tile** button appears in turn controls.\n  - Selected tiles have a clear visual state and `aria-pressed` state.\n\n- **Keyboard and focus support**\n  - While focus is in the hand:\n    - Arrow keys navigate selected tiles.\n    - `Home` / `End` select first / last tile.\n    - `Enter` discards the selected tile.\n    - `Escape` clears selection.\n  - Focus moves back to the hand when the player’s turn begins and to claim choices when a claim decision is needed.\n  - Settings controls retain their native keyboard behavior.\n\n- **Accessibility**\n  - Turn and claim messages remain politely announced through the existing live region, now with `aria-atomic=\"true\"`.\n  - Claim buttons now explain their meaning in plain English:\n    - “Ron — win with this discard”\n    - “Pon — make a matching triple”\n    - “Chi — make a run with …”\n    - “Pass — do not claim”\n  - Added visible focus indicators.\n\n- **Settings panel with local persistence**\n  - Added a local, English-only Settings panel:\n    - Computer turns: Slow / Normal / Fast\n    - Tile text: Standard / Large\n    - Reduced motion: Follow device / Reduce motion / Full motion\n  - Preferences save in `localStorage` under `willow-table-preferences-v1`.\n  - “Follow device” honors `prefers-reduced-motion`.\n\n- **Full discard histories**\n  - Every seat now has a collapsible complete discard history.\n  - Claimed discards remain in history even though they are removed from the active discard pile.\n  - Existing saved games are upgraded in memory by initializing their history from existing discards.\n\n- **Test coverage**\n  - Added a test confirming a discard remains in history after it is claimed.\n\n### Files updated\n\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/app.js`\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/index.html`\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/styles.css`\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/transitions.js`\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/game.test.js`\n\n### Validation completed\n\nPassed successfully:\n\n```sh\nnpm test\n# 21 passing tests\n\nnpm run check\n# game.js, transitions.js, and app.js syntax checks pass\n```"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "The compact table looks better in the browser. I selected East and then tried End the selected tile changes but keyboard focus jumps back to 2 Characters. restoreFocus uses selected.focus  first.focus and focus returns undefined so the fallback always runs. Please fix that and make selection track a physical hand position instead of just a tile code two identical tiles should not both be selected or trap arrow-key navigation. Escape should clear selection while keeping focus in the hand. Don't steal focus from Settings or an open discard history when a computer acts. Please add meaningful coverage for duplicate tiles and focus behavior then update the README with the new controls and preferences."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll inspect the current UI controller and test setup to understand the selection/focus implementation and whether browser-DOM tests are already available. I’ll then replace tile-code selection with a stable hand-position selection, correct focus restoration so it does not fall through after a successful focus call, preserve focus in Settings/discard-history controls during computer updates, add focused coverage for duplicate tiles and focus behavior using the project’s existing tooling (or a small testable helper if no DOM framework exists), update the README, and run all checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The existing tests are transition-only Node tests and the app has no DOM test dependency. I’ll keep the project dependency-free by extracting the pure hand-selection and focus-restoration decision logic into a small module, testing duplicate-position navigation and protected-focus policy directly, and using that module from the browser controller. The browser rendering will also preserve an open, focused discard-history summary across a computer render instead of replacing it and moving focus to the hand."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I’ve added dependency-free tests for the new pure navigation and focus-protection rules, and documented the intended controls. I’ll now wire those rules into the UI: selection will be an index in the rendered, sorted hand; each duplicate will have a distinct button/index; render will preserve open discard histories; and focus restoration will only run when the user is not actively using Settings or discard history."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The new coverage passes, including duplicate-position navigation and protected focus policy. I’ll now inspect the integrated controller for any remaining tile-code references and verify the focus restoration implementation does not repeat the `focus()`-returns-undefined fallback bug before the final validation."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Inspection confirms the selection conversion is complete, but it also caught the same `focus() || fallback` pattern still present in the rewritten restore path. I’ll replace it with an explicit element existence check, so a successfully focused selected/End tile is never overwritten by the first tile fallback, then rerun the full test and syntax suite."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The explicit existence check is now in place, fixing the reported focus regression. I’ll perform the final verification: test suite, syntax checks, and targeted searches to confirm there are no remaining code-paths that select by tile code or use the faulty focus fallback."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Implemented the keyboard-selection and focus fixes.\n\n### Fixed\n\n- **End/Home/arrow focus no longer falls back to the first tile**\n  - Replaced the faulty `element.focus() || fallback.focus()` behavior.\n  - Focus now explicitly targets the indexed tile first and only uses the first tile if that indexed element does not exist.\n\n- **Selection now tracks a physical hand position**\n  - Replaced tile-code selection with a selected hand index.\n  - Duplicate tiles are independently selectable.\n  - Only the chosen duplicate receives the selected visual/ARIA state.\n  - Arrow navigation moves across actual tile positions and wraps naturally.\n\n- **Escape behavior**\n  - `Escape` clears the selected tile.\n  - Focus remains on the currently focused hand tile.\n\n- **Focus preservation during computer updates**\n  - The renderer records whether focus is in:\n    - Settings, or\n    - a discard-history panel.\n  - Computer turns no longer force focus away from Settings.\n  - Open discard histories are restored after re-rendering, and their summary regains focus when it was active.\n\n### Added coverage\n\nAdded dependency-free tests in:\n\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/hand-controls.test.js`\n\nThe tests cover:\n\n- Duplicate tile navigation by physical position.\n- Home, End, arrow movement, and wrapping.\n- Focus-protection behavior for Settings and discard history.\n\nSupporting pure helpers are in:\n\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/hand-controls.js`\n\n### Documentation\n\nUpdated `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/README.md` with:\n\n- Select-then-discard behavior.\n- Arrow, Home, End, Enter, and Escape controls.\n- Duplicate tile selection behavior.\n- Saved settings preferences.\n- Discard history and focus preservation behavior.\n\n### Validation\n\nPassed successfully:\n\n```sh\nnpm test\n# 23 tests passing\n\nnpm run check\n# Syntax checks pass for game.js, transitions.js,\n# hand-controls.js, and app.js\n```"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "I'd like Willow Table to remember finished hands so I can look back at a session. Please add a local history panel with the newest 30 completed hands, showing the outcome, winner, finish time and turn count. Let me filter wins and draws, add a short personal note, and see simple totals without introducing money or tournament scoring. A finished hand must be recorded once, even after refreshing. Starting over during an unfinished hand should ask me first and should not count as a completed hand. Please harden saved-round loading at the same time: I checked isValidRound and a null player throws, while a claim phase with no discarder is accepted. Damaged or old saves should be handled clearly without a blank screen, and unavailable browser storage should still allow play with an honest status message. Add a versioned JSON backup and restore for the current hand, preferences, history and notes, validate everything before replacement, and require confirmation before restoring. Keep it local, preserve the existing game, and test the failure cases as well as the happy path."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll first map the application structure, current persistence/round validation, restart flow, and test setup. Then I’ll implement the history, resilient local persistence, validated versioned backup/restore, and confirmation flows in the established project style. Finally, I’ll run the relevant tests/build and inspect the changed files to verify both normal and failure-path behavior."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The project is a small dependency-free ES-module app with all persistence and UI logic concentrated in `app.js`, plus transition validation in `transitions.js`. I’ll now read those modules, markup/styles, and the existing tests so the changes retain the current data model and test conventions."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The validator confirms the reported gaps: it dereferences nullable players and does not enforce the claim-phase discard relationship. The UI has no reusable persistence boundary yet, so I’ll add a small pure persistence module (testable in Node) for schemas, save/load guards, backup validation, and finished-hand recording; wire it into the app; and extend transition tests for malformed rounds."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Implementation plan\n\n- Harden `isValidRound` so malformed player entries return `false`, and a claim window must identify a valid discarder whose current final discard matches `lastDiscard`.\n- Introduce a versioned, testable local-data module that validates preferences/history/backup payloads before use and safely reports unavailable or failing storage.\n- Replace direct browser-storage calls with guarded persistence, add completion IDs so finished hands are appended once (maximum 30), and preserve unfinished restarts behind confirmation.\n- Add a local session-history panel, personal notes, totals/filtering, and JSON export/import with validated restore confirmation.\n- Extend tests for the validator, history cap/idempotence, backup acceptance/rejection, and storage failure behavior."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The foundational validation and persistence helpers are now in place. I’ll next replace the app’s direct storage paths with the guarded, versioned data flow and connect the new session UI; completion persistence will be idempotent by hand ID, including an ended hand restored after refresh."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The full app rewrite exceeds the precise editor’s single-replacement limit because the existing source is deliberately minified into 33 very long lines. I’ll use a single deterministic file rewrite for this larger refactor, then immediately syntax-check and inspect it; all other edits remain controlled and test-backed."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The syntax check caught one invalid optional-chaining assignment in the newly wired discard button, before any runtime testing. I’ll correct that binding, then add the history/backup controls and styling and run the complete test/check suite."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The panel and restore controls are now present, and the direct storage operations are guarded. Before final verification I’ll add explicit regression assertions for null players and malformed claim windows, make restored legacy-valid rounds receive the metadata needed for future history recording, then run every test and syntax check."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "All automated tests now pass, including the new corruption and persistence cases. I noticed one final migration edge case during review: an already-ended legacy save should be added to history when first loaded, rather than only when it next completes. I’ll make that idempotent load-time save (using its persisted/generated hand ID), include the persistence module in the project syntax-check script, and perform the final diff/test inspection."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The final inspection confirms the backup schema is versioned and validates the round, preferences, history, notes, and metadata before restore. I also identified that some browsers can throw while *accessing* `localStorage` itself (not only during `getItem`/`setItem`), so I’ll route every use through a safe accessor before the final test run."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Completed\n\nImplemented local completed-hand history and resilient persistence for Willow Table.\n\n### Added session history\n- Records completed hands once using a persistent hand ID, including after refresh.\n- Retains the newest **30** hands.\n- Shows:\n  - Outcome: win or draw\n  - Winner\n  - Finish time\n  - Turn count\n- Includes simple totals for completed hands, wins, and draws.\n- Filters: all hands, wins, or draws.\n- Each history item supports a local personal note (up to 280 characters).\n- No money, wagering, or tournament scoring was introduced.\n\n### Restart and completion behavior\n- **New hand** now asks for confirmation when an unfinished hand is active.\n- Discarded unfinished hands are not added to history.\n- Completed hands are safely deduplicated, including when loading a previously completed saved hand.\n\n### Persistence hardening\n- Added `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/persistence.js`.\n- Browser storage is guarded against:\n  - unavailable storage,\n  - blocked storage,\n  - malformed JSON,\n  - write failures.\n- The game remains playable in the current tab when storage is unavailable, with an explicit status message.\n- Damaged, invalid, or obsolete saved rounds now result in a clear status message and a fresh hand rather than a blank/broken screen.\n\n### Round validation fixes\nUpdated `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/transitions.js`:\n- `isValidRound` now safely rejects a `null` player instead of throwing.\n- Claim-phase states now require:\n  - a valid `lastDiscarder`,\n  - a valid `lastDiscard`,\n  - that the discarder’s current last discard matches `lastDiscard`.\n\n### Backup and restore\nAdded versioned JSON backup/restore:\n- Backup includes current hand, preferences, completed-hand history, and notes.\n- Restore validates the entire payload before changing any local data.\n- Restore asks for confirmation before replacing the current hand, settings, history, and notes.\n- Invalid/unsupported backup files leave existing data untouched and show an explanatory message.\n\n### UI and documentation\nUpdated:\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/index.html`\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/styles.css`\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/README.md`\n\n### Tests added\n- Null player and malformed claim-window validation.\n- History deduplication and 30-item cap.\n- Valid and damaged backup payload handling.\n- Unavailable storage behavior.\n\n### Validation run\nAll checks pass:\n\n```text\nnpm test        # 27 passing tests\nnpm run check   # syntax checks pass, including persistence.js\ngit diff --check\n```"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "I found a few issues in review. Searching result text for the word draw marks self-draw wins as Draw; please store an explicit result kind and winning seat instead. Backup history currently accepts arbitrary outcome strings and duplicate IDs, and imported round metadata and discardHistory are not fully checked. Validate these fields, enforce real 136-tile round inventories and phase-appropriate hand sizes at the persistence boundary, and render imported text safely. A failed storage write after restore must not say the backup was saved locally. Please preserve typed notes and focus while computer turns render. The new controller also lost the explanatory claim labels and the fallback that focuses the first hand tile at the start of my turn; restore those. Add targeted regressions and a deterministic full-round simulation that exercises draws, discards and claims, checks tile conservation, and confirms hands terminate. Keep all existing features working."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll audit the current persistence schema, round model, render/focus behavior, and tests against each review finding. Then I’ll tighten the validated boundary (including explicit completion metadata, canonical tile inventory and phase hand counts), repair UI focus/claim guidance, add a deterministic end-to-end simulation, and run the full suite plus syntax/diff checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The review issues are confirmed: completion classification is inferred from display text; backup validation only uses the transition-level shape check; re-rendering rebuilds note inputs; and restore ignores write results. I’ll add a stricter persistence-only round validator (without weakening transition fixture tests), make result metadata explicit across transitions and the controller, and preserve active note input state through renders."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The strict validator now distinguishes transition legality from import/save legality: ordinary transition fixtures can remain small, while persisted data must account for all 136 canonical tiles, match phase-specific concealed-hand counts, carry valid metadata, and retain valid discard history. Next I’ll wire that validator and explicit result fields into the controller, preserving active note input/focus across table updates."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The controller now records outcome and winner from explicit state fields, restore reports storage failure honestly, and re-renders restore an active note’s exact value, focus, and selection. I’ll now replace the outdated backup test fixture with a real dealt 136-tile hand, add malformed metadata/history/discard-history regressions, and add a seeded full-hand simulation that validates conservation after every transition."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The deterministic simulation correctly reaches an exhaustive draw with conserved tiles, but that particular fixed wall does not produce a claim. I’ll retain the deterministic simulation and switch it to a seeded deterministic shuffle selected to produce at least one legal claim, rather than weakening the claim-coverage assertion."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "A simple seeded LCG with seed `1` produces nine claim settlements and ends in a Ron win, so it provides the desired reproducible full-round coverage. I’ll update the simulation to use that generator, then resolve any strict-validator UI edge cases and run the complete suite."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The seeded simulation is now deterministic and claim-producing. One no-op edit was correctly rejected because that strict metadata condition was already present; I’ll now execute the full tests to surface integration issues, then inspect the final changed sources and add any missing targeted regression."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "One final consistency issue surfaced in review of the stricter count rules: a Ron finish transfers the active discard from the source player to the winner, so the ended-state validator must account for both the winner’s extra tile and the discarder’s missing tile. I’ll correct that case, bump the backup schema version for the new required metadata, and make the full simulation validate its terminating persisted-round shape."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The schema is now version `2`, intentionally invalidating prior backups that lack required explicit result metadata. The final simulation assertion was added; I’ll verify its import state and run the full validation once more."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The final test identified only a missing test import (the simulation behavior itself completed). I’ll add that import and rerun all validation commands."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The missing import is corrected. I’ll perform the required final test, syntax, whitespace, and repository-status verification now."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The persisted-round assertion is failing because the simulation’s terminal Ron state needs to be examined against the new exact phase accounting. I’ll print only its terminal metadata and seat counts, correct the validator or simulation metadata based on that concrete state, then rerun the final checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The terminal state shows the validator—not the simulator—is wrong: after a player discards, their concealed hand returns to its normal post-meld baseline; a claim removes the discard pile tile, not another concealed tile. I’ll fix claim and Ron-ended count formulas accordingly and rerun the complete check set."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The phase formulas now reflect actual transitions: claim windows retain baseline hand sizes, discarding adds a discard rather than removing an additional concealed tile, and a Ron winner alone has the terminal extra tile. I’ll run the final validation suite."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Completed\n\nImplemented the review fixes across the controller, transition state, persistence boundary, and tests.\n\n### Result metadata and history\n- Replaced display-text inference (`/draw/i`) with explicit round fields:\n  - `resultKind`: `\"win\"` or `\"draw\"`\n  - `winnerSeat`: seat index or `null` for draws\n- History now records result kind and winner from these fields, so self-draw wins are no longer misclassified as draws.\n- History validation now rejects:\n  - arbitrary outcome strings,\n  - duplicate hand IDs,\n  - invalid winner/outcome combinations.\n\n### Backup/restore hardening\n- Bumped backup schema to **version 2** because explicit completion metadata is now required.\n- Added `isValidSavedRound()` at the persistence boundary. Imported/saved rounds now require:\n  - a valid hand ID, turn count, message/result metadata, and completion timestamp,\n  - a complete canonical **136-tile inventory**,\n  - valid per-tile multiplicity,\n  - phase-appropriate concealed-hand sizes,\n  - valid `discardHistory` tiles with all visible discards represented in history,\n  - explicit, consistent win/draw metadata.\n- Invalid/old backups are rejected before replacing session state.\n- Restore now reports:\n  - **“Backup restored locally”** only when all storage writes succeed.\n  - **“Backup restored for this tab, but browser storage is unavailable.”** when writing fails.\n\n### UI resilience and accessibility\n- Restored explanatory claim labels:\n  - Ron ends the hand.\n  - Pon makes a triple.\n  - Chi makes a run for the next player.\n- Restored the fallback that focuses the first hand tile when a user turn starts and no specific tile index is available.\n- Preserves an actively typed history note’s:\n  - value,\n  - focus,\n  - selection/caret position\n  during computer-turn re-renders.\n- Continued safe rendering behavior for imported/user text.\n\n### Tests\nAdded targeted regressions for:\n- invalid result metadata,\n- malformed hand IDs,\n- invalid inventory and hand sizes,\n- malformed `discardHistory`,\n- arbitrary outcome strings,\n- duplicate imported history IDs,\n- explicit phase-appropriate completion metadata.\n\nAdded a deterministic full-round simulation using a seeded shuffle that:\n- exercises draws, discards, and claims,\n- confirms all 136 tiles are conserved after every transition,\n- confirms the hand terminates,\n- validates the terminal state through the strict saved-round validator.\n\n## Validation completed\n\nAll checks pass:\n\n```text\nnpm test        # 29 passing\nnpm run check   # passed\ngit diff --check # passed\n```\n\nNote: the repository status shows unrelated untracked paths outside this project workspace (`../lantern-table/`, `../mahjong-all-files.txt`) plus the workspace itself as untracked; I did not modify or remove those."
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "One final import check: the completion test currently turns an arbitrary dealt hand into a win just by setting metadata. A saved win should require a genuinely winning hand for the declared winner, and an exhaustive draw should require an empty wall. Please enforce both and replace that fixture with real winning tiles while keeping all 136 tiles accounted for. Add regression tests for those impossible outcomes. Also format the compressed one-line source into readable, consistently indented code without changing behavior, then rerun the checks. After that I will review the app and package the conversation annotations."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll inspect the current strict saved-round validator and test fixtures, then:\n1. require a declared win’s `winnerSeat` to hold a legal winning hand;\n2. require an exhaustive draw to have an empty wall;\n3. replace the metadata-only win fixture with a real, fully accounted-for winning inventory;\n4. add regressions for impossible win/draw outcomes;\n5. reformat the compressed application source consistently without changing behavior; and\n6. run the full test, syntax, and whitespace checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The current validator confirms terminal metadata and tile accounting but does not yet tie an ended result to the terminal board: an ended win can be declared for a non-winning concealed hand, and an ended draw can retain wall tiles. I’ll add those semantic checks using the existing `isWinningHand()` helper and construct terminal fixtures by moving canonical tiles—not inventing or dropping tiles. I’ll also expand the compact files into the project’s existing readable JavaScript style."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The test fixture can safely be made canonical by replacing East’s existing 14 concealed tiles with a known legal 14-tile hand and returning those removed tiles to the wall. This preserves exactly the original 136-tile multiset and gives every non-winner 13 tiles. The draw fixture will use the same canonical state redistributed into players, with no wall tiles left."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I’ll now make the validator and fixture changes. The fixture helpers will build terminal states from `createWall()` by removing tiles through counted selection, so the strict canonical-inventory rule remains exercised rather than bypassed."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "One fixture adjustment is needed before validation: the initial helper attempted to allocate more copies of several tiles than exist in a canonical wall. I’ll instead begin with an ordinary canonical deal, return only East’s original hand to the wall, and draw the known winning hand from that returned canonical inventory. That preserves all 136 physical tiles correctly."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The first test run surfaced only the expected fixture refactor error (`wonRound` still referenced the removed helper); no production-validator failure occurred. I’ll correct that helper, then use an ephemeral formatter rather than adding a runtime dependency, and rerun validation."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The compact source and the edited supporting files are now consistently formatted by Prettier without adding a project dependency. I’ll run the complete validation command and inspect the finalized persistence rules and outcome regression fixture."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The semantic win fixture is still rejected, so I’ll diagnose the individual saved-round predicates rather than weaken the validation. The likely issue is fixture construction relative to the fixed wall order; I’ll compare its inventory and winner hand directly with the exported validators, then make the smallest correction."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The diagnostic confirms the validator is correct: the fixture tried to source three East tiles and a Red pair from a wall that did not contain all required copies after dealing. I’ll build the winner from the complete canonical inventory, then redistribute the remaining tiles into the other three baseline hands and wall. This maintains both physical conservation and legal terminal hand counts."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "All semantic regressions now pass: a terminal win validates only with an actual legal winner hand, and a terminal draw validates only with an empty wall. I’ll apply the same formatter to every JavaScript file in the workspace for consistent indentation, then perform one final full validation and file-state check."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Completed\n\n### Persisted completion outcomes are now semantically validated\n\nIn `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/persistence.js`:\n\n- A saved ended **win** now requires the declared `winnerSeat` to have a genuinely legal winning hand:\n  ```js\n  isWinningHand(round.players[winner].hand, round.players[winner].melds.length)\n  ```\n- A saved ended **draw** now requires:\n  ```js\n  round.wall.length === 0\n  ```\n\nThis is in addition to the existing strict canonical 136-tile inventory, terminal hand-count, metadata, and discard-history checks.\n\n### Regression coverage added\n\nIn `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/persistence.test.js`:\n\n- Replaced the old metadata-only “win” fixture with a real 14-tile winning hand:\n  - `1m 2m 3m`\n  - `4p 5p 6p`\n  - `7s 8s 9s`\n  - `E E E`\n  - `R R`\n- The fixture starts from a complete canonical inventory, allocates the winning hand, redistributes the remaining tiles to the other players and wall, and therefore preserves all **136 tiles**.\n- Added regression assertions that reject:\n  - a declared win whose winner hand is not actually complete;\n  - a declared exhaustive draw that still has a tile in the wall.\n\n### Formatting\n\nUsed Prettier to format all JavaScript files in the project, including the previously compressed `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/app.js`, while preserving behavior.\n\n### Validation\n\nAll requested checks pass:\n\n```text\nnpm test\n# 29 passing, 0 failing\n\nnpm run check\n# passed\n\ngit diff --check\n# passed\n```\n\nThe working directory still shows pre-existing/unrelated untracked entries:\n\n```text\n?? ../lantern-table/\n?? ../mahjong-all-files.txt\n?? ./\n```\n\nNo external package was added to the project; Prettier was invoked ephemerally with `npx`."
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "Live play in Willow Table gets stuck after a computer discard when I have no legal claim. I reproduced it at http://127.0.0.1:4330: South discarded 3 Characters, the wall stayed at 82, and the screen kept saying Computer players are thinking. Refreshing advances it again. In app.js, discard saves and renders, but only schedules settlement when seat is zero. Please fix the controller so every discard resumes the appropriate flow: automatically settle if I have no choice, or wait for my real claim decision. Add a controller-level regression using controlled timers or a small testable scheduler, covering a computer discard with no human claim, a real claim window that waits, and cancellation on a new hand. Then run the full checks. Keep the existing layout, keyboard controls, saved history and backups intact. This task is only the gameplay fix; leave the annotation package for the following task."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Plan\n\nI’ll trace the live-play discard/claim controller and its current timer lifecycle, then identify the project’s testing and validation commands. I’ll make the smallest controller-focused change so computer discards either advance automatically when the human cannot claim or pause only for a valid human claim. I’ll add deterministic regression coverage for those paths plus timer cancellation on a new hand, then run the complete configured checks while preserving UI, keyboard behavior, persistence/history, and backups."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The initial inspection confirms the defect exactly: `discard()` schedules claim settlement only when East discards. The existing browser entry point is tightly coupled to the DOM, so I’ll now inspect the full controller-adjacent functions and current test style to extract a small scheduler/controller module that can be tested in Node without changing the app’s UI or persistence integration."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The transition layer already provides authoritative legal human-claim detection and settlement. The required behavior is therefore: after any discard, schedule automatic settlement only when East has no legal claim; otherwise leave the claim window open until East explicitly claims or passes. I’ll centralize that policy and the generation-guarded timeout lifecycle in a DOM-free controller, wire `app.js` through it (including new-hand cancellation), and add controlled-timer tests for all three requested cases."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Implementation plan\n\n1. Add a small DOM-independent claim-flow controller with injectable timer functions and a cancellation generation guard.\n2. Use it from `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/app.js`:\n   - after **every** successful discard,\n   - when resuming restored rounds,\n   - and when cancelling work for a new hand, finish, or restore.\n3. Add Node tests with a fake scheduler for automatic computer-discard settlement, a real human claim window, and cancellation.\n4. Include the new module in the syntax check, then run all tests and checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The standalone controller and deterministic tests are in place. I’ll now replace only the app’s claim-settlement timer logic with that controller, keeping the existing computer-turn timer and all rendering, saves, history, keyboard handlers, and backup behavior unchanged."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "One grouped edit did not match the exact HTML-escaping text, while the independent controller wiring edits succeeded. I’ll inspect the affected declarations now, insert the controller at the correct location, and then verify the complete changed surface before running the suite."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The inspected code is syntactically valid except that the new controller instance still needs to be declared. The controller’s policy matches the existing `resume()` rule: East’s own discard always auto-settles computer claims; a computer discard auto-settles only when `claimChoices(state, 0)` is empty. I’ll add that declaration and run the full suite."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The app now owns a single claim-flow controller instance, and `cancelBot()` cancels both the existing computer-turn timeout and a pending automatic claim settlement. I’ll verify the final integration points and execute all configured tests and syntax checks."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "## Completed: live-play claim-flow fix\n\n### What changed\n\n- Added a small, testable claim-flow scheduler in:\n  - `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/claim-controller.js`\n\n- Updated `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/app.js` so **every discard** now resumes claim handling:\n  - A computer discard with **no legal human claim** schedules automatic settlement and play continues.\n  - A computer discard with a real legal human claim leaves the claim window open for the player to choose Ron, Pon, Chi, or Pass.\n  - East’s own discard still automatically settles computer claims.\n  - Starting a new hand, ending a hand, or restoring a backup cancels any pending automatic claim settlement alongside the existing computer-turn timer.\n\n- Preserved the existing UI/layout, keyboard controls, saved-round behavior, session history, and backup logic. No annotation-package work was included.\n\n### Regression coverage\n\nAdded controlled-timer controller tests in:\n\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/claim-controller.test.js`\n\nThey cover:\n\n1. Computer discard with no human claim auto-settles.\n2. A legal human claim window does not auto-settle and waits for a decision.\n3. Starting a new hand cancels a queued settlement.\n\nAlso updated the syntax-check script in:\n\n- `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/package.json`\n\n### Validation\n\nSuccessfully ran the full configured checks:\n\n```sh\nnpm test\nnpm run check\n```\n\nResults: **32 tests passed; syntax checks passed.**"
+      }
+    ]
+  }
+]

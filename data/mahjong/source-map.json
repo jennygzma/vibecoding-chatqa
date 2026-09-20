@@ -1,0 +1,829 @@
+{
+  "format": "willow-table-source-map-v1",
+  "messages": [
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_mu97618r_1",
+      "timestamp": 1789871314635,
+      "role": "user",
+      "original_position": 0,
+      "index": 1
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_RnDR9Tjg",
+      "timestamp": 1789871317229,
+      "role": "assistant",
+      "original_position": 1,
+      "index": 2
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_UpmoB7q1",
+      "timestamp": 1789871340552,
+      "role": "assistant",
+      "original_position": 4,
+      "index": 3
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_fIQLwQWq",
+      "timestamp": 1789871383566,
+      "role": "assistant",
+      "original_position": 9,
+      "index": 4
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_fVfLKHUZ",
+      "timestamp": 1789871398170,
+      "role": "assistant",
+      "original_position": 13,
+      "index": 5
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_aS3lOkBL",
+      "timestamp": 1789871418754,
+      "role": "assistant",
+      "original_position": 20,
+      "index": 6
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_fpJ672at",
+      "timestamp": 1789871422811,
+      "role": "assistant",
+      "original_position": 23,
+      "index": 7
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_jkMo74No",
+      "timestamp": 1789871427528,
+      "role": "assistant",
+      "original_position": 26,
+      "index": 8
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_N4nMFNN8",
+      "timestamp": 1789871431739,
+      "role": "assistant",
+      "original_position": 29,
+      "index": 9
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_mu979kyl_2b",
+      "timestamp": 1789871480157,
+      "role": "user",
+      "original_position": 30,
+      "index": 10
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_aYdwh11W",
+      "timestamp": 1789871483202,
+      "role": "assistant",
+      "original_position": 31,
+      "index": 11
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_3MvQQqz8",
+      "timestamp": 1789871499211,
+      "role": "assistant",
+      "original_position": 35,
+      "index": 12
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_Eg5uXzJb",
+      "timestamp": 1789871527366,
+      "role": "assistant",
+      "original_position": 39,
+      "index": 13
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_ckfEj3BW",
+      "timestamp": 1789871541945,
+      "role": "assistant",
+      "original_position": 41,
+      "index": 14
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_Ued6WAF0",
+      "timestamp": 1789871552056,
+      "role": "assistant",
+      "original_position": 43,
+      "index": 15
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_2l_1Fr-W",
+      "timestamp": 1789871564718,
+      "role": "assistant",
+      "original_position": 47,
+      "index": 16
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_R-UR9flF",
+      "timestamp": 1789871569676,
+      "role": "assistant",
+      "original_position": 49,
+      "index": 17
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_nkbb_cYL",
+      "timestamp": 1789871578886,
+      "role": "assistant",
+      "original_position": 52,
+      "index": 18
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_IU7tTfgQ",
+      "timestamp": 1789871586988,
+      "role": "assistant",
+      "original_position": 55,
+      "index": 19
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_NVfPXLwY",
+      "timestamp": 1789871594612,
+      "role": "assistant",
+      "original_position": 58,
+      "index": 20
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_lfVM-oCm",
+      "timestamp": 1789871600188,
+      "role": "assistant",
+      "original_position": 61,
+      "index": 21
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_vez_MrdD",
+      "timestamp": 1789871604997,
+      "role": "assistant",
+      "original_position": 64,
+      "index": 22
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_mu97dvyn_cc",
+      "timestamp": 1789871681039,
+      "role": "user",
+      "original_position": 65,
+      "index": 23
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_1oyt_5YG",
+      "timestamp": 1789871684705,
+      "role": "assistant",
+      "original_position": 66,
+      "index": 24
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_Viunq8hD",
+      "timestamp": 1789871700456,
+      "role": "assistant",
+      "original_position": 70,
+      "index": 25
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_sNIyx3UL",
+      "timestamp": 1789871723047,
+      "role": "assistant",
+      "original_position": 75,
+      "index": 26
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_xe0osS5V",
+      "timestamp": 1789871853545,
+      "role": "assistant",
+      "original_position": 77,
+      "index": 27
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_jISB84OB",
+      "timestamp": 1789871874893,
+      "role": "assistant",
+      "original_position": 83,
+      "index": 28
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_TSD9o8O1",
+      "timestamp": 1789871886397,
+      "role": "assistant",
+      "original_position": 88,
+      "index": 29
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_iQw_tcKD",
+      "timestamp": 1789871895485,
+      "role": "assistant",
+      "original_position": 90,
+      "index": 30
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_CwntnNx1",
+      "timestamp": 1789871908035,
+      "role": "assistant",
+      "original_position": 96,
+      "index": 31
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_mF6jU_CQ",
+      "timestamp": 1789871915488,
+      "role": "assistant",
+      "original_position": 99,
+      "index": 32
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_HiYHIsYl",
+      "timestamp": 1789871921075,
+      "role": "assistant",
+      "original_position": 101,
+      "index": 33
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_I2Z020CV",
+      "timestamp": 1789871926460,
+      "role": "assistant",
+      "original_position": 104,
+      "index": 34
+    },
+    {
+      "session": "1789871314281_7q4jt",
+      "original_message_id": "msg_N3B3tifl",
+      "timestamp": 1789871937348,
+      "role": "assistant",
+      "original_position": 107,
+      "index": 35
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_mu97k1vc_t9",
+      "timestamp": 1789871968632,
+      "role": "user",
+      "original_position": 0,
+      "index": 36
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_NgAdTgAT",
+      "timestamp": 1789871971233,
+      "role": "assistant",
+      "original_position": 1,
+      "index": 37
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_bI9BfLhl",
+      "timestamp": 1789871974616,
+      "role": "assistant",
+      "original_position": 4,
+      "index": 38
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_QsUaCiwe",
+      "timestamp": 1789871989189,
+      "role": "assistant",
+      "original_position": 7,
+      "index": 39
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_3w98ZYTS",
+      "timestamp": 1789872045407,
+      "role": "assistant",
+      "original_position": 13,
+      "index": 40
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_kVVb8Rvy",
+      "timestamp": 1789872072599,
+      "role": "assistant",
+      "original_position": 17,
+      "index": 41
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_BuvMK2A9",
+      "timestamp": 1789872078188,
+      "role": "assistant",
+      "original_position": 19,
+      "index": 42
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_qIl-Zw2I",
+      "timestamp": 1789872085358,
+      "role": "assistant",
+      "original_position": 22,
+      "index": 43
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_AShmQnw2",
+      "timestamp": 1789872089233,
+      "role": "assistant",
+      "original_position": 24,
+      "index": 44
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_IOOXMYNr",
+      "timestamp": 1789872094632,
+      "role": "assistant",
+      "original_position": 27,
+      "index": 45
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_mu97oc3u_vj",
+      "timestamp": 1789872168522,
+      "role": "user",
+      "original_position": 28,
+      "index": 46
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_-UZvohPk",
+      "timestamp": 1789872173102,
+      "role": "assistant",
+      "original_position": 29,
+      "index": 47
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_HSo5u1to",
+      "timestamp": 1789872186242,
+      "role": "assistant",
+      "original_position": 32,
+      "index": 48
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_kw4CRs6Z",
+      "timestamp": 1789872212583,
+      "role": "assistant",
+      "original_position": 37,
+      "index": 49
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_jenrSuYT",
+      "timestamp": 1789872217481,
+      "role": "assistant",
+      "original_position": 39,
+      "index": 50
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_dCAU8D2D",
+      "timestamp": 1789872224639,
+      "role": "assistant",
+      "original_position": 42,
+      "index": 51
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_QMNX3SqH",
+      "timestamp": 1789872228861,
+      "role": "assistant",
+      "original_position": 44,
+      "index": 52
+    },
+    {
+      "session": "1789871968283_zgmsn",
+      "original_message_id": "msg_80i1gkvY",
+      "timestamp": 1789872233376,
+      "role": "assistant",
+      "original_position": 48,
+      "index": 53
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_mu97qacw_10f",
+      "timestamp": 1789872259568,
+      "role": "user",
+      "original_position": 0,
+      "index": 54
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_V2v7njg3",
+      "timestamp": 1789872261777,
+      "role": "assistant",
+      "original_position": 1,
+      "index": 55
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_tYTkOjYw",
+      "timestamp": 1789872265026,
+      "role": "assistant",
+      "original_position": 4,
+      "index": 56
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_mLqYYprD",
+      "timestamp": 1789872267251,
+      "role": "assistant",
+      "original_position": 7,
+      "index": 57
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_hJbwTQo1",
+      "timestamp": 1789872282139,
+      "role": "assistant",
+      "original_position": 10,
+      "index": 58
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_bOmorcv4",
+      "timestamp": 1789872326183,
+      "role": "assistant",
+      "original_position": 14,
+      "index": 59
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_5IwmYihq",
+      "timestamp": 1789872349087,
+      "role": "assistant",
+      "original_position": 16,
+      "index": 60
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_NeKsludJ",
+      "timestamp": 1789872354547,
+      "role": "assistant",
+      "original_position": 18,
+      "index": 61
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg__961w8QZ",
+      "timestamp": 1789872365585,
+      "role": "assistant",
+      "original_position": 22,
+      "index": 62
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_9M4FVFzC",
+      "timestamp": 1789872377330,
+      "role": "assistant",
+      "original_position": 27,
+      "index": 63
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_RSZgaxN0",
+      "timestamp": 1789872387001,
+      "role": "assistant",
+      "original_position": 31,
+      "index": 64
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_RKUjVkMo",
+      "timestamp": 1789872392666,
+      "role": "assistant",
+      "original_position": 33,
+      "index": 65
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_mu97vmot_13t",
+      "timestamp": 1789872508829,
+      "role": "user",
+      "original_position": 34,
+      "index": 66
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_Egow1SkB",
+      "timestamp": 1789872511809,
+      "role": "assistant",
+      "original_position": 35,
+      "index": 67
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_fIEXlB_Q",
+      "timestamp": 1789872535034,
+      "role": "assistant",
+      "original_position": 39,
+      "index": 68
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_6OsIJu_v",
+      "timestamp": 1789872552365,
+      "role": "assistant",
+      "original_position": 43,
+      "index": 69
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_GijPTffc",
+      "timestamp": 1789872566309,
+      "role": "assistant",
+      "original_position": 45,
+      "index": 70
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_Xy3YZtwn",
+      "timestamp": 1789872570123,
+      "role": "assistant",
+      "original_position": 47,
+      "index": 71
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_5GndE-7A",
+      "timestamp": 1789872573125,
+      "role": "assistant",
+      "original_position": 49,
+      "index": 72
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_BE_rdYZ5",
+      "timestamp": 1789872581799,
+      "role": "assistant",
+      "original_position": 53,
+      "index": 73
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_P31guxpc",
+      "timestamp": 1789872593755,
+      "role": "assistant",
+      "original_position": 56,
+      "index": 74
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_M_jcEuCO",
+      "timestamp": 1789872609533,
+      "role": "assistant",
+      "original_position": 62,
+      "index": 75
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_hElBV_Y6",
+      "timestamp": 1789872611920,
+      "role": "assistant",
+      "original_position": 65,
+      "index": 76
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_wyuAvGR3",
+      "timestamp": 1789872614928,
+      "role": "assistant",
+      "original_position": 67,
+      "index": 77
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_nzgzo5nF",
+      "timestamp": 1789872620200,
+      "role": "assistant",
+      "original_position": 70,
+      "index": 78
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_XOYYKgI5",
+      "timestamp": 1789872626250,
+      "role": "assistant",
+      "original_position": 72,
+      "index": 79
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_LnWVed02",
+      "timestamp": 1789872629869,
+      "role": "assistant",
+      "original_position": 74,
+      "index": 80
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_RR43g0sB",
+      "timestamp": 1789872636331,
+      "role": "assistant",
+      "original_position": 77,
+      "index": 81
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_mu97znb4_1fd",
+      "timestamp": 1789872696256,
+      "role": "user",
+      "original_position": 78,
+      "index": 82
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_OLCYhEAc",
+      "timestamp": 1789872699076,
+      "role": "assistant",
+      "original_position": 79,
+      "index": 83
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_TtT10WX0",
+      "timestamp": 1789872711312,
+      "role": "assistant",
+      "original_position": 82,
+      "index": 84
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_qrobDMeJ",
+      "timestamp": 1789872715446,
+      "role": "assistant",
+      "original_position": 85,
+      "index": 85
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_LRA7fFDK",
+      "timestamp": 1789872736299,
+      "role": "assistant",
+      "original_position": 88,
+      "index": 86
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_sI2G5DCw",
+      "timestamp": 1789872748319,
+      "role": "assistant",
+      "original_position": 92,
+      "index": 87
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_zDmPZFCL",
+      "timestamp": 1789872754805,
+      "role": "assistant",
+      "original_position": 95,
+      "index": 88
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_syke682v",
+      "timestamp": 1789872759047,
+      "role": "assistant",
+      "original_position": 98,
+      "index": 89
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_Ou-RUXRn",
+      "timestamp": 1789872763591,
+      "role": "assistant",
+      "original_position": 101,
+      "index": 90
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_WFZBJVqL",
+      "timestamp": 1789872769484,
+      "role": "assistant",
+      "original_position": 104,
+      "index": 91
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_sGXd7H54",
+      "timestamp": 1789872776779,
+      "role": "assistant",
+      "original_position": 107,
+      "index": 92
+    },
+    {
+      "session": "1789872259218_ixf55",
+      "original_message_id": "msg_b1DuSSU6",
+      "timestamp": 1789872781405,
+      "role": "assistant",
+      "original_position": 110,
+      "index": 93
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_mu9840o1_1lb",
+      "timestamp": 1789872900193,
+      "role": "user",
+      "original_position": 0,
+      "index": 94
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_OV19khYu",
+      "timestamp": 1789872902950,
+      "role": "assistant",
+      "original_position": 1,
+      "index": 95
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_cOC2BKM2",
+      "timestamp": 1789872906577,
+      "role": "assistant",
+      "original_position": 5,
+      "index": 96
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_3i0MSPwY",
+      "timestamp": 1789872911413,
+      "role": "assistant",
+      "original_position": 8,
+      "index": 97
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_NdCWlq2q",
+      "timestamp": 1789872924253,
+      "role": "assistant",
+      "original_position": 11,
+      "index": 98
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_8gfaXVT7",
+      "timestamp": 1789872935011,
+      "role": "assistant",
+      "original_position": 15,
+      "index": 99
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_K2ZGJjKY",
+      "timestamp": 1789872957444,
+      "role": "assistant",
+      "original_position": 24,
+      "index": 100
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg__HWn1rQe",
+      "timestamp": 1789872961863,
+      "role": "assistant",
+      "original_position": 27,
+      "index": 101
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_0QNlgXIH",
+      "timestamp": 1789872966061,
+      "role": "assistant",
+      "original_position": 29,
+      "index": 102
+    },
+    {
+      "session": "1789872899823_oln5b",
+      "original_message_id": "msg_oPyIjK50",
+      "timestamp": 1789872971088,
+      "role": "assistant",
+      "original_position": 32,
+      "index": 103
+    }
+  ]
+}

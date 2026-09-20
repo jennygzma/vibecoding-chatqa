@@ -1,0 +1,834 @@
+{
+  "qa": [
+    {
+      "question": "What kind of Mahjong experience was Willow Table meant to be?",
+      "answer": "A four-player table game with the human player and three computer players.",
+      "evidence": [
+        "D1:1: \"I mean a four-player table with me and three computer players, rather than a tile-matching puzzle.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which player is the human participant in Willow Table?",
+      "answer": "The human player is East.",
+      "evidence": [
+        "D1:35: \"**East (you), South, West, North**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What should a new round provide before later enhancements?",
+      "answer": "It should provide clear tiles, legal turns and claims, and a resumable hand.",
+      "evidence": [
+        "D1:1: \"Start with a playable round, clear tile faces, legal turns and claims, and a way to come back to the same hand after refreshing.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Was tournament scoring part of the requested game?",
+      "answer": "No. The game uses a small house ruleset instead of tournament scoring.",
+      "evidence": [
+        "D1:1: \"A small, clearly explained house ruleset is fine; I don't need tournament scoring or accounts.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Does Willow Table require player accounts?",
+      "answer": "No. Accounts were explicitly out of scope.",
+      "evidence": [
+        "D1:1: \"A small, clearly explained house ruleset is fine; I don't need tournament scoring or accounts.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Where is game progress stored?",
+      "answer": "The current hand is stored in browser localStorage.",
+      "evidence": [
+        "D1:9: \"- **Persistence:** The full current hand is saved in browser `localStorage`; refreshing resumes the same state.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens when the page is refreshed during a hand?",
+      "answer": "The same saved hand resumes.",
+      "evidence": [
+        "D1:9: \"- **Persistence:** The full current hand is saved in browser `localStorage`; refreshing resumes the same state.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why was Google Fonts removed from the stylesheet?",
+      "answer": "Because loading it would make a network request and violate the local-only requirement.",
+      "evidence": [
+        "D1:7: \"During source review, I found that the visual stylesheet imported Google Fonts, which would make a network request and conflicts with the requirement to keep the game entirely local.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Does the game contact a backend or use external assets?",
+      "answer": "No; it has no backend, requests, or external assets.",
+      "evidence": [
+        "D1:9: \"- **Local-only:** No accounts, backend, deployment setup, requests, or external assets.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which language should the interface use?",
+      "answer": "All interface text should be English.",
+      "evidence": [
+        "D1:1: \"Use English throughout.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens to the other Mahjong projects?",
+      "answer": "They must be left untouched.",
+      "evidence": [
+        "D1:1: \"Please build it in the empty willow-table folder that is open now, keep everything local, and leave the other Mahjong projects alone.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Was deployment requested for Willow Table?",
+      "answer": "No. Nothing should be pushed or deployed.",
+      "evidence": [
+        "D1:1: \"Do not push or deploy anything.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which tile set size does the house ruleset use?",
+      "answer": "It uses 136 tiles.",
+      "evidence": [
+        "D1:9: \"- **House rules:** 136 tiles; a win is four runs/triples plus a pair.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How is a winning hand composed in the simplified rules?",
+      "answer": "It needs four runs or triples plus a pair.",
+      "evidence": [
+        "D1:9: \"- **House rules:** 136 tiles; a win is four runs/triples plus a pair.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which major Mahjong features are intentionally omitted?",
+      "answer": "Kan, Riichi, special hands, flowers, scoring, and wagering are omitted.",
+      "evidence": [
+        "D1:9: \"Kan, Riichi, special hands, flowers, scoring, and wagering are intentionally excluded.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When can a player claim Ron?",
+      "answer": "Ron is available from any discard when it completes a valid hand.",
+      "evidence": [
+        "D1:9: \"- **Legal claims:**\n  - **Ron** from any discard when it completes a valid hand.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What tiles are needed to claim Pon?",
+      "answer": "The claimant needs two matching tiles in hand.",
+      "evidence": [
+        "D1:9: \"- **Pon** from any discard with two matching tiles.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Who may claim Chi?",
+      "answer": "Only the immediately next player may claim Chi.",
+      "evidence": [
+        "D1:9: \"- **Chi** only from the immediately preceding player’s discard.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which claims take precedence over Chi?",
+      "answer": "Ron takes precedence over Pon, and Pon takes precedence over Chi.",
+      "evidence": [
+        "D1:9: \"Claim priority is Ron → Pon → Chi.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How are equally ranked claims resolved?",
+      "answer": "The closest seat clockwise from the discarder wins.",
+      "evidence": [
+        "D1:22: \"Within the same claim priority, the winner is selected by **clockwise seat distance from the discarder**.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "If I discard a winning tile, how can I claim it back?",
+      "answer": "You cannot claim your own discard; the discarder is excluded from every claim type.",
+      "evidence": [
+        "D1:22: \"The **discarder is excluded** from all claim eligibility.\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "Why does my Pon beat a computer player's Ron?",
+      "answer": "It does not. A legal Ron takes priority over a requested Pon or Chi.",
+      "evidence": [
+        "D1:22: \"A user-requested **Pon or Chi cannot override a computer player’s legal Ron**.\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "When may East declare a self-draw win?",
+      "answer": "During East's discard phase with a completed hand, after the opening deal or a wall draw; never immediately after Pon or Chi.",
+      "evidence": [
+        "D1:35: \"A completed hand may self-draw only during its owner’s discard phase **and** when `turnStartedByDraw === true`.\"",
+        "D1:35: \"Self-draw only on East’s opening hand or after a wall draw—not after Pon/Chi.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens to a computer turn after a refresh?",
+      "answer": "Its pending draw or discard behavior resumes.",
+      "evidence": [
+        "D1:22: \"### Persistence and callback handling\n\n- Refreshing during a computer turn resumes its pending draw/discard behavior.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What should reappear after refreshing during a claim window from a computer discard?",
+      "answer": "The player's available claim controls should be restored.",
+      "evidence": [
+        "D1:22: \"- Refreshing during a claim window:\n  - restores the player’s available claim controls after a computer discard;\n  - resumes automatic settlement after the player’s discard;\n  - automatically advances a computer discard when the player has no legal claim.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When should a restored computer discard advance automatically?",
+      "answer": "It advances automatically when the player has no legal claim.",
+      "evidence": [
+        "D1:22: \"- Refreshing during a claim window:\n  - restores the player’s available claim controls after a computer discard;\n  - resumes automatic settlement after the player’s discard;\n  - automatically advances a computer discard when the player has no legal claim.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How are stale callbacks prevented from changing a new hand?",
+      "answer": "Starting a new hand cancels the timer and advances a generation token.",
+      "evidence": [
+        "D1:22: \"- Starting a new hand cancels the current timer and increments a generation token, so stale callbacks from the prior hand cannot alter the new hand.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why were turn transitions moved out of the browser controller?",
+      "answer": "So drawing, discarding, claims, and settlement could be tested as pure state transitions.",
+      "evidence": [
+        "D1:22: \"It now owns pure state transitions for drawing, discarding, self-draw validity, claim availability, claim selection, claim settlement, and applying settlements.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What is special about East's opening hand for self-draw?",
+      "answer": "East may win from the opening dealt hand, without waiting for another wall draw.",
+      "evidence": [
+        "D1:35: \"`true` for East’s opening dealt hand.\"",
+        "D1:35: \"Self-draw only on East’s opening hand or after a wall draw—not after Pon/Chi.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why does claiming Pon or Chi count as a wall draw?",
+      "answer": "It does not. A claimed turn cannot create self-draw eligibility.",
+      "evidence": [
+        "D1:35: \"A completed hand immediately after Pon or Chi cannot self-draw.\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "What must be tracked to determine self-draw eligibility?",
+      "answer": "Whether the current turn actually came from a draw.",
+      "evidence": [
+        "D1:35: \"Added persisted `turnStartedByDraw` round state:\n  - `true` for East’s opening dealt hand.\n  - `true` after a successful wall draw.\n  - `false` after a discard, claim advance, Pon, or Chi.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Should self-draw eligibility survive a refresh?",
+      "answer": "Yes, the draw-origin state must persist across refreshes.",
+      "evidence": [
+        "D1:35: \"Because it is part of `state`, it survives localStorage refresh automatically.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What is the consistent seat order?",
+      "answer": "East, South, West, then North.",
+      "evidence": [
+        "D1:35: \"**East (you), South, West, North**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How should an unknown tile code be handled?",
+      "answer": "It should be rejected without throwing or changing the round.",
+      "evidence": [
+        "D1:23: \"Reject unknown tile codes, more than four copies of a tile, impossible exposed-meld counts, and invalid Chi option indexes without throwing or changing the round.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What is the limit on copies of a single tile?",
+      "answer": "A round may not contain more than four copies of one tile.",
+      "evidence": [
+        "D1:23: \"Reject unknown tile codes, more than four copies of a tile, impossible exposed-meld counts, and invalid Chi option indexes without throwing or changing the round.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How should impossible exposed-meld counts be handled?",
+      "answer": "They must be rejected without changing the round.",
+      "evidence": [
+        "D1:23: \"Reject unknown tile codes, more than four copies of a tile, impossible exposed-meld counts, and invalid Chi option indexes without throwing or changing the round.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What should an invalid Chi-option index do?",
+      "answer": "It should be rejected safely without changing the round.",
+      "evidence": [
+        "D1:23: \"Reject unknown tile codes, more than four copies of a tile, impossible exposed-meld counts, and invalid Chi option indexes without throwing or changing the round.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the desktop layout change after the laptop-screen review?",
+      "answer": "The felt height was reduced from 630 to 500 pixels, with tighter spacing to keep the hand and controls visible at 1280×720.",
+      "evidence": [
+        "D1:36: \"The green table feels right, but at 1280 by 720 my hand and controls fall below the screen.\"",
+        "D1:45: \"Reduced desktop table felt height from 630px to 500px.\"",
+        "D1:45: \"Tightened header, table, tile, action-area, and rule-card spacing so the hand and controls fit much better at **1280×720**.\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How should the phone layout preserve readable tile labels?",
+      "answer": "Keep the labels full size and let the hand scroll horizontally on narrow screens.",
+      "evidence": [
+        "D1:45: \"Kept normal tile-label sizing on mobile rather than shrinking it.\"",
+        "D1:45: \"Made the player hand a horizontal scrolling strip on narrow screens.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does a player discard a tile?",
+      "answer": "Select a tile first, then press Discard.",
+      "evidence": [
+        "D1:45: \"Clicking a tile now selects it.\"",
+        "D1:45: \"A disabled/enabled **Discard selected tile** button appears in turn controls.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which keys move through a hand?",
+      "answer": "Arrow keys move the selection.",
+      "evidence": [
+        "D1:45: \"- **Keyboard and focus support**\n  - While focus is in the hand:\n    - Arrow keys navigate selected tiles.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What do Home and End do in the hand?",
+      "answer": "They select the first and last tiles.",
+      "evidence": [
+        "D1:45: \"- `Home` / `End` select first / last tile.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What does Enter do after selecting a tile?",
+      "answer": "It discards the selected tile.",
+      "evidence": [
+        "D1:45: \"- `Enter` discards the selected tile.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What does Escape do in the hand?",
+      "answer": "It clears the selection while keeping focus on the current hand tile.",
+      "evidence": [
+        "D1:53: \"`Escape` clears the selected tile.\"",
+        "D1:53: \"Focus remains on the currently focused hand tile.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Where should focus go when East's turn starts?",
+      "answer": "Back to the hand, with the first tile available as a fallback.",
+      "evidence": [
+        "D1:81: \"Restored the fallback that focuses the first hand tile when a user turn starts and no specific tile index is available.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Where should focus go when a claim decision is needed?",
+      "answer": "To the claim choices.",
+      "evidence": [
+        "D1:45: \"- Focus moves back to the hand when the player’s turn begins and to claim choices when a claim decision is needed.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How should turn and claim changes reach screen-reader users?",
+      "answer": "They should be announced politely through an atomic live region.",
+      "evidence": [
+        "D1:45: \"Turn and claim messages remain politely announced through the existing live region, now with `aria-atomic=\"true\"`.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which computer-turn speeds are offered?",
+      "answer": "Slow, normal, and fast.",
+      "evidence": [
+        "D1:45: \"Computer turns: Slow / Normal / Fast\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What tile-text sizes are available?",
+      "answer": "Standard and large.",
+      "evidence": [
+        "D1:45: \"Tile text: Standard / Large\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What is the default reduced-motion behavior?",
+      "answer": "It follows the device preference by default.",
+      "evidence": [
+        "D1:36: \"Add a small Settings panel with slow/normal/fast computer turns, standard/large tile text, and reduced motion that follows my device by default.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Are settings retained after a reload?",
+      "answer": "Yes, preferences save locally.",
+      "evidence": [
+        "D1:45: \"Preferences save in `localStorage` under `willow-table-preferences-v1`.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Whose discard histories can be viewed?",
+      "answer": "Every seat's complete discard history, including East's.",
+      "evidence": [
+        "D1:45: \"Every seat now has a collapsible complete discard history.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Do claimed tiles disappear from discard history?",
+      "answer": "No. They remain in history even after leaving the active discard pile.",
+      "evidence": [
+        "D1:45: \"- Claimed discards remain in history even though they are removed from the active discard pile.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How should unfamiliar claim actions be labeled?",
+      "answer": "Their buttons should explain the action in plain English.",
+      "evidence": [
+        "D1:45: \"Claim buttons now explain their meaning in plain English:\n    - “Ron — win with this discard”\n    - “Pon — make a matching triple”\n    - “Chi — make a run with …”\n    - “Pass — do not claim”\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Should computer updates steal focus from Settings?",
+      "answer": "No. Settings should retain focus while computer turns render.",
+      "evidence": [
+        "D1:53: \"Computer turns no longer force focus away from Settings.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Should computer updates close an open discard history?",
+      "answer": "No. Open histories are restored after rendering, and an active history summary regains focus.",
+      "evidence": [
+        "D1:53: \"Open discard histories are restored after re-rendering, and their summary regains focus when it was active.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did selection change after duplicate-tile navigation failed?",
+      "answer": "Selection moved from tile codes to hand positions, so only one physical copy is selected and arrows can move across duplicates.",
+      "evidence": [
+        "D1:46: \"Please fix that and make selection track a physical hand position instead of just a tile code two identical tiles should not both be selected or trap arrow-key navigation.\"",
+        "D1:53: \"Replaced tile-code selection with a selected hand index.\"",
+        "D1:53: \"Only the chosen duplicate receives the selected visual/ARIA state.\"",
+        "D1:53: \"Arrow navigation moves across actual tile positions and wraps naturally.\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How many completed hands does the session history retain?",
+      "answer": "It keeps the newest 30 completed hands.",
+      "evidence": [
+        "D1:54: \"Please add a local history panel with the newest 30 completed hands, showing the outcome, winner, finish time and turn count.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which details appear for each completed hand?",
+      "answer": "Outcome, winner, finish time, and turn count.",
+      "evidence": [
+        "D1:54: \"Please add a local history panel with the newest 30 completed hands, showing the outcome, winner, finish time and turn count.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which history filters are available?",
+      "answer": "The history can show all hands, wins only, or draws only.",
+      "evidence": [
+        "D1:65: \"Filters: all hands, wins, or draws.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Can a player attach a note to a completed hand?",
+      "answer": "Yes, each history entry can have a short personal note.",
+      "evidence": [
+        "D1:65: \"Each history item supports a local personal note (up to 280 characters).\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Do session totals introduce scoring or money?",
+      "answer": "No. They are simple totals without money or tournament scoring.",
+      "evidence": [
+        "D1:54: \"Let me filter wins and draws, add a short personal note, and see simple totals without introducing money or tournament scoring.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How often may a finished hand be recorded?",
+      "answer": "Once per persistent hand ID; reloading a completed hand must not add another entry.",
+      "evidence": [
+        "D1:65: \"Records completed hands once using a persistent hand ID, including after refresh.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Where will an abandoned unfinished hand appear in completed history?",
+      "answer": "It will not appear there. Restarting asks for confirmation, and unfinished hands are not recorded as completed.",
+      "evidence": [
+        "D1:65: \"**New hand** now asks for confirmation when an unfinished hand is active.\"",
+        "D1:65: \"Discarded unfinished hands are not added to history.\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How should a damaged or old save affect the screen?",
+      "answer": "It shows a clear status message and deals a fresh hand instead of leaving the screen broken.",
+      "evidence": [
+        "D1:65: \"Damaged, invalid, or obsolete saved rounds now result in a clear status message and a fresh hand rather than a blank/broken screen.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Can the game still run if browser storage is unavailable?",
+      "answer": "Yes, it should keep playing in the current tab and report storage honestly.",
+      "evidence": [
+        "D1:65: \"The game remains playable in the current tab when storage is unavailable, with an explicit status message.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What does a backup include?",
+      "answer": "The current hand, preferences, history, and notes.",
+      "evidence": [
+        "D1:65: \"Backup includes current hand, preferences, completed-hand history, and notes.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What must happen before a backup replaces local data?",
+      "answer": "The backup must be validated and the user must confirm restoration.",
+      "evidence": [
+        "D1:65: \"Restore validates the entire payload before changing any local data.\"",
+        "D1:65: \"Restore asks for confirmation before replacing the current hand, settings, history, and notes.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was the history bug that counted self-draw wins as draws corrected?",
+      "answer": "Text matching was replaced with an explicit result kind and winner seat.",
+      "evidence": [
+        "D1:66: \"Searching result text for the word draw marks self-draw wins as Draw; please store an explicit result kind and winning seat instead.\"",
+        "D1:81: \"Replaced display-text inference (`/draw/i`) with explicit round fields:\n  - `resultKind`: `\"win\"` or `\"draw\"`\n  - `winnerSeat`: seat index or `null` for draws\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "Which result data should a finished hand store?",
+      "answer": "A win or draw result kind, plus a winning seat index or null for draws.",
+      "evidence": [
+        "D1:81: \"`resultKind`: `\"win\"` or `\"draw\"`\"",
+        "D1:81: \"`winnerSeat`: seat index or `null` for draws\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which history values must be rejected during backup import?",
+      "answer": "Arbitrary outcome strings, duplicate hand IDs, and inconsistent winner/outcome combinations.",
+      "evidence": [
+        "D1:81: \"History validation now rejects:\n  - arbitrary outcome strings,\n  - duplicate hand IDs,\n  - invalid winner/outcome combinations.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What must a claim-phase save identify about the discarded tile?",
+      "answer": "A valid discarder and tile, with that tile matching the last active discard in the discarder’s pile.",
+      "evidence": [
+        "D1:65: \"Claim-phase states now require:\n  - a valid `lastDiscarder`,\n  - a valid `lastDiscard`,\n  - that the discarder’s current last discard matches `lastDiscard`.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which validation layer checks imported hand sizes against the current turn phase?",
+      "answer": "The strict saved-round validator at the persistence boundary.",
+      "evidence": [
+        "D1:81: \"Added `isValidSavedRound()` at the persistence boundary.\"",
+        "D1:81: \"phase-appropriate concealed-hand sizes,\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What inventory must a saved round represent?",
+      "answer": "The complete canonical set of 136 tiles, with valid multiplicities.",
+      "evidence": [
+        "D1:81: \"a complete canonical **136-tile inventory**,\"",
+        "D1:81: \"valid per-tile multiplicity,\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why is counting 136 tiles alone insufficient to validate a saved round?",
+      "answer": "The tiles must also be distributed into concealed-hand sizes that are legal for the current turn phase.",
+      "evidence": [
+        "D1:81: \"a complete canonical **136-tile inventory**,\"",
+        "D1:81: \"phase-appropriate concealed-hand sizes,\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What must the restore status say if storage fails afterward?",
+      "answer": "It must say the backup was restored for this tab but browser storage is unavailable.",
+      "evidence": [
+        "D1:81: \"**“Backup restored for this tab, but browser storage is unavailable.”** when writing fails.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which parts of an unfinished history note survive computer-turn rendering?",
+      "answer": "Its text, keyboard focus, and caret or selection position.",
+      "evidence": [
+        "D1:81: \"Preserves an actively typed history note’s:\n  - value,\n  - focus,\n  - selection/caret position\n  during computer-turn re-renders.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What does the full-round simulation verify after every transition?",
+      "answer": "It verifies that all 136 tiles are conserved.",
+      "evidence": [
+        "D1:81: \"confirms all 136 tiles are conserved after every transition,\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What must the full-round simulation establish about a hand?",
+      "answer": "That it terminates.",
+      "evidence": [
+        "D1:81: \"confirms the hand terminates,\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How should the simulation check its terminal state?",
+      "answer": "With the strict saved-round validator.",
+      "evidence": [
+        "D1:81: \"validates the terminal state through the strict saved-round validator.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Can an arbitrary hand become a valid imported win just by changing its result metadata?",
+      "answer": "No. The declared winner must actually hold a legal winning hand.",
+      "evidence": [
+        "D1:93: \"A saved ended **win** now requires the declared `winnerSeat` to have a genuinely legal winning hand:\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How can a saved exhaustive draw be valid while tiles remain in the wall?",
+      "answer": "It cannot; an exhaustive draw requires an empty wall.",
+      "evidence": [
+        "D1:93: \"A saved ended **draw** now requires:\n  ```js\n  round.wall.length === 0\n  ```\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How did the completion-test fixture change after review?",
+      "answer": "A metadata-only win was replaced with a real 14-tile winning hand drawn from the canonical inventory.",
+      "evidence": [
+        "D1:82: \"One final import check: the completion test currently turns an arbitrary dealt hand into a win just by setting metadata.\"",
+        "D1:93: \"Replaced the old metadata-only “win” fixture with a real 14-tile winning hand:\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How was the winning fixture built without creating extra tiles?",
+      "answer": "It allocates the winning hand from the canonical set and distributes the remaining tiles among the other players and wall.",
+      "evidence": [
+        "D1:93: \"The fixture starts from a complete canonical inventory, allocates the winning hand, redistributes the remaining tiles to the other players and wall, and therefore preserves all **136 tiles**.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Were code-formatting changes meant to alter behavior?",
+      "answer": "No; the source was reformatted without changing behavior.",
+      "evidence": [
+        "D1:93: \"while preserving behavior.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What caused the computer-discard stall?",
+      "answer": "Settlement was scheduled only after East discarded.",
+      "evidence": [
+        "D1:94: \"In app.js, discard saves and renders, but only schedules settlement when seat is zero.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What should happen after every discard?",
+      "answer": "The controller should resume the appropriate claim flow.",
+      "evidence": [
+        "D1:94: \"Please fix the controller so every discard resumes the appropriate flow: automatically settle if I have no choice, or wait for my real claim decision.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When does a computer discard settle automatically?",
+      "answer": "When East has no legal claim.",
+      "evidence": [
+        "D1:103: \"A computer discard with **no legal human claim** schedules automatic settlement and play continues.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When does a computer discard wait for East?",
+      "answer": "When East has a real legal claim to decide.",
+      "evidence": [
+        "D1:103: \"- A computer discard with a real legal human claim leaves the claim window open for the player to choose Ron, Pon, Chi, or Pass.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens after East discards?",
+      "answer": "Computer claims still settle automatically.",
+      "evidence": [
+        "D1:103: \"- East’s own discard still automatically settles computer claims.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which events cancel a pending automatic settlement?",
+      "answer": "Starting a new hand, ending a hand, and restoring a backup.",
+      "evidence": [
+        "D1:103: \"- Starting a new hand, ending a hand, or restoring a backup cancels any pending automatic claim settlement alongside the existing computer-turn timer.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why is the claim-flow controller separate from the DOM?",
+      "answer": "So its timer behavior can be tested deterministically.",
+      "evidence": [
+        "D1:96: \"The existing browser entry point is tightly coupled to the DOM, so I’ll now inspect the full controller-adjacent functions and current test style to extract a small scheduler/controller module that can be tested in Node without changing the app’s UI or persistence integration.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the launch instructions change after module loading was reviewed?",
+      "answer": "The initial instruction to open index.html directly was replaced with running a local HTTP server, because the game uses ES modules.",
+      "evidence": [
+        "D1:9: \"Open `/Users/andychen/Documents/ChatGPT/Vibe Code/willow-table/index.html` in a browser to play.\"",
+        "D1:22: \"`README.md` now correctly says to launch through a local HTTP server because the game uses ES modules.\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "Why did the backup format move to version 2?",
+      "answer": "The revised format requires explicit completion metadata; old backups are rejected before replacement.",
+      "evidence": [
+        "D1:65: \"Added versioned JSON backup/restore:\"",
+        "D1:81: \"Bumped backup schema to **version 2** because explicit completion metadata is now required.\"",
+        "D1:81: \"Invalid/old backups are rejected before replacing session state.\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How long may a completed-hand note be?",
+      "answer": "Up to 280 characters.",
+      "evidence": [
+        "D1:65: \"Each history item supports a local personal note (up to 280 characters).\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What changed to remove the need to refresh after computer discards?",
+      "answer": "Every discard now resumes claim handling: settle automatically when East has no claim, otherwise wait for the decision.",
+      "evidence": [
+        "D1:94: \"Refreshing advances it again.\"",
+        "D1:94: \"In app.js, discard saves and renders, but only schedules settlement when seat is zero.\"",
+        "D1:103: \"so **every discard** now resumes claim handling:\"",
+        "D1:103: \"A computer discard with **no legal human claim** schedules automatic settlement and play continues.\"",
+        "D1:103: \"A computer discard with a real legal human claim leaves the claim window open for the player to choose Ron, Pon, Chi, or Pass.\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "If East has a legal claim when the page is refreshed, should the restored game settle it automatically?",
+      "answer": "No. It restores the claim controls and waits for East’s decision.",
+      "evidence": [
+        "D1:22: \"restores the player’s available claim controls after a computer discard;\"",
+        "D1:103: \"A computer discard with a real legal human claim leaves the claim window open for the player to choose Ron, Pon, Chi, or Pass.\""
+      ],
+      "category": 1
+    },
+    {
+      "question": "How do the controls and turn scheduler help a beginner decide whether to claim?",
+      "answer": "The buttons explain the actions, and the scheduler waits while East has a legal claim decision.",
+      "evidence": [
+        "D1:45: \"Claim buttons now explain their meaning in plain English:\"",
+        "D1:103: \"A computer discard with a real legal human claim leaves the claim window open for the player to choose Ron, Pon, Chi, or Pass.\""
+      ],
+      "category": 1
+    },
+    {
+      "question": "What must an imported win satisfy beyond having the right total number of tiles?",
+      "answer": "It needs valid canonical inventory and phase-appropriate hand sizes, and the declared winner must hold a genuinely winning hand.",
+      "evidence": [
+        "D1:81: \"a complete canonical **136-tile inventory**,\"",
+        "D1:81: \"phase-appropriate concealed-hand sizes,\"",
+        "D1:93: \"A saved ended **win** now requires the declared `winnerSeat` to have a genuinely legal winning hand:\""
+      ],
+      "category": 1
+    },
+    {
+      "question": "Which choices keep both saved progress and typography local?",
+      "answer": "Progress is saved in browser storage, and system font fallbacks replace the external font import.",
+      "evidence": [
+        "D1:9: \"The full current hand is saved in browser `localStorage`; refreshing resumes the same state.\"",
+        "D1:7: \"I’ll remove that import and use local system font fallbacks instead,\""
+      ],
+      "category": 1
+    }
+  ]
+}
