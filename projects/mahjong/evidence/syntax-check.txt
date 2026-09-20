@@ -1,3 +1,3 @@
 
-> willow-table@1.0.0 check
+> mahjong@1.0.0 check
 > node --check game.js && node --check transitions.js && node --check hand-controls.js && node --check claim-controller.js && node --check persistence.js && node --check app.js

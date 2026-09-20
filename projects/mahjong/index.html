@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#102f29" />
-  <title>Willow Table — Local Mahjong</title>
+  <title>Mahjong — Local Four-Player Game</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="app-shell">
     <header class="topbar">
-      <div><p class="eyebrow">LOCAL FOUR-PLAYER MAHJONG</p><h1>Willow Table</h1></div>
+      <div><p class="eyebrow">LOCAL FOUR-PLAYER MAHJONG</p><h1>Mahjong</h1></div>
       <div class="header-actions"><span id="save-status" class="save-status">Saved locally</span><details class="settings"><summary>Settings</summary><div class="settings-panel"><label>Computer turns <select id="computer-speed"><option value="slow">Slow</option><option value="normal" selected>Normal</option><option value="fast">Fast</option></select></label><label>Tile text <select id="tile-text"><option value="standard" selected>Standard</option><option value="large">Large</option></select></label><label>Reduced motion <select id="reduced-motion"><option value="system" selected>Follow device</option><option value="reduce">Reduce motion</option><option value="full">Full motion</option></select></label></div></details><button id="new-game" class="quiet-button">New hand</button></div>
     </header>
     <section class="table" aria-label="Mahjong table">
@@ -38,7 +38,7 @@
       <p class="backup-copy">Versioned JSON backup includes the current hand, settings, completed hands, and notes. Restore validates the file and asks before replacing local data.</p>
     </section>
     <section class="rules-card">
-      <h2>Willow Table house rules</h2>
+      <h2>Mahjong house rules</h2>
       <ul><li>136 tiles: Characters, Dots, Bamboo, winds, and dragons. Seats proceed East (you), South, West, North; East opens the hand.</li><li>Win with four sets (runs or triples) and one pair. No special hands, flowers, or bonus tiles.</li><li>On a discard, <strong>Ron</strong> may be claimed by anyone, <strong>Pon</strong> by anyone, and <strong>Chi</strong> only by the next player. Ron has priority, then Pon, then Chi.</li><li>No Kan, Riichi, betting, or scorekeeping. A hand ends on a win or when the wall is exhausted.</li><li>This hand saves automatically in this browser. Refreshing resumes it; <em>New hand</em> replaces it.</li></ul>
     </section>
   </main>

@@ -1,4 +1,4 @@
-Willow Table annotation scope
+Mahjong annotation scope
 
 The 100 questions cover the four archived development sessions. They address the game rules, interface, keyboard controls, saved history, backup validation, and the live-play claim-flow correction. Later corrections govern questions about current behavior.
 
@@ -10,4 +10,4 @@ All 100 entries were reviewed individually for natural wording, distinct purpose
 
 Reference schema: https://github.com/jennygzma/vibecoding-chatqa/blob/main/app/processor.py
 
-Review evidence and validation scripts: projects/willow-table. From that directory, run python3 validate_annotations.py. To rebuild transcript views, use python3 build_annotations.py, which preserves the curated questions and original message mapping.
+Review evidence and validation scripts: projects/mahjong. From that directory, run python3 validate_annotations.py. To rebuild transcript views, use python3 build_annotations.py, which preserves the curated questions and original message mapping.

@@ -57,8 +57,8 @@ def reconstruct(raw_documents):
 
 
 def data_directory(root=ROOT):
-    local = root / "data/willow_table"
-    return local if local.is_dir() else root.parent.parent / "data/willow_table"
+    local = root / "data/mahjong"
+    return local if local.is_dir() else root.parent.parent / "data/mahjong"
 
 
 def validate(root=ROOT):

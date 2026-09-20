@@ -71,6 +71,6 @@ chatqa status
 - `chatqa process` does not write `rules.json` (run `learn-rules` for that).
 
 
-## Willow Table
+## Mahjong
 
-[Willow Table](projects/willow-table/README.md) is a local four-player Mahjong game with [100 reviewed annotations](data/willow_table/output.json) from four development sessions. The [review record](projects/willow-table/evidence/REVIEW.md) includes checks, screenshots, and source verification.
+[Mahjong](projects/mahjong/README.md) is a local four-player Mahjong game with [100 reviewed annotations](data/mahjong/output.json) from four development sessions. The [review record](projects/mahjong/evidence/REVIEW.md) includes checks, screenshots, and source verification.

@@ -12,14 +12,14 @@ class AnnotationValidationTests(unittest.TestCase):
     def setUp(self):
         self.directory = tempfile.TemporaryDirectory()
         self.root = Path(self.directory.name)
-        shutil.copytree(data_directory(ROOT), self.root / "data/willow_table")
+        shutil.copytree(data_directory(ROOT), self.root / "data/mahjong")
         shutil.copytree(ROOT / "evidence/raw", self.root / "evidence/raw")
 
     def tearDown(self):
         self.directory.cleanup()
 
     def edit(self, filename, change):
-        path = self.root / "data/willow_table" / filename
+        path = self.root / "data/mahjong" / filename
         document = json.loads(path.read_text())
         change(document)
         path.write_text(json.dumps(document))

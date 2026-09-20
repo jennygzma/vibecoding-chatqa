@@ -531,7 +531,7 @@ function downloadBackup() {
     url = URL.createObjectURL(blob),
     link = document.createElement("a");
   link.href = url;
-  link.download = `willow-table-backup-v${BACKUP_VERSION}.json`;
+  link.download = `mahjong-backup-v${BACKUP_VERSION}.json`;
   link.click();
   URL.revokeObjectURL(url);
   status("Backup downloaded");

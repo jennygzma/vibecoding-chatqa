@@ -1,18 +1,18 @@
-# Willow Table review
+# Mahjong review
 
 **Status: In Progress**
 **Reviewer: @jennygzma**
 
-Ready for Review — branch `Edgar/willow-table`. Willow Table is playable locally, and the package contains 100 reviewed English annotations from four development sessions. Approval is pending.
+Ready for Review — branch `Edgar/mahjong`. Mahjong is playable locally, and the package contains 100 reviewed English annotations from four development sessions. Approval is pending.
 
 ## Revision
 
-The branch adds the game under `projects/willow-table` and the annotation package under `data/willow_table`. Validation paths and documentation links follow this repository layout.
+The branch adds the game under `projects/mahjong` and the annotation package under `data/mahjong`. Validation paths and documentation links follow this repository layout.
 
 ## Evidence
 
-- [Annotations](../../../data/willow_table/output.json): 100 distinct questions with 130 exact citations.
-- [Cleaned conversations](../../../data/willow_table/cleaned-chat.json): 103 messages; original roles and timestamps are traceable through the source map.
+- [Annotations](../../../data/mahjong/output.json): 100 distinct questions with 130 exact citations.
+- [Cleaned conversations](../../../data/mahjong/cleaned-chat.json): 103 messages; original roles and timestamps are traceable through the source map.
 - [Source verification](source-verification.json): all four archived files match the original records byte for byte.
 - [Annotation validation](annotation-validation.json): no errors; 4 multi-hop, 7 temporal, 83 single-hop, and 6 adversarial items. Categories and answer support were reviewed individually. No category quota was imposed.
 - [Table screenshot](screenshots/table-play.png).
@@ -31,3 +31,5 @@ The branch adds the game under `projects/willow-table` and the annotation packag
 Preview: http://127.0.0.1:4330/
 
 Prepared for review in a separate branch. No deployment is included. Status remains In Progress until review approval.
+
+The uploaded project is named Mahjong. Archived conversations and screenshots retain their original working name, Willow Table; the annotation evidence is unchanged.

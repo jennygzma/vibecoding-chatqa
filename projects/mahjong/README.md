@@ -1,4 +1,4 @@
-# Willow Table
+# Mahjong
 
 A local, dependency-free four-player Mahjong game. It uses JavaScript modules, so serve this folder from a local HTTP server rather than opening `index.html` directly. For example, from this directory run `python3 -m http.server 4330`, then visit `http://127.0.0.1:4330`. Game state is stored only in the browser's `localStorage`; there are no accounts, network calls, or deployment configuration.
 
@@ -33,6 +33,8 @@ The tests cover standard and exposed-set hand recognition, invalid hand rejectio
 
 ## Conversation review package
 
-The [annotation set](../../data/willow_table/output.json) contains 100 reviewed English questions grounded in four development sessions. The [review record](evidence/REVIEW.md) links the conversations, source map, test results, and screenshots.
+The [annotation set](../../data/mahjong/output.json) contains 100 reviewed English questions grounded in four development sessions. The [review record](evidence/REVIEW.md) links the conversations, source map, test results, and screenshots.
 
 Validate the package with `python3 validate_annotations.py` and run its regression checks with `python3 -m unittest test_annotations.py`. `python3 build_annotations.py` rebuilds transcript views from the archived records without changing the curated questions.
+
+The archived development conversations and screenshots retain the earlier working name, Willow Table. Their original wording is preserved for citation accuracy. Existing browser saves remain compatible.

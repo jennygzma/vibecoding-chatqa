@@ -1,198 +1,198 @@
 
-> willow-table@1.0.0 test
+> mahjong@1.0.0 test
 > node --test
 
 TAP version 13
 # Subtest: a computer discard with no human claim settles automatically
 ok 1 - a computer discard with no human claim settles automatically
   ---
-  duration_ms: 1.185542
+  duration_ms: 0.512791
   type: 'test'
   ...
 # Subtest: a real human claim window waits for the human decision
 ok 2 - a real human claim window waits for the human decision
   ---
-  duration_ms: 0.190541
+  duration_ms: 0.072667
   type: 'test'
   ...
 # Subtest: starting a new hand cancels a pending automatic settlement
 ok 3 - starting a new hand cancels a pending automatic settlement
   ---
-  duration_ms: 0.172916
+  duration_ms: 0.072375
   type: 'test'
   ...
 # Subtest: recognizes four sets and a pair
 ok 4 - recognizes four sets and a pair
   ---
-  duration_ms: 7.97
+  duration_ms: 7.494
   type: 'test'
   ...
 # Subtest: recognizes a hand with an exposed meld
 ok 5 - recognizes a hand with an exposed meld
   ---
-  duration_ms: 0.210583
+  duration_ms: 0.193292
   type: 'test'
   ...
 # Subtest: rejects a near-complete non-winning hand
 ok 6 - rejects a near-complete non-winning hand
   ---
-  duration_ms: 0.104958
+  duration_ms: 0.102
   type: 'test'
   ...
 # Subtest: ron requires the discard to make a legal hand
 ok 7 - ron requires the discard to make a legal hand
   ---
-  duration_ms: 0.088833
+  duration_ms: 0.083583
   type: 'test'
   ...
 # Subtest: pon needs two matching concealed tiles
 ok 8 - pon needs two matching concealed tiles
   ---
-  duration_ms: 0.062417
+  duration_ms: 0.059917
   type: 'test'
   ...
 # Subtest: chi exposes only legal same-suit sequences
 ok 9 - chi exposes only legal same-suit sequences
   ---
-  duration_ms: 0.376292
+  duration_ms: 0.38625
   type: 'test'
   ...
 # Subtest: chi is limited to the immediately next player
 ok 10 - chi is limited to the immediately next player
   ---
-  duration_ms: 0.066875
+  duration_ms: 0.064417
   type: 'test'
   ...
 # Subtest: removing a claimed duplicate removes exactly two tiles
 ok 11 - removing a claimed duplicate removes exactly two tiles
   ---
-  duration_ms: 0.059708
+  duration_ms: 0.058834
   type: 'test'
   ...
 # Subtest: self-draw is available only to the active player with a complete drawn hand
 ok 12 - self-draw is available only to the active player with a complete drawn hand
   ---
-  duration_ms: 0.427
+  duration_ms: 0.421375
   type: 'test'
   ...
 # Subtest: the discarder has no legal claims on their own tile
 ok 13 - the discarder has no legal claims on their own tile
   ---
-  duration_ms: 1.351875
+  duration_ms: 0.892584
   type: 'test'
   ...
 # Subtest: a computer Ron takes priority over the user's requested Pon
 ok 14 - a computer Ron takes priority over the user's requested Pon
   ---
-  duration_ms: 0.445834
+  duration_ms: 0.273583
   type: 'test'
   ...
 # Subtest: a computer Ron takes priority over the user's requested Chi
 ok 15 - a computer Ron takes priority over the user's requested Chi
   ---
-  duration_ms: 0.352125
+  duration_ms: 0.142041
   type: 'test'
   ...
 # Subtest: equal-priority claims are settled by clockwise distance from the discarder
 ok 16 - equal-priority claims are settled by clockwise distance from the discarder
   ---
-  duration_ms: 0.299167
+  duration_ms: 0.155417
   type: 'test'
   ...
 # Subtest: pending claims and computer discard phases remain resumable after serialization
 ok 17 - pending claims and computer discard phases remain resumable after serialization
   ---
-  duration_ms: 0.178833
+  duration_ms: 0.1665
   type: 'test'
   ...
 # Subtest: a restored computer discard with no user claim can settle immediately
 ok 18 - a restored computer discard with no user claim can settle immediately
   ---
-  duration_ms: 0.064958
+  duration_ms: 0.064792
   type: 'test'
   ...
 # Subtest: draw and settlement transitions return new state without mutating their inputs
 ok 19 - draw and settlement transitions return new state without mutating their inputs
   ---
-  duration_ms: 0.174125
+  duration_ms: 0.201916
   type: 'test'
   ...
 # Subtest: self-draw requires an opening hand or a wall draw, never a Pon or Chi claim
 ok 20 - self-draw requires an opening hand or a wall draw, never a Pon or Chi claim
   ---
-  duration_ms: 0.142583
+  duration_ms: 0.148
   type: 'test'
   ...
 # Subtest: seat order is East, South, West, North
 ok 21 - seat order is East, South, West, North
   ---
-  duration_ms: 0.034
+  duration_ms: 0.036959
   type: 'test'
   ...
 # Subtest: unknown tile codes and fifth copies are rejected without transition
 ok 22 - unknown tile codes and fifth copies are rejected without transition
   ---
-  duration_ms: 0.062958
+  duration_ms: 0.0805
   type: 'test'
   ...
 # Subtest: impossible exposed melds and invalid Chi choices do not change the round
 ok 23 - impossible exposed melds and invalid Chi choices do not change the round
   ---
-  duration_ms: 0.151125
+  duration_ms: 0.145792
   type: 'test'
   ...
 # Subtest: round validation rejects null players and claim windows without their active discard
 ok 24 - round validation rejects null players and claim windows without their active discard
   ---
-  duration_ms: 0.043208
+  duration_ms: 0.0455
   type: 'test'
   ...
 # Subtest: discard history retains a claimed discard while the active discard is removed
 ok 25 - discard history retains a claimed discard while the active discard is removed
   ---
-  duration_ms: 0.152625
+  duration_ms: 0.154875
   type: 'test'
   ...
 # Subtest: a deterministic full hand conserves all 136 tiles, exercises claims, and terminates
 ok 26 - a deterministic full hand conserves all 136 tiles, exercises claims, and terminates
   ---
-  duration_ms: 17.670292
+  duration_ms: 14.465083
   type: 'test'
   ...
 # Subtest: hand navigation tracks duplicate tiles by physical position
 ok 27 - hand navigation tracks duplicate tiles by physical position
   ---
-  duration_ms: 0.465125
+  duration_ms: 0.442125
   type: 'test'
   ...
 # Subtest: focus restoration does not override Settings or discard-history interaction
 ok 28 - focus restoration does not override Settings or discard-history interaction
   ---
-  duration_ms: 0.073125
+  duration_ms: 0.068417
   type: 'test'
   ...
 # Subtest: finished hands are unique and history retains the newest 30
 ok 29 - finished hands are unique and history retains the newest 30
   ---
-  duration_ms: 1.226542
+  duration_ms: 1.64525
   type: 'test'
   ...
 # Subtest: backup validation accepts a canonical dealt round and rejects damaged metadata
 ok 30 - backup validation accepts a canonical dealt round and rejects damaged metadata
   ---
-  duration_ms: 2.14325
+  duration_ms: 2.003208
   type: 'test'
   ...
 # Subtest: saved rounds require explicit, possible completion outcomes
 ok 31 - saved rounds require explicit, possible completion outcomes
   ---
-  duration_ms: 9.410667
+  duration_ms: 7.161083
   type: 'test'
   ...
 # Subtest: storage helpers report unavailable storage without throwing
 ok 32 - storage helpers report unavailable storage without throwing
   ---
-  duration_ms: 0.203708
+  duration_ms: 0.188375
   type: 'test'
   ...
 1..32
@@ -203,4 +203,4 @@ ok 32 - storage helpers report unavailable storage without throwing
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 122.342916
+# duration_ms 83.396792
