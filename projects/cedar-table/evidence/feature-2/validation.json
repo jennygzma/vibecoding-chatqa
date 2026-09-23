@@ -1,0 +1,35 @@
+{
+  "status": "In Progress",
+  "approval": "pending",
+  "reviewer": "Andy Chen",
+  "source_commit": "b66173d78760a6655da49f6c712b5ee2c309446a",
+  "recorded_at": "2026-09-22T23:39:30.710152+00:00",
+  "automated_tests": {
+    "passed": 20,
+    "failed": 0,
+    "syntax": "passed"
+  },
+  "browser_checks": {
+    "pending_pon_restored": true,
+    "physical_hand_and_melds_preserved": true,
+    "active_clock_advanced_from": "1:01",
+    "active_clock_advanced_to": "1:07",
+    "paused_clock_stayed_at": "1:07",
+    "page_return_played_time": "1:12",
+    "offline_time_excluded": true,
+    "continued_hand_result": "West wins by Ron!",
+    "wall_tiles_at_finish": 20,
+    "finished_played_time": "3:55",
+    "finished_result_preserved_after_reload": true,
+    "finished_clock_frozen_after_continue": true
+  },
+  "dataset": {
+    "independent_sessions": 2,
+    "visible_messages": 93,
+    "annotations": 20,
+    "cross_session_questions": 4,
+    "temporal_questions": 3,
+    "exact_citations": 33,
+    "D1_text_and_numbering_unchanged": true
+  }
+}

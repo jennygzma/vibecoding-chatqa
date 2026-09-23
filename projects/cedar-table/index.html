@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Cedar Table — Mahjong</title>
+    <link rel="stylesheet" href="style.css?v=13" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">A four-seat Mahjong table</p>
+          <h1>Cedar Table</h1>
+        </div>
+        <div class="table-controls">
+          <label class="computer-pace" for="computer-pace">
+            Computer pace
+            <select id="computer-pace">
+              <option value="slow">Slow (1500 ms)</option>
+              <option value="normal">Normal (800 ms)</option>
+              <option value="fast">Fast (300 ms)</option>
+            </select>
+          </label>
+          <p id="computer-pace-notice" class="computer-pace-notice" role="status"></p>
+          <button id="continue-game">Continue hand</button>
+          <button id="pause-game">Pause</button>
+          <button id="new-game">New hand</button>
+        </div>
+      </header>
+      <section class="status">
+        <strong id="status">Setting the table…</strong>
+        <span id="wall-count"></span>
+        <span id="save-time"></span>
+      </section>
+      <p id="save-notice" class="save-notice" role="status"></p>
+      <section class="table" aria-label="Mahjong table">
+        <div id="north" class="seat north"></div>
+        <div id="west" class="seat west"></div>
+        <div class="center">
+          <span>CEDAR<br />TABLE</span>
+          <div id="last-discard" class="last-discard" aria-live="polite"></div>
+          <div id="claims" class="claims"></div>
+        </div>
+        <div id="south" class="seat south"></div>
+      </section>
+      <section class="discards" aria-labelledby="discards-title">
+        <div class="discards-heading">
+          <h2 id="discards-title">Discards</h2>
+          <span id="discard-remaining"></span>
+        </div>
+        <p class="discards-note">Current public rivers only; claimed tiles move to melds or the winning tile.</p>
+        <div id="discard-rivers" class="discard-rivers"></div>
+      </section>
+      <section class="your-area">
+        <div>
+          <h2>East — your hand</h2>
+          <div class="hand-tools">
+            <button id="analyze-hand">Analyze hand</button>
+            <p id="hand-help">Select a tile, then confirm your discard.</p>
+          </div>
+        </div>
+        <section id="practice-hints" class="practice-hints" hidden aria-live="polite"></section>
+        <div id="your-melds" class="melds"></div>
+        <div id="your-hand" class="hand" aria-label="Your tiles"></div>
+        <div id="discard-confirmation" class="discard-confirmation" aria-live="polite"></div>
+      </section>
+      <section class="statistics" aria-labelledby="statistics-title">
+        <div class="statistics-heading">
+          <h2 id="statistics-title">Statistics</h2>
+          <span>Latest 50 saved completed results</span>
+        </div>
+        <p id="statistics-empty" class="statistics-empty"></p>
+        <dl id="statistics-list" class="statistics-list"></dl>
+      </section>
+      <section class="history" aria-labelledby="history-title">
+        <div class="history-heading">
+          <h2 id="history-title">History</h2>
+          <span>Latest 50 completed hands</span>
+        </div>
+        <label class="history-filter" for="history-result-filter">
+          History result
+          <select id="history-result-filter">
+            <option value="all">All results</option>
+            <option value="east-wins">East wins</option>
+            <option value="losses">Losses</option>
+            <option value="draws">Draws</option>
+          </select>
+        </label>
+        <div class="history-export">
+          <button id="export-history-csv" type="button">Export history CSV</button>
+          <p>Exports all retained saved results, regardless of the History result filter.</p>
+        </div>
+        <p id="history-count" class="history-count" aria-live="polite"></p>
+        <p id="history-export-notice" class="history-notice" role="status"></p>
+        <p id="history-notice" class="history-notice" role="status"></p>
+        <ol id="history-list" class="history-list"></ol>
+      </section>
+      <details>
+        <summary>House rules and local opening</summary>
+        <p>
+          <strong>Open locally:</strong> in this folder run
+          <code>python3 -m http.server 4173</code>, then open
+          <code>http://localhost:4173</code>. No packages, build step, account,
+          network connection, or downloaded fonts are required.
+        </p>
+        <p>
+          You are East; turns proceed South, West, then North. The 136 physical
+          tiles remain uniquely tracked in hands, exposed melds, discards, and a
+          ron finish. A normal win is four melds (runs, triplets, or quads) plus
+          a pair. East may tsumo on the opening hand; after that tsumo requires
+          a wall or kan replacement draw.
+        </p>
+        <p>
+          Ron outranks pon/kan, which outrank chii; ties go to the nearest
+          eligible seat after the discarder. Only the next seat may chii.
+          Passing an offered call resolves the remaining eligible claims. The
+          hand ends at a win or exhaustive draw.
+        </p>
+        <p>
+          Not included: scoring/payments, riichi, dora, seat/round wind scoring,
+          closed/added kan, robbing a kan, flowers, special hands, or strategic
+          computer call choices.
+        </p>
+      </details>
+    </main>
+    <script type="module" src="app.js?v=13"></script>
+  </body>
+</html>

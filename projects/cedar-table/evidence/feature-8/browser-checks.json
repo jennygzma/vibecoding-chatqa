@@ -1,0 +1,196 @@
+{
+  "checkedAt": "2026-09-23T05:29:52.391Z",
+  "revision": "568c0f7",
+  "baselineSnapshot": "- main:\n  - paragraph: A four-seat Mahjong table\n  - heading \"Cedar Table\" [level=1]\n  - text: Computer pace\n  - combobox \"Computer pace\":\n    - option \"Slow (1500 ms)\" [selected]\n    - option \"Normal (800 ms)\"\n    - option \"Fast (300 ms)\"\n  - status\n  - button \"Resume\" [active]\n  - button \"New hand\"\n  - strong: Hand paused — no turns or timer are running.\n  - generic: 72 tiles left in wall\n  - generic: \"Last saved: Sep 23, 2026, 1:21 AM · Played: 9:37\"\n  - status\n  - region \"Mahjong table\":\n    - generic: North · 13 concealed\n    - text: West · 10 concealed\n    - generic \"PON\":\n      - generic \"3 Characters\":\n        - generic: \"3\"\n        - generic: characters\n      - generic \"3 Characters\":\n        - generic: \"3\"\n        - generic: characters\n      - generic \"3 Characters\":\n        - generic: \"3\"\n        - generic: characters\n    - text: CEDAR\n    - text: TABLE\n    - generic: \"West discarded: 8 Bamboo\"\n    - generic: South · 13 concealed\n  - region \"Discards\":\n    - heading \"Discards\" [level=2]\n    - generic: 72 tiles remaining\n    - paragraph: Current public rivers only; claimed tiles move to melds or the winning tile.\n    - heading \"East — 3 tiles still in river\" [level=3]\n    - generic \"West\":\n      - generic: W\n      - generic: West\n    - generic \"North\":\n      - generic: \"N\"\n      - generic: North\n    - generic \"Green\":\n      - generic: G\n      - generic: Green\n    - heading \"South — 3 tiles still in river\" [level=3]\n    - generic \"1 Bamboo\":\n      - generic: \"1\"\n      - generic: bamboo\n    - generic \"3 Bamboo\":\n      - generic: \"3\"\n      - generic: bamboo\n    - generic \"5 Bamboo\":\n      - generic: \"5\"\n      - generic: bamboo\n    - heading \"West — 4 tiles still in river\" [level=3]\n    - generic \"2 Bamboo\":\n      - generic: \"2\"\n      - generic: bamboo\n    - generic \"2 Bamboo\":\n      - generic: \"2\"\n      - generic: bamboo\n    - generic \"5 Bamboo\":\n      - generic: \"5\"\n      - generic: bamboo\n    - generic \"8 Bamboo — current claimable discard\":\n      - generic: \"8\"\n      - generic: bamboo\n    - generic: Current claimable\n    - heading \"North — 2 tiles still in river\" [level=3]\n    - generic \"1 Characters\":\n      - generic: \"1\"\n      - generic: characters\n    - generic \"2 Characters\":\n      - generic: \"2\"\n      - generic: characters\n  - heading \"East — your hand\" [level=2]\n  - button \"Analyze hand\" [disabled]\n  - paragraph: Paused time does not count toward this hand.\n  - generic \"Your tiles\":\n    - button \"4 bamboo\" [disabled]:\n      - generic: \"4\"\n      - generic: bamboo\n    - button \"5 bamboo\" [disabled]:\n      - generic: \"5\"\n      - generic: bamboo\n    - button \"8 bamboo\" [disabled]:\n      - generic: \"8\"\n      - generic: bamboo\n    - button \"8 bamboo\" [disabled]:\n      - generic: \"8\"\n      - generic: bamboo\n    - button \"8 bamboo\" [disabled]:\n      - generic: \"8\"\n      - generic: bamboo\n    - button \"9 bamboo\" [disabled]:\n      - generic: \"9\"\n      - generic: bamboo\n    - button \"2 characters\" [disabled]:\n      - generic: \"2\"\n      - generic: characters\n    - button \"7 characters\" [disabled]:\n      - generic: \"7\"\n      - generic: characters\n    - button \"8 characters\" [disabled]:\n      - generic: \"8\"\n      - generic: characters\n    - button \"1 dots\" [disabled]:\n      - generic: \"1\"\n      - generic: dots\n    - button \"8 dots\" [disabled]:\n      - generic: \"8\"\n      - generic: dots\n    - button \"E East\" [disabled]:\n      - generic: E\n      - generic: East\n    - button \"E East\" [disabled]:\n      - generic: E\n      - generic: East\n  - region \"Statistics\":\n    - heading \"Statistics\" [level=2]\n    - generic: Latest 50 saved completed results\n    - paragraph: Complete a hand to see statistics for the latest 50 saved results.\n    - term: Completed hands\n    - definition: \"0\"\n    - term: East wins\n    - definition: \"0\"\n    - term: Losses\n    - definition: \"0\"\n    - term: Draws\n    - definition: \"0\"\n    - term: Win rate (East wins ÷ completed hands; draws included)\n    - definition: 0%\n    - term: Total Played\n    - definition: 0:00\n    - term: Average Played\n    - definition: 0:00\n  - region \"History\":\n    - heading \"History\" [level=2]\n    - generic: Latest 50 completed hands\n    - status\n    - list:\n      - listitem: No completed hands yet.\n  - generic \"House rules and local opening\"",
+  "firstSelection": {
+    "clock": "Last saved: Sep 23, 2026, 1:24 AM · Played: 9:56",
+    "confirmation": "Selected: East\nConfirm discard\nCancel",
+    "hand": [
+      "bamboo-4-0",
+      "bamboo-5-0",
+      "bamboo-8-2",
+      "bamboo-9-1",
+      "characters-2-2",
+      "characters-7-1",
+      "characters-8-3",
+      "dots-1-3",
+      "dots-8-0",
+      "east-0",
+      "east-2"
+    ],
+    "hints": "Practice hints\nCollapse hints\n\nThese are structural waits with unseen copies, not guaranteed draws or probabilities.\n\nNo discard leaves this hand one tile from a standard winning hand.",
+    "rivers": [
+      "East — 3 tiles still in river",
+      "South — 3 tiles still in river",
+      "West — 3 tiles still in river",
+      "North — 2 tiles still in river"
+    ],
+    "selected": [
+      "east-0"
+    ]
+  },
+  "secondSelection": {
+    "clock": "Last saved: Sep 23, 2026, 1:24 AM · Played: 10:15",
+    "hand": [
+      "bamboo-4-0",
+      "bamboo-5-0",
+      "bamboo-8-2",
+      "bamboo-9-1",
+      "characters-2-2",
+      "characters-7-1",
+      "characters-8-3",
+      "dots-1-3",
+      "dots-8-0",
+      "east-0",
+      "east-2"
+    ],
+    "hints": "Practice hints\nCollapse hints\n\nThese are structural waits with unseen copies, not guaranteed draws or probabilities.\n\nNo discard leaves this hand one tile from a standard winning hand.",
+    "selected": [
+      "east-2"
+    ]
+  },
+  "paused": {
+    "clock": "Last saved: Sep 23, 2026, 1:25 AM · Played: 10:45",
+    "confirmation": "",
+    "hand": [
+      "bamboo-4-0",
+      "bamboo-5-0",
+      "bamboo-8-2",
+      "bamboo-9-1",
+      "characters-2-2",
+      "characters-7-1",
+      "characters-8-3",
+      "dots-1-3",
+      "dots-8-0",
+      "east-0",
+      "east-2"
+    ],
+    "hintsHidden": true,
+    "pressed": 0
+  },
+  "beforeConfirmation": {
+    "clock": "Last saved: Sep 23, 2026, 1:27 AM · Played: 10:46",
+    "confirmation": "Selected: East\nConfirm discard\nCancel",
+    "hand": [
+      "bamboo-4-0",
+      "bamboo-5-0",
+      "bamboo-8-2",
+      "bamboo-9-1",
+      "characters-2-2",
+      "characters-7-1",
+      "characters-8-3",
+      "dots-1-3",
+      "dots-8-0",
+      "east-0",
+      "east-2"
+    ],
+    "headings": [
+      "East — 3 tiles still in river",
+      "South — 3 tiles still in river",
+      "West — 3 tiles still in river",
+      "North — 2 tiles still in river"
+    ],
+    "hints": "Practice hints\nCollapse hints\n\nThese are structural waits with unseen copies, not guaranteed draws or probabilities.\n\nNo discard leaves this hand one tile from a standard winning hand.",
+    "pressed": [
+      "east-2"
+    ],
+    "riverIds": [
+      "west-0",
+      "north-0",
+      "green-3",
+      "bamboo-1-1",
+      "bamboo-3-0",
+      "bamboo-5-2",
+      "bamboo-2-0",
+      "bamboo-2-3",
+      "bamboo-5-3",
+      "characters-1-0",
+      "characters-2-1"
+    ],
+    "status": "East (You) claimed PON."
+  },
+  "afterConfirmation": {
+    "clock": "Last saved: Sep 23, 2026, 1:28 AM · Played: 11:05",
+    "confirmation": "",
+    "hand": [
+      "bamboo-4-0",
+      "bamboo-5-0",
+      "bamboo-8-2",
+      "bamboo-9-1",
+      "characters-2-2",
+      "characters-7-1",
+      "characters-8-3",
+      "dots-1-3",
+      "dots-8-0",
+      "east-0"
+    ],
+    "headings": [
+      "East — 4 tiles still in river",
+      "South — 3 tiles still in river",
+      "West — 3 tiles still in river",
+      "North — 2 tiles still in river"
+    ],
+    "hintsHidden": true,
+    "history": "No completed hands yet.",
+    "pressed": [],
+    "riverIds": [
+      "west-0",
+      "north-0",
+      "green-3",
+      "east-2",
+      "bamboo-1-1",
+      "bamboo-3-0",
+      "bamboo-5-2",
+      "bamboo-2-0",
+      "bamboo-2-3",
+      "bamboo-5-3",
+      "characters-1-0",
+      "characters-2-1"
+    ],
+    "statistics": "Completed hands\n0\nEast wins\n0\nLosses\n0\nDraws\n0\nWin rate (East wins ÷ completed hands; draws included)\n0%\nTotal Played\n0:00\nAverage Played\n0:00",
+    "status": "Hand paused — no turns or timer are running.",
+    "wall": "72 tiles left in wall"
+  },
+  "restored": {
+    "clock": "Last saved: Sep 23, 2026, 1:29 AM · Played: 11:05",
+    "confirmation": "",
+    "hand": [
+      "bamboo-4-0",
+      "bamboo-5-0",
+      "bamboo-8-2",
+      "bamboo-9-1",
+      "characters-2-2",
+      "characters-7-1",
+      "characters-8-3",
+      "dots-1-3",
+      "dots-8-0",
+      "east-0"
+    ],
+    "pressed": 0,
+    "riverIds": [
+      "west-0",
+      "north-0",
+      "green-3",
+      "east-2",
+      "bamboo-1-1",
+      "bamboo-3-0",
+      "bamboo-5-2",
+      "bamboo-2-0",
+      "bamboo-2-3",
+      "bamboo-5-3",
+      "characters-1-0",
+      "characters-2-1"
+    ],
+    "wall": "72 tiles left in wall"
+  },
+  "checks": {
+    "selectionOnlyPreservedHand": true,
+    "confirmationRemovedOnlyChosenId": true,
+    "chosenIdOccursOnceInRiver": true,
+    "otherEastRemains": true,
+    "restoredHandAndRivers": true,
+    "reloadClearedSelection": true
+  },
+  "browserErrors": [],
+  "limits": "Browser checks used visible controls and read-only DOM inspection. Keyboard focus styling/native-button semantics and hidden-page clear wiring were source-reviewed; no claim of a separate keyboard or hidden-tab interaction run."
+}

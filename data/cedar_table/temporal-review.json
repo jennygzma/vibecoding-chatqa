@@ -1,0 +1,13 @@
+{
+  "definition": "Questions about time, including dates, times, durations, intervals, or temporal relationships. An implementation before/after comparison alone does not qualify.",
+  "removed_temporal_label_from": [
+    "How did the user’s reported turn behavior change between the first and second browser reviews?",
+    "How did passing an offered ron affect another player’s pon before the correction, and how was the corrected behavior described?"
+  ],
+  "new_time_related_questions": [
+    "Which periods did the initial save-and-resume request say must not count toward Played?",
+    "What played duration did the user report retaining after leaving and reopening the page in the later review?",
+    "Which time source was adopted to measure active play duration?"
+  ],
+  "status": "labels corrected; ten-feature distribution reviewed; approval pending"
+}

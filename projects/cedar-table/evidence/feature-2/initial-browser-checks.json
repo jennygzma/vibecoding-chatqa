@@ -1,0 +1,183 @@
+[
+  {
+    "test": "pause-refresh",
+    "time": "2026-09-22T23:17:18.137Z",
+    "pausedSnapshot": {
+      "buttons": [],
+      "claim": "",
+      "melds": [],
+      "status": "Hand paused — no turns or timer are running.",
+      "tiles": [
+        "bamboo-3-1",
+        "bamboo-4-2",
+        "bamboo-4-0",
+        "bamboo-6-2",
+        "bamboo-6-1",
+        "bamboo-8-0",
+        "characters-6-1",
+        "dots-2-3",
+        "dots-3-1",
+        "dots-4-0",
+        "dots-7-1",
+        "dots-8-0",
+        "green-2",
+        "south-2"
+      ],
+      "time": "Last saved: Sep 22, 2026, 7:17 PM · Played: 0:35",
+      "wall": "83 tiles left in wall"
+    },
+    "pausedLater": {
+      "buttons": [],
+      "claim": "",
+      "melds": [],
+      "status": "Hand paused — no turns or timer are running.",
+      "tiles": [
+        "bamboo-3-1",
+        "bamboo-4-2",
+        "bamboo-4-0",
+        "bamboo-6-2",
+        "bamboo-6-1",
+        "bamboo-8-0",
+        "characters-6-1",
+        "dots-2-3",
+        "dots-3-1",
+        "dots-4-0",
+        "dots-7-1",
+        "dots-8-0",
+        "green-2",
+        "south-2"
+      ],
+      "time": "Last saved: Sep 22, 2026, 7:17 PM · Played: 0:35",
+      "wall": "83 tiles left in wall"
+    },
+    "restoredSnapshot": {
+      "buttons": [],
+      "claim": "",
+      "melds": [],
+      "status": "Saved hand ready — choose Continue hand before play resumes.",
+      "tiles": [
+        "bamboo-3-1",
+        "bamboo-4-2",
+        "bamboo-4-0",
+        "bamboo-6-2",
+        "bamboo-6-1",
+        "bamboo-8-0",
+        "characters-6-1",
+        "dots-2-3",
+        "dots-3-1",
+        "dots-4-0",
+        "dots-7-1",
+        "dots-8-0",
+        "green-2",
+        "south-2"
+      ],
+      "time": "Last saved: Sep 22, 2026, 7:17 PM · Played: 0:35",
+      "wall": "83 tiles left in wall"
+    }
+  },
+  {
+    "test": "pending-claim-clock",
+    "time": "2026-09-22T23:19:39.989Z",
+    "claimBeforeReload": {
+      "buttons": [
+        "PON",
+        "Pass"
+      ],
+      "claim": "North discarded: 6 Bamboo",
+      "melds": [],
+      "status": "North discarded 6 Bamboo. Call or pass.",
+      "tiles": [
+        "bamboo-3-1",
+        "bamboo-4-2",
+        "bamboo-4-0",
+        "bamboo-6-2",
+        "bamboo-6-1",
+        "bamboo-8-0",
+        "characters-5-3",
+        "characters-6-1",
+        "dots-2-3",
+        "dots-3-1",
+        "dots-4-0",
+        "dots-7-1",
+        "dots-8-0"
+      ],
+      "time": "Last saved: Sep 22, 2026, 7:18 PM · Played: 1:00",
+      "wall": "76 tiles left in wall"
+    },
+    "claimLater": {
+      "buttons": [
+        "PON",
+        "Pass"
+      ],
+      "claim": "North discarded: 6 Bamboo",
+      "melds": [],
+      "status": "North discarded 6 Bamboo. Call or pass.",
+      "tiles": [
+        "bamboo-3-1",
+        "bamboo-4-2",
+        "bamboo-4-0",
+        "bamboo-6-2",
+        "bamboo-6-1",
+        "bamboo-8-0",
+        "characters-5-3",
+        "characters-6-1",
+        "dots-2-3",
+        "dots-3-1",
+        "dots-4-0",
+        "dots-7-1",
+        "dots-8-0"
+      ],
+      "time": "Last saved: Sep 22, 2026, 7:18 PM · Played: 1:00",
+      "wall": "76 tiles left in wall"
+    },
+    "claimAfterReload": {
+      "buttons": [],
+      "claim": "North discarded: 6 Bamboo",
+      "melds": [],
+      "status": "Saved hand ready — choose Continue hand before play resumes.",
+      "tiles": [
+        "bamboo-3-1",
+        "bamboo-4-2",
+        "bamboo-4-0",
+        "bamboo-6-2",
+        "bamboo-6-1",
+        "bamboo-8-0",
+        "characters-5-3",
+        "characters-6-1",
+        "dots-2-3",
+        "dots-3-1",
+        "dots-4-0",
+        "dots-7-1",
+        "dots-8-0"
+      ],
+      "time": "Last saved: Sep 22, 2026, 7:18 PM · Played: 1:00",
+      "wall": "76 tiles left in wall"
+    },
+    "claimAfterContinue": {
+      "buttons": [
+        "PON",
+        "Pass"
+      ],
+      "claim": "North discarded: 6 Bamboo",
+      "melds": [],
+      "status": "North discarded 6 Bamboo. Call or pass.",
+      "tiles": [
+        "bamboo-3-1",
+        "bamboo-4-2",
+        "bamboo-4-0",
+        "bamboo-6-2",
+        "bamboo-6-1",
+        "bamboo-8-0",
+        "characters-5-3",
+        "characters-6-1",
+        "dots-2-3",
+        "dots-3-1",
+        "dots-4-0",
+        "dots-7-1",
+        "dots-8-0"
+      ],
+      "time": "Last saved: Sep 22, 2026, 7:19 PM · Played: 1:00",
+      "wall": "76 tiles left in wall"
+    }
+  }
+]

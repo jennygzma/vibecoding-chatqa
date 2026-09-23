@@ -1,0 +1,425 @@
+{
+  "messages": [
+    {
+      "dia_id": "D10:1",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_mudpjjc7_1t0",
+      "original_position": 0,
+      "original_block_index": 0,
+      "original_timestamp": 1790144042407,
+      "timestamp_utc": "2026-09-23T06:14:02.407Z",
+      "role": "user",
+      "text_sha256": "983d4a98e27d236c3f74c339be72ffd1380e2e44ba9ba373649d8d87d4137845",
+      "transformations": [
+        "removed outer user_input envelope"
+      ],
+      "original_text_sha256": "983d4a98e27d236c3f74c339be72ffd1380e2e44ba9ba373649d8d87d4137845"
+    },
+    {
+      "dia_id": "D10:2",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_CyTtpOIF",
+      "original_position": 1,
+      "original_block_index": 0,
+      "original_timestamp": 1790144045197,
+      "timestamp_utc": "2026-09-23T06:14:05.197Z",
+      "role": "assistant",
+      "text_sha256": "9824f737afaec16d18c752ffb9f7a8a893f02a1bd05255443e78786a1221d95a",
+      "transformations": [],
+      "original_text_sha256": "9824f737afaec16d18c752ffb9f7a8a893f02a1bd05255443e78786a1221d95a"
+    },
+    {
+      "dia_id": "D10:3",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_8u6qSzUl",
+      "original_position": 4,
+      "original_block_index": 0,
+      "original_timestamp": 1790144050653,
+      "timestamp_utc": "2026-09-23T06:14:10.653Z",
+      "role": "assistant",
+      "text_sha256": "ef43bf2b1aeeef42c5fe1f0d0d6e589e5009da26439c9dc5ec4d16153935b818",
+      "transformations": [],
+      "original_text_sha256": "ef43bf2b1aeeef42c5fe1f0d0d6e589e5009da26439c9dc5ec4d16153935b818"
+    },
+    {
+      "dia_id": "D10:4",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_XH5PcdB8",
+      "original_position": 7,
+      "original_block_index": 0,
+      "original_timestamp": 1790144059878,
+      "timestamp_utc": "2026-09-23T06:14:19.878Z",
+      "role": "assistant",
+      "text_sha256": "d3140568ee5cdd21152d6b3ad19278e47370da04f56c0965339623eb35459358",
+      "transformations": [
+        "normalized local workspace prefix to projects/cedar-table"
+      ],
+      "original_text_sha256": "30f5d5db06ce08f6469c92904d4c942038893664b274d41be6aa2a8121ff24ac"
+    },
+    {
+      "dia_id": "D10:5",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_Mxv1uMkb",
+      "original_position": 10,
+      "original_block_index": 0,
+      "original_timestamp": 1790144067743,
+      "timestamp_utc": "2026-09-23T06:14:27.743Z",
+      "role": "assistant",
+      "text_sha256": "84e5a8c2e23f93d1df8b533579974901d2f2d756d9fc61985c0ed2bad1026815",
+      "transformations": [],
+      "original_text_sha256": "84e5a8c2e23f93d1df8b533579974901d2f2d756d9fc61985c0ed2bad1026815"
+    },
+    {
+      "dia_id": "D10:6",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_dYbq8z6J",
+      "original_position": 13,
+      "original_block_index": 0,
+      "original_timestamp": 1790144087295,
+      "timestamp_utc": "2026-09-23T06:14:47.295Z",
+      "role": "assistant",
+      "text_sha256": "f6a1afa91ad07c3fbba5b96ac854a9fc8bf6f9f10dd44614b5bf95ea23037814",
+      "transformations": [],
+      "original_text_sha256": "f6a1afa91ad07c3fbba5b96ac854a9fc8bf6f9f10dd44614b5bf95ea23037814"
+    },
+    {
+      "dia_id": "D10:7",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_tqqD9TJU",
+      "original_position": 18,
+      "original_block_index": 0,
+      "original_timestamp": 1790144102969,
+      "timestamp_utc": "2026-09-23T06:15:02.969Z",
+      "role": "assistant",
+      "text_sha256": "0a6f674e8d11960ea9d3e8f1433cd09a603967b9797572787575b6165a8570ee",
+      "transformations": [],
+      "original_text_sha256": "0a6f674e8d11960ea9d3e8f1433cd09a603967b9797572787575b6165a8570ee"
+    },
+    {
+      "dia_id": "D10:8",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_-x9pW7Dp",
+      "original_position": 25,
+      "original_block_index": 0,
+      "original_timestamp": 1790144120055,
+      "timestamp_utc": "2026-09-23T06:15:20.055Z",
+      "role": "assistant",
+      "text_sha256": "e58058c8962e4322cb69202ce917488fcbe17cbdacdc2445d350bd2dc6d60198",
+      "transformations": [],
+      "original_text_sha256": "e58058c8962e4322cb69202ce917488fcbe17cbdacdc2445d350bd2dc6d60198"
+    },
+    {
+      "dia_id": "D10:9",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_w8doLLX1",
+      "original_position": 29,
+      "original_block_index": 0,
+      "original_timestamp": 1790144129609,
+      "timestamp_utc": "2026-09-23T06:15:29.609Z",
+      "role": "assistant",
+      "text_sha256": "3c674b79eb6160cc7a47f0f4434c44828291533d2d246fa38502a8d6f0db1e69",
+      "transformations": [],
+      "original_text_sha256": "3c674b79eb6160cc7a47f0f4434c44828291533d2d246fa38502a8d6f0db1e69"
+    },
+    {
+      "dia_id": "D10:10",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_AHc9hv2J",
+      "original_position": 35,
+      "original_block_index": 0,
+      "original_timestamp": 1790144145060,
+      "timestamp_utc": "2026-09-23T06:15:45.060Z",
+      "role": "assistant",
+      "text_sha256": "a69d106963e81cda18da56a695fd759c7217c9874535f1b2ff62ffed5858e1db",
+      "transformations": [],
+      "original_text_sha256": "a69d106963e81cda18da56a695fd759c7217c9874535f1b2ff62ffed5858e1db"
+    },
+    {
+      "dia_id": "D10:11",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_OFNpw6UG",
+      "original_position": 38,
+      "original_block_index": 0,
+      "original_timestamp": 1790144155147,
+      "timestamp_utc": "2026-09-23T06:15:55.147Z",
+      "role": "assistant",
+      "text_sha256": "67b42fe48a928920ec6ae822871d6511fa6669adb19bf6d8a15120e26cfd9a06",
+      "transformations": [],
+      "original_text_sha256": "67b42fe48a928920ec6ae822871d6511fa6669adb19bf6d8a15120e26cfd9a06"
+    },
+    {
+      "dia_id": "D10:12",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_txKFRfqu",
+      "original_position": 41,
+      "original_block_index": 0,
+      "original_timestamp": 1790144161062,
+      "timestamp_utc": "2026-09-23T06:16:01.062Z",
+      "role": "assistant",
+      "text_sha256": "252be61af76164f899e6d56c65e4b648689cf8a8240cb304b8046ed262910f03",
+      "transformations": [],
+      "original_text_sha256": "252be61af76164f899e6d56c65e4b648689cf8a8240cb304b8046ed262910f03"
+    },
+    {
+      "dia_id": "D10:13",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_MCl-J16z",
+      "original_position": 43,
+      "original_block_index": 0,
+      "original_timestamp": 1790144163566,
+      "timestamp_utc": "2026-09-23T06:16:03.566Z",
+      "role": "assistant",
+      "text_sha256": "dc5e0195af5a0d0b23ac371b513c2ba0907bb258bea9f4bd6acbf5585795d4c3",
+      "transformations": [],
+      "original_text_sha256": "dc5e0195af5a0d0b23ac371b513c2ba0907bb258bea9f4bd6acbf5585795d4c3"
+    },
+    {
+      "dia_id": "D10:14",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_OW1qxNu3",
+      "original_position": 46,
+      "original_block_index": 0,
+      "original_timestamp": 1790144167522,
+      "timestamp_utc": "2026-09-23T06:16:07.522Z",
+      "role": "assistant",
+      "text_sha256": "30b19084bc1c8338beb1aaa4e6981457f1c03864b9577ff14b3a2348cd5dce3f",
+      "transformations": [],
+      "original_text_sha256": "30b19084bc1c8338beb1aaa4e6981457f1c03864b9577ff14b3a2348cd5dce3f"
+    },
+    {
+      "dia_id": "D10:15",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_hPvQMz3C",
+      "original_position": 48,
+      "original_block_index": 0,
+      "original_timestamp": 1790144171948,
+      "timestamp_utc": "2026-09-23T06:16:11.948Z",
+      "role": "assistant",
+      "text_sha256": "75631d635f807dce556d2be7e529af037bd7efaeff4fff562383bfacd6e9510b",
+      "transformations": [],
+      "original_text_sha256": "75631d635f807dce556d2be7e529af037bd7efaeff4fff562383bfacd6e9510b"
+    },
+    {
+      "dia_id": "D10:16",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_Loj4MC8L",
+      "original_position": 51,
+      "original_block_index": 0,
+      "original_timestamp": 1790144175613,
+      "timestamp_utc": "2026-09-23T06:16:15.613Z",
+      "role": "assistant",
+      "text_sha256": "f61f2fe7032c578032725dd9880d8f121e96dbb4191c0f67731e6d6d5166bc49",
+      "transformations": [],
+      "original_text_sha256": "f61f2fe7032c578032725dd9880d8f121e96dbb4191c0f67731e6d6d5166bc49"
+    },
+    {
+      "dia_id": "D10:17",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_msnBqgYQ",
+      "original_position": 53,
+      "original_block_index": 0,
+      "original_timestamp": 1790144180205,
+      "timestamp_utc": "2026-09-23T06:16:20.205Z",
+      "role": "assistant",
+      "text_sha256": "8b31cbd5d0342d5e74f2c15d36493e5f38507a9b156bd7801b0e15683f50a200",
+      "transformations": [
+        "normalized local workspace prefix to projects/cedar-table"
+      ],
+      "original_text_sha256": "afbbe66f8509504c38359d5ba787c07c19d398a8dd0adc5e439e324a1d7931b0"
+    },
+    {
+      "dia_id": "D10:18",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_mudpnzzo_205",
+      "original_position": 54,
+      "original_block_index": 0,
+      "original_timestamp": 1790144250612,
+      "timestamp_utc": "2026-09-23T06:17:30.612Z",
+      "role": "user",
+      "text_sha256": "ffd286c41722952e502c5ba9aeadc802e651f90aec061e5a36641b1e228af8d0",
+      "transformations": [
+        "removed outer user_input envelope"
+      ],
+      "original_text_sha256": "ffd286c41722952e502c5ba9aeadc802e651f90aec061e5a36641b1e228af8d0"
+    },
+    {
+      "dia_id": "D10:19",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_IStQ2D_V",
+      "original_position": 55,
+      "original_block_index": 0,
+      "original_timestamp": 1790144254539,
+      "timestamp_utc": "2026-09-23T06:17:34.539Z",
+      "role": "assistant",
+      "text_sha256": "d1906bc68a7d45c08fb242c72b272b38c8f1b26e1cb808ca6c19fd0b61840a37",
+      "transformations": [],
+      "original_text_sha256": "d1906bc68a7d45c08fb242c72b272b38c8f1b26e1cb808ca6c19fd0b61840a37"
+    },
+    {
+      "dia_id": "D10:20",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_yVV5HhEO",
+      "original_position": 59,
+      "original_block_index": 0,
+      "original_timestamp": 1790144271540,
+      "timestamp_utc": "2026-09-23T06:17:51.540Z",
+      "role": "assistant",
+      "text_sha256": "7336defe81467443ab20d6e65ff431e4d374a1581ccef36b3350c778f998ee99",
+      "transformations": [],
+      "original_text_sha256": "7336defe81467443ab20d6e65ff431e4d374a1581ccef36b3350c778f998ee99"
+    },
+    {
+      "dia_id": "D10:21",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_-b25Xru6",
+      "original_position": 63,
+      "original_block_index": 0,
+      "original_timestamp": 1790144285624,
+      "timestamp_utc": "2026-09-23T06:18:05.624Z",
+      "role": "assistant",
+      "text_sha256": "0fdc2a55888cde5731999c3bdfc1522995c7e7040603b8941d4e00af51e0382d",
+      "transformations": [],
+      "original_text_sha256": "0fdc2a55888cde5731999c3bdfc1522995c7e7040603b8941d4e00af51e0382d"
+    },
+    {
+      "dia_id": "D10:22",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_QNt3Wiqb",
+      "original_position": 66,
+      "original_block_index": 0,
+      "original_timestamp": 1790144290311,
+      "timestamp_utc": "2026-09-23T06:18:10.311Z",
+      "role": "assistant",
+      "text_sha256": "b90f9c67488972413b6bb0efd7940ec831585eaf57e45c406906082e703908dd",
+      "transformations": [],
+      "original_text_sha256": "b90f9c67488972413b6bb0efd7940ec831585eaf57e45c406906082e703908dd"
+    },
+    {
+      "dia_id": "D10:23",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_pRRF5DJ6",
+      "original_position": 68,
+      "original_block_index": 0,
+      "original_timestamp": 1790144293452,
+      "timestamp_utc": "2026-09-23T06:18:13.452Z",
+      "role": "assistant",
+      "text_sha256": "0037cf567217999405aae823bc4cbca28c3e29174d343ab6ac96ad723da5a567",
+      "transformations": [],
+      "original_text_sha256": "0037cf567217999405aae823bc4cbca28c3e29174d343ab6ac96ad723da5a567"
+    },
+    {
+      "dia_id": "D10:24",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_HHycB6pO",
+      "original_position": 71,
+      "original_block_index": 0,
+      "original_timestamp": 1790144297140,
+      "timestamp_utc": "2026-09-23T06:18:17.140Z",
+      "role": "assistant",
+      "text_sha256": "469680639770509926970312cb682b7f7ab515c41b4f962e108c7d981d2161c4",
+      "transformations": [
+        "normalized local workspace prefix to projects/cedar-table"
+      ],
+      "original_text_sha256": "1103904f37ecd02e12fc4b301c4e56e41954b5d5d21269a9b10010ead8d0e377"
+    },
+    {
+      "dia_id": "D10:25",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_mudpqsxd_236",
+      "original_position": 72,
+      "original_block_index": 0,
+      "original_timestamp": 1790144381425,
+      "timestamp_utc": "2026-09-23T06:19:41.425Z",
+      "role": "user",
+      "text_sha256": "aac2ff6132c235a6e638f97c69fda138023e072d07baaeb2542d9b62f3718ae7",
+      "transformations": [
+        "removed outer user_input envelope"
+      ],
+      "original_text_sha256": "aac2ff6132c235a6e638f97c69fda138023e072d07baaeb2542d9b62f3718ae7"
+    },
+    {
+      "dia_id": "D10:26",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_p6Vb3Be3",
+      "original_position": 73,
+      "original_block_index": 0,
+      "original_timestamp": 1790144385568,
+      "timestamp_utc": "2026-09-23T06:19:45.568Z",
+      "role": "assistant",
+      "text_sha256": "e9db7177f40facd83ca7a666af92a3a1ee25f6c85f8163d4adef907ca7a57bfe",
+      "transformations": [
+        "normalized local workspace prefix to projects/cedar-table"
+      ],
+      "original_text_sha256": "b803173dd1e76f57b8dc3cf66315e936194eaafc32d67dd2c3fe3c11a98e709f"
+    },
+    {
+      "dia_id": "D10:27",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_HnOawnhi",
+      "original_position": 76,
+      "original_block_index": 0,
+      "original_timestamp": 1790144392495,
+      "timestamp_utc": "2026-09-23T06:19:52.495Z",
+      "role": "assistant",
+      "text_sha256": "dc6c62df90f5537cd2ed8f9025479149d41977289df107f7a8b6da08e3fcd46a",
+      "transformations": [],
+      "original_text_sha256": "dc6c62df90f5537cd2ed8f9025479149d41977289df107f7a8b6da08e3fcd46a"
+    },
+    {
+      "dia_id": "D10:28",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_tyzFoZcG",
+      "original_position": 78,
+      "original_block_index": 0,
+      "original_timestamp": 1790144397872,
+      "timestamp_utc": "2026-09-23T06:19:57.872Z",
+      "role": "assistant",
+      "text_sha256": "65bce18e7a104ac66577403fcbb6036471c9fcb0a757b989e4d8bd98f79427fe",
+      "transformations": [],
+      "original_text_sha256": "65bce18e7a104ac66577403fcbb6036471c9fcb0a757b989e4d8bd98f79427fe"
+    },
+    {
+      "dia_id": "D10:29",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_AhoUhmtM",
+      "original_position": 81,
+      "original_block_index": 0,
+      "original_timestamp": 1790144399718,
+      "timestamp_utc": "2026-09-23T06:19:59.718Z",
+      "role": "assistant",
+      "text_sha256": "00aca37d9036d778355c3f08a5da2bc4c9fd1409c3daccdb74c27bb06d165ff9",
+      "transformations": [],
+      "original_text_sha256": "00aca37d9036d778355c3f08a5da2bc4c9fd1409c3daccdb74c27bb06d165ff9"
+    },
+    {
+      "dia_id": "D10:30",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_WjZ-aOo0",
+      "original_position": 83,
+      "original_block_index": 0,
+      "original_timestamp": 1790144402470,
+      "timestamp_utc": "2026-09-23T06:20:02.470Z",
+      "role": "assistant",
+      "text_sha256": "3222f11dd48fa31c3dbab44353093bbb9deada4142c408a90da5b17b2df7f14e",
+      "transformations": [
+        "normalized local workspace prefix to projects/cedar-table"
+      ],
+      "original_text_sha256": "8b60ce06aa5555295479832a8328e846cd5798b139319378f2141cc55fa3a5c3"
+    },
+    {
+      "dia_id": "D10:31",
+      "original_session_id": "1790144041083_bw3wc",
+      "original_message_id": "msg_RbzxkIlu",
+      "original_position": 86,
+      "original_block_index": 0,
+      "original_timestamp": 1790144405684,
+      "timestamp_utc": "2026-09-23T06:20:05.684Z",
+      "role": "assistant",
+      "text_sha256": "ef1f0b30fd02ec27c44bb81e839840960b5d1de2c53ad9302c029a05ec3bdb67",
+      "transformations": [
+        "normalized local workspace prefix to projects/cedar-table"
+      ],
+      "original_text_sha256": "53bba98cbafa9dcff8d0c8cb88ebf1c07adc8e83ec256a2ca12d3e433af9ddc8"
+    }
+  ]
+}

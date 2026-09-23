@@ -74,3 +74,10 @@ chatqa status
 ## Mahjong
 
 [Mahjong](projects/mahjong/README.md) is a local four-player Mahjong game with [100 reviewed annotations](data/mahjong/output.json) from four development sessions. The [review record](projects/mahjong/evidence/REVIEW.md) includes checks, screenshots, and source verification.
+
+
+## Cedar Table
+
+[Cedar Table](projects/cedar-table/README.md) is a local four-seat Mahjong game with ten feature conversations and [100 evidence-linked questions](data/cedar_table/vibe_combined.json). The [dataset guide](data/cedar_table/README.md) describes its records and timestamps; the [review](projects/cedar-table/evidence/FEATURES-1-10-READY-FOR-REVIEW.md) contains validation and screenshots.
+
+Status: In Progress. Approval pending. Validate the submission with `python3 scripts/validate_cedar_table.py`.

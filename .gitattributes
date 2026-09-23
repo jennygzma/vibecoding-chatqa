@@ -1,0 +1,3 @@
+
+# Preserve downloaded CSV evidence exactly, including CRLF records.
+projects/cedar-table/evidence/feature-10/downloaded-history.csv -text -diff

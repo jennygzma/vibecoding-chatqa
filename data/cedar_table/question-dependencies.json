@@ -1,0 +1,32 @@
+{
+  "status": "In Progress",
+  "chains": [
+    {
+      "dependent_question": "How much longer was the Played duration reported in the third-feature West Ron review than the retained duration in the later second-feature review?",
+      "prerequisite_questions": [
+        "What played duration did the user report retaining after leaving and reopening the page in the later review?",
+        "What Played duration remained on the West Ron record during the third-feature browser review?"
+      ],
+      "derivation": "(3*60+55) - (1*60+12) = 163 seconds = 2 minutes 43 seconds.",
+      "evidence_policy": "The combined annotation retains the original source quotes for both prerequisite answers."
+    },
+    {
+      "dependent_question": "How many more tests passed after the final practice-hint correction than after the final Statistics correction?",
+      "prerequisite_questions": [
+        "How many tests passed after the physical-tile counting correction?",
+        "How many more tests passed for the final Statistics feature than for the final completed-history feature?"
+      ],
+      "derivation": "The first answer gives 35; the second explicitly gives the Statistics total as 29. 35 - 29 = 6.",
+      "evidence_policy": "Both underlying conversation quotations remain in the combined annotation; answer dependencies do not replace original evidence."
+    },
+    {
+      "dependent_question": "Ignoring processing and player decision time, how many complete Normal pace delays would fit into the retained Played duration reported in the later second-feature review?",
+      "prerequisite_questions": [
+        "What played duration did the user report retaining after leaving and reopening the page in the later review?",
+        "What delays were requested for Slow, Normal, and Fast computer steps?"
+      ],
+      "derivation": "The prerequisite answers give 1 minute 12 seconds and a Normal delay of 800 ms: (60 + 12) * 1000 / 800 = 90 complete delays. Processing and player decision time are explicitly excluded.",
+      "evidence_policy": "Both source quotations remain in the combined annotation."
+    }
+  ]
+}

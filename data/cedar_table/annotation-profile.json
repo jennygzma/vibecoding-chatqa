@@ -1,0 +1,50 @@
+{
+  "status": "In Progress",
+  "annotation_count": 100,
+  "current_category_counts": {
+    "single-session": 79,
+    "singlehop": 53,
+    "preference": 17,
+    "knowledge-facts": 26,
+    "multihop": 39,
+    "open-domain": 8,
+    "temporal": 15,
+    "multi-session": 21
+  },
+  "reference_question_count": 200,
+  "current_category_percentages": {
+    "single-session": 79.0,
+    "multi-session": 21.0,
+    "singlehop": 53.0,
+    "multihop": 39.0,
+    "preference": 17.0,
+    "temporal": 15.0,
+    "knowledge-facts": 26.0,
+    "open-domain": 8.0
+  },
+  "reference_category_percentages": {
+    "single-session": 79.0,
+    "multi-session": 21.0,
+    "singlehop": 52.5,
+    "multihop": 39.0,
+    "preference": 17.0,
+    "temporal": 14.5,
+    "knowledge-facts": 25.5,
+    "open-domain": 8.0
+  },
+  "reference_category_counts": {
+    "single-session": 158,
+    "multi-session": 42,
+    "singlehop": 105,
+    "multihop": 78,
+    "preference": 34,
+    "temporal": 29,
+    "knowledge-facts": 51,
+    "open-domain": 16
+  },
+  "full_set_target": 100,
+  "planned_feature_conversations": 10,
+  "temporal_definition": "Questions about time: dates, times, durations, intervals, or temporal relationships. Ordinary implementation changes do not qualify by themselves.",
+  "multihop_definition": "Answers combine multiple facts and may depend on other question answers; the underlying source evidence remains attached and explicit dependencies are recorded separately.",
+  "review_note": "All 100 questions and exact excerpts have been reviewed against the guide and sample. Categories overlap; maximum category percentage difference is 0.5 percentage points. Review approval remains pending."
+}
