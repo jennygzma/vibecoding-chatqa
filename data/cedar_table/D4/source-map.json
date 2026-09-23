@@ -1,0 +1,246 @@
+{
+  "messages": [
+    {
+      "dia_id": "D4:1",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_mudh69e1_37p",
+      "original_position": 0,
+      "original_block_index": 0,
+      "original_timestamp": 1790129986057,
+      "timestamp_utc": "2026-09-23T02:19:46.057Z",
+      "role": "user",
+      "text_sha256": "5e2a704e4227b3cd474046b61447e1227eea0caa9b2ec9f764cc6320c66965f4",
+      "transformations": [
+        "removed outer user_input envelope"
+      ],
+      "original_text_sha256": "5e2a704e4227b3cd474046b61447e1227eea0caa9b2ec9f764cc6320c66965f4"
+    },
+    {
+      "dia_id": "D4:2",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_0X_E82q3",
+      "original_position": 1,
+      "original_block_index": 0,
+      "original_timestamp": 1790129989597,
+      "timestamp_utc": "2026-09-23T02:19:49.597Z",
+      "role": "assistant",
+      "text_sha256": "862981c592470659a35aa5bf4f173b9daadc76b8c8aabdb92ae59c16f072f898",
+      "transformations": [],
+      "original_text_sha256": "862981c592470659a35aa5bf4f173b9daadc76b8c8aabdb92ae59c16f072f898"
+    },
+    {
+      "dia_id": "D4:3",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_xl8fl6JY",
+      "original_position": 4,
+      "original_block_index": 0,
+      "original_timestamp": 1790129993293,
+      "timestamp_utc": "2026-09-23T02:19:53.293Z",
+      "role": "assistant",
+      "text_sha256": "0d2cba1b0345cd4e6a668f45c4bd32958e8dbc7d696372bdbf124b298d218e4b",
+      "transformations": [],
+      "original_text_sha256": "0d2cba1b0345cd4e6a668f45c4bd32958e8dbc7d696372bdbf124b298d218e4b"
+    },
+    {
+      "dia_id": "D4:4",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_ymof64Rq",
+      "original_position": 7,
+      "original_block_index": 0,
+      "original_timestamp": 1790129999533,
+      "timestamp_utc": "2026-09-23T02:19:59.533Z",
+      "role": "assistant",
+      "text_sha256": "d51bd875bcfca8e397886c3dd942b07387e12f2947dff0b17dd7b309ec66f99b",
+      "transformations": [],
+      "original_text_sha256": "d51bd875bcfca8e397886c3dd942b07387e12f2947dff0b17dd7b309ec66f99b"
+    },
+    {
+      "dia_id": "D4:5",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_7pe1Nq09",
+      "original_position": 10,
+      "original_block_index": 0,
+      "original_timestamp": 1790130023813,
+      "timestamp_utc": "2026-09-23T02:20:23.813Z",
+      "role": "assistant",
+      "text_sha256": "88159309aecccc0991701e8d88fc25e800bda8c5bdb9217b202df4e64b2f7c53",
+      "transformations": [],
+      "original_text_sha256": "88159309aecccc0991701e8d88fc25e800bda8c5bdb9217b202df4e64b2f7c53"
+    },
+    {
+      "dia_id": "D4:6",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_fGa5CbTz",
+      "original_position": 23,
+      "original_block_index": 0,
+      "original_timestamp": 1790130049096,
+      "timestamp_utc": "2026-09-23T02:20:49.096Z",
+      "role": "assistant",
+      "text_sha256": "b690ccb503e6d66187c6d132ee890fec140ce4a9999045d44e3dadfb86caa160",
+      "transformations": [],
+      "original_text_sha256": "b690ccb503e6d66187c6d132ee890fec140ce4a9999045d44e3dadfb86caa160"
+    },
+    {
+      "dia_id": "D4:7",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_qNVtjO1Q",
+      "original_position": 27,
+      "original_block_index": 0,
+      "original_timestamp": 1790130055962,
+      "timestamp_utc": "2026-09-23T02:20:55.962Z",
+      "role": "assistant",
+      "text_sha256": "cf7bd474b3c6b1eb03919f7628f13d2a1218640789e44be9eeb6d26469496d1e",
+      "transformations": [],
+      "original_text_sha256": "cf7bd474b3c6b1eb03919f7628f13d2a1218640789e44be9eeb6d26469496d1e"
+    },
+    {
+      "dia_id": "D4:8",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_MJD9nZ4f",
+      "original_position": 30,
+      "original_block_index": 0,
+      "original_timestamp": 1790130059857,
+      "timestamp_utc": "2026-09-23T02:20:59.857Z",
+      "role": "assistant",
+      "text_sha256": "46ecd6817762b5dcea5a5a5d4c700d78ceac78251cd33b7434ad0a29230c7787",
+      "transformations": [],
+      "original_text_sha256": "46ecd6817762b5dcea5a5a5d4c700d78ceac78251cd33b7434ad0a29230c7787"
+    },
+    {
+      "dia_id": "D4:9",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_dHbeU9z8",
+      "original_position": 32,
+      "original_block_index": 0,
+      "original_timestamp": 1790130063536,
+      "timestamp_utc": "2026-09-23T02:21:03.536Z",
+      "role": "assistant",
+      "text_sha256": "42b00fb8b4fbfaf190340ea333f9474f95de3d6d175e4b676eb1dd5d76b43483",
+      "transformations": [],
+      "original_text_sha256": "42b00fb8b4fbfaf190340ea333f9474f95de3d6d175e4b676eb1dd5d76b43483"
+    },
+    {
+      "dia_id": "D4:10",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg__9M8g4Ho",
+      "original_position": 35,
+      "original_block_index": 0,
+      "original_timestamp": 1790130067140,
+      "timestamp_utc": "2026-09-23T02:21:07.140Z",
+      "role": "assistant",
+      "text_sha256": "758c8d6561797770b4a41a8180ccef9f1672bc03cc1849f0284fefe13807ca71",
+      "transformations": [
+        "normalized local workspace prefix to projects/cedar-table"
+      ],
+      "original_text_sha256": "df8204d9010560eb920a9450a2be48cfa919fb7a1e53a7a4a121c8de3604ac21"
+    },
+    {
+      "dia_id": "D4:11",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_mudhazxf_39z",
+      "original_position": 36,
+      "original_block_index": 0,
+      "original_timestamp": 1790130207075,
+      "timestamp_utc": "2026-09-23T02:23:27.075Z",
+      "role": "user",
+      "text_sha256": "14213c37f1159db2889aec83b16382a83ec6c73aedac18c6558f12f6601dd8da",
+      "transformations": [
+        "removed outer user_input envelope"
+      ],
+      "original_text_sha256": "14213c37f1159db2889aec83b16382a83ec6c73aedac18c6558f12f6601dd8da"
+    },
+    {
+      "dia_id": "D4:12",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_qVQjv6B0",
+      "original_position": 37,
+      "original_block_index": 0,
+      "original_timestamp": 1790130211218,
+      "timestamp_utc": "2026-09-23T02:23:31.218Z",
+      "role": "assistant",
+      "text_sha256": "b9de994e914034fde7c8c2a5be6c8fddc05a463d45a7ed64ceb560d8218652d0",
+      "transformations": [],
+      "original_text_sha256": "b9de994e914034fde7c8c2a5be6c8fddc05a463d45a7ed64ceb560d8218652d0"
+    },
+    {
+      "dia_id": "D4:13",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_mOb4x12u",
+      "original_position": 40,
+      "original_block_index": 0,
+      "original_timestamp": 1790130226125,
+      "timestamp_utc": "2026-09-23T02:23:46.125Z",
+      "role": "assistant",
+      "text_sha256": "da51e3e4127c3c03b835f5308c90425ea023599633be95edc989f6b1a426a1b2",
+      "transformations": [],
+      "original_text_sha256": "da51e3e4127c3c03b835f5308c90425ea023599633be95edc989f6b1a426a1b2"
+    },
+    {
+      "dia_id": "D4:14",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_QVGg9ip0",
+      "original_position": 50,
+      "original_block_index": 0,
+      "original_timestamp": 1790130247015,
+      "timestamp_utc": "2026-09-23T02:24:07.015Z",
+      "role": "assistant",
+      "text_sha256": "4548e9311ced576fc6cb709954d7c945d0eecf662156115ddbd727f21436ba5b",
+      "transformations": [],
+      "original_text_sha256": "4548e9311ced576fc6cb709954d7c945d0eecf662156115ddbd727f21436ba5b"
+    },
+    {
+      "dia_id": "D4:15",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_1CRay4El",
+      "original_position": 55,
+      "original_block_index": 0,
+      "original_timestamp": 1790130257856,
+      "timestamp_utc": "2026-09-23T02:24:17.856Z",
+      "role": "assistant",
+      "text_sha256": "fe8b7ae1d222f60529030a4c21db7f34317dfc415a014c38141eecc07213584d",
+      "transformations": [],
+      "original_text_sha256": "fe8b7ae1d222f60529030a4c21db7f34317dfc415a014c38141eecc07213584d"
+    },
+    {
+      "dia_id": "D4:16",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_7xl6vmfK",
+      "original_position": 58,
+      "original_block_index": 0,
+      "original_timestamp": 1790130262205,
+      "timestamp_utc": "2026-09-23T02:24:22.205Z",
+      "role": "assistant",
+      "text_sha256": "dcd99e887b83f7a4e265448c33e5958a897e4283d98d65eaddc550148df30fc3",
+      "transformations": [],
+      "original_text_sha256": "dcd99e887b83f7a4e265448c33e5958a897e4283d98d65eaddc550148df30fc3"
+    },
+    {
+      "dia_id": "D4:17",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_WPaPe5Z_",
+      "original_position": 60,
+      "original_block_index": 0,
+      "original_timestamp": 1790130265679,
+      "timestamp_utc": "2026-09-23T02:24:25.679Z",
+      "role": "assistant",
+      "text_sha256": "56ce0a232618c601a0cdb9ae1b2644e63d21a858e573232c3b870c005b24139a",
+      "transformations": [],
+      "original_text_sha256": "56ce0a232618c601a0cdb9ae1b2644e63d21a858e573232c3b870c005b24139a"
+    },
+    {
+      "dia_id": "D4:18",
+      "original_session_id": "1790129984706_a0fan",
+      "original_message_id": "msg_btPAEk05",
+      "original_position": 63,
+      "original_block_index": 0,
+      "original_timestamp": 1790130269439,
+      "timestamp_utc": "2026-09-23T02:24:29.439Z",
+      "role": "assistant",
+      "text_sha256": "6b9c87aca48fef8bb6f1b83d9fd92b811bf5e39f36e6579d7e6180ff93fd6646",
+      "transformations": [
+        "normalized local workspace prefix to projects/cedar-table"
+      ],
+      "original_text_sha256": "c904e96a740ac610b4883559e773efa19e61d55d6cee5f3bce94fc67525062b7"
+    }
+  ]
+}

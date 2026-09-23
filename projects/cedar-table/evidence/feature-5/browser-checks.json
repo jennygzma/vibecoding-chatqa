@@ -1,0 +1,25 @@
+{
+  "recordedAt": "2026-09-23T02:38:43.103Z",
+  "url": "http://localhost:4340/",
+  "revision": "c03a3e3",
+  "checks": {
+    "analyzeDoesNotChangeTilesWallOrTotals": true,
+    "pauseClearsAndDisables": true,
+    "resumeDoesNotRestoreHints": true,
+    "collapseHides": true,
+    "reloadRequiresContinue": true,
+    "discardClearsHints": true,
+    "nextEastTurnHasNoStaleHints": true
+  },
+  "initialHand": {
+    "eastTiles": 14,
+    "wallTiles": 83,
+    "completedHands": 0
+  },
+  "afterOneRound": {
+    "wallTiles": 79,
+    "completedHands": 0
+  },
+  "positiveWaitCases": "Verified in rules tests; the browser hand displayed the empty-result message.",
+  "snapshot": "- main:\n  - paragraph: A four-seat Mahjong table\n  - heading \"Cedar Table\" [level=1]\n  - button \"Pause\"\n  - button \"New hand\"\n  - strong: East (You) drew a tile.\n  - generic: 79 tiles left in wall\n  - generic: \"Last saved: Sep 22, 2026, 10:38 PM · Played: 4:22\"\n  - status\n  - region \"Mahjong table\":\n    - generic: North · 13 concealed\n    - generic: West · 13 concealed\n    - text: CEDAR\n    - text: TABLE\n    - generic: South · 13 concealed\n  - heading \"East — your hand\" [level=2]\n  - button \"Analyze hand\"\n  - paragraph: Your turn — select a tile to discard.\n  - heading \"Practice hints\" [level=3]\n  - button \"Collapse hints\"\n  - paragraph: These are structural waits with unseen copies, not guaranteed draws or probabilities.\n  - paragraph: No discard leaves this hand one tile from a standard winning hand.\n  - generic \"Your tiles\":\n    - button \"4 bamboo\" [active]:\n      - generic: \"4\"\n      - generic: bamboo\n    - button \"5 bamboo\":\n      - generic: \"5\"\n      - generic: bamboo\n    - button \"8 bamboo\":\n      - generic: \"8\"\n      - generic: bamboo\n    - button \"8 bamboo\":\n      - generic: \"8\"\n      - generic: bamboo\n    - button \"8 bamboo\":\n      - generic: \"8\"\n      - generic: bamboo\n    - button \"2 characters\":\n      - generic: \"2\"\n      - generic: characters\n    - button \"7 characters\":\n      - generic: \"7\"\n      - generic: characters\n    - button \"8 characters\":\n      - generic: \"8\"\n      - generic: characters\n    - button \"1 dots\":\n      - generic: \"1\"\n      - generic: dots\n    - button \"8 dots\":\n      - generic: \"8\"\n      - generic: dots\n    - button \"E East\":\n      - generic: E\n      - generic: East\n    - button \"E East\":\n      - generic: E\n      - generic: East\n    - button \"G Green\":\n      - generic: G\n      - generic: Green\n    - button \"N North\":\n      - generic: \"N\"\n      - generic: North\n  - region \"Statistics\":\n    - heading \"Statistics\" [level=2]\n    - generic: Latest 50 saved completed results\n    - paragraph: Complete a hand to see statistics for the latest 50 saved results.\n    - term: Completed hands\n    - definition: \"0\"\n    - term: East wins\n    - definition: \"0\"\n    - term: Losses\n    - definition: \"0\"\n    - term: Draws\n    - definition: \"0\"\n    - term: Win rate (East wins ÷ completed hands; draws included)\n    - definition: 0%\n    - term: Total Played\n    - definition: 0:00\n    - term: Average Played\n    - definition: 0:00\n  - region \"History\":\n    - heading \"History\" [level=2]\n    - generic: Latest 50 completed hands\n    - status\n    - list:\n      - listitem: No completed hands yet.\n  - generic \"House rules and local opening\""
+}

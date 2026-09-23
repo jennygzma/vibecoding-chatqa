@@ -1,0 +1,10 @@
+{
+  "name": "cedar-table",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check rules.js && node --check game.js && node --check clock.js && node --check computer-pace.js && node --check computer-scheduler.js && node --check discard-rivers.js && node --check discard-selection.js && node --check persistence.js && node --check history-csv.js && node --check statistics.js && node --check app.js"
+  }
+}

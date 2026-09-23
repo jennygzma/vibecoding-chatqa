@@ -1,0 +1,140 @@
+{
+  "note": "File extensions match JPEG content. Image bytes are unchanged. Historical conversation references retain the originally recorded filenames.",
+  "files": [
+    {
+      "original_name": "completed-hand-before-finish-display.png",
+      "published_name": "completed-hand-before-finish-display.jpg",
+      "sha256": "ddc45d6bc86018a2148acedb6524412d49b701ab68394c34269bdb1c8a31c164"
+    },
+    {
+      "original_name": "initial-stalled-table.png",
+      "published_name": "initial-stalled-table.jpg",
+      "sha256": "99afd58e8b6371c499866393c63d51a79694112ba428107b1281d9a97e6947cb"
+    },
+    {
+      "original_name": "missing-computer-meld.png",
+      "published_name": "missing-computer-meld.jpg",
+      "sha256": "934af8dcecc54233c8d36ece4bc337331f51e37f5b66a745a7c8b140eac40127"
+    },
+    {
+      "original_name": "final-claim-table.png",
+      "published_name": "final-claim-table.jpg",
+      "sha256": "a6a7180112aae7dde1298d22f15d5d23360173ddbf6ff226d8f77669c0e28a30"
+    },
+    {
+      "original_name": "final-completed-hand.png",
+      "published_name": "final-completed-hand.jpg",
+      "sha256": "b33d70a88aaffd3fad6ee51f665a3b87302a83c9cfb1775380b48e135b67778d"
+    },
+    {
+      "original_name": "feature-9/selection-and-hints-preserved.png",
+      "published_name": "feature-9/selection-and-hints-preserved.jpg",
+      "sha256": "331a53130ed9854a8e1a0a77f8033059a1b08df1c14cfdd7b9d94a66ab824fa4"
+    },
+    {
+      "original_name": "feature-9/empty-history.png",
+      "published_name": "feature-9/empty-history.jpg",
+      "sha256": "1c05be01b5c00a378a88ccd1b8081e431d866943ed5c70e287fa82ec8b5cfa32"
+    },
+    {
+      "original_name": "feature-9/losses.png",
+      "published_name": "feature-9/losses.jpg",
+      "sha256": "53f5004470e944e2b7018f8ecf1d835ddde9cf4c2f3051cea08b7dacaa91767d"
+    },
+    {
+      "original_name": "feature-9/no-matching-east-wins.png",
+      "published_name": "feature-9/no-matching-east-wins.jpg",
+      "sha256": "bbfec049de2aa6cbff1132c434129f98d8783861964f9271e2f4b219149f1958"
+    },
+    {
+      "original_name": "feature-7/after-pon-paused.png",
+      "published_name": "feature-7/after-pon-paused.jpg",
+      "sha256": "142e36e90fd68df13cd4578b576c49e25612d54ba026ebccc7587c2417976ef2"
+    },
+    {
+      "original_name": "feature-7/discard-rivers.png",
+      "published_name": "feature-7/discard-rivers.jpg",
+      "sha256": "aec16f4fef70dc9f11cf5a84ea132df84eafa1eabc4743d578b542a5d2cee01a"
+    },
+    {
+      "original_name": "feature-7/completed-hand-rivers.png",
+      "published_name": "feature-7/completed-hand-rivers.jpg",
+      "sha256": "069fe8d976c8d32d458a475efba6d7c6e3d236a345a07335f30b5879ebfe5494"
+    },
+    {
+      "original_name": "feature-7/initial-layout.png",
+      "published_name": "feature-7/initial-layout.jpg",
+      "sha256": "dbe194d17d83ab2bcd1ec0b2716eca686337a6456a1f1294050bec40259668a3"
+    },
+    {
+      "original_name": "feature-10/empty-history-disabled.png",
+      "published_name": "feature-10/empty-history-disabled.jpg",
+      "sha256": "f8124d50f2cf429b05aa84ca158ded898c3846bfb46e32f09f437a86da5bdd40"
+    },
+    {
+      "original_name": "feature-10/export-with-no-matches.png",
+      "published_name": "feature-10/export-with-no-matches.jpg",
+      "sha256": "9d1f3f3ae63f1614c4d82e27c283c4ce64de21a9d797f2dec4978744aa3da390"
+    },
+    {
+      "original_name": "feature-6/computer-pace.png",
+      "published_name": "feature-6/computer-pace.jpg",
+      "sha256": "ecde844026c033b9bf2537f9f638b457a2db5b1a891c1f67cc3bfbb16e911cc6"
+    },
+    {
+      "original_name": "feature-8/confirmed-discard.png",
+      "published_name": "feature-8/confirmed-discard.jpg",
+      "sha256": "6e8da9b9e7c48af2a9759eb7b3adf2e7a332517c056e053090fa7ac5af7ed21f"
+    },
+    {
+      "original_name": "feature-8/selected-east-final.png",
+      "published_name": "feature-8/selected-east-final.jpg",
+      "sha256": "72815125586aaf3fb4e7d1f0b68fb68b54d735dda22c7c1bbcc2a3cba27eac73"
+    },
+    {
+      "original_name": "feature-8/selected-east.png",
+      "published_name": "feature-8/selected-east.jpg",
+      "sha256": "72815125586aaf3fb4e7d1f0b68fb68b54d735dda22c7c1bbcc2a3cba27eac73"
+    },
+    {
+      "original_name": "feature-4/statistics.png",
+      "published_name": "feature-4/statistics.jpg",
+      "sha256": "42f993f84fa4fcafbbccd1336cd8dbb9a6f421187569e4ee64f2b7cd93311000"
+    },
+    {
+      "original_name": "feature-3/initial-history.png",
+      "published_name": "feature-3/initial-history.jpg",
+      "sha256": "a647a65414f682d3c74f05b3649e8112c8bb6157f8629d4880e8491351c8db71"
+    },
+    {
+      "original_name": "feature-3/final-history.png",
+      "published_name": "feature-3/final-history.jpg",
+      "sha256": "52edf244142c32d969d572e74351d69934a41a58abd73d2439837267ab4a7900"
+    },
+    {
+      "original_name": "feature-2/continue-saved-hand.png",
+      "published_name": "feature-2/continue-saved-hand.jpg",
+      "sha256": "21c496201486a94418f0d6197248977715c40908a359c6fe422304daf18e280b"
+    },
+    {
+      "original_name": "feature-2/restored-finished-hand.png",
+      "published_name": "feature-2/restored-finished-hand.jpg",
+      "sha256": "d16017943bddbf10fcd40dfcce0a52238ed2a357d913f2c5cf220fe7c51e8a69"
+    },
+    {
+      "original_name": "feature-5/final-hints.png",
+      "published_name": "feature-5/final-hints.jpg",
+      "sha256": "9709f95345eabb98f54a34bb53dc0bb084d60cc69408da560c99ed32218b04d4"
+    },
+    {
+      "original_name": "feature-5/restored-original.png",
+      "published_name": "feature-5/restored-original.jpg",
+      "sha256": "52edf244142c32d969d572e74351d69934a41a58abd73d2439837267ab4a7900"
+    },
+    {
+      "original_name": "feature-5/hints-empty.png",
+      "published_name": "feature-5/hints-empty.jpg",
+      "sha256": "d6dff5fb5b72bdfa31066866095a7b4afe268b3bd18359f9a8e5b407a1f5a7f1"
+    }
+  ]
+}

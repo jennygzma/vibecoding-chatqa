@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "sessionId": "1790118856040_70kl6",
+  "messages": [
+    {
+      "id": "msg_mudajpnc_z1",
+      "role": "user",
+      "ts": 1790118856344,
+      "content": [
+        {
+          "type": "text",
+          "text": "For the second feature I want to leave a Cedar Table hand and come back to it. Please add automatic local saving and a Continue hand option after refreshing or reopening the game. Keep the four-seat rules and English interface from the first feature. Save after each move including computer moves. I should get the same tiles and the same pending claim when I continue. Show the last saved time and how long I have actually played this hand. Time while the game is closed or paused should not count. Add a Pause button so the table stops while I am away. A saved hand should wait for me to choose Continue before anything moves. Let me start a new hand instead with a clear confirmation. If saving is unavailable or an old save is damaged explain it and keep the game usable. Test restoration during a claim and after a finished hand. Please update the README and leave a separate Ready for Review note for feature 2 with the tests and a local commit. Keep it In Progress for my review."
+        }
+      ]
+    },
+    {
+      "id": "msg_kg5TwRp4",
+      "role": "assistant",
+      "ts": 1790118859389,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Plan\n\nI’ll first inspect the project structure, existing first-feature implementation, scripts, and repository state. Then I’ll identify the game-state and UI integration points for persistence, pause/timing, restoration, confirmation, tests, documentation, and review-note conventions. After that I’ll implement the feature consistently with the existing codebase, run the relevant automated checks (including the requested restoration scenarios), verify the edited files, create a local commit, and leave the feature marked **In Progress** with a separate Ready for Review note."
+        }
+      ]
+    },
+    {
+      "id": "msg_zbYxKmAZ",
+      "role": "assistant",
+      "ts": 1790118863383,
+      "content": [
+        {
+          "type": "text",
+          "text": "The working tree already contains uncommitted evidence/data artifacts that predate this feature. I’ll preserve them and limit the feature commit to the application, tests, README, and the review note. Next I’m reading the complete current implementation and project scripts so persistence does not alter the four-seat claim model."
+        }
+      ]
+    },
+    {
+      "id": "msg_pycN-pcA",
+      "role": "assistant",
+      "ts": 1790118878013,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Implementation approach\n\n- Add a dependency-free persistence module that serializes the existing complete game state (including physical tile IDs, melds, pending discard/claim, passed callers, and finish state) plus active-play timing metadata.\n- Validate saved data before restoring it; corrupt, incompatible, or unavailable storage will display a plain-English notice and fall back to a usable new hand.\n- Update the browser controller to save after every state transition—including timed computer transitions—track only active time, pause reliably, and defer all scheduled movement until the player explicitly chooses **Continue hand**.\n- Add a confirmed **New hand** path that clears the saved hand, update the English UI/README, and write automated tests for claim/finished restoration and storage failures.\n- Preserve the existing Feature 1 review content and add a separate Feature 2 review note, then commit only Feature 2 files."
+        }
+      ]
+    },
+    {
+      "id": "msg_FbeU5AgI",
+      "role": "assistant",
+      "ts": 1790118911086,
+      "content": [
+        {
+          "type": "text",
+          "text": "The first controller replacement exceeded the editor’s safe payload limit, so no file was changed. I’ll split the same complete replacement into smaller controlled edits, then immediately syntax-check it before proceeding with markup and tests."
+        }
+      ]
+    },
+    {
+      "id": "msg_a42eSJdC",
+      "role": "assistant",
+      "ts": 1790118922000,
+      "content": [
+        {
+          "type": "text",
+          "text": "The split edit inserted the new controller footer at the transition boundary; I’m now checking the resulting file because this is exactly where an accidental retained legacy footer could cause duplicate initialization."
+        }
+      ]
+    },
+    {
+      "id": "msg_zC_Bx5Wf",
+      "role": "assistant",
+      "ts": 1790118929972,
+      "content": [
+        {
+          "type": "text",
+          "text": "The controller and persistence module now pass syntax validation. I’ll add the compact English controls/status area and automated persistence tests next, including an exact pending-claim round trip (same physical tile ID and claim decision) and a completed-hand round trip."
+        }
+      ]
+    },
+    {
+      "id": "msg_fkxRlh5g",
+      "role": "assistant",
+      "ts": 1790118949372,
+      "content": [
+        {
+          "type": "text",
+          "text": "The new test content was not written because the editor request omitted its target path. I’ll apply it to a dedicated persistence test file, then run the full checks to catch both test and integration issues."
+        }
+      ]
+    },
+    {
+      "id": "msg_9eF9aYET",
+      "role": "assistant",
+      "ts": 1790118959134,
+      "content": [
+        {
+          "type": "text",
+          "text": "The pending-claim test exposed a test-fixture conservation error—not an application failure: the fixture replaced East’s dealt hand and dropped tiles, so the persistence validator correctly rejected it. I’ll correct the fixture to retain all 136 physical tiles, rerun the entire suite, and then inspect the diff before preparing the review handoff and commit."
+        }
+      ]
+    },
+    {
+      "id": "msg_HjPoe7rU",
+      "role": "assistant",
+      "ts": 1790118970523,
+      "content": [
+        {
+          "type": "text",
+          "text": "All automated tests now pass (15 total). The only diff-check warnings are pre-existing formatting in the already-modified Feature 1 review file plus one harmless final blank line in the new controller; I’ll remove the latter, create the separate Feature 2 review note marked **In Progress**, and then perform the final scoped validation and commit."
+        }
+      ]
+    },
+    {
+      "id": "msg_p_2XO9iF",
+      "role": "assistant",
+      "ts": 1790118979750,
+      "content": [
+        {
+          "type": "text",
+          "text": "The review note is separate from the Feature 1 document and keeps the requested status as **In Progress**. I’m replacing its temporary commit placeholder with a stable local-log reference, then I’ll verify the exact staged file set, run the final checks, and make a scoped Feature 2 commit without absorbing the pre-existing untracked evidence/data artifacts."
+        }
+      ]
+    },
+    {
+      "id": "msg_l5xRH_pu",
+      "role": "assistant",
+      "ts": 1790118985002,
+      "content": [
+        {
+          "type": "text",
+          "text": "Final scoped validation is clean: the requested persistence tests, all existing game/rule tests, and syntax checks pass. I will now stage only the eight Feature 2 files (explicitly excluding the pre-existing `evidence/REVIEW.md`, `data/`, and other evidence artifacts), create the local commit, then amend the review note with that exact commit ID and re-verify the committed contents."
+        }
+      ]
+    },
+    {
+      "id": "msg_Nz0yOhsY",
+      "role": "assistant",
+      "ts": 1790118987441,
+      "content": [
+        {
+          "type": "text",
+          "text": "The scoped Feature 2 commit was created as `669a57b`. I’ll now record that immutable review revision in the separate note and amend it into the same local commit, then confirm the final commit contents and that the unrelated working-tree artifacts remain untouched."
+        }
+      ]
+    },
+    {
+      "id": "msg_2Y6F3UYu",
+      "role": "assistant",
+      "ts": 1790119000354,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Feature 2 complete — Ready for Review\n\nImplemented automatic local hand saving and continuation while retaining the existing four-seat rules and English interface.\n\n### Delivered\n- Automatic `localStorage` save after every human and computer transition.\n- Restores complete physical-tile state, including:\n  - pending claims and the exact pending discard;\n  - passed-player claim state;\n  - exposed melds;\n  - finished hands and winners.\n- Restored hands wait for **Continue hand** before any computer action runs.\n- **Pause/Resume** stops timed computer turns and excludes paused/closed time from active hand duration.\n- Displays **Last saved** timestamp and **Played** active duration.\n- **New hand** requires confirmation before replacing the saved hand.\n- Graceful messages and usable fallback hand for blocked local storage or damaged saves.\n- Updated README documentation.\n- Added separate review handoff:\n  - `projects/cedar-table/evidence/FEATURE-2-READY-FOR-REVIEW.md`\n  - Status remains **In Progress**.\n\n### Validation\n- `npm test` — **15 passing**\n  - Includes restoration during a pending human claim with the same physical discard ID.\n  - Includes restoration after a finished hand.\n  - Includes damaged-save and unavailable-storage handling.\n- `npm run check` — passed.\n- Local HTTP smoke check confirmed the Continue hand, Pause, and save-time controls.\n\n### Local commit\n- Current Feature 2 commit: `8192e07 feat: persist Cedar Table hands locally`\n\nI intentionally left the pre-existing uncommitted `data/` and evidence artifacts, plus the existing modified `projects/cedar-table/evidence/REVIEW.md`, untouched and out of the Feature 2 commit."
+        }
+      ]
+    },
+    {
+      "id": "msg_mudax8og_193",
+      "role": "user",
+      "ts": 1790119487536,
+      "content": [
+        {
+          "type": "text",
+          "text": "The refresh kept North's 6 Bamboo and my Pon choice correctly. But Played stayed at one minute while I was deciding and was still one minute after refreshing. Please keep the visible clock moving while I think and preserve that time when I leave the page. Stop counting after a hand finishes as well as while paused or hidden. Also hide or disable Continue hand when I am already playing. I checked damaged saves too. Changing a tile rank to 99 is accepted. So is setting awaitingHuman on an ordinary discard phase. Please validate the actual tile identities and consistent claim state before restoring. Reading window.localStorage itself can throw before the current catch block. That needs a safe fallback too. Please add coverage for the clock and page lifecycle as well as valid pending claims and real finished hands. Use a clock that does not jump when the system time changes. Keep the code readable and formatted. Once the checks pass update the feature 2 review note and make a new local checkpoint. I will review this before feature 3."
+        }
+      ]
+    },
+    {
+      "id": "msg__DKUtsQw",
+      "role": "assistant",
+      "ts": 1790119491515,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Plan\n\nI’ll inspect the committed Feature 2 implementation and review note, then tighten persistence validation against the actual 136-tile identity set and game-phase invariants. I’ll replace the wall-clock-based active timer with a monotonic clock and add lifecycle handling so the visible clock updates while actively playing but freezes while paused, hidden, closed, or after a hand ends. I’ll also make **Continue hand** available only for a restored hand, extend tests for the requested cases, run all checks, update the Feature 2 review note, and create a new local checkpoint without including unrelated workspace artifacts."
+        }
+      ]
+    },
+    {
+      "id": "msg_LKq-ia9n",
+      "role": "assistant",
+      "ts": 1790119499188,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Findings and refinement plan\n\nThe reported behavior matches the current implementation: it only re-renders after actions, derives elapsed time from `Date.now()`, and directly evaluates `window.localStorage` before the persistence helper can catch access errors. The current structural validator checks only uniqueness/count, not canonical tile identities or whether `awaitingHuman` represents the selected legal human claim.\n\nI’ll address this with:\n1. a small, injectable monotonic active-time utility for unit-tested ticking/pause/hidden/finished lifecycle behavior;\n2. canonical identity and phase/claim validation in persistence;\n3. safe storage acquisition in the UI;\n4. a readable controller update that runs a visual clock while the table is active, saves on lifecycle suspension, and hides Continue except for restored hands."
+        }
+      ]
+    },
+    {
+      "id": "msg_82gAt3gi",
+      "role": "assistant",
+      "ts": 1790119510931,
+      "content": [
+        {
+          "type": "text",
+          "text": "I’ll keep the timer logic isolated in a small `clock.js` module so its monotonic behavior and lifecycle stopping can be tested without a browser DOM. For restore validation, I’ll normalize the serialized state first, compare each tile against the canonical ID/type map, and then validate legal meld, phase, pending-discard, and selected-human-claim relationships before accepting it."
+        }
+      ]
+    },
+    {
+      "id": "msg_0dUuV7aZ",
+      "role": "assistant",
+      "ts": 1790119537424,
+      "content": [
+        {
+          "type": "text",
+          "text": "The persistence replacement did not run because the editor request omitted its target path; no source changed in that step. I’ll apply the same validated-state update to the intended file now, then test it before touching the controller."
+        }
+      ]
+    },
+    {
+      "id": "msg_UnEoqKh8",
+      "role": "assistant",
+      "ts": 1790119556299,
+      "content": [
+        {
+          "type": "text",
+          "text": "The stricter persistence model is now in place. Next I’m replacing the compact controller with a formatted version that uses `performance.now()` through the tested clock module, safely obtains storage, continuously renders the active clock, and handles `visibilitychange`/`pagehide` transitions without advancing hidden or finished hands."
+        }
+      ]
+    },
+    {
+      "id": "msg_t0QhmFlH",
+      "role": "assistant",
+      "ts": 1790119566125,
+      "content": [
+        {
+          "type": "text",
+          "text": "The controller now uses a monotonic timer and lifecycle hooks. One compatibility detail surfaced during review: a legitimate tsumo finish does not move its winning tile out of the winner’s hand, so a finished-state validator must accept zero stored winning tiles (tsumo/exhaustive draw) as well as one (ron). I’ll adjust that invariant and add explicit regression tests for canonical identity corruption, ordinary-phase `awaitingHuman`, legal pending claims, and genuine finishes."
+        }
+      ]
+    },
+    {
+      "id": "msg_gHMWYNpk",
+      "role": "assistant",
+      "ts": 1790119575021,
+      "content": [
+        {
+          "type": "text",
+          "text": "The new tests now cover the reported rank-99 and invalid `awaitingHuman` cases, along with a valid ended tsumo state; the existing pending-claim test continues to exercise restoration and completion of a real legal Pon choice. I’ll run the expanded test suite and syntax checks now, then use any failures to refine the invariants before final review documentation and the checkpoint."
+        }
+      ]
+    },
+    {
+      "id": "msg_bNHTMINF",
+      "role": "assistant",
+      "ts": 1790119580943,
+      "content": [
+        {
+          "type": "text",
+          "text": "The pending-claim regression failed because its test fixture still had `tsumoEligible: true`, a state that game transitions never produce once a discard opens a claim phase. The stricter validator correctly rejected it. I’ll correct the fixture to represent a real claim state and rerun all tests; I’ll also format the few long persistence expressions for the readability requirement."
+        }
+      ]
+    },
+    {
+      "id": "msg_KU4eOQCz",
+      "role": "assistant",
+      "ts": 1790119602627,
+      "content": [
+        {
+          "type": "text",
+          "text": "The full suite is now green (18 tests), including monotonic-clock lifecycle tests and the new corrupted-save cases. Before checkpointing, I’ll strengthen the finished-hand test to end through the real `tsumo` game transition rather than by assigning terminal fields, and format the persistence tests/validation branches for readability."
+        }
+      ]
+    },
+    {
+      "id": "msg_tVf63ioI",
+      "role": "assistant",
+      "ts": 1790119610717,
+      "content": [
+        {
+          "type": "text",
+          "text": "The finished-hand coverage now performs an actual East tsumo before serializing, rather than fabricating terminal fields. I’ll run final validation and inspect the scoped diff; if green, I’ll update the Feature 2 note with this follow-up’s specific coverage and create the requested checkpoint commit."
+        }
+      ]
+    },
+    {
+      "id": "msg_UyAtcv-8",
+      "role": "assistant",
+      "ts": 1790119617641,
+      "content": [
+        {
+          "type": "text",
+          "text": "All final checks pass with **18 tests**. The added finished-hand case now reaches the terminal state through the actual game `tsumo` transition, and lifecycle-clock tests verify that time accumulates while active but not while stopped for hiding/page leave. I’ll update the existing Feature 2 review note to describe this follow-up checkpoint and its validation, then create the scoped local commit."
+        }
+      ]
+    },
+    {
+      "id": "msg_EoFOBJnA",
+      "role": "assistant",
+      "ts": 1790119626851,
+      "content": [
+        {
+          "type": "text",
+          "text": "The review note now records the timing/lifecycle correction, stricter restore checks, and expanded coverage while retaining **In Progress**. I’ll stage only this follow-up’s source, tests, README, and Feature 2 note—excluding all pre-existing artifacts—create the requested checkpoint, and run one final post-commit status check."
+        }
+      ]
+    },
+    {
+      "id": "msg_xMnmfsc6",
+      "role": "assistant",
+      "ts": 1790119632049,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Feature 2 follow-up checkpoint complete\n\nCreated local checkpoint:\n\n- `7b82723 fix: preserve active hand time and validate restores`\n\n### Fixed timing and lifecycle behavior\n- Added a monotonic active-time clock based on `performance.now()`.\n- The visible **Played** clock updates while you are deciding, including at a pending claim.\n- Active time is saved when the page is hidden or left.\n- Time stops while:\n  - paused;\n  - hidden;\n  - the page is being left;\n  - the hand has finished.\n- Restored active time resumes only after choosing **Continue hand**.\n\n### Improved controls\n- **Continue hand** is hidden during ordinary active play.\n- It is shown only when a restored saved hand is awaiting the player’s explicit continuation.\n\n### Hardened restore validation\nSaved hands are now rejected when they contain:\n- invalid tile identity data, including an ID/type mismatch or rank `99`;\n- invalid meld shapes;\n- inconsistent discard/claim phases;\n- `awaitingHuman` during an ordinary discard phase;\n- a pending human claim that is not actually the currently selected legal claim;\n- invalid pending-discard ownership or inconsistent finished states.\n\nAccessing `window.localStorage` is now itself protected, so blocked storage access falls back safely to a usable game.\n\n### Tests and checks\n- `npm test` — **18 passing**\n  - monotonic active clock;\n  - hidden/page-leave lifecycle stopping and resuming;\n  - valid pending Pon restoration with the same physical discard;\n  - real game-transition East tsumo finish restoration;\n  - rank-99 rejection;\n  - invalid `awaitingHuman` rejection;\n  - damaged and unavailable storage handling.\n- `npm run check` — passed.\n- Local HTTP smoke check — passed.\n\n### Documentation\nUpdated:\n- `projects/cedar-table/README.md`\n- `projects/cedar-table/evidence/FEATURE-2-READY-FOR-REVIEW.md`\n\nFeature 2 remains **In Progress** for your review. Pre-existing uncommitted evidence/data artifacts were left untouched and excluded from the checkpoint."
+        }
+      ]
+    },
+    {
+      "id": "msg_mudb5pul_1x4",
+      "role": "user",
+      "ts": 1790119883037,
+      "content": [
+        {
+          "type": "text",
+          "text": "The clock now advances while I decide and stays fixed when paused. Leaving and reopening the page kept one minute and twelve seconds without adding the time away. I found one remaining save boundary issue. A legal ron opportunity is rejected if the discard has happened but resolveClaims has not run yet. After resolveClaims the same position restores successfully. My fixture gives East 1 and 2 Bamboo plus 1-2-3 Characters and 1-2-3 Dots with three East winds and two White dragons. North has just discarded 3 Bamboo. All 136 physical tiles are present and unique. Since each discard is saved immediately this is a real refresh window. Please accept this valid intermediate state and resolve it only after Continue. Add a regression for it plus save/restore checks throughout complete hands. Format the persistence files and tests too. Then update the review note and checkpoint."
+        }
+      ]
+    },
+    {
+      "id": "msg_EZuRh9LB",
+      "role": "assistant",
+      "ts": 1790119887561,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Plan\n\nI’ll inspect the current claim-selection and persistence validation paths, reproduce the described pre-`resolveClaims` Ron state using the existing test helpers, and adjust validation so a legal unresolved claim window is accepted without allowing inconsistent pending states. I’ll add a regression for that exact state plus save/restore round trips throughout complete simulated hands, format the persistence source/tests for readability, run all checks, update the Feature 2 review note, and create a scoped local checkpoint."
+        }
+      ]
+    },
+    {
+      "id": "msg_a_HYDCTo",
+      "role": "assistant",
+      "ts": 1790119901303,
+      "content": [
+        {
+          "type": "text",
+          "text": "The failure is in the final claim-phase invariant: it treats `awaitingHuman: false` as proof that East cannot have the selected Ron. Immediately after a discard, however, that flag is correctly still false until `resolveClaims` runs. I’ll make the invariant distinguish “unresolved claim window” from an invalid awaiting state, add the specified 3 Bamboo Ron fixture, and add restore round trips after every transition in deterministic full-hand simulations."
+        }
+      ]
+    },
+    {
+      "id": "msg_CKkdFO9_",
+      "role": "assistant",
+      "ts": 1790119939061,
+      "content": [
+        {
+          "type": "text",
+          "text": "I’ll now apply the narrow persistence change and test coverage. The restored intermediate record will retain `awaitingHuman: false`; the existing app-level `waitingToContinue` gate prevents its claim resolution until the user presses **Continue hand**."
+        }
+      ]
+    },
+    {
+      "id": "msg_z5qzjPP5",
+      "role": "assistant",
+      "ts": 1790119945474,
+      "content": [
+        {
+          "type": "text",
+          "text": "The full-file formatting replacement exceeded the editor payload limit, so no files were changed by that attempt. I’ll make equivalent, smaller edits: first the logic correction, then compactly add the regression and transition round-trip test, followed by a formatter-style cleanup of the affected sections."
+        }
+      ]
+    },
+    {
+      "id": "msg_Aez3-Y10",
+      "role": "assistant",
+      "ts": 1790119959579,
+      "content": [
+        {
+          "type": "text",
+          "text": "The exact Ron fixture is now represented with North’s physical 3 Bamboo still in North’s discard pile and all 136 IDs conserved. Next I’ll add the complete-hand round-trip regression, convert the existing persistence test records to the shared formatted helper, and update the review record once the suite confirms the behavior."
+        }
+      ]
+    },
+    {
+      "id": "msg_hYxnQ8oi",
+      "role": "assistant",
+      "ts": 1790119970137,
+      "content": [
+        {
+          "type": "text",
+          "text": "The new simulation restores every state transition—including unresolved discard/claim windows, pending human decisions, computer calls, and terminal states—before continuing the hand. I’ll run it now along with syntax validation and inspect the edited files/diff before recording the updated review evidence and checkpoint."
+        }
+      ]
+    },
+    {
+      "id": "msg_oVvKc8DK",
+      "role": "assistant",
+      "ts": 1790119983670,
+      "content": [
+        {
+          "type": "text",
+          "text": "All 20 tests pass, including the new unresolved-Ron and full-hand persistence coverage. The only `git diff --check` issue belongs to the pre-existing, unrelated modification of `projects/cedar-table/evidence/REVIEW.md`; I will leave it untouched. I’ll now finish formatting the touched persistence source and test blocks and record the new coverage in the Feature 2 review note."
+        }
+      ]
+    },
+    {
+      "id": "msg_u0BuKFbS",
+      "role": "assistant",
+      "ts": 1790120000394,
+      "content": [
+        {
+          "type": "text",
+          "text": "Formatting is now improved in both persistence files, and the review note reflects the accepted intermediate window and expanded test coverage. I’ll perform the final targeted validation (excluding the unrelated modified review file), inspect the staged scope, then create and verify the requested checkpoint."
+        }
+      ]
+    },
+    {
+      "id": "msg_Bn4aosoT",
+      "role": "assistant",
+      "ts": 1790120004667,
+      "content": [
+        {
+          "type": "text",
+          "text": "Targeted validation is clean: `npm test` passes all 20 tests, `npm run check` passes, and whitespace validation passes for the three scoped files. The review note has been updated and still correctly remains pending approval. I’ll create a checkpoint containing only the Feature 2 persistence changes, deliberately excluding the pre-existing review edit and untracked data/evidence artifacts."
+        }
+      ]
+    },
+    {
+      "id": "msg_kLwJrcc7",
+      "role": "assistant",
+      "ts": 1790120007530,
+      "content": [
+        {
+          "type": "text",
+          "text": "The scoped checkpoint was created as `b66173d`. I’ll make one final post-commit verification of the committed files and confirm the remaining working-tree items are unrelated pre-existing artifacts."
+        }
+      ]
+    },
+    {
+      "id": "msg_AnA_FGD_",
+      "role": "assistant",
+      "ts": 1790120011926,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Completed: unresolved Ron restore boundary\n\nCreated checkpoint:\n\n- `b66173d fix: restore unresolved claim windows`\n\n### Changes made\n\n- Updated `projects/cedar-table/persistence.js`\n  - Accepts a valid `phase: \"claim\"` state immediately after a discard, before `resolveClaims()` has run.\n  - Retains strict validation for `awaitingHuman: true`: it must still correspond to East’s actually selected legal claim.\n  - The app’s existing restored-hand gate continues to prevent automatic resolution until **Continue hand** is pressed.\n  - Formatted the persistence validation logic.\n\n- Updated `projects/cedar-table/persistence.test.js`\n  - Added the reported fixture:\n    - East has 1–2 Bamboo, 1–2–3 Characters, 1–2–3 Dots, East triplet, White pair.\n    - North has discarded 3 Bamboo.\n    - The saved state is pre-`resolveClaims`, preserves all 136 unique physical tiles, restores successfully, and only exposes/completes Ron after resolution.\n  - Added deterministic complete-hand tests that serialize and restore after **every transition** before continuing.\n  - Formatted persistence test helpers and storage mocks.\n\n- Updated `projects/cedar-table/evidence/FEATURE-2-READY-FOR-REVIEW.md`\n  - Documents the accepted immediate-post-discard claim window.\n  - Records the new Ron regression and complete-hand round-trip coverage.\n  - Updates validation count to 20 tests.\n\n### Validation\n\nPassed after commit:\n\n```sh\nnpm test\nnpm run check\n```\n\nResults: **20 tests passed**, syntax checks passed, and the scoped commit has no whitespace errors.\n\n### Working tree note\n\nI intentionally did not include the pre-existing unrelated modification to:\n\n- `projects/cedar-table/evidence/REVIEW.md`\n\nNor the pre-existing untracked `data/` and evidence artifacts."
+        }
+      ]
+    }
+  ]
+}

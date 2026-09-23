@@ -1,0 +1,34 @@
+{
+  "status": "In Progress",
+  "reviewer": "Andy Chen",
+  "approval": "pending",
+  "source_commit": "25be88c7cfa94da63cb2bb7be0fd820e4531cfe4",
+  "recorded_at": "2026-09-22T20:57:27.605000+00:00",
+  "checks": {
+    "npm test": {
+      "outcome": "passed",
+      "tests": 12
+    },
+    "npm run check": {
+      "outcome": "passed"
+    },
+    "simulated_hands": {
+      "count": 8,
+      "physical_tile_conservation": "136 unique IDs after every transition"
+    },
+    "browser_complete_hands": 2,
+    "final_browser_result": "East wins by ron with 17 tiles left",
+    "final_winning_tile": "9 Dots",
+    "winning_tile_rendered_once": true,
+    "final_east_tiles": {
+      "exposed": 12,
+      "concealed_and_winning": 2
+    }
+  },
+  "evidence": [
+    "final-browser-hand-log.json",
+    "final-completed-hand.jpg",
+    "final-claim-table.jpg",
+    "conversation-validation.json"
+  ]
+}

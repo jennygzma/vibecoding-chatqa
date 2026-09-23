@@ -1,0 +1,133 @@
+{
+  "status": "In Progress",
+  "approval": "pending",
+  "tests_passed": 66,
+  "syntax_checks": "passed",
+  "browser_asset_revision": 13,
+  "reachable_modules": [
+    "app.js",
+    "clock.js",
+    "computer-pace.js",
+    "computer-scheduler.js",
+    "discard-rivers.js",
+    "discard-selection.js",
+    "game.js",
+    "history-csv.js",
+    "persistence.js",
+    "rules.js",
+    "statistics.js"
+  ],
+  "asset_edges": [
+    [
+      "app.js",
+      "game.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "clock.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "computer-pace.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "computer-scheduler.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "persistence.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "rules.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "discard-rivers.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "discard-selection.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "history-csv.js",
+      "13"
+    ],
+    [
+      "app.js",
+      "statistics.js",
+      "13"
+    ],
+    [
+      "statistics.js",
+      "persistence.js",
+      "13"
+    ],
+    [
+      "persistence.js",
+      "game.js",
+      "13"
+    ],
+    [
+      "persistence.js",
+      "rules.js",
+      "13"
+    ],
+    [
+      "game.js",
+      "rules.js",
+      "13"
+    ],
+    [
+      "history-csv.js",
+      "persistence.js",
+      "13"
+    ]
+  ],
+  "downloaded_file": "downloaded-history.csv",
+  "downloaded_bytes": 182,
+  "downloaded_sha256": "1657a0878d97478ff0d2b2c747fa74b607c2cce39023e769ad9c009227bcfb85",
+  "csv_header": [
+    "hand_id",
+    "result",
+    "winner",
+    "finished_at_utc",
+    "finished_at_estimated",
+    "played_ms",
+    "played"
+  ],
+  "csv_rows": [
+    {
+      "hand_id": "1790129396246-qom52zt2jql",
+      "result": "West wins by Ron",
+      "winner": "West",
+      "finished_at_utc": "2026-09-23T02:09:56.193Z",
+      "finished_at_estimated": "false",
+      "played_ms": "235602.40000000224",
+      "played": "3:55"
+    }
+  ],
+  "CRLF_record_count": 2,
+  "actual_downloads_before_continue_and_after_finish_match": true,
+  "browser_checks": [
+    "zero-match filter exports retained West result",
+    "filter and statistics unchanged after export",
+    "empty history disables export under All results and Draws",
+    "before Continue download succeeds",
+    "ended-hand download succeeds"
+  ],
+  "limits": [
+    "Active and paused exports with nonempty history were not exercised in browser.",
+    "Export-preparation failure and denied browser downloads were not injected."
+  ]
+}

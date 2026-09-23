@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "sessionId": "1790139746557_hwh24",
+  "messages": [
+    {
+      "id": "msg_mudmzhmj_d4",
+      "role": "user",
+      "ts": 1790139747835,
+      "content": [
+        {
+          "type": "text",
+          "text": "For feature 7, I want to see all four players' public discard rivers. The center only shows the current discard, so I lose track of earlier tiles when using Analyze hand. Add a compact Discards section near the table, with East, South, West, and North clearly labeled, each river in oldest-to-newest order and a remaining-tile count. Keep the interface in English and make the layout wrap on narrow screens. Empty rivers should say No discards yet. These are display tiles, not discard buttons.\n\nUse the existing state's discards as the source of truth; do not create another saved history or reveal opponents' concealed hands. Highlight the current claimable discard with a text label as well as color, but only when its exact physical ID is still in that seat's river. Once a tile is taken for chii, pon, kan, or Ron it should disappear from the river and remain in its proper meld or winning-tile location. Do not pretend these remaining rivers are a complete replay log. I want them visible while paused, before Continue, and after a hand ends, and restored from the existing saved hand. Keep the clock, pace selection, hints, statistics, and history working as before.\n\nPlease implement only this feature in this conversation. Start from the current 44 passing tests. Add useful coverage of the real discard/claim transitions, duplicate tile faces with different physical IDs, save/restore, and no mutation or concealed-information leakage. Use a consistent next asset revision so an already-open page can reload safely. Run the tests and syntax checks, make a scoped local commit, and leave unrelated evidence/data changes alone. Add evidence/FEATURE-7-READY-FOR-REVIEW.md with a Ready for Review comment for @Andy Chen, keeping In Progress and approval pending. I will inspect the page before we move on."
+        }
+      ]
+    },
+    {
+      "id": "msg_oWven05i",
+      "role": "assistant",
+      "ts": 1790139753057,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Plan\n\nI’ll implement Feature 7 only, preserving the existing game state as the single discard-history source. I’ll first inspect the project structure, current discard/claim/save UI and tests, the asset revision mechanism, and repository status. Then I’ll make the smallest aligned changes to render read-only, responsive four-seat discard rivers with claim highlighting and remaining count; add targeted transition, duplicate-ID, persistence, and leakage/mutation tests; run the project’s test and syntax checks; create the requested evidence note; and commit only the scoped feature files while leaving unrelated changes untouched."
+        }
+      ]
+    },
+    {
+      "id": "msg_-0bdYsSV",
+      "role": "assistant",
+      "ts": 1790139757618,
+      "content": [
+        {
+          "type": "text",
+          "text": "The repository already has unrelated modified/untracked evidence and data; I will not stage or alter those. The application is a dependency-free browser module app with asset revision `v=7`, so this feature will require a coordinated revision bump across the module graph and stylesheet reference. I’m now reading the relevant source and test contracts in full before choosing the minimal rendering/test seams."
+        }
+      ]
+    },
+    {
+      "id": "msg_RboMSmge",
+      "role": "assistant",
+      "ts": 1790139765464,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Implementation plan refined\n\nThe game already removes a claimed discard from `state.discards` and transfers that exact object into the meld or `winningTiles`; persistence already serializes/restores physical IDs. I’ll keep those transitions unchanged. To make the display behavior directly testable without introducing saved state, I’ll add a small pure `discard-rivers.js` projection that:\n\n- reads only `state.discards`, `state.lastDiscard`, and `state.wall.length`;\n- exposes rivers in East/South/West/North order, preserves array order (oldest to newest), and marks a claimable tile only if its physical `id` remains in that seat’s river;\n- never includes any hand data and never mutates state.\n\n`app.js` will use that projection to render static `<div>` display tiles (not buttons), a clear English claim label, and the existing wall’s remaining count. The compact section will be placed immediately after the table and will flex-wrap on narrow screens. I’ll add test coverage around real discard/claim transitions, same-face distinct IDs, round-trip save restore, and projection non-mutation/no concealed-hand references."
+        }
+      ]
+    },
+    {
+      "id": "msg_z2suHDot",
+      "role": "assistant",
+      "ts": 1790139781949,
+      "content": [
+        {
+          "type": "text",
+          "text": "I have confirmed the existing state invariant makes `lastDiscard` valid only when it is exactly the final tile in that player’s river, and all claim paths remove it before placing the same physical ID elsewhere. The implementation will rely on that invariant rather than duplicate state or infer history."
+        }
+      ]
+    },
+    {
+      "id": "msg_Ay4eR6Jn",
+      "role": "assistant",
+      "ts": 1790139824638,
+      "content": [
+        {
+          "type": "text",
+          "text": "The initial scoped edits established the new pure projection, HTML container, and consistent `v=8` module graph. Next I’ll wire the projection into rendering, add responsive compact styles, and add focused node tests before running the suite."
+        }
+      ]
+    },
+    {
+      "id": "msg_rSResyVH",
+      "role": "assistant",
+      "ts": 1790139844535,
+      "content": [
+        {
+          "type": "text",
+          "text": "Two parallel CSS edit requests were rejected because their file path was omitted; no stylesheet state changed in those rejected operations. I also found the initial restore test attempted an illegal self-claim, so I’ll correct it to a real persisted South-to-East Pon transition."
+        }
+      ]
+    },
+    {
+      "id": "msg_K_kg-4Jf",
+      "role": "assistant",
+      "ts": 1790139859738,
+      "content": [
+        {
+          "type": "text",
+          "text": "The implementation and targeted coverage are now in place. I’ll run the full test suite and syntax check, inspect the changed files and module graph, then fix any feedback before creating the requested evidence note and scoped commit."
+        }
+      ]
+    },
+    {
+      "id": "msg_J3w-EDqR",
+      "role": "assistant",
+      "ts": 1790139872844,
+      "content": [
+        {
+          "type": "text",
+          "text": "Validation is green at **47 tests** and syntax checks. The only full-repository whitespace warning is in pre-existing unrelated `evidence/REVIEW.md`; I will leave it untouched and run scoped whitespace validation for Feature 7 files. I also spotted a narrow-screen cascade issue where the existing generic mobile tile rule would override the river tile size, so I’ll add a specific compact override. Finally, I’ll expand transition coverage to explicitly verify Chii, Kan, and Ron river removal and destination placement."
+        }
+      ]
+    },
+    {
+      "id": "msg_zvxZqTdY",
+      "role": "assistant",
+      "ts": 1790139886224,
+      "content": [
+        {
+          "type": "text",
+          "text": "The new transition test needs one seat-order correction: East can only Chii North’s discard, whereas Pon/Kan/Ron can use South’s. I’ll encode that real arbitration condition, then perform the final validation, create the requested review evidence, and commit only the Feature 7 files."
+        }
+      ]
+    },
+    {
+      "id": "msg_C1mj6hh6",
+      "role": "assistant",
+      "ts": 1790139901452,
+      "content": [
+        {
+          "type": "text",
+          "text": "The real-transition test now matches legal seat order. I’ll run the complete validation one final time, verify only scoped files are whitespace-clean and staged, write the Feature 7 review note with the requested status, and make the local commit."
+        }
+      ]
+    },
+    {
+      "id": "msg_u0g5ca02",
+      "role": "assistant",
+      "ts": 1790139908672,
+      "content": [
+        {
+          "type": "text",
+          "text": "The failed check correctly identified invalid Ron test data: the claimed North completed only a pair while leaving an incomplete Bamboo run. I’ll replace the offered tile with Bamboo 3 so the real claim completes the standard hand, then rerun all checks before documenting and committing."
+        }
+      ]
+    },
+    {
+      "id": "msg_rGshr4nS",
+      "role": "assistant",
+      "ts": 1790139916702,
+      "content": [
+        {
+          "type": "text",
+          "text": "The Ron fixture now completes its Bamboo 1–2–3 meld while retaining North as the pair. I’ll perform the final test/syntax/whitespace verification, then add the requested evidence file and commit the scoped implementation."
+        }
+      ]
+    },
+    {
+      "id": "msg_8PbL2zfM",
+      "role": "assistant",
+      "ts": 1790139924892,
+      "content": [
+        {
+          "type": "text",
+          "text": "All final checks now pass: **48/48 tests**, syntax checks, scoped whitespace validation, and no stale `v=7` asset references in application sources. I’ll now add the requested Feature 7 evidence note, stage only the implementation/test/documentation files for this feature (not the pre-existing evidence/data worktree changes), create the scoped local commit, and verify its contents and remaining worktree status."
+        }
+      ]
+    },
+    {
+      "id": "msg_IA26iE8p",
+      "role": "assistant",
+      "ts": 1790139930730,
+      "content": [
+        {
+          "type": "text",
+          "text": "The requested evidence note has been added with Ready for Review addressed to @Andy Chen while retaining In Progress and Pending approval. I’ll now stage the exact Feature 7 file set, inspect the staged diff, commit it, and confirm unrelated modifications remain unstaged."
+        }
+      ]
+    },
+    {
+      "id": "msg_0uu4n6Qo",
+      "role": "assistant",
+      "ts": 1790139934075,
+      "content": [
+        {
+          "type": "text",
+          "text": "The staged diff contains exactly the 11 Feature 7 implementation, tests, asset-revision, README, and new evidence files; the previously modified evidence files and untracked data remain unstaged. I’ll create the scoped commit and verify the resulting commit and worktree separation."
+        }
+      ]
+    },
+    {
+      "id": "msg_tWoMnZvf",
+      "role": "assistant",
+      "ts": 1790139940196,
+      "content": [
+        {
+          "type": "text",
+          "text": "Implemented Feature 7 and created scoped local commit:\n\n- **Commit:** `ba98c98 feat: show public discard rivers`\n\n### Delivered\n- Compact **Discards** section below the table with labeled **East, South, West, North** public rivers.\n- Tiles display in existing discard-array order: **oldest to newest**.\n- Empty rivers display **“No discards yet.”**\n- Shows current wall **tiles remaining**.\n- Rivers are read-only display tiles, not buttons.\n- Current claimable discard has both a visual highlight and **“Current claimable”** text, only when its exact physical ID is still present in that river.\n- Uses only existing `state.discards`, `state.lastDiscard`, and wall state—no extra history and no opponent concealed-hand access.\n- Existing claim transitions remain authoritative: claimed Chii/Pon/Kan/Ron tiles disappear from rivers and remain in melds or winning-tile storage.\n- Visible during paused, saved-before-Continue, restored, and ended states because it renders with the existing table state.\n- Responsive flex-wrap layout for narrow screens.\n- Bumped the complete browser asset graph consistently from `?v=7` to **`?v=8`**.\n\n### Coverage and validation\n- Added `discard-rivers.test.js` covering:\n  - ordered four-seat projection;\n  - exact physical IDs for duplicate tile faces;\n  - no mutation and no concealed-information leakage;\n  - save/restore;\n  - actual Chii, Pon, Kan, and Ron river-removal transitions.\n- `npm test` — **48/48 passing**\n- `npm run check` — passing\n- Scoped whitespace validation passes.\n\n### Review evidence\nAdded:\n\n- `projects/cedar-table/evidence/FEATURE-7-READY-FOR-REVIEW.md`\n\nIt includes the requested Ready for Review comment for **@Andy Chen**, while keeping status **In Progress** and approval **Pending**.\n\nPre-existing unrelated evidence and data changes were left unstaged and untouched."
+        }
+      ]
+    },
+    {
+      "id": "msg_mudn5jxg_k9",
+      "role": "user",
+      "ts": 1790140030756,
+      "content": [
+        {
+          "type": "text",
+          "text": "I reloaded the existing localhost page and inspected the saved hand before Continue. Played stayed at 5:16, with 74 tiles left in the wall and Slow still selected. The river contents are East: West, North, Green; South: 1, 3, 5 Bamboo; West: two separate 2 Bamboo; North: 1 and 2 Characters. South's 5 Bamboo is the current offered tile, and there are no page errors.\n\nThree visible issues need fixing in this same feature. I meant a count for each river, not a repeat of the wall count: please label these East 3, South 3, West 2, North 2, with clear wording that these are tiles still in the river. The tiles also render at 64 by 88 pixels, not the compact river size. Their computed shadow is the ordinary 2px 3px shadow even on the current discard; the later generic .tile and suit rules are overriding the river size and highlight. Finally, Current claimable is a separate flex item and has wrapped below the left edge of South's river, away from the actual 5 Bamboo. Keep that text physically attached to its highlighted tile when wrapping.\n\nPlease correct the styles with enough specificity at both desktop and narrow widths, add the per-seat counts, and keep normal hand tiles unchanged. Strengthen the privacy test too: it currently only checks that one concealed ID is absent; make reading hands throw so the real projection must use only public fields. Add a missing/wrong-seat lastDiscard case so a stale same-face tile cannot get labeled. The Chii/Kan/Ron fixture replaces the original East hand without returning those tiles to the wall, so please conserve all 136 unique physical IDs in those fixtures and assert that before and after the actual claims. Rerun validation, bump the full asset revision for this correction, and make a scoped follow-up commit. Keep review pending."
+        }
+      ]
+    },
+    {
+      "id": "msg_tEoj42Ij",
+      "role": "assistant",
+      "ts": 1790140037330,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Plan\n\nI’ll treat this as a scoped Feature 7 correction. I’ll first inspect the committed discard styles/projection/tests and current worktree status, then update the river data/rendering for per-seat “tiles still in river” counts and attached claim labels, strengthen CSS specificity after generic tile rules at desktop and narrow widths, and harden the requested privacy/stale-ID/conservation tests. I’ll bump the complete browser module graph from `v=8` to the next consistent revision, rerun the full suite and syntax checks, update the Feature 7 review evidence while keeping it In Progress/Pending, and create a follow-up commit without staging unrelated existing changes."
+        }
+      ]
+    },
+    {
+      "id": "msg_8ydMz--5",
+      "role": "assistant",
+      "ts": 1790140051395,
+      "content": [
+        {
+          "type": "text",
+          "text": "The inspection confirms the observed cascade: `.river-tile` is defined before the generic `.tile` rules, and the claim label is appended as a sibling in the wrapping flex container. The projection already uses public discard fields, but its test does not prove that hands are inaccessible, and the scenario setup does remove replaced East tiles from the state. I’ll now make the renderer/CSS/test changes and update every relevant `v=8` edge and README to `v=9`."
+        }
+      ]
+    },
+    {
+      "id": "msg_CIhJ5yJ-",
+      "role": "assistant",
+      "ts": 1790140068671,
+      "content": [
+        {
+          "type": "text",
+          "text": "I’ll represent each claimable display as a non-wrapping tile-and-badge group, so flex wrapping moves that unit together. The public projection will expose a `count` derived only from each river; headings will say, for example, “East — 3 tiles still in river.” The test fixture will return displaced East tiles to the wall before selecting scenario tiles and will check 136 unique physical IDs both immediately before and after the claim."
+        }
+      ]
+    },
+    {
+      "id": "msg_kc2BlHSZ",
+      "role": "assistant",
+      "ts": 1790140099346,
+      "content": [
+        {
+          "type": "text",
+          "text": "The structural changes are in place. I’ll now add high-specificity river selectors (including a grouped claim badge that cannot detach during wrapping), correct the minor projection formatting, update all browser-visible import and asset URLs to `v=9`, and amend the Feature 7 review note without changing its pending status."
+        }
+      ]
+    },
+    {
+      "id": "msg_3agplVOO",
+      "role": "assistant",
+      "ts": 1790140115874,
+      "content": [
+        {
+          "type": "text",
+          "text": "The stylesheet now applies compact dimensions and shadow behavior through `.discard-river .river-tile`, which outranks the later generic `.tile` and suit border rules, with the same explicit rules inside the narrow breakpoint. I’ll apply the `v=9` revision consistently across every existing browser asset edge, then run the focused tests first to catch fixture issues before full validation."
+        }
+      ]
+    },
+    {
+      "id": "msg_h3XP2-m0",
+      "role": "assistant",
+      "ts": 1790140121711,
+      "content": [
+        {
+          "type": "text",
+          "text": "The focused Feature 7 tests pass, including the inaccessible-hands privacy guard, stale/wrong-seat exact-ID case, and 136-ID conservation checks around Chii, Kan, and Ron. I’ll now run the complete validation suite, verify all local asset edges are `v=9` with no stale revisions, and inspect the scoped diff before staging."
+        }
+      ]
+    },
+    {
+      "id": "msg_0kv1STTJ",
+      "role": "assistant",
+      "ts": 1790140127952,
+      "content": [
+        {
+          "type": "text",
+          "text": "Full validation passes at **49/49 tests**, syntax checks, scoped whitespace checks, and no stale `v=8`/`v=7` asset references. The correction is ready to stage. I’ll update the review note’s validation count and coverage wording, then stage only the 10 changed Feature 7 correction files, inspect the staged diff, commit, and verify that unrelated evidence/data work remains unstaged."
+        }
+      ]
+    },
+    {
+      "id": "msg_GxLmvY9y",
+      "role": "assistant",
+      "ts": 1790140135000,
+      "content": [
+        {
+          "type": "text",
+          "text": "All discovered versioned module and asset references are consistently `v=9`, and the review note accurately records the completed validation while retaining In Progress/Pending status. I’ll now create the scoped follow-up commit and perform a final commit/worktree verification."
+        }
+      ]
+    },
+    {
+      "id": "msg_n0spvEC0",
+      "role": "assistant",
+      "ts": 1790140140801,
+      "content": [
+        {
+          "type": "text",
+          "text": "Implemented the scoped Feature 7 corrections and committed them.\n\n- **Follow-up commit:** `80e7560 fix: compact discard river display`\n- Previous Feature 7 commit remains: `ba98c98 feat: show public discard rivers`\n\n### Fixed UI issues\n- Each heading now includes its own current river count:\n  - `East — 3 tiles still in river`\n  - `South — 3 tiles still in river`\n  - etc.\n- Kept the existing wall count separate as `74 tiles remaining`.\n- River tile CSS now uses `.discard-river .river-tile`, which overrides the later generic `.tile` and suit rules:\n  - compact `30px × 42px` river tiles;\n  - compact padding/type size;\n  - no ordinary `2px 3px` hand-tile shadow;\n  - gold claimable outline/shadow remains visible.\n- Narrow-width rules explicitly preserve the same compact river size and claimable outline.\n- The **Current claimable** badge is now inside a `.river-tile-group` with the tile. Flex wrapping moves the tile and badge together, preventing the badge from wrapping alone beneath the river.\n\nNormal hand and meld tile styling was not changed.\n\n### Test hardening\n- Projection privacy test now makes `state.hands` throw if accessed, proving discard projection relies only on public fields.\n- Added stale/wrong-seat `lastDiscard` cases with identical tile faces; neither gets incorrectly marked claimable.\n- Added per-river count assertions.\n- Chii, Kan, and Ron fixture setup now returns replaced East tiles to the wall.\n- Those claim scenarios assert exactly **136 unique physical IDs** both before and after the actual claim.\n\n### Asset revision and validation\n- Bumped the complete browser asset/module graph from **`v=8` to `v=9`** consistently.\n- Updated `projects/cedar-table/evidence/FEATURE-7-READY-FOR-REVIEW.md`.\n  - Status remains **In Progress**\n  - Approval remains **Pending**\n- Validation passed:\n  - `npm test` — **49/49 passing**\n  - `npm run check` — passing\n  - Scoped `git diff --check` — passing\n  - No stale `v=8` or `v=7` references remain in application assets.\n\nPre-existing unrelated evidence/data changes remain unstaged and untouched."
+        }
+      ]
+    },
+    {
+      "id": "msg_mudnbfeu_pv",
+      "role": "user",
+      "ts": 1790140304838,
+      "content": [
+        {
+          "type": "text",
+          "text": "I checked the correction on the page. River tiles now measure 30 by 42 pixels while my hand tiles remain 64 pixels wide, and only the offered tile has the gold outline. The count headings match the displayed tiles and Current claimable stays grouped with its tile. Reloading before Continue preserved 5:16, the 74-tile wall, all tile IDs, and Slow.\n\nAfter continuing, the computer turns produced a West Pon of 3 Characters. I paused with 72 wall tiles, Played 5:42, river counts 3/3/4/2, and West's 8 Bamboo marked as the offered tile. Reloading preserved that entire display exactly. I also reopened the separate 127.0.0.1 saved West Ron finish: all four rivers remained visible with counts 17/16/16/13, no claimable marker, and the same one loss and 3:55 statistics/history. No browser errors appeared. The full 49 tests and syntax checks passed again.\n\nThe screenshots and test output are in evidence/feature-7: discard-rivers.png, after-pon-paused.png, completed-hand-rivers.png, tests.txt, and syntax-check.txt. Please append these actual checks and screenshot links to the Feature 7 review note and make a documentation-only commit for that note. Keep narrow-screen behavior described as CSS-reviewed, since I have not run a resized browser viewport check. No further app changes are needed for this review. Keep In Progress and approval pending for @Andy Chen; do not start feature 8."
+        }
+      ]
+    },
+    {
+      "id": "msg_VuXqhNOF",
+      "role": "assistant",
+      "ts": 1790140309720,
+      "content": [
+        {
+          "type": "text",
+          "text": "## Plan\n\nI’ll make a documentation-only update to the existing Feature 7 review note: append the reported desktop/browser persistence checks, link the five supplied evidence artifacts, and state that narrow-screen behavior remains CSS-reviewed rather than viewport-tested. I’ll preserve **In Progress**, **Approval: Pending**, and **@Andy Chen**, stage only that note, commit it, and verify the commit/worktree scope."
+        }
+      ]
+    },
+    {
+      "id": "msg_6IJ4ReBZ",
+      "role": "assistant",
+      "ts": 1790140316663,
+      "content": [
+        {
+          "type": "text",
+          "text": "The requested evidence files are present under `projects/cedar-table/evidence/feature-7/`. I’ll append the observed before-Continue, after-Pon paused/reload, and completed-Ron checks with relative screenshot/output links; I’ll explicitly qualify narrow-screen behavior as CSS-reviewed only."
+        }
+      ]
+    },
+    {
+      "id": "msg_yyISDaTe",
+      "role": "assistant",
+      "ts": 1790140321507,
+      "content": [
+        {
+          "type": "text",
+          "text": "The Feature 7 note now records all supplied browser observations, exact state values, screenshot/test-output links, and the CSS-only narrow-screen qualification. I’ll verify the documentation diff and links, then stage and commit only this note before confirming all unrelated worktree changes remain untouched."
+        }
+      ]
+    },
+    {
+      "id": "msg_RwpD49vX",
+      "role": "assistant",
+      "ts": 1790140324792,
+      "content": [
+        {
+          "type": "text",
+          "text": "The documentation diff is limited to the requested review evidence, all five linked artifacts exist, and scoped whitespace validation passes. I’ll now commit only `projects/cedar-table/evidence/FEATURE-7-READY-FOR-REVIEW.md` and verify the resulting documentation-only commit."
+        }
+      ]
+    },
+    {
+      "id": "msg_c_97ldLl",
+      "role": "assistant",
+      "ts": 1790140329165,
+      "content": [
+        {
+          "type": "text",
+          "text": "Updated the Feature 7 review note and created the requested documentation-only commit:\n\n- **Commit:** `09849b8 docs: record feature 7 browser review`\n\n### Documented in\n`projects/cedar-table/evidence/FEATURE-7-READY-FOR-REVIEW.md`\n\nThe appended review section records:\n\n- Before-Continue saved-hand reload preservation:\n  - Played `5:16`\n  - `74` wall tiles\n  - exact river contents/IDs\n  - Slow pace\n  - compact `30 × 42px` river tiles versus `64px` hand tiles\n  - offered-tile-only gold outline and attached label\n- After-West-Pon paused/reload preservation:\n  - `72` wall tiles\n  - Played `5:42`\n  - river counts `3/3/4/2`\n  - West 8 Bamboo as the offered tile\n- Reopened West Ron completed-hand preservation:\n  - river counts `17/16/16/13`\n  - no claimable marker\n  - one loss and `3:55` history/statistics\n- No browser errors.\n- Links to:\n  - `feature-7/discard-rivers.png`\n  - `feature-7/after-pon-paused.png`\n  - `feature-7/completed-hand-rivers.png`\n  - `feature-7/tests.txt`\n  - `feature-7/syntax-check.txt`\n- Narrow-screen behavior is explicitly marked **CSS-reviewed only**, with no resized viewport browser validation claimed.\n\nThe note continues to state:\n\n- **Status: In Progress**\n- **Reviewer: @Andy Chen**\n- **Approval: Pending**\n\nNo application code was changed, and no Feature 8 work was started. Pre-existing unrelated evidence/data changes remain unstaged and untouched."
+        }
+      ]
+    }
+  ]
+}

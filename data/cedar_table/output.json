@@ -1,0 +1,1214 @@
+{
+  "qa": [
+    {
+      "question": "What kind of Mahjong experience did the user request for the first feature?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D1:1: \"I mean a real four-player table with me against three computer players. For now I just want to play a complete hand deal draw discard claim a tile when it's legal and reach a win or a draw.\""
+      ],
+      "answer": "A complete four-player hand on a laptop, with the user playing against three computer players."
+    },
+    {
+      "question": "Why was a dependency-free HTML, CSS, and JavaScript application chosen?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D1:3: \"The folder is currently empty, so there is no existing framework or dependency convention to preserve. I’ll build this as a dependency-free HTML/CSS/JavaScript application so it opens locally without installation\""
+      ],
+      "answer": "The folder was empty with no existing framework conventions, and this stack allowed local play without installation."
+    },
+    {
+      "question": "How many tiles does each seat receive, and what action opens the hand?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D1:5: \"The browser app will deal East 14 tiles and the other seats 13, require a human discard to start\""
+      ],
+      "answer": "East receives 14 tiles and opens by discarding; the other three seats receive 13 each."
+    },
+    {
+      "question": "How did the user’s reported turn behavior change between the first and second browser reviews?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D1:16: \"After throwing 6 Bamboo I had to press Pass on my own discard. Then North discarded 1 Bamboo and the table stopped again at 82 tiles even though my only button was Pass.\"",
+        "D1:26: \"The automatic turns are working now.\""
+      ],
+      "answer": "The first review reported having to pass on East’s own discard and then stalling at 82 wall tiles with only Pass available; the next review confirmed that automatic turns were working."
+    },
+    {
+      "question": "Why was the seven-pairs rejection test changed to use honor pairs?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D1:8: \"the initial “seven pairs” test data could also be decomposed into standard sequences, so it would not prove the intended exclusion. I’m replacing it with seven honor pairs, which cannot form runs or triplets\""
+      ],
+      "answer": "The original seven-pairs fixture could also form a standard sequence-based win; seven honor pairs cannot form runs or triplets and therefore test the intended exclusion."
+    },
+    {
+      "question": "Why should the reported winning shape after chii not enable tsumo, and what state distinction addresses it?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D1:26: \"After that chii the game even allowed tsumo without a new draw.\"",
+        "D1:29: \"`tsumoEligible` will be true only on East’s opening 14 tiles or immediately after a wall/replacement draw—not after chii or pon.\""
+      ],
+      "answer": "Chii supplies a called tile rather than a draw, so a winning shape alone is insufficient; draw eligibility must remain false after chii or pon and become true only for East’s opening hand or a wall/replacement draw."
+    },
+    {
+      "question": "How did passing an offered ron affect another player’s pon before the correction, and how was the corrected behavior described?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D1:26: \"Passing skipped North's pon while choosing chii let me jump ahead of it.\"",
+        "D1:40: \"Pass records East’s waiver and resolves remaining computer claims rather than skipping them.\""
+      ],
+      "answer": "Passing originally skipped the computer’s eligible pon; the correction records East’s waiver and resolves the remaining computer claims."
+    },
+    {
+      "question": "Why was checking only a total of 136 tile entries insufficient to validate the reported pon, and what change addressed the problem?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D1:26: \"a pon leaves 136 entries but only 134 different tile IDs.\"",
+        "D1:28: \"calls synthesize replacement tiles instead of moving physical instances\"",
+        "D1:40: \"Preserves physical tile objects/IDs in:\n  - pon, chii, and kan melds;\""
+      ],
+      "answer": "The total concealed duplicate identities: 136 entries represented only 134 distinct tile IDs, so calls needed to move the existing physical tile objects into melds instead of synthesizing replacements."
+    },
+    {
+      "question": "What table presentation would best help this user make an informed claim decision?",
+      "category": [
+        "single-session",
+        "open-domain",
+        "preference"
+      ],
+      "evidence": [
+        "D1:16: \"show the actual discarded tile clearly so I can decide when I do.\"",
+        "D1:26: \"Please show everyone's exposed tiles.\"",
+        "D1:40: \"claim UI only offers the currently selected, highest-priority claimant/action;\""
+      ],
+      "answer": "Show the just-discarded tile clearly together with every seat’s exposed melds, while offering only the currently valid claim choices."
+    },
+    {
+      "question": "After winning the browser hand, what did the user still want to see on the finish screen?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D1:41: \"The finish still hides the winning tile though. Please show the complete winning hand including that tile so I can see why it won.\""
+      ],
+      "answer": "The complete winning hand including the winning tile, so the reason for the win is visible."
+    },
+    {
+      "question": "Which periods did the initial save-and-resume request say must not count toward Played?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "preference"
+      ],
+      "evidence": [
+        "D2:1: \"Time while the game is closed or paused should not count.\""
+      ],
+      "answer": "Time while the game is closed or paused."
+    },
+    {
+      "question": "What played duration did the user report retaining after leaving and reopening the page in the later review?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ],
+      "evidence": [
+        "D2:29: \"Leaving and reopening the page kept one minute and twelve seconds without adding the time away.\""
+      ],
+      "answer": "One minute and twelve seconds, without adding the time away."
+    },
+    {
+      "question": "Which time source was adopted to measure active play duration?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D2:28: \"Added a monotonic active-time clock based on `performance.now()`.\""
+      ],
+      "answer": "A monotonic active-time clock based on performance.now()."
+    },
+    {
+      "question": "Which discard and available call survived the refresh reported in the first save-feature review?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D2:15: \"The refresh kept North's 6 Bamboo and my Pon choice correctly.\""
+      ],
+      "answer": "North’s 6 Bamboo discard and East’s Pon choice."
+    },
+    {
+      "question": "When does the revised interface display Continue hand?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D2:28: \"**Continue hand** is hidden during ordinary active play.\n- It is shown only when a restored saved hand is awaiting the player’s explicit continuation.\""
+      ],
+      "answer": "Only when a restored saved hand is waiting for explicit continuation; it is hidden during ordinary active play."
+    },
+    {
+      "question": "What return flow would make resuming this saved game predictable to the player?",
+      "category": [
+        "single-session",
+        "open-domain"
+      ],
+      "evidence": [
+        "D2:1: \"I should get the same tiles and the same pending claim when I continue.\"",
+        "D2:1: \"A saved hand should wait for me to choose Continue before anything moves. Let me start a new hand instead with a clear confirmation.\""
+      ],
+      "answer": "Present the unchanged saved hand without advancing it, wait for Continue, and clearly confirm replacement if the player chooses a new hand instead."
+    },
+    {
+      "question": "What integrity problems in the first and second features show why a total tile count alone cannot validate a saved hand?",
+      "category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D1:26: \"a pon leaves 136 entries but only 134 different tile IDs.\"",
+        "D2:15: \"Changing a tile rank to 99 is accepted.\"",
+        "D2:28: \"invalid tile identity data, including an ID/type mismatch or rank `99`;\""
+      ],
+      "answer": "The first feature produced 136 entries with only 134 distinct tile IDs, while the second accepted rank 99 under a tile identity; validation must check both unique physical IDs and their canonical tile data."
+    },
+    {
+      "question": "Which first-feature behavior explains why the second feature preserves passed-player claim state as well as the tiles?",
+      "category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D1:40: \"Pass records East’s waiver and resolves remaining computer claims rather than skipping them.\"",
+        "D2:14: \"Restores complete physical-tile state, including:\n  - pending claims and the exact pending discard;\n  - passed-player claim state;\""
+      ],
+      "answer": "East’s pass records a waiver and allows the remaining computer claims to resolve, so restoring must retain that waiver rather than offer the declined claim again or skip the other callers."
+    },
+    {
+      "question": "What did the user want made visible at a first-feature win, and what did the user want hidden or disabled during second-feature active play?",
+      "category": [
+        "multi-session",
+        "multihop",
+        "preference"
+      ],
+      "evidence": [
+        "D1:41: \"Please show the complete winning hand including that tile so I can see why it won.\"",
+        "D2:15: \"Also hide or disable Continue hand when I am already playing.\""
+      ],
+      "answer": "Show the complete winning hand including the winning tile at the win, and hide or disable Continue hand when play is already active."
+    },
+    {
+      "question": "How many more automated tests passed at the final second-feature checkpoint than at the final first-feature checkpoint?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D1:53: \"12 passing\"",
+        "D2:40: \"Results: **20 tests passed**\""
+      ],
+      "answer": "Eight more: the suite increased from 12 to 20 passing tests."
+    },
+    {
+      "question": "How many completed hands did the third-feature request ask to retain locally?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D3:1: \"Keep the newest records first and retain the latest 50 locally.\""
+      ],
+      "answer": "The latest 50 completed hands."
+    },
+    {
+      "question": "What Played duration remained on the West Ron record during the third-feature browser review?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ],
+      "evidence": [
+        "D3:20: \"The West Ron history row stayed single and Played stayed at 3:55.\""
+      ],
+      "answer": "Three minutes and fifty-five seconds."
+    },
+    {
+      "question": "Which separate storage keys were introduced for history and the resumable hand?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D3:4: \"Add a versioned `cedar-table.history.v1` record, distinct from `cedar-table.hand.v1`.\""
+      ],
+      "answer": "cedar-table.history.v1 for history and cedar-table.hand.v1 for the resumable hand."
+    },
+    {
+      "question": "How many tests passed after the completed-history follow-up?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D3:29: \"`npm test` — **25 passing tests**\""
+      ],
+      "answer": "25 tests."
+    },
+    {
+      "question": "Where did the user want History moved after inspecting the first layout?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D3:20: \"The History section currently separates the table from my hand; please move it below my hand.\""
+      ],
+      "answer": "Below the player’s hand."
+    },
+    {
+      "question": "How does completed-hand persistence protect both the original result and newer results from another open tab?",
+      "category": [
+        "single-session",
+        "multihop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D3:29: \"Repeated `handId` records are immutable: an existing record is retained rather than replaced with changed result/time/Played values.\"",
+        "D3:29: \"Terminal writes now reload and merge the latest local-storage history immediately before adding the current result, protecting newer results created by another open tab.\""
+      ],
+      "answer": "It retains existing hand-ID records unchanged and reloads the latest stored history before adding a new result."
+    },
+    {
+      "question": "Why do migrated legacy results say Finished around rather than an exact finish time?",
+      "category": [
+        "single-session",
+        "multihop",
+        "temporal"
+      ],
+      "evidence": [
+        "D3:20: \"For legacy saves, the last saved timestamp is not necessarily the finish time, so label it honestly rather than claiming an exact finish.\"",
+        "D3:29: \"Legacy finished saves that only have a last-save timestamp now display `Finished around: …` rather than claiming an exact finish time. The inferred-status flag persists after restore.\""
+      ],
+      "answer": "Legacy saves provide a last-save timestamp that may differ from completion, so the displayed finish is explicitly marked as inferred."
+    },
+    {
+      "question": "What reliability principle underlies keeping hand history separate from the resumable game?",
+      "category": [
+        "single-session",
+        "open-domain"
+      ],
+      "evidence": [
+        "D3:1: \"Keep history separate from the resumable hand so a damaged history cannot erase the game.\""
+      ],
+      "answer": "A failure in the secondary history record should not destroy the player’s resumable game."
+    },
+    {
+      "question": "How many tests were added between the final second-feature checkpoint and the final third-feature checkpoint?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D2:40: \"Results: **20 tests passed**\"",
+        "D3:29: \"`npm test` — **25 passing tests**\""
+      ],
+      "answer": "Five, increasing from 20 to 25 passing tests."
+    },
+    {
+      "question": "How much longer was the Played duration reported in the third-feature West Ron review than the retained duration in the later second-feature review?",
+      "category": [
+        "multi-session",
+        "multihop",
+        "temporal"
+      ],
+      "evidence": [
+        "D2:29: \"Leaving and reopening the page kept one minute and twelve seconds without adding the time away.\"",
+        "D3:20: \"The West Ron history row stayed single and Played stayed at 3:55.\""
+      ],
+      "answer": "Two minutes and forty-three seconds: 3:55 minus 1:12."
+    },
+    {
+      "question": "What denominator did the user request for the Statistics win rate?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D4:1: \"Define win rate as East wins divided by all completed hands, including draws.\""
+      ],
+      "answer": "All completed hands, including draws."
+    },
+    {
+      "question": "Which opponents winning counts as a loss in Statistics?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D4:10: \"Losses (South/West/North wins)\""
+      ],
+      "answer": "South, West, or North."
+    },
+    {
+      "question": "Does the Statistics feature maintain its own persisted counters?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D4:10: \"Derived directly from Feature 3’s completed-hand history; no new persisted counters/storage key.\""
+      ],
+      "answer": "No; it derives values directly from completed-hand history."
+    },
+    {
+      "question": "What does Statistics show when there are no completed records?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D4:10: \"Empty-history message with safe zero values; no `NaN`.\""
+      ],
+      "answer": "An empty-history message and safe zero values, without NaN."
+    },
+    {
+      "question": "Do unfinished or abandoned hands contribute to Statistics?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D4:1: \"Unfinished or abandoned hands must not count.\""
+      ],
+      "answer": "No."
+    },
+    {
+      "question": "What average Played time appeared in the fourth-feature browser review?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ],
+      "evidence": [
+        "D4:11: \"The browser shows 1 completed hand, 0 East wins, 1 loss, 0 draws, 0% win rate, and both total and average Played at 3:55, matching the West Ron record.\""
+      ],
+      "answer": "3:55."
+    },
+    {
+      "question": "In the conflicting duplicate-record regression, why does Statistics report a draw instead of an East win?",
+      "category": [
+        "single-session",
+        "multihop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D4:18: \"For duplicate `handId` values, keep the **first** occurrence (immutable original result).\"",
+        "D4:18: \"First record: Draw, timestamp `100`, Played `1:00`\"",
+        "D4:18: \"Later duplicate: East win, timestamp `200`, Played `9:00`\""
+      ],
+      "answer": "Both paths now preserve the first occurrence of a hand ID, and the first duplicate is the original Draw record."
+    },
+    {
+      "question": "What input-safety property does the updated duplicate regression verify?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D4:18: \"The supplied history array is not mutated.\""
+      ],
+      "answer": "The supplied history array is not mutated."
+    },
+    {
+      "question": "How many more tests passed for the final Statistics feature than for the final completed-history feature?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D3:29: \"`npm test` — **25 passing tests**\"",
+        "D4:18: \"npm test       # 29 passing\""
+      ],
+      "answer": "Four more: 29 versus 25."
+    },
+    {
+      "question": "Which original-history requirement did the later Statistics duplicate bug violate, and what conflicting result did the user observe?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D3:20: \"keep a repeated hand record immutable.\"",
+        "D4:11: \"restoreHistory keeps the original draw but deriveHistoryStatistics reports a win.\""
+      ],
+      "answer": "The history review required repeated records to remain immutable, but the statistics path counted a later duplicate East win where history retained the original draw."
+    },
+    {
+      "question": "How did the user want to request practice hints during East's discard turn?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D5:1: \"I want to click Analyze hand during my discard turn\""
+      ],
+      "answer": "By clicking Analyze hand on demand."
+    },
+    {
+      "question": "Which tile information is available to the practice-hint analyzer?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D5:16: \"Uses only East’s concealed hand plus public exposed melds/discards.\""
+      ],
+      "answer": "East's concealed hand and the public exposed melds and discards."
+    },
+    {
+      "question": "How many completed melds does an exposed kan contribute to the wait calculation?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D5:16: \"Counts exposed melds correctly, including each **kan** as one meld.\""
+      ],
+      "answer": "One meld."
+    },
+    {
+      "question": "Which missing export prevented the original saved-hand page from loading during the fifth-feature upgrade check?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D5:25: \"The requested module './rules.js' does not provide an export named 'analyzeDiscardWaits'\""
+      ],
+      "answer": "analyzeDiscardWaits."
+    },
+    {
+      "question": "How many tests passed after the physical-tile counting correction?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D5:24: \"`npm test` — **35 passing**\""
+      ],
+      "answer": "35 tests."
+    },
+    {
+      "question": "Why could the original exhausted-copy test pass without proving that exhausted waits were filtered correctly?",
+      "category": [
+        "single-session",
+        "multihop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D5:17: \"it supplies 15 concealed tiles and five copies of 1 Bamboo across the hand and discards\"",
+        "D5:17: \"an empty answer can pass just because the hand length is invalid.\""
+      ],
+      "answer": "Its invalid 15-tile hand could produce an empty result before the exhausted-copy rule was meaningfully tested."
+    },
+    {
+      "question": "Compared with three distinct public 1 Bamboo copies, which wait is retained when those entries instead share the same physical ID, and why?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D5:24: \"Repeated references to the same ID count once.\"",
+        "D5:24: \"Three references to the same `b1b` physical tile preserving the 1 Bamboo wait.\"",
+        "D5:24: \"Three distinct public 1 Bamboo IDs exhausting only the 1 Bamboo wait.\""
+      ],
+      "answer": "The 1 Bamboo wait is retained because repeated entries represent one public physical copy rather than three."
+    },
+    {
+      "question": "How many more tests passed after the final practice-hint correction than after the final Statistics correction?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D4:18: \"npm test       # 29 passing\"",
+        "D5:24: \"`npm test` — **35 passing**\""
+      ],
+      "answer": "Six more: 35 versus 29."
+    },
+    {
+      "question": "How did the completed-hand count in the fifth-feature analysis check compare with the count reported in the fourth-feature Statistics check?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D4:11: \"The browser shows 1 completed hand, 0 East wins, 1 loss, 0 draws, 0% win rate\"",
+        "D5:17: \"Analyze hand left East's 14 tiles, the 83-tile wall, and the zero history/statistics totals unchanged.\""
+      ],
+      "answer": "The fifth-feature check showed zero completed hands, one fewer than the fourth-feature check's one completed hand."
+    },
+    {
+      "question": "Why is a structural-wait explanation more appropriate than a draw-probability claim for these hints?",
+      "category": [
+        "single-session",
+        "open-domain"
+      ],
+      "evidence": [
+        "D5:1: \"Do not inspect opponents' concealed tiles or the remaining wall to choose hints.\"",
+        "D5:1: \"Explain that these are structural waits with unseen copies, not guaranteed draws or probabilities.\""
+      ],
+      "answer": "The hints establish which unseen tile types could complete the hand, but without hidden tile locations they do not establish whether or how likely those tiles are to be drawn."
+    },
+    {
+      "question": "Which computer pace did the user request as the default?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D6:1: \"Default to Normal.\""
+      ],
+      "answer": "Normal."
+    },
+    {
+      "question": "What delays were requested for Slow, Normal, and Fast computer steps?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ],
+      "evidence": [
+        "D6:1: \"Slow (1500 ms), Normal (800 ms), and Fast (300 ms)\""
+      ],
+      "answer": "1500 ms, 800 ms, and 300 ms, respectively."
+    },
+    {
+      "question": "Which storage key holds the computer pace preference?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D6:12: \"Preference is stored separately as `cedar-table.computer-pace.v1`\""
+      ],
+      "answer": "cedar-table.computer-pace.v1."
+    },
+    {
+      "question": "Across which two situations did the user want the selected pace to persist?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D6:1: \"remember the selected pace locally across reloads and new hands\""
+      ],
+      "answer": "Page reloads and new hands."
+    },
+    {
+      "question": "Which player's discard and claim choices are never delayed by Computer pace?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D6:12: \"East’s discard and claim choices are never delayed.\""
+      ],
+      "answer": "East's."
+    },
+    {
+      "question": "Why was the first human-decision scheduling test insufficient, and how did the follow-up connect it to actual behavior?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D6:13: \"the human-decision test defines its own automaticStepAllowed expression instead of calling the production condition, so it can pass even if app.js is wrong.\"",
+        "D6:23: \"uses it for both initial timer scheduling and callback revalidation.\"",
+        "D6:23: \"Directly tests the production helper.\""
+      ],
+      "answer": "The test checked a copied expression; the follow-up tests the shared production helper used by the app for scheduling and callback revalidation."
+    },
+    {
+      "question": "What happens to the selected pace and its notice when saving first fails and a later attempt succeeds?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D6:23: \"applies the normalized pace locally regardless of storage availability.\"",
+        "D6:23: \"Failed persistence produces: “Computer pace will apply for this page, but could not be saved.”\"",
+        "D6:23: \"A later successful save clears only this separate notice.\""
+      ],
+      "answer": "The chosen pace applies locally despite the failed save, with an unsaved-pace notice; a later successful save clears that notice."
+    },
+    {
+      "question": "How many more tests passed after the final Computer pace follow-up than after the final practice-hint work?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D5:30: \"`npm test` — **35 passing**\"",
+        "D6:23: \"`npm test` — **44/44 passing**\""
+      ],
+      "answer": "Nine more: 44 versus 35."
+    },
+    {
+      "question": "Ignoring processing and player decision time, how many complete Normal pace delays would fit into the retained Played duration reported in the later second-feature review?",
+      "category": [
+        "multi-session",
+        "multihop",
+        "temporal"
+      ],
+      "evidence": [
+        "D2:29: \"Leaving and reopening the page kept one minute and twelve seconds without adding the time away.\"",
+        "D6:1: \"Normal (800 ms)\""
+      ],
+      "answer": "90 delays: 72,000 ms divided by 800 ms."
+    },
+    {
+      "question": "Why is it useful to keep a computer pace preference separate from saved-hand and completed-history data?",
+      "category": [
+        "single-session",
+        "open-domain"
+      ],
+      "evidence": [
+        "D6:12: \"Preference is stored separately as `cedar-table.computer-pace.v1`; existing saved-hand and completed-history keys remain unchanged\""
+      ],
+      "answer": "Separating a playback preference lets it persist across hands without making a preference change replace the current game or its completed results."
+    },
+    {
+      "question": "In what order did the user want each public discard river displayed?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D7:1: \"each river in oldest-to-newest order\""
+      ],
+      "answer": "Oldest to newest."
+    },
+    {
+      "question": "Which existing game-state field is the source of truth for the public discard rivers?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D7:1: \"Use the existing state's discards as the source of truth\""
+      ],
+      "answer": "state.discards."
+    },
+    {
+      "question": "What caused the first discard-river tile size and highlight styles to be lost?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D7:18: \"the later generic .tile and suit rules are overriding the river size and highlight.\""
+      ],
+      "answer": "Later generic .tile and suit rules overrode the river-specific size and highlight styles."
+    },
+    {
+      "question": "How did the user want the current claimable discard distinguished beyond color?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D7:18: \"Keep that text physically attached to its highlighted tile when wrapping.\""
+      ],
+      "answer": "With a text label that remains attached to the highlighted tile when the river wraps."
+    },
+    {
+      "question": "What Played duration remained after the user reloaded the saved hand in the first discard-river review?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ],
+      "evidence": [
+        "D7:18: \"Played stayed at 5:16\""
+      ],
+      "answer": "5 minutes 16 seconds."
+    },
+    {
+      "question": "How many tiles in total were still in the four public rivers in the first discard-river browser review?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D7:18: \"East 3, South 3, West 2, North 2\""
+      ],
+      "answer": "10 tiles: 3 + 3 + 2 + 2."
+    },
+    {
+      "question": "How do physical tile IDs serve different purposes in the practice-hint correction and the discard-river feature?",
+      "category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D5:24: \"Public visible tiles are now deduplicated by physical `tile.id` before copy counts are calculated.\"",
+        "D7:17: \"Current claimable discard has both a visual highlight and **“Current claimable”** text, only when its exact physical ID is still present in that river.\"",
+        "D7:17: \"Existing claim transitions remain authoritative: claimed Chii/Pon/Kan/Ron tiles disappear from rivers and remain in melds or winning-tile storage.\""
+      ],
+      "answer": "Hints count each physical ID once when checking visible copies; rivers use the exact ID to mark the offered tile and remove only the claimed physical copy."
+    },
+    {
+      "question": "Which of Computer pace and public discard rivers adds a separate saved preference, and what does the other reuse?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D6:12: \"Preference is stored separately as `cedar-table.computer-pace.v1`\"",
+        "D7:17: \"Uses only existing `state.discards`, `state.lastDiscard`, and wall state—no extra history and no opponent concealed-hand access.\""
+      ],
+      "answer": "Computer pace adds cedar-table.computer-pace.v1; discard rivers reuse the existing saved-hand state without another history."
+    },
+    {
+      "question": "How does the information retained by completed-hand History differ from the public discard rivers?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D3:1: \"Show each finished hand with its result, winner or draw, finish date and time, and actual Played duration. Keep the newest records first and retain the latest 50 locally.\"",
+        "D7:1: \"Once a tile is taken for chii, pon, kan, or Ron it should disappear from the river and remain in its proper meld or winning-tile location. Do not pretend these remaining rivers are a complete replay log.\""
+      ],
+      "answer": "History keeps the latest 50 completed-hand results locally; rivers show the current hand’s remaining public discards, with claimed tiles removed rather than retained as replay events."
+    },
+    {
+      "question": "Why should a claimable-discard text label stay attached to its tile when a river wraps?",
+      "category": [
+        "single-session",
+        "open-domain"
+      ],
+      "evidence": [
+        "D7:18: \"Current claimable is a separate flex item and has wrapped below the left edge of South's river, away from the actual 5 Bamboo.\""
+      ],
+      "answer": "Keeping the label attached prevents players from associating it with a different tile after the layout wraps."
+    },
+    {
+      "question": "What two-step interaction did the user request for discarding an East hand tile?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D8:1: \"Clicking a hand tile should select that exact physical tile, visibly highlight it and expose its pressed state for accessibility, then show Selected: <tile name> with Confirm discard and Cancel beside the hand.\"",
+        "D8:1: \"Only Confirm discard should move the tile into East's river.\""
+      ],
+      "answer": "Select the tile first, then click Confirm discard."
+    },
+    {
+      "question": "Where is the pending discard selection stored?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D8:1: \"This selection is temporary UI state, never part of the saved game or a new storage preference.\""
+      ],
+      "answer": "Only in temporary UI state; it is not saved with the game or as a preference."
+    },
+    {
+      "question": "Which accessibility attribute marks the selected hand tile?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D8:14: \"`aria-pressed=\"true\"`\""
+      ],
+      "answer": "aria-pressed=\"true\"."
+    },
+    {
+      "question": "Which automatic or blocking confirmation mechanisms did the user rule out?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D8:1: \"Do not add a modal, timer, or auto-confirm.\""
+      ],
+      "answer": "A modal, timer, and automatic confirmation."
+    },
+    {
+      "question": "What Played reading remained unchanged during the paused selection check?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ],
+      "evidence": [
+        "D8:15: \"Played stayed at 10:45 during the paused check.\""
+      ],
+      "answer": "10 minutes 45 seconds."
+    },
+    {
+      "question": "How much active thinking time elapsed between the two Played readings reported during the initial selection checks?",
+      "category": [
+        "single-session",
+        "multihop",
+        "temporal"
+      ],
+      "evidence": [
+        "D8:15: \"Thinking time advanced from 9:56 to 10:15 during the selection checks.\""
+      ],
+      "answer": "19 seconds: 10:15 minus 9:56."
+    },
+    {
+      "question": "Why could the first repeated-confirmation test hide a controller defect, and how did the follow-up isolate that behavior?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D8:15: \"the at-most-once test calls discard before the second confirm, so the engine's changed phase can mask a controller that would return a second index.\"",
+        "D8:23: \"Double confirmation against unchanged state: first returns the index, second returns `-1` before any discard transition.\""
+      ],
+      "answer": "The first discard changed the game phase, which could block a second discard independently of the controller; the follow-up checks that a second confirmation returns -1 before any game transition."
+    },
+    {
+      "question": "Why does the chosen computer pace survive a reload while the pending discard choice does not?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D6:12: \"Preference is stored separately as `cedar-table.computer-pace.v1`\"",
+        "D8:1: \"This selection is temporary UI state, never part of the saved game or a new storage preference.\"",
+        "D8:15: \"reloading brought back Continue with the same 11 physical hand IDs, no selection, and Normal still selected.\""
+      ],
+      "answer": "Pace is stored separately under cedar-table.computer-pace.v1, while the discard choice is temporary unsaved UI state."
+    },
+    {
+      "question": "How does clicking an East hand tile in Feature 8 differ from clicking a public river tile introduced in Feature 7?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D7:17: \"Rivers are read-only display tiles, not buttons.\"",
+        "D8:14: \"East hand clicks now select, rather than immediately discard.\""
+      ],
+      "answer": "An enabled East hand tile becomes the pending discard choice; a river tile is display-only and has no action."
+    },
+    {
+      "question": "Why is a physical tile ID safer than an array index for remembering a pending discard?",
+      "category": [
+        "single-session",
+        "open-domain"
+      ],
+      "evidence": [
+        "D8:1: \"Track the physical ID rather than a stale array index\"",
+        "D8:23: \"Selecting an ID, reordering the hand, then resolving that physical tile’s new current index.\""
+      ],
+      "answer": "A physical ID keeps identifying the same tile even when the hand is reordered or another tile has the same face."
+    },
+    {
+      "question": "Which History result choices and default did the user request for Feature 9?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D9:1: \"I want a labeled History result dropdown with All results, East wins, Losses, and Draws, defaulting to All results.\""
+      ],
+      "answer": "All results, East wins, Losses, and Draws; All results is the default."
+    },
+    {
+      "question": "Which winner values belong to the Losses history filter?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D9:28: \"- South loss (`winner === 1`)\n  - West loss (`winner === 2`)\n  - North loss (`winner === 3`)\""
+      ],
+      "answer": "1, 2, and 3: South, West, and North."
+    },
+    {
+      "question": "What should an unknown History result filter value fall back to?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D9:1: \"An unknown filter value should fall back to All results.\""
+      ],
+      "answer": "All results."
+    },
+    {
+      "question": "What message and recovery action appeared when the saved West Ron result did not match East wins?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D9:19: \"East wins and Draws both show 0 of 1 with No matching results and Show all results.\""
+      ],
+      "answer": "No matching results, with a Show all results button."
+    },
+    {
+      "question": "What does the history helper do before applying the chosen result category?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D9:18: \"Uses existing validation, deduplication, newest-first sort, and 50-record cap **before** filtering.\""
+      ],
+      "answer": "Validate records, deduplicate IDs, sort newest first, and retain the latest 50."
+    },
+    {
+      "question": "How does the Feature 9 older-draw regression preserve the history retention rule originally requested in Feature 3?",
+      "category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D3:1: \"Keep the newest records first and retain the latest 50 locally.\"",
+        "D9:28: \"Retention-window behavior with 50 newer losses plus one older draw:\n  - filtering for Draws correctly returns no rows,\n  - retained total remains 50.\""
+      ],
+      "answer": "The original limit is the newest 50 results; the older draw stays excluded, so Draws returns no rows and the retained total stays 50."
+    },
+    {
+      "question": "How does persistence of the Feature 9 history filter differ from the Feature 6 computer pace setting?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D9:1: \"Keep the filter as temporary page UI state: preserve it across ordinary renders and newly completed results in the same page, but return to All results on reload.\"",
+        "D6:12: \"Preference is stored separately as `cedar-table.computer-pace.v1`; existing saved-hand and completed-history keys remain unchanged, and practice hints are preserved.\""
+      ],
+      "answer": "The filter resets to All results on reload; computer pace is saved separately under cedar-table.computer-pace.v1."
+    },
+    {
+      "question": "What weakness in the first loss-filter test prompted the exact-ID regression, and what coverage did the added test provide?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D9:19: \"the mixed fixture only uses winner 1 for losses, and the losses/draws assertions use every(), which could pass for an empty array.\"",
+        "D9:28: \"Exact expected History IDs for:\n  - East win (`winner === 0`)\n  - South loss (`winner === 1`)\n  - West loss (`winner === 2`)\n  - North loss (`winner === 3`)\n  - Draw (`winner === null`)\""
+      ],
+      "answer": "The first test could accept empty matches and covered only South losses; the new test asserts exact IDs for East, South, West, North, and draws."
+    },
+    {
+      "question": "How did elapsed Played time differ between the active and paused history-filter checks in D9?",
+      "category": [
+        "single-session",
+        "multihop",
+        "temporal"
+      ],
+      "evidence": [
+        "D9:29: \"The Played readings were 12:14 and 12:32, an 18-second active interval while reading and changing the filter. I then paused at 12:33; switching the filter to Losses while paused kept 12:33 and the same wall count.\""
+      ],
+      "answer": "The active check advanced 18 seconds, from 12:14 to 12:32; the paused check advanced zero seconds, remaining at 12:33."
+    },
+    {
+      "question": "Why is it useful to show the matching-history count separately while keeping Statistics based on all retained hands?",
+      "category": [
+        "single-session",
+        "open-domain"
+      ],
+      "evidence": [
+        "D9:1: \"Show a clear count such as Showing 2 of 5 saved hands.\"",
+        "D9:1: \"Statistics must continue using all retained results, including draws, regardless of the filter.\""
+      ],
+      "answer": "Separate counts make the selected subset clear while keeping overall performance measures consistent across filters."
+    },
+    {
+      "question": "What download flow and filename did the user prefer for Feature 10?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D10:1: \"I prefer a direct download named cedar-table-history.csv, with no dialog, external service, or new saved preference.\""
+      ],
+      "answer": "A direct local download named cedar-table-history.csv, without a dialog or external service."
+    },
+    {
+      "question": "Which records did the user want exported when the current History result filter has no matches?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "preference"
+      ],
+      "evidence": [
+        "D10:1: \"Export all retained results even when the current filter shows zero matches.\""
+      ],
+      "answer": "All retained results, regardless of the current filter."
+    },
+    {
+      "question": "What are the seven CSV columns, in order?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D10:1: \"Use these columns in this order: hand_id,result,winner,finished_at_utc,finished_at_estimated,played_ms,played.\""
+      ],
+      "answer": "hand_id, result, winner, finished_at_utc, finished_at_estimated, played_ms, played."
+    },
+    {
+      "question": "What finish-time format and uncertainty information should the CSV preserve?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D10:1: \"Finish time should be an unambiguous UTC ISO timestamp; the estimated flag must preserve whether a migrated finish time is estimated.\""
+      ],
+      "answer": "A UTC ISO timestamp and a flag indicating whether the finish time is estimated."
+    },
+    {
+      "question": "How does the CSV helper protect formula-leading text after whitespace?",
+      "category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ],
+      "evidence": [
+        "D10:6: \"prevent formulas by prefixing an apostrophe whenever the first non-whitespace character is `=`, `+`, `-`, or `@`.\""
+      ],
+      "answer": "It prefixes an apostrophe when the first non-whitespace character is =, +, -, or @."
+    },
+    {
+      "question": "What should export do with a retained record whose finish date cannot be represented?",
+      "category": [
+        "single-session",
+        "singlehop"
+      ],
+      "evidence": [
+        "D10:1: \"An otherwise retained record with an unrepresentable Date must not crash the export; leave its timestamp cell blank.\""
+      ],
+      "answer": "Keep the record and leave its timestamp cell blank."
+    },
+    {
+      "question": "Why does the new retained-duplicate CSV case export the West result instead of either the invalid candidate or the later East result?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D10:18: \"Add a small exact-row case with an invalid first candidate, a valid West result with its own timestamp/estimate/duration, and a later conflicting East result.\"",
+        "D10:24: \"Ignores an invalid first duplicate candidate.\n  - Exports the first valid **West** result rather than a later conflicting **East** result.\""
+      ],
+      "answer": "Normalization rejects the invalid candidate and preserves the first valid record for that ID, so the West result wins over the later East conflict."
+    },
+    {
+      "question": "How much additional sub-second time does the D10 downloaded played_ms value retain beyond the whole-second 3:55 duration reported in D3?",
+      "category": [
+        "multi-session",
+        "multihop",
+        "temporal"
+      ],
+      "evidence": [
+        "D3:20: \"The West Ron history row stayed single and Played stayed at 3:55.\"",
+        "D10:18: \"played_ms 235602.40000000224, played 3:55.\""
+      ],
+      "answer": "About 602.4 milliseconds: 235602.40000000224 ms minus 235000 ms."
+    },
+    {
+      "question": "How do the persistent outputs of Computer pace in D6 and the CSV export in D10 differ?",
+      "category": [
+        "multi-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D6:12: \"Preference is stored separately as `cedar-table.computer-pace.v1`;\"",
+        "D10:1: \"I prefer a direct download named cedar-table-history.csv, with no dialog, external service, or new saved preference.\""
+      ],
+      "answer": "Computer pace stores a browser preference under cedar-table.computer-pace.v1; export creates a downloaded CSV file without adding a saved preference."
+    },
+    {
+      "question": "Why was export enabled for the zero-match East wins list but disabled for the empty localhost history in the browser review?",
+      "category": [
+        "single-session",
+        "multihop"
+      ],
+      "evidence": [
+        "D10:18: \"With East wins selected, the list says Showing 0 of 1 saved hands, but Export history CSV stays enabled and downloads one full result.\"",
+        "D10:18: \"On localhost, the empty history correctly disables export.\"",
+        "D10:1: \"Disable it when there are no valid retained results.\""
+      ],
+      "answer": "The zero-match list still had one retained result to export; localhost had no retained results, so its button was disabled."
+    }
+  ]
+}

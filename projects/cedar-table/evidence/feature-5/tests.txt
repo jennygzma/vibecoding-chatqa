@@ -1,0 +1,224 @@
+
+> cedar-table@0.1.0 test
+> node --test
+
+TAP version 13
+# Subtest: active clock advances monotonically only while running
+ok 1 - active clock advances monotonically only while running
+  ---
+  duration_ms: 0.986875
+  type: 'test'
+  ...
+# Subtest: active clock supports lifecycle stops and restored elapsed time
+ok 2 - active clock supports lifecycle stops and restored elapsed time
+  ---
+  duration_ms: 0.104584
+  type: 'test'
+  ...
+# Subtest: tsumo requires East opening eligibility or an actual draw
+ok 3 - tsumo requires East opening eligibility or an actual draw
+  ---
+  duration_ms: 13.83
+  type: 'test'
+  ...
+# Subtest: a selected high-priority call suppresses a lower-priority human chii
+ok 4 - a selected high-priority call suppresses a lower-priority human chii
+  ---
+  duration_ms: 1.288625
+  type: 'test'
+  ...
+# Subtest: passing East ron resolves the remaining West pon
+ok 5 - passing East ron resolves the remaining West pon
+  ---
+  duration_ms: 1.372792
+  type: 'test'
+  ...
+# Subtest: pon and ron move real physical tiles without duplication
+ok 6 - pon and ron move real physical tiles without duplication
+  ---
+  duration_ms: 0.567666
+  type: 'test'
+  ...
+# Subtest: no player can claim their own discard
+ok 7 - no player can claim their own discard
+  ---
+  duration_ms: 0.567291
+  type: 'test'
+  ...
+# Subtest: an empty-wall kan retains the exhaustive-draw message
+ok 8 - an empty-wall kan retains the exhaustive-draw message
+  ---
+  duration_ms: 0.386167
+  type: 'test'
+  ...
+# Subtest: several complete hands conserve all physical tile IDs
+ok 9 - several complete hands conserve all physical tile IDs
+  ---
+  duration_ms: 85.914084
+  type: 'test'
+  ...
+# Subtest: restores an unresolved legal Ron before the claim resolver runs
+ok 10 - restores an unresolved legal Ron before the claim resolver runs
+  ---
+  duration_ms: 10.64425
+  type: 'test'
+  ...
+# Subtest: restores a pending human claim with the same physical discard
+ok 11 - restores a pending human claim with the same physical discard
+  ---
+  duration_ms: 2.237583
+  type: 'test'
+  ...
+# Subtest: restores a finished hand produced by a real tsumo
+ok 12 - restores a finished hand produced by a real tsumo
+  ---
+  duration_ms: 0.478416
+  type: 'test'
+  ...
+# Subtest: round-trips saves after every transition in complete hands
+ok 13 - round-trips saves after every transition in complete hands
+  ---
+  duration_ms: 118.009041
+  type: 'test'
+  ...
+# Subtest: rejects invalid tile and claim state
+ok 14 - rejects invalid tile and claim state
+  ---
+  duration_ms: 0.323416
+  type: 'test'
+  ...
+# Subtest: rejects damaged saves and reports unavailable storage without breaking play
+ok 15 - rejects damaged saves and reports unavailable storage without breaking play
+  ---
+  duration_ms: 0.284167
+  type: 'test'
+  ...
+# Subtest: orders completed hands by finish time and keeps a repeated hand immutable
+ok 16 - orders completed hands by finish time and keeps a repeated hand immutable
+  ---
+  duration_ms: 0.183
+  type: 'test'
+  ...
+# Subtest: sorts stored history before applying the newest 50 limit
+ok 17 - sorts stored history before applying the newest 50 limit
+  ---
+  duration_ms: 0.172708
+  type: 'test'
+  ...
+# Subtest: merges the latest stored history before adding a completed hand
+ok 18 - merges the latest stored history before adding a completed hand
+  ---
+  duration_ms: 0.362167
+  type: 'test'
+  ...
+# Subtest: restores legacy current saves without history fields
+ok 19 - restores legacy current saves without history fields
+  ---
+  duration_ms: 0.384333
+  type: 'test'
+  ...
+# Subtest: damaged or blocked history does not affect the resumable hand
+ok 20 - damaged or blocked history does not affect the resumable hand
+  ---
+  duration_ms: 0.278333
+  type: 'test'
+  ...
+# Subtest: wall contains 136 tiles, four of every type
+ok 21 - wall contains 136 tiles, four of every type
+  ---
+  duration_ms: 2.947625
+  type: 'test'
+  ...
+# Subtest: recognizes a standard four-meld and pair win regardless of tile order
+ok 22 - recognizes a standard four-meld and pair win regardless of tile order
+  ---
+  duration_ms: 7.921125
+  type: 'test'
+  ...
+# Subtest: recognizes a standard win with one exposed meld
+ok 23 - recognizes a standard win with one exposed meld
+  ---
+  duration_ms: 0.113666
+  type: 'test'
+  ...
+# Subtest: allows only legal basic claims
+ok 24 - allows only legal basic claims
+  ---
+  duration_ms: 0.680334
+  type: 'test'
+  ...
+# Subtest: analyzes standard discard waits without mutating or using hidden tiles
+ok 25 - analyzes standard discard waits without mutating or using hidden tiles
+  ---
+  duration_ms: 46.000333
+  type: 'test'
+  ...
+# Subtest: analyzes waits with exposed melds and a kan
+ok 26 - analyzes waits with exposed melds and a kan
+  ---
+  duration_ms: 6.521625
+  type: 'test'
+  ...
+# Subtest: removes only an exhausted wait from a legal 14-tile hand
+ok 27 - removes only an exhausted wait from a legal 14-tile hand
+  ---
+  duration_ms: 13.171666
+  type: 'test'
+  ...
+# Subtest: deduplicates repeated discard candidates with a nonempty result
+ok 28 - deduplicates repeated discard candidates with a nonempty result
+  ---
+  duration_ms: 7.628333
+  type: 'test'
+  ...
+# Subtest: counts repeated visible IDs once but distinct physical copies separately
+ok 29 - counts repeated visible IDs once but distinct physical copies separately
+  ---
+  duration_ms: 14.420375
+  type: 'test'
+  ...
+# Subtest: returns no hints when no discard creates a standard wait
+ok 30 - returns no hints when no discard creates a standard wait
+  ---
+  duration_ms: 10.170375
+  type: 'test'
+  ...
+# Subtest: rejects seven-pairs as outside the compact ruleset
+ok 31 - rejects seven-pairs as outside the compact ruleset
+  ---
+  duration_ms: 0.164
+  type: 'test'
+  ...
+# Subtest: derives East wins, losses, draws, and Played time from completed history
+ok 32 - derives East wins, losses, draws, and Played time from completed history
+  ---
+  duration_ms: 1.36075
+  type: 'test'
+  ...
+# Subtest: uses History's immutable first duplicate record without mutating input
+ok 33 - uses History's immutable first duplicate record without mutating input
+  ---
+  duration_ms: 1.900292
+  type: 'test'
+  ...
+# Subtest: uses only the newest 50 unique completed results
+ok 34 - uses only the newest 50 unique completed results
+  ---
+  duration_ms: 0.184334
+  type: 'test'
+  ...
+# Subtest: returns a useful zero-value result for empty or unfinished data
+ok 35 - returns a useful zero-value result for empty or unfinished data
+  ---
+  duration_ms: 0.129333
+  type: 'test'
+  ...
+1..35
+# tests 35
+# suites 0
+# pass 35
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 206.31125
