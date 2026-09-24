@@ -1,0 +1,15 @@
+StartupSimulator syntax and browser smoke record
+Date: 2026-09-24
+
+PASS: node --check public/js/world.js
+PASS: node --check public/js/renderer.js
+PASS: node --check public/js/game.js
+PASS: node --check server.js
+
+Command: npm run test:browser
+Browser: Chrome 153.0.8010.53
+Result: PASS
+
+The browser check verified application initialization, canvas rendering, final
+HUD values, all seven task controls, pause/resume behavior, dance input, and the
+absence of uncaught JavaScript or console errors.

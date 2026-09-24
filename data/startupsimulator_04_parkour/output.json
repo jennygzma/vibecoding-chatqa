@@ -1,0 +1,207 @@
+{
+  "qa": [
+    {
+      "question": "Which objects were initially considered vaultable?",
+      "answer": "Chairs, plants, pills, and peptide objects.",
+      "evidence": [
+        "D1:36: \"`chair`, `plant`, `pills`, `peptide`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the original sprint mechanic work?",
+      "answer": "Holding Shift while moving roughly doubled speed, consumed one stamina every 0.7 seconds, and produced a five-ghost blue afterimage trail.",
+      "evidence": [
+        "D1:36: \"Hold `Shift` while moving with WASD/arrows to run at ~2× speed\"",
+        "D1:36: \"Costs 1 stamina every 0.7 seconds\"",
+        "D1:36: \"5 ghost sprites that fade out\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the first vault implementation detect and execute a jump?",
+      "answer": "While moving, Space scanned 1.5 tiles ahead for a vaultable object, crossed it in a 0.38-second arc, and required a walkable landing spot.",
+      "evidence": [
+        "D1:36: \"scans 1.5 tiles ahead\"",
+        "D1:36: \"flies cleanly over the object to the other side (0.38s arc)\"",
+        "D1:36: \"Landing spot must be walkable\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When is the parkour daily task completed?",
+      "answer": "It completes on the player's first successful vault over an object.",
+      "evidence": [
+        "D1:36: \"Completes on first successful vault over an object\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How is the character's jump height calculated visually?",
+      "answer": "The sprite rises according to the parabolic formula 4 times peak times t times one minus t, while its shadow remains on the floor and shrinks.",
+      "evidence": [
+        "D1:36: \"parabolic `4·peak·t·(1-t)` curve\"",
+        "D1:36: \"The shadow stays on the floor and shrinks/fades as Alex rises\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Where were the three parkour shortcut tables placed?",
+      "answer": "At x=8,y=2 near the work desk, x=3,y=4 between the coffee and ideas areas, and x=8,y=6 between the work and lounge areas.",
+      "evidence": [
+        "D1:54: \"`vault-a` | `x:8, y:2`\"",
+        "D1:54: \"`vault-b` | `x:3, y:4`\"",
+        "D1:54: \"`vault-c` | `x:8, y:6`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How do shortcut tables visually communicate that they are jumpable?",
+      "answer": "They use warm amber bodies, pulsing edge strips, a hover emoji, and orientation-specific highlighted edges.",
+      "evidence": [
+        "D1:54: \"**Warm amber/gold body**\"",
+        "D1:54: \"**Pulsing glowing edge strips**\"",
+        "D1:54: \"**🤸 emoji** pops above the table on hover\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was table-vault detection improved?",
+      "answer": "Vault reach increased from 1.5 to two tiles, and landing calculations began using the dominant movement axis and table dimensions.",
+      "evidence": [
+        "D1:54: \"**Reach increased** from 1.5 → 2.0 tiles\"",
+        "D1:54: \"**Direction-aware landing**: uses the dominant movement axis\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How much stamina does a shortcut-table vault cost?",
+      "answer": "One stamina, compared with two for regular vaultable objects at that stage.",
+      "evidence": [
+        "D1:54: \"**Shortcut tables cost only −1 stamina** vs −2 for regular objects\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What did the first on-screen dash button do?",
+      "answer": "It toggled approximately double-speed sprinting while movement keys were held, independently of the Shift key.",
+      "evidence": [
+        "D1:75: \"**Click to toggle on** → Alex sprints at 2× speed\"",
+        "D1:75: \"**Keyboard `Shift`** still works exactly as before\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When did the toggle dash cancel itself automatically?",
+      "answer": "It cancelled on depleted energy, pause, focus loss, day end, burnout, or reset.",
+      "evidence": [
+        "D1:75: \"**Energy bottoms out**\"",
+        "D1:75: \"**Game paused**\"",
+        "D1:75: \"**Window loses focus**\"",
+        "D1:75: \"**Day end / burnout / reset**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did dash stamina consumption change?",
+      "answer": "Its interval changed from one point every 0.7 seconds to one every 0.25 seconds, approximately 12 times the passive rate.",
+      "evidence": [
+        "D1:36: \"Costs 1 stamina every 0.7 seconds\"",
+        "D1:78: \"**After:** 1 HP drained every **0.25 seconds**\"",
+        "D1:78: \"**~12× the passive rate**\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "What penalty prevents repeated free-hop spam?",
+      "answer": "A free hop costs four stamina and, after landing, slows movement to 40 percent and blocks another jump for 0.6 seconds.",
+      "evidence": [
+        "D1:86: \"**After:** −4 stamina, 0.28s arc\"",
+        "D1:86: \"movement speed drops to **40%** of normal for 0.6 seconds\"",
+        "D1:86: \"can't jump again until the stumble clears\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was the intermediate physical dash button styled?",
+      "answer": "It became a raised 64-by-64-pixel dark-green arcade-style button with hover, pressed, active-glow, and disabled states.",
+      "evidence": [
+        "D1:92: \"**Idle** | 64×64px dark green button\"",
+        "D1:92: \"raised/3D \"arcade button\" feel\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the dash control evolve from the toggle version to its final behavior?",
+      "answer": "It changed from a toggle for continuous sprinting into a single-trigger blink that teleports Alex forward.",
+      "evidence": [
+        "D1:75: \"**Click to toggle on**\"",
+        "D1:109: \"## Blink Dash\"",
+        "D1:109: \"Alex instantly teleports up to **3 tiles forward**\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How can the player activate Blink Dash?",
+      "answer": "By pressing Q or clicking the on-screen Blink button.",
+      "evidence": [
+        "D1:109: \"Press **Q** (or click the ⚡ **BLINK** button)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does Blink Dash avoid moving through walls or furniture?",
+      "answer": "It samples the route in 24 increments and stops at the last walkable tile.",
+      "evidence": [
+        "D1:109: \"steps forward in 24 increments and stops at the last walkable tile\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What are Blink Dash's stamina cost and cooldown?",
+      "answer": "It costs eight stamina and has a 1.2-second cooldown.",
+      "evidence": [
+        "D1:109: \"**Costs 8 stamina**\"",
+        "D1:109: \"**1.2 second cooldown**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which controls appear in the persistent legend?",
+      "answer": "WASD for movement, Shift for sprint, Space for jump, Q for blink, and click for walking or interaction.",
+      "evidence": [
+        "D1:122: \"[WASD] move   [SHIFT] sprint   [SPACE] jump   [Q] blink   [CLICK] walk / interact\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When does the bottom controls legend disappear and return?",
+      "answer": "It fades out after the player starts moving and returns when the game is paused.",
+      "evidence": [
+        "D1:122: \"**smoothly fades out** once you start moving\"",
+        "D1:122: \"unless you pause\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How far do free hops and vaults reach during a sprint-jump?",
+      "answer": "A sprint free hop covers 1.6 tiles instead of one, and vault reach increases from two to 3.2 tiles.",
+      "evidence": [
+        "D1:126: \"**Free hop distance** | 1.0 tile | 1.6 tiles\"",
+        "D1:126: \"**Vault reach** | 2.0 tiles | 3.2 tiles\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does sprinting change a jump's arc and stamina behavior?",
+      "answer": "The jump travels 1.6 times farther, rises higher, finishes 20 percent faster, continues sprint drain in mid-air, and keeps producing a ghost trail.",
+      "evidence": [
+        "D1:126: \"**Landing distance** | standard | 1.6× further\"",
+        "D1:126: \"**Arc duration** | standard | 20% faster/snappier\"",
+        "D1:126: \"vault cost + sprint drain continues mid-air\"",
+        "D1:126: \"ghost trail keeps spawning during the arc\""
+      ],
+      "category": 4
+    }
+  ]
+}

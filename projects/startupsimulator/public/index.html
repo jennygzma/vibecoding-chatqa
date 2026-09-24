@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a1a2e">
+  <title>Zero to One</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/js/game.js"></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-sound"  viewBox="0 0 24 24"><path d="M3 9h4l5-5v16l-5-5H3zm13-2a7 7 0 0 1 0 10m3-13a11 11 0 0 1 0 16"/></symbol>
+    <symbol id="i-reset"  viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 1 8M3 4v6h6"/></symbol>
+    <symbol id="i-arrow"  viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check"  viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4 8h13v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5ZM17 9h2a3 3 0 0 1 0 6h-2M7 3v2m4-2v2m4-2v2M3 22h16"/></symbol>
+    <symbol id="i-board"  viewBox="0 0 24 24"><path d="M3 3h18v14H3zm9 14v5m-6 0 6-4 6 4M7 8h4m-4 4h7m1-4h2"/></symbol>
+    <symbol id="i-desk"   viewBox="0 0 24 24"><path d="M5 3h14v11H5zm7 11v4m-4 0h8M2 18h20M4 18v4m16-4v4"/></symbol>
+    <symbol id="i-pin"    viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+  </svg>
+  <canvas id="game" tabindex="0" aria-label="Top-down startup office. Click floor to walk, click objects to interact. WASD or arrow keys to move. Hold Shift to sprint. Press Space while moving to vault over furniture. Press Q to blink dash forward."></canvas>
+  <div class="hud-top">
+    <div class="hud-name">ZERO TO ONE</div>
+    <div id="hud-day" class="hud-day">DAY 1 / 10</div>
+    <div class="hud-clock" id="clock">9:00 AM</div>
+    <div class="hud-actions">
+      <button class="hud-btn" id="sound-button" aria-pressed="false" aria-label="Sound off" title="Sound">
+        <svg><use href="#i-sound"/></svg><span class="sound-slash"></span>
+      </button>
+      <button class="hud-btn" id="reset-button" aria-label="New game" title="New game">
+        <svg><use href="#i-reset"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="hud-bottom">
+    <div class="hud-card">
+      <div class="hud-card-name">ALEX <span class="hud-badge">FOUNDER</span></div>
+      <div class="hud-energy-row">
+        <span class="hud-energy-label">ST</span>
+        <div class="hud-energy-track" role="progressbar" aria-label="Stamina" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82" id="energy-bar">
+          <div class="hud-energy-fill" id="energy-fill"></div>
+        </div>
+        <span class="hud-energy-val" id="energy-value">82</span>
+      </div>
+      <div class="hud-energy-row">
+        <span class="hud-energy-label hud-elec-label">⚡</span>
+        <div class="hud-energy-track" role="progressbar" aria-label="Electricity" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="elec-bar">
+          <div class="hud-elec-fill" id="elec-fill"></div>
+        </div>
+        <span class="hud-energy-val" id="elec-value">100</span>
+      </div>
+      <div class="hud-money-row">
+        <span class="hud-energy-label hud-money-label">$</span>
+        <span class="hud-money-val" id="money-value">$0</span>
+      </div>
+    </div>
+    <div class="hud-tasks">
+      <button class="hud-task" data-task="walk"    data-destination="walk">  <span class="hud-task-dot"></span>Walk around</button>
+      <button class="hud-task" data-task="coffee"  data-destination="coffee"><span class="hud-task-dot"></span>Brew coffee</button>
+      <button class="hud-task" data-task="cereal"  data-destination="cereal"><span class="hud-task-dot"></span>Restock cereal 🥣</button>
+      <button class="hud-task" data-task="plan"    data-destination="plan">  <span class="hud-task-dot"></span>Pin an idea</button>
+      <button class="hud-task" data-task="work"    data-destination="work">  <span class="hud-task-dot"></span>Start building</button>
+      <button class="hud-task" data-task="parkour" data-destination="parkour"><span class="hud-task-dot"></span>Pull off a move 🤸</button>
+      <button class="hud-task" data-task="sleep"   data-destination="sleep"> <span class="hud-task-dot"></span>Sleep 💤</button>
+    </div>
+  </div>
+  <div id="hover-label" class="hover-label" hidden></div>
+  <div class="founder-hint" id="founder-hint">Meet Alex.<span>Click the floor to walk · Click objects to interact · Hold Shift to sprint · Space to vault · Q to blink 🤸</span></div>
+  <div class="controls-legend" id="controls-legend" aria-label="Controls">
+    <span class="ctrl-chip"><kbd>WASD</kbd><span>move</span></span>
+    <span class="ctrl-chip"><kbd>SHIFT</kbd><span>sprint</span></span>
+    <span class="ctrl-chip"><kbd>SPACE</kbd><span>jump</span></span>
+    <span class="ctrl-chip"><kbd>Q</kbd><span>blink</span></span>
+    <span class="ctrl-chip"><kbd>CLICK</kbd><span>walk / interact</span></span>
+  </div>
+  <div class="pause-overlay" id="pause-overlay" hidden>
+    <div class="pause-box">
+      <div class="pause-eyebrow">PAUSED</div>
+      <h2>Big ideas can wait.</h2>
+      <p>Your office will be right here.</p>
+      <div class="pause-controls">
+        <div class="pause-ctrl-row"><kbd>WASD</kbd> <span>or arrow keys to move</span></div>
+        <div class="pause-ctrl-row"><kbd>CLICK</kbd> <span>floor to walk · object to interact</span></div>
+        <div class="pause-ctrl-row"><kbd>SHIFT</kbd> <span>hold to sprint (drains stamina fast)</span></div>
+        <div class="pause-ctrl-row"><kbd>SPACE</kbd> <span>jump / vault over furniture while moving</span></div>
+        <div class="pause-ctrl-row"><kbd>Q</kbd> <span>blink dash — instant short teleport forward</span></div>
+      </div>
+      <button class="poke-btn primary" id="resume-button">Back to building</button>
+    </div>
+  </div>
+  <div class="zoom-controls">
+    <button id="zoom-out">−</button>
+    <button id="zoom-reset">100%</button>
+    <button id="zoom-in">+</button>
+    <button id="pause-button" aria-pressed="false" aria-label="Pause"><span class="pause-icon"></span></button>
+  </div>
+  <button id="dash-button" aria-pressed="false" aria-label="Dash (Shift)" title="Dash — hold Shift or click to toggle">
+    <span class="dash-btn-icon">⚡</span>
+    <span class="dash-btn-label">BLINK</span>
+    <span class="dash-btn-key">Q</span>
+  </button>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <!-- Cycling overlay — shown while player is on the bike -->
+  <div id="cycling-overlay" hidden>
+    <div class="cycling-eyebrow">🚴 CYCLING MODE</div>
+    <div class="cycling-charge-label" id="cycling-charge-label">GET UP TO SPEED</div>
+    <div class="cycling-bar-wrap">
+      <div class="pedal-track" role="progressbar" aria-label="Pedal power" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="pedal-bar">
+        <div class="pedal-fill" id="pedal-fill"></div>
+        <!-- threshold ticks -->
+        <div class="pedal-tick" style="left:25%" title="Charging starts"></div>
+        <div class="pedal-tick pedal-tick--double" style="left:50%" title="Double charge"></div>
+        <div class="pedal-tick pedal-tick--triple" style="left:75%" title="Triple charge"></div>
+        <div class="pedal-tick pedal-tick--danger" style="left:100%" title="OVERLOAD!"></div>
+      </div>
+      <span class="pedal-val" id="pedal-val">0</span>
+    </div>
+    <div class="cycling-hint"><kbd>SPACE</kbd> to pedal &nbsp;·&nbsp; <kbd>ESC</kbd> to stop</div>
+  </div>
+
+  <!-- Treadmill overlay — shown while player is running -->
+  <div id="treadmill-overlay" hidden>
+    <div class="cycling-eyebrow">🏃 TREADMILL MODE</div>
+    <div class="treadmill-run-label" id="treadmill-run-label">STEP ON THE BELT</div>
+    <div class="cycling-bar-wrap">
+      <div class="pedal-track" role="progressbar" aria-label="Run pace" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="run-bar">
+        <div class="run-fill" id="run-fill"></div>
+        <!-- threshold ticks -->
+        <div class="pedal-tick" style="left:25%" title="Light jog starts"></div>
+        <div class="pedal-tick pedal-tick--double" style="left:50%" title="Good pace"></div>
+        <div class="pedal-tick pedal-tick--triple" style="left:75%" title="Sprint zone"></div>
+        <div class="pedal-tick pedal-tick--danger" style="left:100%" title="OVEREXERTION!"></div>
+      </div>
+      <span class="pedal-val" id="run-val">0</span>
+    </div>
+    <div class="cycling-hint"><kbd>SPACE</kbd> to run &nbsp;·&nbsp; <kbd>ESC</kbd> to stop</div>
+  </div>
+
+  <!-- Day-end / win overlay -->
+  <div class="day-end-overlay" id="day-end-overlay" hidden>
+    <div class="day-end-box">
+      <div class="day-end-progress" id="day-end-progress">DAY 1 / 10 COMPLETE</div>
+      <div class="day-end-bar"><div class="day-end-bar-fill" id="day-end-bar-fill"></div></div>
+      <h2 id="day-end-title">Day 1 complete.</h2>
+      <p  id="day-end-body"></p>
+      <button class="poke-btn primary" id="day-end-btn">Start Day 2</button>
+    </div>
+  </div>
+  <dialog id="interaction-dialog">
+    <button class="dialog-close" id="dialog-close" aria-label="Close">×</button>
+    <div class="dialog-icon"    id="dialog-icon"></div>
+    <div class="dialog-eyebrow" id="dialog-eyebrow"></div>
+    <h2 id="dialog-title"></h2>
+    <p  id="dialog-description"></p>
+    <div class="dialog-detail"  id="dialog-detail"></div>
+    <input type="text" id="dialog-name-input" class="dialog-name-input" placeholder="Give them a name…" maxlength="20" autocomplete="off" hidden>
+    <button class="poke-btn primary" id="dialog-action"></button>
+    <button class="poke-btn ghost"   id="dialog-cancel">Maybe in a minute</button>
+  </dialog>
+  <!-- Million-dollar win overlay -->
+  <div class="million-overlay" id="million-overlay" hidden>
+    <div class="million-box">
+      <div class="million-eyebrow" id="million-day">DAY 1 OF 10</div>
+      <div class="million-amount">$1,000,000</div>
+      <h2 class="million-title">You made a million dollars.</h2>
+      <p class="million-body">Most startups never get here. You did. The cereal was worth it.</p>
+      <div class="million-worker-line" id="million-worker-line"></div>
+      <button class="poke-btn primary million-btn" id="million-btn">Start over 🚀</button>
+    </div>
+  </div>
+  <!-- Jumpscare overlay — flashes on ghost proximity -->
+  <div id="jumpscare-overlay" hidden></div>
+  <noscript><div class="noscript">Please enable JavaScript.</div></noscript>
+</body>
+</html>

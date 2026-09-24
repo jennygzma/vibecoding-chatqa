@@ -1,0 +1,99 @@
+{
+  "status": "reviewed-and-validated",
+  "trajectories": {
+    "startupsimulator_01_main-build": {
+      "annotations": 22,
+      "citations": 42,
+      "cleaned_messages": 199,
+      "roles": {
+        "user": 20,
+        "assistant": 179
+      },
+      "categories": {
+        "2": 2,
+        "4": 18,
+        "5": 2
+      },
+      "errors": []
+    },
+    "startupsimulator_02_hiring-workers": {
+      "annotations": 22,
+      "citations": 32,
+      "cleaned_messages": 161,
+      "roles": {
+        "user": 11,
+        "assistant": 150
+      },
+      "categories": {
+        "4": 18,
+        "5": 4
+      },
+      "errors": []
+    },
+    "startupsimulator_03_health-stamina": {
+      "annotations": 22,
+      "citations": 47,
+      "cleaned_messages": 129,
+      "roles": {
+        "user": 16,
+        "assistant": 113
+      },
+      "categories": {
+        "2": 3,
+        "4": 18,
+        "5": 1
+      },
+      "errors": []
+    },
+    "startupsimulator_04_parkour": {
+      "annotations": 22,
+      "citations": 49,
+      "cleaned_messages": 126,
+      "roles": {
+        "user": 11,
+        "assistant": 115
+      },
+      "categories": {
+        "2": 2,
+        "4": 20
+      },
+      "errors": []
+    },
+    "startupsimulator_05_lighting-power": {
+      "annotations": 25,
+      "citations": 60,
+      "cleaned_messages": 182,
+      "roles": {
+        "user": 10,
+        "assistant": 172
+      },
+      "categories": {
+        "2": 1,
+        "4": 23,
+        "5": 1
+      },
+      "errors": []
+    },
+    "startupsimulator_06_miscellaneous": {
+      "annotations": 23,
+      "citations": 52,
+      "cleaned_messages": 172,
+      "roles": {
+        "user": 11,
+        "assistant": 161
+      },
+      "categories": {
+        "2": 2,
+        "4": 19,
+        "5": 2
+      },
+      "errors": []
+    }
+  },
+  "totals": {
+    "trajectories": 6,
+    "annotations": 136,
+    "citations": 282
+  },
+  "errors": []
+}

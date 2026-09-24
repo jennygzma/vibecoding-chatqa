@@ -1,0 +1,1 @@
+Annotation scope: founder work earnings, hiring and firing, custom worker names, worker and founder upgrades, strikes and their resolution, the cereal-station task and its effect on worker morale, and the one-million-dollar win condition. One automatic task resumption is excluded from the researcher-prompt count. All 22 QA items were approved by the researcher on 2026-09-24.

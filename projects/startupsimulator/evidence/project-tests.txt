@@ -1,0 +1,16 @@
+StartupSimulator project test record
+Date: 2026-09-24
+
+Command: npm test
+Result: PASS
+
+10 tests passed:
+- local server content types, method handling, and traversal confinement;
+- top-down projection round trips;
+- collision-free start and interaction targets;
+- direct routing and A* obstacle routing;
+- unreachable destination rejection;
+- reachability of every interaction target;
+- connectivity of sampled walkable floor locations;
+- final-version save round trips;
+- corrupted-save clamping and filtering.

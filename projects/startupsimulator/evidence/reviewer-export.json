@@ -1,0 +1,2626 @@
+{
+  "format": "startupsimulator-annotation-review-v1",
+  "exportedAt": "2026-09-24T23:38:25.954Z",
+  "decisions": [
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:1",
+      "decision": "approved",
+      "notes": "",
+      "question": "What was the original goal of StartupSimulator?",
+      "answer": "To create a local startup-simulator web game with an office that a founder character navigates by clicking.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:01.979Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:2",
+      "decision": "approved",
+      "notes": "",
+      "question": "What was the initial StartupSimulator prototype called?",
+      "answer": "It was called Zero to One.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:02.061Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:3",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the original click-to-walk system handle furniture?",
+      "answer": "It routed the founder around furniture.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:02.145Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:4",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which non-mouse controls and convenience features shipped in the first prototype?",
+      "answer": "It included keyboard movement, touch support, zoom, pause, and automatic browser saving.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:36:59.973Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:5",
+      "decision": "approved",
+      "notes": "",
+      "question": "Were hiring and revenue systems part of the first prototype?",
+      "answer": "No. The first version focused on office exploration; hiring, revenue, and broader business simulation were not implemented.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:37:00.057Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:6",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the world projection change during the first Pokémon-style conversion?",
+      "answer": "It changed from an isometric projection to a top-down orthographic projection.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.140Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:7",
+      "decision": "approved",
+      "notes": "",
+      "question": "What tile and room dimensions were introduced for the grid-based world?",
+      "answer": "The conversion used 32-pixel tiles and expanded the room to 16 by 12 tiles.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.224Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:8",
+      "decision": "approved",
+      "notes": "",
+      "question": "How was the page layout changed to make the game full-screen?",
+      "answer": "The old page layout was removed, the canvas became a 100vw by 100vh first child of the body, and fixed HUD overlays were placed at the top and bottom.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.307Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:9",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which rendering techniques were used in the temporary smooth animated redesign?",
+      "answer": "It enabled high-quality image smoothing, fractional scaling, rounded rectangles, gradients, ellipses, curved paths, and object shadows.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.392Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:10",
+      "decision": "approved",
+      "notes": "",
+      "question": "What replaced the green checkerboard floor in the smooth redesign?",
+      "answer": "A warm wood-plank parquet floor with grain lines and plank-joint seams.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.473Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:11",
+      "decision": "approved",
+      "notes": "",
+      "question": "How many frames did the smooth character's walk cycle use?",
+      "answer": "It used a four-frame walk cycle with opposing arm and leg motion and body bobbing.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.557Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:12",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the rendering style change after the smooth animated redesign?",
+      "answer": "The game reversed course from anti-aliased smooth rendering to crisp pixel art with image smoothing disabled and integer scaling.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:37:00.641Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:13",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does the later pixel-art character show its facing direction?",
+      "answer": "Its eye positions change when facing left, right, or down, while facing up shows the back of the head without a face.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.724Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:14",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens when the player clicks a point occupied by furniture or a wall?",
+      "answer": "The game searches outward in quarter-tile steps and routes Alex to the nearest walkable point within three tiles.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.807Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:15",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which four tasks defined the original single-day objective?",
+      "answer": "Walk around, brew coffee, pin an idea, and build a prototype.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.891Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:16",
+      "decision": "approved",
+      "notes": "",
+      "question": "What was the original day's only meaningful constraint?",
+      "answer": "Energy was the only real constraint, and the clock had no fail state when time ran out.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:00.974Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:17",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the game's objective expand beyond its initial day-one experience?",
+      "answer": "It changed from a short single-day experience into a ten-day sprint in which the four daily tasks advance the startup toward launch.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:37:01.057Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:18",
+      "decision": "approved",
+      "notes": "",
+      "question": "What resets when a normal day is completed in the ten-day loop?",
+      "answer": "The tasks, clock, distance counter, and Alex's position reset, while energy recovers by 30 up to a maximum of 100.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:01.140Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:19",
+      "decision": "approved",
+      "notes": "",
+      "question": "What progression arc does the ten-day work task follow?",
+      "answer": "It progresses from prototype through improvement, feedback, polish, demo, paid features, product feel, launch preparation, and a final push to launch.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:01.225Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:20",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens after completing all tasks on Day 10?",
+      "answer": "The game shows the full win message and offers Play again, which resets the game to Day 1.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:01.306Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:21",
+      "decision": "approved",
+      "notes": "",
+      "question": "How were invisible collision margins reduced in the final movement fix?",
+      "answer": "The founder radius was reduced from 0.4 to 0.18 tiles, and furniture padding was separated into a fixed 0.05-tile constant.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:01.812Z"
+    },
+    {
+      "trajectory": "startupsimulator_01_main-build",
+      "itemId": "startupsimulator_01_main-build:22",
+      "decision": "approved",
+      "notes": "",
+      "question": "Was the visible checkerboard floor gone by the end of the main trajectory?",
+      "answer": "No. The final researcher message explicitly said the checkerboard pattern was still visible.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:37:01.889Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:1",
+      "decision": "approved",
+      "notes": "",
+      "question": "What simple hiring interaction was proposed during the initial brainstorm?",
+      "answer": "The player would click the ideas desk, review a candidate profile, and choose whether to hire or pass; a hire would add a character and a delegatable daily task.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:25.457Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:2",
+      "decision": "approved",
+      "notes": "",
+      "question": "How much money does founder work earn across the ten-day progression?",
+      "answer": "Work earnings scale from $50 on Day 1 to $5,000 on Day 10.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:25.540Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:3",
+      "decision": "approved",
+      "notes": "",
+      "question": "Does the founder's money survive a browser reload?",
+      "answer": "Yes. Money is restored by parseSave and persists across sessions.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:37:25.624Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:4",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where can the player hire workers?",
+      "answer": "At either the Room for a cofounder ideas desk or the second desk in the top-left area.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:25.707Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:5",
+      "decision": "approved",
+      "notes": "",
+      "question": "Do the available candidates change during the same in-game day?",
+      "answer": "No. Candidates are deterministic within a day, but different days offer different candidates.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:37:25.791Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:6",
+      "decision": "approved",
+      "notes": "",
+      "question": "What are the passive base earnings rates for the four worker roles?",
+      "answer": "Engineers earn $3 per second, Growth workers $4, Designers $2, and Operations workers $2.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:25.874Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:7",
+      "decision": "approved",
+      "notes": "",
+      "question": "How many workers can the player hire at once?",
+      "answer": "Up to two, one for each worker desk.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:25.958Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:8",
+      "decision": "approved",
+      "notes": "",
+      "question": "How are worker roles distinguished visually?",
+      "answer": "Their seated sprites are color-coded: blue for Engineer, pink for Designer, green for Growth, and orange for Operations.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.041Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:9",
+      "decision": "approved",
+      "notes": "",
+      "question": "How do worker upgrades affect earnings and what do they cost?",
+      "answer": "Level 2 costs $500 and earns 1.5 times the base rate; level 3 costs $2,000 and earns 2.25 times the base rate.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.124Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:10",
+      "decision": "approved",
+      "notes": "",
+      "question": "What are the three founder efficiency upgrades?",
+      "answer": "Focus Mode costs $300 and lowers work energy to 8; Speed Desk costs $800 and gives 1.5x work earnings; Deep Work Protocol costs $2,000 and gives 2x earnings while restoring 5 energy.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.207Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:11",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does the player fire a worker?",
+      "answer": "The player opens an occupied desk and selects Let [Name] go; this removes the worker, saves, updates the HUD, and makes the desk available for hiring again.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.291Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:12",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens if the player leaves the worker-name field blank?",
+      "answer": "The hire uses the candidate's default name; typing a custom name and pressing Enter or the offer button uses that name instead.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.374Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:13",
+      "decision": "approved",
+      "notes": "",
+      "question": "When can a newly hired worker go on strike?",
+      "answer": "Each hire receives a random strike countdown of 60 to 180 real seconds.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.457Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:14",
+      "decision": "approved",
+      "notes": "",
+      "question": "Does a striking worker keep generating passive income?",
+      "answer": "No. A worker earns $0 per second while on strike.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:37:26.541Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:15",
+      "decision": "approved",
+      "notes": "",
+      "question": "What two choices resolve a worker strike?",
+      "answer": "The player can pay a one-time payoff or permanently raise the worker's wage by $1 per second.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.624Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:16",
+      "decision": "approved",
+      "notes": "",
+      "question": "How is a strike payoff priced?",
+      "answer": "It costs 40 times the worker's current earnings rate after the level multiplier, roughly forty seconds of passive income.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.707Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:17",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where is the cereal station and how does the player reach it?",
+      "answer": "It is a two-by-one object at x=7,y=7 with its own walk target; clicking either it or its HUD task routes the player there.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.791Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:18",
+      "decision": "approved",
+      "notes": "",
+      "question": "What is the cereal station's two-stage interaction?",
+      "answer": "The player first pays $25 to stock three servings, then pours a bowl that consumes one serving, restores 20 energy, and completes the cereal task.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.874Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:19",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens to cereal stock when a new day begins?",
+      "answer": "It resets to zero, so the station must be restocked each day.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:26.961Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:20",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does restocking cereal affect workers who are not on strike?",
+      "answer": "It adds 60 seconds to every non-striking worker's remaining strike countdown.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:27.045Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:21",
+      "decision": "approved",
+      "notes": "",
+      "question": "Can cereal end an active worker strike?",
+      "answer": "No. Workers who are already striking are unaffected by restocking.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:37:25.291Z"
+    },
+    {
+      "trajectory": "startupsimulator_02_hiring-workers",
+      "itemId": "startupsimulator_02_hiring-workers:22",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens when the player's money reaches one million dollars?",
+      "answer": "A guarded trigger fires once at any time or day and opens a full-screen million-dollar win overlay with a Start over button.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:25.374Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:1",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where was the bed placed in the office?",
+      "answer": "It was placed at x=3, y=9 with a size of 3 by 2 tiles and an interaction target at x=6, y=10.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.812Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:2",
+      "decision": "approved",
+      "notes": "",
+      "question": "When is the player allowed to sleep?",
+      "answer": "Only after the other four daily tasks are complete; sleeping then completes the fifth task and advances the day after 1.8 seconds.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.895Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:3",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the first passive energy-drain loop work?",
+      "answer": "It removed one energy every eight real seconds until the player slept.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.978Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:4",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does the game warn the player at low energy?",
+      "answer": "At 20 energy or below it shows a one-time warning, turns the bar red, and makes it pulse.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:43.063Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:5",
+      "decision": "approved",
+      "notes": "",
+      "question": "What penalty follows ordinary burnout?",
+      "answer": "The game advances to the next day with only 50 energy and shows a burnout-specific day-end screen.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:43.145Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:6",
+      "decision": "approved",
+      "notes": "",
+      "question": "Why could energy stop draining after reloading a saved game?",
+      "answer": "A previously completed sleep task could be restored from localStorage, making the drain condition think the player had already slept; the fix excluded sleep from restored completions.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:43.228Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:7",
+      "decision": "approved",
+      "notes": "",
+      "question": "How was the passive drain rate made more aggressive?",
+      "answer": "It changed from one point every eight seconds to one point every three seconds.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:37:43.312Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:8",
+      "decision": "approved",
+      "notes": "",
+      "question": "What stamina tradeoff does coffee create?",
+      "answer": "Coffee fills stamina to 100 but doubles the drain rate from one point every three seconds to one every 1.5 seconds.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:43.395Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:9",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does coffee affect movement speed?",
+      "answer": "It raises speed from 2.65 to 4.5, approximately 70 percent faster, until the day changes or the game resets.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:43.478Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:10",
+      "decision": "approved",
+      "notes": "",
+      "question": "What did pills do when first introduced?",
+      "answer": "They restored up to 40 HP but slowed movement from 2.65 to 1.3.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:43.562Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:11",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happened when the sofa was first removed?",
+      "answer": "Both the sofa and coffee table disappeared, leaving open floor space in the lower-right corner.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:43.645Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:12",
+      "decision": "approved",
+      "notes": "",
+      "question": "What was the sofa's final role after the removal was reconsidered?",
+      "answer": "It and the coffee table returned as non-interactive decorations that still rendered and blocked movement.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:37:41.895Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:13",
+      "decision": "approved",
+      "notes": "",
+      "question": "How was the health bar reframed as stamina?",
+      "answer": "The HUD label changed from green HP to amber ST; below 25 it still turns red and pulses, and player-facing copy now says stamina.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:41.978Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:14",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the pills mechanic change after stamina was introduced?",
+      "answer": "It changed from restoring 40 HP while slowing the player to costing 25 stamina while boosting speed to 4.5.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:37:42.061Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:15",
+      "decision": "approved",
+      "notes": "",
+      "question": "Can taking pills reduce stamina to zero?",
+      "answer": "No. The cost floors stamina at one, preventing the pills from killing the player directly.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:37:42.145Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:16",
+      "decision": "approved",
+      "notes": "",
+      "question": "What design problem did the agent identify with coffee and pills?",
+      "answer": "Both produced the same 4.5 speed, making coffee strictly better except when pills were physically closer.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.228Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:17",
+      "decision": "approved",
+      "notes": "",
+      "question": "Why was coffee's accelerated stamina drain easy for players to miss?",
+      "answer": "The drain rate was not shown in the interface, so the difference between 1.5-second and three-second drain intervals was invisible.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.312Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:18",
+      "decision": "approved",
+      "notes": "",
+      "question": "What distinct pills effect was suggested but not implemented in this trajectory?",
+      "answer": "The agent suggested making pills slow stamina drain so they would be a defensive, sustainable alternative to risky coffee.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.395Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:19",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does peptide-shot mortality escalate within a day?",
+      "answer": "The death chance rises by 20 percentage points per shot: 20, 40, 60, 80, then 100 percent on the fifth shot.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.478Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:20",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens when a peptide shot kills the player?",
+      "answer": "A dedicated overdose day-end screen appears and the player wakes with 30 stamina, which is harsher than ordinary burnout's 50.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.562Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:21",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens when a peptide shot succeeds?",
+      "answer": "It immediately restores stamina to full and shows a toast about how close the gamble was.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.645Z"
+    },
+    {
+      "trajectory": "startupsimulator_03_health-stamina",
+      "itemId": "startupsimulator_03_health-stamina:22",
+      "decision": "approved",
+      "notes": "",
+      "question": "When does the peptide-shot counter reset?",
+      "answer": "It resets on a normal day advance, burnout, peptide death, and a hard reset.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:42.728Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:1",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which objects were initially considered vaultable?",
+      "answer": "Chairs, plants, pills, and peptide objects.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.628Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:2",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the original sprint mechanic work?",
+      "answer": "Holding Shift while moving roughly doubled speed, consumed one stamina every 0.7 seconds, and produced a five-ghost blue afterimage trail.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.711Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:3",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the first vault implementation detect and execute a jump?",
+      "answer": "While moving, Space scanned 1.5 tiles ahead for a vaultable object, crossed it in a 0.38-second arc, and required a walkable landing spot.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.795Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:4",
+      "decision": "approved",
+      "notes": "",
+      "question": "When is the parkour daily task completed?",
+      "answer": "It completes on the player's first successful vault over an object.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.878Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:5",
+      "decision": "approved",
+      "notes": "",
+      "question": "How is the character's jump height calculated visually?",
+      "answer": "The sprite rises according to the parabolic formula 4 times peak times t times one minus t, while its shadow remains on the floor and shrinks.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.961Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:6",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where were the three parkour shortcut tables placed?",
+      "answer": "At x=8,y=2 near the work desk, x=3,y=4 between the coffee and ideas areas, and x=8,y=6 between the work and lounge areas.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:53.045Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:7",
+      "decision": "approved",
+      "notes": "",
+      "question": "How do shortcut tables visually communicate that they are jumpable?",
+      "answer": "They use warm amber bodies, pulsing edge strips, a hover emoji, and orientation-specific highlighted edges.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:53.128Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:8",
+      "decision": "approved",
+      "notes": "",
+      "question": "How was table-vault detection improved?",
+      "answer": "Vault reach increased from 1.5 to two tiles, and landing calculations began using the dominant movement axis and table dimensions.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:53.211Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:9",
+      "decision": "approved",
+      "notes": "",
+      "question": "How much stamina does a shortcut-table vault cost?",
+      "answer": "One stamina, compared with two for regular vaultable objects at that stage.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:53.296Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:10",
+      "decision": "approved",
+      "notes": "",
+      "question": "What did the first on-screen dash button do?",
+      "answer": "It toggled approximately double-speed sprinting while movement keys were held, independently of the Shift key.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:53.379Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:11",
+      "decision": "approved",
+      "notes": "",
+      "question": "When did the toggle dash cancel itself automatically?",
+      "answer": "It cancelled on depleted energy, pause, focus loss, day end, burnout, or reset.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:53.462Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:12",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did dash stamina consumption change?",
+      "answer": "Its interval changed from one point every 0.7 seconds to one every 0.25 seconds, approximately 12 times the passive rate.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:37:53.546Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:13",
+      "decision": "approved",
+      "notes": "",
+      "question": "What penalty prevents repeated free-hop spam?",
+      "answer": "A free hop costs four stamina and, after landing, slows movement to 40 percent and blocks another jump for 0.6 seconds.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:53.629Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:14",
+      "decision": "approved",
+      "notes": "",
+      "question": "How was the intermediate physical dash button styled?",
+      "answer": "It became a raised 64-by-64-pixel dark-green arcade-style button with hover, pressed, active-glow, and disabled states.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:53.712Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:15",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the dash control evolve from the toggle version to its final behavior?",
+      "answer": "It changed from a toggle for continuous sprinting into a single-trigger blink that teleports Alex forward.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:37:53.795Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:16",
+      "decision": "approved",
+      "notes": "",
+      "question": "How can the player activate Blink Dash?",
+      "answer": "By pressing Q or clicking the on-screen Blink button.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.041Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:17",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does Blink Dash avoid moving through walls or furniture?",
+      "answer": "It samples the route in 24 increments and stops at the last walkable tile.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.125Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:18",
+      "decision": "approved",
+      "notes": "",
+      "question": "What are Blink Dash's stamina cost and cooldown?",
+      "answer": "It costs eight stamina and has a 1.2-second cooldown.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.209Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:19",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which controls appear in the persistent legend?",
+      "answer": "WASD for movement, Shift for sprint, Space for jump, Q for blink, and click for walking or interaction.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.292Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:20",
+      "decision": "approved",
+      "notes": "",
+      "question": "When does the bottom controls legend disappear and return?",
+      "answer": "It fades out after the player starts moving and returns when the game is paused.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.376Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:21",
+      "decision": "approved",
+      "notes": "",
+      "question": "How far do free hops and vaults reach during a sprint-jump?",
+      "answer": "A sprint free hop covers 1.6 tiles instead of one, and vault reach increases from two to 3.2 tiles.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.461Z"
+    },
+    {
+      "trajectory": "startupsimulator_04_parkour",
+      "itemId": "startupsimulator_04_parkour:22",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does sprinting change a jump's arc and stamina behavior?",
+      "answer": "The jump travels 1.6 times farther, rises higher, finishes 20 percent faster, continues sprint drain in mid-air, and keeps producing a ghost trail.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:37:52.545Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:1",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where is the office light switch located?",
+      "answer": "It is a one-tile switch on the right wall at x=15,y=4 with a walkable interaction target at x=14,y=4.5.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:01.562Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:2",
+      "decision": "approved",
+      "notes": "",
+      "question": "How is the overhead-light state initialized and preserved?",
+      "answer": "The lights start on, and the lightOn value is restored from saved state across sessions.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:01.645Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:3",
+      "decision": "approved",
+      "notes": "",
+      "question": "What visual effect appears when the overhead lights are off?",
+      "answer": "An 82-percent darkness veil covers the room while the workstation emits a soft blue monitor glow.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:01.729Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:4",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where was the independently controlled floor lamp placed?",
+      "answer": "At x=9,y=9 in the lounge, with its approach target at x=9,y=8.5.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:01.812Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:5",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which three lighting combinations became possible after adding the lamp?",
+      "answer": "Both lights on, overhead lights off with the lamp on, or both lighting systems off.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:01.895Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:6",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does sitting on the sofa affect position, movement, and energy?",
+      "answer": "Alex snaps to the sofa's center, cannot move, recovers two energy every two seconds, and automatically stands at full energy.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:01.979Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:7",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which controls make Alex stand up from the sofa?",
+      "answer": "Any movement key or E stands Alex up immediately; interacting with the sofa again also toggles the seated state.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.062Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:8",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does the player control sofa recline?",
+      "answer": "While seated, Up or W reclines farther, Down or S returns upright, and horizontal movement keys or E stand up.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.145Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:9",
+      "decision": "approved",
+      "notes": "",
+      "question": "How quickly does the sofa move between upright and fully reclined?",
+      "answer": "The recline value changes at 0.9 per second, taking about 1.1 seconds end to end.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.228Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:10",
+      "decision": "approved",
+      "notes": "",
+      "question": "How do the character's eyes and sleep animation change at full recline?",
+      "answer": "The eyes become nearly closed with hidden pupils above 85 percent recline, while the zzz animation becomes fully opaque, 60 percent larger, and pulses more strongly.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.312Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:11",
+      "decision": "approved",
+      "notes": "",
+      "question": "How is in-game time converted into the day-night color overlay?",
+      "answer": "Minutes from 540 through 1079 are normalized to zero through one and interpolated across five color keyframes.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.395Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:12",
+      "decision": "approved",
+      "notes": "",
+      "question": "What visual tint represents the end of the in-game day?",
+      "answer": "At 6 PM the room receives a 40-percent deep-blue tint.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.479Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:13",
+      "decision": "approved",
+      "notes": "",
+      "question": "When and where does the moonrise shimmer appear?",
+      "answer": "After normalized time exceeds 0.7, a cool blue-white glow fades into the upper-right wall corner.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.561Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:14",
+      "decision": "approved",
+      "notes": "",
+      "question": "How many window-light sources illuminate the darkened office?",
+      "answer": "Three shafts come from the back wall, plus one daytime-only fan beam from the left wall.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.645Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:15",
+      "decision": "approved",
+      "notes": "",
+      "question": "How do sunlight and moonlight shafts differ?",
+      "answer": "Sunlight is warmer, more strongly slanted, and includes the left-wall shaft; moonlight is cool silver-blue, closer to overhead, and omits that shaft.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.728Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:16",
+      "decision": "approved",
+      "notes": "",
+      "question": "How was electricity added to saved game state?",
+      "answer": "New games start with 100 electricity, the save version increased from two to three, and restored values are clamped between zero and 100.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.812Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:17",
+      "decision": "approved",
+      "notes": "",
+      "question": "What are the passive electricity drain rates?",
+      "answer": "Idle devices consume 0.04 electricity per second, overhead lights add 0.10, and the floor lamp adds another 0.04 while enabled.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.895Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:18",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens when electricity becomes low or reaches zero?",
+      "answer": "At 20 percent or below the game warns the player; at zero it forces both lights off and announces a blackout.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:02.978Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:19",
+      "decision": "approved",
+      "notes": "",
+      "question": "How much electricity do coffee and desk work consume?",
+      "answer": "The coffee machine costs five electricity, and working at the desk costs eight.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:03.061Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:20",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where were the generator and cycling machine placed?",
+      "answer": "The generator occupies x=12,y=8 as a one-tile object, and the two-by-two bike begins at x=12,y=9.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:03.145Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:21",
+      "decision": "approved",
+      "notes": "",
+      "question": "Did the first generator and bike implementation include charging mechanics?",
+      "answer": "No. They initially had only interaction stubs: the generator directed the player to the bike, while the bike said its mechanics were coming later.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:38:03.231Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:22",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does the cycling interaction build and lose pedal power?",
+      "answer": "Each Space press adds 22 power, while the bar continuously decays at 14 units per second; Escape dismounts.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:03.311Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:23",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the cycling charge thresholds change?",
+      "answer": "The original system began charging above 50 percent, doubled above 75, and tripled at 100; the revision shifted normal, double, and triple charging to 25–50, 50–75, and 75–100 percent and added overload above 100.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:38:01.312Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:24",
+      "decision": "approved",
+      "notes": "",
+      "question": "What triggers a bike breakdown and how long does it last?",
+      "answer": "A Space press that pushes internal pedal power above 100 triggers a five-second breakdown.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:01.395Z"
+    },
+    {
+      "trajectory": "startupsimulator_05_lighting-power",
+      "itemId": "startupsimulator_05_lighting-power:25",
+      "decision": "approved",
+      "notes": "",
+      "question": "What can the player do while the bike is broken?",
+      "answer": "Space does nothing and the bike produces no charge; the bar flashes red, drains at 30 per second, and shakes until recovery resets power to zero.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:01.479Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:1",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where was the treadmill placed?",
+      "answer": "It was placed against the top wall at x=8,y=0 with a two-by-one footprint and a stand target at x=9,y=1.5.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:24.388Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:2",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the treadmill work before its mini-game was added?",
+      "answer": "Using it cost 15 stamina, incremented the persistent treadmillSessions count, and showed a session-dependent toast.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:24.471Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:3",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did treadmill interaction evolve after the mini-game request?",
+      "answer": "It changed from a one-shot 15-stamina action into a mountable Space-tapping mini-game with run power, pace zones, rewards, penalties, and clean or overexerted dismounts.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:38:24.556Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:4",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which treadmill power zones restore or drain stamina?",
+      "answer": "Run power from 25 through 75 restores four stamina per second, while power above 75 drains six stamina per second.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:24.638Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:5",
+      "decision": "approved",
+      "notes": "",
+      "question": "What causes a forced treadmill dismount?",
+      "answer": "Reaching zero stamina forces an overexerted dismount, and three consecutive overloads also force a dismount.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:25.953Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:6",
+      "decision": "approved",
+      "notes": "",
+      "question": "Where and when can the player order delivery food?",
+      "answer": "The phone is at x=7,y=9, and its dialog distinguishes before 10 AM, open hours, and a closed kitchen from 10 PM onward.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:22.887Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:7",
+      "decision": "approved",
+      "notes": "",
+      "question": "Does ordering food change any player stats?",
+      "answer": "No. It is explicitly a cosmetic interaction with no stat effects.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:38:22.971Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:8",
+      "decision": "approved",
+      "notes": "",
+      "question": "How varied is the delivery menu?",
+      "answer": "It cycles among twelve food toasts, including pizza, ramen, burger, salad, burrito, sushi, pho, sandwich, pasta, tacos, croissant, and dumplings.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.054Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:9",
+      "decision": "approved",
+      "notes": "",
+      "question": "Was the food-order randomization actually stuck on ramen?",
+      "answer": "No. The randomization was working; incorrect and duplicated emoji codepoints made the results appear misleading.",
+      "category": 5,
+      "updatedAt": "2026-09-24T23:38:23.137Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:10",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does the D key distinguish dancing from walking right?",
+      "answer": "Tapping D while completely still toggles dancing and removes D from the held-key set, while pressing it during movement keeps its normal right-walk behavior and cancels dancing.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.221Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:11",
+      "decision": "approved",
+      "notes": "",
+      "question": "What does the dance animation look like?",
+      "answer": "It is a four-beat routine with bouncing and alternating raised arms and stepped feet, plus a smile, shrinking shadow, and three colored floating music notes.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.305Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:12",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does the ambient ghost move around the room?",
+      "answer": "Two slow sine-wave pairs make it drift about one tile around (1.5,1.7) in the back-left corner without perfectly repeating, while a separate sine wave makes it bob vertically.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.388Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:13",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens to the ghost animation when reduced motion is preferred?",
+      "answer": "All animation stops and the ghost renders at a fixed 38-percent opacity without bobbing or eye shimmer.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.471Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:14",
+      "decision": "approved",
+      "notes": "",
+      "question": "What triggers the ghost jumpscare and how soon can it repeat?",
+      "answer": "Approaching within 1.5 tiles triggers it when the cooldown is zero, after which an eight-second cooldown prevents immediate retriggering.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.556Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:15",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does the ghost visually change during a jumpscare?",
+      "answer": "It becomes fully opaque, stops bobbing, and its eyes turn solid red while a full-screen white-to-red flash plays.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.639Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:16",
+      "decision": "approved",
+      "notes": "",
+      "question": "When do two workers swap desks?",
+      "answer": "With exactly two workers, a random 25-to-75-second timer counts down; when it expires they swap desk indices only if neither is on strike.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.722Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:17",
+      "decision": "approved",
+      "notes": "",
+      "question": "Why do desk interactions still find the correct worker after a swap?",
+      "answer": "The renderer, interaction handlers, and hover lookup all resolve workers through their current deskIndex, so exchanging those values updates every dependent behavior.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.805Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:18",
+      "decision": "approved",
+      "notes": "",
+      "question": "Which desks became vaultable parkour obstacles?",
+      "answer": "The founder's desk and both worker desks, represented by the desk and desk-small object types.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.888Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:19",
+      "decision": "approved",
+      "notes": "",
+      "question": "How does vaulting calculate a landing beyond a large desk?",
+      "answer": "It offsets from the object's center by its width or depth plus 1.2 tiles, producing 4.2 horizontal or 3.2 vertical tiles for a three-by-two desk.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:23.972Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:20",
+      "decision": "approved",
+      "notes": "",
+      "question": "What happens when a valid double jump fires?",
+      "answer": "It resets upward velocity to 2.4, marks the jump's one-use flag, costs five energy, and plays an ascending three-tone sound.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:24.055Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:21",
+      "decision": "approved",
+      "notes": "",
+      "question": "How did the double-jump eligibility rule change after stamina levels were introduced?",
+      "answer": "The original implementation used only energy above 50; the final system also requires stamina level 2 or higher, so one completed treadmill workout unlocks it while the energy threshold remains.",
+      "category": 2,
+      "updatedAt": "2026-09-24T23:38:24.138Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:22",
+      "decision": "approved",
+      "notes": "",
+      "question": "How many workouts are required for each stamina level increase?",
+      "answer": "Level 1 to 2 needs one workout, 2 to 3 needs two, 3 to 4 needs three, and 4 to 5 needs four.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:24.222Z"
+    },
+    {
+      "trajectory": "startupsimulator_06_miscellaneous",
+      "itemId": "startupsimulator_06_miscellaneous:23",
+      "decision": "approved",
+      "notes": "",
+      "question": "What is the maximum stamina level and total workout count needed to reach it?",
+      "answer": "The cap is level 5, reached after ten total successful workouts.",
+      "category": 4,
+      "updatedAt": "2026-09-24T23:38:24.305Z"
+    }
+  ],
+  "approved": {
+    "startupsimulator_01_main-build": {
+      "qa": [
+        {
+          "question": "What was the original goal of StartupSimulator?",
+          "answer": "To create a local startup-simulator web game with an office that a founder character navigates by clicking.",
+          "evidence": [
+            "D1:1: \"Let's make a startup simulator indie game. We can start by just making an office space in which we navigate a founder character that moves around by clicking. Make it a local web app to run the game.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What was the initial StartupSimulator prototype called?",
+          "answer": "It was called Zero to One.",
+          "evidence": [
+            "D1:9: \"Built **Zero to One**, a playable startup-office prototype.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the original click-to-walk system handle furniture?",
+          "answer": "It routed the founder around furniture.",
+          "evidence": [
+            "D1:9: \"**Click-to-walk** founder movement that routes around furniture.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Which non-mouse controls and convenience features shipped in the first prototype?",
+          "answer": "It included keyboard movement, touch support, zoom, pause, and automatic browser saving.",
+          "evidence": [
+            "D1:9: \"Keyboard movement, touch support, zoom, and pause.\"",
+            "D1:9: \"Progress saved automatically in your browser.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Were hiring and revenue systems part of the first prototype?",
+          "answer": "No. The first version focused on office exploration; hiring, revenue, and broader business simulation were not implemented.",
+          "evidence": [
+            "D1:9: \"This first version focuses on exploring the office; hiring, revenue, and broader business simulation aren’t implemented yet.\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "How did the world projection change during the first Pokémon-style conversion?",
+          "answer": "It changed from an isometric projection to a top-down orthographic projection.",
+          "evidence": [
+            "D1:45: \"Changed from isometric projection to **top-down orthographic**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What tile and room dimensions were introduced for the grid-based world?",
+          "answer": "The conversion used 32-pixel tiles and expanded the room to 16 by 12 tiles.",
+          "evidence": [
+            "D1:45: \"Introduced `TILE_SIZE = 32` for Pokemon-style 32px tiles\"",
+            "D1:45: \"Expanded room size from 12x10 to **16x12 tiles**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How was the page layout changed to make the game full-screen?",
+          "answer": "The old page layout was removed, the canvas became a 100vw by 100vh first child of the body, and fixed HUD overlays were placed at the top and bottom.",
+          "evidence": [
+            "D1:88: \"**Removed** the entire old layout: topbar, sidebar, app-layout, scene wrapper, footer\"",
+            "D1:88: \"**Canvas is now fullscreen** (`#game` is the first child of `<body>`, styled `100vw × 100vh`)\"",
+            "D1:88: \"**Pokemon-style HUD overlay (bottom):** Character card with green HP bar + 4 task shortcut buttons\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Which rendering techniques were used in the temporary smooth animated redesign?",
+          "answer": "It enabled high-quality image smoothing, fractional scaling, rounded rectangles, gradients, ellipses, curved paths, and object shadows.",
+          "evidence": [
+            "D1:125: \"`imageSmoothingEnabled = true` + `imageSmoothingQuality = 'high'\"",
+            "D1:125: \"Fractional scale (`Math.max(0.5, raw)`\"",
+            "D1:125: \"`ctx.roundRect()` everywhere\"",
+            "D1:125: \"Linear and radial gradients on every surface for depth\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What replaced the green checkerboard floor in the smooth redesign?",
+          "answer": "A warm wood-plank parquet floor with grain lines and plank-joint seams.",
+          "evidence": [
+            "D1:125: \"**Floor:** Warm wood-plank parquet with horizontal grain lines + vertical plank-joint seams, instead of green checkerboard\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How many frames did the smooth character's walk cycle use?",
+          "answer": "It used a four-frame walk cycle with opposing arm and leg motion and body bobbing.",
+          "evidence": [
+            "D1:125: \"**4-frame walk cycle**: legs swing forward/back using `sin(time)`, arms swing in opposition, body bobs\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the rendering style change after the smooth animated redesign?",
+          "answer": "The game reversed course from anti-aliased smooth rendering to crisp pixel art with image smoothing disabled and integer scaling.",
+          "evidence": [
+            "D1:125: \"`imageSmoothingEnabled = true` + `imageSmoothingQuality = 'high'\"",
+            "D1:141: \"`imageSmoothingEnabled = false` — crisp pixel art\"",
+            "D1:141: \"Scale is `Math.floor(raw)`\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "How does the later pixel-art character show its facing direction?",
+          "answer": "Its eye positions change when facing left, right, or down, while facing up shows the back of the head without a face.",
+          "evidence": [
+            "D1:141: \"**Direction-aware**: different eye positions for left/right/down; facing up shows back of head (no face, just ears)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens when the player clicks a point occupied by furniture or a wall?",
+          "answer": "The game searches outward in quarter-tile steps and routes Alex to the nearest walkable point within three tiles.",
+          "evidence": [
+            "D1:154: \"Otherwise spirals outward in 0.25-tile steps\"",
+            "D1:154: \"returns the closest walkable point it finds (within 3 tiles)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Which four tasks defined the original single-day objective?",
+          "answer": "Walk around, brew coffee, pin an idea, and build a prototype.",
+          "evidence": [
+            "D1:158: \"The objective is to complete **4 tasks**\"",
+            "D1:158: \"**Walk around**\"",
+            "D1:158: \"**Brew a coffee**\"",
+            "D1:158: \"**Pin your first idea**\"",
+            "D1:158: \"**Build a prototype**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What was the original day's only meaningful constraint?",
+          "answer": "Energy was the only real constraint, and the clock had no fail state when time ran out.",
+          "evidence": [
+            "D1:158: \"**The only real constraint** is energy\"",
+            "D1:158: \"there's no fail state for running out of time\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the game's objective expand beyond its initial day-one experience?",
+          "answer": "It changed from a short single-day experience into a ten-day sprint in which the four daily tasks advance the startup toward launch.",
+          "evidence": [
+            "D1:158: \"it's a short, chill \"day one\" experience, not a deep sim\"",
+            "D1:180: \"### The core loop: 10-day sprint to launch\"",
+            "D1:180: \"Every day you complete the same 4 tasks\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "What resets when a normal day is completed in the ten-day loop?",
+          "answer": "The tasks, clock, distance counter, and Alex's position reset, while energy recovers by 30 up to a maximum of 100.",
+          "evidence": [
+            "D1:180: \"**Resets** tasks, clock (back to 9 AM), distance counter, Alex's position\"",
+            "D1:180: \"**Partial energy recovery** (+30, capped at 100)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What progression arc does the ten-day work task follow?",
+          "answer": "It progresses from prototype through improvement, feedback, polish, demo, paid features, product feel, launch preparation, and a final push to launch.",
+          "evidence": [
+            "D1:180: \"The arc goes: *prototype → improve → user feedback → polish → demo → paid features → product feel → launch prep → final push → **LAUNCH** 🚀*\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens after completing all tasks on Day 10?",
+          "answer": "The game shows the full win message and offers Play again, which resets the game to Day 1.",
+          "evidence": [
+            "D1:180: \"Day 10 complete → toast fires immediately, then day-end screen with the full win message and \"Play again\" which full-resets to Day 1.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How were invisible collision margins reduced in the final movement fix?",
+          "answer": "The founder radius was reduced from 0.4 to 0.18 tiles, and furniture padding was separated into a fixed 0.05-tile constant.",
+          "evidence": [
+            "D1:188: \"**`FOUNDER_RADIUS` cut from 0.4 → 0.18`**\"",
+            "D1:188: \"Object collision padding — **separated and tightened to 0.05**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Was the visible checkerboard floor gone by the end of the main trajectory?",
+          "answer": "No. The final researcher message explicitly said the checkerboard pattern was still visible.",
+          "evidence": [
+            "D1:141: \"Top-down RPG tilemap: alternating warm-tan checker tiles\"",
+            "D1:193: \"I can clearly still see a checkerboard pattern on the floor.\""
+          ],
+          "category": 5
+        }
+      ]
+    },
+    "startupsimulator_02_hiring-workers": {
+      "qa": [
+        {
+          "question": "What simple hiring interaction was proposed during the initial brainstorm?",
+          "answer": "The player would click the ideas desk, review a candidate profile, and choose whether to hire or pass; a hire would add a character and a delegatable daily task.",
+          "evidence": [
+            "D1:2: \"The player clicks it, gets a dialog with a candidate profile (name, role, trait), and decides **Hire / Pass**.\"",
+            "D1:2: \"Hiring adds a visible new character sprite to the office and unlocks a daily **delegate** task\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How much money does founder work earn across the ten-day progression?",
+          "answer": "Work earnings scale from $50 on Day 1 to $5,000 on Day 10.",
+          "evidence": [
+            "D1:29: \"scaling from **$50 on Day 1** up to **$5,000 on Day 10**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Does the founder's money survive a browser reload?",
+          "answer": "Yes. Money is restored by parseSave and persists across sessions.",
+          "evidence": [
+            "D1:29: \"Added `money` restoration to `parseSave()` — persists across sessions\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "Where can the player hire workers?",
+          "answer": "At either the Room for a cofounder ideas desk or the second desk in the top-left area.",
+          "evidence": [
+            "D1:52: \"Walk to the **\"Room for a cofounder\" desk** (ideas) or the new **second desk** (top-left area) and click to interact.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Do the available candidates change during the same in-game day?",
+          "answer": "No. Candidates are deterministic within a day, but different days offer different candidates.",
+          "evidence": [
+            "D1:52: \"Candidates are deterministic per day (same candidates all day, different each day).\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "What are the passive base earnings rates for the four worker roles?",
+          "answer": "Engineers earn $3 per second, Growth workers $4, Designers $2, and Operations workers $2.",
+          "evidence": [
+            "D1:52: \"Rates: Engineer $3/s · Growth $4/s · Designer $2/s · Operations $2/s.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How many workers can the player hire at once?",
+          "answer": "Up to two, one for each worker desk.",
+          "evidence": [
+            "D1:52: \"Up to **2 workers** can be hired (one per desk).\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How are worker roles distinguished visually?",
+          "answer": "Their seated sprites are color-coded: blue for Engineer, pink for Designer, green for Growth, and orange for Operations.",
+          "evidence": [
+            "D1:52: \"colour-coded to their role (blue = Engineer, pink = Designer, green = Growth, orange = Operations)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How do worker upgrades affect earnings and what do they cost?",
+          "answer": "Level 2 costs $500 and earns 1.5 times the base rate; level 3 costs $2,000 and earns 2.25 times the base rate.",
+          "evidence": [
+            "D1:92: \"level 1 = base rate, level 2 = 1.5×, level 3 = 2.25×; upgrade cost $500/$2000\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What are the three founder efficiency upgrades?",
+          "answer": "Focus Mode costs $300 and lowers work energy to 8; Speed Desk costs $800 and gives 1.5x work earnings; Deep Work Protocol costs $2,000 and gives 2x earnings while restoring 5 energy.",
+          "evidence": [
+            "D1:92: \"🎯 **Focus Mode** ($300) — Work costs 8 energy instead of 12\"",
+            "D1:92: \"⚡ **Speed Desk** ($800) — Work earns 1.5× money per session\"",
+            "D1:92: \"🧠 **Deep Work Protocol** ($2000) — Work earns 2× money AND restores +5 energy instead of costing any\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does the player fire a worker?",
+          "answer": "The player opens an occupied desk and selects Let [Name] go; this removes the worker, saves, updates the HUD, and makes the desk available for hiring again.",
+          "evidence": [
+            "D1:100: \"**\"Let [Name] go\" → fires them**\"",
+            "D1:100: \"The desk immediately resets to \"Room for someone great.\" / \"Another desk.\"\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens if the player leaves the worker-name field blank?",
+          "answer": "The hire uses the candidate's default name; typing a custom name and pressing Enter or the offer button uses that name instead.",
+          "evidence": [
+            "D1:114: \"reads `nameInput.value.trim()`, falls back to the candidate's default name if blank\"",
+            "D1:114: \"click \"Make the offer\" or hit **Enter**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "When can a newly hired worker go on strike?",
+          "answer": "Each hire receives a random strike countdown of 60 to 180 real seconds.",
+          "evidence": [
+            "D1:126: \"each worker gets a `strikeCountdown` of 60–180 real-seconds on hire\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Does a striking worker keep generating passive income?",
+          "answer": "No. A worker earns $0 per second while on strike.",
+          "evidence": [
+            "D1:126: \"the worker earns $0/s\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "What two choices resolve a worker strike?",
+          "answer": "The player can pay a one-time payoff or permanently raise the worker's wage by $1 per second.",
+          "evidence": [
+            "D1:126: \"**\"Pay them off – $X\"** — one-time flat payment\"",
+            "D1:126: \"**\"Raise wages (+$1/s)\"** — permanently bumps `earningsPerTick` by 1\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How is a strike payoff priced?",
+          "answer": "It costs 40 times the worker's current earnings rate after the level multiplier, roughly forty seconds of passive income.",
+          "evidence": [
+            "D1:126: \"**Payoff cost**: `earningsPerTick × level_multiplier × 40` — roughly 40 seconds of passive income\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Where is the cereal station and how does the player reach it?",
+          "answer": "It is a two-by-one object at x=7,y=7 with its own walk target; clicking either it or its HUD task routes the player there.",
+          "evidence": [
+            "D1:149: \"A new 2×1 `cereal` object sits at `x:7, y:7`\"",
+            "D1:149: \"clicking it or the HUD button routes you there correctly\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What is the cereal station's two-stage interaction?",
+          "answer": "The player first pays $25 to stock three servings, then pours a bowl that consumes one serving, restores 20 energy, and completes the cereal task.",
+          "evidence": [
+            "D1:149: \"Costs $25, sets `cerealStock = 3`\"",
+            "D1:149: \"`cerealStock--`, `+20 energy`, completes the `cereal` task\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens to cereal stock when a new day begins?",
+          "answer": "It resets to zero, so the station must be restocked each day.",
+          "evidence": [
+            "D1:149: \"`cerealStock` resets to `0` each new day\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does restocking cereal affect workers who are not on strike?",
+          "answer": "It adds 60 seconds to every non-striking worker's remaining strike countdown.",
+          "evidence": [
+            "D1:153: \"Every non-striking worker's `strikeCountdown` gets **+60 seconds** added\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Can cereal end an active worker strike?",
+          "answer": "No. Workers who are already striking are unaffected by restocking.",
+          "evidence": [
+            "D1:153: \"Workers who are *already on strike* are unaffected\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "What happens when the player's money reaches one million dollars?",
+          "answer": "A guarded trigger fires once at any time or day and opens a full-screen million-dollar win overlay with a Start over button.",
+          "evidence": [
+            "D1:161: \"`changeMoney()` now checks `state.money >= 1_000_000` on every call\"",
+            "D1:161: \"A `wonMillionDollar` boolean guard ensures it fires exactly once.\"",
+            "D1:161: \"A **\"Start over 🚀\"** button that resets the full game\""
+          ],
+          "category": 4
+        }
+      ]
+    },
+    "startupsimulator_03_health-stamina": {
+      "qa": [
+        {
+          "question": "Where was the bed placed in the office?",
+          "answer": "It was placed at x=3, y=9 with a size of 3 by 2 tiles and an interaction target at x=6, y=10.",
+          "evidence": [
+            "D1:27: \"position `x:3, y:9, w:3, d:2`\"",
+            "D1:27: \"The interaction target is `x:6, y:10`\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "When is the player allowed to sleep?",
+          "answer": "Only after the other four daily tasks are complete; sleeping then completes the fifth task and advances the day after 1.8 seconds.",
+          "evidence": [
+            "D1:27: \"it's now the 5th and final daily task\"",
+            "D1:27: \"**All tasks done?**\"",
+            "D1:27: \"triggers `advanceDay()` after 1.8 seconds\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the first passive energy-drain loop work?",
+          "answer": "It removed one energy every eight real seconds until the player slept.",
+          "evidence": [
+            "D1:42: \"Every **8 real-seconds**, if the player hasn't slept yet today, 1 energy is drained.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does the game warn the player at low energy?",
+          "answer": "At 20 energy or below it shows a one-time warning, turns the bar red, and makes it pulse.",
+          "evidence": [
+            "D1:42: \"### Warning at ≤20 HP\"",
+            "D1:42: \"A **one-time warning toast** fires\"",
+            "D1:42: \"energy bar turns red and pulses\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What penalty follows ordinary burnout?",
+          "answer": "The game advances to the next day with only 50 energy and shows a burnout-specific day-end screen.",
+          "evidence": [
+            "D1:42: \"Advances to the next day **but only restores energy to 50**\"",
+            "D1:42: \"day-end overlay with a burnout variant\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Why could energy stop draining after reloading a saved game?",
+          "answer": "A previously completed sleep task could be restored from localStorage, making the drain condition think the player had already slept; the fix excluded sleep from restored completions.",
+          "evidence": [
+            "D1:51: \"`parseSave` restored it — so `state.completed.includes('sleep')` was `true`\"",
+            "D1:51: \"`'sleep'` is now explicitly excluded from the loaded `completed` list\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How was the passive drain rate made more aggressive?",
+          "answer": "It changed from one point every eight seconds to one point every three seconds.",
+          "evidence": [
+            "D1:42: \"Every **8 real-seconds**\"",
+            "D1:55: \"**1 HP every 3 seconds** instead of every 8\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "What stamina tradeoff does coffee create?",
+          "answer": "Coffee fills stamina to 100 but doubles the drain rate from one point every three seconds to one every 1.5 seconds.",
+          "evidence": [
+            "D1:63: \"**After coffee:** fills to **100 HP**, but drain doubles to **1 HP every 1.5 seconds**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does coffee affect movement speed?",
+          "answer": "It raises speed from 2.65 to 4.5, approximately 70 percent faster, until the day changes or the game resets.",
+          "evidence": [
+            "D1:69: \"**Speed** → jumps from `2.65` to `4.5` (~70% faster movement)\"",
+            "D1:69: \"Both effects **reset at the start of each new day**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What did pills do when first introduced?",
+          "answer": "They restored up to 40 HP but slowed movement from 2.65 to 1.3.",
+          "evidence": [
+            "D1:81: \"**Restores up to +40 HP**\"",
+            "D1:81: \"**Slows speed to `1.3`** (~half of normal `2.65`)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happened when the sofa was first removed?",
+          "answer": "Both the sofa and coffee table disappeared, leaving open floor space in the lower-right corner.",
+          "evidence": [
+            "D1:88: \"the sofa and coffee table are gone. The lower-right corner of the room is now open floor space\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What was the sofa's final role after the removal was reconsidered?",
+          "answer": "It and the coffee table returned as non-interactive decorations that still rendered and blocked movement.",
+          "evidence": [
+            "D1:88: \"the sofa and coffee table are gone\"",
+            "D1:95: \"back in the room as pure decoration\"",
+            "D1:95: \"they block movement, render as before, but clicking or hovering them does nothing\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "How was the health bar reframed as stamina?",
+          "answer": "The HUD label changed from green HP to amber ST; below 25 it still turns red and pulses, and player-facing copy now says stamina.",
+          "evidence": [
+            "D1:106: \"**`ST`** label in amber/gold instead of the old green `HP`\"",
+            "D1:106: \"When it drops below 25 it flips to **red** and pulses\"",
+            "D1:106: \"say \"stamina\" throughout\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the pills mechanic change after stamina was introduced?",
+          "answer": "It changed from restoring 40 HP while slowing the player to costing 25 stamina while boosting speed to 4.5.",
+          "evidence": [
+            "D1:81: \"**Restores up to +40 HP**\"",
+            "D1:81: \"**Slows speed to `1.3`**\"",
+            "D1:111: \"Pills 💊 | **−25** (floors at 1) | fast (4.5)\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "Can taking pills reduce stamina to zero?",
+          "answer": "No. The cost floors stamina at one, preventing the pills from killing the player directly.",
+          "evidence": [
+            "D1:111: \"**−25** (floors at 1)\"",
+            "D1:111: \"the guard prevents you from killing yourself to 0\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "What design problem did the agent identify with coffee and pills?",
+          "answer": "Both produced the same 4.5 speed, making coffee strictly better except when pills were physically closer.",
+          "evidence": [
+            "D1:113: \"**Coffee and pills do the same thing now.** Both give you speed 4.5.\"",
+            "D1:113: \"coffee is strictly better unless you physically can't reach it\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Why was coffee's accelerated stamina drain easy for players to miss?",
+          "answer": "The drain rate was not shown in the interface, so the difference between 1.5-second and three-second drain intervals was invisible.",
+          "evidence": [
+            "D1:113: \"**The stamina drain rate is invisible.**\"",
+            "D1:113: \"1.5s drain vs. 3s\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What distinct pills effect was suggested but not implemented in this trajectory?",
+          "answer": "The agent suggested making pills slow stamina drain so they would be a defensive, sustainable alternative to risky coffee.",
+          "evidence": [
+            "D1:113: \"Instead of speed, maybe pills *slow the drain rate*\"",
+            "D1:113: \"Coffee = burst/risky, pills = defensive/sustainable.\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does peptide-shot mortality escalate within a day?",
+          "answer": "The death chance rises by 20 percentage points per shot: 20, 40, 60, 80, then 100 percent on the fifth shot.",
+          "evidence": [
+            "D1:129: \"| 1st | 20%\"",
+            "D1:129: \"| 2nd | 40%\"",
+            "D1:129: \"| 3rd | 60%\"",
+            "D1:129: \"| 4th | 80%\"",
+            "D1:129: \"| 5th | 100%\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens when a peptide shot kills the player?",
+          "answer": "A dedicated overdose day-end screen appears and the player wakes with 30 stamina, which is harsher than ordinary burnout's 50.",
+          "evidence": [
+            "D1:129: \"dedicated `💉 You overdid it.` day-end screen\"",
+            "D1:129: \"wakes up at **30 stamina** (harsher than burnout's 50)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens when a peptide shot succeeds?",
+          "answer": "It immediately restores stamina to full and shows a toast about how close the gamble was.",
+          "evidence": [
+            "D1:129: \"**When it works:** full stamina instantly\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "When does the peptide-shot counter reset?",
+          "answer": "It resets on a normal day advance, burnout, peptide death, and a hard reset.",
+          "evidence": [
+            "D1:129: \"`peptideShots` resets to 0 on `advanceDay`, `burnOut`, `peptideDeath`, and hard reset\""
+          ],
+          "category": 4
+        }
+      ]
+    },
+    "startupsimulator_04_parkour": {
+      "qa": [
+        {
+          "question": "Which objects were initially considered vaultable?",
+          "answer": "Chairs, plants, pills, and peptide objects.",
+          "evidence": [
+            "D1:36: \"`chair`, `plant`, `pills`, `peptide`\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the original sprint mechanic work?",
+          "answer": "Holding Shift while moving roughly doubled speed, consumed one stamina every 0.7 seconds, and produced a five-ghost blue afterimage trail.",
+          "evidence": [
+            "D1:36: \"Hold `Shift` while moving with WASD/arrows to run at ~2× speed\"",
+            "D1:36: \"Costs 1 stamina every 0.7 seconds\"",
+            "D1:36: \"5 ghost sprites that fade out\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the first vault implementation detect and execute a jump?",
+          "answer": "While moving, Space scanned 1.5 tiles ahead for a vaultable object, crossed it in a 0.38-second arc, and required a walkable landing spot.",
+          "evidence": [
+            "D1:36: \"scans 1.5 tiles ahead\"",
+            "D1:36: \"flies cleanly over the object to the other side (0.38s arc)\"",
+            "D1:36: \"Landing spot must be walkable\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "When is the parkour daily task completed?",
+          "answer": "It completes on the player's first successful vault over an object.",
+          "evidence": [
+            "D1:36: \"Completes on first successful vault over an object\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How is the character's jump height calculated visually?",
+          "answer": "The sprite rises according to the parabolic formula 4 times peak times t times one minus t, while its shadow remains on the floor and shrinks.",
+          "evidence": [
+            "D1:36: \"parabolic `4·peak·t·(1-t)` curve\"",
+            "D1:36: \"The shadow stays on the floor and shrinks/fades as Alex rises\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Where were the three parkour shortcut tables placed?",
+          "answer": "At x=8,y=2 near the work desk, x=3,y=4 between the coffee and ideas areas, and x=8,y=6 between the work and lounge areas.",
+          "evidence": [
+            "D1:54: \"`vault-a` | `x:8, y:2`\"",
+            "D1:54: \"`vault-b` | `x:3, y:4`\"",
+            "D1:54: \"`vault-c` | `x:8, y:6`\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How do shortcut tables visually communicate that they are jumpable?",
+          "answer": "They use warm amber bodies, pulsing edge strips, a hover emoji, and orientation-specific highlighted edges.",
+          "evidence": [
+            "D1:54: \"**Warm amber/gold body**\"",
+            "D1:54: \"**Pulsing glowing edge strips**\"",
+            "D1:54: \"**🤸 emoji** pops above the table on hover\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How was table-vault detection improved?",
+          "answer": "Vault reach increased from 1.5 to two tiles, and landing calculations began using the dominant movement axis and table dimensions.",
+          "evidence": [
+            "D1:54: \"**Reach increased** from 1.5 → 2.0 tiles\"",
+            "D1:54: \"**Direction-aware landing**: uses the dominant movement axis\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How much stamina does a shortcut-table vault cost?",
+          "answer": "One stamina, compared with two for regular vaultable objects at that stage.",
+          "evidence": [
+            "D1:54: \"**Shortcut tables cost only −1 stamina** vs −2 for regular objects\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What did the first on-screen dash button do?",
+          "answer": "It toggled approximately double-speed sprinting while movement keys were held, independently of the Shift key.",
+          "evidence": [
+            "D1:75: \"**Click to toggle on** → Alex sprints at 2× speed\"",
+            "D1:75: \"**Keyboard `Shift`** still works exactly as before\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "When did the toggle dash cancel itself automatically?",
+          "answer": "It cancelled on depleted energy, pause, focus loss, day end, burnout, or reset.",
+          "evidence": [
+            "D1:75: \"**Energy bottoms out**\"",
+            "D1:75: \"**Game paused**\"",
+            "D1:75: \"**Window loses focus**\"",
+            "D1:75: \"**Day end / burnout / reset**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did dash stamina consumption change?",
+          "answer": "Its interval changed from one point every 0.7 seconds to one every 0.25 seconds, approximately 12 times the passive rate.",
+          "evidence": [
+            "D1:36: \"Costs 1 stamina every 0.7 seconds\"",
+            "D1:78: \"**After:** 1 HP drained every **0.25 seconds**\"",
+            "D1:78: \"**~12× the passive rate**\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "What penalty prevents repeated free-hop spam?",
+          "answer": "A free hop costs four stamina and, after landing, slows movement to 40 percent and blocks another jump for 0.6 seconds.",
+          "evidence": [
+            "D1:86: \"**After:** −4 stamina, 0.28s arc\"",
+            "D1:86: \"movement speed drops to **40%** of normal for 0.6 seconds\"",
+            "D1:86: \"can't jump again until the stumble clears\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How was the intermediate physical dash button styled?",
+          "answer": "It became a raised 64-by-64-pixel dark-green arcade-style button with hover, pressed, active-glow, and disabled states.",
+          "evidence": [
+            "D1:92: \"**Idle** | 64×64px dark green button\"",
+            "D1:92: \"raised/3D \"arcade button\" feel\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the dash control evolve from the toggle version to its final behavior?",
+          "answer": "It changed from a toggle for continuous sprinting into a single-trigger blink that teleports Alex forward.",
+          "evidence": [
+            "D1:75: \"**Click to toggle on**\"",
+            "D1:109: \"## Blink Dash\"",
+            "D1:109: \"Alex instantly teleports up to **3 tiles forward**\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "How can the player activate Blink Dash?",
+          "answer": "By pressing Q or clicking the on-screen Blink button.",
+          "evidence": [
+            "D1:109: \"Press **Q** (or click the ⚡ **BLINK** button)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does Blink Dash avoid moving through walls or furniture?",
+          "answer": "It samples the route in 24 increments and stops at the last walkable tile.",
+          "evidence": [
+            "D1:109: \"steps forward in 24 increments and stops at the last walkable tile\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What are Blink Dash's stamina cost and cooldown?",
+          "answer": "It costs eight stamina and has a 1.2-second cooldown.",
+          "evidence": [
+            "D1:109: \"**Costs 8 stamina**\"",
+            "D1:109: \"**1.2 second cooldown**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Which controls appear in the persistent legend?",
+          "answer": "WASD for movement, Shift for sprint, Space for jump, Q for blink, and click for walking or interaction.",
+          "evidence": [
+            "D1:122: \"[WASD] move   [SHIFT] sprint   [SPACE] jump   [Q] blink   [CLICK] walk / interact\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "When does the bottom controls legend disappear and return?",
+          "answer": "It fades out after the player starts moving and returns when the game is paused.",
+          "evidence": [
+            "D1:122: \"**smoothly fades out** once you start moving\"",
+            "D1:122: \"unless you pause\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How far do free hops and vaults reach during a sprint-jump?",
+          "answer": "A sprint free hop covers 1.6 tiles instead of one, and vault reach increases from two to 3.2 tiles.",
+          "evidence": [
+            "D1:126: \"**Free hop distance** | 1.0 tile | 1.6 tiles\"",
+            "D1:126: \"**Vault reach** | 2.0 tiles | 3.2 tiles\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does sprinting change a jump's arc and stamina behavior?",
+          "answer": "The jump travels 1.6 times farther, rises higher, finishes 20 percent faster, continues sprint drain in mid-air, and keeps producing a ghost trail.",
+          "evidence": [
+            "D1:126: \"**Landing distance** | standard | 1.6× further\"",
+            "D1:126: \"**Arc duration** | standard | 20% faster/snappier\"",
+            "D1:126: \"vault cost + sprint drain continues mid-air\"",
+            "D1:126: \"ghost trail keeps spawning during the arc\""
+          ],
+          "category": 4
+        }
+      ]
+    },
+    "startupsimulator_05_lighting-power": {
+      "qa": [
+        {
+          "question": "Where is the office light switch located?",
+          "answer": "It is a one-tile switch on the right wall at x=15,y=4 with a walkable interaction target at x=14,y=4.5.",
+          "evidence": [
+            "D1:19: \"`x:15, y:4`\"",
+            "D1:19: \"interaction target at `x:14, y:4.5`\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How is the overhead-light state initialized and preserved?",
+          "answer": "The lights start on, and the lightOn value is restored from saved state across sessions.",
+          "evidence": [
+            "D1:19: \"Added `lightOn: true` to `newState()` so the lights start on\"",
+            "D1:19: \"so the light state persists across sessions\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What visual effect appears when the overhead lights are off?",
+          "answer": "An 82-percent darkness veil covers the room while the workstation emits a soft blue monitor glow.",
+          "evidence": [
+            "D1:19: \"an 82% dark veil over the whole room with a soft blue **monitor glow**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Where was the independently controlled floor lamp placed?",
+          "answer": "At x=9,y=9 in the lounge, with its approach target at x=9,y=8.5.",
+          "evidence": [
+            "D1:34: \"lamp` object at tile `x:9, y:9`\"",
+            "D1:34: \"`target: {x:9, y:8.5}`\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Which three lighting combinations became possible after adding the lamp?",
+          "answer": "Both lights on, overhead lights off with the lamp on, or both lighting systems off.",
+          "evidence": [
+            "D1:34: \"**Three distinct lighting states are now possible:** both on (bright office), lights off + lamp on (moody warm corner), or everything off\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does sitting on the sofa affect position, movement, and energy?",
+          "answer": "Alex snaps to the sofa's center, cannot move, recovers two energy every two seconds, and automatically stands at full energy.",
+          "evidence": [
+            "D1:68: \"snaps Alex to seat position `(14.0, 7.5)`\"",
+            "D1:68: \"movement is blocked entirely; energy recovers +2 per 2 seconds\"",
+            "D1:68: \"auto-stands when energy hits 100\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Which controls make Alex stand up from the sofa?",
+          "answer": "Any movement key or E stands Alex up immediately; interacting with the sofa again also toggles the seated state.",
+          "evidence": [
+            "D1:68: \"Any movement key or `E` stands back up instantly\"",
+            "D1:68: \"sofa dialog also toggles if you interact again while sitting\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does the player control sofa recline?",
+          "answer": "While seated, Up or W reclines farther, Down or S returns upright, and horizontal movement keys or E stand up.",
+          "evidence": [
+            "D1:83: \"**↑ / W** | Recline further back\"",
+            "D1:83: \"**↓ / S** | Sit back upright\"",
+            "D1:83: \"**← / →, A, D** | Stand up immediately\"",
+            "D1:83: \"**E** | Stand up immediately\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How quickly does the sofa move between upright and fully reclined?",
+          "answer": "The recline value changes at 0.9 per second, taking about 1.1 seconds end to end.",
+          "evidence": [
+            "D1:83: \"moves `sofaRecline` at `0.9/sec` — ~1.1 seconds to travel fully\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How do the character's eyes and sleep animation change at full recline?",
+          "answer": "The eyes become nearly closed with hidden pupils above 85 percent recline, while the zzz animation becomes fully opaque, 60 percent larger, and pulses more strongly.",
+          "evidence": [
+            "D1:83: \"nearly shut (0.4 tall), pupils hidden at >85%\"",
+            "D1:83: \"full opacity + 60% bigger, pulse amplitude doubles\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How is in-game time converted into the day-night color overlay?",
+          "answer": "Minutes from 540 through 1079 are normalized to zero through one and interpolated across five color keyframes.",
+          "evidence": [
+            "D1:95: \"**Normalising** `minutes` (540–1079) to `t ∈ [0, 1]`\"",
+            "D1:95: \"**Interpolating** between five colour key-frames\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What visual tint represents the end of the in-game day?",
+          "answer": "At 6 PM the room receives a 40-percent deep-blue tint.",
+          "evidence": [
+            "D1:95: \"6 PM (`t=1.00`) | deep blue `rgba(15,22,70)` @ 40%\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "When and where does the moonrise shimmer appear?",
+          "answer": "After normalized time exceeds 0.7, a cool blue-white glow fades into the upper-right wall corner.",
+          "evidence": [
+            "D1:95: \"once dusk begins (t > 0.7), a cool blue-white radial glow\"",
+            "D1:95: \"upper-right wall corner\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How many window-light sources illuminate the darkened office?",
+          "answer": "Three shafts come from the back wall, plus one daytime-only fan beam from the left wall.",
+          "evidence": [
+            "D1:105: \"**Three back-wall windows**\"",
+            "D1:105: \"**One left-wall window** (daytime only)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How do sunlight and moonlight shafts differ?",
+          "answer": "Sunlight is warmer, more strongly slanted, and includes the left-wall shaft; moonlight is cool silver-blue, closer to overhead, and omits that shaft.",
+          "evidence": [
+            "D1:105: \"Warm gold `rgb(255, 215→185, 100→45)`\"",
+            "D1:105: \"Cool silver-blue `rgb(180, 200, 255)`\"",
+            "D1:105: \"Left wall shaft | ✅ Yes | ❌ No\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How was electricity added to saved game state?",
+          "answer": "New games start with 100 electricity, the save version increased from two to three, and restored values are clamped between zero and 100.",
+          "evidence": [
+            "D1:126: \"`newState()` now includes `elec: 100`\"",
+            "D1:126: \"state version bumped 2 → 3\"",
+            "D1:126: \"proper clamping (0–100)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What are the passive electricity drain rates?",
+          "answer": "Idle devices consume 0.04 electricity per second, overhead lights add 0.10, and the floor lamp adds another 0.04 while enabled.",
+          "evidence": [
+            "D1:126: \"Base idle draw: **0.04 ⚡/s**\"",
+            "D1:126: \"Ceiling lights **+0.10 ⚡/s**\"",
+            "D1:126: \"Floor lamp **+0.04 ⚡/s**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens when electricity becomes low or reaches zero?",
+          "answer": "At 20 percent or below the game warns the player; at zero it forces both lights off and announces a blackout.",
+          "evidence": [
+            "D1:126: \"**Toast at ≤20%**\"",
+            "D1:126: \"**Blackout at 0**: forces `lightOn` and `lampOn` to `false`\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How much electricity do coffee and desk work consume?",
+          "answer": "The coffee machine costs five electricity, and working at the desk costs eight.",
+          "evidence": [
+            "D1:126: \"**Coffee machine** costs **−5 ⚡**\"",
+            "D1:126: \"**Work at desk** costs **−8 ⚡**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Where were the generator and cycling machine placed?",
+          "answer": "The generator occupies x=12,y=8 as a one-tile object, and the two-by-two bike begins at x=12,y=9.",
+          "evidence": [
+            "D1:143: \"generator   x:12, y:8  (1×1)\"",
+            "D1:143: \"bike        x:12, y:9  (2×2)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Did the first generator and bike implementation include charging mechanics?",
+          "answer": "No. They initially had only interaction stubs: the generator directed the player to the bike, while the bike said its mechanics were coming later.",
+          "evidence": [
+            "D1:143: \"### `game.js` — 2 new interaction stubs\"",
+            "D1:143: \"Get on the bike to charge it up.\"",
+            "D1:143: \"You eye the bike. Soon…\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "How does the cycling interaction build and lose pedal power?",
+          "answer": "Each Space press adds 22 power, while the bar continuously decays at 14 units per second; Escape dismounts.",
+          "evidence": [
+            "D1:164: \"each press gives `+22` power\"",
+            "D1:164: \"bar decays at **14 units/sec**\"",
+            "D1:164: \"**Press `ESC`** to dismount\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the cycling charge thresholds change?",
+          "answer": "The original system began charging above 50 percent, doubled above 75, and tripled at 100; the revision shifted normal, double, and triple charging to 25–50, 50–75, and 75–100 percent and added overload above 100.",
+          "evidence": [
+            "D1:164: \"| >50% | ⚡ CHARGING | +2 elec/s\"",
+            "D1:164: \"| >75% | ⚡ DOUBLE CHARGE | +4 elec/s\"",
+            "D1:164: \"| 100% | ⚡ TRIPLE CHARGE | +6 elec/s\"",
+            "D1:182: \"| 25–50% | ⚡ CHARGING | +2 elec/s\"",
+            "D1:182: \"| 50–75% | ⚡⚡ DOUBLE CHARGE | +4 elec/s\"",
+            "D1:182: \"| 75–100% | ⚡⚡⚡ TRIPLE CHARGE | +6 elec/s\"",
+            "D1:182: \"| 100%+ | 💥 OVERLOADED — Ns\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "What triggers a bike breakdown and how long does it last?",
+          "answer": "A Space press that pushes internal pedal power above 100 triggers a five-second breakdown.",
+          "evidence": [
+            "D1:182: \"Any `SPACE` press that carries power **over 100** triggers a **5-second breakdown**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What can the player do while the bike is broken?",
+          "answer": "Space does nothing and the bike produces no charge; the bar flashes red, drains at 30 per second, and shakes until recovery resets power to zero.",
+          "evidence": [
+            "D1:182: \"While broken: SPACE does nothing\"",
+            "D1:182: \"power drains fast (30/s)\"",
+            "D1:182: \"overlay **shakes**\"",
+            "D1:182: \"After 5 seconds: power resets to 0\""
+          ],
+          "category": 4
+        }
+      ]
+    },
+    "startupsimulator_06_miscellaneous": {
+      "qa": [
+        {
+          "question": "Where was the treadmill placed?",
+          "answer": "It was placed against the top wall at x=8,y=0 with a two-by-one footprint and a stand target at x=9,y=1.5.",
+          "evidence": [
+            "D1:21: \"`treadmill` placed at `x:8, y:0, w:2, d:1`\"",
+            "D1:21: \"Player target stand position is `x:9, y:1.5`\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the treadmill work before its mini-game was added?",
+          "answer": "Using it cost 15 stamina, incremented the persistent treadmillSessions count, and showed a session-dependent toast.",
+          "evidence": [
+            "D1:21: \"helper function that returns `15`\"",
+            "D1:21: \"deducts 15 stamina, increments `state.treadmillSessions`\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did treadmill interaction evolve after the mini-game request?",
+          "answer": "It changed from a one-shot 15-stamina action into a mountable Space-tapping mini-game with run power, pace zones, rewards, penalties, and clean or overexerted dismounts.",
+          "evidence": [
+            "D1:21: \"deducts 15 stamina, increments `state.treadmillSessions`\"",
+            "D1:53: \"Treadmill interaction `perform()` now calls `mountTreadmill()` instead of one-shot stamina deduction\"",
+            "D1:53: \"`runPower` decays at **8/s** passively\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "Which treadmill power zones restore or drain stamina?",
+          "answer": "Run power from 25 through 75 restores four stamina per second, while power above 75 drains six stamina per second.",
+          "evidence": [
+            "D1:53: \"Zone 25–75: **restores +4 stamina/s**\"",
+            "D1:53: \"Zone 75+: **drains −6 stamina/s**\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What causes a forced treadmill dismount?",
+          "answer": "Reaching zero stamina forces an overexerted dismount, and three consecutive overloads also force a dismount.",
+          "evidence": [
+            "D1:53: \"Zero stamina → forced dismount as overexerted\"",
+            "D1:53: \"3 consecutive overloads force dismount\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Where and when can the player order delivery food?",
+          "answer": "The phone is at x=7,y=9, and its dialog distinguishes before 10 AM, open hours, and a closed kitchen from 10 PM onward.",
+          "evidence": [
+            "D1:71: \"**`phone` object** at grid position `x:7, y:9`\"",
+            "D1:71: \"too early (<10 AM), open hours, or kitchen closed (≥10 PM)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Does ordering food change any player stats?",
+          "answer": "No. It is explicitly a cosmetic interaction with no stat effects.",
+          "evidence": [
+            "D1:71: \"Purely cosmetic · No stats affected · Very filling emotionally\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "How varied is the delivery menu?",
+          "answer": "It cycles among twelve food toasts, including pizza, ramen, burger, salad, burrito, sushi, pho, sandwich, pasta, tacos, croissant, and dumplings.",
+          "evidence": [
+            "D1:71: \"**12 rotating food toasts** (pizza, ramen, burger, salad, burrito, sushi, pho, sandwich, pasta, tacos, croissant, dumplings)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Was the food-order randomization actually stuck on ramen?",
+          "answer": "No. The randomization was working; incorrect and duplicated emoji codepoints made the results appear misleading.",
+          "evidence": [
+            "D1:89: \"The randomization itself was working fine the whole time.\"",
+            "D1:89: \"Three wrong emoji codepoints in the original `menu` array\""
+          ],
+          "category": 5
+        },
+        {
+          "question": "How does the D key distinguish dancing from walking right?",
+          "answer": "Tapping D while completely still toggles dancing and removes D from the held-key set, while pressing it during movement keeps its normal right-walk behavior and cancels dancing.",
+          "evidence": [
+            "D1:111: \"**Tap `d` while standing still**\"",
+            "D1:111: \"toggles dance on/off, clears `d` from the keys set\"",
+            "D1:111: \"**Hold `d` while moving / press while another movement key is held** → normal right-walk\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What does the dance animation look like?",
+          "answer": "It is a four-beat routine with bouncing and alternating raised arms and stepped feet, plus a smile, shrinking shadow, and three colored floating music notes.",
+          "evidence": [
+            "D1:111: \"**4-beat animation** at 180ms/beat\"",
+            "D1:111: \"**3 floating music notes** (♪ ♫ ♩) in pink/blue/yellow\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does the ambient ghost move around the room?",
+          "answer": "Two slow sine-wave pairs make it drift about one tile around (1.5,1.7) in the back-left corner without perfectly repeating, while a separate sine wave makes it bob vertically.",
+          "evidence": [
+            "D1:123: \"wanders ~1 tile in each direction around the centre point `(1.5, 1.7)`\"",
+            "D1:123: \"never perfectly repeats\"",
+            "D1:123: \"a slow vertical sine\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens to the ghost animation when reduced motion is preferred?",
+          "answer": "All animation stops and the ghost renders at a fixed 38-percent opacity without bobbing or eye shimmer.",
+          "evidence": [
+            "D1:123: \"all animation completely disabled; renders at a fixed 38% opacity, no bob, no eye shimmer\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What triggers the ghost jumpscare and how soon can it repeat?",
+          "answer": "Approaching within 1.5 tiles triggers it when the cooldown is zero, after which an eight-second cooldown prevents immediate retriggering.",
+          "evidence": [
+            "D1:137: \"if distance < 1.5 tiles AND cooldown == 0\"",
+            "D1:137: \"prevents re-triggering for 8 seconds after each scare\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does the ghost visually change during a jumpscare?",
+          "answer": "It becomes fully opaque, stops bobbing, and its eyes turn solid red while a full-screen white-to-red flash plays.",
+          "evidence": [
+            "D1:137: \"Ghost draws at **full opacity 1.0**\"",
+            "D1:137: \"**Bob freezes** at zero\"",
+            "D1:137: \"**Eyes flip to solid red**\"",
+            "D1:137: \"solid white  (instant shock)\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "When do two workers swap desks?",
+          "answer": "With exactly two workers, a random 25-to-75-second timer counts down; when it expires they swap desk indices only if neither is on strike.",
+          "evidence": [
+            "D1:145: \"between **25–75 seconds**\"",
+            "D1:145: \"when exactly 2 workers exist\"",
+            "D1:145: \"if neither worker is on strike\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Why do desk interactions still find the correct worker after a swap?",
+          "answer": "The renderer, interaction handlers, and hover lookup all resolve workers through their current deskIndex, so exchanging those values updates every dependent behavior.",
+          "evidence": [
+            "D1:145: \"`interactions.desk0` / `interactions.desk1` find workers by `deskIndex`\"",
+            "D1:145: \"The hover label lookup (`state.workers.find(w => w.deskIndex === di)`) also resolves correctly\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "Which desks became vaultable parkour obstacles?",
+          "answer": "The founder's desk and both worker desks, represented by the desk and desk-small object types.",
+          "evidence": [
+            "D1:153: \"`'desk'` = your founder workstation (3×2). `'desk-small'` = both worker desks (3×2 each).\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How does vaulting calculate a landing beyond a large desk?",
+          "answer": "It offsets from the object's center by its width or depth plus 1.2 tiles, producing 4.2 horizontal or 3.2 vertical tiles for a three-by-two desk.",
+          "evidence": [
+            "D1:153: \"nearestWalkable(cx + dx*(hit.w + 1.2), cy + dy*(hit.d + 1.2))\"",
+            "D1:153: \"that's `cx + dx*4.2` horizontally or `cy + dy*3.2` vertically\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What happens when a valid double jump fires?",
+          "answer": "It resets upward velocity to 2.4, marks the jump's one-use flag, costs five energy, and plays an ascending three-tone sound.",
+          "evidence": [
+            "D1:161: \"boosts jumpState.vel back up to 2.4\"",
+            "D1:161: \"sets doubleJumpUsed = true\"",
+            "D1:161: \"costs −5 energy\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "How did the double-jump eligibility rule change after stamina levels were introduced?",
+          "answer": "The original implementation used only energy above 50; the final system also requires stamina level 2 or higher, so one completed treadmill workout unlocks it while the energy threshold remains.",
+          "evidence": [
+            "D1:161: \"`state.energy > 50` = **above 50 out of 100**\"",
+            "D1:172: \"**Double jump** now requires `staminaLevel >= 2` as its first gate\"",
+            "D1:172: \"The `energy > 50` check remains as the second gate.\""
+          ],
+          "category": 2
+        },
+        {
+          "question": "How many workouts are required for each stamina level increase?",
+          "answer": "Level 1 to 2 needs one workout, 2 to 3 needs two, 3 to 4 needs three, and 4 to 5 needs four.",
+          "evidence": [
+            "D1:172: \"Lv 1 → 2 :  1 workout\"",
+            "D1:172: \"Lv 2 → 3 :  2 workouts\"",
+            "D1:172: \"Lv 3 → 4 :  3 workouts\"",
+            "D1:172: \"Lv 4 → 5 :  4 workouts\""
+          ],
+          "category": 4
+        },
+        {
+          "question": "What is the maximum stamina level and total workout count needed to reach it?",
+          "answer": "The cap is level 5, reached after ten total successful workouts.",
+          "evidence": [
+            "D1:172: \"Lv 4 → 5 :  4 workouts  (10 total to max out)\"",
+            "D1:172: \"Lv 5      :  already MAX, no more progress\""
+          ],
+          "category": 4
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Annotation scope: sprinting, vault mechanics, shortcut tables, dash controls and drain, anti-spam free hops, the final Blink Dash, the controls legend, and sprint-jumping. Later revisions govern final behavior. All 22 QA items were approved by the researcher on 2026-09-24.

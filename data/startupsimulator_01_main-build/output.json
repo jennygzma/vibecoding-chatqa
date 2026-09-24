@@ -1,0 +1,200 @@
+{
+  "qa": [
+    {
+      "question": "What was the original goal of StartupSimulator?",
+      "answer": "To create a local startup-simulator web game with an office that a founder character navigates by clicking.",
+      "evidence": [
+        "D1:1: \"Let's make a startup simulator indie game. We can start by just making an office space in which we navigate a founder character that moves around by clicking. Make it a local web app to run the game.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What was the initial StartupSimulator prototype called?",
+      "answer": "It was called Zero to One.",
+      "evidence": [
+        "D1:9: \"Built **Zero to One**, a playable startup-office prototype.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the original click-to-walk system handle furniture?",
+      "answer": "It routed the founder around furniture.",
+      "evidence": [
+        "D1:9: \"**Click-to-walk** founder movement that routes around furniture.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which non-mouse controls and convenience features shipped in the first prototype?",
+      "answer": "It included keyboard movement, touch support, zoom, pause, and automatic browser saving.",
+      "evidence": [
+        "D1:9: \"Keyboard movement, touch support, zoom, and pause.\"",
+        "D1:9: \"Progress saved automatically in your browser.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Were hiring and revenue systems part of the first prototype?",
+      "answer": "No. The first version focused on office exploration; hiring, revenue, and broader business simulation were not implemented.",
+      "evidence": [
+        "D1:9: \"This first version focuses on exploring the office; hiring, revenue, and broader business simulation aren’t implemented yet.\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How did the world projection change during the first Pokémon-style conversion?",
+      "answer": "It changed from an isometric projection to a top-down orthographic projection.",
+      "evidence": [
+        "D1:45: \"Changed from isometric projection to **top-down orthographic**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What tile and room dimensions were introduced for the grid-based world?",
+      "answer": "The conversion used 32-pixel tiles and expanded the room to 16 by 12 tiles.",
+      "evidence": [
+        "D1:45: \"Introduced `TILE_SIZE = 32` for Pokemon-style 32px tiles\"",
+        "D1:45: \"Expanded room size from 12x10 to **16x12 tiles**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was the page layout changed to make the game full-screen?",
+      "answer": "The old page layout was removed, the canvas became a 100vw by 100vh first child of the body, and fixed HUD overlays were placed at the top and bottom.",
+      "evidence": [
+        "D1:88: \"**Removed** the entire old layout: topbar, sidebar, app-layout, scene wrapper, footer\"",
+        "D1:88: \"**Canvas is now fullscreen** (`#game` is the first child of `<body>`, styled `100vw × 100vh`)\"",
+        "D1:88: \"**Pokemon-style HUD overlay (bottom):** Character card with green HP bar + 4 task shortcut buttons\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which rendering techniques were used in the temporary smooth animated redesign?",
+      "answer": "It enabled high-quality image smoothing, fractional scaling, rounded rectangles, gradients, ellipses, curved paths, and object shadows.",
+      "evidence": [
+        "D1:125: \"`imageSmoothingEnabled = true` + `imageSmoothingQuality = 'high'\"",
+        "D1:125: \"Fractional scale (`Math.max(0.5, raw)`\"",
+        "D1:125: \"`ctx.roundRect()` everywhere\"",
+        "D1:125: \"Linear and radial gradients on every surface for depth\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What replaced the green checkerboard floor in the smooth redesign?",
+      "answer": "A warm wood-plank parquet floor with grain lines and plank-joint seams.",
+      "evidence": [
+        "D1:125: \"**Floor:** Warm wood-plank parquet with horizontal grain lines + vertical plank-joint seams, instead of green checkerboard\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How many frames did the smooth character's walk cycle use?",
+      "answer": "It used a four-frame walk cycle with opposing arm and leg motion and body bobbing.",
+      "evidence": [
+        "D1:125: \"**4-frame walk cycle**: legs swing forward/back using `sin(time)`, arms swing in opposition, body bobs\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the rendering style change after the smooth animated redesign?",
+      "answer": "The game reversed course from anti-aliased smooth rendering to crisp pixel art with image smoothing disabled and integer scaling.",
+      "evidence": [
+        "D1:125: \"`imageSmoothingEnabled = true` + `imageSmoothingQuality = 'high'\"",
+        "D1:141: \"`imageSmoothingEnabled = false` — crisp pixel art\"",
+        "D1:141: \"Scale is `Math.floor(raw)`\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How does the later pixel-art character show its facing direction?",
+      "answer": "Its eye positions change when facing left, right, or down, while facing up shows the back of the head without a face.",
+      "evidence": [
+        "D1:141: \"**Direction-aware**: different eye positions for left/right/down; facing up shows back of head (no face, just ears)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens when the player clicks a point occupied by furniture or a wall?",
+      "answer": "The game searches outward in quarter-tile steps and routes Alex to the nearest walkable point within three tiles.",
+      "evidence": [
+        "D1:154: \"Otherwise spirals outward in 0.25-tile steps\"",
+        "D1:154: \"returns the closest walkable point it finds (within 3 tiles)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which four tasks defined the original single-day objective?",
+      "answer": "Walk around, brew coffee, pin an idea, and build a prototype.",
+      "evidence": [
+        "D1:158: \"The objective is to complete **4 tasks**\"",
+        "D1:158: \"**Walk around**\"",
+        "D1:158: \"**Brew a coffee**\"",
+        "D1:158: \"**Pin your first idea**\"",
+        "D1:158: \"**Build a prototype**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What was the original day's only meaningful constraint?",
+      "answer": "Energy was the only real constraint, and the clock had no fail state when time ran out.",
+      "evidence": [
+        "D1:158: \"**The only real constraint** is energy\"",
+        "D1:158: \"there's no fail state for running out of time\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the game's objective expand beyond its initial day-one experience?",
+      "answer": "It changed from a short single-day experience into a ten-day sprint in which the four daily tasks advance the startup toward launch.",
+      "evidence": [
+        "D1:158: \"it's a short, chill \"day one\" experience, not a deep sim\"",
+        "D1:180: \"### The core loop: 10-day sprint to launch\"",
+        "D1:180: \"Every day you complete the same 4 tasks\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "What resets when a normal day is completed in the ten-day loop?",
+      "answer": "The tasks, clock, distance counter, and Alex's position reset, while energy recovers by 30 up to a maximum of 100.",
+      "evidence": [
+        "D1:180: \"**Resets** tasks, clock (back to 9 AM), distance counter, Alex's position\"",
+        "D1:180: \"**Partial energy recovery** (+30, capped at 100)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What progression arc does the ten-day work task follow?",
+      "answer": "It progresses from prototype through improvement, feedback, polish, demo, paid features, product feel, launch preparation, and a final push to launch.",
+      "evidence": [
+        "D1:180: \"The arc goes: *prototype → improve → user feedback → polish → demo → paid features → product feel → launch prep → final push → **LAUNCH** 🚀*\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens after completing all tasks on Day 10?",
+      "answer": "The game shows the full win message and offers Play again, which resets the game to Day 1.",
+      "evidence": [
+        "D1:180: \"Day 10 complete → toast fires immediately, then day-end screen with the full win message and \"Play again\" which full-resets to Day 1.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How were invisible collision margins reduced in the final movement fix?",
+      "answer": "The founder radius was reduced from 0.4 to 0.18 tiles, and furniture padding was separated into a fixed 0.05-tile constant.",
+      "evidence": [
+        "D1:188: \"**`FOUNDER_RADIUS` cut from 0.4 → 0.18`**\"",
+        "D1:188: \"Object collision padding — **separated and tightened to 0.05**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Was the visible checkerboard floor gone by the end of the main trajectory?",
+      "answer": "No. The final researcher message explicitly said the checkerboard pattern was still visible.",
+      "evidence": [
+        "D1:141: \"Top-down RPG tilemap: alternating warm-tan checker tiles\"",
+        "D1:193: \"I can clearly still see a checkerboard pattern on the floor.\""
+      ],
+      "category": 5
+    }
+  ]
+}

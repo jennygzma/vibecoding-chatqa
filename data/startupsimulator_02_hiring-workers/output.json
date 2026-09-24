@@ -1,0 +1,190 @@
+{
+  "qa": [
+    {
+      "question": "What simple hiring interaction was proposed during the initial brainstorm?",
+      "answer": "The player would click the ideas desk, review a candidate profile, and choose whether to hire or pass; a hire would add a character and a delegatable daily task.",
+      "evidence": [
+        "D1:2: \"The player clicks it, gets a dialog with a candidate profile (name, role, trait), and decides **Hire / Pass**.\"",
+        "D1:2: \"Hiring adds a visible new character sprite to the office and unlocks a daily **delegate** task\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How much money does founder work earn across the ten-day progression?",
+      "answer": "Work earnings scale from $50 on Day 1 to $5,000 on Day 10.",
+      "evidence": [
+        "D1:29: \"scaling from **$50 on Day 1** up to **$5,000 on Day 10**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Does the founder's money survive a browser reload?",
+      "answer": "Yes. Money is restored by parseSave and persists across sessions.",
+      "evidence": [
+        "D1:29: \"Added `money` restoration to `parseSave()` — persists across sessions\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "Where can the player hire workers?",
+      "answer": "At either the Room for a cofounder ideas desk or the second desk in the top-left area.",
+      "evidence": [
+        "D1:52: \"Walk to the **\"Room for a cofounder\" desk** (ideas) or the new **second desk** (top-left area) and click to interact.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Do the available candidates change during the same in-game day?",
+      "answer": "No. Candidates are deterministic within a day, but different days offer different candidates.",
+      "evidence": [
+        "D1:52: \"Candidates are deterministic per day (same candidates all day, different each day).\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "What are the passive base earnings rates for the four worker roles?",
+      "answer": "Engineers earn $3 per second, Growth workers $4, Designers $2, and Operations workers $2.",
+      "evidence": [
+        "D1:52: \"Rates: Engineer $3/s · Growth $4/s · Designer $2/s · Operations $2/s.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How many workers can the player hire at once?",
+      "answer": "Up to two, one for each worker desk.",
+      "evidence": [
+        "D1:52: \"Up to **2 workers** can be hired (one per desk).\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How are worker roles distinguished visually?",
+      "answer": "Their seated sprites are color-coded: blue for Engineer, pink for Designer, green for Growth, and orange for Operations.",
+      "evidence": [
+        "D1:52: \"colour-coded to their role (blue = Engineer, pink = Designer, green = Growth, orange = Operations)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How do worker upgrades affect earnings and what do they cost?",
+      "answer": "Level 2 costs $500 and earns 1.5 times the base rate; level 3 costs $2,000 and earns 2.25 times the base rate.",
+      "evidence": [
+        "D1:92: \"level 1 = base rate, level 2 = 1.5×, level 3 = 2.25×; upgrade cost $500/$2000\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What are the three founder efficiency upgrades?",
+      "answer": "Focus Mode costs $300 and lowers work energy to 8; Speed Desk costs $800 and gives 1.5x work earnings; Deep Work Protocol costs $2,000 and gives 2x earnings while restoring 5 energy.",
+      "evidence": [
+        "D1:92: \"🎯 **Focus Mode** ($300) — Work costs 8 energy instead of 12\"",
+        "D1:92: \"⚡ **Speed Desk** ($800) — Work earns 1.5× money per session\"",
+        "D1:92: \"🧠 **Deep Work Protocol** ($2000) — Work earns 2× money AND restores +5 energy instead of costing any\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does the player fire a worker?",
+      "answer": "The player opens an occupied desk and selects Let [Name] go; this removes the worker, saves, updates the HUD, and makes the desk available for hiring again.",
+      "evidence": [
+        "D1:100: \"**\"Let [Name] go\" → fires them**\"",
+        "D1:100: \"The desk immediately resets to \"Room for someone great.\" / \"Another desk.\"\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens if the player leaves the worker-name field blank?",
+      "answer": "The hire uses the candidate's default name; typing a custom name and pressing Enter or the offer button uses that name instead.",
+      "evidence": [
+        "D1:114: \"reads `nameInput.value.trim()`, falls back to the candidate's default name if blank\"",
+        "D1:114: \"click \"Make the offer\" or hit **Enter**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When can a newly hired worker go on strike?",
+      "answer": "Each hire receives a random strike countdown of 60 to 180 real seconds.",
+      "evidence": [
+        "D1:126: \"each worker gets a `strikeCountdown` of 60–180 real-seconds on hire\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Does a striking worker keep generating passive income?",
+      "answer": "No. A worker earns $0 per second while on strike.",
+      "evidence": [
+        "D1:126: \"the worker earns $0/s\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "What two choices resolve a worker strike?",
+      "answer": "The player can pay a one-time payoff or permanently raise the worker's wage by $1 per second.",
+      "evidence": [
+        "D1:126: \"**\"Pay them off – $X\"** — one-time flat payment\"",
+        "D1:126: \"**\"Raise wages (+$1/s)\"** — permanently bumps `earningsPerTick` by 1\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How is a strike payoff priced?",
+      "answer": "It costs 40 times the worker's current earnings rate after the level multiplier, roughly forty seconds of passive income.",
+      "evidence": [
+        "D1:126: \"**Payoff cost**: `earningsPerTick × level_multiplier × 40` — roughly 40 seconds of passive income\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Where is the cereal station and how does the player reach it?",
+      "answer": "It is a two-by-one object at x=7,y=7 with its own walk target; clicking either it or its HUD task routes the player there.",
+      "evidence": [
+        "D1:149: \"A new 2×1 `cereal` object sits at `x:7, y:7`\"",
+        "D1:149: \"clicking it or the HUD button routes you there correctly\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What is the cereal station's two-stage interaction?",
+      "answer": "The player first pays $25 to stock three servings, then pours a bowl that consumes one serving, restores 20 energy, and completes the cereal task.",
+      "evidence": [
+        "D1:149: \"Costs $25, sets `cerealStock = 3`\"",
+        "D1:149: \"`cerealStock--`, `+20 energy`, completes the `cereal` task\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens to cereal stock when a new day begins?",
+      "answer": "It resets to zero, so the station must be restocked each day.",
+      "evidence": [
+        "D1:149: \"`cerealStock` resets to `0` each new day\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does restocking cereal affect workers who are not on strike?",
+      "answer": "It adds 60 seconds to every non-striking worker's remaining strike countdown.",
+      "evidence": [
+        "D1:153: \"Every non-striking worker's `strikeCountdown` gets **+60 seconds** added\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Can cereal end an active worker strike?",
+      "answer": "No. Workers who are already striking are unaffected by restocking.",
+      "evidence": [
+        "D1:153: \"Workers who are *already on strike* are unaffected\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "What happens when the player's money reaches one million dollars?",
+      "answer": "A guarded trigger fires once at any time or day and opens a full-screen million-dollar win overlay with a Start over button.",
+      "evidence": [
+        "D1:161: \"`changeMoney()` now checks `state.money >= 1_000_000` on every call\"",
+        "D1:161: \"A `wonMillionDollar` boolean guard ensures it fires exactly once.\"",
+        "D1:161: \"A **\"Start over 🚀\"** button that resets the full game\""
+      ],
+      "category": 4
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "qa": [
+    {
+      "question": "Where was the treadmill placed?",
+      "answer": "It was placed against the top wall at x=8,y=0 with a two-by-one footprint and a stand target at x=9,y=1.5.",
+      "evidence": [
+        "D1:21: \"`treadmill` placed at `x:8, y:0, w:2, d:1`\"",
+        "D1:21: \"Player target stand position is `x:9, y:1.5`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the treadmill work before its mini-game was added?",
+      "answer": "Using it cost 15 stamina, incremented the persistent treadmillSessions count, and showed a session-dependent toast.",
+      "evidence": [
+        "D1:21: \"helper function that returns `15`\"",
+        "D1:21: \"deducts 15 stamina, increments `state.treadmillSessions`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did treadmill interaction evolve after the mini-game request?",
+      "answer": "It changed from a one-shot 15-stamina action into a mountable Space-tapping mini-game with run power, pace zones, rewards, penalties, and clean or overexerted dismounts.",
+      "evidence": [
+        "D1:21: \"deducts 15 stamina, increments `state.treadmillSessions`\"",
+        "D1:53: \"Treadmill interaction `perform()` now calls `mountTreadmill()` instead of one-shot stamina deduction\"",
+        "D1:53: \"`runPower` decays at **8/s** passively\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "Which treadmill power zones restore or drain stamina?",
+      "answer": "Run power from 25 through 75 restores four stamina per second, while power above 75 drains six stamina per second.",
+      "evidence": [
+        "D1:53: \"Zone 25–75: **restores +4 stamina/s**\"",
+        "D1:53: \"Zone 75+: **drains −6 stamina/s**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What causes a forced treadmill dismount?",
+      "answer": "Reaching zero stamina forces an overexerted dismount, and three consecutive overloads also force a dismount.",
+      "evidence": [
+        "D1:53: \"Zero stamina → forced dismount as overexerted\"",
+        "D1:53: \"3 consecutive overloads force dismount\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Where and when can the player order delivery food?",
+      "answer": "The phone is at x=7,y=9, and its dialog distinguishes before 10 AM, open hours, and a closed kitchen from 10 PM onward.",
+      "evidence": [
+        "D1:71: \"**`phone` object** at grid position `x:7, y:9`\"",
+        "D1:71: \"too early (<10 AM), open hours, or kitchen closed (≥10 PM)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Does ordering food change any player stats?",
+      "answer": "No. It is explicitly a cosmetic interaction with no stat effects.",
+      "evidence": [
+        "D1:71: \"Purely cosmetic · No stats affected · Very filling emotionally\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How varied is the delivery menu?",
+      "answer": "It cycles among twelve food toasts, including pizza, ramen, burger, salad, burrito, sushi, pho, sandwich, pasta, tacos, croissant, and dumplings.",
+      "evidence": [
+        "D1:71: \"**12 rotating food toasts** (pizza, ramen, burger, salad, burrito, sushi, pho, sandwich, pasta, tacos, croissant, dumplings)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Was the food-order randomization actually stuck on ramen?",
+      "answer": "No. The randomization was working; incorrect and duplicated emoji codepoints made the results appear misleading.",
+      "evidence": [
+        "D1:89: \"The randomization itself was working fine the whole time.\"",
+        "D1:89: \"Three wrong emoji codepoints in the original `menu` array\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How does the D key distinguish dancing from walking right?",
+      "answer": "Tapping D while completely still toggles dancing and removes D from the held-key set, while pressing it during movement keeps its normal right-walk behavior and cancels dancing.",
+      "evidence": [
+        "D1:111: \"**Tap `d` while standing still**\"",
+        "D1:111: \"toggles dance on/off, clears `d` from the keys set\"",
+        "D1:111: \"**Hold `d` while moving / press while another movement key is held** → normal right-walk\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What does the dance animation look like?",
+      "answer": "It is a four-beat routine with bouncing and alternating raised arms and stepped feet, plus a smile, shrinking shadow, and three colored floating music notes.",
+      "evidence": [
+        "D1:111: \"**4-beat animation** at 180ms/beat\"",
+        "D1:111: \"**3 floating music notes** (♪ ♫ ♩) in pink/blue/yellow\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does the ambient ghost move around the room?",
+      "answer": "Two slow sine-wave pairs make it drift about one tile around (1.5,1.7) in the back-left corner without perfectly repeating, while a separate sine wave makes it bob vertically.",
+      "evidence": [
+        "D1:123: \"wanders ~1 tile in each direction around the centre point `(1.5, 1.7)`\"",
+        "D1:123: \"never perfectly repeats\"",
+        "D1:123: \"a slow vertical sine\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens to the ghost animation when reduced motion is preferred?",
+      "answer": "All animation stops and the ghost renders at a fixed 38-percent opacity without bobbing or eye shimmer.",
+      "evidence": [
+        "D1:123: \"all animation completely disabled; renders at a fixed 38% opacity, no bob, no eye shimmer\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What triggers the ghost jumpscare and how soon can it repeat?",
+      "answer": "Approaching within 1.5 tiles triggers it when the cooldown is zero, after which an eight-second cooldown prevents immediate retriggering.",
+      "evidence": [
+        "D1:137: \"if distance < 1.5 tiles AND cooldown == 0\"",
+        "D1:137: \"prevents re-triggering for 8 seconds after each scare\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does the ghost visually change during a jumpscare?",
+      "answer": "It becomes fully opaque, stops bobbing, and its eyes turn solid red while a full-screen white-to-red flash plays.",
+      "evidence": [
+        "D1:137: \"Ghost draws at **full opacity 1.0**\"",
+        "D1:137: \"**Bob freezes** at zero\"",
+        "D1:137: \"**Eyes flip to solid red**\"",
+        "D1:137: \"solid white  (instant shock)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When do two workers swap desks?",
+      "answer": "With exactly two workers, a random 25-to-75-second timer counts down; when it expires they swap desk indices only if neither is on strike.",
+      "evidence": [
+        "D1:145: \"between **25–75 seconds**\"",
+        "D1:145: \"when exactly 2 workers exist\"",
+        "D1:145: \"if neither worker is on strike\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why do desk interactions still find the correct worker after a swap?",
+      "answer": "The renderer, interaction handlers, and hover lookup all resolve workers through their current deskIndex, so exchanging those values updates every dependent behavior.",
+      "evidence": [
+        "D1:145: \"`interactions.desk0` / `interactions.desk1` find workers by `deskIndex`\"",
+        "D1:145: \"The hover label lookup (`state.workers.find(w => w.deskIndex === di)`) also resolves correctly\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which desks became vaultable parkour obstacles?",
+      "answer": "The founder's desk and both worker desks, represented by the desk and desk-small object types.",
+      "evidence": [
+        "D1:153: \"`'desk'` = your founder workstation (3×2). `'desk-small'` = both worker desks (3×2 each).\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does vaulting calculate a landing beyond a large desk?",
+      "answer": "It offsets from the object's center by its width or depth plus 1.2 tiles, producing 4.2 horizontal or 3.2 vertical tiles for a three-by-two desk.",
+      "evidence": [
+        "D1:153: \"nearestWalkable(cx + dx*(hit.w + 1.2), cy + dy*(hit.d + 1.2))\"",
+        "D1:153: \"that's `cx + dx*4.2` horizontally or `cy + dy*3.2` vertically\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens when a valid double jump fires?",
+      "answer": "It resets upward velocity to 2.4, marks the jump's one-use flag, costs five energy, and plays an ascending three-tone sound.",
+      "evidence": [
+        "D1:161: \"boosts jumpState.vel back up to 2.4\"",
+        "D1:161: \"sets doubleJumpUsed = true\"",
+        "D1:161: \"costs −5 energy\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the double-jump eligibility rule change after stamina levels were introduced?",
+      "answer": "The original implementation used only energy above 50; the final system also requires stamina level 2 or higher, so one completed treadmill workout unlocks it while the energy threshold remains.",
+      "evidence": [
+        "D1:161: \"`state.energy > 50` = **above 50 out of 100**\"",
+        "D1:172: \"**Double jump** now requires `staminaLevel >= 2` as its first gate\"",
+        "D1:172: \"The `energy > 50` check remains as the second gate.\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How many workouts are required for each stamina level increase?",
+      "answer": "Level 1 to 2 needs one workout, 2 to 3 needs two, 3 to 4 needs three, and 4 to 5 needs four.",
+      "evidence": [
+        "D1:172: \"Lv 1 → 2 :  1 workout\"",
+        "D1:172: \"Lv 2 → 3 :  2 workouts\"",
+        "D1:172: \"Lv 3 → 4 :  3 workouts\"",
+        "D1:172: \"Lv 4 → 5 :  4 workouts\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What is the maximum stamina level and total workout count needed to reach it?",
+      "answer": "The cap is level 5, reached after ten total successful workouts.",
+      "evidence": [
+        "D1:172: \"Lv 4 → 5 :  4 workouts  (10 total to max out)\"",
+        "D1:172: \"Lv 5      :  already MAX, no more progress\""
+      ],
+      "category": 4
+    }
+  ]
+}

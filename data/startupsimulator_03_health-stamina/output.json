@@ -1,0 +1,205 @@
+{
+  "qa": [
+    {
+      "question": "Where was the bed placed in the office?",
+      "answer": "It was placed at x=3, y=9 with a size of 3 by 2 tiles and an interaction target at x=6, y=10.",
+      "evidence": [
+        "D1:27: \"position `x:3, y:9, w:3, d:2`\"",
+        "D1:27: \"The interaction target is `x:6, y:10`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When is the player allowed to sleep?",
+      "answer": "Only after the other four daily tasks are complete; sleeping then completes the fifth task and advances the day after 1.8 seconds.",
+      "evidence": [
+        "D1:27: \"it's now the 5th and final daily task\"",
+        "D1:27: \"**All tasks done?**\"",
+        "D1:27: \"triggers `advanceDay()` after 1.8 seconds\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the first passive energy-drain loop work?",
+      "answer": "It removed one energy every eight real seconds until the player slept.",
+      "evidence": [
+        "D1:42: \"Every **8 real-seconds**, if the player hasn't slept yet today, 1 energy is drained.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does the game warn the player at low energy?",
+      "answer": "At 20 energy or below it shows a one-time warning, turns the bar red, and makes it pulse.",
+      "evidence": [
+        "D1:42: \"### Warning at ≤20 HP\"",
+        "D1:42: \"A **one-time warning toast** fires\"",
+        "D1:42: \"energy bar turns red and pulses\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What penalty follows ordinary burnout?",
+      "answer": "The game advances to the next day with only 50 energy and shows a burnout-specific day-end screen.",
+      "evidence": [
+        "D1:42: \"Advances to the next day **but only restores energy to 50**\"",
+        "D1:42: \"day-end overlay with a burnout variant\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why could energy stop draining after reloading a saved game?",
+      "answer": "A previously completed sleep task could be restored from localStorage, making the drain condition think the player had already slept; the fix excluded sleep from restored completions.",
+      "evidence": [
+        "D1:51: \"`parseSave` restored it — so `state.completed.includes('sleep')` was `true`\"",
+        "D1:51: \"`'sleep'` is now explicitly excluded from the loaded `completed` list\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was the passive drain rate made more aggressive?",
+      "answer": "It changed from one point every eight seconds to one point every three seconds.",
+      "evidence": [
+        "D1:42: \"Every **8 real-seconds**\"",
+        "D1:55: \"**1 HP every 3 seconds** instead of every 8\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "What stamina tradeoff does coffee create?",
+      "answer": "Coffee fills stamina to 100 but doubles the drain rate from one point every three seconds to one every 1.5 seconds.",
+      "evidence": [
+        "D1:63: \"**After coffee:** fills to **100 HP**, but drain doubles to **1 HP every 1.5 seconds**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does coffee affect movement speed?",
+      "answer": "It raises speed from 2.65 to 4.5, approximately 70 percent faster, until the day changes or the game resets.",
+      "evidence": [
+        "D1:69: \"**Speed** → jumps from `2.65` to `4.5` (~70% faster movement)\"",
+        "D1:69: \"Both effects **reset at the start of each new day**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What did pills do when first introduced?",
+      "answer": "They restored up to 40 HP but slowed movement from 2.65 to 1.3.",
+      "evidence": [
+        "D1:81: \"**Restores up to +40 HP**\"",
+        "D1:81: \"**Slows speed to `1.3`** (~half of normal `2.65`)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happened when the sofa was first removed?",
+      "answer": "Both the sofa and coffee table disappeared, leaving open floor space in the lower-right corner.",
+      "evidence": [
+        "D1:88: \"the sofa and coffee table are gone. The lower-right corner of the room is now open floor space\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What was the sofa's final role after the removal was reconsidered?",
+      "answer": "It and the coffee table returned as non-interactive decorations that still rendered and blocked movement.",
+      "evidence": [
+        "D1:88: \"the sofa and coffee table are gone\"",
+        "D1:95: \"back in the room as pure decoration\"",
+        "D1:95: \"they block movement, render as before, but clicking or hovering them does nothing\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How was the health bar reframed as stamina?",
+      "answer": "The HUD label changed from green HP to amber ST; below 25 it still turns red and pulses, and player-facing copy now says stamina.",
+      "evidence": [
+        "D1:106: \"**`ST`** label in amber/gold instead of the old green `HP`\"",
+        "D1:106: \"When it drops below 25 it flips to **red** and pulses\"",
+        "D1:106: \"say \"stamina\" throughout\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the pills mechanic change after stamina was introduced?",
+      "answer": "It changed from restoring 40 HP while slowing the player to costing 25 stamina while boosting speed to 4.5.",
+      "evidence": [
+        "D1:81: \"**Restores up to +40 HP**\"",
+        "D1:81: \"**Slows speed to `1.3`**\"",
+        "D1:111: \"Pills 💊 | **−25** (floors at 1) | fast (4.5)\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "Can taking pills reduce stamina to zero?",
+      "answer": "No. The cost floors stamina at one, preventing the pills from killing the player directly.",
+      "evidence": [
+        "D1:111: \"**−25** (floors at 1)\"",
+        "D1:111: \"the guard prevents you from killing yourself to 0\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "What design problem did the agent identify with coffee and pills?",
+      "answer": "Both produced the same 4.5 speed, making coffee strictly better except when pills were physically closer.",
+      "evidence": [
+        "D1:113: \"**Coffee and pills do the same thing now.** Both give you speed 4.5.\"",
+        "D1:113: \"coffee is strictly better unless you physically can't reach it\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why was coffee's accelerated stamina drain easy for players to miss?",
+      "answer": "The drain rate was not shown in the interface, so the difference between 1.5-second and three-second drain intervals was invisible.",
+      "evidence": [
+        "D1:113: \"**The stamina drain rate is invisible.**\"",
+        "D1:113: \"1.5s drain vs. 3s\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What distinct pills effect was suggested but not implemented in this trajectory?",
+      "answer": "The agent suggested making pills slow stamina drain so they would be a defensive, sustainable alternative to risky coffee.",
+      "evidence": [
+        "D1:113: \"Instead of speed, maybe pills *slow the drain rate*\"",
+        "D1:113: \"Coffee = burst/risky, pills = defensive/sustainable.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does peptide-shot mortality escalate within a day?",
+      "answer": "The death chance rises by 20 percentage points per shot: 20, 40, 60, 80, then 100 percent on the fifth shot.",
+      "evidence": [
+        "D1:129: \"| 1st | 20%\"",
+        "D1:129: \"| 2nd | 40%\"",
+        "D1:129: \"| 3rd | 60%\"",
+        "D1:129: \"| 4th | 80%\"",
+        "D1:129: \"| 5th | 100%\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens when a peptide shot kills the player?",
+      "answer": "A dedicated overdose day-end screen appears and the player wakes with 30 stamina, which is harsher than ordinary burnout's 50.",
+      "evidence": [
+        "D1:129: \"dedicated `💉 You overdid it.` day-end screen\"",
+        "D1:129: \"wakes up at **30 stamina** (harsher than burnout's 50)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happens when a peptide shot succeeds?",
+      "answer": "It immediately restores stamina to full and shows a toast about how close the gamble was.",
+      "evidence": [
+        "D1:129: \"**When it works:** full stamina instantly\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When does the peptide-shot counter reset?",
+      "answer": "It resets on a normal day advance, burnout, peptide death, and a hard reset.",
+      "evidence": [
+        "D1:129: \"`peptideShots` resets to 0 on `advanceDay`, `burnOut`, `peptideDeath`, and hard reset\""
+      ],
+      "category": 4
+    }
+  ]
+}

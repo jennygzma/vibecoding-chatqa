@@ -1,0 +1,28 @@
+{
+  "status": "approved",
+  "candidate_items": 136,
+  "candidate_citations": 282,
+  "reviewed_items": 136,
+  "approved_items": 136,
+  "rejected_items": 0,
+  "needs_edit_items": 0,
+  "reviewer": "researcher",
+  "approval_date": "2026-09-24",
+  "included_trajectories": [
+    "startupsimulator_01_main-build",
+    "startupsimulator_02_hiring-workers",
+    "startupsimulator_03_health-stamina",
+    "startupsimulator_04_parkour",
+    "startupsimulator_05_lighting-power",
+    "startupsimulator_06_miscellaneous"
+  ],
+  "excluded_trajectories": {},
+  "required_review_checks": [
+    "Question is useful, natural, and self-contained.",
+    "Answer contains no claim beyond its cited evidence.",
+    "Every quoted excerpt is exact at its D1:N location.",
+    "Later revisions override superseded intermediate behavior.",
+    "Category reflects the reasoning required.",
+    "Question is not a semantic duplicate of another candidate."
+  ]
+}
