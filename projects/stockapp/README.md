@@ -1,10 +1,65 @@
-# StockApp trajectory annotations
+# StockPicker AI and reviewed trajectories
 
-This package contains 130 researcher-reviewed QA annotations for all six
-StockApp trajectories. Automatic task-resumption messages are retained in the
-transcript but excluded from the researcher-prompt counts below.
+StockPicker AI is a local web application that ranks stocks using live Yahoo
+Finance data and a configurable eight-signal scoring model. This directory also
+contains 130 researcher-reviewed QA annotations from the six Cline trajectories
+used to develop it.
 
-| Dataset | Session | Prompts at snapshot | Draft QA |
+The application is for educational and informational purposes only. It is not
+financial advice.
+
+## Application features
+
+- Parallel scoring across technology, healthcare, financial, consumer, energy,
+  industrial, international ADR, ETF, and crypto-adjacent universes.
+- Balanced, momentum, value, quality, technical, and random scoring profiles.
+- Compact sortable stock table, score breakdowns, sparklines, score history,
+  themes, animated visual effects, and custom-ticker lookup.
+- Locally saved portfolio holdings with value, daily P&L, weighted score, and
+  portfolio recommendations.
+- Price and score alerts with browser notifications and an intentionally playful
+  mute-alarm challenge.
+- Random-ticker interaction and the optional “Name That Stock” minigame.
+- Two-tier caching, parallel ticker retrieval, and background cache pre-warming.
+
+## Run locally
+
+From this directory:
+
+```sh
+chmod +x start.sh
+./start.sh
+```
+
+The launcher installs the Python requirements, starts the API at
+<http://127.0.0.1:5050>, serves the frontend at <http://127.0.0.1:8000>, and
+opens the app when the platform provides `open` or `xdg-open`.
+
+To run the services manually:
+
+```sh
+python3 -m pip install -r backend/requirements.txt
+python3 backend/app.py
+python3 -m http.server 8000 --bind 127.0.0.1 --directory frontend
+```
+
+## Project checks
+
+These checks do not require live market requests:
+
+```sh
+python3 -m unittest test_project.py
+python3 -m py_compile backend/app.py backend/app_new.py
+node --check frontend/app.js
+node --check frontend/minigame.js
+```
+
+## Reviewed annotation datasets
+
+Automatic task-resumption messages remain in the transcripts but are excluded
+from the researcher-prompt counts.
+
+| Dataset | Session | Researcher prompts | Reviewed QA |
 |---|---|---:|---:|
 | `stockapp_01_main-build` | `1789154130654_ttl8f` | 9 | 19 |
 | `stockapp_02_portfolio-tracker` | `1789352968962_awae3` | 10 | 27 |
@@ -21,11 +76,11 @@ Each dataset under `../../data` contains:
 - `notes.txt`: annotation scope and review status;
 - `output.json`: researcher-reviewed QA annotations.
 
-The frozen original Cline files are under `evidence/raw`. Draft generation is
+Frozen original Cline files are under `evidence/raw`. Annotation generation is
 reproducible from `generate_draft_annotations.py`; transcript reconstruction
 does not change `output.json`.
 
-## Checks
+## Annotation checks
 
 ```sh
 python3 build_annotations.py
@@ -34,36 +89,19 @@ python3 validate_annotations.py
 python3 -m unittest test_annotations.py
 ```
 
-## Local review interface
+Validation checks raw-file provenance, transcript reconstruction, schema, exact
+quoted evidence, category constraints, and duplicate questions. The researcher
+also reviewed utility, answer completeness, evidence support, temporal
+interpretation, and category choice.
 
-Build the browser bundle and serve it locally:
+## Local annotation reviewer
 
 ```sh
 python3 build_review_bundle.py
-cd reviewer
-python3 -m http.server 4173 --bind 127.0.0.1
+python3 -m http.server 4173 --bind 127.0.0.1 --directory reviewer
 ```
 
-Open <http://127.0.0.1:4173/>. Review decisions and edits are saved in browser
-storage. **Export review** downloads a portable decision log plus clean approved
-QA arrays; **Import** restores that file on another browser or machine. The
-current package was approved by the researcher on 2026-09-24.
-
-Validation proves file provenance, transcript reconstruction, schema, exact
-quoted evidence, category constraints, and duplicate-question checks. The
-researcher also reviewed question utility, answer completeness, semantic
-evidence support, temporal interpretation, and category choice.
-
-## Review procedure
-
-Open each `output.json` beside its `cleaned-chat.json`. For every QA item:
-
-1. Confirm the question is useful and self-contained.
-2. Confirm the answer says no more than its evidence supports.
-3. Find every quoted excerpt at its exact `D1:N` location.
-4. Confirm later decisions override earlier intermediate implementations.
-5. Confirm category `1` multi-hop, `2` temporal, `3` open-domain, `4`
-   single-hop, or `5` adversarial is appropriate.
-6. Edit or remove weak items, then rerun validation.
-
-The validation report records the package as `reviewed-and-validated`.
+Open <http://127.0.0.1:4173/> to audit the approved set. Review decisions are
+stored in the browser and can be exported as JSON. The current package was
+approved by the researcher on 2026-09-24 and is recorded as
+`reviewed-and-validated`.

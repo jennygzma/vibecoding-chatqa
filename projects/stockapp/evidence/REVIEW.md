@@ -11,6 +11,21 @@ all six StockApp trajectories. The researcher reviewed all 130 candidates and
 approved the set without requested edits. Structural and provenance validation
 also passes.
 
+## Packaged application
+
+The runnable StockPicker AI source is included alongside the annotation tools:
+
+- `backend/app.py` and `backend/app_new.py`: Flask API and scoring engine;
+- `frontend/`: dashboard, portfolio tools, alerts, visual effects, and minigame;
+- `start.sh`: launches the API and a local frontend server;
+- `test_project.py`: offline backend-route and package-integration checks.
+
+The packaged copy resolves the duplicate score-route registration in the
+captured working tree, restores the `/api/stock/<ticker>` and minigame-news
+endpoints used by the frontend, and restores the missing recommendations render
+function. These corrections make the uploaded application internally
+consistent without changing the reviewed trajectory evidence.
+
 ## Review interface
 
 The local review interface is available at <http://127.0.0.1:4173/> while the
@@ -36,3 +51,11 @@ python3 -m unittest test_annotations.py
 ```
 
 The current [validation report](annotation-validation.json) contains no errors.
+
+## Final checks
+
+- Application tests: 7 passed.
+- Annotation tests: 6 passed.
+- Python compilation: passed.
+- JavaScript syntax checks: passed for both frontend scripts.
+- Whitespace validation: passed.

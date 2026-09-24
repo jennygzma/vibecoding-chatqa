@@ -1,0 +1,11 @@
+Command: python3 -m unittest test_project.py
+
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.004s
+
+OK
+
+Coverage includes health and sector routes, sorted/limited stock results,
+single-ticker route aliases, portfolio recommendations, ticker scrubbing in
+news hints, packaged frontend assets, and frontend/backend route compatibility.

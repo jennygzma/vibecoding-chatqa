@@ -1,0 +1,14 @@
+Python compilation:
+  python3 -m py_compile backend/app.py backend/app_new.py
+  passed
+
+JavaScript syntax:
+  node --check frontend/app.js
+  node --check frontend/minigame.js
+  passed
+
+Local HTTP smoke test:
+  GET http://127.0.0.1:5050/api/health -> 200, status ok
+  GET http://127.0.0.1:8000/ -> 200
+  GET http://127.0.0.1:8000/app.js -> 200
+  GET http://127.0.0.1:8000/minigame.js -> 200

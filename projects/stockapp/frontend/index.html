@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StockPicker AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="minigame.css" />
+</head>
+<body>
+
+  <!-- ── Compact sticky toolbar ── -->
+  <header>
+    <div class="toolbar">
+      <div class="logo">
+        <span>📈</span>
+        <span class="logo-text">StockPicker <span class="logo-ai">AI</span></span>
+      </div>
+      <div class="toolbar-controls">
+        <div class="control-group">
+          <label for="sector-select">Sector</label>
+          <select id="sector-select">
+            <option value="all">All Sectors</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="top-n">Show</label>
+          <select id="top-n" onchange="reRender()">
+            <option value="5">Top 5</option>
+            <option value="10">Top 10</option>
+            <option value="15">Top 15</option>
+            <option value="20" selected>Top 20</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="sort-select">Sort</label>
+          <select id="sort-select" onchange="reRender()">
+            <option value="score">AI Score</option>
+            <option value="change1d">Today %</option>
+            <option value="pe">P/E</option>
+            <option value="rsi">RSI</option>
+          </select>
+        </div>
+        <!-- Custom ticker lookup -->
+        <div class="control-group custom-ticker-group">
+          <label for="custom-ticker-input">Ticker</label>
+          <input id="custom-ticker-input" type="text" placeholder="e.g. PLTR" maxlength="10" class="custom-ticker-input" />
+          <button class="btn btn-secondary" onclick="lookupCustomTicker()">Score</button>
+        </div>
+      </div>
+      <div class="toolbar-right">
+        <div class="control-group">
+          <label for="mode-select">🎲 Formula</label>
+          <select id="mode-select">
+            <option value="random" selected>Random</option>
+            <option value="balanced">Balanced</option>
+            <option value="momentum">Momentum</option>
+            <option value="value">Value</option>
+            <option value="quality">Quality</option>
+            <option value="technical">Technical</option>
+          </select>
+        </div>
+        <span id="last-updated" class="timestamp"></span>
+        <div id="live-badge" class="live-badge" style="display:none;">
+          <span class="live-dot pulsing" id="live-dot"></span>LIVE
+        </div>
+        <button id="theme-toggle" class="btn btn-theme" onclick="toggleTheme()" title="Toggle light/dark mode">☾</button>
+        <button id="alert-bell-btn" class="btn btn-bell" onclick="openAlertsModal()" title="Price &amp; Score Alerts">🔔<span id="alert-bell-badge" class="alert-bell-badge hidden">0</span></button>
+        <button class="btn btn-portfolio" onclick="togglePortfolio()" title="My Portfolio">💼 Portfolio</button>
+        <button id="live-toggle" class="btn btn-live" onclick="toggleLiveFeed()" title="Toggle live auto-cycling feed">▶ Live Feed</button>
+        <button id="refresh-btn" class="btn btn-primary" onclick="loadStocks(event.ctrlKey || event.metaKey)" title="Refresh · Ctrl+click to force fresh data"><span id="refresh-icon">↻</span> Refresh</button>
+        <button class="btn btn-minigame" onclick="openMinigame()" title="Play Name That Stock! minigame">🔍 Minigame</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Feed progress bar ── -->
+  <div id="feed-progress-bar" class="feed-progress-bar" style="display:none;">
+    <div id="feed-progress-fill" class="feed-progress-fill"></div>
+  </div>
+
+  <!-- ── Alert banner ── -->
+  <div id="alert-banner" class="alert-banner hidden"></div>
+
+  <!-- ── Status banner ── -->
+  <div id="status-banner" class="status-banner hidden"></div>
+
+  <!-- ── Weight bar ── -->
+  <div id="weight-bar" class="weight-bar hidden">
+    <span class="weight-bar-label">Active weights:</span>
+    <span id="weight-pills"></span>
+  </div>
+
+  <!-- ── Portfolio Panel ── -->
+  <div id="portfolio-panel" class="portfolio-panel hidden">
+    <div class="portfolio-header">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <h3>💼 My Portfolio</h3>
+        <!-- Tab switcher -->
+        <div class="port-tabs">
+          <button id="tab-holdings" class="port-tab active" onclick="switchPortfolioTab('holdings')">Holdings</button>
+          <button id="tab-recommendations" class="port-tab" onclick="switchPortfolioTab('recommendations')">✨ Recommendations</button>
+        </div>
+      </div>
+      <button class="btn btn-theme" onclick="togglePortfolio()">✕ Close</button>
+    </div>
+
+    <!-- Holdings tab body -->
+    <div id="port-body-holdings">
+      <p class="portfolio-hint">Enter shares you hold for any ticker. Saved automatically to your browser.</p>
+      <div id="portfolio-summary" class="portfolio-summary hidden">
+        <div class="port-stat"><span class="port-stat-label">Total Value</span><span id="port-total-value" class="port-stat-value">—</span></div>
+        <div class="port-stat"><span class="port-stat-label">Day P&amp;L</span><span id="port-daily-pnl" class="port-stat-value">—</span></div>
+        <div class="port-stat"><span class="port-stat-label">Weighted AI Score</span><span id="port-avg-score" class="port-stat-value">—</span></div>
+      </div>
+      <div id="portfolio-rows" class="portfolio-rows"></div>
+    </div>
+
+    <!-- Recommendations tab body -->
+    <div id="port-body-recommendations" class="hidden">
+      <div class="rec-header-row">
+        <p class="portfolio-hint" style="margin:0;">AI analysis of your current holdings — what to trim, add to, or rebalance.</p>
+        <button class="btn btn-primary" onclick="generateRecommendations()" id="rec-generate-btn">⚡ Generate</button>
+      </div>
+      <div id="rec-loading" class="rec-loading hidden">
+        <div class="spinner" style="width:20px;height:20px;border-width:2px;"></div>
+        <span>Analysing portfolio…</span>
+      </div>
+      <div id="rec-content"></div>
+    </div>
+  </div>
+
+  <!-- ── Main content ── -->
+  <main class="container">
+
+    <!-- Column headers -->
+    <div id="table-head" class="table-head hidden">
+      <span class="col-rank">#</span>
+      <span class="col-spark"></span>
+      <span class="col-ticker">Ticker</span>
+      <span class="col-price">Price</span>
+      <span class="col-chg">Day %</span>
+      <span class="col-score">Score</span>
+      <span class="col-pe">P/E</span>
+      <span class="col-rsi">RSI</span>
+      <span class="col-eps">EPS Gr.</span>
+      <span class="col-margin">Margin</span>
+      <span class="col-cap">Mkt Cap</span>
+    </div>
+
+    <div id="loading" class="loading-screen">
+      <div class="spinner"></div>
+      <p>Analysing stocks… <small>(~30 s)</small></p>
+    </div>
+
+    <div id="cards-grid" class="cards-grid hidden"></div>
+
+  </main>
+
+  <!-- ── Legend (collapsed by default) ── -->
+  <section class="legend container">
+    <details>
+      <summary>ℹ️ How the AI Score works</summary>
+      <div class="legend-grid">
+        <div class="legend-item"><span class="pill pill-blue">18%</span> Price Momentum</div>
+        <div class="legend-item"><span class="pill pill-green">18%</span> EPS Growth</div>
+        <div class="legend-item"><span class="pill pill-purple">13%</span> P/E Valuation</div>
+        <div class="legend-item"><span class="pill pill-purple">13%</span> Moving Averages</div>
+        <div class="legend-item"><span class="pill pill-orange">10%</span> Profit Margin</div>
+        <div class="legend-item"><span class="pill pill-orange">10%</span> Debt / Equity</div>
+        <div class="legend-item"><span class="pill pill-red">10%</span> RSI Timing</div>
+        <div class="legend-item"><span class="pill pill-blue">8%</span> Short Interest</div>
+      </div>
+      <p class="disclaimer">⚠️ Educational/informational only — not financial advice. Always do your own research.</p>
+    </details>
+  </section>
+
+  <!-- ── Detail Modal ── -->
+  <div id="modal-overlay" class="modal-overlay hidden" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+      <button class="modal-close" onclick="closeModal(null)">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ── Alerts Config Modal ── -->
+  <div id="alerts-modal-overlay" class="modal-overlay hidden" onclick="closeAlertsModal(event)">
+    <div class="modal" id="alerts-modal" style="max-width:480px;">
+      <button class="modal-close" onclick="closeAlertsModal(null)">✕</button>
+      <div id="alerts-modal-content">
+        <h3 style="margin-bottom:14px;font-size:.95rem;display:flex;align-items:center;gap:8px;">🔔 Price &amp; Score Alerts
+          <span id="alert-active-count" class="alert-active-count hidden">0 active</span>
+        </h3>
+        <div id="alerts-permission-banner" class="alerts-permission-banner hidden">
+          ⚠️ Browser notifications blocked.
+          <button class="btn btn-secondary" style="height:22px;font-size:.72rem;padding:2px 8px;margin-left:6px;" onclick="requestNotificationPermission()">Enable</button>
+        </div>
+        <div id="alerts-list"></div>
+        <div id="alerts-empty" class="alerts-empty">
+          <p>No alerts set yet.</p>
+          <p style="font-size:.75rem;margin-top:4px;">Open any stock card and click <strong>🔔 Set Alert</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Random Ticker floating button ── -->
+  <button id="random-ticker-btn" class="btn btn-random" onclick="randomTicker()" title="Score a random ticker">🎲 Random</button>
+
+  <script src="app.js"></script>
+  <script src="minigame.js"></script>
+</body>
+</html>

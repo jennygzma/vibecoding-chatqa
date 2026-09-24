@@ -96,5 +96,6 @@ chatqa status
 
 ## StockApp annotations
 
-[StockApp](projects/stockapp/README.md) contains 130 researcher-reviewed,
-provenance-checked QA annotations across six Cline trajectories.
+[StockApp](projects/stockapp/README.md) contains the runnable StockPicker AI
+project plus 130 researcher-reviewed, provenance-checked QA annotations across
+six Cline trajectories.
