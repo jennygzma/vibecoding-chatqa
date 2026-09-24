@@ -1,0 +1,1 @@
+Reviewed annotation scope: the initial Bull-or-Bear implementation, redesign into Name That Stock, news and letter hints, Wordle-style feedback, Penny the Bull, anger escalation, overlay placement, and final Score-button wording. Later revisions govern final behavior. Approved by the researcher on 2026-09-24.

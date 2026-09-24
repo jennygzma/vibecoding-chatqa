@@ -1,0 +1,1 @@
+Reviewed annotation scope: initial StockApp architecture and scoring, compact table redesign, Yahoo Finance links, formula modes, Top-N behavior, refresh semantics, theme persistence, and short-interest scoring. Approved by the researcher on 2026-09-24.

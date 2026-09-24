@@ -5,6 +5,7 @@ import logging
 import shutil
 from pathlib import Path
 
+from app.cline_export import export_sessions
 from app.processor import (
     DATA_DIR,
     CHAT_FILENAME,
@@ -79,6 +80,23 @@ def cmd_add(args: argparse.Namespace) -> None:
         shutil.copy2(notes_src, folder / NOTES_FILENAME)
 
     print(f"Uploaded files to {folder}")
+
+
+def cmd_import_cline(args: argparse.Namespace) -> None:
+    folder = _ensure_folder(args.chat_folder)
+    raw_directory = Path(args.raw_dir) if args.raw_dir else folder / "raw"
+    report = export_sessions(
+        [Path(path) for path in args.session_file],
+        data_directory=folder,
+        raw_directory=raw_directory,
+    )
+    print(
+        f"Imported {report['sessions']} Cline sessions: "
+        f"{report['raw_messages']} raw messages, "
+        f"{report['cleaned_messages']} cleaned messages"
+    )
+    print(f"Wrote transcript views to {folder}")
+    print(f"Archived originals in {raw_directory}")
 
 
 def cmd_process(args: argparse.Namespace) -> None:
@@ -212,6 +230,23 @@ def build_parser() -> argparse.ArgumentParser:
     p_add.add_argument("--chat-file", required=True)
     p_add.add_argument("--notes-file")
     p_add.set_defaults(func=cmd_add)
+
+    p_import_cline = sub.add_parser(
+        "import-cline",
+        help="Archive one or more Cline *.messages.json files and build transcript views",
+    )
+    p_import_cline.add_argument("chat_folder")
+    p_import_cline.add_argument(
+        "--session-file",
+        action="append",
+        required=True,
+        help="Path to a Cline *.messages.json export; repeat for multiple sessions",
+    )
+    p_import_cline.add_argument(
+        "--raw-dir",
+        help="Archive directory (defaults to data/<chat-folder>/raw)",
+    )
+    p_import_cline.set_defaults(func=cmd_import_cline)
 
     p_process = sub.add_parser("process", help="Process a chat folder")
     p_process.add_argument("chat_folder")

@@ -1,0 +1,137 @@
+{
+  "qa": [
+    {
+      "question": "What broad visual improvement did the user initially request?",
+      "answer": "More dynamic visuals and animations for StockApp.",
+      "evidence": [
+        "D1:1: \"the visuals are more dynamic and we have some animation for the StockApp\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which two concrete animation features did the user select from the brainstorm?",
+      "answer": "A staggered card slide-in and a continuously updating stream of interesting stocks.",
+      "evidence": [
+        "D1:3: \"Make a stagger card slide in. Actually make it continuously pump out cool sotcks.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How far apart were the stock-card entrance animations staggered?",
+      "answer": "They were staggered 55 milliseconds apart.",
+      "evidence": [
+        "D1:14: \"Cards are staggered **55ms apart**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How often did Live Feed fetch a new random sector and formula combination?",
+      "answer": "Every nine seconds.",
+      "evidence": [
+        "D1:14: \"**Every 9 seconds**, silently fetches a random sector + formula mode combination\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which stock did Live Feed choose from each fetched batch?",
+      "answer": "The highest-scored stock that was not already visible.",
+      "evidence": [
+        "D1:14: \"**Picks the highest-scored stock** from that batch that isn't already visible in the grid\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happened when the Live Feed reached its 30-card cap?",
+      "answer": "Older cards were removed from the bottom with a fade-and-slide-right exit.",
+      "evidence": [
+        "D1:14: \"**Trims old cards** off the bottom gracefully with a fade+slide-right exit when the cap of 30 is hit\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What did pausing Live Feed do?",
+      "answer": "It stopped the feed and reset its UI state.",
+      "evidence": [
+        "D1:14: \"Clicking **`⏸ Pause Feed`** stops everything cleanly and resets all UI state\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did a stock card move when hovered?",
+      "answer": "It shifted four pixels right and scaled up by 1.2 percent.",
+      "evidence": [
+        "D1:24: \"slides right 4px + scales up 1.2%\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which value received the largest hover pop on a stock card?",
+      "answer": "The AI Score, which scaled up by 18 percent.",
+      "evidence": [
+        "D1:24: \"**AI Score** pops scale up **18%** — the biggest number gets the biggest pop\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What were the two possible outcomes of clicking a stock after rejection was introduced?",
+      "answer": "A lucky click opened the detail modal, while a rejected click triggered rejection feedback; each had a 50 percent chance.",
+      "evidence": [
+        "D1:29: \"On a **lucky** click (50%)\"",
+        "D1:29: \"On a **rejected** click (50%)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the app prevent repeated clicks during the rejection shake?",
+      "answer": "It temporarily set the card to `pointer-events: none`.",
+      "evidence": [
+        "D1:29: \"briefly becomes `pointer-events: none` so you can't spam-click through it mid-shake\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What full-screen elements accompanied a rejected stock click?",
+      "answer": "A red vignette, a central DENIED stamp overlay, and a red message bar appeared, while the clicked card also shook.",
+      "evidence": [
+        "D1:34: \"**1. Red Vignette Flash**\"",
+        "D1:34: \"**2. Full-Screen Stamp Overlay**\"",
+        "D1:34: \"**3. Snarky Message Bar**\"",
+        "D1:34: \"The individual card still gets the **red flash + shake** animation simultaneously\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Did the denial laugh track require an audio file or CDN?",
+      "answer": "No. It was synthesized with the browser's Web Audio API.",
+      "evidence": [
+        "D1:37: \"**Zero files, zero CDN, zero permissions.** It's entirely synthesized live using the browser's built-in **Web Audio API**.\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How many overlapping voices were used for the synthesized laugh track?",
+      "answer": "Six overlapping voices.",
+      "evidence": [
+        "D1:37: \"built from **6 overlapping voices**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the requested duration of the red denial screen change?",
+      "answer": "It was initially described as fading over 1.4 seconds, then shortened so it was fully gone within exactly one second.",
+      "evidence": [
+        "D1:41: \"fades out over the remaining 1.4 seconds\"",
+        "D1:43: \"fully gone within exactly **1 second**\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "What color was used for the full-screen denial flash?",
+      "answer": "A deep emergency red with RGB values 200, 20, and 12.",
+      "evidence": [
+        "D1:41: \"solid `rgb(200, 20, 12)` — a deep emergency red\""
+      ],
+      "category": 4
+    }
+  ]
+}

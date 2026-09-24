@@ -1,0 +1,250 @@
+{
+  "qa": [
+    {
+      "question": "What information does the StockApp portfolio tracker save and summarize?",
+      "answer": "It saves the share count for each ticker and summarizes total portfolio value, daily profit or loss, and a value-weighted AI score.",
+      "evidence": [
+        "D1:21: \"Typing a share count **auto-saves to `localStorage`** (key: `sp_portfolio`)\"",
+        "D1:21: \"**Total Portfolio Value**\"",
+        "D1:21: \"**Day P&L**\"",
+        "D1:21: \"**Weighted AI Score**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How is the portfolio's weighted AI score calculated?",
+      "answer": "Each holding's AI score is weighted by that holding's value.",
+      "evidence": [
+        "D1:21: \"value-weighted average of each holding's AI score\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does StockApp limit noise and storage growth in score history?",
+      "answer": "It skips entries within five minutes of one another and retains at most 60 points per ticker.",
+      "evidence": [
+        "D1:21: \"with a 5-minute dedup guard to prevent noise from rapid refreshes. Up to 60 data points are kept per ticker\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How is a ticker's historical AI score displayed?",
+      "answer": "The detail modal renders a pure Canvas 2D line chart with a gradient, score line, selected labeled points, and date labels.",
+      "evidence": [
+        "D1:21: \"a **canvas line chart** rendered in pure Canvas 2D (no library)\"",
+        "D1:21: \"gradient fill, score line, labeled dots at first/last/min/max points, and date labels on the x-axis\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which two alert conditions could initially be configured from a stock modal?",
+      "answer": "A current price at or above a target and an AI score at or above a threshold.",
+      "evidence": [
+        "D1:21: \"**Target Price ($)** — fires when `currentPrice ≥ target`\"",
+        "D1:21: \"**Score Threshold** — fires when `score ≥ threshold`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happened when an initial saved alert was triggered?",
+      "answer": "StockApp showed a persistent gold banner at the top listing the triggered conditions, with a dismiss button.",
+      "evidence": [
+        "D1:21: \"shows a persistent **gold alert banner** at the top of the page listing all triggered conditions with a dismiss button\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which three new market groups were explicitly added to StockApp's universe?",
+      "answer": "International ADRs, ETFs, and crypto-adjacent stocks.",
+      "evidence": [
+        "D1:21: \"**New sector — International ADRs:**\"",
+        "D1:21: \"**New sector — ETFs:**\"",
+        "D1:21: \"**New sector — Crypto-Adjacent:**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does the custom-ticker lookup retrieve a score?",
+      "answer": "It calls the existing `/api/stock/<ticker>` endpoint and opens the result in the full detail modal.",
+      "evidence": [
+        "D1:21: \"It calls the existing `/api/stock/<ticker>` endpoint\"",
+        "D1:21: \"opens the full detail modal\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which action groups can the portfolio recommendation system assign to holdings?",
+      "answer": "Trim, rebalance, add, and hold.",
+      "evidence": [
+        "D1:34: \"**Action cards** grouped into 🔴 Trim · 🟡 Rebalance · 🟢 Add · ⚪ Hold\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How is the recommendation tab's portfolio health score computed?",
+      "answer": "It starts with the weighted AI score, subtracts up to 20 points for sector concentration, and subtracts up to 10 points for overbought RSI.",
+      "evidence": [
+        "D1:34: \"**Portfolio health score** (0–100) = weighted AI score − sector concentration penalty (up to −20) − overbought RSI penalty (up to −10)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When does the recommendation system flag a portfolio for sector rebalancing?",
+      "answer": "It flags the portfolio when any sector exceeds 45 percent of total value.",
+      "evidence": [
+        "D1:34: \"**Rebalance flags** when any sector exceeds 45% of total value\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What caused the slow cold-start analysis before the backend optimization?",
+      "answer": "The backend fetched roughly 130 tickers sequentially, with each ticker taking about one to two seconds, so an all-sector request could take two to four minutes.",
+      "evidence": [
+        "D1:44: \"**sequentially per ticker** — for \"All Sectors\" that's ~130 tickers × ~1–2s each\"",
+        "D1:44: \"= **2–4 minutes**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What parallelism was used in the optimized ticker-scoring backend?",
+      "answer": "A `ThreadPoolExecutor` fetched tickers in parallel with 20 worker threads.",
+      "evidence": [
+        "D1:189: \"**20-thread parallel fetch** via `ThreadPoolExecutor` in `score_tickers_parallel()`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the optimized backend separate cache lifetimes?",
+      "answer": "Price and technical data used a five-minute TTL, while fundamentals such as P/E, EPS, margins, and debt/equity used a four-hour TTL.",
+      "evidence": [
+        "D1:189: \"**Two-tier TTL cache**: 5-min for price/technical data, **4-hour for fundamentals** (PE, EPS, margins)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What did StockApp's background pre-warm do after server startup?",
+      "answer": "After a three-second delay, it fetched 20 popular tickers in parallel.",
+      "evidence": [
+        "D1:189: \"Fires 3 seconds after Flask boots\"",
+        "D1:189: \"Pre-fetches 20 popular tickers in parallel\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What did the agent recommend doing before adding another StockApp feature?",
+      "answer": "Run an end-to-end live test of the recommendations tab by starting `app_new.py`, adding holdings, generating recommendations, and checking that the results render.",
+      "evidence": [
+        "D1:193: \"**Feature 8 (Recommendations tab) has never been tested end-to-end**\"",
+        "D1:193: \"Restart VS Code / open a terminal manually and run `python3 app_new.py`\"",
+        "D1:193: \"Verify the health card, concentration bars, and action cards actually render\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did StockApp alerts evolve from their initial implementation to the later notification system?",
+      "answer": "They changed from a gold in-page banner checked on page load or refresh to 30-second polling that could issue browser notifications and an audio ping.",
+      "evidence": [
+        "D1:21: \"On **every page load / refresh**, `checkAlerts()` compares live data against saved alerts and shows a persistent **gold alert banner**\"",
+        "D1:239: \"Every 30 seconds the app silently checks each alert — when triggered you get a browser notification + audio ping\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "Which alert threshold types did the later polling engine support?",
+      "answer": "Price above, price below, and score above thresholds.",
+      "evidence": [
+        "D1:239: \"checks `price_above` / `price_below` / `score_above` thresholds\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What visual burst occurs when a real alert threshold is crossed?",
+      "answer": "Ten emojis—mostly bells with some service bells, sparkles, and money—fan outward from the toolbar bell and remove themselves after finishing.",
+      "evidence": [
+        "D1:247: \"Spawns **10 emojis**: mostly 🔔 with a couple of 🛎️ ✨ 💰 sprinkled in for variety\"",
+        "D1:247: \"Each `<span>` removes itself from the DOM after it finishes\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What layers make up the later annoying alert sound?",
+      "answer": "Four rapid chirps combine a sawtooth oscillator, a detuned square oscillator, and a 20 Hz square-wave LFO, followed by a descending sawtooth screech.",
+      "evidence": [
+        "D1:252: \"**4 rapid chirps**\"",
+        "D1:252: \"**Sawtooth osc** at 880→660 Hz\"",
+        "D1:252: \"**Detuned square osc** at 893→671 Hz\"",
+        "D1:252: \"**20 Hz square LFO**\"",
+        "D1:252: \"**Descending screech tail**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How is the mute-alarm chase button animated?",
+      "answer": "It fades between 0.25 and 1.0 opacity and teleports to unpredictable random positions around the screen.",
+      "evidence": [
+        "D1:261: \"Opacity range is 0.25–1.0\"",
+        "D1:261: \"random 600–1200ms delay each time, so the rhythm is unpredictable\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What action stops the chase alarm and removes its interface?",
+      "answer": "Clicking the moving mute button closes the AudioContext and tears down the chase overlay.",
+      "evidence": [
+        "D1:261: \"calls `audioCtx.close()` which immediately destroys the Web Audio graph and cuts all sound mid-note\"",
+        "D1:261: \"calls `_hideMuteChase()` to tear down the UI\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the mute button's teleport timing change after the 20-second deadline was added?",
+      "answer": "It changed from a random 600–1200 millisecond interval to an accelerating interval that shrinks from about 900 to 150 milliseconds as time runs out.",
+      "evidence": [
+        "D1:261: \"random 600–1200ms delay each time\"",
+        "D1:269: \"900ms  →  150ms  as the clock runs down\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "What happens if the user fails to mute the alarm within 20 seconds?",
+      "answer": "The page runs a four-phase explosion: a flash, 70 shrapnel emojis, cards flung off-screen, and a game-over screen with a Restore Page button.",
+      "evidence": [
+        "D1:269: \"A `setTimeout(..., 20_000)` fires `_explodePage(audioCtx)`\"",
+        "D1:269: \"**2 — Shrapnel**\"",
+        "D1:269: \"70 emoji particles\"",
+        "D1:269: \"**3 — Card fling**\"",
+        "D1:269: \"**4 — Game over screen**\"",
+        "D1:269: \"**↺ Restore Page** button\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does the mute-alarm countdown signal increasing urgency?",
+      "answer": "At ten seconds or less it turns gold; at five seconds or less it turns red and flashes rapidly.",
+      "evidence": [
+        "D1:269: \"**≤ 10s** → turns **gold**\"",
+        "D1:269: \"**≤ 5s** → turns **red and flashes** rapidly\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the mute-chase and explosion color scheme change?",
+      "answer": "It changed from red accents to a warm brown palette, with lighter brown-orange and tan variants for danger and hover states.",
+      "evidence": [
+        "D1:269: \"The red banner label\"",
+        "D1:275: \"`#8B5E3C` — saddle brown\"",
+        "D1:275: \"`#c0703a` — lighter brown-orange\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How does the final animated bump travel around the mute button?",
+      "answer": "A bright roughly 55-degree arc in a conic gradient rotates clockwise around the perimeter every 1.8 seconds.",
+      "evidence": [
+        "D1:280: \"the bright ~55° arc glides continuously clockwise around the entire perimeter\"",
+        "D1:280: \"over **1.8 seconds**, linear, infinite\""
+      ],
+      "category": 4
+    }
+  ]
+}

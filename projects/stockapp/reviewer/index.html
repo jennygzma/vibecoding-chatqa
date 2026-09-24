@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Review StockApp trajectory annotations and their exact evidence." />
+    <title>StockApp Annotation Review</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loading" class="loading">Loading annotation drafts…</div>
+    <div id="app" class="app" hidden>
+      <header class="topbar">
+        <div class="brand">
+          <span class="eyebrow">VIBECODING · CHATQA</span>
+          <h1>StockApp review</h1>
+        </div>
+        <div class="top-progress" aria-label="Overall review progress">
+          <div class="progress-copy"><strong id="reviewed-count">0 / 0</strong><span>reviewed</span></div>
+          <div class="progress-track"><span id="progress-fill"></span></div>
+        </div>
+        <div class="header-actions">
+          <button class="button ghost" id="import-button">Import</button>
+          <button class="button primary" id="export-button">Export review</button>
+          <input id="import-file" type="file" accept="application/json" hidden />
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="sidebar">
+          <div class="sidebar-heading">
+            <span>Trajectories</span>
+            <button id="next-unreviewed" class="text-button">Next open</button>
+          </div>
+          <nav id="trajectory-list" aria-label="Trajectory list"></nav>
+          <div class="filter-group">
+            <span class="filter-label">Show</span>
+            <div class="segmented" id="status-filter">
+              <button data-filter="all" class="active">All</button>
+              <button data-filter="unreviewed">Open</button>
+              <button data-filter="approved">Approved</button>
+              <button data-filter="needs-edit">Edit</button>
+              <button data-filter="rejected">Rejected</button>
+            </div>
+          </div>
+          <div class="shortcut-card">
+            <strong>Keyboard</strong>
+            <span><kbd>A</kbd> approve</span>
+            <span><kbd>E</kbd> needs edit</span>
+            <span><kbd>R</kbd> reject</span>
+            <span><kbd>←</kbd><kbd>→</kbd> navigate</span>
+          </div>
+        </aside>
+
+        <main class="review-pane">
+          <div class="item-toolbar">
+            <div>
+              <span id="trajectory-title" class="trajectory-title"></span>
+              <span id="item-counter" class="item-counter"></span>
+            </div>
+            <div class="nav-actions">
+              <button class="icon-button" id="previous-item" aria-label="Previous annotation">←</button>
+              <button class="icon-button" id="next-item" aria-label="Next annotation">→</button>
+            </div>
+          </div>
+
+          <section class="annotation-card" id="annotation-card">
+            <div class="annotation-meta">
+              <span id="annotation-id"></span>
+              <span id="decision-pill" class="decision-pill unreviewed">Unreviewed</span>
+            </div>
+
+            <label class="field">
+              <span>Question</span>
+              <textarea id="question-input" rows="2"></textarea>
+            </label>
+
+            <label class="field">
+              <span>Answer</span>
+              <textarea id="answer-input" rows="3"></textarea>
+            </label>
+
+            <label class="field category-field">
+              <span>Category</span>
+              <select id="category-input">
+                <option value="1">1 · Multi-hop</option>
+                <option value="2">2 · Temporal</option>
+                <option value="3">3 · Open-domain</option>
+                <option value="4">4 · Single-hop</option>
+                <option value="5">5 · Adversarial</option>
+              </select>
+            </label>
+
+            <div class="evidence-section">
+              <div class="section-title"><span>Evidence</span><small>Exact source context</small></div>
+              <div id="evidence-list"></div>
+            </div>
+
+            <label class="field notes-field">
+              <span>Reviewer note <small>optional</small></span>
+              <textarea id="notes-input" rows="2" placeholder="Why does this need revision?"></textarea>
+            </label>
+
+            <div class="decision-actions">
+              <button class="decision reject" data-decision="rejected"><span>R</span> Reject</button>
+              <button class="decision edit" data-decision="needs-edit"><span>E</span> Needs edit</button>
+              <button class="decision approve" data-decision="approved"><span>A</span> Approve & next</button>
+            </div>
+          </section>
+        </main>
+
+        <aside class="queue-pane">
+          <div class="queue-heading"><span>Annotation queue</span><strong id="queue-count"></strong></div>
+          <div id="annotation-queue"></div>
+        </aside>
+      </div>
+
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

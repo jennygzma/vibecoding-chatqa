@@ -1,0 +1,197 @@
+{
+  "qa": [
+    {
+      "question": "What did the user ask the agent to establish before fixing stock retrieval?",
+      "answer": "Whether stock retrieval was working at all.",
+      "evidence": [
+        "D1:1: \"First figure out if it's working\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Was StockApp's stock retrieval completely nonfunctional?",
+      "answer": "No. The backend and yfinance were working, but the returned data contained three bugs.",
+      "evidence": [
+        "D1:12: \"The stock retrieval **was running**\"",
+        "D1:12: \"but had **3 data bugs**\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "Why was RSI null for retrieved stocks?",
+      "answer": "A trailing NaN row for the unfinished trading session contaminated the price calculations.",
+      "evidence": [
+        "D1:7: \"`yfinance` now appends a **trailing NaN row** for today's (not-yet-closed) session\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which calculations were affected by the trailing NaN price?",
+      "answer": "RSI, momentum, moving-average signals, the current-price check, and the sparkline were affected.",
+      "evidence": [
+        "D1:7: \"**Same root cause also breaks:** `compute_momentum_score()`, `moving_average_signal()`, `current_price` check, and the sparkline\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was the trailing-NaN stock-history problem fixed?",
+      "answer": "The code changed the closing-price series to `hist[\"Close\"].dropna()`.",
+      "evidence": [
+        "D1:7: \"prices = hist[\"Close\"].dropna()\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why was dividend yield reported at 100 times its correct value?",
+      "answer": "The code multiplied a yfinance value that was already expressed as a percentage by 100 again.",
+      "evidence": [
+        "D1:7: \"`yfinance` already returns `dividendYield` as a **percentage**\"",
+        "D1:7: \"The code multiplies by 100 again\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why could a 0.23 percent daily move appear as 22.7 percent?",
+      "answer": "A heuristic multiplied percentage values below one by 100 even though yfinance already returned full percentages.",
+      "evidence": [
+        "D1:7: \"a 0.23% move gets multiplied to `22.7%`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How long could the StockApp loading spinner remain visible while all tickers were fetched?",
+      "answer": "Approximately 30 seconds.",
+      "evidence": [
+        "D1:15: \"loading spinner for ~30 seconds\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which animation technique replaced destructive card re-rendering?",
+      "answer": "The FLIP technique: First, Last, Invert, Play.",
+      "evidence": [
+        "D1:25: \"**FLIP animation** (`F`irst → `L`ast → `I`nvert → `P`lay)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why were existing card DOM nodes reused during reordering?",
+      "answer": "Reusing them allowed smooth positional animation and kept their sparklines intact.",
+      "evidence": [
+        "D1:19: \"card DOM nodes are **reused**\"",
+        "D1:19: \"so sparklines stay intact too\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How were new and removed cards handled during Top-N changes?",
+      "answer": "New cards slid in from the right, while removed cards disappeared immediately.",
+      "evidence": [
+        "D1:25: \"new cards entering slide in from the right; cards leaving are removed instantly\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the ticker-character scramble resolve?",
+      "answer": "Characters cycled every 45 milliseconds and resolved from left to right.",
+      "evidence": [
+        "D1:34: \"at **45ms per frame**\"",
+        "D1:34: \"Characters **resolve left-to-right**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When did the ticker scramble run?",
+      "answer": "It ran after initial loading and again after each sort or filter change.",
+      "evidence": [
+        "D1:34: \"Runs once on **initial page load**\"",
+        "D1:34: \"again after every **sort/filter change**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was a rainbow hue assigned to each stock card?",
+      "answer": "The hue was calculated as the card's index divided by the visible total, multiplied by 360.",
+      "evidence": [
+        "D1:43: \"`hue = (index / total) * 360`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happened to card colors when the stocks were re-sorted?",
+      "answer": "Their hues changed with their new positions so the rainbow still ran from top to bottom.",
+      "evidence": [
+        "D1:43: \"their hues update to match the new order\"",
+        "D1:43: \"the rainbow always runs top to bottom regardless of sort\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What backend bottleneck motivated in-memory caching?",
+      "answer": "Every `/api/top-stocks` request fetched every ticker sequentially from yfinance, taking more than 30 seconds.",
+      "evidence": [
+        "D1:45: \"Every `GET /api/top-stocks` call fetches **every ticker sequentially** from yfinance\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What was the initial cache's granularity and lifetime?",
+      "answer": "It cached each ticker separately for five minutes.",
+      "evidence": [
+        "D1:63: \"Each ticker is cached individually\"",
+        "D1:63: \"TTL is **5 minutes**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Did changing scoring modes require another yfinance request after caching?",
+      "answer": "No. Cached subscores were reweighted with arithmetic instead.",
+      "evidence": [
+        "D1:63: \"just re-applies the new weights mathematically — instant, no network at all\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How much faster was the measured warm cache fetch than the cold fetch?",
+      "answer": "The warm fetch took 8 ms versus 445 ms cold, reported as 55 times faster.",
+      "evidence": [
+        "D1:63: \"Cold fetch (AAPL, first time) | **445ms**\"",
+        "D1:63: \"Warm fetch (AAPL, cached) | **8ms** — **55× faster**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which cache structure ultimately replaced the plain dictionary?",
+      "answer": "A `collections.OrderedDict` implementing a TTL-aware LRU cache.",
+      "evidence": [
+        "D1:63: \"_cache = { \"AAPL\"\"",
+        "D1:69: \"**`_cache: dict` → `_cache: OrderedDict`**\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How did the final cache evict entries when it exceeded capacity?",
+      "answer": "It removed the least recently used entry from the front after exceeding 200 entries.",
+      "evidence": [
+        "D1:69: \"When `len(_cache) > CACHE_MAXSIZE` (200), `_cache.popitem(last=False)` removes the front entry\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What happened to stale LRU cache entries when accessed?",
+      "answer": "They were deleted immediately so they did not occupy one of the 200 slots.",
+      "evidence": [
+        "D1:69: \"`_cache_get` deletes a stale entry on first contact\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How many stocks does StockApp display by default after the final change?",
+      "answer": "Twenty stocks.",
+      "evidence": [
+        "D1:71: \"The page will now load showing 20 stocks by default.\""
+      ],
+      "category": 4
+    }
+  ]
+}

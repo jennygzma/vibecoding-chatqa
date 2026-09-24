@@ -1,0 +1,170 @@
+{
+  "qa": [
+    {
+      "question": "What was the original purpose of StockApp?",
+      "answer": "To provide a local web app that recommends stocks to buy.",
+      "evidence": [
+        "D1:1: \"Build a local web app that gives me the best stocks to buy.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How many stocks and sectors did the initial StockApp backend score?",
+      "answer": "It scored 55 stocks across six sectors.",
+      "evidence": [
+        "D1:11: \"scores 55 real stocks across 6 sectors using live Yahoo Finance data\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which seven signals were used by StockApp's initial scoring formula?",
+      "answer": "Price momentum, EPS growth, moving averages, valuation/P-E, profit margin, debt/equity, and RSI.",
+      "evidence": [
+        "D1:11: \"Price Momentum\"",
+        "D1:11: \"EPS Growth\"",
+        "D1:11: \"Moving Averages\"",
+        "D1:11: \"Valuation (P/E)\"",
+        "D1:11: \"Profit Margin\"",
+        "D1:11: \"Debt/Equity\"",
+        "D1:11: \"RSI\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why did the initial StockApp load take about 30 seconds?",
+      "answer": "It fetched live data for 55 stocks.",
+      "evidence": [
+        "D1:11: \"First load takes ~30 seconds (fetching 55 stocks).\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Was StockApp presented as financial advice?",
+      "answer": "No. It was explicitly described as educational or informational only.",
+      "evidence": [
+        "D1:11: \"This is for **educational/informational purposes only** — not financial advice.\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How did the compact redesign change each stock card?",
+      "answer": "It replaced roughly 420-pixel-tall cards with 44-pixel table rows.",
+      "evidence": [
+        "D1:25: \"Each stock card | ~420px tall (3-column grid) | **44px tall row**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which columns disappear at StockApp's responsive breakpoints?",
+      "answer": "EPS, margin, and market cap hide below 900px; P/E and RSI also hide below 600px.",
+      "evidence": [
+        "D1:25: \"at 900px the EPS/Margin/Cap columns hide; at 600px P/E and RSI also hide\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Where does the ticker link in the table view lead?",
+      "answer": "It opens that ticker's Yahoo Finance quote page in a new tab.",
+      "evidence": [
+        "D1:31: \"linking to `https://finance.yahoo.com/quote/NVDA` that opens in a new tab\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why does the Yahoo Finance ticker link stop click propagation?",
+      "answer": "So clicking the ticker opens Yahoo Finance without also opening the stock-detail modal.",
+      "evidence": [
+        "D1:31: \"prevents the link click from also triggering the row's modal\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which formula modes were introduced when randomness was added?",
+      "answer": "Balanced, momentum, value, quality, technical, and random modes were available.",
+      "evidence": [
+        "D1:49: \"`balanced`\"",
+        "D1:49: \"`momentum`\"",
+        "D1:49: \"`value`\"",
+        "D1:49: \"`quality`\"",
+        "D1:49: \"`technical`\"",
+        "D1:49: \"`random`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How are weights produced in StockApp's random formula mode?",
+      "answer": "They are sampled from a symmetric Dirichlet distribution, clamped to per-signal bounds, and renormalized to sum to one.",
+      "evidence": [
+        "D1:49: \"samples from a symmetric Dirichlet(α=2) distribution, clamps each weight to its bounds, then renormalises to guarantee sum = 1.0 exactly\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which endpoints accept the formula-mode query parameter?",
+      "answer": "Both `/api/top-stocks` and `/api/stock/<ticker>` accept `?mode=`.",
+      "evidence": [
+        "D1:49: \"`/api/top-stocks` — accepts `?mode=`\"",
+        "D1:49: \"`/api/stock/<ticker>` — also accepts `?mode=`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why did selecting Top 20 originally show only ten stocks?",
+      "answer": "The backend sliced the response to its default `n` value, so the browser never received more than ten items.",
+      "evidence": [
+        "D1:68: \"The backend was slicing results to `n` before sending them — so `stockData` in the browser only ever contained **at most 10 items**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was the Top 20 display bug fixed?",
+      "answer": "The backend began returning all scored stocks, while the frontend sorted and sliced the requested Top-N locally.",
+      "evidence": [
+        "D1:68: \"the backend now always returns **all scored stocks**\"",
+        "D1:68: \"`reRender()` now reads `top-n` itself and does `.slice(0, n)` after sorting\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Does changing Top-N or sort order trigger a backend refresh in the revised UI?",
+      "answer": "No. Both use data already held in memory.",
+      "evidence": [
+        "D1:72: \"**Top 5 / 10 / 15 / 20** and **Sort** → instant, no network call (already in memory)\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "Which control became the only action that fetched fresh StockApp data?",
+      "answer": "The Refresh button became the only control that hits the backend.",
+      "evidence": [
+        "D1:72: \"**↻ Refresh** → only thing that hits the backend\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How is the selected light or dark theme preserved?",
+      "answer": "The choice is saved to localStorage and restored on page load.",
+      "evidence": [
+        "D1:81: \"saves the choice to `localStorage`\"",
+        "D1:81: \"restores the saved preference so the chosen mode persists across sessions and refreshes\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which statistic became the eighth scoring signal?",
+      "answer": "Short interest became the eighth signal.",
+      "evidence": [
+        "D1:97: \"`\"short\"` added as the 8th signal\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does the short-interest curve treat values above 30 percent?",
+      "answer": "It assigns a score of 40 and interprets the stock as a possible value trap.",
+      "evidence": [
+        "D1:97: \"| > 30% | 40 | Extreme — possible value trap |\""
+      ],
+      "category": 4
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Reviewed annotation scope: Random button selection, teleporting, the temporary five-click and invisible variants, the later continuous float/pause/spin/fade behavior, and the invalid-JSON lookup fix. Later revisions govern final behavior. Approved by the researcher on 2026-09-24.

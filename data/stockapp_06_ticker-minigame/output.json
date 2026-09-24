@@ -1,0 +1,214 @@
+{
+  "qa": [
+    {
+      "question": "What feature did the user initially request for StockApp?",
+      "answer": "A stock-ticker minigame within the existing application.",
+      "evidence": [
+        "D1:1: \"Let's make a stock ticker minigame within the stock app\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What was the goal of the minigame's first Bull or Bear version?",
+      "answer": "Players guessed whether a stock would move up or down from its recent data.",
+      "evidence": [
+        "D1:29: \"Guess whether each stock will go **UP 📈** or **DOWN 📉** based on its recent data.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the minigame concept change after the user's correction?",
+      "answer": "It changed from predicting price direction to identifying a ticker from stock statistics and clues.",
+      "evidence": [
+        "D1:29: \"Guess whether each stock will go **UP 📈** or **DOWN 📉**\"",
+        "D1:30: \"give u some numbers about the stock and u have to guess the ticker\"",
+        "D1:48: \"given stats/numbers about a stock, guess its ticker\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "What is the final goal of Name That Stock?",
+      "answer": "Identify the stock's ticker using progressively revealed statistics and clues.",
+      "evidence": [
+        "D1:48: \"**given stats/numbers about a stock, guess its ticker**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "In what order are the minigame's statistical clues revealed?",
+      "answer": "Sector, market cap, P/E, RSI, 52-week range, EPS growth, profit margin, debt/equity, sparkline, then dividend yield.",
+      "evidence": [
+        "D1:48: \"Sector → Market Cap → P/E Ratio → RSI → 52-Week Range → EPS Growth → Profit Margin → Debt/Equity → Sparkline chart → Dividend Yield\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How many points are available when guessing from only the sector clue?",
+      "answer": "Five hundred points.",
+      "evidence": [
+        "D1:48: \"| 1 (sector only) | **500** |\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How many rounds are played before the Name That Stock game-over screen?",
+      "answer": "Seven rounds.",
+      "evidence": [
+        "D1:48: \"After 7 rounds → game over screen\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which backend route supplies a news hint for the minigame?",
+      "answer": "`GET /api/minigame/hint?ticker=AAPL`.",
+      "evidence": [
+        "D1:65: \"**`GET /api/minigame/hint?ticker=AAPL`**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does the news-hint endpoint avoid revealing the answer?",
+      "answer": "It removes ticker symbols from article titles and summaries and replaces them with a placeholder.",
+      "evidence": [
+        "D1:65: \"**Scrubs the ticker symbol** from the title and summary\"",
+        "D1:65: \"Auto-scrubbed to `[?]` so it doesn't spoil the answer\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What is the point penalty for using a news hint?",
+      "answer": "Seventy-five points are deducted from the current prize.",
+      "evidence": [
+        "D1:65: \"**`HINT_PENALTY = 75`**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Can a player use multiple news hints during one round?",
+      "answer": "No. Only one news hint is allowed per round.",
+      "evidence": [
+        "D1:65: \"| One hint per round | Button replaced by \"Hint used\" label once clicked |\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "In what order are ticker letters revealed by repeated hints?",
+      "answer": "First letter, last letter, then the middle letters from left to right.",
+      "evidence": [
+        "D1:78: \"Priority order: **first → last → middle left-to-right**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When does the first ticker letter appear after requesting a hint?",
+      "answer": "Immediately when the hint button is clicked, before the news request finishes.",
+      "evidence": [
+        "D1:78: \"Calls `_revealNextLetter(ticker)` **immediately** when the button is clicked, before the network request\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How are exact and misplaced letters displayed after a wrong ticker guess?",
+      "answer": "Exact-position letters are green, and letters present in the wrong position are yellow or gold.",
+      "evidence": [
+        "D1:96: \"exact position matches → `'correct'` (green)\"",
+        "D1:96: \"wrong position → `'present'` (yellow)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Does an incorrect ticker guess immediately end the round?",
+      "answer": "No. The guess is saved to history and the player may continue guessing.",
+      "evidence": [
+        "D1:96: \"**Wrong guess** → `answered` stays `false`\"",
+        "D1:96: \"player can keep guessing\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "How does the letter-scoring algorithm handle duplicate letters?",
+      "answer": "It uses two passes and consumes matched target letters so duplicates are counted correctly.",
+      "evidence": [
+        "D1:96: \"Standard Wordle two-pass algorithm\"",
+        "D1:96: \"consume from target pool to handle duplicates correctly\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Who is the minigame mascot and where does she appear?",
+      "answer": "Penny the Bull appears in the bottom-right of the minigame overlay.",
+      "evidence": [
+        "D1:116: \"**Penny** is a cute mascot character who lives in the bottom-right corner of the minigame overlay\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why does Penny persist when the minigame card re-renders?",
+      "answer": "She lives outside the card's DOM.",
+      "evidence": [
+        "D1:116: \"outside the card's DOM so she **persists across all re-renders**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does Penny respond to green or yellow feedback from a wrong guess?",
+      "answer": "Green matches trigger her close or warm response, while yellow-only matches trigger guidance that the right letters are in the wrong places.",
+      "evidence": [
+        "D1:116: \"Wrong guess with ≥1 🟩 green\"",
+        "D1:116: \"Wrong guess with yellows only\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How does Penny's anger escalate across repeated wrong guesses?",
+      "answer": "The first wrong guess shows mad1, the second mad2, and the third or later guesses trigger mad3 with a rage-shake.",
+      "evidence": [
+        "D1:130: \"| 1st wrong | `mad1`\"",
+        "D1:130: \"| 2nd wrong | `mad2`\"",
+        "D1:130: \"| 3rd+ wrong | `mad3`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "When does Penny's wrong-guess anger counter reset?",
+      "answer": "It resets to zero at the start of every new round.",
+      "evidence": [
+        "D1:130: \"`wrongStreak` (resets to 0 at the start of each new round)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Is the ticker minigame the main StockApp interface?",
+      "answer": "No. It is an optional modal overlay launched from a toolbar button, while the stock-analysis dashboard remains primary.",
+      "evidence": [
+        "D1:134: \"The minigame is correctly a sidebar/modal — not the main focus.\"",
+        "D1:134: \"the stock analysis dashboard remains the **primary focus**\""
+      ],
+      "category": 5
+    },
+    {
+      "question": "Where is the minigame trigger located?",
+      "answer": "It is a Minigame button in the top-right toolbar alongside the other utility controls.",
+      "evidence": [
+        "D1:134: \"A single `🔍 Minigame` button lives in the **top-right toolbar**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How can the minigame overlay be dismissed?",
+      "answer": "With Escape or the close button.",
+      "evidence": [
+        "D1:134: \"dismissed with Escape or the ✕ button\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What text remains on the scoring button after its arrow was removed?",
+      "answer": "The button reads “Score.”",
+      "evidence": [
+        "D1:136: \"the button now just reads **\"Score\"**\""
+      ],
+      "category": 4
+    }
+  ]
+}

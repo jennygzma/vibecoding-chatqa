@@ -1,0 +1,28 @@
+{
+  "status": "approved",
+  "candidate_items": 130,
+  "candidate_citations": 207,
+  "reviewed_items": 130,
+  "approved_items": 130,
+  "rejected_items": 0,
+  "needs_edit_items": 0,
+  "reviewer": "researcher",
+  "approval_date": "2026-09-24",
+  "included_trajectories": [
+    "stockapp_01_main-build",
+    "stockapp_02_portfolio-tracker",
+    "stockapp_03_dynamic-visuals",
+    "stockapp_04_random-ticker",
+    "stockapp_05_stock-retrieval-cache",
+    "stockapp_06_ticker-minigame"
+  ],
+  "excluded_trajectories": {},
+  "required_review_checks": [
+    "Question is useful, natural, and self-contained.",
+    "Answer contains no claim beyond its cited evidence.",
+    "Every quoted excerpt is exact at its D1:N location.",
+    "Later revisions override superseded intermediate behavior.",
+    "Category reflects the reasoning required.",
+    "Question is not a semantic duplicate of another candidate."
+  ]
+}

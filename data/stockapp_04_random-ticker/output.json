@@ -1,0 +1,173 @@
+{
+  "qa": [
+    {
+      "question": "Where was the Random ticker button initially placed?",
+      "answer": "Next to the Score button in the toolbar's custom-ticker group.",
+      "evidence": [
+        "D1:8: \"added right next to the existing **Score ↗** button inside the `.custom-ticker-group`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the initial Random ticker action choose a stock?",
+      "answer": "It chose from the currently loaded `stockData`, with a fallback list of 30 well-known tickers if data had not loaded.",
+      "evidence": [
+        "D1:8: \"**Picks from `stockData`**\"",
+        "D1:8: \"**Falls back to a hardcoded list** of 30 well-known tickers\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which existing function did the Random ticker feature reuse?",
+      "answer": "It called `lookupCustomTicker()` to fetch the score and open the detail modal.",
+      "evidence": [
+        "D1:8: \"calls the existing `lookupCustomTicker()` function\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What movement did the user first request for the Random button?",
+      "answer": "The user wanted it to change location after every press.",
+      "evidence": [
+        "D1:9: \"the button changes locations everytime we press it\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was the teleporting button kept on screen?",
+      "answer": "Its position was calculated within viewport bounds with eight pixels of padding.",
+      "evidence": [
+        "D1:16: \"within the safe viewport bounds (8 px padding on all sides so it never clips off-screen)\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How many clicks were required before the gated Random button performed a stock lookup?",
+      "answer": "Five clicks.",
+      "evidence": [
+        "D1:20: \"On the **5th click** → reset counter, restore label, and fire the actual lookup\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What labels appeared during the first four gated clicks?",
+      "answer": "The label counted down from “4 more” through “1 more.”",
+      "evidence": [
+        "D1:20: \"`🎲 4 more…` → `🎲 3 more…` → `🎲 2 more…` → `🎲 1 more…`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was the Random button made visually transparent?",
+      "answer": "Its background, text color, and border were all made transparent.",
+      "evidence": [
+        "D1:26: \"**`background: transparent`**\"",
+        "D1:26: \"**`color: transparent`**\"",
+        "D1:26: \"**`border: 1px solid transparent`**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why was the Random button's hover shadow removed?",
+      "answer": "Because the shared hover shadow would reveal the otherwise invisible button.",
+      "evidence": [
+        "D1:24: \"The `.btn:hover` adds a `box-shadow` which would give away the button's location.\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the Random button's behavior change after the invisible five-click version?",
+      "answer": "The five-click gate and click teleporting were removed, the button became visible again, and it floated continuously.",
+      "evidence": [
+        "D1:26: \"The button is now completely invisible\"",
+        "D1:31: \"Restored the visible button colors\"",
+        "D1:31: \"Replaced all the teleport/click-counter logic with a simple **physics loop**\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "What browser mechanism drove the continuously floating Random button?",
+      "answer": "A `requestAnimationFrame` physics loop.",
+      "evidence": [
+        "D1:31: \"runs every animation frame via `requestAnimationFrame`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How did the floating button react at viewport edges?",
+      "answer": "It reversed the appropriate velocity so it bounced and stayed fully on-screen.",
+      "evidence": [
+        "D1:31: \"checks all 4 viewport edges and **flips the velocity** on contact\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "What was the floating button's initial movement speed?",
+      "answer": "It moved at 2.5 pixels per frame.",
+      "evidence": [
+        "D1:31: \"fixed speed of **2.5 px/frame**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How frequently and for how long did the Random button pause?",
+      "answer": "It paused every four to ten seconds for a random duration of 0.8 to 2.5 seconds.",
+      "evidence": [
+        "D1:35: \"Waits **4–10 seconds**\"",
+        "D1:35: \"After **0.8–2.5 seconds**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Did the Random button originally choose a new direction after pausing?",
+      "answer": "No. That was subsequently fixed by generating a new full-circle random angle on resume.",
+      "evidence": [
+        "D1:37: \"**no** — it just resumes in the exact same direction\"",
+        "D1:38: \"calculates a fresh `angle` (full 360° random)\""
+      ],
+      "category": 2
+    },
+    {
+      "question": "How did the Random button's spin behave while paused and after resuming?",
+      "answer": "Its angle froze while paused; after resuming it used a newly randomized clockwise or counter-clockwise speed between one and three degrees per frame.",
+      "evidence": [
+        "D1:43: \"Spin stops (angle freezes) while paused\"",
+        "D1:43: \"between **1–3 deg/frame** with a **random clockwise or counter-clockwise direction**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Between which opacity values did the Random button fade?",
+      "answer": "It faded between approximately 0.3 and 1.0.",
+      "evidence": [
+        "D1:49: \"scales it to **0.3 → 1.0**\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Why did the random ticker lookup fail in the browser?",
+      "answer": "The backend returned literal NaN values, which caused the browser's JSON parser to throw an error.",
+      "evidence": [
+        "D1:58: \"`NaN` is **not valid JSON**\"",
+        "D1:58: \"`JSON.parse()` / `res.json()` in the browser will throw a `SyntaxError`\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "Which fields were observed carrying NaN values during the random-ticker failure?",
+      "answer": "RSI and the final sparkline entry.",
+      "evidence": [
+        "D1:58: \"in the JSON for `rsi` and the last sparkline value\""
+      ],
+      "category": 4
+    },
+    {
+      "question": "How was invalid numeric data made JSON-safe?",
+      "answer": "A recursive sanitizer replaced NaN and positive or negative infinity with `None`, producing JSON null values.",
+      "evidence": [
+        "D1:70: \"replaces any `float` that is `NaN`, `+Inf`, or `-Inf` with `None` (→ `null` in JSON)\""
+      ],
+      "category": 4
+    }
+  ]
+}

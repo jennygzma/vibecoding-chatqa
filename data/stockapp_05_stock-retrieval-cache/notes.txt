@@ -1,0 +1,1 @@
+Reviewed annotation scope: retrieval diagnosis, yfinance data corrections, FLIP reordering, ticker scrambling, rainbow cards, cache architecture, the OrderedDict LRU revision, and the default Top 20 setting. Approved by the researcher on 2026-09-24.

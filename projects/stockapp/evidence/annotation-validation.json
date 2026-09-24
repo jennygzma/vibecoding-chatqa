@@ -1,0 +1,98 @@
+{
+  "status": "reviewed-and-validated",
+  "trajectories": {
+    "stockapp_01_main-build": {
+      "annotations": 19,
+      "citations": 33,
+      "cleaned_messages": 97,
+      "roles": {
+        "user": 9,
+        "assistant": 88
+      },
+      "categories": {
+        "4": 17,
+        "5": 2
+      },
+      "errors": []
+    },
+    "stockapp_02_portfolio-tracker": {
+      "annotations": 27,
+      "citations": 57,
+      "cleaned_messages": 280,
+      "roles": {
+        "user": 13,
+        "assistant": 267
+      },
+      "categories": {
+        "2": 3,
+        "4": 24
+      },
+      "errors": []
+    },
+    "stockapp_03_dynamic-visuals": {
+      "annotations": 16,
+      "citations": 21,
+      "cleaned_messages": 43,
+      "roles": {
+        "user": 8,
+        "assistant": 35
+      },
+      "categories": {
+        "2": 1,
+        "4": 14,
+        "5": 1
+      },
+      "errors": []
+    },
+    "stockapp_04_random-ticker": {
+      "annotations": 20,
+      "citations": 29,
+      "cleaned_messages": 70,
+      "roles": {
+        "user": 12,
+        "assistant": 58
+      },
+      "categories": {
+        "2": 2,
+        "4": 18
+      },
+      "errors": []
+    },
+    "stockapp_05_stock-retrieval-cache": {
+      "annotations": 23,
+      "citations": 32,
+      "cleaned_messages": 71,
+      "roles": {
+        "user": 9,
+        "assistant": 62
+      },
+      "categories": {
+        "2": 1,
+        "4": 20,
+        "5": 2
+      },
+      "errors": []
+    },
+    "stockapp_06_ticker-minigame": {
+      "annotations": 25,
+      "citations": 35,
+      "cleaned_messages": 136,
+      "roles": {
+        "user": 9,
+        "assistant": 127
+      },
+      "categories": {
+        "2": 1,
+        "4": 21,
+        "5": 3
+      },
+      "errors": []
+    }
+  },
+  "totals": {
+    "trajectories": 6,
+    "annotations": 130,
+    "citations": 207
+  },
+  "errors": []
+}
