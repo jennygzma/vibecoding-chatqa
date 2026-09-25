@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "session_id": "1790306358823_krquc",
+  "source": "vscode",
+  "pid": 19884,
+  "started_at": "2026-09-25T03:19:18.886Z",
+  "exit_code": null,
+  "status": "idle",
+  "interactive": true,
+  "provider": "openai-codex-cli",
+  "model": "gpt-5.6-terra",
+  "cwd": "/Users/andychen/Documents/ChatGPT/Vibe Code",
+  "workspace_root": "/Users/andychen/Documents/ChatGPT/Vibe Code",
+  "enable_tools": true,
+  "enable_spawn": false,
+  "enable_teams": false,
+  "prompt": "The daily plan is in good shape. For the last feature, please add Insights in focus-desk from the focus history. I want",
+  "metadata": {
+    "sessionHistoryOrigin": {
+      "mode": "user",
+      "version": "4.1.20"
+    },
+    "title": "The daily plan is in good shape. For the last feature, please add Insights in focus-desk from the focus history. I want",
+    "isFavorited": false,
+    "size": 245570,
+    "totalCost": 0,
+    "tokensIn": 122678,
+    "tokensOut": 25851,
+    "cacheWrites": 0,
+    "cacheReads": 1372672,
+    "modelId": "gpt-5.6-terra",
+    "legacyTask": false,
+    "aggregatedAgentsCost": 0,
+    "usage": {
+      "inputTokens": 1495350,
+      "outputTokens": 25851,
+      "cacheReadTokens": 1372672,
+      "cacheWriteTokens": 0,
+      "totalCost": 0
+    },
+    "aggregateUsage": {
+      "inputTokens": 1495350,
+      "outputTokens": 25851,
+      "cacheReadTokens": 1372672,
+      "cacheWriteTokens": 0,
+      "totalCost": 0
+    }
+  },
+  "messages_path": "/Users/andychen/.cline/data/sessions/1790306358823_krquc/1790306358823_krquc.messages.json"
+}

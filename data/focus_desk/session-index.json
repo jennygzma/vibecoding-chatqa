@@ -1,0 +1,50 @@
+[
+  {
+    "session_label": "D1",
+    "feature": "Task management",
+    "original_session_id": "1790302440739_k9r8s",
+    "started_at_utc": "2026-09-25T02:14:00.801Z",
+    "first_message_at_utc": "2026-09-25T02:14:01.143Z",
+    "last_message_at_utc": "2026-09-25T02:33:33.620Z",
+    "message_count": 15,
+    "conversation_path": "D1/conversation.md",
+    "source_map_path": "D1/source-map.json",
+    "cleaning_ledger_path": "D1/cleaning-ledger.json"
+  },
+  {
+    "session_label": "D2",
+    "feature": "Focus timer",
+    "original_session_id": "1790303965237_y5v99",
+    "started_at_utc": "2026-09-25T02:39:25.304Z",
+    "first_message_at_utc": "2026-09-25T02:39:25.639Z",
+    "last_message_at_utc": "2026-09-25T04:21:11.341Z",
+    "message_count": 22,
+    "conversation_path": "D2/conversation.md",
+    "source_map_path": "D2/source-map.json",
+    "cleaning_ledger_path": "D2/cleaning-ledger.json"
+  },
+  {
+    "session_label": "D3",
+    "feature": "Daily plan",
+    "original_session_id": "1790305220016_wdcdt",
+    "started_at_utc": "2026-09-25T03:00:20.078Z",
+    "first_message_at_utc": "2026-09-25T03:00:20.398Z",
+    "last_message_at_utc": "2026-09-25T03:13:46.065Z",
+    "message_count": 15,
+    "conversation_path": "D3/conversation.md",
+    "source_map_path": "D3/source-map.json",
+    "cleaning_ledger_path": "D3/cleaning-ledger.json"
+  },
+  {
+    "session_label": "D4",
+    "feature": "Insights and CSV export",
+    "original_session_id": "1790306358823_krquc",
+    "started_at_utc": "2026-09-25T03:19:18.886Z",
+    "first_message_at_utc": "2026-09-25T03:19:19.216Z",
+    "last_message_at_utc": "2026-09-25T03:32:48.765Z",
+    "message_count": 17,
+    "conversation_path": "D4/conversation.md",
+    "source_map_path": "D4/source-map.json",
+    "cleaning_ledger_path": "D4/cleaning-ledger.json"
+  }
+]

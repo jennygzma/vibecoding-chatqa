@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "session_id": "1790303965237_y5v99",
+  "source": "vscode",
+  "pid": 19884,
+  "started_at": "2026-09-25T02:39:25.304Z",
+  "exit_code": null,
+  "status": "idle",
+  "interactive": true,
+  "provider": "openai-codex-cli",
+  "model": "gpt-5.6-terra",
+  "cwd": "/Users/andychen/Documents/ChatGPT/Vibe Code",
+  "workspace_root": "/Users/andychen/Documents/ChatGPT/Vibe Code",
+  "enable_tools": true,
+  "enable_spawn": false,
+  "enable_teams": false,
+  "prompt": "The task workspace is working well. Next I'd like a focus timer tied to a task, with 25 minutes as the default. I need t",
+  "metadata": {
+    "sessionHistoryOrigin": {
+      "mode": "user",
+      "version": "4.1.20"
+    },
+    "title": "The task workspace is working well. Next I'd like a focus timer tied to a task, with 25 minutes as the default. I need t",
+    "isFavorited": false,
+    "size": 200328,
+    "totalCost": 0,
+    "tokensIn": 175344,
+    "tokensOut": 40509,
+    "cacheWrites": 0,
+    "cacheReads": 1700096,
+    "modelId": "gpt-5.6-terra",
+    "legacyTask": false,
+    "aggregatedAgentsCost": 0,
+    "usage": {
+      "inputTokens": 1875440,
+      "outputTokens": 40509,
+      "cacheReadTokens": 1700096,
+      "cacheWriteTokens": 0,
+      "totalCost": 0
+    },
+    "aggregateUsage": {
+      "inputTokens": 1875440,
+      "outputTokens": 40509,
+      "cacheReadTokens": 1700096,
+      "cacheWriteTokens": 0,
+      "totalCost": 0
+    }
+  },
+  "messages_path": "/Users/andychen/.cline/data/sessions/1790303965237_y5v99/1790303965237_y5v99.messages.json",
+  "compaction_path": "/Users/andychen/.cline/data/sessions/1790303965237_y5v99/1790303965237_y5v99.compaction.json"
+}

@@ -1,0 +1,2154 @@
+[
+  {
+    "source_path": "raw/chat-history-followup-1.json",
+    "original_position": 0,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_mugcr8w7_f"
+  },
+  {
+    "source_path": "raw/chat-history-followup-1.json",
+    "original_position": 1,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_duwOlsqR"
+  },
+  {
+    "source_path": "raw/chat-history-followup-1.json",
+    "original_position": 2,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_mugd56n3_h"
+  },
+  {
+    "source_path": "raw/chat-history-followup-1.json",
+    "original_position": 3,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_Uoodz8gL"
+  },
+  {
+    "source_path": "raw/chat-history-followup-2.json",
+    "original_position": 0,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_mugcr8w7_f"
+  },
+  {
+    "source_path": "raw/chat-history-followup-2.json",
+    "original_position": 1,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_duwOlsqR"
+  },
+  {
+    "source_path": "raw/chat-history-followup-2.json",
+    "original_position": 2,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_mugd56n3_h"
+  },
+  {
+    "source_path": "raw/chat-history-followup-2.json",
+    "original_position": 3,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_Uoodz8gL"
+  },
+  {
+    "source_path": "raw/chat-history-followup-2.json",
+    "original_position": 4,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_mugg6b6f_y"
+  },
+  {
+    "source_path": "raw/chat-history-followup-2.json",
+    "original_position": 5,
+    "reason": "duplicate message in later history snapshot",
+    "represented_by_original_message_id": "msg_R6GPKY12"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 1,
+    "reason": "runtime metadata: session_meta"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 2,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 3,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 4,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 5,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 6,
+    "reason": "non-public-conversation record: message/user; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 7,
+    "reason": "runtime metadata: world_state"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 8,
+    "reason": "runtime metadata: turn_context"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 9,
+    "reason": "non-public-conversation record: message/user; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 10,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 11,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 12,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 13,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 15,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 16,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 17,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 18,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 19,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 20,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 21,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 22,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 23,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 24,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 25,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 26,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 27,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 28,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 29,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 30,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 31,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 33,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 34,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 35,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 36,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 37,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 38,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 39,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 40,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 41,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 42,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 43,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 44,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 45,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 46,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 47,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 48,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 49,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 50,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 51,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 52,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 53,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 54,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 56,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 57,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 58,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 60,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 61,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 62,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 63,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 64,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 65,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 66,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 67,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 68,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 69,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 70,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 71,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 72,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 73,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 74,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 75,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 76,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 77,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 78,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 79,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 80,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 81,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 82,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 83,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 84,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 85,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 86,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 87,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 88,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 89,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 90,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 91,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 92,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 93,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 94,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 95,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 96,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 97,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 98,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 99,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 100,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 101,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 102,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 103,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 104,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 105,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 106,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 107,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 108,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 109,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 110,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 111,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 112,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 113,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 114,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 115,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 116,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 117,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 118,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 119,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 120,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 121,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 122,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 123,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 124,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 125,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 126,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 127,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 128,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 129,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 130,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 132,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 133,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 134,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 135,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 136,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 137,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 138,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 139,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 140,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 141,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 142,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 143,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 144,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 145,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 146,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 147,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 148,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 149,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 150,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 151,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 152,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 153,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 154,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 155,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 157,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 158,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 159,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 160,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 161,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 162,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 163,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 164,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 165,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 166,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 167,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 168,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 169,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 170,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 171,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 172,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 173,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 174,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 175,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 176,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 177,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 178,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 179,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 180,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 181,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 182,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 183,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 184,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 185,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 186,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 187,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 188,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 189,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 190,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 191,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 192,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 193,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 194,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 195,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 196,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 197,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 198,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 199,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 200,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 201,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 202,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 204,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 205,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 206,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 207,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 208,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 209,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 210,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 211,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 212,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 213,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 214,
+    "reason": "duplicate final reply; history timestamp is the UI receipt time",
+    "original_message_id": "msg_004d2c716b149c42016ab5e0f07fd087d28e526adf6930e470",
+    "original_timestamp": "2026-09-25T02:48:21.442Z",
+    "represented_by_original_message_id": "msg_duwOlsqR"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 215,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 216,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-1.jsonl",
+    "source_line": 217,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 1,
+    "reason": "runtime metadata: session_meta"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 2,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 3,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 4,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 5,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 6,
+    "reason": "non-public-conversation record: message/user; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 7,
+    "reason": "runtime metadata: world_state"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 8,
+    "reason": "runtime metadata: turn_context"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 9,
+    "reason": "non-public-conversation record: message/user; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 10,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 11,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 12,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 13,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 15,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 16,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 17,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 18,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 19,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 20,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 21,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 22,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 23,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 24,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 25,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 26,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 27,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 28,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 29,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 30,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 31,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 32,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 33,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 34,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 35,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 36,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 37,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 38,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 39,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 40,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 42,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 43,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 44,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 45,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 46,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 47,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 48,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 49,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 50,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 51,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 52,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 53,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 54,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 55,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 56,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 57,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 58,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 59,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 61,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 62,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 63,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 64,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 65,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 66,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 67,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 68,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 69,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 70,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 71,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 72,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 73,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 74,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 75,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 76,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 77,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 79,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 80,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 81,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 82,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 83,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 84,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 85,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 86,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 87,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 88,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 89,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 90,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 91,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 92,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 93,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 94,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 95,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 96,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 97,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 98,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 99,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 100,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 101,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 102,
+    "reason": "duplicate final reply; history timestamp is the UI receipt time",
+    "original_message_id": "msg_0a21557234fdca81016ab5e1fe023087d288a09b423621c6d5",
+    "original_timestamp": "2026-09-25T02:52:49.512Z",
+    "represented_by_original_message_id": "msg_Uoodz8gL"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 103,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 104,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-2.jsonl",
+    "source_line": 105,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 1,
+    "reason": "runtime metadata: session_meta"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 2,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 3,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 4,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 5,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 6,
+    "reason": "non-public-conversation record: message/user; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 7,
+    "reason": "runtime metadata: world_state"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 8,
+    "reason": "runtime metadata: turn_context"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 9,
+    "reason": "non-public-conversation record: message/user; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 10,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 11,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 12,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 13,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 15,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 16,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 17,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 18,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 19,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 20,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 21,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 22,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 23,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 24,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 25,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 26,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 27,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 28,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 29,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 30,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 31,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 32,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 33,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 34,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 35,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 36,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 37,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 38,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 40,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 41,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 42,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 43,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 44,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 45,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 46,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 47,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 48,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 49,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 50,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 51,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 52,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 53,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 54,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 56,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 57,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 58,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 59,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 60,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 61,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 62,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 63,
+    "reason": "non-public-conversation record: custom_tool_call/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 64,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 65,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 66,
+    "reason": "non-public-conversation record: custom_tool_call_output/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 67,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 68,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 69,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 70,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 71,
+    "reason": "duplicate final reply; history timestamp is the UI receipt time",
+    "original_message_id": "msg_045a2bfaf9e9b5a5016ab5f5b046f087d2b58c243362251191",
+    "original_timestamp": "2026-09-25T04:16:53.066Z",
+    "represented_by_original_message_id": "msg_R6GPKY12"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 72,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 73,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-3.jsonl",
+    "source_line": 74,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 1,
+    "reason": "runtime metadata: session_meta"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 2,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 3,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 4,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 5,
+    "reason": "non-public-conversation record: message/developer; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 6,
+    "reason": "non-public-conversation record: message/user; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 7,
+    "reason": "runtime metadata: world_state"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 8,
+    "reason": "runtime metadata: turn_context"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 9,
+    "reason": "non-public-conversation record: message/user; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 10,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 11,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 12,
+    "reason": "non-public-conversation record: reasoning/; tool or context record retained in raw"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 13,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 14,
+    "reason": "duplicate final reply; history timestamp is the UI receipt time",
+    "original_message_id": "msg_0953fde2d1d2005f016ab5f6b60d8087d2bd2962318cd07fd4",
+    "original_timestamp": "2026-09-25T04:21:10.629Z",
+    "represented_by_original_message_id": "msg_jlyQg_l2"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 15,
+    "reason": "runtime metadata: token_usage_record"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 16,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/run-4.jsonl",
+    "source_line": 17,
+    "reason": "event stream record; public replies represented by response_item or history"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 1,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 2,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 3,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 4,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 5,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 6,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 7,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 8,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 9,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 10,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 11,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 12,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 13,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 14,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 15,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 16,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  },
+  {
+    "source_path": "raw/internal-summary-1.jsonl",
+    "source_line": 17,
+    "reason": "internal continuation-summary run; not a public conversation reply"
+  }
+]
