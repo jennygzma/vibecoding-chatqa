@@ -89,6 +89,21 @@ chatqa status
 - Use `chatqa clean <folder> --force` to regenerate cleaning.
 - `chatqa process` does not write `rules.json` (run `learn-rules` for that).
 
+## Master annotations
+
+[The master annotation file](data/master_annotations.json) combines the current
+canonical annotation outputs for every project in this repository: 625 QA items
+and 1,009 evidence citations from 22 sources across seven projects. Each item
+retains its source file, source index, trajectory, original category value, and
+a normalized category list. Source review status and SHA-256 hashes are included
+so approved and approval-pending packages remain distinguishable.
+
+Rebuild it after adding or revising a dataset with:
+
+```sh
+python3 scripts/build_master_annotations.py
+```
+
 
 ## Mahjong
 
