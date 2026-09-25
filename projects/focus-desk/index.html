@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f0"><title>Focus Desk</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="/" class="brand"><span class="brand-mark" aria-hidden="true">f.</span><span>Focus Desk<span class="brand-sub">A little more intention.</span></span></a>
+      <p class="eyebrow workspace-label">YOUR WORKSPACE</p>
+      <nav aria-label="Workspace">
+        <a class="nav-item selected" href="#main" aria-current="page"><span aria-hidden="true">▤</span> Tasks <span class="nav-count" id="nav-count">0</span></a>
+        <a class="nav-item" href="#focus-workspace"><span aria-hidden="true">◷</span> Focus <small>Timer &amp; history</small></a>
+        <a class="nav-item" href="#daily-plan"><span aria-hidden="true">▦</span> Daily plan <small>Time &amp; order</small></a>
+        <a class="nav-item" href="#insights"><span aria-hidden="true">↗</span> Insights <small>History &amp; export</small></a>
+      </nav>
+      <div class="sidebar-note"><span class="small-orbit" aria-hidden="true">✳</span><p>Make room for<br>what matters.</p><span>One task at a time.</span></div>
+      <div class="storage-label"><span aria-hidden="true">●</span> Stored in this browser</div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <header class="topbar"><span>YOUR PERSONAL WORKSPACE</span><time id="today"></time></header>
+      <section class="intro" aria-labelledby="page-title"><div><p class="eyebrow">CLEAR SPACE. FIND FOCUS.</p><h1 id="page-title">A place for your tasks.</h1><p class="subtitle">Get it out of your head. Take it one step at a time.</p></div><button class="primary" id="new-task"><span aria-hidden="true">＋</span> New task</button></section>
+      <div id="storage-error" class="notice" role="alert" hidden></div>
+      <section class="focus-workspace" id="focus-workspace" aria-labelledby="focus-heading">
+        <div class="focus-heading"><div><p class="eyebrow">ONE TASK AT A TIME</p><h2 id="focus-heading">Focus timer</h2></div><span class="focus-state" id="focus-state">Ready</span></div>
+        <div id="focus-storage-error" class="notice" role="alert" hidden></div>
+        <div class="focus-setup" id="focus-setup">
+          <p>Choose a task and make a little room for it. The timer starts at 25 minutes.</p>
+          <form id="focus-form" class="focus-form">
+            <label for="focus-task">Task<select id="focus-task" required></select></label>
+            <label for="focus-duration">Duration<select id="focus-duration"><option value="15">15 minutes</option><option value="25" selected>25 minutes</option><option value="45">45 minutes</option><option value="60">60 minutes</option></select></label>
+            <button class="primary" type="submit">Start focus</button>
+          </form>
+          <p class="focus-empty" id="focus-empty">Add a task to begin a focus session.</p>
+        </div>
+        <div class="focus-active" id="focus-timer" hidden aria-live="polite">
+          <div><p class="focus-label">Focusing on</p><h3 id="focus-title"></h3><p class="focus-note" id="focus-timer-note" hidden>The timer was paused after a refresh. Resume when you’re ready.</p></div>
+          <div class="focus-countdown"><span>Remaining</span><strong id="focus-remaining">25m 00s</strong><small><span id="focus-elapsed">0m 00s</span> focused</small></div>
+          <div class="focus-actions"><button class="secondary" type="button" id="focus-pause">Pause</button><button class="primary" type="button" id="focus-resume" hidden>Resume</button><button class="text-button" type="button" id="focus-finish">Finish early</button><button class="text-button" type="button" id="focus-cancel">Cancel session</button></div>
+        </div>
+      </section>
+      <section class="daily-plan" id="daily-plan" aria-labelledby="daily-plan-heading">
+        <div class="daily-plan-heading"><div><p class="eyebrow">MAKE ROOM FOR THE DAY</p><h2 id="daily-plan-heading">Daily plan</h2><p>Choose a local calendar day, then arrange the work that belongs there.</p></div><label for="daily-plan-date">Plan date<input id="daily-plan-date" type="date" min="0001-01-01" max="9999-12-31" required></label></div>
+        <div id="daily-plan-storage-error" class="notice" role="alert" hidden></div>
+        <div class="daily-plan-summary" aria-label="Daily plan summary">
+          <div><span>Planned workload</span><strong id="daily-plan-workload">0 min</strong></div>
+          <div><span>Budget balance</span><strong id="daily-plan-status">120 min left</strong></div>
+          <div><span>Completion</span><strong id="daily-plan-progress">0 of 0 tasks complete</strong></div>
+        </div>
+        <div class="daily-plan-controls"><label for="daily-plan-budget">Daily budget <input id="daily-plan-budget" type="number" min="5" max="1440" step="1" value="120" required> <span>minutes</span></label><form id="daily-plan-add-form"><label for="daily-plan-task">Add an existing task<select id="daily-plan-task" required></select></label><button class="secondary" type="submit">Add to day</button></form></div>
+        <p class="daily-plan-help">Use the arrow controls to set your preferred order. Completing a task here updates it everywhere.</p>
+        <p class="daily-plan-empty" id="daily-plan-empty">No tasks planned for this day yet.</p>
+        <ol class="daily-plan-list" id="daily-plan-list"></ol>
+      </section>
+      <section class="stats" aria-label="Task overview">
+        <div class="stat"><span>Open tasks</span><strong id="open-count">0</strong><small>Room to make progress</small></div>
+        <div class="stat"><span>Due today</span><strong id="due-count">0</strong><small>A little attention today</small></div>
+        <div class="stat"><span>Completed</span><strong id="completed-count">0</strong><small>Every step counts</small></div>
+      </section>
+      <section class="task-workspace" aria-labelledby="list-title">
+        <div class="list-heading"><h2 id="list-title">Your tasks <span id="result-count">0</span></h2><span class="list-hint">Small steps, steady progress.</span></div>
+        <div class="toolbar">
+          <label class="search-field"><span class="sr-only">Search task titles</span><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search task titles…" autocomplete="off"></label>
+          <label class="filter-label">Status<select id="status"><option value="all">All tasks</option><option value="open">Open</option><option value="completed">Completed</option></select></label>
+          <label class="filter-label">Priority<select id="priority"><option value="all">All priorities</option><option>High</option><option>Medium</option><option>Low</option></select></label>
+          <button id="clear-filters" class="text-button" hidden>Clear filters</button>
+        </div>
+        <p class="sr-only" id="results-announcement" role="status"></p>
+        <ul id="task-list" class="task-list"></ul>
+        <div class="empty-state" id="empty-state"><div class="empty-art" aria-hidden="true"><span>✓</span><i></i><i></i></div><h3 id="empty-title">A clear desk. A fresh start.</h3><p id="empty-description">Add your first task and give your next step a home.</p><button class="secondary" id="empty-action">Create your first task <span aria-hidden="true">↗</span></button></div>
+      </section>
+      <section class="focus-history" aria-labelledby="focus-history-heading">
+        <div class="list-heading"><h2 id="focus-history-heading">Focus history</h2><span class="list-hint">Actual focused time is retained here.</span></div>
+        <p id="focus-history-empty" class="history-empty">Your finished sessions will appear here.</p>
+        <ul id="focus-history" class="focus-history-list"></ul>
+      </section>
+      <section class="insights" id="insights" aria-labelledby="insights-heading">
+        <div class="insights-heading"><div><p class="eyebrow">LOOK BACK WITH CLARITY</p><h2 id="insights-heading">Focus insights</h2><p>Sessions are counted on the local calendar date they ended.</p></div><button class="secondary" type="button" id="export-insights">Download CSV</button></div>
+        <div id="insights-export-error" class="notice" role="alert" hidden></div>
+        <div class="insights-range" role="group" aria-label="Insights date range"><label for="insights-start-date">From<input id="insights-start-date" type="date" min="0001-01-01" max="9999-12-31" required></label><label for="insights-end-date">To<input id="insights-end-date" type="date" min="0001-01-01" max="9999-12-31" required></label></div>
+        <p id="insights-range-error" class="field-error" role="alert"></p>
+        <div class="insights-summary" aria-label="Focus insights summary"><div><span>Actual focused time</span><strong id="insights-focused-time">0m</strong></div><div><span>Sessions</span><strong id="insights-session-count">0</strong></div></div>
+        <p id="insights-empty" class="insights-empty">No focus sessions ended in this date range. Choose another range to see its actual focused time.</p>
+        <ul id="insights-task-list" class="insights-task-list" aria-label="Focused time by task"></ul>
+      </section>
+      <footer>Less noise. More intention.<span>Your tasks stay here until you delete them.</span></footer>
+      <p class="toast" id="feedback" role="status" hidden></p>
+    </main>
+  </div>
+  <dialog id="task-dialog" aria-labelledby="dialog-title">
+    <form id="task-form" novalidate>
+      <div class="dialog-heading"><div><p class="eyebrow">MAKE A LITTLE SPACE</p><h2 id="dialog-title">New task</h2></div><button type="button" class="icon-button" id="close-dialog" aria-label="Close task form">×</button></div>
+      <p class="form-intro">A clear next step is a good place to start.</p>
+      <label for="title">Task title <span class="required">Required</span></label><input id="title" name="title" maxlength="120" required placeholder="What would you like to get done?" aria-describedby="title-error"><p class="field-error" id="title-error"></p>
+      <label for="notes">Notes <span class="optional">Optional · 2,000 characters max</span></label><textarea id="notes" name="notes" maxlength="2000" rows="4" placeholder="A few details, an idea, a reminder…" aria-describedby="notes-error"></textarea><p class="field-error" id="notes-error"></p>
+      <div class="form-grid"><div><label for="task-priority">Priority</label><select id="task-priority" name="priority" aria-describedby="priority-error"><option>Low</option><option selected>Medium</option><option>High</option></select><p class="field-error" id="priority-error"></p></div><div><label for="due-date">Due date <span class="optional">Optional</span></label><input id="due-date" name="dueDate" type="date" min="0001-01-01" max="9999-12-31" aria-describedby="dueDate-error"><p class="field-error" id="dueDate-error"></p></div></div>
+      <label for="estimate">Estimated minutes</label><input id="estimate" class="estimate-input" name="estimatedMinutes" type="number" min="5" max="480" step="1" value="25" required aria-describedby="estimate-help estimatedMinutes-error"><span class="field-hint" id="estimate-help">5–480 minutes, in whole numbers</span><p class="field-error" id="estimatedMinutes-error"></p>
+      <p class="notice" id="form-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button type="button" class="secondary" id="cancel-dialog">Cancel</button><button class="primary" type="submit" id="save-task">Create task</button></div>
+    </form>
+  </dialog>
+  <dialog id="delete-dialog" aria-labelledby="delete-title" aria-describedby="delete-description"><form id="delete-form"><p class="eyebrow">A MOMENT TO CHECK</p><h2 id="delete-title">Delete this task?</h2><p id="delete-description"></p><p class="form-intro">This cannot be undone.</p><p id="delete-error" class="notice" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="secondary" id="cancel-delete" autofocus>Keep task</button><button type="submit" class="danger">Delete task</button></div></form></dialog>
+</body>
+</html>

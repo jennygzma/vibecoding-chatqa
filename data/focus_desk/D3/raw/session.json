@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "session_id": "1790305220016_wdcdt",
+  "source": "vscode",
+  "pid": 19884,
+  "started_at": "2026-09-25T03:00:20.078Z",
+  "exit_code": null,
+  "status": "idle",
+  "interactive": true,
+  "provider": "openai-codex-cli",
+  "model": "gpt-5.6-terra",
+  "cwd": "/Users/andychen/Documents/ChatGPT/Vibe Code",
+  "workspace_root": "/Users/andychen/Documents/ChatGPT/Vibe Code",
+  "enable_tools": true,
+  "enable_spawn": false,
+  "enable_teams": false,
+  "prompt": "The focus timer is working well. I now want a daily plan in focus-desk: choose a local calendar date, add existing tasks",
+  "metadata": {
+    "sessionHistoryOrigin": {
+      "mode": "user",
+      "version": "4.1.20"
+    },
+    "title": "The focus timer is working well. I now want a daily plan in focus-desk: choose a local calendar date, add existing tasks",
+    "isFavorited": false,
+    "size": 601524,
+    "totalCost": 0,
+    "tokensIn": 98481,
+    "tokensOut": 23133,
+    "cacheWrites": 0,
+    "cacheReads": 914944,
+    "modelId": "gpt-5.6-terra",
+    "legacyTask": false,
+    "aggregatedAgentsCost": 0,
+    "usage": {
+      "inputTokens": 1013425,
+      "outputTokens": 23133,
+      "cacheReadTokens": 914944,
+      "cacheWriteTokens": 0,
+      "totalCost": 0
+    },
+    "aggregateUsage": {
+      "inputTokens": 1013425,
+      "outputTokens": 23133,
+      "cacheReadTokens": 914944,
+      "cacheWriteTokens": 0,
+      "totalCost": 0
+    }
+  },
+  "messages_path": "/Users/andychen/.cline/data/sessions/1790305220016_wdcdt/1790305220016_wdcdt.messages.json",
+  "compaction_path": "/Users/andychen/.cline/data/sessions/1790305220016_wdcdt/1790305220016_wdcdt.compaction.json"
+}

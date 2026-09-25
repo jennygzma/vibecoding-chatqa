@@ -81,3 +81,10 @@ chatqa status
 [Cedar Table](projects/cedar-table/README.md) is a local four-seat Mahjong game with ten feature conversations and [100 evidence-linked questions](data/cedar_table/vibe_combined.json). The [dataset guide](data/cedar_table/README.md) describes its records and timestamps; the [review](projects/cedar-table/evidence/FEATURES-1-10-READY-FOR-REVIEW.md) contains validation and screenshots.
 
 Status: In Progress. Approval pending. Validate the submission with `python3 scripts/validate_cedar_table.py`.
+
+
+## Focus Desk
+
+[Focus Desk](projects/focus-desk/README.md) is a local task and focus app with four features, four original conversations, and [60 evidence-linked questions](data/focus_desk/vibe_combined.json). The [dataset guide](data/focus_desk/README.md) explains its records; the [review report](projects/focus-desk/evidence/REVIEW.md) includes verification and browser evidence.
+
+Status: In Progress. Approval pending. Validate the submission with `python3 scripts/validate_focus_desk.py`.

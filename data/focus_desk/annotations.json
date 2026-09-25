@@ -1,0 +1,740 @@
+[
+  {
+    "question": "What was the first usable part requested for Focus Desk?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Task management.",
+    "evidence": [
+      "D1:1: \"I want the first usable piece to be task management\""
+    ]
+  },
+  {
+    "question": "Which task lifecycle actions did the first request require?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Add, edit, complete, reopen, and confirm deletion.",
+    "evidence": [
+      "D1:1: \"add and edit tasks, mark them done or reopen them, and confirm before deleting\""
+    ]
+  },
+  {
+    "question": "Which four task details beyond the title did the user request?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Priority, due date, estimated minutes, and notes.",
+    "evidence": [
+      "D1:1: \"priority, due date, estimated minutes and notes\""
+    ]
+  },
+  {
+    "question": "How did the user want to find and narrow tasks?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Search titles and filter by status and priority.",
+    "evidence": [
+      "D1:1: \"title search and status/priority filters\""
+    ]
+  },
+  {
+    "question": "What interface language and storage location were chosen for the task workspace?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "An English interface with browser-local storage.",
+    "evidence": [
+      "D1:1: \"Keep the interface in English and save everything locally in the browser\""
+    ]
+  },
+  {
+    "question": "What two command checks passed when D1 was first implemented?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Eight tests and `npm run check` passed.",
+    "evidence": [
+      "D1:11: \"`npm test`: 8 passed\"",
+      "D1:11: \"`npm run check`: passed\""
+    ]
+  },
+  {
+    "question": "Which user interactions were covered in the D1 local browser pass?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Creation, editing, completion and reopening, combined filters, refresh recovery, and both deletion choices.",
+    "evidence": [
+      "D1:12: \"creation, editing, completion/reopening, combined filters, refresh recovery, and both sides of deletion\""
+    ]
+  },
+  {
+    "question": "What ordering did the user prefer for the main task list?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Newest first.",
+    "evidence": [
+      "D1:12: \"I prefer keeping this task list newest first\""
+    ]
+  },
+  {
+    "question": "What separate ordering freedom did the user reserve for the daily plan?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "The daily plan could have its own task order.",
+    "evidence": [
+      "D1:12: \"the daily plan can have its own order later\""
+    ]
+  },
+  {
+    "question": "Did the newest-first preference require another D1 code change?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "No; tasks were already inserted at the top and retained in newest-first order.",
+    "evidence": [
+      "D1:15: \"new tasks are inserted at the top and retained in newest-first order after browser-local persistence.\"",
+      "D1:15: \"No files needed changing.\""
+    ]
+  },
+  {
+    "question": "How did D1 validation progress beyond the first implementation report?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "The first report had command checks but no visual check; the user later completed a local browser pass.",
+    "evidence": [
+      "D1:11: \"No visual screenshot was claimed\"",
+      "D1:12: \"I finished a local browser pass\""
+    ]
+  },
+  {
+    "question": "Why is it useful to keep the main task list newest first while letting a daily plan have its own order?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It keeps recently captured tasks easy to find while letting each day's work follow a deliberate priority order.",
+    "evidence": [
+      "D1:12: \"I prefer keeping this task list newest first; the daily plan can have its own order later\""
+    ]
+  },
+  {
+    "question": "What does a focus session attach to, and what is its default length?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "A task; 25 minutes.",
+    "evidence": [
+      "D2:1: \"a focus timer tied to a task, with 25 minutes as the default\""
+    ]
+  },
+  {
+    "question": "Which direct timer controls did the user request?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Start, pause, resume, finish early, and cancel.",
+    "evidence": [
+      "D2:1: \"start, pause, resume, finish early, or cancel a session\""
+    ]
+  },
+  {
+    "question": "What should each finished focus session retain in history?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Actual focused time and the task name at session end.",
+    "evidence": [
+      "D2:1: \"see the actual focused time in a history list\"",
+      "D2:1: \"keep the task name as it was when a session ended\""
+    ]
+  },
+  {
+    "question": "How did title-snapshot timing differ from the original request, and how was it corrected?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts",
+      "temporal"
+    ],
+    "answer": "The request specified the end-time title; the initial decision used the start-time title, and the D2 repair changed all ending paths to capture the current title.",
+    "evidence": [
+      "D2:1: \"Please keep the task name as it was when a session ended\"",
+      "D2:4: \"Each session will snapshot the task title at start\"",
+      "D2:20: \"Ended sessions now use the task’s current title for early finish, cancellation, and automatic completion.\""
+    ]
+  },
+  {
+    "question": "When may the focus timer count elapsed time?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "Only while running on a visible page.",
+    "evidence": [
+      "D2:1: \"only while the timer is running and the page is visible\""
+    ]
+  },
+  {
+    "question": "What must the user do after refreshing a running timer?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "preference"
+    ],
+    "answer": "Resume it deliberately; refresh leaves it paused.",
+    "evidence": [
+      "D2:1: \"after a refresh, let me resume deliberately\"",
+      "D2:9: \"Refresh recovery deliberately pauses the timer until resumed\""
+    ]
+  },
+  {
+    "question": "Which additional timer behaviors were reported beyond the requested manual controls?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Duration presets and automatic completion.",
+    "evidence": [
+      "D2:9: \"plus duration presets\"",
+      "D2:9: \"auto-complete flows\""
+    ]
+  },
+  {
+    "question": "Why is corruption handling useful for locally saved focus sessions?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It helps preserve usable session data and gives a recoverable response when saved data is damaged.",
+    "evidence": [
+      "D2:9: \"Added safe, versioned local persistence and corruption handling\""
+    ]
+  },
+  {
+    "question": "What browser symptom and HTTP result exposed D2's missing module?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "The Focus selector was empty despite an existing task, and `/src/focus.js` returned 404.",
+    "evidence": [
+      "D2:10: \"the Focus task selector stayed empty even though Draft Q3 report is in the task list\"",
+      "D2:10: \"/src/focus.js returns 404\""
+    ]
+  },
+  {
+    "question": "What change resolved the empty Focus selector, and how was it guarded against recurrence?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "The server began serving `/src/focus.js`, with a regression check for browser modules.",
+    "evidence": [
+      "D2:15: \"`/src/focus.js` is now served\"",
+      "D2:15: \"Added a module-serving regression check\""
+    ]
+  },
+  {
+    "question": "How did the D2 test report change after the route repair?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "It went from 15 passing tests to 16 passing with one loopback test skipped.",
+    "evidence": [
+      "D2:9: \"`npm test` — 15 passing\"",
+      "D2:15: \"`npm test` — 16 passed, 0 failed; 1 loopback-server test skipped\""
+    ]
+  },
+  {
+    "question": "Why did the missing-module experience justify a server route test even after D2's earlier tests passed?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "The earlier tests did not prove that the browser could fetch every module needed to run the page.",
+    "evidence": [
+      "D2:9: \"`npm test` — 15 passing\"",
+      "D2:10: \"/src/focus.js returns 404\"",
+      "D2:15: \"Added a module-serving regression check\""
+    ]
+  },
+  {
+    "question": "What could the user choose and order in a daily plan?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference",
+      "temporal"
+    ],
+    "answer": "A local calendar date and an ordered selection of existing tasks.",
+    "evidence": [
+      "D3:1: \"choose a local calendar date, add existing tasks to that day, put them in my preferred order\""
+    ]
+  },
+  {
+    "question": "What is the default daily time budget?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference",
+      "temporal"
+    ],
+    "answer": "120 minutes.",
+    "evidence": [
+      "D3:1: \"120 minutes by default\""
+    ]
+  },
+  {
+    "question": "Which three planning measures were requested?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Planned workload, budget balance, and completion progress.",
+    "evidence": [
+      "D3:1: \"Show planned workload, time left or over budget, and completion progress\""
+    ]
+  },
+  {
+    "question": "Why should a day with no planned tasks have its own guidance?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "A clear empty state tells the user that the day is unplanned and how to begin adding work.",
+    "evidence": [
+      "D3:1: \"handle empty days clearly\"",
+      "D3:8: \"Empty-day guidance\""
+    ]
+  },
+  {
+    "question": "How does a completed task in the plan affect the main task list?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Its completion state updates in both the plan and the main task list.",
+    "evidence": [
+      "D3:8: \"task completion synced with the main task list\""
+    ]
+  },
+  {
+    "question": "What persistence and invalid-data handling did the D3 implementation report?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Versioned browser-local storage with invalid-data handling.",
+    "evidence": [
+      "D3:8: \"Safe versioned browser-local storage and invalid-data handling\""
+    ]
+  },
+  {
+    "question": "Which daily-plan interactions worked in the user's first browser check?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Date switching, ordering, budget totals, and completion sync.",
+    "evidence": [
+      "D3:9: \"Date switching, ordering, budget totals, and completion sync worked\""
+    ]
+  },
+  {
+    "question": "What remained wrong after deleting a planned task in the first D3 browser pass?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "The totals updated, but a stale task ID and warning persisted after refresh.",
+    "evidence": [
+      "D3:9: \"the totals updated, but the plan kept its missing task ID and showed a \"1 removed task\" warning even after refresh\""
+    ]
+  },
+  {
+    "question": "What deletion behavior did the user request, and was it implemented in the same D3 conversation?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "answer": "Yes; deletion now removes the task ID from saved daily plans, preventing the lingering warning.",
+    "evidence": [
+      "D3:9: \"deletion remove that task from saved plans so the warning does not linger\"",
+      "D3:15: \"Deleting a task now removes its ID from every saved daily plan\""
+    ]
+  },
+  {
+    "question": "How does the D3 cleanup protect plans on other dates and the remaining task order?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "It removes the deleted ID from every saved day while preserving the other tasks' order.",
+    "evidence": [
+      "D3:15: \"removes its ID from every saved daily plan\"",
+      "D3:15: \"verifies cleanup across dates and preserves task order\""
+    ]
+  },
+  {
+    "question": "What follow-up validation covered the persisted-plan cleanup?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "A reload-backed storage test was added; the later suite reported 23 passing tests and one environment skip.",
+    "evidence": [
+      "D3:15: \"Added reload-backed persistence coverage\"",
+      "D3:15: \"`npm test` — 23 passed, 1 environment-skipped\""
+    ]
+  },
+  {
+    "question": "What range does Insights show initially?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference",
+      "temporal"
+    ],
+    "answer": "The latest seven local calendar days, inclusively.",
+    "evidence": [
+      "D4:10: \"Local inclusive date range, defaulting to the last seven calendar days\""
+    ]
+  },
+  {
+    "question": "Which three values does Insights derive from focus history?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Actual focused time, session count, and task distribution.",
+    "evidence": [
+      "D4:1: \"actual focused time, session count, and how that time is distributed by task\""
+    ]
+  },
+  {
+    "question": "What must the CSV date range match?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference",
+      "temporal"
+    ],
+    "answer": "The date range currently shown on screen.",
+    "evidence": [
+      "D4:1: \"download a CSV for exactly the range on screen\""
+    ]
+  },
+  {
+    "question": "Which task-name punctuation did the CSV implementation report escaping?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Commas and quotes, using CSV escaping.",
+    "evidence": [
+      "D4:10: \"safely escapes commas and quotes\""
+    ]
+  },
+  {
+    "question": "Which exceptional Insights states required clear feedback?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Empty or invalid ranges and export failures.",
+    "evidence": [
+      "D4:1: \"make empty ranges and failed exports clear\"",
+      "D4:10: \"Empty/invalid range and export-failure messages\""
+    ]
+  },
+  {
+    "question": "What mismatch appeared immediately after the first short focus session?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "History showed 15 seconds, while Insights still showed zero sessions and disabled export.",
+    "evidence": [
+      "D4:11: \"The history showed 15 seconds immediately, but Insights still showed 0 sessions and a disabled CSV button until I refreshed\""
+    ]
+  },
+  {
+    "question": "What did Insights show after refreshing that first short-session test?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "One session and 15 seconds.",
+    "evidence": [
+      "D4:11: \"after refresh it showed 1 session and 15 seconds\""
+    ]
+  },
+  {
+    "question": "How was the stale Insights summary corrected?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Insights now refreshes immediately after a focus-history record is saved.",
+    "evidence": [
+      "D4:17: \"Insights now refreshes immediately after a focus-history record is saved.\""
+    ]
+  },
+  {
+    "question": "How long is the export Blob URL retained, and what happens on failure?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts",
+      "temporal"
+    ],
+    "answer": "The URL is retained for 60 seconds; failure revokes it immediately.",
+    "evidence": [
+      "D4:17: \"keeps the Blob URL for 60 seconds, cleans up the link, and revokes immediately on failure\""
+    ]
+  },
+  {
+    "question": "How did the export confirmation change after the browser download was uncertain?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "It now says a download request was sent to the browser, without claiming a saved file.",
+    "evidence": [
+      "D4:11: \"the page said it downloaded, but my browser exposed no download event or file\"",
+      "D4:17: \"Success copy now accurately says the browser received a download request\""
+    ]
+  },
+  {
+    "question": "What validation did the D4 follow-up report?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Twenty-nine tests passed, one was skipped by the environment, and `npm run check` passed.",
+    "evidence": [
+      "D4:17: \"`npm test` passed (29 passed, 1 environment-skipped); `npm run check` passed\""
+    ]
+  },
+  {
+    "question": "Why is 'download request sent' more accurate than 'downloaded' at the time the button is clicked?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "The page can know it issued the request, but it cannot guarantee that the browser saved a file.",
+    "evidence": [
+      "D4:11: \"the page said it downloaded, but my browser exposed no download event or file\"",
+      "D4:17: \"the browser received a download request\""
+    ]
+  },
+  {
+    "question": "What different obstacles blocked D1 browser verification and D2 timer use?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "D1 had a blocked loopback listener and browser initialization; D2 had a missing module route returning 404.",
+    "evidence": [
+      "D1:11: \"the local server cannot bind to `127.0.0.1:4173` (`EPERM`), and browser automation could not initialize due to a trusted-path restriction\"",
+      "D2:10: \"the Focus task selector stayed empty even though Draft Q3 report is in the task list\"",
+      "D2:10: \"/src/focus.js returns 404\""
+    ]
+  },
+  {
+    "question": "Which D1 task actions can change D3's completion progress, and how?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "For tasks included in the plan, completing them raises progress and reopening them lowers it because completion is synced.",
+    "evidence": [
+      "D1:1: \"mark them done or reopen them\"",
+      "D3:8: \"task completion synced with the main task list\""
+    ]
+  },
+  {
+    "question": "Why were the first D4 date fixtures changed, and what replacement was used?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts",
+      "temporal"
+    ],
+    "answer": "UTC times near midnight mapped to the preceding local day, so the fixtures were changed to unambiguous daytime local dates.",
+    "evidence": [
+      "D4:6: \"The first test run exposed a timezone-boundary issue in the test fixtures—not in the range logic: UTC timestamps near midnight map to the preceding local day in this environment. I’m correcting the fixtures to use unambiguous daytime local dates, which keeps the test focused on the intended inclusive local-date behavior.\""
+    ]
+  },
+  {
+    "question": "Which data representations let D2 preserve finished history while D3 reflects later estimate changes?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "D2 retains actual time and title snapshots; D3 stores task IDs and derives workload from current shared task records.",
+    "evidence": [
+      "D2:9: \"History retains actual focused time and task-title snapshots after task rename/deletion.\"",
+      "D3:4: \"the plan can remain a dated ordered list of task IDs and derive workload/progress live from those tasks\"",
+      "D3:4: \"estimate edits and completion changes are reflected immediately without duplicating task data\""
+    ]
+  },
+  {
+    "question": "Why should paused or hidden time not inflate Insights totals?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts",
+      "temporal"
+    ],
+    "answer": "Insights is meant to sum actual focused time, which excludes paused and hidden intervals.",
+    "evidence": [
+      "D2:1: \"Time should count only while the timer is running and the page is visible\"",
+      "D4:1: \"showing actual focused time\""
+    ]
+  },
+  {
+    "question": "What do the date controls in D3 and D4 select, respectively?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ],
+    "answer": "D3 selects one day to plan; D4 selects a date range to summarize focus history.",
+    "evidence": [
+      "D3:1: \"choose a local calendar date\"",
+      "D4:1: \"a selectable local-date range\""
+    ]
+  },
+  {
+    "question": "How do D1 task filters and D3 date selection narrow the work shown?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "D1 narrows tasks by title, status, and priority; D3 shows the ordered task selection for one chosen day.",
+    "evidence": [
+      "D1:1: \"title search and status/priority filters\"",
+      "D3:1: \"choose a local calendar date, add existing tasks to that day, put them in my preferred order\""
+    ]
+  },
+  {
+    "question": "What different effects did refreshing have during the D3 deletion check and the D4 Insights check?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "D3 still showed the stale task warning after refresh; D4 refresh restored the missing session count and 15 seconds.",
+    "evidence": [
+      "D3:9: \"the plan kept its missing task ID and showed a \"1 removed task\" warning even after refresh\"",
+      "D4:11: \"Insights still showed 0 sessions and a disabled CSV button until I refreshed; after refresh it showed 1 session and 15 seconds\""
+    ]
+  },
+  {
+    "question": "What browser-local persistence choice do the D1 task workspace and D2 focus sessions share?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Both retain data locally in the browser; focus data uses versioned persistence.",
+    "evidence": [
+      "D1:1: \"save everything locally in the browser\"",
+      "D2:9: \"Added safe, versioned local persistence\""
+    ]
+  },
+  {
+    "question": "How do the D2 and D3 default minute values serve different purposes?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ],
+    "answer": "Twenty-five minutes starts one focus session; 120 minutes is one day's planning budget.",
+    "evidence": [
+      "D2:1: \"25 minutes as the default\"",
+      "D3:1: \"120 minutes by default\""
+    ]
+  },
+  {
+    "question": "Why can D3's planned workload differ from D4's actual focused time?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Planned workload comes from scheduled task estimates, while Insights sums recorded focus time.",
+    "evidence": [
+      "D3:4: \"The existing data model already keeps task completion and estimates separate from rendering, so the plan can remain a dated ordered list of task IDs and derive workload/progress live from those tasks.\"",
+      "D4:1: \"Insights in focus-desk from the focus history\"",
+      "D4:1: \"showing actual focused time\""
+    ]
+  },
+  {
+    "question": "What protects a historical task name when it later appears in a D4 CSV with commas or quotes?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "A title snapshot preserves the historical name, and CSV escaping preserves its punctuation.",
+    "evidence": [
+      "D2:9: \"History retains actual focused time and task-title snapshots after task rename/deletion.\"",
+      "D4:10: \"safely escapes commas and quotes\""
+    ]
+  },
+  {
+    "question": "In what order did the four original feature conversations build the app?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Task management, focus timer, daily plan, then Insights and CSV export.",
+    "evidence": [
+      "D1:1: \"first usable piece to be task management\"",
+      "D2:1: \"Next I'd like a focus timer\"",
+      "D3:1: \"I now want a daily plan\"",
+      "D4:1: \"For the last feature, please add Insights\""
+    ]
+  }
+]

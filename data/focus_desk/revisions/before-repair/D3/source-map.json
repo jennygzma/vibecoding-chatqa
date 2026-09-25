@@ -1,0 +1,68 @@
+{
+  "original_session_id": "1790305220016_wdcdt",
+  "session_start_utc": "2026-09-25T03:00:20.398Z",
+  "source_files_sha256": {
+    "chat-history.json": "b1dcc17ab8fa0d3003ad94d94276159683f339591e804276cb67e5c9eeeb1ffb",
+    "run-1.jsonl": "d16cc91101059471858c875af5a0dc1a102584c7ebc6fce7517c2112418a9b9a",
+    "run-2.jsonl": "00b6d9cf33bbead1027ffe938e42f80ce55dd3d5c5d8d929a12c4c5f09497d10",
+    "session.json": "c79f7f5a52d70507e9e9fcc120415f0dc2b71a0d985049546dca4584effa7e13"
+  },
+  "messages": [
+    {
+      "dia_id": "D3:1",
+      "original_session_id": "1790305220016_wdcdt",
+      "source_path": "raw/chat-history.json",
+      "original_message_id": "msg_mugdi52m_l",
+      "original_position": 0,
+      "original_block_index": 0,
+      "original_timestamp": 1790305220398,
+      "timestamp_utc": "2026-09-25T03:00:20.398Z",
+      "role": "user",
+      "text_sha256": "7cdbc47459dbd624e6103a2c3dfdfaef3129f357ab9e009f2956f83623251755",
+      "transformations": [
+        "removed outer user_input envelope"
+      ]
+    },
+    {
+      "dia_id": "D3:2",
+      "original_session_id": "1790305220016_wdcdt",
+      "source_path": "raw/chat-history.json",
+      "original_message_id": "msg_zYsQ8_km",
+      "original_position": 1,
+      "original_block_index": 0,
+      "original_timestamp": 1790305564258,
+      "timestamp_utc": "2026-09-25T03:06:04.258Z",
+      "role": "assistant",
+      "text_sha256": "652bcb8fc003bb89256a2af322c93cc3c579c37d9cc606f3b5a5325a0e1eb779",
+      "transformations": []
+    },
+    {
+      "dia_id": "D3:3",
+      "original_session_id": "1790305220016_wdcdt",
+      "source_path": "raw/chat-history.json",
+      "original_message_id": "msg_mugdwpfw_n",
+      "original_position": 2,
+      "original_block_index": 0,
+      "original_timestamp": 1790305899980,
+      "timestamp_utc": "2026-09-25T03:11:39.980Z",
+      "role": "user",
+      "text_sha256": "7f7830decd7a1bcdde507eb7023dc41a367f7289526c889e1ee8636096816de3",
+      "transformations": [
+        "removed outer user_input envelope"
+      ]
+    },
+    {
+      "dia_id": "D3:4",
+      "original_session_id": "1790305220016_wdcdt",
+      "source_path": "raw/chat-history.json",
+      "original_message_id": "msg_uzNZJgwF",
+      "original_position": 3,
+      "original_block_index": 0,
+      "original_timestamp": 1790306026065,
+      "timestamp_utc": "2026-09-25T03:13:46.065Z",
+      "role": "assistant",
+      "text_sha256": "8e750ea10edb99008b92f1881a8e770e2f21f35102c2a23554c8642e9910b36f",
+      "transformations": []
+    }
+  ]
+}

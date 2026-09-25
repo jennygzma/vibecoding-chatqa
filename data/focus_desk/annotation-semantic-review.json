@@ -1,0 +1,422 @@
+[
+  {
+    "question_id": "Q001",
+    "reviewed_question": "What was the first usable part requested for Focus Desk?",
+    "reviewed_sha256": "53678b9cec64d79d08c6405db05d9475d702aa5c6acde87155ff7255b0c3aedd",
+    "source_support": "reviewed",
+    "category_reason": "Initial requested scope is explicit in the first request."
+  },
+  {
+    "question_id": "Q002",
+    "reviewed_question": "Which task lifecycle actions did the first request require?",
+    "reviewed_sha256": "5dd76ea5f2bdde5cae0b9ba47aa9075a22f1cd723b8b5b7a76fbccfe0ea68e02",
+    "source_support": "reviewed",
+    "category_reason": "All five lifecycle actions are directly listed in one request."
+  },
+  {
+    "question_id": "Q003",
+    "reviewed_question": "Which four task details beyond the title did the user request?",
+    "reviewed_sha256": "37f9f2cc0cdfd29b54d3290d8a1916e3588c320325ef863c668777d629f0d884",
+    "source_support": "reviewed",
+    "category_reason": "The four requested metadata fields are directly listed."
+  },
+  {
+    "question_id": "Q004",
+    "reviewed_question": "How did the user want to find and narrow tasks?",
+    "reviewed_sha256": "4998fbc6701ef4328299bfed21838e931a9ce3af464ae8fb1e9858541682520b",
+    "source_support": "reviewed",
+    "category_reason": "Title search and the two filter dimensions are directly listed."
+  },
+  {
+    "question_id": "Q005",
+    "reviewed_question": "What interface language and storage location were chosen for the task workspace?",
+    "reviewed_sha256": "c7155f3f68fb124b276301607045eef64f056351e94dd9f082d00cd2c4d4fd8c",
+    "source_support": "reviewed",
+    "category_reason": "English and browser-local storage are explicit choices."
+  },
+  {
+    "question_id": "Q006",
+    "reviewed_question": "What two command checks passed when D1 was first implemented?",
+    "reviewed_sha256": "2d54e9ab48362759c4feb7226ea0773370a944550ad2495f9cad48436a72f325",
+    "source_support": "reviewed",
+    "category_reason": "The first D1 final report gives both command results; no browser result is inferred."
+  },
+  {
+    "question_id": "Q007",
+    "reviewed_question": "Which user interactions were covered in the D1 local browser pass?",
+    "reviewed_sha256": "a6b9fb31a6b33b4f0e1490c73f5aaab4408fe146d27a73e09b6e9dce0ec1bb01",
+    "source_support": "reviewed",
+    "category_reason": "The user explicitly reports this browser pass; the answer is scoped to that report."
+  },
+  {
+    "question_id": "Q008",
+    "reviewed_question": "What ordering did the user prefer for the main task list?",
+    "reviewed_sha256": "e56f7cc2ebfb7aa9011910c18c1363aca574a62db582c8148eef009e5545794d",
+    "source_support": "reviewed",
+    "category_reason": "Newest-first is an explicit stated preference."
+  },
+  {
+    "question_id": "Q009",
+    "reviewed_question": "What separate ordering freedom did the user reserve for the daily plan?",
+    "reviewed_sha256": "095ba0ec20507c454c2c378c2ace93c98476d1bca964fd49d03c3d23f135a718",
+    "source_support": "reviewed",
+    "category_reason": "The separate future planning order is explicitly allowed."
+  },
+  {
+    "question_id": "Q010",
+    "reviewed_question": "Did the newest-first preference require another D1 code change?",
+    "reviewed_sha256": "6a8b531bb0e7c029aa4ecbf0bbf40fb62d3c39a5cd412ed4d65a6a0b7bec339c",
+    "source_support": "reviewed",
+    "category_reason": "One final response directly states existing ordering and no changes; corrected to singlehop."
+  },
+  {
+    "question_id": "Q011",
+    "reviewed_question": "How did D1 validation progress beyond the first implementation report?",
+    "reviewed_sha256": "fd5d96476f4ffa6429b27e6a98424bf2fb83115e278fd97113a4c8201c25e620",
+    "source_support": "reviewed",
+    "category_reason": "Compares the initial unavailable visual check with the later reported browser pass."
+  },
+  {
+    "question_id": "Q012",
+    "reviewed_question": "Why is it useful to keep the main task list newest first while letting a daily plan have its own order?",
+    "reviewed_sha256": "807c62f482801fa373ec2b46d0f56ef9224fc1ba05013d7641313a438d0c36f9",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence general rationale for two explicitly stated ordering choices."
+  },
+  {
+    "question_id": "Q013",
+    "reviewed_question": "What does a focus session attach to, and what is its default length?",
+    "reviewed_sha256": "aa9542e4d412a4b3041be318eafc2b00a3a25f2da08b727ca074306184d00400",
+    "source_support": "reviewed",
+    "category_reason": "Task association and 25 minutes are explicit; duration supports temporal."
+  },
+  {
+    "question_id": "Q014",
+    "reviewed_question": "Which direct timer controls did the user request?",
+    "reviewed_sha256": "6baa96a98fab1316521511523bfbc702b8fba5f093f341f312a09a22d0713ff2",
+    "source_support": "reviewed",
+    "category_reason": "The five timer actions are directly requested."
+  },
+  {
+    "question_id": "Q015",
+    "reviewed_question": "What should each finished focus session retain in history?",
+    "reviewed_sha256": "205e9fd6ec170beecf0daa6df44c9a59eaf8d54873e834a170c290c284f41fd0",
+    "source_support": "reviewed",
+    "category_reason": "Asks what history should retain, preserving the distinction between requested and implemented timing."
+  },
+  {
+    "question_id": "Q016",
+    "reviewed_question": "How did title-snapshot timing differ from the original request, and how was it corrected?",
+    "reviewed_sha256": "588cafafc0c3f69e5551e722f9b31973da493ec3f6c4494dc48ec846c1d509fd",
+    "source_support": "reviewed",
+    "category_reason": "Combines the original request, initial timing decision, and later same-session repair; all three stages remain explicitly distinguished."
+  },
+  {
+    "question_id": "Q017",
+    "reviewed_question": "When may the focus timer count elapsed time?",
+    "reviewed_sha256": "22b35a2699b2b9c3f9dfbcffb830592fd8e787f51d04152110dd2b7167e0e51e",
+    "source_support": "reviewed",
+    "category_reason": "Visible and running-only elapsed time is explicitly requested."
+  },
+  {
+    "question_id": "Q018",
+    "reviewed_question": "What must the user do after refreshing a running timer?",
+    "reviewed_sha256": "4ac446e3cf07cef113d3ad373e51fc35dac75830286658114eca19323fe919a4",
+    "source_support": "reviewed",
+    "category_reason": "Explicit resume after refresh is a requested temporal behavior."
+  },
+  {
+    "question_id": "Q019",
+    "reviewed_question": "Which additional timer behaviors were reported beyond the requested manual controls?",
+    "reviewed_sha256": "d5bcb26874c584fd94023fe88deb316c373ce6b63c6e1680c10bdc60d6e30fda",
+    "source_support": "reviewed",
+    "category_reason": "The implementation report directly names presets and auto-completion."
+  },
+  {
+    "question_id": "Q020",
+    "reviewed_question": "Why is corruption handling useful for locally saved focus sessions?",
+    "reviewed_sha256": "14fd8e297070395177c1d3a25543d0f14c3ffa0dee0a2432b37c7ca7a5524355",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence rationale for corruption handling; does not claim recovery was observed."
+  },
+  {
+    "question_id": "Q021",
+    "reviewed_question": "What browser symptom and HTTP result exposed D2's missing module?",
+    "reviewed_sha256": "ce9a164e5052b160d71daeaa38aaac0f5192cf57bef98a69d964ae437757022d",
+    "source_support": "reviewed",
+    "category_reason": "The same browser report gives both the empty selector and HTTP 404."
+  },
+  {
+    "question_id": "Q022",
+    "reviewed_question": "What change resolved the empty Focus selector, and how was it guarded against recurrence?",
+    "reviewed_sha256": "9185cc42bb4d932823df3e8636a798723f23b639ff2e616bb5ceb1a95bb44573",
+    "source_support": "reviewed",
+    "category_reason": "Route repair and regression check are both directly reported in one final reply; corrected to singlehop."
+  },
+  {
+    "question_id": "Q023",
+    "reviewed_question": "How did the D2 test report change after the route repair?",
+    "reviewed_sha256": "e14937f3e06350aaafb150d57e2ca9fcd744df588a0419aa17ccc2a6b422f15b",
+    "source_support": "reviewed",
+    "category_reason": "Compares the two reported test counts and the later environment skip."
+  },
+  {
+    "question_id": "Q024",
+    "reviewed_question": "Why did the missing-module experience justify a server route test even after D2's earlier tests passed?",
+    "reviewed_sha256": "c63c410712f3bca814e122f9ac98614e6b4e402ee375239ca55049455d0c8d7d",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence inference explaining why domain checks did not prove module delivery."
+  },
+  {
+    "question_id": "Q025",
+    "reviewed_question": "What could the user choose and order in a daily plan?",
+    "reviewed_sha256": "1ad96c776c5b9585058b017777ca5da161ade76dcab6665869c22b5ec10f184d",
+    "source_support": "reviewed",
+    "category_reason": "Local date and ordered task selection are explicit user choices."
+  },
+  {
+    "question_id": "Q026",
+    "reviewed_question": "What is the default daily time budget?",
+    "reviewed_sha256": "f25fb664fb008d3542b46436818c3a8a7ee6e705b356ece916e7976583ace3bb",
+    "source_support": "reviewed",
+    "category_reason": "The default budget is an explicit 120-minute choice."
+  },
+  {
+    "question_id": "Q027",
+    "reviewed_question": "Which three planning measures were requested?",
+    "reviewed_sha256": "ce21d2e529b1b08916175efb7f14c17b1041b4afbed409e292f15aafbf87a5d3",
+    "source_support": "reviewed",
+    "category_reason": "The three requested planning measures are listed directly."
+  },
+  {
+    "question_id": "Q028",
+    "reviewed_question": "Why should a day with no planned tasks have its own guidance?",
+    "reviewed_sha256": "0c6c7019b095bfa671cc4fec709f6c8d0f9433dda9b5509713125bcf47fe72b6",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence rationale for empty-day guidance."
+  },
+  {
+    "question_id": "Q029",
+    "reviewed_question": "How does a completed task in the plan affect the main task list?",
+    "reviewed_sha256": "fa37f700e831ebebee3a3804968048386e22d12ffddabccc852b2206327bb9df",
+    "source_support": "reviewed",
+    "category_reason": "The report explicitly states completion sync with the main list."
+  },
+  {
+    "question_id": "Q030",
+    "reviewed_question": "What persistence and invalid-data handling did the D3 implementation report?",
+    "reviewed_sha256": "e2484da3197de646a2ce957fd5f0a91cd83dc3e28b035182c0e4cc44605585bb",
+    "source_support": "reviewed",
+    "category_reason": "The question is about reported persistence, not an independently observed corruption test."
+  },
+  {
+    "question_id": "Q031",
+    "reviewed_question": "Which daily-plan interactions worked in the user's first browser check?",
+    "reviewed_sha256": "895150f5dcc5996b6fa29a40b9220e2ca2f9aece0bc2f3ca9a8a7e5303b02df5",
+    "source_support": "reviewed",
+    "category_reason": "The four successful browser interactions are explicitly reported by the user."
+  },
+  {
+    "question_id": "Q032",
+    "reviewed_question": "What remained wrong after deleting a planned task in the first D3 browser pass?",
+    "reviewed_sha256": "eeae2d733f364703c01737f0a4bf2d83aab9679c46274fb6912bcc6e63233cf8",
+    "source_support": "reviewed",
+    "category_reason": "The stale ID and warning after refresh are explicit observations."
+  },
+  {
+    "question_id": "Q033",
+    "reviewed_question": "What deletion behavior did the user request, and was it implemented in the same D3 conversation?",
+    "reviewed_sha256": "559412c8f869dc3f5472591e8ca552b1f31f8ce59f9100d42aca899db7dcadcd",
+    "source_support": "reviewed",
+    "category_reason": "Combines a requested preference with the subsequent implemented cleanup."
+  },
+  {
+    "question_id": "Q034",
+    "reviewed_question": "How does the D3 cleanup protect plans on other dates and the remaining task order?",
+    "reviewed_sha256": "d8fe47f31a9b8905b6e3a1860bc16502cd70bdb25d68d7197baed5a0bdaf2b22",
+    "source_support": "reviewed",
+    "category_reason": "Cleanup across dates and preservation of order are directly stated."
+  },
+  {
+    "question_id": "Q035",
+    "reviewed_question": "What follow-up validation covered the persisted-plan cleanup?",
+    "reviewed_sha256": "b3600285a04b341806b761660d0774e8ce5a1f957657162e9e541d2b7a5f0c48",
+    "source_support": "reviewed",
+    "category_reason": "The follow-up reply alone provides the regression coverage and counts; corrected to singlehop."
+  },
+  {
+    "question_id": "Q036",
+    "reviewed_question": "What range does Insights show initially?",
+    "reviewed_sha256": "500019e27c83af6e3f0fd707d0a1089e6ad361ca69e8dc6e621c2e54a25397c2",
+    "source_support": "reviewed",
+    "category_reason": "One complete bullet states the inclusive local seven-day range; corrected to singlehop."
+  },
+  {
+    "question_id": "Q037",
+    "reviewed_question": "Which three values does Insights derive from focus history?",
+    "reviewed_sha256": "91155897e19fcf28b42cf3db8888f44fd372fd2f45dfb18ac98185d90ce5d050",
+    "source_support": "reviewed",
+    "category_reason": "The three Insights values are listed in the request."
+  },
+  {
+    "question_id": "Q038",
+    "reviewed_question": "What must the CSV date range match?",
+    "reviewed_sha256": "5d128e46eb7c0c51f1076880f3569f0c2f03aecee367d20e2e6cbb5994cd53c4",
+    "source_support": "reviewed",
+    "category_reason": "The CSV range is explicitly required to match the displayed range."
+  },
+  {
+    "question_id": "Q039",
+    "reviewed_question": "Which task-name punctuation did the CSV implementation report escaping?",
+    "reviewed_sha256": "f7de06f6800448285156291d8b65253fc0cbd957d579a9c2075b102ade81bbc9",
+    "source_support": "reviewed",
+    "category_reason": "The wording asks about escaping, avoiding confusion with character encoding."
+  },
+  {
+    "question_id": "Q040",
+    "reviewed_question": "Which exceptional Insights states required clear feedback?",
+    "reviewed_sha256": "10dc3869cd64986c92bcc7643a734d2570cf07ae9ebd0cfc3b03563b181da0eb",
+    "source_support": "reviewed",
+    "category_reason": "The request and report establish empty/invalid ranges and failed exports; direct state enumeration."
+  },
+  {
+    "question_id": "Q041",
+    "reviewed_question": "What mismatch appeared immediately after the first short focus session?",
+    "reviewed_sha256": "ab3e99d4f8f204d8165da040b42233cc3afa8a5766b6a56d9af6a1eaf13b449e",
+    "source_support": "reviewed",
+    "category_reason": "The pre-refresh discrepancy and 15-second value are explicitly observed."
+  },
+  {
+    "question_id": "Q042",
+    "reviewed_question": "What did Insights show after refreshing that first short-session test?",
+    "reviewed_sha256": "4ac9e737a919a3b1622cece9032c96d1ad112f56cfd7f773b622b72c92275e4a",
+    "source_support": "reviewed",
+    "category_reason": "The post-refresh count and duration are explicitly observed."
+  },
+  {
+    "question_id": "Q043",
+    "reviewed_question": "How was the stale Insights summary corrected?",
+    "reviewed_sha256": "a86395b1276e6b06703847efff9736e62060bfe38a0003e102ba2834c857897f",
+    "source_support": "reviewed",
+    "category_reason": "The repair is stated verbatim in one reply; redundant citation removed and label corrected."
+  },
+  {
+    "question_id": "Q044",
+    "reviewed_question": "How long is the export Blob URL retained, and what happens on failure?",
+    "reviewed_sha256": "f9bd9904f8b1d3d0bfb6732d6c070acb93cc82779fe811c1227f38f80e80e57d",
+    "source_support": "reviewed",
+    "category_reason": "The final reply states the 60-second lifetime and immediate failure cleanup."
+  },
+  {
+    "question_id": "Q045",
+    "reviewed_question": "How did the export confirmation change after the browser download was uncertain?",
+    "reviewed_sha256": "af8057ee47dff2b2666d3dc95727db8730391e28e5d01fb029d2e1626cee0a5b",
+    "source_support": "reviewed",
+    "category_reason": "Compares the earlier download claim with the later request-only confirmation."
+  },
+  {
+    "question_id": "Q046",
+    "reviewed_question": "What validation did the D4 follow-up report?",
+    "reviewed_sha256": "1a10898c49bb48e1dd0ddc40a9581dfaae377ec74757254021f0e9c7042d589a",
+    "source_support": "reviewed",
+    "category_reason": "The question is limited to the D4 follow-up report, including its environment skip."
+  },
+  {
+    "question_id": "Q047",
+    "reviewed_question": "Why is 'download request sent' more accurate than 'downloaded' at the time the button is clicked?",
+    "reviewed_sha256": "55e0aae17b3a6d706cba95a81fe93270e4ae3f4f6544b637630a10b320a8a97d",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence distinction between issuing a request and observing a saved file."
+  },
+  {
+    "question_id": "Q048",
+    "reviewed_question": "What different obstacles blocked D1 browser verification and D2 timer use?",
+    "reviewed_sha256": "b938a0071239170fcc37c153821d39077ad4172b7d0a36ae2064fc08241b1cdb",
+    "source_support": "reviewed",
+    "category_reason": "D1 environment restrictions and D2 module delivery failure are different facts from separate conversations."
+  },
+  {
+    "question_id": "Q049",
+    "reviewed_question": "Which D1 task actions can change D3's completion progress, and how?",
+    "reviewed_sha256": "c40709b61ae2c137b03ff0c07862fd749c3419b6e5c05d1408510d94ce263f30",
+    "source_support": "reviewed",
+    "category_reason": "D1 gives complete/reopen actions; D3 gives shared progress; answer is limited to planned tasks."
+  },
+  {
+    "question_id": "Q050",
+    "reviewed_question": "Why were the first D4 date fixtures changed, and what replacement was used?",
+    "reviewed_sha256": "fda280612bc79aae493c829cfc5e91f088832e41dc8d22e66e96effefe4ea647",
+    "source_support": "reviewed",
+    "category_reason": "The restored D4 progress reply directly explains the timezone fixture failure and replacement; this replaces a redundant ordering question."
+  },
+  {
+    "question_id": "Q051",
+    "reviewed_question": "Which data representations let D2 preserve finished history while D3 reflects later estimate changes?",
+    "reviewed_sha256": "a84d1e951ce84caf395d8f48577439e239f8b1d1c592d145b2ff12e3f1738290",
+    "source_support": "reviewed",
+    "category_reason": "D2 supplies retained history snapshots; restored D3 commentary supplies live task-ID derivation."
+  },
+  {
+    "question_id": "Q052",
+    "reviewed_question": "Why should paused or hidden time not inflate Insights totals?",
+    "reviewed_sha256": "bbd0a3821825e759b3683b1d4f7aa84a0192d88a849e1d18dbb75e6899968871",
+    "source_support": "reviewed",
+    "category_reason": "D2 defines excluded timer intervals; D4 defines actual-time aggregation."
+  },
+  {
+    "question_id": "Q053",
+    "reviewed_question": "What do the date controls in D3 and D4 select, respectively?",
+    "reviewed_sha256": "8e22bc6a65f89f55b888b9ee7e3e392f6d0ce52315a2f9e8466427f01776f4d5",
+    "source_support": "reviewed",
+    "category_reason": "D3 selects one planning date, whereas D4 selects a history range; both sources are needed."
+  },
+  {
+    "question_id": "Q054",
+    "reviewed_question": "How do D1 task filters and D3 date selection narrow the work shown?",
+    "reviewed_sha256": "a2d4042702ceaebb58ac2ae899ba869d54f99f07f90cb8ffbbe9353c5a7b8ab2",
+    "source_support": "reviewed",
+    "category_reason": "D1 provides title/status/priority filters; D3 provides a dated ordered subset; both selections are distinct."
+  },
+  {
+    "question_id": "Q055",
+    "reviewed_question": "What different effects did refreshing have during the D3 deletion check and the D4 Insights check?",
+    "reviewed_sha256": "8e39f3e9a9a3100ae309ed16e1d836d8af2f5da6dde10a34724c6ca268066527",
+    "source_support": "reviewed",
+    "category_reason": "D3 refresh retains a warning, whereas D4 refresh restores the summary; the observed contrast needs both sessions."
+  },
+  {
+    "question_id": "Q056",
+    "reviewed_question": "What browser-local persistence choice do the D1 task workspace and D2 focus sessions share?",
+    "reviewed_sha256": "9d3bd71223d50085e05770e889e3a606b1dae58c27c79323d121976f278909a9",
+    "source_support": "reviewed",
+    "category_reason": "Compares D1 browser-local storage choice with the D2 versioned local store."
+  },
+  {
+    "question_id": "Q057",
+    "reviewed_question": "How do the D2 and D3 default minute values serve different purposes?",
+    "reviewed_sha256": "86bd380752fda844a599ff377065edbcc53e6a94edaddb8ee972b0d286630eea",
+    "source_support": "reviewed",
+    "category_reason": "Compares a 25-minute focus default with a 120-minute daily budget; distinct units of work need both sessions."
+  },
+  {
+    "question_id": "Q058",
+    "reviewed_question": "Why can D3's planned workload differ from D4's actual focused time?",
+    "reviewed_sha256": "5a90c17351b7d9c117f232ac0a23d0febf91e017cf56855d69c311f59ff69953",
+    "source_support": "reviewed",
+    "category_reason": "Restored D3 commentary directly connects task estimates to workload; D4 provides recorded actual-time aggregation."
+  },
+  {
+    "question_id": "Q059",
+    "reviewed_question": "What protects a historical task name when it later appears in a D4 CSV with commas or quotes?",
+    "reviewed_sha256": "796e681fc4c78e66eed22cbb13ac4692bb1e24eb933cd6f06d358ca62d3669b8",
+    "source_support": "reviewed",
+    "category_reason": "D2 provides historical-title retention, D4 provides CSV punctuation escaping; neither alone proves both safeguards."
+  },
+  {
+    "question_id": "Q060",
+    "reviewed_question": "In what order did the four original feature conversations build the app?",
+    "reviewed_sha256": "ac7880dba9ea01b682029a2b394ead46803d221498dea3f2fcf7aef1158a0dca",
+    "source_support": "reviewed",
+    "category_reason": "Chronological feature ordering uses all four distinct original conversations; no artificial new session is inferred."
+  }
+]
