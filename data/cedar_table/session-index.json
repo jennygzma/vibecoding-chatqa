@@ -1,0 +1,218 @@
+{
+  "project": "Cedar Table",
+  "status": "In Progress",
+  "approval": "pending",
+  "required_feature_count": 10,
+  "recorded_feature_count": 10,
+  "features": [
+    {
+      "number": 1,
+      "title": "Playable four-seat Mahjong hand",
+      "conversation": "D1",
+      "original_session_id": "1790108369625_fo4un",
+      "started_at": "2026-09-22T20:19:29.985Z",
+      "recorded_through": "2026-09-22T20:52:23.179Z",
+      "visible_messages": 53
+    },
+    {
+      "number": 2,
+      "title": "Save, pause, and continue a hand",
+      "conversation": "D2",
+      "original_session_id": "1790118856040_70kl6",
+      "started_at": "2026-09-22T23:14:16.344Z",
+      "recorded_through": "2026-09-22T23:33:31.926Z",
+      "visible_messages": 40
+    },
+    {
+      "number": 3,
+      "title": "Completed-hand history",
+      "conversation": "D3",
+      "original_session_id": "1790129241314_pk8x5",
+      "started_at": "2026-09-23T02:07:22.600Z",
+      "recorded_through": "2026-09-23T02:13:26.459Z",
+      "visible_messages": 29
+    },
+    {
+      "number": 4,
+      "title": "Statistics from completed hands",
+      "conversation": "D4",
+      "original_session_id": "1790129984706_a0fan",
+      "started_at": "2026-09-23T02:19:46.057Z",
+      "recorded_through": "2026-09-23T02:24:29.439Z",
+      "visible_messages": 18
+    },
+    {
+      "number": 5,
+      "title": "On-demand standard-hand practice hints",
+      "conversation": "D5",
+      "original_session_id": "1790130696183_3sjlq",
+      "started_at": "2026-09-23T02:31:37.593Z",
+      "recorded_through": "2026-09-23T02:42:15.984Z",
+      "visible_messages": 30
+    },
+    {
+      "number": 6,
+      "title": "Computer pace preferences and scheduling",
+      "conversation": "D6",
+      "original_session_id": "1790137421512_yv5k5",
+      "started_at": "2026-09-23T04:23:42.259Z",
+      "recorded_through": "2026-09-23T04:30:40.254Z",
+      "visible_messages": 23
+    },
+    {
+      "number": 7,
+      "title": "Four-seat public discard rivers",
+      "conversation": "D7",
+      "original_session_id": "1790139746557_hwh24",
+      "started_at": "2026-09-23T05:02:27.835Z",
+      "recorded_through": "2026-09-23T05:12:09.165Z",
+      "visible_messages": 33
+    },
+    {
+      "number": 8,
+      "title": "Select and confirm an East discard",
+      "conversation": "D8",
+      "original_session_id": "1790140836221_yuvpk",
+      "started_at": "2026-09-23T05:20:37.499Z",
+      "recorded_through": "2026-09-23T05:30:38.728Z",
+      "visible_messages": 29
+    },
+    {
+      "number": 9,
+      "title": "Filter completed-hand history by result",
+      "conversation": "D9",
+      "original_session_id": "1790142044691_5fgyl",
+      "started_at": "2026-09-23T05:40:45.962Z",
+      "recorded_through": "2026-09-23T05:52:09.625Z",
+      "visible_messages": 34
+    },
+    {
+      "number": 10,
+      "title": "Export retained completed-hand history as CSV",
+      "conversation": "D10",
+      "original_session_id": "1790144041083_bw3wc",
+      "started_at": "2026-09-23T06:14:02.407Z",
+      "recorded_through": "2026-09-23T06:20:05.684Z",
+      "visible_messages": 31
+    }
+  ],
+  "user_reply_intervals": [
+    {
+      "dia_id": "D1:16",
+      "timestamp_utc": "2026-09-22T20:29:12.621Z",
+      "previous_response_dia_id": "D1:15",
+      "seconds_after_previous_response": 411.322
+    },
+    {
+      "dia_id": "D1:26",
+      "timestamp_utc": "2026-09-22T20:38:01.353Z",
+      "previous_response_dia_id": "D1:25",
+      "seconds_after_previous_response": 414.622
+    },
+    {
+      "dia_id": "D1:41",
+      "timestamp_utc": "2026-09-22T20:50:42.527Z",
+      "previous_response_dia_id": "D1:40",
+      "seconds_after_previous_response": 508.733
+    },
+    {
+      "dia_id": "D2:15",
+      "timestamp_utc": "2026-09-22T23:24:47.536Z",
+      "previous_response_dia_id": "D2:14",
+      "seconds_after_previous_response": 487.182
+    },
+    {
+      "dia_id": "D2:29",
+      "timestamp_utc": "2026-09-22T23:31:23.037Z",
+      "previous_response_dia_id": "D2:28",
+      "seconds_after_previous_response": 250.988
+    },
+    {
+      "dia_id": "D3:20",
+      "timestamp_utc": "2026-09-23T02:11:35.990Z",
+      "previous_response_dia_id": "D3:19",
+      "seconds_after_previous_response": 88.113
+    },
+    {
+      "dia_id": "D4:11",
+      "timestamp_utc": "2026-09-23T02:23:27.075Z",
+      "previous_response_dia_id": "D4:10",
+      "seconds_after_previous_response": 139.935
+    },
+    {
+      "dia_id": "D5:17",
+      "timestamp_utc": "2026-09-23T02:35:55.765Z",
+      "previous_response_dia_id": "D5:16",
+      "seconds_after_previous_response": 117.086
+    },
+    {
+      "dia_id": "D5:25",
+      "timestamp_utc": "2026-09-23T02:41:19.281Z",
+      "previous_response_dia_id": "D5:24",
+      "seconds_after_previous_response": 271.761
+    },
+    {
+      "dia_id": "D6:13",
+      "timestamp_utc": "2026-09-23T04:28:26.689Z",
+      "previous_response_dia_id": "D6:12",
+      "seconds_after_previous_response": 119.793
+    },
+    {
+      "dia_id": "D7:18",
+      "timestamp_utc": "2026-09-23T05:07:10.756Z",
+      "previous_response_dia_id": "D7:17",
+      "seconds_after_previous_response": 90.56
+    },
+    {
+      "dia_id": "D7:28",
+      "timestamp_utc": "2026-09-23T05:11:44.838Z",
+      "previous_response_dia_id": "D7:27",
+      "seconds_after_previous_response": 164.037
+    },
+    {
+      "dia_id": "D8:15",
+      "timestamp_utc": "2026-09-23T05:26:07.639Z",
+      "previous_response_dia_id": "D8:14",
+      "seconds_after_previous_response": 160.085
+    },
+    {
+      "dia_id": "D8:24",
+      "timestamp_utc": "2026-09-23T05:30:11.749Z",
+      "previous_response_dia_id": "D8:23",
+      "seconds_after_previous_response": 145.856
+    },
+    {
+      "dia_id": "D9:10",
+      "timestamp_utc": "2026-09-23T05:47:48.513Z",
+      "previous_response_dia_id": "D9:9",
+      "seconds_after_previous_response": 331.447
+    },
+    {
+      "dia_id": "D9:19",
+      "timestamp_utc": "2026-09-23T05:49:38.687Z",
+      "previous_response_dia_id": "D9:18",
+      "seconds_after_previous_response": 57.799
+    },
+    {
+      "dia_id": "D9:29",
+      "timestamp_utc": "2026-09-23T05:51:46.230Z",
+      "previous_response_dia_id": "D9:28",
+      "seconds_after_previous_response": 60.682
+    },
+    {
+      "dia_id": "D10:18",
+      "timestamp_utc": "2026-09-23T06:17:30.612Z",
+      "previous_response_dia_id": "D10:17",
+      "seconds_after_previous_response": 70.407
+    },
+    {
+      "dia_id": "D10:25",
+      "timestamp_utc": "2026-09-23T06:19:41.425Z",
+      "previous_response_dia_id": "D10:24",
+      "seconds_after_previous_response": 84.285
+    }
+  ],
+  "annotation_count": 100,
+  "overall_annotation_target": 100,
+  "overall_distribution_review": "Reviewed across all ten original conversations and 100 questions; approval pending."
+}

@@ -1,0 +1,3 @@
+
+> cedar-table@0.1.0 check
+> node --check rules.js && node --check game.js && node --check clock.js && node --check computer-pace.js && node --check computer-scheduler.js && node --check persistence.js && node --check statistics.js && node --check app.js

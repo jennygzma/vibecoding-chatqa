@@ -1,0 +1,11 @@
+{
+  "name": "focus-desk",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "check": "node --check server.mjs && node --check src/domain.js && node --check src/focus.js && node --check src/insights.js && node --check src/daily-plan.js && node --check src/storage.js && node --check src/app.js && node --check tests/domain.test.js && node --check tests/focus.test.js && node --check tests/insights.test.js && node --check tests/daily-plan.test.js && node --check tests/storage.test.js && node --check tests/server.test.js"
+  }
+}

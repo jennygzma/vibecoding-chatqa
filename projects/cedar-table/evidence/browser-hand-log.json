@@ -1,0 +1,79 @@
+[
+  {
+    "time": "2026-09-22T20:46:29.545Z",
+    "action": "2 bamboo"
+  },
+  {
+    "time": "2026-09-22T20:46:35.380Z",
+    "action": "5 bamboo"
+  },
+  {
+    "time": "2026-09-22T20:46:41.180Z",
+    "action": "8 bamboo"
+  },
+  {
+    "time": "2026-09-22T20:46:47.113Z",
+    "action": "5 characters"
+  },
+  {
+    "time": "2026-09-22T20:46:53.163Z",
+    "action": "8 characters"
+  },
+  {
+    "time": "2026-09-22T20:46:59.330Z",
+    "action": "7 bamboo"
+  },
+  {
+    "time": "2026-09-22T20:47:05.630Z",
+    "action": "S South"
+  },
+  {
+    "time": "2026-09-22T20:47:19.212Z",
+    "action": "CHII"
+  },
+  {
+    "time": "2026-09-22T20:47:24.895Z",
+    "action": "1 dots"
+  },
+  {
+    "time": "2026-09-22T20:47:30.696Z",
+    "action": "3 dots"
+  },
+  {
+    "time": "2026-09-22T20:47:36.614Z",
+    "action": "8 bamboo"
+  },
+  {
+    "time": "2026-09-22T20:47:42.662Z",
+    "action": "5 bamboo"
+  },
+  {
+    "time": "2026-09-22T20:47:48.830Z",
+    "action": "6 dots"
+  },
+  {
+    "time": "2026-09-22T20:47:55.114Z",
+    "action": "4 dots"
+  },
+  {
+    "time": "2026-09-22T20:48:05.413Z",
+    "action": "4 bamboo"
+  },
+  {
+    "time": "2026-09-22T20:48:11.096Z",
+    "action": "1 dots"
+  },
+  {
+    "time": "2026-09-22T20:48:16.896Z",
+    "action": "4 dots"
+  },
+  {
+    "time": "2026-09-22T20:48:22.830Z",
+    "action": "RON"
+  },
+  {
+    "time": "2026-09-22T20:48:28.602Z",
+    "ended": true,
+    "snapshot": "- main:\n  - paragraph: A four-seat Mahjong table\n  - heading \"Cedar Table\" [level=1]\n  - button \"New hand\"\n  - strong: East (You) wins by Ron!\n  - generic: 26 tiles left in wall\n  - region \"Mahjong table\":\n    - text: North · 7 concealed\n    - generic \"PON\":\n      - generic \"4 Characters\":\n        - generic: \"4\"\n        - generic: characters\n      - generic \"4 Characters\":\n        - generic: \"4\"\n        - generic: characters\n      - generic \"4 Characters\":\n        - generic: \"4\"\n        - generic: characters\n    - generic \"PON\":\n      - generic \"3 Characters\":\n        - generic: \"3\"\n        - generic: characters\n      - generic \"3 Characters\":\n        - generic: \"3\"\n        - generic: characters\n      - generic \"3 Characters\":\n        - generic: \"3\"\n        - generic: characters\n    - text: West · 4 concealed\n    - generic \"CHII\":\n      - generic \"4 Bamboo\":\n        - generic: \"4\"\n        - generic: bamboo\n      - generic \"5 Bamboo\":\n        - generic: \"5\"\n        - generic: bamboo\n      - generic \"6 Bamboo\":\n        - generic: \"6\"\n        - generic: bamboo\n    - generic \"CHII\":\n      - generic \"1 Dots\":\n        - generic: \"1\"\n        - generic: dots\n      - generic \"2 Dots\":\n        - generic: \"2\"\n        - generic: dots\n      - generic \"3 Dots\":\n        - generic: \"3\"\n        - generic: dots\n    - generic \"PON\":\n      - generic \"North\":\n        - generic: \"N\"\n        - generic: North\n      - generic \"North\":\n        - generic: \"N\"\n        - generic: North\n      - generic \"North\":\n        - generic: \"N\"\n        - generic: North\n    - text: CEDAR\n    - text: TABLE\n    - text: South · 4 concealed\n    - generic \"CHII\":\n      - generic \"5 Characters\":\n        - generic: \"5\"\n        - generic: characters\n      - generic \"6 Characters\":\n        - generic: \"6\"\n        - generic: characters\n      - generic \"7 Characters\":\n        - generic: \"7\"\n        - generic: characters\n    - generic \"CHII\":\n      - generic \"6 Dots\":\n        - generic: \"6\"\n        - generic: dots\n      - generic \"7 Dots\":\n        - generic: \"7\"\n        - generic: dots\n      - generic \"8 Dots\":\n        - generic: \"8\"\n        - generic: dots\n    - generic \"PON\":\n      - generic \"2 Dots\":\n        - generic: \"2\"\n        - generic: dots\n      - generic \"2 Dots\":\n        - generic: \"2\"\n        - generic: dots\n      - generic \"2 Dots\":\n        - generic: \"2\"\n        - generic: dots\n  - heading \"East — your hand\" [level=2]\n  - paragraph: This hand is complete. Start a new hand to play again.\n  - generic \"CHII\":\n    - generic \"1 Bamboo\":\n      - generic: \"1\"\n      - generic: bamboo\n    - generic \"2 Bamboo\":\n      - generic: \"2\"\n      - generic: bamboo\n    - generic \"3 Bamboo\":\n      - generic: \"3\"\n      - generic: bamboo\n  - generic \"CHII\":\n    - generic \"5 Dots\":\n      - generic: \"5\"\n      - generic: dots\n    - generic \"6 Dots\":\n      - generic: \"6\"\n      - generic: dots\n    - generic \"7 Dots\":\n      - generic: \"7\"\n      - generic: dots\n  - generic \"Your tiles\":\n    - button \"1 characters\" [disabled]:\n      - generic: \"1\"\n      - generic: characters\n    - button \"1 characters\" [disabled]:\n      - generic: \"1\"\n      - generic: characters\n    - button \"1 characters\" [disabled]:\n      - generic: \"1\"\n      - generic: characters\n    - button \"9 dots\" [disabled]:\n      - generic: \"9\"\n      - generic: dots\n    - button \"G Green\" [disabled]:\n      - generic: G\n      - generic: Green\n    - button \"G Green\" [disabled]:\n      - generic: G\n      - generic: Green\n    - button \"G Green\" [disabled]:\n      - generic: G\n      - generic: Green\n  - generic \"House rules and local opening\""
+  }
+]
