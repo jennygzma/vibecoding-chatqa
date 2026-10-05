@@ -133,3 +133,10 @@ Status: In Progress. Approval pending. Validate the submission with `python3 scr
 [Focus Desk](projects/focus-desk/README.md) is a local task and focus app with four features, four original conversations, and [60 evidence-linked questions](data/focus_desk/vibe_combined.json). The [dataset guide](data/focus_desk/README.md) explains its records; the [review report](projects/focus-desk/evidence/REVIEW.md) includes verification and browser evidence.
 
 Status: In Progress. Approval pending. Validate the submission with `python3 scripts/validate_focus_desk.py`.
+
+
+## Pantry Lane
+
+[Pantry Lane](projects/pantry-lane/README.md) is a local kitchen app with pantry inventory, recipes, weekly menus and shopping snapshots. Its [50 evidence-linked questions](data/pantry_lane/vibe_combined.json) come from four original feature conversations. The [dataset guide](data/pantry_lane/README.md) describes the records, and the [review evidence](projects/pantry-lane/evidence/READY-FOR-REVIEW.md) includes tests, screenshots and CSV checks.
+
+Status: In Progress. Approval pending. Validate the published package with `python3 scripts/validate_pantry_lane.py`.

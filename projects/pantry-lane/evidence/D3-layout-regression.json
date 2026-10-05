@@ -1,0 +1,11 @@
+{
+  "prior_result": "failed",
+  "viewport_width": 390,
+  "document_scroll_width": 1293,
+  "menu_grid_column_width": 1277.17,
+  "week_grid_tracks": "7 \u00d7 168 px",
+  "screenshot": "D3-mobile-before-repair.png",
+  "required_recheck": "page scrollWidth must equal viewport width; phone days stack or wrap",
+  "repair": "menu panel can shrink; phone controls stack; day cards use an adaptive grid below 500px",
+  "post_repair_recheck": "pending; browser connection was not retried"
+}

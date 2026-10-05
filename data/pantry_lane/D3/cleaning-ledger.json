@@ -1,0 +1,2313 @@
+[
+  {
+    "source_path": "raw/history-003.json",
+    "original_position": 0,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "bc45d5c1-8a76-4baa-96a5-73c7e1455535"
+  },
+  {
+    "source_path": "raw/history-003.json",
+    "original_position": 1,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "msg_nrX1LkpU"
+  },
+  {
+    "source_path": "raw/history-004.json",
+    "original_position": 0,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "bc45d5c1-8a76-4baa-96a5-73c7e1455535"
+  },
+  {
+    "source_path": "raw/history-004.json",
+    "original_position": 1,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "msg_nrX1LkpU"
+  },
+  {
+    "source_path": "raw/history-004.json",
+    "original_position": 2,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "e3c1d864-b2e3-4683-90e5-fe321542f9de"
+  },
+  {
+    "source_path": "raw/history-004.json",
+    "original_position": 3,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "msg_OoyPuB--"
+  },
+  {
+    "source_path": "raw/history-005.json",
+    "original_position": 0,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "bc45d5c1-8a76-4baa-96a5-73c7e1455535"
+  },
+  {
+    "source_path": "raw/history-005.json",
+    "original_position": 1,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "msg_nrX1LkpU"
+  },
+  {
+    "source_path": "raw/history-005.json",
+    "original_position": 2,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "e3c1d864-b2e3-4683-90e5-fe321542f9de"
+  },
+  {
+    "source_path": "raw/history-005.json",
+    "original_position": 3,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "msg_OoyPuB--"
+  },
+  {
+    "source_path": "raw/history-005.json",
+    "original_position": 4,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "8d8e7b93-6528-48a8-8608-e6aadf1c1158"
+  },
+  {
+    "source_path": "raw/history-005.json",
+    "original_position": 5,
+    "reason": "duplicate public message in later snapshot",
+    "represented_by_original_message_id": "msg_PRjNSHKe"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 1,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 2,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 3,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 4,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 5,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 6,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 7,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 8,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 9,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 10,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 11,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 12,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 13,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 15,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 16,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 17,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 18,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 19,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 20,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 21,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 22,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 23,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 24,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 25,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 26,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 27,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 28,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 29,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 30,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 31,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 32,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 33,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 35,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 36,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 37,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 38,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 39,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 40,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 41,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 42,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 43,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 44,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 45,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 46,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 47,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 48,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 49,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 50,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 51,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 52,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 53,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 55,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 56,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 57,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 58,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 59,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 60,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 61,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 62,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 63,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 64,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 65,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 66,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 67,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 68,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 70,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 71,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 72,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 73,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 74,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 75,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 76,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 77,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 78,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 79,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 80,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 81,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 82,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 83,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 84,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 85,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 86,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 87,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 88,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 89,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 90,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 91,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 92,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 93,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 94,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 95,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 96,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 97,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 98,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 99,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 100,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 101,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 102,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 103,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 104,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 105,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 106,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 107,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 108,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 109,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 110,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 111,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 112,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 113,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 115,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 116,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 117,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 118,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 119,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 120,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 121,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 122,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 123,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 124,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 125,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 126,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 127,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 128,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 129,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 130,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 131,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 132,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 133,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 134,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 135,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 136,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 137,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 138,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 139,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 140,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 141,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 142,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 143,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 144,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 145,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 146,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 147,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 149,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 150,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 151,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 152,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 153,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 154,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 155,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 156,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 157,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 158,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 159,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 160,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 161,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 162,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 163,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 164,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 165,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 166,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 167,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 168,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 169,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 170,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 171,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 173,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 174,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 175,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 176,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 177,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 178,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 179,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 180,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 181,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 182,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 183,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 184,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 185,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 186,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 187,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 189,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 190,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 191,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 192,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 193,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 194,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 195,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 196,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 197,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 198,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 199,
+    "reason": "final reply also present in public history",
+    "original_message_id": "msg_0704eb6ebbb50115016ac06f566bf487d2a1f59aa24bc0fbc3",
+    "original_timestamp": "2026-10-03T02:58:34.307Z",
+    "display_transformations": [
+      "history omits the trailing auxiliary citation block"
+    ],
+    "represented_by_original_message_id": "msg_nrX1LkpU"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 200,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 201,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-001.jsonl",
+    "source_line": 202,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 1,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 2,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 3,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 4,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 5,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 6,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 7,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 8,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 9,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 10,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 11,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 12,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 13,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 15,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 16,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 17,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 18,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 19,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 20,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 21,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 22,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 23,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 24,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 25,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 26,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 27,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 28,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 29,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 30,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 31,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 32,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 33,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 34,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 35,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 36,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 37,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 38,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 39,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 40,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 41,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 42,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 43,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 45,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 46,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 47,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 48,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 49,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 50,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 51,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 52,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 53,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 54,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 55,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 56,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 57,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 58,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 59,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 60,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 61,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 62,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 63,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 64,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 65,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 66,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 67,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 68,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 69,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 70,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 71,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 72,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 74,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 75,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 76,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 77,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 78,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 79,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 80,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 81,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 82,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 83,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 84,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 85,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 86,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 87,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 88,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 89,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 90,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 91,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 93,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 94,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 95,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 96,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 97,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 98,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 99,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 100,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 101,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 102,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 103,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 104,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 105,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 106,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 107,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 108,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 109,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 110,
+    "reason": "final reply also present in public history",
+    "original_message_id": "msg_03da0e91735d6cc2016ac06fcaac7087d28c1c39f3252bba21",
+    "original_timestamp": "2026-10-03T03:00:29.063Z",
+    "display_transformations": [
+      "history omits the trailing auxiliary citation block"
+    ],
+    "represented_by_original_message_id": "msg_OoyPuB--"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 111,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 112,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-002.jsonl",
+    "source_line": 113,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 1,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 2,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 3,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 4,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 5,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 6,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 7,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 8,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 9,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 10,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 11,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 12,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 13,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 15,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 16,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 17,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 18,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 19,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 20,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 21,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 22,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 23,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 24,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 25,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 26,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 27,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 28,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 29,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 31,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 32,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 33,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 34,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 35,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 36,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 37,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 38,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 39,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 40,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 41,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 42,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 43,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 44,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 45,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 47,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 48,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 49,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 50,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 51,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 52,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 53,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 54,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 55,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 56,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 57,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 58,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 59,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 60,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 61,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 63,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 64,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 65,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 66,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 67,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 68,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 69,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 70,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 71,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 72,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 73,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 74,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 75,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 76,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 77,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 78,
+    "reason": "final reply also present in public history",
+    "original_message_id": "msg_047de545d939db4d016ac07008136087d283b28c2da1ebfcae",
+    "original_timestamp": "2026-10-03T03:01:30.230Z",
+    "display_transformations": [
+      "history omits the trailing auxiliary citation block"
+    ],
+    "represented_by_original_message_id": "msg_PRjNSHKe"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 79,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 80,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-003.jsonl",
+    "source_line": 81,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 1,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 2,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 3,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 4,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 5,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 6,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 7,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 8,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 9,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 10,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 11,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 12,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 13,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 15,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 16,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 17,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 18,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 19,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 20,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 21,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 22,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 23,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 24,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 25,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 26,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 27,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 28,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 29,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 30,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 31,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 32,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 33,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 34,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 36,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 37,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 38,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 39,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 40,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 41,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 42,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 43,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 44,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 45,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 46,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 47,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 48,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 49,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 50,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 51,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 52,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 54,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 55,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 56,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 57,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 58,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 59,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 60,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 61,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 62,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 63,
+    "reason": "final reply also present in public history",
+    "original_message_id": "msg_0bed31e25da2aae7016ac0703f687487d29726da3825522e14",
+    "original_timestamp": "2026-10-03T03:02:25.374Z",
+    "display_transformations": [
+      "history omits the trailing auxiliary citation block"
+    ],
+    "represented_by_original_message_id": "msg_7YbO5LAs"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 64,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 65,
+    "reason": "non-public runtime record retained in raw"
+  },
+  {
+    "source_path": "raw/run-004.jsonl",
+    "source_line": 66,
+    "reason": "non-public runtime record retained in raw"
+  }
+]

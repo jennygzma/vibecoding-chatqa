@@ -1,0 +1,22 @@
+Pantry Lane D2 recipe and inventory-regression behavior checks
+
+Command: npm test
+Result: passed — 17 tests, 17 passed, 0 failed.
+
+Covered behavior:
+- Recipe validation, normalization, and required fields.
+- Editing preserves recipe identity and creation time.
+- Case-insensitive recipe search.
+- Repeated ingredient aggregation and g/kg and ml/L conversion.
+- Usable pantry availability, including expired and wrong-dimension exclusions.
+- Fractional equality: `0.1 g + 0.2 g` is enough against `0.3 g`, while a real `0.000001 g` shortfall remains visible.
+- A positive `1e-16 g` requirement with zero stock remains short, and `formatQuantity(0.0001)` returns `0.0001`.
+- Non-mutating availability calculations.
+- D1 inventory and D2 recipe entrypoints remain on the combined page; inventory saves re-render recipe availability from current in-memory stock.
+- Recipe persistence recovery and malformed/future-version write protection.
+- Static registration of the combined browser page and every imported browser module on the port-4184 server.
+
+Command: npm run check
+Result: passed.
+
+Browser verification: completed separately on the restarted local preview. See `evidence/D2-browser-checks.json`, `evidence/D2-desktop.png`, and `evidence/D2-mobile.png`.

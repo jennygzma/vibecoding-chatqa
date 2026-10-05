@@ -1,0 +1,24 @@
+Pantry Lane D3 weekly-menu behavior and retained-feature checks
+
+Command: npm test
+Result: passed — 25 tests, 25 passed, 0 failed.
+
+Covered behavior:
+- Real calendar dates, Monday-only week starts, and all seven dates for October 5–11, 2026.
+- One entry per date and breakfast/lunch/dinner slot, positive whole-number servings, editing, removal, and independent weeks.
+- Recipe-ID menu references, live recipe revisions, scaled weekly aggregation, normalized matching ingredient names, and same-dimension unit conversion.
+- The requested Tomato pasta schedule: Monday dinner for four servings and Wednesday lunch for two servings aggregates to Pasta 600 g, Tomatoes 900 g, and Olive oil 60 ml from the current two-serving recipe.
+- Missing saved recipes are excluded and reported in derived demand rather than copied into menu data.
+- Menu persistence reloads valid data and protects malformed, unsupported, and duplicate date-and-slot saved entries from replacement while retaining the memory-only fallback notice.
+- Inventory and recipes remain present, recipe removal has a menu-reference guard, and the menu module route is registered.
+- Existing inventory and recipe validation, availability, fractional comparison/formatting, local persistence, and route tests remain green.
+- The narrow-layout regression test confirms the shrinkable menu panel, wrapping navigation, one-column phone controls, and an adaptive day-card grid below 500px while retaining the desktop seven-column grid.
+
+Command: npm run check
+Result: passed — syntax checks for the inventory, recipes, menu, storage, server, and browser modules.
+
+Route verification: the Node test asserts registration of /src/menu.mjs with the combined page. A live loopback probe could not bind 127.0.0.1 in this environment (EPERM); it was not retried.
+
+Supplied browser verification: the local port-4184 pass covered the October 5–11, 2026 schedule, validation and persistence behavior, live recipe updates, deletion guard, independent weeks, and unchanged inventory. `D3-desktop.png` and `D3-dom.txt` are supporting evidence.
+
+Browser verification pending: recheck the repaired 390px layout before D4. Confirm document scrollWidth equals viewport width, the week controls and navigation are usable, and the day cards stack or wrap; then replace the prior mobile screenshot. No post-repair browser pass is claimed here.
