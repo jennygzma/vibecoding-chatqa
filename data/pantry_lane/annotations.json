@@ -1,0 +1,614 @@
+[
+  {
+    "question": "What kind of app did I choose for Pantry Lane?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "A kitchen app.",
+    "evidence": [
+      "D1:1: \"I want a kitchen app rather than another game or task manager\""
+    ]
+  },
+  {
+    "question": "Besides its name, what information does each pantry ingredient need?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Quantity, unit, storage location, and an optional expiry date.",
+    "evidence": [
+      "D1:1: \"Each item needs a quantity, a unit, a storage location and an optional expiry date.\""
+    ]
+  },
+  {
+    "question": "Is stock expiring today treated the same as stock that expired yesterday?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "No; today remains usable, while dates before today are expired.",
+    "evidence": [
+      "D1:1: \"treat a date before today as expired while today remains usable\""
+    ]
+  },
+  {
+    "question": "What language, colors and screen support did I want?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "English, warm cream with dark olive and terracotta accents, and a phone-friendly layout.",
+    "evidence": [
+      "D1:1: \"Keep the interface in English\"",
+      "D1:1: \"I'd like a warm cream background, dark olive text and restrained terracotta accents, with a layout I can use on my phone too.\""
+    ]
+  },
+  {
+    "question": "Which filters should work together when finding ingredients?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Name search, storage location, and expiry.",
+    "evidence": [
+      "D1:1: \"search names and combine storage-location and expiry filters\""
+    ]
+  },
+  {
+    "question": "How did the D1 verification evidence grow beyond its first implementation report?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "The first report had seven tests and syntax checks; the follow-up added actual browser checks and desktop/mobile screenshots.",
+    "evidence": [
+      "D1:8: \"`npm test`: 7 passing tests.\"",
+      "D1:8: \"Preview/browser screenshots were not completed\"",
+      "D1:9: \"I completed the browser pass on port 4184\"",
+      "D1:9: \"screenshots are in evidence/D1-desktop.png and D1-mobile.png.\""
+    ]
+  },
+  {
+    "question": "What two storage risks were found, and how were they addressed?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "An unguarded storage getter could stop rendering, and an empty fallback could overwrite future-format data; guarded access and blocked writes fixed those paths.",
+    "evidence": [
+      "D1:9: \"reading window.localStorage itself is outside a guard, so a SecurityError from that getter can prevent the page from rendering\"",
+      "D1:9: \"an unsupported future-version save currently loads an empty list that the next edit can overwrite\"",
+      "D1:15: \"Guarded browser storage access and retained in-memory usability on storage failures.\"",
+      "D1:15: \"Unsupported or unreadable saved data now blocks writes, preventing replacement of the original payload.\""
+    ]
+  },
+  {
+    "question": "What pantry stock was prepared for the recipe feature, and when do the tomatoes expire?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "Pasta 0.25 kg, Tomatoes 150 g expiring October 3, and Olive oil 100 ml.",
+    "evidence": [
+      "D1:9: \"I also added Pasta 0.25 kg, Tomatoes 150 g expiring October 3, and Olive oil 100 ml for the next feature.\""
+    ]
+  },
+  {
+    "question": "What quantity input was tightened during the first test repair?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "A blank quantity is rejected instead of being interpreted as zero.",
+    "evidence": [
+      "D1:6: \"tightening validation so a blank quantity is rejected rather than interpreted as zero\""
+    ]
+  },
+  {
+    "question": "Why is it useful to keep edits usable in memory when a saved format cannot safely be overwritten?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It lets someone keep working while protecting the existing saved data from accidental replacement.",
+    "evidence": [
+      "D1:12: \"edits remain functional in memory but writes are deliberately disabled, leaving the original payload intact.\""
+    ]
+  },
+  {
+    "question": "What recipe information did I request?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Name, base servings, ingredient quantities and units, written steps, and cooking minutes.",
+    "evidence": [
+      "D2:1: \"Each recipe needs a name, base servings, ingredient quantities and units, written steps and cooking minutes.\""
+    ]
+  },
+  {
+    "question": "How much Pasta and Olive oil does the Tomato pasta recipe require for four servings?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "400 g of Pasta and 40 ml of Olive oil.",
+    "evidence": [
+      "D2:1: \"a two-serving Tomato pasta recipe could require Pasta 200 g, Tomatoes 300 g and Olive oil 20 ml\""
+    ]
+  },
+  {
+    "question": "What is the Tomatoes shortfall for the original two-serving Tomato pasta recipe?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "150 g.",
+    "evidence": [
+      "D2:1: \"Tomatoes 300 g\"",
+      "D2:1: \"Tomatoes 150 g\""
+    ]
+  },
+  {
+    "question": "How long should the example Tomato pasta recipe take to cook?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "20 minutes.",
+    "evidence": [
+      "D2:1: \"with a 20-minute cooking time\""
+    ]
+  },
+  {
+    "question": "Which unit conversions should recipe availability support, and which unit remains separate?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "g/kg and ml/L conversions, with pcs kept separate.",
+    "evidence": [
+      "D2:1: \"convert g/kg and ml/L, and keep pcs separate\""
+    ]
+  },
+  {
+    "question": "Which matching pantry items should recipe availability exclude?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Expired stock and stock in a different unit dimension.",
+    "evidence": [
+      "D2:1: \"exclude expired items, including matching-name stock in a different unit dimension\""
+    ]
+  },
+  {
+    "question": "Why should repeated ingredients be totaled before comparing a recipe with pantry stock?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "Otherwise several individually affordable lines could together exceed the same available stock.",
+    "evidence": [
+      "D2:1: \"Please total repeated ingredients before comparing with stock\""
+    ]
+  },
+  {
+    "question": "Should viewing or scaling a recipe change my pantry quantities?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "No; pantry stock should remain unchanged.",
+    "evidence": [
+      "D2:1: \"Keep stock unchanged when I view or scale a recipe.\""
+    ]
+  },
+  {
+    "question": "Which floating-point equality case was misclassified, and what result should it have?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Salt requirements of 0.1 g plus 0.2 g against 0.3 g stock should be sufficient, without a numerical-noise shortfall.",
+    "evidence": [
+      "D2:8: \"Salt 0.1 g plus Salt 0.2 g against 0.3 g stock\"",
+      "D2:19: \"Fractional equality now treats `0.1 + 0.2` versus `0.3 g` as sufficient\""
+    ]
+  },
+  {
+    "question": "Which two tiny-quantity failures remained, and which repair addressed each?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Positive need against zero stock wrongly passed: add a positive-stock guard. 0.0001 displayed as zero: preserve significant digits.",
+    "evidence": [
+      "D2:18: \"a recipe needing Salt 1e-16 g with no stock returns enough=true\"",
+      "D2:18: \"formatQuantity(0.0001) returns \"0\"\"",
+      "D2:25: \"Availability uses magnitude-relative tolerance; zero stock never satisfies a positive requirement.\"",
+      "D2:25: \"Small values now display without rounding `0.0001` to `0`.\"",
+      "D2:22: \"formats small positive quantities with significant-digit precision instead of collapsing them to `0`.\""
+    ]
+  },
+  {
+    "question": "Which week and two meals did I plan to use for the menu browser check?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "preference"
+    ],
+    "answer": "October 5–11, 2026: Monday dinner for four and Wednesday lunch for two, both Tomato pasta.",
+    "evidence": [
+      "D3:1: \"week October 5–11, 2026: Tomato pasta for Monday dinner with four servings and Wednesday lunch with two servings.\""
+    ]
+  },
+  {
+    "question": "Which meal slots should each day offer?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Breakfast, lunch, and dinner.",
+    "evidence": [
+      "D3:1: \"breakfast/lunch/dinner slots\""
+    ]
+  },
+  {
+    "question": "What should a menu entry store instead of copied ingredient values?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "A saved recipe ID.",
+    "evidence": [
+      "D3:1: \"Store recipe IDs rather than copied ingredient values\""
+    ]
+  },
+  {
+    "question": "Which weekday must start a selected menu week?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "Monday.",
+    "evidence": [
+      "D3:1: \"choose a week starting on Monday\""
+    ]
+  },
+  {
+    "question": "What servings values should planned meals accept?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Positive whole numbers.",
+    "evidence": [
+      "D3:1: \"positive whole-number servings\""
+    ]
+  },
+  {
+    "question": "Why are recipe-ID references useful for a weekly menu?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "They let menu names and ingredient totals reflect the current recipe without duplicating stale recipe details.",
+    "evidence": [
+      "D3:1: \"so recipe edits update menu names and aggregated weekly ingredient demand immediately.\""
+    ]
+  },
+  {
+    "question": "How should removal of a recipe already used by a menu be handled?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Block removal and ask to remove its menu entries first.",
+    "evidence": [
+      "D3:1: \"Block removal of a recipe that is used by any menu, explain how to remove its menu entries first\""
+    ]
+  },
+  {
+    "question": "Can a date and meal slot hold multiple planned meals?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "No; one meal per date and slot, with edits used to replace its recipe or servings.",
+    "evidence": [
+      "D3:1: \"one meal per date and slot, with editing to replace its recipe or servings.\""
+    ]
+  },
+  {
+    "question": "What browser evidence confirmed that menu recipe references stayed live and protected?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Recipe name and ingredient edits updated menu demand immediately, while deletion of the scheduled recipe was blocked.",
+    "evidence": [
+      "D3:10: \"editing a referenced recipe name and its Pasta amount updated the menu and demand immediately\"",
+      "D3:10: \"Removal of the scheduled recipe was blocked with the expected explanation.\""
+    ]
+  },
+  {
+    "question": "By how many pixels did the D3 phone page width decrease after the layout repair?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "903 pixels, from 1293 to 390.",
+    "evidence": [
+      "D3:10: \"at viewport width 390, document scrollWidth was 1293.\"",
+      "D3:20: \"At viewport width 390 the document scrollWidth is now 390\""
+    ]
+  },
+  {
+    "question": "How should weekly demand and pantry stock be combined before generating shortages?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Aggregate demand first, then subtract usable stock once per normalized name and unit dimension.",
+    "evidence": [
+      "D4:1: \"aggregating its planned recipe demand and subtracting current usable inventory once per normalized ingredient name and unit dimension\""
+    ]
+  },
+  {
+    "question": "What should happen to a saved shopping snapshot when one of its inputs changes?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Mark it stale; retain quantities and purchase checks until regeneration.",
+    "evidence": [
+      "D4:1: \"clearly mark the snapshot stale and retain its existing values and checks until regeneration\""
+    ]
+  },
+  {
+    "question": "Should checking a purchased ingredient change pantry quantities?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "No; purchase checks never add to or subtract from inventory.",
+    "evidence": [
+      "D4:1: \"purchase checkboxes that survive reload and never add to or subtract from inventory\""
+    ]
+  },
+  {
+    "question": "Against which date should expiry be evaluated for a future menu week?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "Today’s local date, with today-expiring stock still usable.",
+    "evidence": [
+      "D4:1: \"Expiry is evaluated against today’s local calendar date, with today still usable; the list is current-stock planning rather than a forecast of freshness on a future meal date.\""
+    ]
+  },
+  {
+    "question": "What did canceling versus confirming regeneration do to the checked snapshot in the browser?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Cancel retained the snapshot and check; confirmation replaced it and cleared checks.",
+    "evidence": [
+      "D4:16: \"cancel kept it, while confirmed regeneration produced 100 g and cleared checks.\""
+    ]
+  },
+  {
+    "question": "Which columns and escaping rules were required for CSV export?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Ingredient, Quantity, Unit, Purchased; quote comma/newline fields and double embedded quotation marks.",
+    "evidence": [
+      "D4:1: \"Ingredient, Quantity, Unit and Purchased columns, proper comma/quote/newline escaping\"",
+      "D4:16: \"fields containing comma/newline are quoted, embedded quotation marks are doubled\""
+    ]
+  },
+  {
+    "question": "How should the app distinguish an ungenerated list from a generated list with no shortage?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Ungenerated: prompt and disabled export. Fully covered: say the usable pantry covers the week.",
+    "evidence": [
+      "D4:1: \"Before generation show an empty prompt and keep export disabled; a generated list with no shortage should clearly say the usable pantry already covers that week.\""
+    ]
+  },
+  {
+    "question": "How much did the Pasta shopping quantity decrease after the temporary stock increase and confirmed regeneration?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "250 g, from 350 g to 100 g.",
+    "evidence": [
+      "D4:16: \"left the old 350 g snapshot and its check intact\"",
+      "D4:16: \"confirmed regeneration produced 100 g and cleared checks\""
+    ]
+  },
+  {
+    "question": "Why retain shopping quantities and purchase checks until regeneration is confirmed?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It keeps the saved shopping checklist stable while making changed planning inputs visible.",
+    "evidence": [
+      "D4:1: \"clearly mark the snapshot stale and retain its existing values and checks until regeneration\"",
+      "D4:1: \"Replacing a generated list requires confirmation that clears purchase checks\""
+    ]
+  },
+  {
+    "question": "What refresh behavior should replace the stale-after-midnight gap, including the focus-event wiring repair?",
+    "category": [
+      "single-session",
+      "multihop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "answer": "Date-gated minute, focus and visibility checks; focus calls refresh without forwarding its event.",
+    "evidence": [
+      "D4:5: \"an open shopping screen can keep claiming its snapshot is current after midnight\"",
+      "D4:17: \"Added a date-change guard and refresh hooks for the one-minute timer, window focus, and visible-document events.\"",
+      "D4:27: \"Fixed the D4 focus wiring: it now calls the refresh with no event argument.\""
+    ]
+  },
+  {
+    "question": "How many baseline Tomato pasta recipe batches do the two planned meals require in total?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Three baseline batches: (4 + 2) ÷ 2.",
+    "evidence": [
+      "D2:1: \"a two-serving Tomato pasta recipe\"",
+      "D3:1: \"Tomato pasta for Monday dinner with four servings and Wednesday lunch with two servings.\""
+    ]
+  },
+  {
+    "question": "If I allocate the recorded cooking time once to each of the two planned Tomato pasta meals, how many minutes is that?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ],
+    "answer": "40 minutes.",
+    "evidence": [
+      "D2:1: \"with a 20-minute cooking time\"",
+      "D3:1: \"Tomato pasta for Monday dinner with four servings and Wednesday lunch with two servings.\""
+    ]
+  },
+  {
+    "question": "How many days before the selected menu week’s Monday do the prepared Tomatoes expire?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ],
+    "answer": "Two days: October 3 to October 5, 2026.",
+    "evidence": [
+      "D1:9: \"Tomatoes 150 g expiring October 3\"",
+      "D3:1: \"week October 5–11, 2026\""
+    ]
+  },
+  {
+    "question": "Which ingredient filters did I request, and what case behavior was checked for recipe search?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Ingredient name, storage and expiry filters; case-insensitive recipe search.",
+    "evidence": [
+      "D1:1: \"search names and combine storage-location and expiry filters\"",
+      "D2:18: \"Recipe edits, case-insensitive search, Keep it\""
+    ]
+  },
+  {
+    "question": "How does the optional inventory date differ from the recipe time field?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Inventory records an optional expiry date; recipes record cooking minutes.",
+    "evidence": [
+      "D1:1: \"an optional expiry date\"",
+      "D2:1: \"written steps and cooking minutes\""
+    ]
+  },
+  {
+    "question": "How do the removal safeguards differ for pantry ingredients and recipes referenced by a menu?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Ingredients require confirmation; referenced recipes are blocked until their menu entries are removed.",
+    "evidence": [
+      "D1:1: \"confirm before deleting\"",
+      "D3:1: \"Block removal of a recipe that is used by any menu, explain how to remove its menu entries first\""
+    ]
+  },
+  {
+    "question": "What total ingredient demand follows from the saved Tomato pasta baseline and the two planned meals?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Pasta 600 g, Tomatoes 900 g, and Olive oil 60 ml.",
+    "evidence": [
+      "D2:1: \"a two-serving Tomato pasta recipe could require Pasta 200 g, Tomatoes 300 g and Olive oil 20 ml\"",
+      "D3:1: \"Tomato pasta for Monday dinner with four servings and Wednesday lunch with two servings.\""
+    ]
+  },
+  {
+    "question": "How should recipe edits affect weekly demand compared with an already generated shopping snapshot?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Weekly demand updates immediately; the shopping snapshot stays unchanged and is marked stale.",
+    "evidence": [
+      "D3:10: \"editing a referenced recipe name and its Pasta amount updated the menu and demand immediately\"",
+      "D4:16: \"Menu changes and referenced-recipe edits also marked the list stale without changing stored values.\""
+    ]
+  },
+  {
+    "question": "Which stock-preservation rules apply to recipe preview/scaling and shopping purchase checks?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Neither previewing/scaling recipes nor checking shopping purchases changes inventory.",
+    "evidence": [
+      "D2:1: \"Keep stock unchanged when I view or scale a recipe.\"",
+      "D4:1: \"purchase checkboxes that survive reload and never add to or subtract from inventory\""
+    ]
+  },
+  {
+    "question": "How many more behavior tests passed after the D3 persistence repair than at the end of D1?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "17 more tests: 25 − 8.",
+    "evidence": [
+      "D1:15: \"`npm test` — 8 passing\"",
+      "D3:23: \"Validated with `npm test` (25 passed)\""
+    ]
+  }
+]

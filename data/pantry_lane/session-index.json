@@ -1,0 +1,46 @@
+[
+  {
+    "session_label": "D1",
+    "feature": "Pantry inventory",
+    "original_session_id": "1790994258245_73yo4",
+    "started_at_utc": "2026-10-03T02:24:18.303Z",
+    "first_message_at_utc": "2026-10-03T02:24:18.511Z",
+    "last_message_at_utc": "2026-10-03T02:36:45.193Z",
+    "message_count": 15,
+    "conversation_path": "D1/conversation.md",
+    "source_map_path": "D1/source-map.json"
+  },
+  {
+    "session_label": "D2",
+    "feature": "Recipes",
+    "original_session_id": "1790995061181_ik5ng",
+    "started_at_utc": "2026-10-03T02:37:41.241Z",
+    "first_message_at_utc": "2026-10-03T02:37:41.478Z",
+    "last_message_at_utc": "2026-10-03T02:52:34.164Z",
+    "message_count": 25,
+    "conversation_path": "D2/conversation.md",
+    "source_map_path": "D2/source-map.json"
+  },
+  {
+    "session_label": "D3",
+    "feature": "Weekly menu",
+    "original_session_id": "1790995985935_zfyht",
+    "started_at_utc": "2026-10-03T02:53:05.997Z",
+    "first_message_at_utc": "2026-10-03T02:53:06.244Z",
+    "last_message_at_utc": "2026-10-03T03:02:26.506Z",
+    "message_count": 27,
+    "conversation_path": "D3/conversation.md",
+    "source_map_path": "D3/source-map.json"
+  },
+  {
+    "session_label": "D4",
+    "feature": "Shopping list",
+    "original_session_id": "1790996588370_fyz3u",
+    "started_at_utc": "2026-10-03T03:03:08.429Z",
+    "first_message_at_utc": "2026-10-03T03:03:08.638Z",
+    "last_message_at_utc": "2026-10-03T03:13:22.924Z",
+    "message_count": 27,
+    "conversation_path": "D4/conversation.md",
+    "source_map_path": "D4/source-map.json"
+  }
+]

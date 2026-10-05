@@ -1,0 +1,484 @@
+[
+  {
+    "question_id": "Q001",
+    "review": "Directly retrieves the requested app category and an explicit preference; no inference is needed.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "review": "Retrieves the fields from one explicit requirement; a list of fields is not multi-hop reasoning.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop"
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "review": "The date boundary is stated directly and makes this a temporal question.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "review": "All requested choices appear explicitly in one message; preference applies to language and appearance.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "review": "Retrieves the specified combination of search and filters without extra reasoning.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop"
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "review": "Combines the earlier verification limitation with later evidence; this concerns coverage rather than a time calculation, so no temporal label is added.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "review": "Connects each observed source-level risk to its repair across the request and response; knowledge-facts applies to the persistence behavior.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "review": "Retrieves the actual test stock and its explicit expiry date; it does not calculate recipe availability.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "review": "Retrieves the explicit validation behavior; the repair sequence alone is not temporal reasoning.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "review": "An open explanation grounded in the stated design tradeoff; the answer is one sentence and adds no unsupported implementation claim.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "open-domain"
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "review": "An explicit requested field list is a direct preference, with no reasoning chain.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "review": "Combines the two-serving baseline with the requested four-serving scenario; applies a factor of two.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "review": "Subtracts available Tomatoes from the recipe requirement. D2 restates both values, so this is not a cross-session question.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "review": "The explicitly requested duration supports the temporal label.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "review": "Retrieves the domain conversion rule; it does not infer mass-to-volume equivalence.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "review": "Directly retrieves the matching eligibility rule.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "review": "One-sentence explanatory answer applies general resource accounting to the stated aggregation requirement.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "open-domain"
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "review": "An explicit no-consumption preference is directly retrieved.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "review": "The reproduced equality case and expected sufficient result are explicitly stated in D2; the repair is corroborating evidence. Citation count and repair chronology do not make this multi-hop.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "review": "Combines the concrete reproduced comparison and display failures with their matching repairs in the final response; the tiny positive requirement against zero is not described concretely in that final response alone.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "review": "The requested dates and serving choices are explicit; no recipe ingredient calculation is needed.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "review": "Direct retrieval of the requested daily slots.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "review": "Direct retrieval of the reference-model rule.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "review": "A direct calendar boundary question; temporal refers to the weekday requirement.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "review": "An explicit input constraint stated as a preference.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "review": "One-sentence design explanation grounded in the requested live-reference behavior.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "open-domain"
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "review": "Direct retrieval of the cross-record integrity safeguard.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "review": "Retrieves the explicit collision policy; no reasoning label is added just for listing editing alternatives.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop"
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "review": "The completed browser report states both propagation and deletion protection directly. Multiple observations in that one report are not by themselves multi-hop reasoning.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "review": "Subtracts the passing recheck width from the measured initial failure using two genuine inspection reports. This is a layout measurement, not a temporal question merely because there was a before/after repair.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "review": "Retrieves the explicitly requested order of arithmetic, preventing stock from being subtracted separately from every meal.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "review": "Direct requested snapshot policy; input changes do not authorize automatic replacement.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "review": "Direct preference about the side effects of a purchase checkbox.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "review": "Distinguishes the calculation date from future meal dates; no future freshness guarantee is inferred.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "review": "Retrieves the two observed confirmation outcomes directly from the browser report, without adding a reasoning label for multiple outcomes.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop"
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "review": "Column order is specified in the request; the actual export and direct CSV checks corroborate escaping. Retrieval requires no calculation.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "review": "Two explicitly different empty states are directly stated together.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "singlehop"
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "review": "Subtracts the regenerated shortage from the retained prior shortage. Both values are from the actual browser experiment.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "review": "One-sentence design explanation grounded in the explicit retained-snapshot and confirmation policies.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "open-domain"
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "review": "Combines the initial clock-related defect with the refresh implementation and subsequent focus repair. The answer is about verified source and simulated tests, not an overnight browser observation.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "single-session",
+      "multihop",
+      "temporal",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "review": "D2 supplies the two-serving recipe baseline; D3 supplies the distinct scheduled servings. Neither of these sessions alone contains both facts.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "review": "The conditional calculation uses D2’s per-recipe duration and D3’s two separate meal entries. It is not a claim about how cooking time scales with servings.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "review": "The expiry date is unique to D1 and the selected week is supplied by D3; computes the calendar interval without claiming future inventory availability.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "review": "Requires D1’s specific combined filters and D2’s observed recipe-search behavior. D2’s generic references to preserving inventory filters do not enumerate D1’s criteria.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "review": "Compares different stored field meanings from D1 and D2. A cooking duration does not stand in for a calendar expiry date.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q046",
+    "review": "D1 provides stock-removal confirmation and D3 provides referential-integrity blocking. D3’s temporary-meal confirmation is not the D1 ingredient removal rule.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ]
+  },
+  {
+    "question_id": "Q047",
+    "review": "Applies the three-baseline-batch result to D2’s ingredient quantities. D3 reports live updates but does not restate the original recipe quantities; underlying source evidence is retained.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q048",
+    "review": "D3 supplies immediate derived menu-demand propagation; D4 supplies retained stale snapshot behavior. D4 does not describe the live weekly-demand view and D3 has no shopping snapshot feature.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q049",
+    "review": "D2 establishes the side-effect rule for recipe preview and scaling; D4 establishes the independent shopping purchase rule. Neither session explicitly gives both operations.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop"
+    ]
+  },
+  {
+    "question_id": "Q050",
+    "review": "Combines the final D1 and repaired D3 suite counts and subtracts them. This is a coverage-count comparison, not a temporal calculation merely because the features were developed in order.",
+    "answer_grounding": "reviewed",
+    "categories": [
+      "multi-session",
+      "multihop"
+    ]
+  }
+]

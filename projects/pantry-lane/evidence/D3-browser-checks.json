@@ -1,0 +1,27 @@
+{
+  "recorded_at_utc": "2026-10-03T03:00:42.603631+00:00",
+  "feature": "D3",
+  "url": "http://127.0.0.1:4184/",
+  "functional_result": "passed",
+  "layout_result": "passed after repair",
+  "checks": [
+    "October 5\u201311, 2026 seven dated days and three slots each",
+    "Monday dinner four servings and Wednesday lunch two servings retained after refresh",
+    "Non-Monday start rejected",
+    "Duplicate slot and moving an edited meal into an occupied slot rejected without changing plan",
+    "Zero servings rejected; valid serving changes update demand",
+    "Referenced recipe name and Pasta amount changes immediately update menu and demand; restored recipe",
+    "Scheduled recipe deletion blocked with explanation",
+    "Both choices in temporary-meal removal dialog",
+    "October 12\u201318 is empty and independent",
+    "Original three inventory quantities unchanged",
+    "390-pixel layout recheck scrollWidth 390, menu panel width 358, seven days retained"
+  ],
+  "screenshots": [
+    "D3-desktop.png",
+    "D3-mobile.png",
+    "D3-mobile-viewport.png"
+  ],
+  "initial_failed_layout_screenshot": "D3-mobile-before-repair.png",
+  "dom_snapshot": "D3-dom.txt"
+}

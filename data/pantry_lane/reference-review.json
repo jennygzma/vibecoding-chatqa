@@ -1,0 +1,20 @@
+{
+  "guide_path": "/Users/andychen/Desktop/VibeCoding/VibeCoding-Guide.pdf",
+  "guide_sha256": "e8d799d2d569dd18b4157c34fa7a17bc4abb8767873c32a543c0f8d6a8b1e548",
+  "reviewed_page": 7,
+  "format": "question/category/evidence/answer; category array; close-domain phrase; open-domain maximum one sentence",
+  "sample_path": "/Users/andychen/Desktop/VibeCoding/vibe_combined.json",
+  "sample_sha256": "2754c51db2b6bd669fb3ef4649d5615834717a82efcbf0ee938d5bdad6d1a580",
+  "question_count": 200,
+  "tag_percentages": {
+    "knowledge-facts": 25.5,
+    "multi-session": 21.0,
+    "multihop": 39.0,
+    "open-domain": 8.0,
+    "preference": 17.0,
+    "single-session": 79.0,
+    "singlehop": 52.5,
+    "temporal": 14.5
+  },
+  "policy": "Observed sample proportions guide review; no numeric quotas are stated on the guideline page."
+}

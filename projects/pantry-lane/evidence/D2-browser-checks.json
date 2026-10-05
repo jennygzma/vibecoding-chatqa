@@ -1,0 +1,25 @@
+{
+  "recorded_at_utc": "2026-10-03T02:50:59.169978+00:00",
+  "feature": "D2",
+  "url": "http://127.0.0.1:4184/",
+  "result": "passed",
+  "checks": [
+    "Inventory and Recipes navigation",
+    "Two-serving recipe creation",
+    "Four-serving scaling: Pasta 400 g, Tomatoes 600 g, Olive oil 40 ml",
+    "Availability: Pasta 250 g, Tomatoes 150 g, Olive oil 100 ml",
+    "Pasta inventory edit 0.5 kg reflected as 500 g without refresh; restored 0.25 kg",
+    "Recipe cooking minutes edited and restored to 20",
+    "Case-insensitive recipe search and no-match state",
+    "Keep it retained Tomato pasta",
+    "Confirmed removal of disposable Test toast",
+    "Refresh retained original three stock items and Tomato pasta",
+    "390-pixel viewport scrollWidth equals innerWidth",
+    "After precision repair, a disposable 0.0001 g Salt recipe with zero stock visibly showed short 0.0001 g; removed test recipe."
+  ],
+  "screenshots": [
+    "D2-desktop.png",
+    "D2-mobile.png"
+  ],
+  "visual_review": "Mobile screenshot inspected; controls and recipe check fit without horizontal overflow."
+}

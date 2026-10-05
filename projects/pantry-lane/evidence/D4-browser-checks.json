@@ -1,0 +1,44 @@
+{
+  "recorded_at_utc": "2026-10-03T03:08:47.591609+00:00",
+  "feature": "D4",
+  "url": "http://127.0.0.1:4184/",
+  "result": "passed",
+  "checks": [
+    "Before generation, empty prompt and disabled CSV export",
+    "Aggregated current-stock list: Pasta 350 g, Tomatoes 750 g; covered Olive oil omitted",
+    "Purchased Pasta check persisted after reload",
+    "Actual downloaded CSV header and rows matched display and purchased flags",
+    "Inventory edit marked snapshot stale without changing quantities or purchase checks",
+    "Regeneration cancellation preserved snapshot; replacement recomputed shortages and cleared checks",
+    "Expired Tomatoes excluded; fully stocked planned week showed covered message",
+    "Test stock and expiry changes restored",
+    "October 12\u201318 independent empty snapshot; returning to October 5 preserved checks",
+    "Menu serving change and referenced recipe edit marked snapshot stale; restored plan and recipe",
+    "390-pixel layout scrollWidth 390; mobile screenshot visually inspected"
+  ],
+  "csv_download_path": "/Users/andychen/Downloads/shopping-list-2026-10-05.csv",
+  "csv_evidence": "D4-export-purchased.csv",
+  "screenshots": [
+    "D4-desktop.png",
+    "D4-mobile.png"
+  ],
+  "dom_snapshot": "D4-dom.txt",
+  "limitations": [
+    "Actual midnight rollover was not awaited; simulated local-day regression must verify that path."
+  ],
+  "final_recheck_at_utc": "2026-10-03T03:18:56.501857+00:00",
+  "final_recheck": {
+    "fresh_navigation": "http://127.0.0.1:4184/?review=final-d4#shopping",
+    "viewport_width": 390,
+    "document_scroll_width": 390,
+    "shopping_header_flex_direction": "column",
+    "visual_review": "passed",
+    "stored_snapshot": "Pasta 350 g purchased; Tomatoes 750 g unpurchased",
+    "screenshots": [
+      "D4-mobile.png",
+      "D4-desktop.png"
+    ],
+    "unsaved_inventory_form": "An unsaved ingredient-name draft remained intact while other views were checked; draft cleared without saving.",
+    "retained_views": "Three original stocks, two-serving/20-minute recipe and two original scheduled meals remained unchanged."
+  }
+}

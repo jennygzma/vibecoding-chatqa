@@ -1,0 +1,129 @@
+- main:
+  - paragraph: Pantry Lane
+  - heading "Kitchen planning" [level=1]
+  - paragraph: Keep your pantry close at hand, then plan recipes around what is already there.
+  - navigation "Kitchen planning sections":
+    - button "Inventory"
+    - button "Recipes"
+    - button "Weekly menu"
+  - region "Weekly menu":
+    - paragraph: Plan ahead
+    - heading "Weekly menu" [level=2]
+    - paragraph: Schedule saved recipes without changing your pantry stock.
+    - region "Choose a Monday-based week":
+      - button "Previous week"
+      - text: Week starts Monday
+      - textbox "Week starts Monday" [active]: 2026-10-05
+      - button "Next week"
+      - paragraph: Monday, Oct 5, 2026 – Sunday, Oct 11, 2026
+    - region "Weekly menu workspace":
+      - complementary:
+        - paragraph: Plan a meal
+        - heading "Add a planned meal" [level=2]
+        - text: Date
+        - combobox "Date":
+          - option "Monday, Oct 5, 2026" [selected]
+          - option "Tuesday, Oct 6, 2026"
+          - option "Wednesday, Oct 7, 2026"
+          - option "Thursday, Oct 8, 2026"
+          - option "Friday, Oct 9, 2026"
+          - option "Saturday, Oct 10, 2026"
+          - option "Sunday, Oct 11, 2026"
+        - text: Meal
+        - combobox "Meal":
+          - option "Choose meal" [selected]
+          - option "Breakfast"
+          - option "Lunch"
+          - option "Dinner"
+        - text: Saved recipe
+        - combobox "Saved recipe":
+          - option "Choose a saved recipe" [selected]
+          - option "Tomato pasta"
+        - text: Servings
+        - spinbutton "Servings"
+        - button "Add meal"
+      - region "Your week":
+        - paragraph: Seven days
+        - heading "Your week" [level=2]
+        - paragraph: 2 planned meals
+        - heading "Monday, Oct 5, 2026" [level=3]
+        - paragraph: Breakfast
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Lunch
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Dinner
+        - paragraph: Tomato pasta · 4 servings
+        - button "Edit"
+        - button "Remove"
+        - heading "Tuesday, Oct 6, 2026" [level=3]
+        - paragraph: Breakfast
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Lunch
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Dinner
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - heading "Wednesday, Oct 7, 2026" [level=3]
+        - paragraph: Breakfast
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Lunch
+        - paragraph: Tomato pasta · 2 servings
+        - button "Edit"
+        - button "Remove"
+        - paragraph: Dinner
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - heading "Thursday, Oct 8, 2026" [level=3]
+        - paragraph: Breakfast
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Lunch
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Dinner
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - heading "Friday, Oct 9, 2026" [level=3]
+        - paragraph: Breakfast
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Lunch
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Dinner
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - heading "Saturday, Oct 10, 2026" [level=3]
+        - paragraph: Breakfast
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Lunch
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Dinner
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - heading "Sunday, Oct 11, 2026" [level=3]
+        - paragraph: Breakfast
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Lunch
+        - paragraph: No meal planned.
+        - button "Add meal"
+        - paragraph: Dinner
+        - paragraph: No meal planned.
+        - button "Add meal"
+    - region "Weekly ingredient demand":
+      - paragraph: Planning total
+      - heading "Weekly ingredient demand" [level=2]
+      - paragraph: Planning only
+      - paragraph: Totals use current recipe details and do not remove anything from inventory.
+      - list:
+        - listitem: "Olive oil: 60 ml"
+        - listitem: "Pasta: 600 g"
+        - listitem: "Tomatoes: 900 g"
