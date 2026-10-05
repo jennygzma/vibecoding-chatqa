@@ -1,0 +1,30 @@
+- main:
+  - paragraph: Pantry Lane
+  - heading "Kitchen planning" [level=1]
+  - paragraph: Keep your pantry close at hand, then plan recipes around what is already there.
+  - navigation "Kitchen planning sections":
+    - button "Inventory"
+    - button "Recipes"
+    - button "Weekly menu"
+    - button "Shopping list" [active]
+  - region "Shopping list":
+    - paragraph: Current-stock planning
+    - heading "Shopping list" [level=2]
+    - paragraph: Generate a saved snapshot from this week’s planned meals and today’s usable pantry.
+    - region "Choose a Monday-based shopping week":
+      - button "Previous week"
+      - text: Week starts Monday
+      - textbox "Week starts Monday": 2026-10-05
+      - button "Next week"
+      - paragraph: Monday, Oct 5, 2026 – Sunday, Oct 11, 2026
+    - region "What to buy":
+      - paragraph: Saved snapshot
+      - heading "What to buy" [level=2]
+      - button "Regenerate list"
+      - button "Export CSV"
+      - paragraph: Generated Oct 2, 2026, 11:08 PM from pantry usable on 2026-10-02.
+      - list:
+        - checkbox "Purchased Pasta" [checked]
+        - generic: "Pasta: 350 g"
+        - checkbox "Purchased Tomatoes"
+        - generic: "Tomatoes: 750 g"

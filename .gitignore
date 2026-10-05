@@ -1,1 +1,9 @@
 .env
+
+# Local Pantry Lane records and caches
+data/pantry_lane/D*/raw/
+data/pantry_lane/recording-registry.json
+projects/pantry-lane/**/__pycache__/
+projects/pantry-lane/node_modules/
+.DS_Store
+scripts/__pycache__/

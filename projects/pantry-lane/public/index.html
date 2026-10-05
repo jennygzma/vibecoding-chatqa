@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pantry Lane</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Pantry Lane</p>
+        <h1>Kitchen planning</h1>
+        <p class="intro">Keep your pantry close at hand, then plan recipes around what is already there.</p>
+        <nav class="section-nav" aria-label="Kitchen planning sections">
+          <button class="nav-link" type="button" data-view="inventory" aria-controls="inventory-view" aria-selected="true">Inventory</button>
+          <button class="nav-link" type="button" data-view="recipes" aria-controls="recipes-view" aria-selected="false">Recipes</button>
+          <button class="nav-link" type="button" data-view="menu" aria-controls="menu-view" aria-selected="false">Weekly menu</button>
+          <button class="nav-link" type="button" data-view="shopping" aria-controls="shopping-view" aria-selected="false">Shopping list</button>
+        </nav>
+      </header>
+      <p id="notice" class="notice" role="status" aria-live="polite" hidden></p>
+
+      <section id="inventory-view" class="app-view" aria-labelledby="inventory-heading">
+        <div class="view-heading"><p class="eyebrow">Your pantry</p><h2 id="inventory-heading">Pantry inventory</h2><p>Track what you have, where it is stored, and when it needs using.</p></div>
+        <section class="layout inventory-layout" aria-label="Pantry inventory workspace">
+          <aside class="panel entry-panel">
+            <div class="section-heading"><p class="eyebrow">Your pantry</p><h2 id="inventory-form-title">Add an ingredient</h2></div>
+            <form id="inventory-form" novalidate>
+              <input id="inventory-editing-id" type="hidden">
+              <label>Ingredient name<input id="inventory-name" name="name" maxlength="80" autocomplete="off" required></label>
+              <div class="two-column">
+                <label>Quantity<input id="inventory-quantity" name="quantity" type="number" min="0" step="any" inputmode="decimal" required></label>
+                <label>Unit<select id="inventory-unit" name="unit" required><option value="">Choose unit</option></select></label>
+              </div>
+              <label>Storage location<select id="inventory-storage" name="storage" required><option value="">Choose storage</option></select></label>
+              <label>Expiry date <span class="optional">optional</span><input id="inventory-expiry-date" name="expiryDate" type="date"></label>
+              <div class="form-actions"><button class="primary" id="inventory-submit-button" type="submit">Add ingredient</button><button class="quiet" id="inventory-cancel-edit" type="button" hidden>Cancel edit</button></div>
+            </form>
+          </aside>
+          <section class="panel inventory-panel" aria-labelledby="ingredients-heading">
+            <div class="inventory-header"><div><p class="eyebrow">At a glance</p><h2 id="ingredients-heading">Ingredients</h2></div><p id="inventory-count" class="count"></p></div>
+            <div class="inventory-filters">
+              <label class="search-label">Search by name<input id="inventory-search" type="search" placeholder="e.g. lentils"></label>
+              <label>Storage<select id="inventory-storage-filter"><option value="all">All locations</option></select></label>
+              <label>Expiry<select id="inventory-expiry-filter"><option value="all">All dates</option><option value="usable">Usable</option><option value="expired">Expired</option><option value="no-expiry">No expiry date</option></select></label>
+            </div>
+            <ul id="inventory-list" class="inventory-list" aria-live="polite"></ul>
+          </section>
+        </section>
+      </section>
+
+      <section id="recipes-view" class="app-view" aria-labelledby="recipes-heading" hidden>
+        <div class="view-heading"><p class="eyebrow">Cook from what you have</p><h2 id="recipes-heading">Recipe collection</h2><p>Plan what to cook, then check it against your current usable pantry.</p></div>
+        <section class="layout recipe-layout" aria-label="Recipe workspace">
+          <aside class="panel entry-panel">
+            <div class="section-heading"><p class="eyebrow">Your recipe</p><h2 id="recipe-form-title">Add a recipe</h2></div>
+            <form id="recipe-form" novalidate>
+              <input id="recipe-editing-id" type="hidden">
+              <label>Recipe name<input id="recipe-name" name="name" maxlength="80" autocomplete="off" required></label>
+              <div class="two-column">
+                <label>Base servings<input id="base-servings" name="baseServings" type="number" min="1" step="1" inputmode="numeric" required></label>
+                <label>Cooking minutes<input id="cooking-minutes" name="cookingMinutes" type="number" min="0" step="1" inputmode="numeric" required></label>
+              </div>
+              <fieldset class="ingredients-fieldset">
+                <legend>Ingredients</legend>
+                <div id="ingredient-rows"></div>
+                <button id="add-ingredient-row" class="quiet compact" type="button">Add ingredient</button>
+              </fieldset>
+              <label>Written steps<textarea id="steps" name="steps" rows="5" maxlength="2500" placeholder="One step per line" required></textarea></label>
+              <div class="form-actions"><button class="primary" id="recipe-submit-button" type="submit">Save recipe</button><button class="quiet" id="recipe-cancel-edit" type="button" hidden>Cancel edit</button></div>
+            </form>
+          </aside>
+          <section class="panel recipes-panel" aria-labelledby="recipe-list-heading">
+            <div class="inventory-header"><div><p class="eyebrow">Cook from what you have</p><h2 id="recipe-list-heading">Recipes</h2></div><p id="recipe-count" class="count"></p></div>
+            <label class="search-label">Search recipes<input id="recipe-search" type="search" placeholder="e.g. tomato pasta"></label>
+            <ul id="recipe-list" class="recipe-list" aria-live="polite"></ul>
+          </section>
+        </section>
+      </section>
+      <section id="menu-view" class="app-view" aria-labelledby="menu-heading" hidden>
+        <div class="view-heading"><p class="eyebrow">Plan ahead</p><h2 id="menu-heading">Weekly menu</h2><p>Schedule saved recipes without changing your pantry stock.</p></div>
+        <section class="menu-controls panel" aria-label="Choose a Monday-based week">
+          <button id="previous-week" class="quiet compact" type="button">Previous week</button>
+          <label>Week starts Monday<input id="week-start" type="date" required></label>
+          <button id="next-week" class="quiet compact" type="button">Next week</button>
+          <p id="week-range" class="week-range" aria-live="polite"></p>
+        </section>
+        <section class="layout menu-layout" aria-label="Weekly menu workspace">
+          <aside class="panel entry-panel">
+            <div class="section-heading"><p class="eyebrow">Plan a meal</p><h2 id="menu-form-title">Add a planned meal</h2></div>
+            <form id="menu-form" novalidate>
+              <input id="menu-editing-key" type="hidden">
+              <label>Date<select id="menu-date" name="date" required></select></label>
+              <label>Meal<select id="menu-slot" name="slot" required><option value="">Choose meal</option><option value="breakfast">Breakfast</option><option value="lunch">Lunch</option><option value="dinner">Dinner</option></select></label>
+              <label>Saved recipe<select id="menu-recipe" name="recipeId" required></select></label>
+              <label>Servings<input id="menu-servings" name="servings" type="number" min="1" step="1" inputmode="numeric" required></label>
+              <div class="form-actions"><button class="primary" id="menu-submit-button" type="submit">Add meal</button><button class="quiet" id="menu-cancel-edit" type="button" hidden>Cancel edit</button></div>
+            </form>
+          </aside>
+          <section class="panel menu-panel" aria-labelledby="week-board-heading">
+            <div class="inventory-header"><div><p class="eyebrow">Seven days</p><h2 id="week-board-heading">Your week</h2></div><p id="menu-count" class="count"></p></div>
+            <div id="week-grid" class="week-grid" aria-live="polite"></div>
+          </section>
+        </section>
+        <section class="panel demand-panel" aria-labelledby="weekly-demand-heading">
+          <div class="inventory-header"><div><p class="eyebrow">Planning total</p><h2 id="weekly-demand-heading">Weekly ingredient demand</h2></div><p class="count">Planning only</p></div>
+          <p class="demand-intro">Totals use current recipe details and do not remove anything from inventory.</p>
+          <ul id="weekly-demand" class="demand-list" aria-live="polite"></ul>
+        </section>
+      </section>
+      <section id="shopping-view" class="app-view" aria-labelledby="shopping-heading" hidden>
+        <div class="view-heading"><p class="eyebrow">Current-stock planning</p><h2 id="shopping-heading">Shopping list</h2><p>Generate a saved snapshot from this week’s planned meals and today’s usable pantry.</p></div>
+        <section class="menu-controls panel" aria-label="Choose a Monday-based shopping week">
+          <button id="shopping-previous-week" class="quiet compact" type="button">Previous week</button>
+          <label>Week starts Monday<input id="shopping-week-start" type="date" required></label>
+          <button id="shopping-next-week" class="quiet compact" type="button">Next week</button>
+          <p id="shopping-week-range" class="week-range" aria-live="polite"></p>
+        </section>
+        <section class="panel shopping-panel" aria-labelledby="shopping-snapshot-heading">
+          <div class="inventory-header"><div><p class="eyebrow">Saved snapshot</p><h2 id="shopping-snapshot-heading">What to buy</h2></div><div class="row-actions"><button id="generate-shopping" class="primary compact" type="button">Generate list</button><button id="export-shopping" class="quiet compact" type="button" disabled>Export CSV</button></div></div>
+          <p id="shopping-meta" class="shopping-meta" aria-live="polite"></p>
+          <p id="shopping-stale" class="shopping-stale" role="status" hidden></p>
+          <ul id="shopping-items" class="shopping-list" aria-live="polite"></ul>
+        </section>
+      </section>
+    </main>
+    <dialog id="delete-dialog" aria-labelledby="delete-title"><form method="dialog"><p class="eyebrow">Remove item</p><h2 id="delete-title">Remove this item?</h2><p id="delete-description"></p><div class="dialog-actions"><button class="quiet" value="cancel">Keep it</button><button class="danger" id="confirm-delete" value="confirm">Remove</button></div></form></dialog>
+    <dialog id="regenerate-dialog" aria-labelledby="regenerate-title"><form method="dialog"><p class="eyebrow">Replace snapshot</p><h2 id="regenerate-title">Generate a new shopping list?</h2><p>The current snapshot will be replaced and its purchase checks will be cleared.</p><div class="dialog-actions"><button class="quiet" value="cancel">Keep current list</button><button class="danger" value="confirm">Replace list</button></div></form></dialog>
+    <script type="module" src="/app.mjs"></script>
+  </body>
+</html>

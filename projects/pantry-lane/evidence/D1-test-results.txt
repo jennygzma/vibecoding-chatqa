@@ -1,0 +1,17 @@
+Pantry Lane D1 local verification
+Date: 2026-10-02
+
+Command: npm test
+Result: passed — 8 tests, 0 failures
+
+Storage regression coverage: passed — a throwing localStorage getter keeps the page usable in memory, and an unsupported saved version is retained without replacement.
+
+Command: npm run check
+Result: passed
+
+Browser verification: completed on port 4184
+Result: empty-input feedback, ingredient creation/editing, combined name/storage/expiry filters, both deletion choices, and refresh recovery worked.
+
+Responsive verification: 390-pixel layout had no horizontal overflow.
+
+Browser screenshots: evidence/D1-desktop.png and evidence/D1-mobile.png.

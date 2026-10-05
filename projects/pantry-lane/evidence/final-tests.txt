@@ -1,0 +1,224 @@
+
+> pantry-lane@1.0.0 test
+> node --test test/*.test.mjs
+
+TAP version 13
+# Subtest: ingredient validation normalizes names and accepts zero quantities
+ok 1 - ingredient validation normalizes names and accepts zero quantities
+  ---
+  duration_ms: 1.991458
+  type: 'test'
+  ...
+# Subtest: invalid ingredient inputs have clear rejections
+ok 2 - invalid ingredient inputs have clear rejections
+  ---
+  duration_ms: 0.317834
+  type: 'test'
+  ...
+# Subtest: today is usable and earlier dates are expired
+ok 3 - today is usable and earlier dates are expired
+  ---
+  duration_ms: 0.115875
+  type: 'test'
+  ...
+# Subtest: search combines with storage and expiry filters
+ok 4 - search combines with storage and expiry filters
+  ---
+  duration_ms: 8.562208
+  type: 'test'
+  ...
+# Subtest: editing retains identity and original creation time
+ok 5 - editing retains identity and original creation time
+  ---
+  duration_ms: 0.242875
+  type: 'test'
+  ...
+# Subtest: inventory survives reload and keeps damaged saved data from replacement
+ok 6 - inventory survives reload and keeps damaged saved data from replacement
+  ---
+  duration_ms: 0.257667
+  type: 'test'
+  ...
+# Subtest: a throwing localStorage getter leaves the page usable in memory
+ok 7 - a throwing localStorage getter leaves the page usable in memory
+  ---
+  duration_ms: 0.163834
+  type: 'test'
+  ...
+# Subtest: blocked local storage reports save failures
+ok 8 - blocked local storage reports save failures
+  ---
+  duration_ms: 0.084041
+  type: 'test'
+  ...
+# Subtest: weeks are real Monday-based dates and show all seven dates
+ok 9 - weeks are real Monday-based dates and show all seven dates
+  ---
+  duration_ms: 1.019625
+  type: 'test'
+  ...
+# Subtest: menu entries require a saved recipe, a week date, a valid slot, and positive whole servings
+ok 10 - menu entries require a saved recipe, a week date, a valid slot, and positive whole servings
+  ---
+  duration_ms: 0.3065
+  type: 'test'
+  ...
+# Subtest: a date and meal slot accepts one entry, supports replacement, removal, and independent weeks
+ok 11 - a date and meal slot accepts one entry, supports replacement, removal, and independent weeks
+  ---
+  duration_ms: 7.522041
+  type: 'test'
+  ...
+# Subtest: weekly demand uses live recipe IDs, scales and aggregates matching names and dimensions
+ok 12 - weekly demand uses live recipe IDs, scales and aggregates matching names and dimensions
+  ---
+  duration_ms: 0.487083
+  type: 'test'
+  ...
+# Subtest: menu persistence recovers valid data and protects malformed or unsupported saves
+ok 13 - menu persistence recovers valid data and protects malformed or unsupported saves
+  ---
+  duration_ms: 0.258166
+  type: 'test'
+  ...
+# Subtest: menu persistence rejects duplicate date-and-slot entries without replacing saved data
+ok 14 - menu persistence rejects duplicate date-and-slot entries without replacing saved data
+  ---
+  duration_ms: 0.108583
+  type: 'test'
+  ...
+# Subtest: the combined page retains inventory and recipes while registering weekly-menu routes
+ok 15 - the combined page retains inventory and recipes while registering weekly-menu routes
+  ---
+  duration_ms: 0.743625
+  type: 'test'
+  ...
+# Subtest: the weekly board can shrink and stacks day cards with usable controls on phones
+ok 16 - the weekly board can shrink and stacks day cards with usable controls on phones
+  ---
+  duration_ms: 0.282917
+  type: 'test'
+  ...
+# Subtest: recipe validation normalizes names and requires all recipe fields
+ok 17 - recipe validation normalizes names and requires all recipe fields
+  ---
+  duration_ms: 2.583125
+  type: 'test'
+  ...
+# Subtest: editing keeps recipe identity and original creation time
+ok 18 - editing keeps recipe identity and original creation time
+  ---
+  duration_ms: 0.166708
+  type: 'test'
+  ...
+# Subtest: search is case-insensitive and recipe ingredient totals convert only within a dimension
+ok 19 - search is case-insensitive and recipe ingredient totals convert only within a dimension
+  ---
+  duration_ms: 6.90225
+  type: 'test'
+  ...
+# Subtest: availability totals usable matching stock and leaves expired and wrong-dimension stock out
+ok 20 - availability totals usable matching stock and leaves expired and wrong-dimension stock out
+  ---
+  duration_ms: 0.3805
+  type: 'test'
+  ...
+# Subtest: availability treats fractional equality as enough without hiding real small shortages
+ok 21 - availability treats fractional equality as enough without hiding real small shortages
+  ---
+  duration_ms: 0.188916
+  type: 'test'
+  ...
+# Subtest: availability never treats zero stock as enough for a positive tiny requirement and displays small quantities
+ok 22 - availability never treats zero stock as enough for a positive tiny requirement and displays small quantities
+  ---
+  duration_ms: 0.098166
+  type: 'test'
+  ...
+# Subtest: the single page retains inventory and recipe entrypoints
+ok 23 - the single page retains inventory and recipe entrypoints
+  ---
+  duration_ms: 0.597458
+  type: 'test'
+  ...
+# Subtest: the port-4184 server registers every browser recipe module
+ok 24 - the port-4184 server registers every browser recipe module
+  ---
+  duration_ms: 0.082041
+  type: 'test'
+  ...
+# Subtest: recipe persistence recovers valid saves and protects malformed or future recipe data
+ok 25 - recipe persistence recovers valid saves and protects malformed or future recipe data
+  ---
+  duration_ms: 0.490458
+  type: 'test'
+  ...
+# Subtest: shopping snapshots aggregate selected-week scaled demand, convert only by dimension, and keep today-expiring stock usable
+ok 26 - shopping snapshots aggregate selected-week scaled demand, convert only by dimension, and keep today-expiring stock usable
+  ---
+  duration_ms: 7.933667
+  type: 'test'
+  ...
+# Subtest: shopping retains actual small shortages but ignores fractional equality
+ok 27 - shopping retains actual small shortages but ignores fractional equality
+  ---
+  duration_ms: 0.435667
+  type: 'test'
+  ...
+# Subtest: shopping refuses to create a partial list when a planned recipe is missing
+ok 28 - shopping refuses to create a partial list when a planned recipe is missing
+  ---
+  duration_ms: 0.218458
+  type: 'test'
+  ...
+# Subtest: snapshots become stale for menu, referenced-recipe, inventory, and local-date changes while retaining their stored content
+ok 29 - snapshots become stale for menu, referenced-recipe, inventory, and local-date changes while retaining their stored content
+  ---
+  duration_ms: 0.648334
+  type: 'test'
+  ...
+# Subtest: a simulated new local day changes expiry-dependent planning only after the calendar date rolls over
+ok 30 - a simulated new local day changes expiry-dependent planning only after the calendar date rolls over
+  ---
+  duration_ms: 0.229334
+  type: 'test'
+  ...
+# Subtest: the registered focus listener refreshes with the clock instead of forwarding its event
+ok 31 - the registered focus listener refreshes with the clock instead of forwarding its event
+  ---
+  duration_ms: 1.016708
+  type: 'test'
+  ...
+# Subtest: purchase checks persist separately by week and a replacement clears them
+ok 32 - purchase checks persist separately by week and a replacement clears them
+  ---
+  duration_ms: 0.483916
+  type: 'test'
+  ...
+# Subtest: shopping snapshot persistence preserves valid data and protects malformed, duplicate, and future data without overwriting it
+ok 33 - shopping snapshot persistence preserves valid data and protects malformed, duplicate, and future data without overwriting it
+  ---
+  duration_ms: 0.457375
+  type: 'test'
+  ...
+# Subtest: CSV export has stable columns and escapes commas, quotes, and newlines
+ok 34 - CSV export has stable columns and escapes commas, quotes, and newlines
+  ---
+  duration_ms: 0.366583
+  type: 'test'
+  ...
+# Subtest: the page registers the shopping view, export controls, responsive layout, and browser route
+ok 35 - the page registers the shopping view, export controls, responsive layout, and browser route
+  ---
+  duration_ms: 0.691958
+  type: 'test'
+  ...
+1..35
+# tests 35
+# suites 0
+# pass 35
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 87.354584

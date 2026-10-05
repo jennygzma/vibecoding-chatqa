@@ -1,0 +1,134 @@
+{
+  "status": "In Progress",
+  "approval": "pending",
+  "session_boundaries": [
+    {
+      "session_label": "D1",
+      "feature": "Pantry inventory",
+      "original_session_id": "1790994258245_73yo4",
+      "started_at_utc": "2026-10-03T02:24:18.303Z",
+      "first_message_at_utc": "2026-10-03T02:24:18.511Z",
+      "last_message_at_utc": "2026-10-03T02:36:45.193Z",
+      "message_count": 15,
+      "conversation_path": "D1/conversation.md",
+      "source_map_path": "D1/source-map.json"
+    },
+    {
+      "session_label": "D2",
+      "feature": "Recipes",
+      "original_session_id": "1790995061181_ik5ng",
+      "started_at_utc": "2026-10-03T02:37:41.241Z",
+      "first_message_at_utc": "2026-10-03T02:37:41.478Z",
+      "last_message_at_utc": "2026-10-03T02:52:34.164Z",
+      "message_count": 25,
+      "conversation_path": "D2/conversation.md",
+      "source_map_path": "D2/source-map.json"
+    },
+    {
+      "session_label": "D3",
+      "feature": "Weekly menu",
+      "original_session_id": "1790995985935_zfyht",
+      "started_at_utc": "2026-10-03T02:53:05.997Z",
+      "first_message_at_utc": "2026-10-03T02:53:06.244Z",
+      "last_message_at_utc": "2026-10-03T03:02:26.506Z",
+      "message_count": 27,
+      "conversation_path": "D3/conversation.md",
+      "source_map_path": "D3/source-map.json"
+    },
+    {
+      "session_label": "D4",
+      "feature": "Shopping list",
+      "original_session_id": "1790996588370_fyz3u",
+      "started_at_utc": "2026-10-03T03:03:08.429Z",
+      "first_message_at_utc": "2026-10-03T03:03:08.638Z",
+      "last_message_at_utc": "2026-10-03T03:13:22.924Z",
+      "message_count": 27,
+      "conversation_path": "D4/conversation.md",
+      "source_map_path": "D4/source-map.json"
+    }
+  ],
+  "request_intervals": [
+    {
+      "request": "D1:9",
+      "timestamp_utc": "2026-10-03T02:34:51.688Z",
+      "preceding_public_reply": "D1:8",
+      "preceding_reply_timestamp_utc": "2026-10-03T02:33:13.824Z",
+      "elapsed_seconds": 97.864,
+      "request_text": "I completed the browser pass on port 4184: empty-input feedback, ingredient creation and editing, combined name/storage/expiry filters, both deletion choices and refresh recovery worked. The 390-pixel layout has no horizontal overflow; screenshots are in evidence/D1-desktop.png and D1-mobile.png. I also added Pasta 0.25 kg, Tomatoes 150 g expiring October 3, and Olive oil 100 ml for the next feature. Before moving on, please fix two storage issues I found in the source: reading window.localStorage itself is outside a guard, so a SecurityError from that getter can prevent the page from rendering; and an unsupported future-version save currently loads an empty list that the next edit can overwrite. Keep the page usable in memory when storage access fails and protect unsupported data from replacement. Please add regression coverage and update the D1 review note with the actual browser checks above. Keep this in D1.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    },
+    {
+      "request": "D2:8",
+      "timestamp_utc": "2026-10-03T02:43:10.061Z",
+      "preceding_public_reply": "D2:7",
+      "preceding_reply_timestamp_utc": "2026-10-03T02:42:51.016Z",
+      "elapsed_seconds": 19.045,
+      "request_text": "I inspected the current D2 files and found a regression: index.html and app.mjs now contain only the recipe screen, so the inventory controls from D1 are no longer reachable. Please keep both features available through clear Inventory and Recipes navigation, preserving the existing inventory CRUD, filters, dialogs and storage safeguards. Recipe availability should use current inventory after edits, without requiring a refresh. I also ran a domain check with Salt 0.1 g plus Salt 0.2 g against 0.3 g stock: assessRecipeAvailability reports enough=false with a 5.55e-17 g shortfall. Handle arithmetic noise so that case is enough, while real small shortages still remain visible. Add regression coverage for both the retained D1 entrypoints and fractional equality. Keep these repairs in D2 before we move to the menu feature.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    },
+    {
+      "request": "D2:18",
+      "timestamp_utc": "2026-10-03T02:50:49.579Z",
+      "preceding_public_reply": "D2:17",
+      "preceding_reply_timestamp_utc": "2026-10-03T02:50:40.642Z",
+      "elapsed_seconds": 8.937,
+      "request_text": "I restarted only our local preview and completed the actual browser checks. Inventory and Recipes are both usable, Tomato pasta saved with the requested two-serving baseline, four servings correctly showed Pasta 400 g / available 250 g / short 150 g, Tomatoes 600 g / available 150 g / short 450 g, and Olive oil 40 ml / available 100 ml. Editing Pasta to 0.5 kg immediately showed 500 g available without refresh; I restored 0.25 kg. Recipe edits, case-insensitive search, Keep it, confirmed removal of a disposable Test toast recipe, and refresh recovery passed. Screenshots are evidence/D2-desktop.png and D2-mobile.png; the 390-pixel page had scrollWidth 390. I independently reran all 16 tests and syntax checks successfully. One remaining precision issue came from a direct reproduction: a recipe needing Salt 1e-16 g with no stock returns enough=true because Math.max(1, ...) gives an absolute tolerance floor, and formatQuantity(0.0001) returns \"0\". Use magnitude-relative tolerance without the 1-unit floor, with zero stock never covering a positive requirement, and display real small positive values without rounding them to zero. Add focused regressions for these two cases in this same D2, retain the prior fractional-equality test, then update the review note with the supplied browser evidence and passing results. Please do not retry the unavailable browser connection; its checks are already completed and provided here.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    },
+    {
+      "request": "D3:10",
+      "timestamp_utc": "2026-10-03T02:58:29.582Z",
+      "preceding_public_reply": "D3:9",
+      "preceding_reply_timestamp_utc": "2026-10-03T02:58:21.302Z",
+      "elapsed_seconds": 8.28,
+      "request_text": "I completed the actual D3 browser checks on port 4184. The selected October 5\u201311 week showed seven dated days; I saved the Monday dinner/four-servings and Wednesday lunch/two-servings plan. Duplicate slots, moving an edited meal into an occupied slot, and zero servings were rejected without changing the plan. Editing servings changed demand, and editing a referenced recipe name and its Pasta amount updated the menu and demand immediately; I restored the original recipe and plan. Removal of the scheduled recipe was blocked with the expected explanation. Both choices in the temporary-meal removal dialog worked. Reload retained the two original meals, October 12\u201318 was empty and independent, and Inventory still showed the original three stock items unchanged. One real layout defect remains: at viewport width 390, document scrollWidth was 1293. The menu-layout grid became a 1277-pixel column because menu-panel has min-width:auto and week-grid has seven 168-pixel tracks. Please fix the grid item sizing so the page itself fits the viewport; make days stack or wrap on phones, keep week controls and navigation usable, and preserve desktop layout. The initial evidence/D3-desktop.png, D3-mobile.png and D3-dom.txt exist, but the mobile screenshot records this failure and will be replaced after the repair. Keep the repair in this D3, rerun checks and update the review note with the supplied functional pass and pending narrow-layout recheck. Do not retry the unavailable browser connection; I will recheck it after the fix.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    },
+    {
+      "request": "D3:15",
+      "timestamp_utc": "2026-10-03T02:59:49.715Z",
+      "preceding_public_reply": "D3:14",
+      "preceding_reply_timestamp_utc": "2026-10-03T02:59:35.057Z",
+      "elapsed_seconds": 14.658,
+      "request_text": "A separate D3 persistence check also reproduced a slot-integrity gap: loadMenu accepts a version-1 payload with two identical {weekStart:\"2026-10-05\",date:\"2026-10-05\",slot:\"dinner\",recipeId:\"r\",servings:4} entries and returns items.length=2, allowWrite=true, notice=null. That violates the one-meal-per-date-and-slot rule on reload and can double the demand while the board shows one meal. Please reject duplicate menuEntryKey values as invalid saved data, block replacement of that original payload, and retain the established in-memory fallback notice. Include a focused persistence regression. This belongs in the same D3; do not change existing browser data or widen the feature scope.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    },
+    {
+      "request": "D3:20",
+      "timestamp_utc": "2026-10-03T03:01:01.315Z",
+      "preceding_public_reply": "D3:19",
+      "preceding_reply_timestamp_utc": "2026-10-03T03:00:54.053Z",
+      "elapsed_seconds": 7.262,
+      "request_text": "The post-repair D3 mobile browser recheck is complete. At viewport width 390 the document scrollWidth is now 390, menu-panel width is 358, and all seven days remain available. I visually inspected the narrow viewport screenshot; week controls and navigation fit, and the day cards stack. Updated passing screenshots are evidence/D3-mobile.png, D3-mobile-viewport.png and D3-desktop.png. The original failing screenshot is preserved as D3-mobile-before-repair.png with D3-layout-regression.json; D3-browser-checks.json records the completed functional pass and passing recheck. After the duplicate-persistence repair and its checks, update the review note to include this passing recheck and retain In Progress / approval pending. This is an evidence update in the same D3; no additional browser retry or feature change is needed.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    },
+    {
+      "request": "D4:5",
+      "timestamp_utc": "2026-10-03T03:06:26.650Z",
+      "preceding_public_reply": "D4:4",
+      "preceding_reply_timestamp_utc": "2026-10-03T03:04:06.856Z",
+      "elapsed_seconds": 139.794,
+      "request_text": "One D4 source check before the browser pass: shoppingDependencies includes the local date, but the current app only rerenders the stale warning after navigation or edits. There is no date-rollover listener or timer, so an open shopping screen can keep claiming its snapshot is current after midnight. Please add a lightweight local-date change check, plus focus/visibility refresh, that updates expiry-dependent displays and the stale warning without changing or regenerating the stored snapshot or its purchase checks. Avoid needless full rerenders when the date has not changed and preserve active forms. Cover the day-change calculation with a meaningful regression, including a simulated new local day. Keep this in D4; the browser connection should still only be attempted once if unavailable.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    },
+    {
+      "request": "D4:16",
+      "timestamp_utc": "2026-10-03T03:10:15.470Z",
+      "preceding_public_reply": "D4:15",
+      "preceding_reply_timestamp_utc": "2026-10-03T03:10:06.363Z",
+      "elapsed_seconds": 9.107,
+      "request_text": "I completed the actual D4 browser pass on port 4184. Before generation, export was disabled. The retained October 5 plan generated Pasta 350 g and Tomatoes 750 g, with covered Olive oil omitted. Purchased Pasta survived reload; the actual downloaded shopping-list-2026-10-05.csv contained Ingredient,Quantity,Unit,Purchased and rows Pasta,350,g,Yes / Tomatoes,750,g,No. I copied it to evidence/D4-export-purchased.csv. A temporary Pasta stock increase left the old 350 g snapshot and its check intact with a stale warning; cancel kept it, while confirmed regeneration produced 100 g and cleared checks. Expired stock exclusion and a fully covered planned week worked. I restored all test stock/expiry changes, menu servings and recipe edits. Menu changes and referenced-recipe edits also marked the list stale without changing stored values. Another week kept an independent empty snapshot and returning preserved the original week\u2019s check. Screenshots D4-desktop.png/D4-mobile.png and D4-dom.txt are saved; width and scrollWidth both measured 390. D4-browser-checks.json records the checks and the boundary that an actual midnight was not awaited. I also checked the CSV function directly: fields containing comma/newline are quoted, embedded quotation marks are doubled, and 0.0001 stays nonzero. Please update D4 review evidence with this supplied pass after the date-refresh repair and its simulated-day regression. One small visual improvement from the mobile screenshot: What to buy is squeezed into three lines beside the buttons; stack the shopping header actions below its title on phones so the heading has room. Keep existing desktop layout, all data and In Progress / approval pending. I will inspect the final screenshot after that style change; do not repeat the unavailable browser connection.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    },
+    {
+      "request": "D4:22",
+      "timestamp_utc": "2026-10-03T03:12:18.952Z",
+      "preceding_public_reply": "D4:21",
+      "preceding_reply_timestamp_utc": "2026-10-03T03:11:50.176Z",
+      "elapsed_seconds": 28.776,
+      "request_text": "The date-refresh source audit found one remaining D4 wiring bug: window.addEventListener(\"focus\", refreshExpiryDependentDisplays) passes a FocusEvent into the function\u2019s now parameter, which expects a Date. Calling localDateChanged(\"2026-10-02\", new Event(\"focus\")) reproduces TypeError: now.getTimezoneOffset is not a function. The interval and visibility wrapper use the clock correctly, but the direct focus registration does not. Please wrap focus so it calls refreshExpiryDependentDisplays() without forwarding the event. Verify the registered focus callback with an event-like argument and retain the simulated-day regression, unchanged-date no-op, snapshot preservation and form preservation. Keep this narrow repair in the same D4; no additional browser availability attempt is needed. I will reload the final browser modules and perform the final smoke check afterward.",
+      "interpretation": "Measured source interval; inspect the cited checks and evidence separately. A time gap alone does not prove review."
+    }
+  ],
+  "policy": "Actual source timestamps only. Queued fixes remain within their original feature conversation. No artificial delays or historical timestamp changes."
+}

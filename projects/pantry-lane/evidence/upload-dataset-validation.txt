@@ -1,0 +1,10 @@
+{
+  "session_count": 4,
+  "message_count": 94,
+  "question_count": 50,
+  "export_checksums": "passed",
+  "exact_evidence": "passed",
+  "structure": "passed",
+  "original_archives": "private; not replayed by repository validation",
+  "approval": "pending"
+}

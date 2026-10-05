@@ -1,0 +1,25 @@
+Pantry Lane D4 shopping-list behavior and retained-feature checks
+
+Command: npm test
+Result: passed — 35 tests, 35 passed, 0 failed.
+
+Covered behavior:
+- The October 5–11, 2026 Monday-start week aggregates scaled recipe demand, matches names case-insensitively, converts only g/kg and ml/L, and keeps pcs separate.
+- Current usable inventory is subtracted once per normalized name and dimension. Stock expiring on the local current date remains usable; stock from before that date is excluded.
+- Fractional equality is covered without masking actual small shortages; the existing quantity display remains in use.
+- A planned entry with a missing recipe stops snapshot generation rather than creating a partial list.
+- Snapshots retain generated time, current-date basis, quantities, and purchase checks. Menu, referenced-recipe, inventory, and local-date changes mark them stale without changing saved values.
+- A local-calendar rollover check runs at a lightweight interval and when the window regains focus or the document becomes visible. It re-renders expiry-dependent displays only after the local date changes; the simulated October 5-to-6 rollover regression confirms that same-day checks do nothing and a new day marks the existing snapshot stale without changing its stored list or checks.
+- The captured window-focus listener accepts an event-like argument without forwarding it to the refresh function; the refresh uses its default `Date` clock value.
+- Weeks are independent. Regeneration replaces only its selected week and clears that snapshot's checks.
+- Valid saves reload. Malformed, duplicate-item, duplicate-week, and future-version snapshots preserve the original browser value and use the memory-only fallback notice.
+- CSV output has Ingredient, Quantity, Unit, and Purchased columns and escapes comma, quote, and newline cells.
+- The phone breakpoint keeps “What to buy” above its actions at 500 pixels and below.
+- Existing inventory, recipes, weekly-menu behavior, responsive menu regression coverage, and all registered module routes remain passing.
+
+Command: npm run check
+Result: passed — syntax checks for inventory, recipes, menu, shopping, storage, server, and browser modules.
+
+Route verification: Node tests assert registration of /src/shopping.mjs alongside every prior browser module.
+
+Browser verification: the completed pass is recorded in D4-browser-checks.json, with D4-desktop.png, D4-mobile.png, D4-dom.txt, and D4-export-purchased.csv. It covered the empty pre-generation state, the October 5–11 generated list and CSV, persistence, stale/cancel/regeneration behavior, expiry and fully covered cases, independent weeks, restored fixtures, referenced-recipe/menu staleness, and the 390-pixel no-horizontal-overflow measurement. An actual midnight was not awaited; the simulated local-day rollover regression covers that boundary. The recorded screenshots predate the subsequent phone-only shopping-header layout refinement, which awaits reviewer inspection.

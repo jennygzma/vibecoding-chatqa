@@ -1,0 +1,19 @@
+{
+  "session_count": 4,
+  "message_count": 94,
+  "question_count": 50,
+  "source_checksums": "passed",
+  "exact_evidence": "passed",
+  "structure": "passed",
+  "category_counts": {
+    "knowledge-facts": 14,
+    "multi-session": 10,
+    "multihop": 18,
+    "open-domain": 4,
+    "preference": 9,
+    "single-session": 40,
+    "singlehop": 28,
+    "temporal": 9
+  },
+  "approval": "pending"
+}
