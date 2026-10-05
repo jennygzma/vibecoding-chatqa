@@ -1,0 +1,1 @@
+Draft scope: opacity controls and visible edges, opacity removal, glow and sparkles replaced by a red corona, green room background, furniture color selection and same-color merging. Historical opacity and sparkle questions are explicitly scoped. All 10 QA items await researcher review.

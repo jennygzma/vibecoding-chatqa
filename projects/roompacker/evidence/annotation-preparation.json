@@ -1,0 +1,347 @@
+{
+  "status": "prepared-for-annotation",
+  "workflow": [
+    "Read each frozen cleaned transcript in full before drafting questions.",
+    "Draft 5–30 useful QA items per trajectory, with exact D1:N evidence quotes.",
+    "Describe intermediate behavior as historical; account for later corrections within each trajectory.",
+    "Retain source categories: 1 multi-hop, 2 temporal, 3 open-domain, 4 single-hop, 5 adversarial.",
+    "Validate quote locations, raw hashes, reconstruction, categories and duplicate questions.",
+    "Build the local reviewer with questions, answers and expandable source context.",
+    "Apply researcher review decisions before packaging and adding to the master annotation file."
+  ],
+  "trajectories": [
+    {
+      "session": "1790798320886_c7tn7",
+      "dataset": "roompacker_01_main-build",
+      "scope": "Board, tables, editing and deletion",
+      "status": "frozen-ready-for-annotation",
+      "source_updated_at": "2026-09-30T20:32:36.064Z",
+      "researcher_prompts": 13,
+      "cleaned_messages": 85,
+      "prompts": [
+        {
+          "citation": "D1:1",
+          "text": "Let's make a new called room packer. First make a 64x64 chessboard that I can launch to a local web app. Literally just a 64x64 chess board and nothing else."
+        },
+        {
+          "citation": "D1:9",
+          "text": "Now make it so when I hover over a square it lights up"
+        },
+        {
+          "citation": "D1:11",
+          "text": "Then make it so I can click onto a square to highlight it"
+        },
+        {
+          "citation": "D1:16",
+          "text": "Make it so I can click several squares at once"
+        },
+        {
+          "citation": "D1:19",
+          "text": "Make it so that they have to be adjacent or form a rectangle"
+        },
+        {
+          "citation": "D1:25",
+          "text": "If they are not adjacent highlight the smallest rectangle between them"
+        },
+        {
+          "citation": "D1:30",
+          "text": "make it so when i press a button the rectangle will be marked as a table or something"
+        },
+        {
+          "citation": "D1:34",
+          "text": "make it so i can drag the rectangle/furniture around"
+        },
+        {
+          "citation": "D1:38",
+          "text": "Make it so I can't place conflicting squares. As in if they're are two tables and I try to place it don't let me."
+        },
+        {
+          "citation": "D1:44",
+          "text": "Highlight conflicting squares in red"
+        },
+        {
+          "citation": "D1:52",
+          "text": "Make the edges of tables that haven't been placed dotted vs tables that are placed in solid"
+        },
+        {
+          "citation": "D1:64",
+          "text": "make it so if i press e or some edit button i can adjust the table"
+        },
+        {
+          "citation": "D1:78",
+          "text": "make it so i can delete tables with d"
+        }
+      ]
+    },
+    {
+      "session": "1790803257764_kc4o9",
+      "dataset": "roompacker_02_sofas-chairs",
+      "scope": "Sofas, chairs, rotation and stacking",
+      "status": "frozen-ready-for-annotation",
+      "source_updated_at": "2026-09-30T21:49:41.707Z",
+      "researcher_prompts": 10,
+      "cleaned_messages": 153,
+      "prompts": [
+        {
+          "citation": "D1:1",
+          "text": "Let's make a new type of furniture called a couch. A couch must have a minimum 1x2 and is restricted to 1xn. lets start by making c spawn a 1x2 hovering on my cursor"
+        },
+        {
+          "citation": "D1:19",
+          "text": "Then let's make it placeable and movable"
+        },
+        {
+          "citation": "D1:27",
+          "text": "Then let's make the couch extendable"
+        },
+        {
+          "citation": "D1:38",
+          "text": "Let's also add chairs. Chairs are just 1x1 nodes."
+        },
+        {
+          "citation": "D1:48",
+          "text": "Chairs can only be placed next to tables"
+        },
+        {
+          "citation": "D1:58",
+          "text": "Chairs can be placed onto each other"
+        },
+        {
+          "citation": "D1:72",
+          "text": "Sofas cannot be stacked"
+        },
+        {
+          "citation": "D1:80",
+          "text": "Make sofas rotatable"
+        },
+        {
+          "citation": "D1:94",
+          "text": "Make an l-shape sofa that starts as a basic 3-piece L has 2 extendable sides"
+        },
+        {
+          "citation": "D1:139",
+          "text": "Make chairs that are stacked displayable with a number on the chair that notates how many chairs are in the stack"
+        }
+      ]
+    },
+    {
+      "session": "1790810280725_gh15o",
+      "dataset": "roompacker_03_shapes-overlaps",
+      "scope": "Arbitrary shapes, donuts, overlaps and fracturing",
+      "status": "frozen-ready-for-annotation",
+      "source_updated_at": "2026-10-02T21:15:52.611Z",
+      "researcher_prompts": 11,
+      "cleaned_messages": 129,
+      "prompts": [
+        {
+          "citation": "D1:1",
+          "text": "Let's make a new type of furniture. we can select multiple adjacent cells given that each cell can go to another if we walk only through adjacent cells, but the furniture is capped at 16 grid squares."
+        },
+        {
+          "citation": "D1:26",
+          "text": "make the button to select the cells 'p'"
+        },
+        {
+          "citation": "D1:28",
+          "text": "make all the furniture rotatable"
+        },
+        {
+          "citation": "D1:36",
+          "text": "but only in 4 directions"
+        },
+        {
+          "citation": "D1:38",
+          "text": "make tables minimum 2x3 max 16x24"
+        },
+        {
+          "citation": "D1:45",
+          "text": "make a type of furniture a donut where the minimum is a 3x3 with a whole in the middle."
+        },
+        {
+          "citation": "D1:64",
+          "text": "the way we can make a donut is by placing a table completely within another table and instead using 'u' to clear it"
+        },
+        {
+          "citation": "D1:90",
+          "text": "let's make it so that you can hover furniture over other furniture"
+        },
+        {
+          "citation": "D1:106",
+          "text": "and you can place it"
+        },
+        {
+          "citation": "D1:113",
+          "text": "but conflicting squares will be dominated by the most recent square"
+        },
+        {
+          "citation": "D1:121",
+          "text": "and it essentially fractures the old one into two pieces"
+        }
+      ]
+    },
+    {
+      "session": "1790985751209_nq50k",
+      "dataset": "roompacker_04_chaos",
+      "scope": "Teleportation, breakage, rotation and easter eggs",
+      "status": "frozen-ready-for-annotation",
+      "source_updated_at": "2026-10-03T00:18:26.484Z",
+      "researcher_prompts": 10,
+      "cleaned_messages": 103,
+      "prompts": [
+        {
+          "citation": "D1:1",
+          "text": "Let's make it so that furniture will randomly teleport."
+        },
+        {
+          "citation": "D1:13",
+          "text": "The teleportations may not always be valid"
+        },
+        {
+          "citation": "D1:21",
+          "text": "its the users job to adjust the teleportations"
+        },
+        {
+          "citation": "D1:28",
+          "text": "if a furniture goes too long without being fixed the player loses"
+        },
+        {
+          "citation": "D1:41",
+          "text": "the furniture will sometimes break and the user has to click it to fix"
+        },
+        {
+          "citation": "D1:53",
+          "text": "the furniture will sometimes randomly rotate"
+        },
+        {
+          "citation": "D1:62",
+          "text": "the furniture will sometimes fade in and out"
+        },
+        {
+          "citation": "D1:70",
+          "text": "the chances of that happening are 1/100 as an easter egg"
+        },
+        {
+          "citation": "D1:73",
+          "text": "another easter egg is 1/100 chance for a rainbow colored furniture"
+        },
+        {
+          "citation": "D1:92",
+          "text": "make the abnormal furniture(the any shape as long as the area is bounded under 16) sometimes squiggle around or readjust itself randomly"
+        }
+      ]
+    },
+    {
+      "session": "1790987708436_qx3ja",
+      "dataset": "roompacker_05_3d-floating",
+      "scope": "3D cube, controls, furniture heights and floating",
+      "status": "frozen-ready-for-annotation",
+      "source_updated_at": "2026-10-05T18:25:11.567Z",
+      "researcher_prompts": 11,
+      "cleaned_messages": 62,
+      "prompts": [
+        {
+          "citation": "D1:1",
+          "text": "Let's make it 3d"
+        },
+        {
+          "citation": "D1:3",
+          "text": "make it s"
+        },
+        {
+          "citation": "D1:21",
+          "text": "makei t so arrow keys can control the blocks"
+        },
+        {
+          "citation": "D1:26",
+          "text": "make customized rotation keys"
+        },
+        {
+          "citation": "D1:33",
+          "text": "i wnat a 3d plane so  64x64x64"
+        },
+        {
+          "citation": "D1:40",
+          "text": "the sofa should be 2 blocks high"
+        },
+        {
+          "citation": "D1:43",
+          "text": "chair is also 2 block"
+        },
+        {
+          "citation": "D1:45",
+          "text": "table is 1 block"
+        },
+        {
+          "citation": "D1:47",
+          "text": "the abnormal furniture is going to be unique"
+        },
+        {
+          "citation": "D1:55",
+          "text": "l-shape also 2 block"
+        },
+        {
+          "citation": "D1:58",
+          "text": "let's make it so that furniture can float."
+        }
+      ]
+    },
+    {
+      "session": "1791236522109_w8g1z",
+      "dataset": "roompacker_06_colors-merging",
+      "scope": "Transparency revisions, visual effects, colors and merging",
+      "status": "frozen-ready-for-annotation",
+      "source_updated_at": "2026-10-05T21:59:55.463Z",
+      "researcher_prompts": 10,
+      "cleaned_messages": 115,
+      "prompts": [
+        {
+          "citation": "D1:1",
+          "text": "Let's make the furnitures able to be made transparent"
+        },
+        {
+          "citation": "D1:21",
+          "text": "Let's make it so even if it's transparent at least edges are showing"
+        },
+        {
+          "citation": "D1:32",
+          "text": "make it so we can adjust how transparent it is"
+        },
+        {
+          "citation": "D1:41",
+          "text": "make the selected furniture glow"
+        },
+        {
+          "citation": "D1:47",
+          "text": "make it glow with sparkles"
+        },
+        {
+          "citation": "D1:53",
+          "text": "Remove the transparency feature"
+        },
+        {
+          "citation": "D1:72",
+          "text": "Replace the sparkle glow with a reddish glow."
+        },
+        {
+          "citation": "D1:77",
+          "text": "Make the background of the room greenish"
+        },
+        {
+          "citation": "D1:80",
+          "text": "Make it so we can choose furniture colors"
+        },
+        {
+          "citation": "D1:93",
+          "text": "Make it so that you can combine furnitures with the same colors"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "trajectories": 6,
+    "frozen_trajectories": 6,
+    "researcher_prompts": 65,
+    "frozen_researcher_prompts": 65,
+    "annotations": 0
+  }
+}

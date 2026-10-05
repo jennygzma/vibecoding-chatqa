@@ -1,0 +1,95 @@
+{
+  "qa": [
+    {
+      "question": "What connected-shape rule did the user request for custom furniture?",
+      "answer": "Every selected cell had to be reachable through adjacent selected cells, with a maximum of sixteen grid squares.",
+      "category": 4,
+      "evidence": [
+        "D1:1: \"each cell can go to another if we walk only through adjacent cells\"",
+        "D1:1: \"capped at 16 grid squares\""
+      ]
+    },
+    {
+      "question": "What happened when removing a painted rug cell would disconnect its shape?",
+      "answer": "The removal was rejected with red flash feedback.",
+      "category": 4,
+      "evidence": [
+        "D1:25: \"Rules enforced with red flash feedback\"",
+        "D1:25: \"removing a cell that would split the shape is rejected\""
+      ]
+    },
+    {
+      "question": "What clockwise coordinate transform rotated a rug by ninety degrees?",
+      "answer": "A cell's row and column offsets became column offset and height minus one minus row offset, anchored at the bounding-box top-left.",
+      "category": 4,
+      "evidence": [
+        "D1:31: \"new relative position is `(c, H-1-r)` where `H = rMax-rMin+1`\"",
+        "D1:31: \"re-anchor to `(rMin, cMin)`\""
+      ]
+    },
+    {
+      "question": "What table size limits did the user request?",
+      "answer": "Minimum two by three cells and maximum sixteen by twenty-four cells.",
+      "category": 4,
+      "evidence": [
+        "D1:38: \"make tables minimum 2x3 max 16x24\""
+      ]
+    },
+    {
+      "question": "How did the donut-creation workflow change after the user's clarification?",
+      "answer": "The dedicated O placement mode was removed; the user instead selected an interior rectangle in an existing table and pressed U to punch a hole.",
+      "category": 1,
+      "evidence": [
+        "D1:63: \"Click **🍩 Donut [O]** or press **O**\"",
+        "D1:89: \"**punching a hole through an existing table**\"",
+        "D1:89: \"Press **`U`** → the table converts to a donut\"",
+        "D1:64: \"instead using 'u' to clear it\""
+      ]
+    },
+    {
+      "question": "What determined the size, position and validity of a punched donut hole?",
+      "answer": "The hole exactly followed the interior selection, which could be off-center but had to leave at least one cell of border on all four sides.",
+      "category": 4,
+      "evidence": [
+        "D1:89: \"leaving at least **1 cell of border** on all four sides\"",
+        "D1:89: \"Hole is **exactly the selection** — any size, any position inside the table\""
+      ]
+    },
+    {
+      "question": "How did the stored donut hole respond to movement and rotation?",
+      "answer": "It moved with the donut and rotated ninety degrees clockwise with the outer rectangle.",
+      "category": 4,
+      "evidence": [
+        "D1:89: \"hole moves with the piece\"",
+        "D1:89: \"rotates outer rect and hole 90° CW together\""
+      ]
+    },
+    {
+      "question": "What became of collision blocking after free furniture overlap was implemented?",
+      "answer": "Collision checks became visual warnings; placement, dropping, rotation, and resizing could proceed despite overlaps.",
+      "category": 4,
+      "evidence": [
+        "D1:105: \"Every conflict check that previously blocked an action now only drives the **visual warning**\"",
+        "D1:105: \"the action always goes through\""
+      ]
+    },
+    {
+      "question": "What separation of responsibilities addressed the furniture-color overwrite problem?",
+      "answer": "The grid became occupancy bookkeeping while each furniture overlay handled its own drawing, preventing stamps from overwriting a shared cell background.",
+      "category": 3,
+      "evidence": [
+        "D1:120: \"each new stamp overwrote the previous one\"",
+        "D1:120: \"Every stamp function now **only** updates the `tableGrid[r][c]` bookkeeping array\""
+      ]
+    },
+    {
+      "question": "Does fracturing always divide an old table into exactly two pieces?",
+      "answer": "No. The guillotine-cut algorithm can produce up to four rectangular shards and skips zero-area shards.",
+      "category": 4,
+      "evidence": [
+        "D1:129: \"Spawns up to 4 replacement shards\"",
+        "D1:129: \"Any shard with zero area is silently skipped\""
+      ]
+    }
+  ]
+}

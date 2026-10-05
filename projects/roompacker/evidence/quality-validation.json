@@ -1,0 +1,17 @@
+{
+  "status": "awaiting-human-review",
+  "original_sessions": 6,
+  "annotations": 72,
+  "citations": 189,
+  "categories": {
+    "knowledge-facts": 14,
+    "multi-session": 12,
+    "multihop": 23,
+    "open-domain": 7,
+    "preference": 13,
+    "single-session": 60,
+    "singlehop": 42,
+    "temporal": 7
+  },
+  "errors": []
+}

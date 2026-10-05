@@ -1,0 +1,99 @@
+{
+  "qa": [
+    {
+      "question": "What did the user want in the first RoomPacker prototype?",
+      "answer": "Only a 64-by-64 chessboard that could run as a local web app.",
+      "category": 4,
+      "evidence": [
+        "D1:1: \"Literally just a 64x64 chess board and nothing else.\"",
+        "D1:1: \"that I can launch to a local web app\""
+      ]
+    },
+    {
+      "question": "Why did the local launcher switch to Python's HTTP server?",
+      "answer": "An npm cache permission issue prevented the original server approach, so the agent used the available Python 3 server.",
+      "category": 1,
+      "evidence": [
+        "D1:5: \"There's an npm cache permission issue on this machine.\"",
+        "D1:6: \"Python 3 is available.\"",
+        "D1:6: \"Python's built-in HTTP server\""
+      ]
+    },
+    {
+      "question": "How did the initial drag-painting gesture choose whether to select or deselect cells?",
+      "answer": "The first cell fixed the action for the whole stroke: starting on an unselected cell selected cells, and starting on a selected cell deselected them.",
+      "category": 4,
+      "evidence": [
+        "D1:18: \"if you start on an unselected square, the whole drag selects; if you start on a selected one, the whole drag deselects\""
+      ]
+    },
+    {
+      "question": "How did the selection model change after the smallest-enclosing-rectangle request?",
+      "answer": "It changed from allowing independent rectangles to maintaining one rectangle that expands to enclose the existing selection and a newly clicked cell.",
+      "category": 1,
+      "evidence": [
+        "D1:24: \"multiple independent rectangles\"",
+        "D1:29: \"always **exactly one rectangle**\"",
+        "D1:29: \"smallest bounding box containing the existing selection **and** the new cell\""
+      ]
+    },
+    {
+      "question": "How was a selected rectangle converted into a named table?",
+      "answer": "Pressing T or the Place Table button stamped the rectangle in a palette color with a centered Table N label, then cleared the selection.",
+      "category": 4,
+      "evidence": [
+        "D1:33: \"**Press `T`** or click the **🪑 Place Table** button\"",
+        "D1:33: \"A **\"Table N\" label**\"",
+        "D1:33: \"The selection clears\"",
+        "D1:33: \"cells are coloured in the table's unique colour\""
+      ]
+    },
+    {
+      "question": "Why does moving a table require both cell ownership tracking and restoring its old footprint?",
+      "answer": "Ownership tracking identifies the cells to clear, so restoring them before restamping avoids leaving stale furniture colors behind.",
+      "category": 3,
+      "evidence": [
+        "D1:37: \"`tableGrid[row][col]` tracks which table (by id) owns each cell\"",
+        "D1:37: \"`eraseTable()` restores cells to their original light/dark chess colours before `stampTable()` paints the new position\""
+      ]
+    },
+    {
+      "question": "How did the main-build thread handle a new table that overlapped an existing table?",
+      "answer": "It blocked placement and briefly flashed the Place Table button red.",
+      "category": 4,
+      "evidence": [
+        "D1:43: \"placement is **blocked**\"",
+        "D1:43: \"button **flashes red** briefly\""
+      ]
+    },
+    {
+      "question": "How did the selection preview distinguish free cells from occupied cells?",
+      "answer": "Free cells were yellow; cells occupied by another table were highlighted red.",
+      "category": 4,
+      "evidence": [
+        "D1:51: \"Free cells in the rectangle → **yellow** preview\"",
+        "D1:51: \"Cells already occupied by a table → **red** highlight\""
+      ]
+    },
+    {
+      "question": "How did table editing support both committing a resize and cancelling it?",
+      "answer": "E lifted the table into a selection; T committed the new shape with its identity, color and label preserved, while Escape restored the original position and shape.",
+      "category": 4,
+      "evidence": [
+        "D1:77: \"**Press `E`** or click **✏️ Edit** | Lifts the table off the board\"",
+        "D1:77: \"same table, same colour, same label\"",
+        "D1:77: \"Cancels the edit — table snaps back to its original position and shape\""
+      ]
+    },
+    {
+      "question": "How does deletion behave for a selected table, a table being edited, and an empty selection?",
+      "answer": "D deletes a selected table, cancels and removes one being edited, and does nothing when no table is selected.",
+      "category": 4,
+      "evidence": [
+        "D1:85: \"**`D` with no table selected** | Does nothing\"",
+        "D1:85: \"Cleanly cancels the edit and removes the table in one step\"",
+        "D1:85: \"Table is deleted — cells restored to chess colours, overlay removed\""
+      ]
+    }
+  ]
+}

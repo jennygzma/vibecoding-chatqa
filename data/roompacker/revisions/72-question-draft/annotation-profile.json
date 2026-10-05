@@ -1,0 +1,38 @@
+{
+  "status": "awaiting-human-review",
+  "initial_annotations": 109,
+  "curated_annotations": 72,
+  "local_questions": 60,
+  "cross_session_questions": 12,
+  "citations": 189,
+  "categories": {
+    "knowledge-facts": 14,
+    "multi-session": 12,
+    "multihop": 23,
+    "open-domain": 7,
+    "preference": 13,
+    "single-session": 60,
+    "singlehop": 42,
+    "temporal": 7
+  },
+  "comparison_sources": [
+    "data/cedar_table/output.json",
+    "data/cedar_table/annotation-profile.json",
+    "data/focus_desk/annotations.json",
+    "data/focus_desk/annotation-semantic-review.json"
+  ],
+  "quality_changes": [
+    "Removed or consolidated repetitive control, color, pixel-size and function-name lookups.",
+    "Added cross-session questions that require facts from separate original conversations.",
+    "Reclassified ordinary implementation revisions as multihop rather than temporal.",
+    "Used temporal only for explicit durations, cadence or event timing.",
+    "Added preference only when an actual user request is cited.",
+    "Used open-domain for concise, source-grounded interpretation; no invented user preferences.",
+    "Distinguished the requested three-cell L from the reported five-cell default.",
+    "Distinguished offset clamping from proof of cube containment.",
+    "Preserved historical behavior and original transcript text without claiming that earlier features survived the 3D rewrite.",
+    "Preserved the initial 109-item draft under evidence/revisions/initial-109 for traceability."
+  ],
+  "distribution_policy": "Categories describe supported reasoning; Edgar's observed proportions are not quotas.",
+  "researcher_approval": "pending"
+}

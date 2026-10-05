@@ -1,0 +1,1486 @@
+[
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 0,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudbu5av_2vw",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 1,
+    "original_block_index": 0,
+    "original_message_id": "msg_5-d3rlUQ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 2,
+    "original_block_index": 0,
+    "original_message_id": "msg_fSuA-KGX",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 3,
+    "original_block_index": 0,
+    "original_message_id": "msg_Ooo8UsDw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 4,
+    "original_block_index": 0,
+    "original_message_id": "msg_XEmY7X6s",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 5,
+    "original_block_index": 0,
+    "original_message_id": "msg_khV6kVKj",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 5,
+    "original_block_index": 1,
+    "original_message_id": "msg_khV6kVKj",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 5,
+    "original_block_index": 2,
+    "original_message_id": "msg_khV6kVKj",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 6,
+    "original_block_index": 0,
+    "original_message_id": "msg_vfaS6LDl_tool_tooluse_RFHn4XgwP7TlpgQsPbXXqF",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 7,
+    "original_block_index": 0,
+    "original_message_id": "msg_vfaS6LDl_tool_tooluse_25EobK2zjXtMcWu568vhec",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 8,
+    "original_block_index": 0,
+    "original_message_id": "msg_cvpxNYr0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 9,
+    "original_block_index": 0,
+    "original_message_id": "msg_N4UW9GLa",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 10,
+    "original_block_index": 0,
+    "original_message_id": "msg_LQ4EeoLs",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 10,
+    "original_block_index": 1,
+    "original_message_id": "msg_LQ4EeoLs",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 11,
+    "original_block_index": 0,
+    "original_message_id": "msg_oVnO3Cwe",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 12,
+    "original_block_index": 0,
+    "original_message_id": "msg_G-hH9UCn",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 13,
+    "original_block_index": 0,
+    "original_message_id": "msg_r1375Uvj",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 14,
+    "original_block_index": 0,
+    "original_message_id": "msg_sKk7vFHM",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 14,
+    "original_block_index": 1,
+    "original_message_id": "msg_sKk7vFHM",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 15,
+    "original_block_index": 0,
+    "original_message_id": "msg_L9LT-ZUi",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 16,
+    "original_block_index": 0,
+    "original_message_id": "msg__kX27o04",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 16,
+    "original_block_index": 1,
+    "original_message_id": "msg__kX27o04",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 17,
+    "original_block_index": 0,
+    "original_message_id": "msg_mo9gMxnN",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 18,
+    "original_block_index": 0,
+    "original_message_id": "msg_poGCUu4Z",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 18,
+    "original_block_index": 1,
+    "original_message_id": "msg_poGCUu4Z",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 19,
+    "original_block_index": 0,
+    "original_message_id": "msg_843_VQPg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 20,
+    "original_block_index": 0,
+    "original_message_id": "msg_SC3hnNwX",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 20,
+    "original_block_index": 1,
+    "original_message_id": "msg_SC3hnNwX",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 21,
+    "original_block_index": 0,
+    "original_message_id": "msg_VD9J12MW",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 22,
+    "original_block_index": 0,
+    "original_message_id": "msg_G-whlCf2",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 23,
+    "original_block_index": 0,
+    "original_message_id": "msg_muddnt60_2za",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 24,
+    "original_block_index": 0,
+    "original_message_id": "msg_4kpORO2O",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 24,
+    "original_block_index": 1,
+    "original_message_id": "msg_4kpORO2O",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 25,
+    "original_block_index": 0,
+    "original_message_id": "msg_WLmBdtYs",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 26,
+    "original_block_index": 0,
+    "original_message_id": "msg_uRlcqw5W",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 26,
+    "original_block_index": 1,
+    "original_message_id": "msg_uRlcqw5W",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 27,
+    "original_block_index": 0,
+    "original_message_id": "msg_maV6oqz9",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 28,
+    "original_block_index": 0,
+    "original_message_id": "msg_n_q9Ok3O",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 28,
+    "original_block_index": 1,
+    "original_message_id": "msg_n_q9Ok3O",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 28,
+    "original_block_index": 2,
+    "original_message_id": "msg_n_q9Ok3O",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 29,
+    "original_block_index": 0,
+    "original_message_id": "msg_JasFSsEx_tool_tooluse_nx7rIRzWpt6fwunAoIhgwP",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 30,
+    "original_block_index": 0,
+    "original_message_id": "msg_JasFSsEx_tool_tooluse_7NNTu27zxgTCuwv84clJsB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 31,
+    "original_block_index": 0,
+    "original_message_id": "msg_WFz6HxN3",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 31,
+    "original_block_index": 1,
+    "original_message_id": "msg_WFz6HxN3",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 32,
+    "original_block_index": 0,
+    "original_message_id": "msg_fKOl88V3",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 33,
+    "original_block_index": 0,
+    "original_message_id": "msg_HaYBXe7D",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 33,
+    "original_block_index": 1,
+    "original_message_id": "msg_HaYBXe7D",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 34,
+    "original_block_index": 0,
+    "original_message_id": "msg_flCmQStt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 35,
+    "original_block_index": 0,
+    "original_message_id": "msg_Gq22KrKU",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 35,
+    "original_block_index": 1,
+    "original_message_id": "msg_Gq22KrKU",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 36,
+    "original_block_index": 0,
+    "original_message_id": "msg__WjOJxKw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 37,
+    "original_block_index": 0,
+    "original_message_id": "msg_Oc1is9XZ",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 38,
+    "original_block_index": 0,
+    "original_message_id": "msg_muddr2y0_34y",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 39,
+    "original_block_index": 0,
+    "original_message_id": "msg_Bl9H0qdN",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 40,
+    "original_block_index": 0,
+    "original_message_id": "msg_wakqGGhb",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 41,
+    "original_block_index": 0,
+    "original_message_id": "msg_Kd8YRp-2",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 41,
+    "original_block_index": 1,
+    "original_message_id": "msg_Kd8YRp-2",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 42,
+    "original_block_index": 0,
+    "original_message_id": "msg_yfLRBpfb",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 43,
+    "original_block_index": 0,
+    "original_message_id": "msg_Gy3crqAV",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 43,
+    "original_block_index": 1,
+    "original_message_id": "msg_Gy3crqAV",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 44,
+    "original_block_index": 0,
+    "original_message_id": "msg_pEOLWnBB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 45,
+    "original_block_index": 0,
+    "original_message_id": "msg_HBH9Mutn",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 46,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudle48a_39f",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 47,
+    "original_block_index": 0,
+    "original_message_id": "msg_W_Io4JHg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 48,
+    "original_block_index": 0,
+    "original_message_id": "msg__qIILI3o",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 49,
+    "original_block_index": 0,
+    "original_message_id": "msg_xV9l_QTZ",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 49,
+    "original_block_index": 1,
+    "original_message_id": "msg_xV9l_QTZ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 50,
+    "original_block_index": 0,
+    "original_message_id": "msg_KSitpL8H",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 51,
+    "original_block_index": 0,
+    "original_message_id": "msg_kUCWITKW",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 51,
+    "original_block_index": 1,
+    "original_message_id": "msg_kUCWITKW",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 52,
+    "original_block_index": 0,
+    "original_message_id": "msg_NzHYW_ME",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 53,
+    "original_block_index": 0,
+    "original_message_id": "msg_oe34SN74",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 53,
+    "original_block_index": 1,
+    "original_message_id": "msg_oe34SN74",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 54,
+    "original_block_index": 0,
+    "original_message_id": "msg_6vaHxa-D",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 55,
+    "original_block_index": 0,
+    "original_message_id": "msg_VJTTiinJ",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 55,
+    "original_block_index": 1,
+    "original_message_id": "msg_VJTTiinJ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 56,
+    "original_block_index": 0,
+    "original_message_id": "msg_qprHvGLZ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 57,
+    "original_block_index": 0,
+    "original_message_id": "msg__MSApwEC",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 58,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudlztye_3hs",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 59,
+    "original_block_index": 0,
+    "original_message_id": "msg_7Hp7otlp",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 60,
+    "original_block_index": 0,
+    "original_message_id": "msg_i-es1E6b",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 61,
+    "original_block_index": 0,
+    "original_message_id": "msg_G7aBQzmW",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 61,
+    "original_block_index": 1,
+    "original_message_id": "msg_G7aBQzmW",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 61,
+    "original_block_index": 2,
+    "original_message_id": "msg_G7aBQzmW",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 62,
+    "original_block_index": 0,
+    "original_message_id": "msg_Krq1Wt-i_tool_tooluse_rRqpdK9mcxu6yQRXSrRibT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 63,
+    "original_block_index": 0,
+    "original_message_id": "msg_Krq1Wt-i_tool_tooluse_uv2LD7elPDO0WoPQuJfhpo",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 64,
+    "original_block_index": 0,
+    "original_message_id": "msg_RtpgkuiG",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 64,
+    "original_block_index": 1,
+    "original_message_id": "msg_RtpgkuiG",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 65,
+    "original_block_index": 0,
+    "original_message_id": "msg_lOYttnen",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 66,
+    "original_block_index": 0,
+    "original_message_id": "msg_o13MziRt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 67,
+    "original_block_index": 0,
+    "original_message_id": "msg_ISg-SxsO",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 68,
+    "original_block_index": 0,
+    "original_message_id": "msg_PnAYwsE1",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 68,
+    "original_block_index": 1,
+    "original_message_id": "msg_PnAYwsE1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 69,
+    "original_block_index": 0,
+    "original_message_id": "msg_AZ7snwOS",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 70,
+    "original_block_index": 0,
+    "original_message_id": "msg_pRagwVO8",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 71,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudm51hz_3s5",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 72,
+    "original_block_index": 0,
+    "original_message_id": "msg_rVEpA1s9",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 73,
+    "original_block_index": 0,
+    "original_message_id": "msg_Ngi2X8mE",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 74,
+    "original_block_index": 0,
+    "original_message_id": "msg_KqoWmwHE",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 74,
+    "original_block_index": 1,
+    "original_message_id": "msg_KqoWmwHE",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 75,
+    "original_block_index": 0,
+    "original_message_id": "msg_VSTVTDIC",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 76,
+    "original_block_index": 0,
+    "original_message_id": "msg_tKvPa_NR",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 76,
+    "original_block_index": 1,
+    "original_message_id": "msg_tKvPa_NR",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 77,
+    "original_block_index": 0,
+    "original_message_id": "msg_yR23BmlY",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 78,
+    "original_block_index": 0,
+    "original_message_id": "msg_XTo37HdF",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 79,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudm5ujs_406",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 80,
+    "original_block_index": 0,
+    "original_message_id": "msg_XNi9I3Y-",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 80,
+    "original_block_index": 1,
+    "original_message_id": "msg_XNi9I3Y-",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 81,
+    "original_block_index": 0,
+    "original_message_id": "msg_tEj4Zy6U",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 82,
+    "original_block_index": 0,
+    "original_message_id": "msg_4Bxvx838",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 83,
+    "original_block_index": 0,
+    "original_message_id": "msg_QLRIr3Fq",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 84,
+    "original_block_index": 0,
+    "original_message_id": "msg_nNUUhEsB",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 85,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudm6ank_46s",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 86,
+    "original_block_index": 0,
+    "original_message_id": "msg_P4sBAckx",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 87,
+    "original_block_index": 0,
+    "original_message_id": "msg_AyXdMuSk",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 88,
+    "original_block_index": 0,
+    "original_message_id": "msg_nLwoYDFd",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 88,
+    "original_block_index": 1,
+    "original_message_id": "msg_nLwoYDFd",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 89,
+    "original_block_index": 0,
+    "original_message_id": "msg_Sf9e26m1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 90,
+    "original_block_index": 0,
+    "original_message_id": "msg_ep8ye4bc",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 90,
+    "original_block_index": 1,
+    "original_message_id": "msg_ep8ye4bc",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 90,
+    "original_block_index": 2,
+    "original_message_id": "msg_ep8ye4bc",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 91,
+    "original_block_index": 0,
+    "original_message_id": "msg_NsMBt2I3_tool_tooluse_4d2nl4rNHPv3yxbpNjPnwg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 92,
+    "original_block_index": 0,
+    "original_message_id": "msg_NsMBt2I3_tool_tooluse_NGNxjsVLKD9E2a4BR7MFm2",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 93,
+    "original_block_index": 0,
+    "original_message_id": "msg_ym4KHdQI",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 93,
+    "original_block_index": 1,
+    "original_message_id": "msg_ym4KHdQI",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 94,
+    "original_block_index": 0,
+    "original_message_id": "msg_Aq3KvX1U",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 95,
+    "original_block_index": 0,
+    "original_message_id": "msg_CyGG4HmY",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 96,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudm9wlr_4iw",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 97,
+    "original_block_index": 0,
+    "original_message_id": "msg_yBrcFvqt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 98,
+    "original_block_index": 0,
+    "original_message_id": "msg_HFSRarDX",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 99,
+    "original_block_index": 0,
+    "original_message_id": "msg_ECuVrvIm",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 100,
+    "original_block_index": 0,
+    "original_message_id": "msg_tgF1QrXu",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 101,
+    "original_block_index": 0,
+    "original_message_id": "msg_3DpS12Nj",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 102,
+    "original_block_index": 0,
+    "original_message_id": "msg_iQ0UI9oG",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 103,
+    "original_block_index": 0,
+    "original_message_id": "msg_zfuJ3wMk",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 104,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudma9vv_4tl",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 105,
+    "original_block_index": 0,
+    "original_message_id": "msg__TEEoLQO",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 106,
+    "original_block_index": 0,
+    "original_message_id": "msg_4OaSryE8",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 107,
+    "original_block_index": 0,
+    "original_message_id": "msg_Sx__bU7s",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 107,
+    "original_block_index": 1,
+    "original_message_id": "msg_Sx__bU7s",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 107,
+    "original_block_index": 2,
+    "original_message_id": "msg_Sx__bU7s",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 108,
+    "original_block_index": 0,
+    "original_message_id": "msg_s3ztlGeV_tool_tooluse_8kzTfg9KDmWfVkdZLIe5XJ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 109,
+    "original_block_index": 0,
+    "original_message_id": "msg_s3ztlGeV_tool_tooluse_vtqJwb6QiNu8cVq3U9iRCZ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 110,
+    "original_block_index": 0,
+    "original_message_id": "msg_SKGLs2KS",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 110,
+    "original_block_index": 1,
+    "original_message_id": "msg_SKGLs2KS",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 111,
+    "original_block_index": 0,
+    "original_message_id": "msg_psXnUoQZ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 112,
+    "original_block_index": 0,
+    "original_message_id": "msg_PejfTUWE",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 113,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudmat5i_556",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 114,
+    "original_block_index": 0,
+    "original_message_id": "msg_Thli1azZ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 115,
+    "original_block_index": 0,
+    "original_message_id": "msg_nrP_5gjp",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 116,
+    "original_block_index": 0,
+    "original_message_id": "msg_mNXpzflT",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 116,
+    "original_block_index": 1,
+    "original_message_id": "msg_mNXpzflT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 117,
+    "original_block_index": 0,
+    "original_message_id": "msg_ft9hd-Mv",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 118,
+    "original_block_index": 0,
+    "original_message_id": "msg_we-YchFE",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 118,
+    "original_block_index": 1,
+    "original_message_id": "msg_we-YchFE",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 119,
+    "original_block_index": 0,
+    "original_message_id": "msg_7KUqChSl",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 120,
+    "original_block_index": 0,
+    "original_message_id": "msg_8doeuazO",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 120,
+    "original_block_index": 1,
+    "original_message_id": "msg_8doeuazO",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 121,
+    "original_block_index": 0,
+    "original_message_id": "msg_1z-JxTqO",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 122,
+    "original_block_index": 0,
+    "original_message_id": "msg_s_5dRjC3",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 122,
+    "original_block_index": 1,
+    "original_message_id": "msg_s_5dRjC3",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 123,
+    "original_block_index": 0,
+    "original_message_id": "msg_iRUwVPel",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 124,
+    "original_block_index": 0,
+    "original_message_id": "msg_mudmbaky_5o7",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 125,
+    "original_block_index": 0,
+    "original_message_id": "msg_a6LguLpg",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 125,
+    "original_block_index": 1,
+    "original_message_id": "msg_a6LguLpg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 126,
+    "original_block_index": 0,
+    "original_message_id": "msg_dAvkkTX1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 127,
+    "original_block_index": 0,
+    "original_message_id": "msg_PzDh9T7C",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 127,
+    "original_block_index": 1,
+    "original_message_id": "msg_PzDh9T7C",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 128,
+    "original_block_index": 0,
+    "original_message_id": "msg_m2d-BLkk",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 129,
+    "original_block_index": 0,
+    "original_message_id": "msg_Fxdp0Dvc",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 129,
+    "original_block_index": 1,
+    "original_message_id": "msg_Fxdp0Dvc",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 130,
+    "original_block_index": 0,
+    "original_message_id": "msg_g8NiVXeR",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 131,
+    "original_block_index": 0,
+    "original_message_id": "msg_CKFOXk4R",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 132,
+    "original_block_index": 0,
+    "original_message_id": "msg_H8n4xGZY",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 133,
+    "original_block_index": 0,
+    "original_message_id": "msg_OB30dcGG",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 133,
+    "original_block_index": 1,
+    "original_message_id": "msg_OB30dcGG",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 134,
+    "original_block_index": 0,
+    "original_message_id": "msg_9Zyo7VUU",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 135,
+    "original_block_index": 0,
+    "original_message_id": "msg_senwwmew",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 136,
+    "original_block_index": 0,
+    "original_message_id": "msg_nD2B1O_1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 137,
+    "original_block_index": 0,
+    "original_message_id": "msg_One4OJRt",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 137,
+    "original_block_index": 1,
+    "original_message_id": "msg_One4OJRt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 138,
+    "original_block_index": 0,
+    "original_message_id": "msg_1j9DNgdG",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 139,
+    "original_block_index": 0,
+    "original_message_id": "msg_XU5wGTgg",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 139,
+    "original_block_index": 1,
+    "original_message_id": "msg_XU5wGTgg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 140,
+    "original_block_index": 0,
+    "original_message_id": "msg_ARr8JvfJ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 141,
+    "original_block_index": 0,
+    "original_message_id": "msg_oyrxEsfW",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 141,
+    "original_block_index": 1,
+    "original_message_id": "msg_oyrxEsfW",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 142,
+    "original_block_index": 0,
+    "original_message_id": "msg_TLZWnn_q",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 143,
+    "original_block_index": 0,
+    "original_message_id": "msg_R-2TudyS",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 143,
+    "original_block_index": 1,
+    "original_message_id": "msg_R-2TudyS",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 144,
+    "original_block_index": 0,
+    "original_message_id": "msg_Z1Lwn7KX",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 145,
+    "original_block_index": 0,
+    "original_message_id": "msg_KjTFIvzb",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 145,
+    "original_block_index": 1,
+    "original_message_id": "msg_KjTFIvzb",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 146,
+    "original_block_index": 0,
+    "original_message_id": "msg_MZrl-NK7",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 147,
+    "original_block_index": 0,
+    "original_message_id": "msg_C57MruZV",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 147,
+    "original_block_index": 1,
+    "original_message_id": "msg_C57MruZV",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 148,
+    "original_block_index": 0,
+    "original_message_id": "msg_nuW4ijlf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 149,
+    "original_block_index": 0,
+    "original_message_id": "msg_MLk59oP4",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 149,
+    "original_block_index": 1,
+    "original_message_id": "msg_MLk59oP4",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 150,
+    "original_block_index": 0,
+    "original_message_id": "msg_OGYLub_i",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 151,
+    "original_block_index": 0,
+    "original_message_id": "msg_ywdozAxR",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 152,
+    "original_block_index": 0,
+    "original_message_id": "msg_QgNBH1zi",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 153,
+    "original_block_index": 0,
+    "original_message_id": "msg_K7uveM8t",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 153,
+    "original_block_index": 1,
+    "original_message_id": "msg_K7uveM8t",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 154,
+    "original_block_index": 0,
+    "original_message_id": "msg_c6sI8uV0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 155,
+    "original_block_index": 0,
+    "original_message_id": "msg_ok9lW4GY",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 155,
+    "original_block_index": 1,
+    "original_message_id": "msg_ok9lW4GY",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 156,
+    "original_block_index": 0,
+    "original_message_id": "msg_lt1xLFOt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 157,
+    "original_block_index": 0,
+    "original_message_id": "msg_h9QBgx8R",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 157,
+    "original_block_index": 1,
+    "original_message_id": "msg_h9QBgx8R",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 158,
+    "original_block_index": 0,
+    "original_message_id": "msg_P_l2ebQw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/stockapp/evidence/raw/1790121022453_9znfg.messages.json",
+    "original_position": 159,
+    "original_block_index": 0,
+    "original_message_id": "msg_ebPfk2cd",
+    "reason": "included public prose"
+  }
+]

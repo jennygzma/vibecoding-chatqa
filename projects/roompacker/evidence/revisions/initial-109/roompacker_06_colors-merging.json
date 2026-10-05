@@ -1,0 +1,179 @@
+{
+  "qa": [
+    {
+      "question": "How did the initially added opacity slider become available?",
+      "answer": "Selecting a furniture piece enabled the toolbar slider and showed that piece's opacity as a percentage.",
+      "category": 4,
+      "evidence": [
+        "D1:20: \"**Disabled** when no piece is selected; **enabled** automatically when you click a piece\"",
+        "D1:20: \"Displays the current opacity as a percentage\""
+      ]
+    },
+    {
+      "question": "What transparency range and step size did the original slider offer?",
+      "answer": "Zero percent to one hundred percent, in five-percent steps.",
+      "category": 4,
+      "evidence": [
+        "D1:20: \"Range: `0%` (invisible) → `100%` (fully opaque), in 5% steps\""
+      ]
+    },
+    {
+      "question": "How were furniture edges kept visible when the bodies became transparent?",
+      "answer": "Fully opaque LineSegments were attached to the geometry; the mesh-opacity helper skipped those line objects.",
+      "category": 4,
+      "evidence": [
+        "D1:31: \"**always fully opaque** (`transparent: false, opacity: 1`)\"",
+        "D1:31: \"`LineSegments` are not `Mesh` objects, `setMeshOpacity` already skips them\""
+      ]
+    },
+    {
+      "question": "What did liftColor do for furniture edge outlines?",
+      "answer": "It blended the piece's color toward white to create lighter matching edge lines.",
+      "category": 4,
+      "evidence": [
+        "D1:31: \"blends a colour toward white by factor `t`\""
+      ]
+    },
+    {
+      "question": "How was the opacity control improved for exact input?",
+      "answer": "A number input was added beside a zero-to-one-hundred slider; the two stayed synchronized and numeric values were clamped on Enter or blur.",
+      "category": 4,
+      "evidence": [
+        "D1:40: \"**Number input**\"",
+        "D1:40: \"Both inputs **stay in sync**\"",
+        "D1:40: \"number input **clamps on blur/Enter**\""
+      ]
+    },
+    {
+      "question": "How did transparency support change by the end of the visual-refinements thread?",
+      "answer": "It was first implemented with adjustable per-piece opacity, then removed at the user's request, including the controls and opacity fields.",
+      "category": 2,
+      "evidence": [
+        "D1:20: \"furniture pieces in Room Packer 3D can now be made transparent\"",
+        "D1:53: \"Remove the transparency feature\"",
+        "D1:71: \"`opacity:` field removed from all piece data objects\""
+      ]
+    },
+    {
+      "question": "Did removing furniture transparency also make placement previews opaque?",
+      "answer": "No. Ghost and selection previews retained their own transparent materials.",
+      "category": 5,
+      "evidence": [
+        "D1:71: \"ghost previews still render semi-transparent as intended\"",
+        "D1:71: \"selection rect still renders semi-transparent as intended\""
+      ]
+    },
+    {
+      "question": "What rendering technique created the first three-layer selection glow?",
+      "answer": "Concentric BackSide box shells with unlit MeshBasicMaterial produced an outer corona, and depthWrite false prevented occlusion.",
+      "category": 4,
+      "evidence": [
+        "D1:46: \"**3-layer concentric glow corona**\"",
+        "D1:46: \"`MeshBasicMaterial`\"",
+        "D1:46: \"`depthWrite: false` prevents the shells from occluding anything behind them\""
+      ]
+    },
+    {
+      "question": "How many particles did the temporary sparkle effect use and how were they recycled?",
+      "answer": "It used sixty particles whose lifetimes ranged from 0.6 to 1.4 seconds; expired particles respawned at new surface points.",
+      "category": 4,
+      "evidence": [
+        "D1:52: \"pool of **60 sparkles**\"",
+        "D1:52: \"random lifetime (0.6–1.4 s)\"",
+        "D1:52: \"**respawns** at a fresh random surface point\""
+      ]
+    },
+    {
+      "question": "How did the selection effect change after the user requested a reddish glow?",
+      "answer": "The sparkle particles and texture were removed and replaced by three red-toned glow shells, retaining the breathing pulse.",
+      "category": 2,
+      "evidence": [
+        "D1:52: \"`THREE.Points` object\"",
+        "D1:76: \"All sparkle code is gone\"",
+        "D1:76: \"simple 3-shell reddish corona\"",
+        "D1:76: \"breathing pulse animation is unchanged\""
+      ]
+    },
+    {
+      "question": "Which three colors defined the final reddish selection glow?",
+      "answer": "The inner shell was orange-red #ff6644, the middle pure red #ff2200, and the outer deep red #880000.",
+      "category": 4,
+      "evidence": [
+        "D1:76: \"`#ff6644` orange-red\"",
+        "D1:76: \"`#ff2200` pure red\"",
+        "D1:76: \"`#880000` deep red\""
+      ]
+    },
+    {
+      "question": "Which rendering settings were matched for the greenish room background?",
+      "answer": "The page background, WebGL clear color, and scene fog all became dark forest green #0a1a0f so they blended seamlessly.",
+      "category": 4,
+      "evidence": [
+        "D1:79: \"CSS `body` background\"",
+        "D1:79: \"`renderer.setClearColor`\"",
+        "D1:79: \"`scene.fog`\"",
+        "D1:79: \"same `#0a1a0f`\""
+      ]
+    },
+    {
+      "question": "How did the furniture color picker behave with and without a selected piece?",
+      "answer": "With a piece selected it recolored that piece immediately; without one it stored the color for the next placement.",
+      "category": 4,
+      "evidence": [
+        "D1:92: \"**Piece selected** | Immediately recolours the selected piece live\"",
+        "D1:92: \"**Nothing selected** | Stores the colour as `nextColor`\""
+      ]
+    },
+    {
+      "question": "What conditions enabled merging two furniture pieces?",
+      "answer": "They had to be distinct pieces with exactly the same color on the same cube face.",
+      "category": 4,
+      "evidence": [
+        "D1:97: \"same face, same color (close enough, ±0), not same piece\"",
+        "D1:115: \"**exact same color**\""
+      ]
+    },
+    {
+      "question": "What preview appeared while hovering a valid merge target?",
+      "answer": "A semi-transparent ghost displayed the combined footprint of both pieces in their shared color.",
+      "category": 4,
+      "evidence": [
+        "D1:115: \"a semi-transparent ghost preview shows the **combined footprint** of both pieces together in their shared color\""
+      ]
+    },
+    {
+      "question": "What happened to the originals after a furniture merge?",
+      "answer": "Both were deleted and replaced by one selected merged piece containing all their cells and retaining the shared color.",
+      "category": 4,
+      "evidence": [
+        "D1:115: \"both originals are deleted and replaced by a single `merged` piece containing all their cells\"",
+        "D1:115: \"new piece is automatically selected, still showing the same color\""
+      ]
+    },
+    {
+      "question": "Did merged furniture have to consist of two pieces of the same type?",
+      "answer": "No. Any supported furniture type could merge with another compatible same-color piece, including a previously merged piece.",
+      "category": 5,
+      "evidence": [
+        "D1:115: \"Any furniture type (table, sofa, chair, L-sofa, rug, previously-merged) can be merged with any other\""
+      ]
+    },
+    {
+      "question": "Which height did a merged piece inherit?",
+      "answer": "It inherited the taller of the two source heights.",
+      "category": 4,
+      "evidence": [
+        "D1:115: \"The merged piece inherits the **taller** of the two heights\""
+      ]
+    },
+    {
+      "question": "How could merging be chained or cancelled?",
+      "answer": "A merged piece could merge again without a chaining limit; clicking elsewhere or pressing Escape cancelled the current merge mode.",
+      "category": 4,
+      "evidence": [
+        "D1:115: \"chaining is unlimited\"",
+        "D1:115: \"**Click anywhere else** or press **`Escape`** — cancels merge mode with no changes\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Draft scope: Three.js conversion, camera controls, keyboard movement and rotation, expansion to six 64-square faces, furniture heights, the agent's L-sofa interpretation of a vague request, and floating offsets. Float range is reported as stated; geometric containment is not independently certified. All 10 QA items await researcher review.

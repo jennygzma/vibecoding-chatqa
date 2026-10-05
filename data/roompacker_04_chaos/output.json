@@ -1,0 +1,97 @@
+{
+  "qa": [
+    {
+      "question": "How did teleport validity change after the user said adjustment was their job?",
+      "answer": "The original valid-position search became unconditional random relocation, allowing overlaps and chairs away from tables while retaining board bounds.",
+      "category": 1,
+      "evidence": [
+        "D1:12: \"valid, non-overlapping positions\"",
+        "D1:27: \"Pieces now **always teleport**\"",
+        "D1:27: \"The only thing still enforced is **board bounds**\"",
+        "D1:21: \"its the users job to adjust the teleportations\""
+      ]
+    },
+    {
+      "question": "What time limit was introduced for unresolved furniture conflicts?",
+      "answer": "Eight seconds per piece, checked every 100 milliseconds.",
+      "category": 2,
+      "evidence": [
+        "D1:40: \"Time limit per conflict | **8 seconds**\"",
+        "D1:40: \"Timer checks | Every 100 ms\""
+      ]
+    },
+    {
+      "question": "Why could the reported teleport cadence undermine the eight-second conflict deadline?",
+      "answer": "Teleports every 1.2 seconds renew the eight-second deadline, so repeated landings can keep a conflict from expiring before the next reset.",
+      "category": 1,
+      "evidence": [
+        "D1:40: \"each new landing gives a fresh 8 s\"",
+        "D1:12: \"every **1.2 seconds**\""
+      ]
+    },
+    {
+      "question": "How frequently did furniture break and how long did repair allow?",
+      "answer": "While Chaos was active, a random piece broke every three seconds and gave the player six seconds to repair it.",
+      "category": 2,
+      "evidence": [
+        "D1:52: \"every **3 seconds** one random piece\"",
+        "D1:52: \"shrinking over **6 seconds**\""
+      ]
+    },
+    {
+      "question": "How did the player repair broken furniture?",
+      "answer": "Clicking repaired it instantly and consumed the click so it did not also select the piece.",
+      "category": 4,
+      "evidence": [
+        "D1:52: \"**Click the piece** to repair it instantly\"",
+        "D1:52: \"it won't also select the piece\""
+      ]
+    },
+    {
+      "question": "What probability and cadence governed random rotation?",
+      "answer": "Each piece had a forty-percent chance to rotate ninety degrees clockwise every 1.8 seconds while Chaos was active.",
+      "category": 2,
+      "evidence": [
+        "D1:61: \"every **1.8 seconds** each piece independently has a **40% chance** of being rotated 90° clockwise\""
+      ]
+    },
+    {
+      "question": "Why is skipping a dragged piece useful in both teleportation and random rotation?",
+      "answer": "It keeps automatic changes from moving or reorienting the same piece while the player is actively manipulating it.",
+      "category": 3,
+      "evidence": [
+        "D1:12: \"A piece currently being dragged by the user is **skipped**\"",
+        "D1:61: \"A piece being dragged is never rotated.\""
+      ]
+    },
+    {
+      "question": "When was the one-percent fading easter-egg roll performed?",
+      "answer": "Once when Chaos mode was switched on; a failed roll left the fading mechanism dormant.",
+      "category": 2,
+      "evidence": [
+        "D1:72: \"a 1% roll that only happens when Chaos mode is switched **on**\"",
+        "D1:72: \"`fadeInterval` stays `null`\""
+      ]
+    },
+    {
+      "question": "How was rainbow furniture triggered and animated?",
+      "answer": "A placement or donut punch had a one-percent chance to create rainbow furniture; its hue advanced about sixty degrees per second in a shared animation loop.",
+      "category": 2,
+      "evidence": [
+        "D1:91: \"there's a **1% chance** it becomes rainbow\"",
+        "D1:91: \"Every frame the hue advances **~60°/sec**\""
+      ]
+    },
+    {
+      "question": "How did the rug squiggle mechanic mutate shapes while preserving their area?",
+      "answer": "Every 700 milliseconds it ran three swaps, removing a safely removable boundary cell and adding an adjacent empty cell; connectivity, area, and board bounds were preserved.",
+      "category": 2,
+      "evidence": [
+        "D1:103: \"Every **700ms**\"",
+        "D1:103: \"**3 cell-swap steps** per rug\"",
+        "D1:103: \"exactly the **same cell count**\"",
+        "D1:103: \"connectivity checked before any removal\""
+      ]
+    }
+  ]
+}

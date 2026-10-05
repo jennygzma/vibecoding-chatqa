@@ -1,0 +1,163 @@
+{
+  "qa": [
+    {
+      "question": "What size and shape constraint did the user request for straight couches?",
+      "answer": "A minimum of one by two cells, restricted to a one-by-N strip.",
+      "category": 4,
+      "evidence": [
+        "D1:1: \"minimum 1x2 and is restricted to 1xn\""
+      ]
+    },
+    {
+      "question": "How was couch placement mode activated and cancelled?",
+      "answer": "C or the Couch button activated a purple one-by-two cursor ghost; C or Escape exited the mode.",
+      "category": 4,
+      "evidence": [
+        "D1:18: \"**1×2 purple ghost** follows your cursor\"",
+        "D1:18: \"Press **`C`** or **`Escape`** to exit couch mode\""
+      ]
+    },
+    {
+      "question": "What event-handling bug prevented furniture drops from committing?",
+      "answer": "A capture-phase mouseup listener removed and nulled the drag ghost, then the global mouseup handler tried to remove it again and threw an error.",
+      "category": 4,
+      "evidence": [
+        "D1:26: \"tried `overlay.removeChild(ghost)` again on a now-`null` ghost, throwing a JS error\""
+      ]
+    },
+    {
+      "question": "How did the fix assign mouseup cleanup for clicks versus drags?",
+      "answer": "The per-drag listener handled bare clicks; for a real drag it left state intact so the global handler owned the entire commit and cleanup.",
+      "category": 4,
+      "evidence": [
+        "D1:26: \"**Bare click** (no drag) | Removes ghost, clears `movingTable`, selects/deselects the piece\"",
+        "D1:26: \"**Real drag** | Does nothing — leaves `ghost` and `movingTable` alive\""
+      ]
+    },
+    {
+      "question": "How did the first couch-extension handles work?",
+      "answer": "Selecting a couch exposed left and right purple handles that changed its length while retaining a one-by-N shape and at least two cells.",
+      "category": 4,
+      "evidence": [
+        "D1:37: \"two small **purple drag handles**\"",
+        "D1:37: \"always stays `1 × N` with a minimum width of `2` cells\""
+      ]
+    },
+    {
+      "question": "What happened if a couch resize conflicted with existing furniture in this thread?",
+      "answer": "The resize was rejected and the couch snapped back.",
+      "category": 4,
+      "evidence": [
+        "D1:37: \"if conflict **snaps back** silently\""
+      ]
+    },
+    {
+      "question": "Which shortcut placed chairs and why was it chosen?",
+      "answer": "H activated Chair mode because C was already used for couches.",
+      "category": 4,
+      "evidence": [
+        "D1:47: \"key `H` chosen since `C` is taken by Couch\""
+      ]
+    },
+    {
+      "question": "What did the initial chair sprite look like?",
+      "answer": "A teal circular one-cell piece, rendered at 12 by 12 pixels.",
+      "category": 4,
+      "evidence": [
+        "D1:47: \"a `border-radius: 50%` circle, `12×12px` teal\""
+      ]
+    },
+    {
+      "question": "Did diagonal contact with a table satisfy the chair-placement rule in the sofas-and-chairs thread?",
+      "answer": "No. The rule checked only the four orthogonal neighboring cells and required an actual table, not a couch or chair.",
+      "category": 5,
+      "evidence": [
+        "D1:57: \"Checks the 4 orthogonal neighbours `(±1, 0)` and `(0, ±1)`\"",
+        "D1:57: \"Couches and other chairs don't count — only actual tables.\""
+      ]
+    },
+    {
+      "question": "What happened when a chair was dropped away from a table under the original adjacency rule?",
+      "answer": "The chair snapped back to its original position.",
+      "category": 4,
+      "evidence": [
+        "D1:57: \"a chair dropped somewhere not next to a table snaps back to its original position\""
+      ]
+    },
+    {
+      "question": "How did the occupancy data model change to support chair stacking?",
+      "answer": "Each cell changed from one piece ID or null to an array of IDs, with stamping pushing IDs and erasing filtering them out.",
+      "category": 2,
+      "evidence": [
+        "D1:50: \"`tableGrid` stores the occupying piece's id at each cell\"",
+        "D1:71: \"Now it holds an **array of ids**\"",
+        "D1:71: \"`push(t.id)` (no duplicates)\""
+      ]
+    },
+    {
+      "question": "What distinguished chair conflicts from couch conflicts in this thread?",
+      "answer": "Chairs could share cells with other chairs but were blocked by non-chair pieces; couches were blocked by every occupied cell.",
+      "category": 4,
+      "evidence": [
+        "D1:79: \"**Couch** | `hasConflictForCouch` | Blocks on any occupied cell\"",
+        "D1:79: \"**Chair** | `hasConflictForChair` | Only blocks on non-chair pieces\""
+      ]
+    },
+    {
+      "question": "How did rotating a selected straight couch affect its dimensions and pivot?",
+      "answer": "It swapped height and width around the top-left corner and updated the resize handles for horizontal or vertical orientation.",
+      "category": 4,
+      "evidence": [
+        "D1:93: \"Swaps height ↔ width around the top-left corner\"",
+        "D1:93: \"left/right for `\"h\"`, top/bottom for `\"v\"`\""
+      ]
+    },
+    {
+      "question": "How was the L-sofa represented in the finished sofas-and-chairs thread?",
+      "answer": "It stored an inner corner, horizontal and vertical arm lengths, and one of four direction variants; each arm had minimum length two and default length three.",
+      "category": 4,
+      "evidence": [
+        "D1:138: \"**`cornerR, cornerC`**\"",
+        "D1:138: \"horizontal arm length (minimum 2, default 3)\"",
+        "D1:138: \"vertical arm length (minimum 2, default 3)\"",
+        "D1:138: \"`\"se\" | \"sw\" | \"ne\" | \"nw\"`\""
+      ]
+    },
+    {
+      "question": "Did the L-sofa collision check treat its empty bounding-box area as occupied?",
+      "answer": "No. It checked only the cells actually occupied by the L shape.",
+      "category": 5,
+      "evidence": [
+        "D1:138: \"conflict detection properly checks only the actual occupied cells (not the bounding box)\""
+      ]
+    },
+    {
+      "question": "What did the two L-sofa resize handles control?",
+      "answer": "One independently extended or shrank the horizontal arm and the other the vertical arm.",
+      "category": 4,
+      "evidence": [
+        "D1:138: \"one at the H-arm tip (ew-resize), one at the V-arm tip (ns-resize)\"",
+        "D1:138: \"extend/shrink each arm independently\""
+      ]
+    },
+    {
+      "question": "What board-selection bug was fixed while adding the L-sofa?",
+      "answer": "A missing if(cell) guard in mouseup could throw when the user released outside the board.",
+      "category": 4,
+      "evidence": [
+        "D1:138: \"missing `if (cell)` guard in the board selection `mouseup` handler\"",
+        "D1:138: \"would throw if the user released outside the board\""
+      ]
+    },
+    {
+      "question": "How did stacked chairs display their count?",
+      "answer": "Only the top chair showed ×N when more than one chair shared the cell; a single chair had no badge, and move or delete operations refreshed the count.",
+      "category": 4,
+      "evidence": [
+        "D1:153: \"**Topmost chair** (last in array): if count > 1, sets badge text to `×N`\"",
+        "D1:153: \"if count === 1, clears badge\"",
+        "D1:153: \"Drag top chair away | Old cell drops to **×2**\""
+      ]
+    }
+  ]
+}

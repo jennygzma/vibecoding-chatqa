@@ -1,0 +1,296 @@
+[
+  {
+    "initial_item": "roompacker_01_main-build:2",
+    "question": "How large was the initial board in pixels?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_01_main-build:4",
+    "question": "How did the first hover highlight work?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_01_main-build:5",
+    "question": "How did clicking a square differ visually from hovering over it?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_01_main-build:8",
+    "question": "What happens when the user clicks inside the active rectangular selection?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_01_main-build:10",
+    "question": "Could tables be dragged beyond the board boundary in the main-build thread?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_01_main-build:13",
+    "question": "What happened when a dragged table was released on a conflicting position in the main-build thread?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_01_main-build:15",
+    "question": "Which border styles distinguished unplaced selections, resting tables, and moving tables?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_01_main-build:17",
+    "question": "How could the user cancel a table edit?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_02_sofas-chairs:2",
+    "question": "How was couch placement mode activated and cancelled?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_02_sofas-chairs:4",
+    "question": "How did the fix assign mouseup cleanup for clicks versus drags?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_02_sofas-chairs:6",
+    "question": "What happened if a couch resize conflicted with existing furniture in this thread?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_02_sofas-chairs:7",
+    "question": "Which shortcut placed chairs and why was it chosen?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_02_sofas-chairs:8",
+    "question": "What did the initial chair sprite look like?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_02_sofas-chairs:10",
+    "question": "What happened when a chair was dropped away from a table under the original adjacency rule?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_02_sofas-chairs:13",
+    "question": "How did rotating a selected straight couch affect its dimensions and pivot?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_02_sofas-chairs:16",
+    "question": "What did the two L-sofa resize handles control?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_03_shapes-overlaps:3",
+    "question": "How did the rug shortcut change during the shapes thread?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_03_shapes-overlaps:4",
+    "question": "How was a painted custom rug committed or cancelled?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_03_shapes-overlaps:6",
+    "question": "Did chairs need a rotation implementation in the shapes thread?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_03_shapes-overlaps:8",
+    "question": "How did the live table selection respond to those size limits?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_03_shapes-overlaps:9",
+    "question": "What was the initial donut furniture shape?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_03_shapes-overlaps:12",
+    "question": "Was the punched donut hole required to be centered?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_03_shapes-overlaps:15",
+    "question": "How did the chair-placement rule change by the end of the shapes thread?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_03_shapes-overlaps:18",
+    "question": "When did table fracturing run and what color did the fragments keep?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_04_chaos:1",
+    "question": "What did the first Chaos toggle do and how often?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_04_chaos:2",
+    "question": "What happened when the original teleport algorithm found no free position?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_04_chaos:3",
+    "question": "How was an out-of-bounds L-sofa teleport prevented?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_04_chaos:4",
+    "question": "Why did a teleported chair leave an incorrect stack count behind?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_04_chaos:6",
+    "question": "Could Chaos teleport a piece partly off the board after validity checks were removed?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_04_chaos:9",
+    "question": "What happened when a furniture conflict deadline expired?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_04_chaos:12",
+    "question": "Did repairing breakage replace the existing conflict-timeout mechanic?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_04_chaos:16",
+    "question": "Did the fading animation make furniture completely invisible or alter gameplay?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_05_3d-floating:1",
+    "question": "Which rendering library replaced RoomPacker's 2D CSS board?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_05_3d-floating:2",
+    "question": "Why was Three.js loaded through a CDN?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_05_3d-floating:4",
+    "question": "What shape represented chairs in the first 3D version?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_05_3d-floating:6",
+    "question": "Could arrow-key nudges push pieces off the grid?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_05_3d-floating:8",
+    "question": "How did counter-clockwise rotation transform a rug's cell offsets?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_05_3d-floating:10",
+    "question": "How were cube-face shortcuts mapped?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_05_3d-floating:11",
+    "question": "How did the display distinguish the active cube face?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_05_3d-floating:16",
+    "question": "What per-piece field tracked floating distance?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:1",
+    "question": "How did the initially added opacity slider become available?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:2",
+    "question": "What transparency range and step size did the original slider offer?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:4",
+    "question": "What did liftColor do for furniture edge outlines?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:8",
+    "question": "What rendering technique created the first three-layer selection glow?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:9",
+    "question": "How many particles did the temporary sparkle effect use and how were they recycled?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:11",
+    "question": "Which three colors defined the final reddish selection glow?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:15",
+    "question": "What preview appeared while hovering a valid merge target?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:18",
+    "question": "Which height did a merged piece inherit?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  },
+  {
+    "initial_item": "roompacker_06_colors-merging:19",
+    "question": "How could merging be chained or cancelled?",
+    "decision": "removed-from-curated-set",
+    "reason": "Covered by a retained broader question, repeated a rule already tested elsewhere, or primarily queried low-value presentation/implementation detail."
+  }
+]

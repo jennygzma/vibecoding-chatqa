@@ -1,0 +1,1 @@
+Draft scope: straight couches, mouseup cleanup bug, resize handles, chairs, table adjacency, stacking, orientation, L-sofas and count badges. Adjacency and collision rules describe this thread and change later. All 10 QA items await researcher review.

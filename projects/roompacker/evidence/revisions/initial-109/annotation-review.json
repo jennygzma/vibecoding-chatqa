@@ -1,0 +1,36 @@
+{
+  "status": "awaiting-human-review",
+  "candidate_items": 72,
+  "candidate_citations": 189,
+  "revision": "roompacker-curated-v2",
+  "canonical_annotations": "data/roompacker/vibe_combined.json",
+  "local_items": 60,
+  "cross_session_items": 12,
+  "reviewed_items": 0,
+  "review_url": "http://127.0.0.1:4373/",
+  "review_export_filename": "roompacker-annotation-review.json",
+  "included_trajectories": [
+    "roompacker_01_main-build",
+    "roompacker_02_sofas-chairs",
+    "roompacker_03_shapes-overlaps",
+    "roompacker_04_chaos",
+    "roompacker_05_3d-floating",
+    "roompacker_06_colors-merging",
+    "roompacker_cross-session"
+  ],
+  "review_focus": [
+    "Each question and answer should be useful and fully supported by its evidence.",
+    "Intermediate rules are scoped to the cited thread and may change in later threads.",
+    "Thread 3 replaces blocked overlaps and chair adjacency with free placement.",
+    "Thread 4 replaces safe teleportation with conflicts the player must resolve.",
+    "Thread 5 records a 32-square floor becoming a 64-cubed six-face space.",
+    "Thread 5's vague abnormal-furniture request was interpreted as an L-sofa redesign.",
+    "Thread 6 removes its earlier opacity controls and replaces sparkles with a reddish glow.",
+    "Implementation summaries are transcript evidence, not independent proof of runtime correctness."
+  ],
+  "review_instructions": [
+    "Use A to approve, E to flag editing, R to reject, and arrow keys to navigate.",
+    "Expand citations to inspect the complete source message.",
+    "Use Export review when finished and save roompacker-annotation-review.json in the AIM folder."
+  ]
+}

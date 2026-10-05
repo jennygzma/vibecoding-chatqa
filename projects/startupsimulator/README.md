@@ -2,8 +2,10 @@
 
 StartupSimulator, titled **Zero to One** in the application, is a local
 top-down startup-office game. This directory contains the runnable project and
-136 researcher-reviewed QA annotations from the six Cline trajectories used to
-develop it.
+[31 curated QA annotations](../../data/startupsimulator/annotations.json) from the
+six Cline trajectories used to develop it. The [canonical dataset](../../data/startupsimulator/README.md)
+follows Focus Desk's structure and overlapping categories. Earlier 136-question
+trajectory outputs remain preserved as history.
 
 ## Application features
 
@@ -53,7 +55,20 @@ tree: the food phone no longer overlaps the founder's initial position, all
 interaction targets are reachable, and parkour uses the Set-compatible
 vaultable-object lookup. The trajectory evidence remains byte-for-byte frozen.
 
-## Reviewed annotation datasets
+## Canonical annotation checks
+
+From the repository root:
+
+```sh
+python3 scripts/michael_dataset.py startupsimulator
+python3 scripts/michael_dataset.py startupsimulator --check
+```
+
+The current 31 questions have an agent editorial review and exact evidence checks;
+human approval is pending. Original researcher approval applies to the earlier
+136-question version below, not automatically to the rewritten questions.
+
+## Earlier reviewed trajectory datasets
 
 Automatic task-resumption and launch-error messages remain in the transcripts
 but are excluded from researcher-prompt counts.
@@ -79,7 +94,7 @@ Frozen original Cline files are under `evidence/raw`. Annotation generation is
 reproducible from `generate_draft_annotations.py`; transcript reconstruction
 does not change `output.json`.
 
-## Annotation checks
+## Earlier trajectory checks
 
 ```sh
 python3 build_annotations.py
@@ -93,13 +108,14 @@ quoted evidence, category constraints, and duplicate questions. The researcher
 also reviewed usefulness, answer completeness, evidence support, temporal
 interpretation, and category choice.
 
-## Local annotation reviewer
+## Earlier trajectory reviewer
 
 ```sh
 python3 build_review_bundle.py
 python3 -m http.server 4273 --bind 127.0.0.1 --directory reviewer
 ```
 
-Open <http://127.0.0.1:4273/> to audit the approved set. The current package was
-approved by the researcher on 2026-09-24 and is recorded as
-`reviewed-and-validated`.
+Open <http://127.0.0.1:4273/> to inspect the earlier 136-question trajectory set.
+Its 2026-09-24 approval remains recorded in its evidence files. Review the current
+31-question version in [annotations.md](../../data/startupsimulator/annotations.md),
+where each question includes its exact citations and category rationale.

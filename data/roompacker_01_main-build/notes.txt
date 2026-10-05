@@ -1,0 +1,1 @@
+Draft scope: initial chessboard, local launcher, selection gestures, table placement, movement, collision previews, borders, editing and deletion. Rules describe this early thread; later threads revise overlap behavior. All 10 QA items await researcher review.

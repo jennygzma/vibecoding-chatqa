@@ -1,0 +1,631 @@
+[
+  {
+    "session": 1,
+    "original_item": 1,
+    "question": "What did the user want in the first RoomPacker prototype?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "reason": "The user explicitly restricts the initial scope."
+  },
+  {
+    "session": 1,
+    "original_item": 3,
+    "question": "Why did the local launcher switch to Python's HTTP server?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "reason": "Connect the npm failure to the available fallback and chosen launcher."
+  },
+  {
+    "session": 1,
+    "original_item": 6,
+    "question": "How did the initial drag-painting gesture choose whether to select or deselect cells?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Explain the single rule controlling an entire drag gesture."
+  },
+  {
+    "session": 1,
+    "original_item": 7,
+    "question": "How did the selection model change after the smallest-enclosing-rectangle request?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "reason": "Compare the two stated selection models; revision ordering is not temporal."
+  },
+  {
+    "session": 1,
+    "original_item": 9,
+    "question": "How was a selected rectangle converted into a named table?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Retain the complete placement flow instead of individual color or button trivia."
+  },
+  {
+    "session": 1,
+    "original_item": 11,
+    "question": "Why does moving a table require both cell ownership tracking and restoring its old footprint?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "reason": "Infer the reason for ownership bookkeeping from the described erase and restamp operations."
+  },
+  {
+    "session": 1,
+    "original_item": 12,
+    "question": "How did the main-build thread handle a new table that overlapped an existing table?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Scope the rejection policy explicitly to the early main-build thread."
+  },
+  {
+    "session": 1,
+    "original_item": 14,
+    "question": "How did the selection preview distinguish free cells from occupied cells?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Keep the occupied-versus-free feedback distinction as one usable interface rule."
+  },
+  {
+    "session": 1,
+    "original_item": 16,
+    "question": "How did table editing support both committing a resize and cancelling it?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The final response directly explains editing and identity preservation."
+  },
+  {
+    "session": 1,
+    "original_item": 18,
+    "question": "How does deletion behave for a selected table, a table being edited, and an empty selection?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "A false-premise phrasing does not require an adversarial category in Edgar's schema."
+  },
+  {
+    "session": 2,
+    "original_item": 1,
+    "question": "What size and shape constraint did the user request for straight couches?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "reason": "The user's dimensions and strip constraint are explicit."
+  },
+  {
+    "session": 2,
+    "original_item": 3,
+    "question": "Why did furniture drops fail, and how did separating click cleanup from drag cleanup fix them?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "reason": "Connect two event owners, their failure interaction, and the corrected cleanup split."
+  },
+  {
+    "session": 2,
+    "original_item": 5,
+    "question": "How did the first couch-extension handles work?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "One explanation supplies the constraint and the resizing affordance."
+  },
+  {
+    "session": 2,
+    "original_item": 9,
+    "question": "Did diagonal contact with a table satisfy the chair-placement rule in the sofas-and-chairs thread?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "reason": "Orthogonal adjacency and eligible neighbor type are stated together."
+  },
+  {
+    "session": 2,
+    "original_item": 11,
+    "question": "How did the occupancy data model change to support chair stacking?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "reason": "Compare scalar and array occupancy and explain how that supports stacking."
+  },
+  {
+    "session": 2,
+    "original_item": 12,
+    "question": "What distinguished chair conflicts from couch conflicts in this thread?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The completed conflict table directly contrasts chair and sofa rules."
+  },
+  {
+    "session": 2,
+    "original_item": 14,
+    "question": "Did the L-sofa implementation initially match the requested three-cell L?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "reason": "Compare the user's requested three cells with the implemented two length-three arms sharing a corner."
+  },
+  {
+    "session": 2,
+    "original_item": 15,
+    "question": "Why should an L-sofa's collision check use its occupied cells rather than its bounding rectangle?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "reason": "Explain why the L's actual footprint must control collision rather than its full bounding rectangle."
+  },
+  {
+    "session": 2,
+    "original_item": 17,
+    "question": "What board-selection bug was fixed while adding the L-sofa?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "reason": "The final report identifies the missing guard without proving when it was introduced."
+  },
+  {
+    "session": 2,
+    "original_item": 18,
+    "question": "How did stacked chairs display their count?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The stack summary directly explains the badge and its updates."
+  },
+  {
+    "session": 3,
+    "original_item": 1,
+    "question": "What connected-shape rule did the user request for custom furniture?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "reason": "The user explicitly supplies connectivity and area requirements."
+  },
+  {
+    "session": 3,
+    "original_item": 2,
+    "question": "What happened when removing a painted rug cell would disconnect its shape?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Removal must preserve connectivity, not merely adjacency at insertion."
+  },
+  {
+    "session": 3,
+    "original_item": 5,
+    "question": "What clockwise coordinate transform rotated a rug by ninety degrees?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "reason": "The rug's coordinate transform is explicitly defined."
+  },
+  {
+    "session": 3,
+    "original_item": 7,
+    "question": "What table size limits did the user request?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "reason": "The numerical size constraint is directly requested, not a time-related question."
+  },
+  {
+    "session": 3,
+    "original_item": 10,
+    "question": "How did the donut-creation workflow change after the user's clarification?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "reason": "Compare the initial dedicated mode, the user's replacement workflow, and the completed correction."
+  },
+  {
+    "session": 3,
+    "original_item": 11,
+    "question": "What determined the size, position and validity of a punched donut hole?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The border constraint establishes which interior selections are valid."
+  },
+  {
+    "session": 3,
+    "original_item": 13,
+    "question": "How did the stored donut hole respond to movement and rotation?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Movement and rotation of the stored hole are explicitly described together."
+  },
+  {
+    "session": 3,
+    "original_item": 14,
+    "question": "What became of collision blocking after free furniture overlap was implemented?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "One final summary states the changed warning-versus-blocking policy."
+  },
+  {
+    "session": 3,
+    "original_item": 16,
+    "question": "What separation of responsibilities addressed the furniture-color overwrite problem?",
+    "category": [
+      "single-session",
+      "open-domain",
+      "knowledge-facts"
+    ],
+    "reason": "Explain the division between occupancy bookkeeping and independent visual overlays."
+  },
+  {
+    "session": 3,
+    "original_item": 17,
+    "question": "Does fracturing always divide an old table into exactly two pieces?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The described split has up to four fragments; do not infer two from the request."
+  },
+  {
+    "session": 4,
+    "original_item": 5,
+    "question": "How did teleport validity change after the user said adjustment was their job?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "reason": "The user's correction changes the validity policy; compare before and after."
+  },
+  {
+    "session": 4,
+    "original_item": 7,
+    "question": "What time limit was introduced for unresolved furniture conflicts?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "reason": "Eight seconds and the 100-ms checking interval are real time values."
+  },
+  {
+    "session": 4,
+    "original_item": 8,
+    "question": "Why could the reported teleport cadence undermine the eight-second conflict deadline?",
+    "category": [
+      "single-session",
+      "multihop",
+      "temporal"
+    ],
+    "reason": "Combine the 1.2-second teleport cadence with reset-on-landing behavior to identify a potential deadline loophole."
+  },
+  {
+    "session": 4,
+    "original_item": 10,
+    "question": "How frequently did furniture break and how long did repair allow?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "reason": "Break frequency and the repair window are explicitly reported durations."
+  },
+  {
+    "session": 4,
+    "original_item": 11,
+    "question": "How did the player repair broken furniture?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Repair click consumption is an explicit interaction rule."
+  },
+  {
+    "session": 4,
+    "original_item": 13,
+    "question": "What probability and cadence governed random rotation?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "reason": "Rotation probability is paired with a real 1.8-second interval."
+  },
+  {
+    "session": 4,
+    "original_item": 14,
+    "question": "Why is skipping a dragged piece useful in both teleportation and random rotation?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "reason": "Explain a shared design benefit of the two documented drag-exclusion guards."
+  },
+  {
+    "session": 4,
+    "original_item": 15,
+    "question": "When was the one-percent fading easter-egg roll performed?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "reason": "The roll occurs at a specified event, not on each recurring tick."
+  },
+  {
+    "session": 4,
+    "original_item": 17,
+    "question": "How was rainbow furniture triggered and animated?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "reason": "The trigger and six-second color cycle are reported as cosmetic behavior."
+  },
+  {
+    "session": 4,
+    "original_item": 18,
+    "question": "How did the rug squiggle mechanic mutate shapes while preserving their area?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts",
+      "temporal"
+    ],
+    "reason": "The complete mutation report supplies cadence, swap count and invariants."
+  },
+  {
+    "session": 5,
+    "original_item": 3,
+    "question": "What camera and mouse controls accompanied the first 3D conversion?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Keep camera and interaction behavior together."
+  },
+  {
+    "session": 5,
+    "original_item": 5,
+    "question": "What did the arrow keys do after keyboard furniture control was added?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The complete one-cell movement rule is directly reported."
+  },
+  {
+    "session": 5,
+    "original_item": 7,
+    "question": "Which keys controlled clockwise and counter-clockwise rotation in 3D?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "reason": "The custom-key request and resulting clockwise/counter-clockwise bindings are both cited."
+  },
+  {
+    "session": 5,
+    "original_item": 9,
+    "question": "How did the placement space expand after the 64-by-64-by-64 request?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "reason": "The user requests a larger space after a 32-square floor; compare it with the six-face implementation."
+  },
+  {
+    "session": 5,
+    "original_item": 12,
+    "question": "Did Chaos teleportation move furniture between cube faces?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The final report limits teleports to the piece's own face."
+  },
+  {
+    "session": 5,
+    "original_item": 13,
+    "question": "What were the requested final heights for tables, sofas, L-sofas, and chairs?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "reason": "Combine three separate requests and their reported final height values."
+  },
+  {
+    "session": 5,
+    "original_item": 14,
+    "question": "Which furniture did the agent redesign after the vague request that abnormal furniture be unique?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "reason": "Distinguish the ambiguous user request from the agent's actual L-sofa interpretation."
+  },
+  {
+    "session": 5,
+    "original_item": 15,
+    "question": "How did the redesigned two-unit L-sofa divide its height?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The final reply directly gives the seat/backrest height split."
+  },
+  {
+    "session": 5,
+    "original_item": 17,
+    "question": "How did W and S control floating furniture?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The two float controls are explicitly reported in the final reply."
+  },
+  {
+    "session": 5,
+    "original_item": 18,
+    "question": "Why does clamping floatDepth to 0–63 not by itself prove that furniture stays inside the cube?",
+    "category": [
+      "single-session",
+      "open-domain",
+      "knowledge-facts"
+    ],
+    "reason": "A bounded offset alone is insufficient evidence of full geometric containment."
+  },
+  {
+    "session": 6,
+    "original_item": 3,
+    "question": "How were furniture edges kept visible when the bodies became transparent?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "reason": "The edge-line implementation directly explains how transparency left outlines visible."
+  },
+  {
+    "session": 6,
+    "original_item": 5,
+    "question": "How was the opacity control improved for exact input?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Keep exact input, synchronization and clamping as one control contract."
+  },
+  {
+    "session": 6,
+    "original_item": 6,
+    "question": "How did transparency support change by the end of the visual-refinements thread?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "reason": "Compare implementation, explicit removal request and removal result."
+  },
+  {
+    "session": 6,
+    "original_item": 7,
+    "question": "Did removing furniture transparency also make placement previews opaque?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The removal summary directly distinguishes piece materials from preview materials."
+  },
+  {
+    "session": 6,
+    "original_item": 10,
+    "question": "How did the selection effect change after the user requested a reddish glow?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "reason": "Compare the particle implementation with the requested and implemented replacement."
+  },
+  {
+    "session": 6,
+    "original_item": 12,
+    "question": "Which rendering settings were matched for the greenish room background?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "reason": "The room-color request and the completed three-setting change are both cited."
+  },
+  {
+    "session": 6,
+    "original_item": 13,
+    "question": "How did the furniture color picker behave with and without a selected piece?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The final summary supplies both picker states."
+  },
+  {
+    "session": 6,
+    "original_item": 14,
+    "question": "What conditions enabled merging two furniture pieces?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "Partner validity is directly stated; do not invent adjacency or connectivity constraints."
+  },
+  {
+    "session": 6,
+    "original_item": 16,
+    "question": "What state and capabilities did the resulting merged piece retain?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "One result summary states replacement, selection, height and supported chaining."
+  },
+  {
+    "session": 6,
+    "original_item": 17,
+    "question": "Did merged furniture have to consist of two pieces of the same type?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "reason": "The supported type combinations are directly listed."
+  }
+]

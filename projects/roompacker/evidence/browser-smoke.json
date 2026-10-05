@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "browser": "Chrome/154.0.8037.98",
+  "checks": [
+    "six 64-by-64 faces and live WebGL context",
+    "sofa placement via pointer events",
+    "arrow movement",
+    "outward/inward floating",
+    "quarter-turn rotation",
+    "color-picker input",
+    "merge self/cross-face rejection and same-color eligibility",
+    "merge replacement, union and maximum height",
+    "face switching",
+    "deletion",
+    "Chaos toggle",
+    "no JavaScript or console errors"
+  ],
+  "limitations": [
+    "Desktop smoke coverage only; Chaos timing, game-over paths and every furniture shape are not exhaustively tested."
+  ],
+  "errors": []
+}

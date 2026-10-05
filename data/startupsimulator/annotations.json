@@ -1,0 +1,413 @@
+[
+  {
+    "question": "What did I ask the first StartupSimulator prototype to let the player do?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Move a founder around an office by clicking, in a local web game.",
+    "evidence": [
+      "D1:1: \"We can start by just making an office space in which we navigate a founder character that moves around by clicking. Make it a local web app to run the game.\""
+    ]
+  },
+  {
+    "question": "How did the reported game objective grow from the initial day-one experience?",
+    "category": [
+      "single-session",
+      "multihop",
+      "temporal"
+    ],
+    "answer": "It became a ten-day sprint with repeated daily tasks advancing the prototype toward launch.",
+    "evidence": [
+      "D1:158: \"it's a short, chill \"day one\" experience, not a deep sim\"",
+      "D1:180: \"### The core loop: 10-day sprint to launch\"",
+      "D1:180: \"Every day you complete the same 4 tasks\""
+    ]
+  },
+  {
+    "question": "What did my final main-build feedback say about the floor, despite earlier visual revisions?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "A checkerboard pattern was still visible.",
+    "evidence": [
+      "D1:193: \"I can clearly still see a checkerboard pattern on the floor.\""
+    ]
+  },
+  {
+    "question": "Why does routing to a nearby walkable point help when the player clicks furniture?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It gives the click a reachable destination without moving the character inside a solid object.",
+    "evidence": [
+      "D1:154: \"Otherwise spirals outward in 0.25-tile steps\"",
+      "D1:154: \"returns the closest walkable point it finds (within 3 tiles)\""
+    ]
+  },
+  {
+    "question": "What passive base earnings did the hiring report assign to Engineer and Growth workers?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Engineer: $3 per second; Growth: $4 per second.",
+    "evidence": [
+      "D2:52: \"Rates: Engineer $3/s · Growth $4/s · Designer $2/s · Operations $2/s.\""
+    ]
+  },
+  {
+    "question": "What would a level-three Engineer earn per second under the reported base-rate and upgrade rules?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "$6.75 per second: $3 × 2.25.",
+    "evidence": [
+      "D2:52: \"Rates: Engineer $3/s · Growth $4/s · Designer $2/s · Operations $2/s.\"",
+      "D2:92: \"level 1 = base rate, level 2 = 1.5×, level 3 = 2.25×; upgrade cost $500/$2000\""
+    ]
+  },
+  {
+    "question": "How did the cereal-restocking report distinguish workers who were about to strike from those already striking?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "Non-striking workers gained 60 seconds on their countdown; active strikes were unaffected.",
+    "evidence": [
+      "D2:153: \"Every non-striking worker's `strikeCountdown` gets **+60 seconds** added\"",
+      "D2:153: \"Workers who are *already on strike* are unaffected\""
+    ]
+  },
+  {
+    "question": "What financial win condition did I request after adding workers and cereal?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Reach one million dollars.",
+    "evidence": [
+      "D2:154: \"if i make 1 million dollars i win the game\""
+    ]
+  },
+  {
+    "question": "How did the reported pills tradeoff change during the health-and-stamina conversation?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "It changed from restoring up to 40 HP and slowing movement to costing 25 stamina, floored at one, and boosting speed to 4.5.",
+    "evidence": [
+      "D3:81: \"**Restores up to +40 HP**\"",
+      "D3:81: \"**Slows speed to `1.3`**\"",
+      "D3:111: \"Pills 💊 | **−25** (floors at 1) | fast (4.5)\"",
+      "D3:111: \"**−25** (floors at 1)\"",
+      "D3:111: \"the guard prevents you from killing yourself to 0\""
+    ]
+  },
+  {
+    "question": "According to the health conversation, what did coffee do to the drain interval and when did that effect reset?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "It shortened the interval from three seconds to 1.5 seconds; the faster rate reset with the next day.",
+    "evidence": [
+      "D3:63: \"**Normal drain:** 1 HP every 3 seconds\"",
+      "D3:63: \"**1 HP every 1.5 seconds**\"",
+      "D3:63: \"The faster rate **resets at the start of each new day**\""
+    ]
+  },
+  {
+    "question": "What mortality progression did the game’s peptide-shot report assign within one day?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "20%, 40%, 60%, 80%, then 100% on the fifth shot.",
+    "evidence": [
+      "D3:129: \"| 1st | 20%\"",
+      "D3:129: \"| 2nd | 40%\"",
+      "D3:129: \"| 3rd | 60%\"",
+      "D3:129: \"| 4th | 80%\"",
+      "D3:129: \"| 5th | 100%\""
+    ]
+  },
+  {
+    "question": "What happened to the sofa by the end of the health-and-stamina conversation?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "It returned with the coffee table as non-interactive decoration that still blocked movement.",
+    "evidence": [
+      "D3:95: \"back in the room as pure decoration\"",
+      "D3:95: \"they block movement, render as before, but clicking or hovering them does nothing\""
+    ]
+  },
+  {
+    "question": "Why would showing the stamina drain rate help players judge coffee’s tradeoff?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It makes the cost of a full refill visible instead of hiding the faster subsequent depletion.",
+    "evidence": [
+      "D3:113: \"**The stamina drain rate is invisible.**\"",
+      "D3:113: \"1.5s drain vs. 3s\"",
+      "D3:111: \"Coffee ☕ | → **100** | fast (4.5) | 1/1.5s (burns faster)\""
+    ]
+  },
+  {
+    "question": "What replaced the continuous dash toggle after I clarified that I meant a short teleport?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "answer": "Blink Dash: Q or the Blink button moves Alex up to three tiles forward.",
+    "evidence": [
+      "D4:75: \"**Click to toggle on**\"",
+      "D4:93: \"i mean more like a not an actual button but a button that like almost teleports you forward a little bit\"",
+      "D4:109: \"Press **Q** (or click the ⚡ **BLINK** button)\"",
+      "D4:109: \"Alex instantly teleports up to **3 tiles forward**\""
+    ]
+  },
+  {
+    "question": "How did the Blink Dash report prevent teleporting through solid objects?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Sample the path in 24 increments and stop at the last walkable point.",
+    "evidence": [
+      "D4:109: \"steps forward in 24 increments and stops at the last walkable tile\""
+    ]
+  },
+  {
+    "question": "What post-landing penalty did the free-hop report add to discourage repeated jumping?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "For 0.6 seconds, movement falls to 40% of normal and another jump is blocked.",
+    "evidence": [
+      "D4:86: \"movement speed drops to **40%** of normal for 0.6 seconds\"",
+      "D4:86: \"can't jump again until the stumble clears\""
+    ]
+  },
+  {
+    "question": "What sofa control did I request in the lighting conversation?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Use the up and down arrows to control recline while seated.",
+    "evidence": [
+      "D5:69: \"when on the sofa let me control recline with up/down arrows\""
+    ]
+  },
+  {
+    "question": "Using the reported electricity rates, what is the total passive draw with both overhead lights and the floor lamp on?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "0.18 electricity per second: 0.04 idle + 0.10 overhead + 0.04 lamp.",
+    "evidence": [
+      "D5:126: \"Base idle draw: **0.04 ⚡/s**\"",
+      "D5:126: \"Ceiling lights **+0.10 ⚡/s**\"",
+      "D5:126: \"Floor lamp **+0.04 ⚡/s**\""
+    ]
+  },
+  {
+    "question": "What bike behavior did I request for power above 100 in the final threshold revision?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "preference"
+    ],
+    "answer": "Break the bike for five seconds.",
+    "evidence": [
+      "D5:165: \"100+ breaks the bike for 5 seconds\""
+    ]
+  },
+  {
+    "question": "Why can a bike overload penalty make repeated Space presses more strategic?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It rewards keeping power in a productive range instead of pressing as fast as possible.",
+    "evidence": [
+      "D5:182: \"Any `SPACE` press that carries power **over 100** triggers a **5-second breakdown**\"",
+      "D5:182: \"While broken: SPACE does nothing\""
+    ]
+  },
+  {
+    "question": "What did I want food delivery to change about the player’s stats?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Nothing; it was a cosmetic interaction.",
+    "evidence": [
+      "D6:54: \"let's make it so we can order food that doesnt do anything\"",
+      "D6:71: \"Purely cosmetic · No stats affected · Very filling emotionally\""
+    ]
+  },
+  {
+    "question": "What condition and cooldown did the ghost-jumpscare report use?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "Within 1.5 tiles with no active cooldown; eight seconds before it can trigger again.",
+    "evidence": [
+      "D6:137: \"if distance < 1.5 tiles AND cooldown == 0\"",
+      "D6:137: \"prevents re-triggering for 8 seconds after each scare\""
+    ]
+  },
+  {
+    "question": "Did the reported double-jump level gate match my original “above level 5” request?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "No; the final report used level 2 or higher plus energy above 50, while the later level system capped at 5.",
+    "evidence": [
+      "D6:154: \"add a double jump if stamina level is above level 5.\"",
+      "D6:162: \"cap at it at 5\"",
+      "D6:172: \"**Double jump** now requires `staminaLevel >= 2` as its first gate\"",
+      "D6:172: \"The `energy > 50` check remains as the second gate.\""
+    ]
+  },
+  {
+    "question": "How many successful workouts did the final level report require to reach the cap from level 1?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Ten total workouts to reach level 5.",
+    "evidence": [
+      "D6:172: \"Lv 4 → 5 :  4 workouts  (10 total to max out)\"",
+      "D6:172: \"Lv 5      :  already MAX, no more progress\""
+    ]
+  },
+  {
+    "question": "Why should worker interactions look up the current desk assignment after a swap?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It keeps the displayed worker, hover label and desk action aligned after the assignment changes.",
+    "evidence": [
+      "D6:145: \"`interactions.desk0` / `interactions.desk1` find workers by `deskIndex`\"",
+      "D6:145: \"The hover label lookup (`state.workers.find(w => w.deskIndex === di)`) also resolves correctly\""
+    ]
+  },
+  {
+    "question": "How did the sofa’s reported role differ between the end of the health conversation and the lighting conversation?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ],
+    "answer": "It changed from non-interactive decoration to a seat that blocks movement and restores two energy every two seconds.",
+    "evidence": [
+      "D3:95: \"back in the room as pure decoration\"",
+      "D3:95: \"they block movement, render as before, but clicking or hovering them does nothing\"",
+      "D5:68: \"movement is blocked entirely; energy recovers +2 per 2 seconds\""
+    ]
+  },
+  {
+    "question": "Which two independent winning goals were described in the main-build and hiring conversations?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Complete Day 10’s tasks to launch, or reach one million dollars.",
+    "evidence": [
+      "D1:180: \"Day 10 complete → toast fires immediately, then day-end screen with the full win message and \"Play again\" which full-resets to Day 1.\"",
+      "D2:154: \"if i make 1 million dollars i win the game\""
+    ]
+  },
+  {
+    "question": "For an Engineer at level 3 who is already on strike when a desk-swap timer expires, what income and swap behavior follow from the reports?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "The worker earns $0 per second, and the swap does not occur while either worker is striking.",
+    "evidence": [
+      "D2:126: \"the worker earns $0/s\"",
+      "D6:145: \"between **25–75 seconds**\"",
+      "D6:145: \"when exactly 2 workers exist\"",
+      "D6:145: \"if neither worker is on strike\""
+    ]
+  },
+  {
+    "question": "How do the bike and treadmill reports differ when power is high but below overload, such as 90?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "The bike generates six electricity per second; the treadmill drains six stamina per second.",
+    "evidence": [
+      "D5:182: \"| 75–100% | ⚡⚡⚡ TRIPLE CHARGE | +6 elec/s\"",
+      "D6:53: \"Zone 25–75: **restores +4 stamina/s**\"",
+      "D6:53: \"Zone 75+: **drains −6 stamina/s**\""
+    ]
+  },
+  {
+    "question": "Which two reported actions provide full stamina in the health conversation, and what separate electricity cost was later attached to one?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Coffee and a successful peptide shot refill stamina; the lighting conversation charges five electricity for coffee.",
+    "evidence": [
+      "D3:111: \"Coffee ☕ | → **100**\"",
+      "D3:129: \"**When it works:** full stamina instantly\"",
+      "D5:126: \"**Coffee machine** costs **−5 ⚡**\""
+    ]
+  },
+  {
+    "question": "What extra eligibility and cost did the later double jump add beyond the parkour conversation’s ordinary free hop?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "An airborne double jump requires level 2 or higher and energy above 50, and costs five more energy after the four-cost free hop.",
+    "evidence": [
+      "D4:86: \"**After:** −4 stamina, 0.28s arc\"",
+      "D6:161: \"not currently in a jump\"",
+      "D6:161: \"costs −5 energy\"",
+      "D6:172: \"**Double jump** now requires `staminaLevel >= 2` as its first gate\"",
+      "D6:172: \"The `energy > 50` check remains as the second gate.\""
+    ]
+  }
+]

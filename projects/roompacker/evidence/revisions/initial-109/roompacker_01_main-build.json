@@ -1,0 +1,163 @@
+{
+  "qa": [
+    {
+      "question": "What did the user want in the first RoomPacker prototype?",
+      "answer": "Only a 64-by-64 chessboard that could run as a local web app.",
+      "category": 4,
+      "evidence": [
+        "D1:1: \"Literally just a 64x64 chess board and nothing else.\""
+      ]
+    },
+    {
+      "question": "How large was the initial board in pixels?",
+      "answer": "Each square was 12 by 12 pixels, making the board 768 by 768 pixels.",
+      "category": 4,
+      "evidence": [
+        "D1:8: \"Each cell is **12×12 px**, making the full board **768×768 px**\""
+      ]
+    },
+    {
+      "question": "Why did the local launcher switch to Python's HTTP server?",
+      "answer": "An npm cache permission issue prevented the original server approach, so the agent used the available Python 3 server.",
+      "category": 1,
+      "evidence": [
+        "D1:5: \"There's an npm cache permission issue on this machine.\"",
+        "D1:6: \"Python 3 is available.\"",
+        "D1:6: \"Python's built-in HTTP server\""
+      ]
+    },
+    {
+      "question": "How did the first hover highlight work?",
+      "answer": "Pure CSS :hover turned a square bright yellow, with no JavaScript needed.",
+      "category": 4,
+      "evidence": [
+        "D1:10: \"**bright yellow** (`#f6f669`)\"",
+        "D1:10: \"No JS needed, pure CSS `:hover`.\""
+      ]
+    },
+    {
+      "question": "How did clicking a square differ visually from hovering over it?",
+      "answer": "Clicked squares became green; hovering a selected square produced a lighter green, while ordinary hover was yellow.",
+      "category": 4,
+      "evidence": [
+        "D1:15: \"clicked squares turn **green** (`#7fc97f`)\"",
+        "D1:15: \"a slightly lighter green (`#a0e0a0`)\""
+      ]
+    },
+    {
+      "question": "How did the initial drag-painting gesture choose whether to select or deselect cells?",
+      "answer": "The first cell fixed the action for the whole stroke: starting on an unselected cell selected cells, and starting on a selected cell deselected them.",
+      "category": 4,
+      "evidence": [
+        "D1:18: \"if you start on an unselected square, the whole drag selects; if you start on a selected one, the whole drag deselects\""
+      ]
+    },
+    {
+      "question": "How did the selection model change after the smallest-enclosing-rectangle request?",
+      "answer": "It changed from allowing independent rectangles to maintaining one rectangle that expands to enclose the existing selection and a newly clicked cell.",
+      "category": 2,
+      "evidence": [
+        "D1:24: \"multiple independent rectangles\"",
+        "D1:29: \"always **exactly one rectangle**\"",
+        "D1:29: \"smallest bounding box containing the existing selection **and** the new cell\""
+      ]
+    },
+    {
+      "question": "What happens when the user clicks inside the active rectangular selection?",
+      "answer": "The entire selection clears.",
+      "category": 4,
+      "evidence": [
+        "D1:29: \"**Click inside the selection** | Clears the entire selection\""
+      ]
+    },
+    {
+      "question": "How was a selected rectangle converted into a named table?",
+      "answer": "Pressing T or the Place Table button stamped the rectangle in a palette color with a centered Table N label, then cleared the selection.",
+      "category": 4,
+      "evidence": [
+        "D1:33: \"**Press `T`** or click the **🪑 Place Table** button\"",
+        "D1:33: \"A **\"Table N\" label**\"",
+        "D1:33: \"The selection clears\""
+      ]
+    },
+    {
+      "question": "Could tables be dragged beyond the board boundary in the main-build thread?",
+      "answer": "No. Tables were clamped to the board edges.",
+      "category": 5,
+      "evidence": [
+        "D1:37: \"Tables clamp to the board edges, can't be dragged off\""
+      ]
+    },
+    {
+      "question": "How did the initial table-movement system erase the old footprint?",
+      "answer": "tableGrid tracked cell ownership; eraseTable restored the chess colors before stampTable painted the new position.",
+      "category": 4,
+      "evidence": [
+        "D1:37: \"`tableGrid[row][col]` tracks which table (by id) owns each cell\"",
+        "D1:37: \"`eraseTable()` restores cells to their original light/dark chess colours before `stampTable()` paints the new position\""
+      ]
+    },
+    {
+      "question": "How did the main-build thread handle a new table that overlapped an existing table?",
+      "answer": "It blocked placement and briefly flashed the Place Table button red.",
+      "category": 4,
+      "evidence": [
+        "D1:43: \"placement is **blocked**\"",
+        "D1:43: \"button **flashes red** briefly\""
+      ]
+    },
+    {
+      "question": "What happened when a dragged table was released on a conflicting position in the main-build thread?",
+      "answer": "It snapped back to its original position.",
+      "category": 4,
+      "evidence": [
+        "D1:43: \"the table **snaps back** to its original position\""
+      ]
+    },
+    {
+      "question": "How did the selection preview distinguish free cells from occupied cells?",
+      "answer": "Free cells were yellow; cells occupied by another table were highlighted red.",
+      "category": 4,
+      "evidence": [
+        "D1:51: \"Free cells in the rectangle → **yellow** preview\"",
+        "D1:51: \"Cells already occupied by a table → **red** highlight\""
+      ]
+    },
+    {
+      "question": "Which border styles distinguished unplaced selections, resting tables, and moving tables?",
+      "answer": "Selections had dotted outlines, resting tables had solid borders, and moving tables had dashed borders.",
+      "category": 4,
+      "evidence": [
+        "D1:63: \"**Dotted** black outline\"",
+        "D1:63: \"**Solid** border in its table colour\"",
+        "D1:63: \"**Dashed** border via `.table-rect.moving`\""
+      ]
+    },
+    {
+      "question": "How did E-based table editing preserve a table's identity?",
+      "answer": "E lifted the table into an editable selection; T committed the new shape while preserving the same table, color, and label.",
+      "category": 4,
+      "evidence": [
+        "D1:77: \"**Press `E`** or click **✏️ Edit** | Lifts the table off the board\"",
+        "D1:77: \"same table, same colour, same label\""
+      ]
+    },
+    {
+      "question": "How could the user cancel a table edit?",
+      "answer": "Escape restored the table's original position and shape.",
+      "category": 4,
+      "evidence": [
+        "D1:77: \"**Press `Escape`** | Cancels the edit — table snaps back to its original position and shape\""
+      ]
+    },
+    {
+      "question": "Does pressing D delete a table when no table is selected?",
+      "answer": "No. D does nothing without a selected table; it deletes a selected table or cancels and deletes one being edited.",
+      "category": 5,
+      "evidence": [
+        "D1:85: \"**`D` with no table selected** | Does nothing\"",
+        "D1:85: \"Cleanly cancels the edit and removes the table in one step\""
+      ]
+    }
+  ]
+}

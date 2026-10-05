@@ -7,3 +7,7 @@ projects/pantry-lane/**/__pycache__/
 projects/pantry-lane/node_modules/
 .DS_Store
 scripts/__pycache__/
+
+# Local validation/build caches
+__pycache__/
+node_modules/

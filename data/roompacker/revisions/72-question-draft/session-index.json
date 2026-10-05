@@ -1,0 +1,80 @@
+[
+  {
+    "number": 1,
+    "conversation": "D1",
+    "original_session_id": "1790798320886_c7tn7",
+    "title": "Board, tables, editing and deletion",
+    "first_message_at": "2026-09-30T19:58:41.136Z",
+    "start_basis": "First recorded raw-message timestamp; independent session-start metadata is not available in this archive.",
+    "raw_file": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+    "raw_sha256": "006ce9eb7fdc4adb7b1d5f68c142233d6da4b3125bf95f907d7ce7e1b60885bc",
+    "cleaned_file": "data/roompacker_01_main-build/cleaned-chat.json",
+    "visible_messages": 85,
+    "researcher_prompts": 13
+  },
+  {
+    "number": 2,
+    "conversation": "D2",
+    "original_session_id": "1790803257764_kc4o9",
+    "title": "Sofas, chairs, rotation and stacking",
+    "first_message_at": "2026-09-30T21:20:58.099Z",
+    "start_basis": "First recorded raw-message timestamp; independent session-start metadata is not available in this archive.",
+    "raw_file": "projects/roompacker/evidence/raw/1790803257764_kc4o9.messages.json",
+    "raw_sha256": "3d2c96838a5c950b129f31289b22b9070efdae79181c0baaab1967f0b2090602",
+    "cleaned_file": "data/roompacker_02_sofas-chairs/cleaned-chat.json",
+    "visible_messages": 153,
+    "researcher_prompts": 10
+  },
+  {
+    "number": 3,
+    "conversation": "D3",
+    "original_session_id": "1790810280725_gh15o",
+    "title": "Arbitrary shapes, donuts, overlaps and fracturing",
+    "first_message_at": "2026-09-30T23:18:00.991Z",
+    "start_basis": "First recorded raw-message timestamp; independent session-start metadata is not available in this archive.",
+    "raw_file": "projects/roompacker/evidence/raw/1790810280725_gh15o.messages.json",
+    "raw_sha256": "96948241f70d75956237c4dd76cd7b68113db0ef1285bf0398419ec85bc54b78",
+    "cleaned_file": "data/roompacker_03_shapes-overlaps/cleaned-chat.json",
+    "visible_messages": 129,
+    "researcher_prompts": 11
+  },
+  {
+    "number": 4,
+    "conversation": "D4",
+    "original_session_id": "1790985751209_nq50k",
+    "title": "Teleportation, breakage, rotation and easter eggs",
+    "first_message_at": "2026-10-03T00:02:31.448Z",
+    "start_basis": "First recorded raw-message timestamp; independent session-start metadata is not available in this archive.",
+    "raw_file": "projects/roompacker/evidence/raw/1790985751209_nq50k.messages.json",
+    "raw_sha256": "0062817a4cbf0a7bf7635c4823d45592c83547bd8f54d9e7b092ae2dedb91df6",
+    "cleaned_file": "data/roompacker_04_chaos/cleaned-chat.json",
+    "visible_messages": 103,
+    "researcher_prompts": 10
+  },
+  {
+    "number": 5,
+    "conversation": "D5",
+    "original_session_id": "1790987708436_qx3ja",
+    "title": "3D cube, controls, furniture heights and floating",
+    "first_message_at": "2026-10-03T00:35:08.911Z",
+    "start_basis": "First recorded raw-message timestamp; independent session-start metadata is not available in this archive.",
+    "raw_file": "projects/roompacker/evidence/raw/1790987708436_qx3ja.messages.json",
+    "raw_sha256": "112e9667c156b3133b2c0f656a92fd06bfc520c42593bc89dc2678c2de43bfb0",
+    "cleaned_file": "data/roompacker_05_3d-floating/cleaned-chat.json",
+    "visible_messages": 62,
+    "researcher_prompts": 11
+  },
+  {
+    "number": 6,
+    "conversation": "D6",
+    "original_session_id": "1791236522109_w8g1z",
+    "title": "Transparency revisions, visual effects, colors and merging",
+    "first_message_at": "2026-10-05T21:42:02.374Z",
+    "start_basis": "First recorded raw-message timestamp; independent session-start metadata is not available in this archive.",
+    "raw_file": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "raw_sha256": "d497f7a54d2b2e402ec61db7f873853e745ab54d0dcc4e63a4edc838f6675aa6",
+    "cleaned_file": "data/roompacker_06_colors-merging/cleaned-chat.json",
+    "visible_messages": 115,
+    "researcher_prompts": 10
+  }
+]

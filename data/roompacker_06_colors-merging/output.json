@@ -1,0 +1,104 @@
+{
+  "qa": [
+    {
+      "question": "How were furniture edges kept visible when the bodies became transparent?",
+      "answer": "Fully opaque LineSegments were attached to the geometry; the mesh-opacity helper skipped those line objects.",
+      "category": 4,
+      "evidence": [
+        "D1:31: \"**always fully opaque** (`transparent: false, opacity: 1`)\"",
+        "D1:31: \"`LineSegments` are not `Mesh` objects, `setMeshOpacity` already skips them\""
+      ]
+    },
+    {
+      "question": "How was the opacity control improved for exact input?",
+      "answer": "A number input was added beside a zero-to-one-hundred slider; the two stayed synchronized and numeric values were clamped on Enter or blur.",
+      "category": 4,
+      "evidence": [
+        "D1:40: \"**Number input**\"",
+        "D1:40: \"Both inputs **stay in sync**\"",
+        "D1:40: \"number input **clamps on blur/Enter**\"",
+        "D1:40: \"**Slider** — now runs `0–100` in steps of 5\""
+      ]
+    },
+    {
+      "question": "How did transparency support change by the end of the visual-refinements thread?",
+      "answer": "It was first implemented with adjustable per-piece opacity, then removed at the user's request, including the controls and opacity fields.",
+      "category": 1,
+      "evidence": [
+        "D1:20: \"furniture pieces in Room Packer 3D can now be made transparent\"",
+        "D1:53: \"Remove the transparency feature\"",
+        "D1:71: \"`opacity:` field removed from all piece data objects\""
+      ]
+    },
+    {
+      "question": "Did removing furniture transparency also make placement previews opaque?",
+      "answer": "No. Ghost and selection previews retained their own transparent materials.",
+      "category": 4,
+      "evidence": [
+        "D1:71: \"ghost previews still render semi-transparent as intended\"",
+        "D1:71: \"selection rect still renders semi-transparent as intended\""
+      ]
+    },
+    {
+      "question": "How did the selection effect change after the user requested a reddish glow?",
+      "answer": "The sparkle particles and texture were removed and replaced by three red-toned glow shells, retaining the breathing pulse.",
+      "category": 1,
+      "evidence": [
+        "D1:52: \"`THREE.Points` object\"",
+        "D1:76: \"All sparkle code is gone\"",
+        "D1:76: \"simple 3-shell reddish corona\"",
+        "D1:76: \"breathing pulse animation is unchanged\"",
+        "D1:72: \"Replace the sparkle glow with a reddish glow.\""
+      ]
+    },
+    {
+      "question": "Which rendering settings were matched for the greenish room background?",
+      "answer": "The page background, WebGL clear color, and scene fog all became dark forest green #0a1a0f so they blended seamlessly.",
+      "category": 4,
+      "evidence": [
+        "D1:79: \"CSS `body` background\"",
+        "D1:79: \"`renderer.setClearColor`\"",
+        "D1:79: \"`scene.fog`\"",
+        "D1:79: \"same `#0a1a0f`\"",
+        "D1:77: \"Make the background of the room greenish\""
+      ]
+    },
+    {
+      "question": "How did the furniture color picker behave with and without a selected piece?",
+      "answer": "With a piece selected it recolored that piece immediately; without one it stored the color for the next placement.",
+      "category": 4,
+      "evidence": [
+        "D1:92: \"**Piece selected** | Immediately recolours the selected piece live\"",
+        "D1:92: \"**Nothing selected** | Stores the colour as `nextColor`\""
+      ]
+    },
+    {
+      "question": "What conditions enabled merging two furniture pieces?",
+      "answer": "They had to be distinct pieces with exactly the same color on the same cube face.",
+      "category": 4,
+      "evidence": [
+        "D1:97: \"same face, same color (close enough, ±0), not same piece\"",
+        "D1:115: \"**exact same color**\""
+      ]
+    },
+    {
+      "question": "What state and capabilities did the resulting merged piece retain?",
+      "answer": "It replaced both originals with their combined cells and shared color, inherited the taller height, became selected, and supported moving, rotating, deleting and further merging.",
+      "category": 4,
+      "evidence": [
+        "D1:115: \"both originals are deleted and replaced by a single `merged` piece containing all their cells\"",
+        "D1:115: \"new piece is automatically selected, still showing the same color\"",
+        "D1:115: \"The merged piece inherits the **taller** of the two heights\"",
+        "D1:115: \"Merged pieces support: dragging, rotating, deleting, re-merging, conflict detection\""
+      ]
+    },
+    {
+      "question": "Did merged furniture have to consist of two pieces of the same type?",
+      "answer": "No. Any supported furniture type could merge with another compatible same-color piece, including a previously merged piece.",
+      "category": 4,
+      "evidence": [
+        "D1:115: \"Any furniture type (table, sofa, chair, L-sofa, rug, previously-merged) can be merged with any other\""
+      ]
+    }
+  ]
+}

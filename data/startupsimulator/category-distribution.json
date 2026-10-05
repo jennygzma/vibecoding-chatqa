@@ -1,0 +1,23 @@
+{
+  "question_count": 31,
+  "counts": {
+    "knowledge-facts": 11,
+    "multi-session": 6,
+    "multihop": 12,
+    "open-domain": 4,
+    "preference": 6,
+    "single-session": 25,
+    "singlehop": 15,
+    "temporal": 7
+  },
+  "percentages": {
+    "knowledge-facts": 35.5,
+    "multi-session": 19.4,
+    "multihop": 38.7,
+    "open-domain": 12.9,
+    "preference": 19.4,
+    "single-session": 80.6,
+    "singlehop": 48.4,
+    "temporal": 22.6
+  }
+}

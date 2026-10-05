@@ -1,0 +1,9 @@
+{
+  "source": "AIM/roompacker/index.html",
+  "source_sha256": "95f0975ced9fc1a862af0d0902c0a45ac1cce7522e19ed2e8e32a669204b559d",
+  "packaged_path": "projects/roompacker/index.html",
+  "packaged_sha256": "6fff71f97b59667fee48973bbd0902442a849907f1e2cbf7e92d1ce783894d2b",
+  "packaging_fix": "Use fillLight.position.set(-40, 40, -20) instead of replacing the read-only Three.js position property.",
+  "validation": "evidence/browser-smoke.json",
+  "historical_conversations_modified": false
+}

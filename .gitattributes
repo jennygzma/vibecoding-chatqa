@@ -1,3 +1,8 @@
 
 # Preserve downloaded CSV evidence exactly, including CRLF records.
 projects/cedar-table/evidence/feature-10/downloaded-history.csv -text -diff
+
+# Verbatim conversation renderings retain whitespace from original messages.
+data/stockapp/**/conversation.md -whitespace
+data/startupsimulator/**/conversation.md -whitespace
+data/roompacker/**/conversation.md -whitespace

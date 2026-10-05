@@ -1,0 +1,247 @@
+[
+  {
+    "question_id": "Q001",
+    "reviewed_question": "What did I want in the first Roompacker prototype?",
+    "reviewed_sha256": "a70c3bc2eca56b59d5d2ae09ddbca5d96d8ee1d6408c76e9288e936069546d27",
+    "source_support": "reviewed",
+    "category_reason": "Direct user scope and size preference; does not conflate grid squares with pixels."
+  },
+  {
+    "question_id": "Q002",
+    "reviewed_question": "What rectangle should clicking a non-adjacent square select under my revised selection request?",
+    "reviewed_sha256": "291391063a1831ab93782b1118182e5898f695943845323ae441620dbd428f89",
+    "source_support": "reviewed",
+    "category_reason": "The requested enclosing-rectangle rule is directly confirmed in the report; combining confirmation with a requirement does not itself make the answer multihop."
+  },
+  {
+    "question_id": "Q003",
+    "reviewed_question": "In the main-build report, what happened when a dragged table was released on an occupied position?",
+    "reviewed_sha256": "a9fbce6ee3686a1c3404e65d81e9219ffe272f5d7621ee672120084f9f70579c",
+    "source_support": "reviewed",
+    "category_reason": "Direct retrieval scoped to D1; later conversations deliberately permit overlaps."
+  },
+  {
+    "question_id": "Q004",
+    "reviewed_question": "What size and shape did I request for a straight couch?",
+    "reviewed_sha256": "4eee13f2fbfafc0b485527ca33e872bdeda0f29eb938e614b01d1fab04dff370",
+    "source_support": "reviewed",
+    "category_reason": "Direct geometric preference; no inferred height, which is introduced later in 3D."
+  },
+  {
+    "question_id": "Q005",
+    "reviewed_question": "Under the original chair-adjacency report, did a diagonal table neighbor qualify?",
+    "reviewed_sha256": "183509e9576b7cc0334195a15046d8df07b7fb1ee44c2b08bbfa7376d5d3fe01",
+    "source_support": "reviewed",
+    "category_reason": "One reported neighborhood rule; a negative answer alone is not adversarial."
+  },
+  {
+    "question_id": "Q006",
+    "reviewed_question": "How did the occupancy representation change to support chair stacking?",
+    "reviewed_sha256": "13c53961325dbcc4803add93cf283c9602c318ae747c09b6ceeeeb958b15f2d4",
+    "source_support": "reviewed",
+    "category_reason": "Compares the explicit pre-stacking representation with the replacement data model; it is not temporal solely because one came later."
+  },
+  {
+    "question_id": "Q007",
+    "reviewed_question": "Did the reported default L-sofa occupy the three cells I originally requested?",
+    "reviewed_sha256": "c3211b761175b829b474129e046715b038040ad8f7ab942f6cec9f8277e550a4",
+    "source_support": "reviewed",
+    "category_reason": "Retains the newer draft’s requested-versus-reported geometry check: 3 + 3 − 1 = 5 occupied cells. This is a calculation and comparison, not a direct lookup."
+  },
+  {
+    "question_id": "Q008",
+    "reviewed_question": "Why should an L-sofa collision check use occupied cells rather than its full bounding box?",
+    "reviewed_sha256": "87666ce9e018119351321a5c3f3a792c48db8a413ca76a0d9de5c865e259bdb4",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence geometric rationale inferred from the explicit occupied-cell collision rule."
+  },
+  {
+    "question_id": "Q009",
+    "reviewed_question": "What constraints did I set for custom-shaped furniture?",
+    "reviewed_sha256": "a702f5f7e3387aec3f62613fc61c1e8c1ae800415b819f5df4b43f19ac113e4d",
+    "source_support": "reviewed",
+    "category_reason": "Direct connectivity and area constraints from one request; multiple constraints do not make a multihop question."
+  },
+  {
+    "question_id": "Q010",
+    "reviewed_question": "What table size limits did I request in the shapes conversation?",
+    "reviewed_sha256": "68924746351a0bdfcdc9f051cfc2a8c0cbb87502ac43994bf6b6fb9e4020bd38",
+    "source_support": "reviewed",
+    "category_reason": "Direct dimensions from the user, not a calculated area."
+  },
+  {
+    "question_id": "Q011",
+    "reviewed_question": "What workflow replaced the separate donut-placement mode?",
+    "reviewed_sha256": "0b313ff6c0d5325b60220236224b837a6323fa3ae6a40b468f18dea898677d22",
+    "source_support": "reviewed",
+    "category_reason": "Compares the old O mode and its U replacement, including the explicit border invariant; preserves the clarified workflow."
+  },
+  {
+    "question_id": "Q012",
+    "reviewed_question": "What did the final shapes-thread report say remained after table fracturing?",
+    "reviewed_sha256": "c78150900f0cc489977c87343251ac3cae4bf3ee16d521df09915fac3774125c",
+    "source_support": "reviewed",
+    "category_reason": "Both facts are explicit in D3:129; avoids claiming every cut creates exactly two pieces."
+  },
+  {
+    "question_id": "Q013",
+    "reviewed_question": "What did the Chaos reports change after I said adjusting invalid teleports was my job?",
+    "reviewed_sha256": "a1675877c6a882c415c519663a0564528fbdb85c6691a852c96ae14d19a3242d",
+    "source_support": "reviewed",
+    "category_reason": "Connects the earlier valid-position behavior, the user’s intended responsibility, and the reported revision."
+  },
+  {
+    "question_id": "Q014",
+    "reviewed_question": "How did the Chaos report treat the conflict deadline after a new landing?",
+    "reviewed_sha256": "51c0553679c01409b64d19e67b672b7ecbfddde3f7473f0457ad66c6d3bdc0a0",
+    "source_support": "reviewed",
+    "category_reason": "Direct timer-reset behavior; does not claim a piece necessarily stays still for the full interval."
+  },
+  {
+    "question_id": "Q015",
+    "reviewed_question": "What deadline and interaction did the breakage report give the player?",
+    "reviewed_sha256": "fa31ea137ca2dfcf69346752a8086e01c855cd4fa9a98e20c88f797aa4e1c301",
+    "source_support": "reviewed",
+    "category_reason": "Both duration and click consumption are stated in D4:52."
+  },
+  {
+    "question_id": "Q016",
+    "reviewed_question": "Why could the early Chaos teleport timing keep an unresolved conflict from reaching its deadline?",
+    "reviewed_sha256": "13cf2771df8d5d24a034094873ff01d6112ad2a79e06868600f4603e3043995c",
+    "source_support": "reviewed",
+    "category_reason": "Retains the newer draft’s timing interaction: combine teleport cadence with reset-on-landing to identify a possible deadline loophole in the reported early design, not a verified current-app defect."
+  },
+  {
+    "question_id": "Q017",
+    "reviewed_question": "What invariants did the rug-squiggle report preserve while moving cells?",
+    "reviewed_sha256": "4dbf662eb7d25d5a433bb6d52f4b734b47a0469a67d8be71bde153922d1e961c",
+    "source_support": "reviewed",
+    "category_reason": "Retrieves explicitly reported shape invariants; the question does not ask for the unrelated animation cadence."
+  },
+  {
+    "question_id": "Q018",
+    "reviewed_question": "How did the placement space change during the 3D conversation?",
+    "reviewed_sha256": "6a2a9e96a3730c79a9f5dc4fcc3fa3411dd9c69ea12b6dd43be195bfcb17e8e9",
+    "source_support": "reviewed",
+    "category_reason": "Compares the first 3D conversion with the later six-face report; keeps the temporary 32-square floor distinct from D1’s original 64-square board."
+  },
+  {
+    "question_id": "Q019",
+    "reviewed_question": "What rotation shortcuts did the 3D report assign?",
+    "reviewed_sha256": "52f3aca7ed0afdb6d3c5a313d25ffc97285a217b0752756acf96acb9814384aa",
+    "source_support": "reviewed",
+    "category_reason": "Direct shortcut mapping from one report; not a claim that E still performs the earlier table-edit action."
+  },
+  {
+    "question_id": "Q020",
+    "reviewed_question": "Which floating controls and range did the 3D report describe?",
+    "reviewed_sha256": "b884dd69656cc443d71966194c40b9c9bb5a26caaa3c34fa3142a5120eb59eac",
+    "source_support": "reviewed",
+    "category_reason": "All three facts are explicitly in D5:62; outward is relative to the active face, not always world-up."
+  },
+  {
+    "question_id": "Q021",
+    "reviewed_question": "Why does a floatDepth clamp of 0–63 alone fail to prove furniture stays inside the cube?",
+    "reviewed_sha256": "e0291e45389a9932c9172e8bec04cac97f5a38cd00ac9c4c670563a4b094f0ca",
+    "source_support": "reviewed",
+    "category_reason": "Retains the newer draft’s one-sentence geometric caution: the report defines an outward offset and its range, not a complete containment test."
+  },
+  {
+    "question_id": "Q022",
+    "reviewed_question": "What became of adjustable furniture transparency in the colors-and-merging conversation?",
+    "reviewed_sha256": "9a0d471490985e68054c6f689968760a7676a7620c2242c790d5e97affc261d6",
+    "source_support": "reviewed",
+    "category_reason": "Combines the temporary implementation, explicit reversal, and removal report; development order is not temporal."
+  },
+  {
+    "question_id": "Q023",
+    "reviewed_question": "What selection effect did I request in place of sparkles?",
+    "reviewed_sha256": "59b99a78ab6aece52fef746b33132ea5b4c70a03c41ebecd8060d604fa50287e",
+    "source_support": "reviewed",
+    "category_reason": "Direct replacement preference; does not need the discarded particle implementation to answer."
+  },
+  {
+    "question_id": "Q024",
+    "reviewed_question": "How did the final color-picker report distinguish recoloring from choosing the next placement color?",
+    "reviewed_sha256": "2a956eb060b4cb9b8d6c6cc76dc1fde25718100e12fd98ea646a8f671d84f588",
+    "source_support": "reviewed",
+    "category_reason": "Two branches from a single reported control behavior."
+  },
+  {
+    "question_id": "Q025",
+    "reviewed_question": "What eligibility checks did the merge report require?",
+    "reviewed_sha256": "18cb1fcdafeef96598228c18a75fd4517c510e31306f038d4963132bb685418a",
+    "source_support": "reviewed",
+    "category_reason": "The complete eligibility rule is directly stated in D6:97 and its exact-color wording is confirmed later; two citations do not automatically make multihop."
+  },
+  {
+    "question_id": "Q026",
+    "reviewed_question": "What replacement and height rules did the completed merge report describe?",
+    "reviewed_sha256": "76af84d982ca14260b79ccb4900f5559c92ca0fab038dfaf0e1d480a95590020",
+    "source_support": "reviewed",
+    "category_reason": "The replacement and max-height rule are explicitly stated in one final report; no calculation is requested."
+  },
+  {
+    "question_id": "Q027",
+    "reviewed_question": "Why show the combined footprint before committing a furniture merge?",
+    "reviewed_sha256": "788004f3bd491b7739cdcaea49e40d21f369e06ec1f59fd9b42b6236ff7e40f3",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence rationale grounded in the preview and replacement behavior; does not claim there is an undo feature."
+  },
+  {
+    "question_id": "Q028",
+    "reviewed_question": "How did the overlap policy differ between the main build and the later shapes conversation?",
+    "reviewed_sha256": "3b1e20b91e3b05104fac2f1d396a58ba876a2ba4509fadffb3525e3f9e50ebba",
+    "source_support": "reviewed",
+    "category_reason": "Explicitly contrasts superseded and revised policies without presenting both as simultaneous final behavior.",
+    "cross_session_necessity": "D1 supplies blocking/snap-back; D3 supplies the warning-only policy."
+  },
+  {
+    "question_id": "Q029",
+    "reviewed_question": "How did the chair-placement rule change between the sofas-and-chairs and shapes conversations?",
+    "reviewed_sha256": "d3c13bbaa85f1092a05e228cf6dc924d0463e0a48193b650476ecdcadcc7f393",
+    "source_support": "reviewed",
+    "category_reason": "Compares the original neighborhood requirement with its removal.",
+    "cross_session_necessity": "D2 defines the exact orthogonal rule; D3 explicitly removes placement restrictions. D3 does not supply D2’s full neighborhood test."
+  },
+  {
+    "question_id": "Q030",
+    "reviewed_question": "What does E do in the main-build editing report versus the 3D control report?",
+    "reviewed_sha256": "45f7c4ddce2a0120e3fde5d31bd92114624053c81e3ffb9a42a0baffb3890efc",
+    "source_support": "reviewed",
+    "category_reason": "Compares the same key’s documented meanings at two stages without assuming the original shortcut remains valid.",
+    "cross_session_necessity": "D1 supplies editing behavior; D5 supplies rotation behavior."
+  },
+  {
+    "question_id": "Q031",
+    "reviewed_question": "If a one-unit table and a two-unit chair meet the final merge conditions, what height should the reported rule give their merged piece?",
+    "reviewed_sha256": "3adb17a84d2d93147afcf0ed02ae4fdd8d74e8f706f82589d9fbdef13f252c48",
+    "source_support": "reviewed",
+    "category_reason": "Applies D6’s maximum-height rule to the separately recorded D5 heights; conditions are stated rather than inventing cross-face eligibility.",
+    "cross_session_necessity": "D5 supplies the numeric heights; D6 supplies the max-height merge rule."
+  },
+  {
+    "question_id": "Q032",
+    "reviewed_question": "How do table fracturing and same-color merging treat the original pieces and their colors?",
+    "reviewed_sha256": "ac17f34a4ea37b691db11deb39cb1718e4a2a0476f1b97e91f64f7f42fc10724",
+    "source_support": "reviewed",
+    "category_reason": "Contrasts splitting and joining as separate operations while tracking ownership of the retained color.",
+    "cross_session_necessity": "D3 describes victim-colored shards; D6 describes replacement of both sources by a shared-color union."
+  },
+  {
+    "question_id": "Q033",
+    "reviewed_question": "How do the Chaos rug-squiggle report and the original custom-shape request relate?",
+    "reviewed_sha256": "6d5c9d6dfd9a26a4bbbdbd8714297a7ea157d8cd13eb82f3a8d84113e142e17a",
+    "source_support": "reviewed",
+    "category_reason": "Connects the initial geometric constraints to the invariants of a later mutation; does not infer a new shape size.",
+    "cross_session_necessity": "D3 provides the 16-cell cap; D4 supplies the cell-count-preserving mutation and connectivity check."
+  },
+  {
+    "question_id": "Q034",
+    "reviewed_question": "Which furniture did the Chaos conversation call abnormal, and which did the later 3D response redesign?",
+    "reviewed_sha256": "c4a5348418661f0f0f82108d41e44f37cbe2a78a50106764d1b2447484079bfa",
+    "source_support": "reviewed",
+    "category_reason": "Retains the newer draft’s cross-session interpretation mismatch; the later vague request is not silently treated as explicitly naming the L-sofa.",
+    "cross_session_necessity": "D4 identifies the earlier referent as a custom rug; D5 supplies the vague request and the agent’s different L-sofa interpretation."
+  }
+]

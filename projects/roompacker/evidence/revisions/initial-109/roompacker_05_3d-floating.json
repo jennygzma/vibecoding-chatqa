@@ -1,0 +1,167 @@
+{
+  "qa": [
+    {
+      "question": "Which rendering library replaced RoomPacker's 2D CSS board?",
+      "answer": "Three.js rendered the replacement WebGL 3D scene.",
+      "category": 4,
+      "evidence": [
+        "D1:20: \"**Three.js WebGL 3D scene**\""
+      ]
+    },
+    {
+      "question": "Why was Three.js loaded through a CDN?",
+      "answer": "The project was a static HTML file with no bundler, served through Python's HTTP server.",
+      "category": 4,
+      "evidence": [
+        "D1:5: \"Use Three.js (via CDN) since no bundler is in use\"",
+        "D1:5: \"static HTML file served with `python3 -m http.server`\""
+      ]
+    },
+    {
+      "question": "What camera and mouse controls accompanied the first 3D conversion?",
+      "answer": "An orthographic isometric camera allowed right-drag orbiting and scroll-wheel zoom.",
+      "category": 4,
+      "evidence": [
+        "D1:20: \"Orthographic isometric view — right-drag or scroll to orbit/zoom\""
+      ]
+    },
+    {
+      "question": "What shape represented chairs in the first 3D version?",
+      "answer": "Cylinders with a round cross-section.",
+      "category": 4,
+      "evidence": [
+        "D1:20: \"**Chairs** | Cylinders (round cross-section)\""
+      ]
+    },
+    {
+      "question": "What did the arrow keys do after keyboard furniture control was added?",
+      "answer": "They nudged a selected piece one cell north, south, west, or east while preventing browser scrolling.",
+      "category": 4,
+      "evidence": [
+        "D1:25: \"one grid cell at a time\"",
+        "D1:25: \"arrow keys don't also scroll the page\""
+      ]
+    },
+    {
+      "question": "Could arrow-key nudges push pieces off the grid?",
+      "answer": "No. Piece positions were clamped to the grid boundary.",
+      "category": 5,
+      "evidence": [
+        "D1:25: \"Pieces are **clamped to the grid boundary**\""
+      ]
+    },
+    {
+      "question": "Which keys controlled clockwise and counter-clockwise rotation in 3D?",
+      "answer": "Q rotated counter-clockwise; E rotated clockwise, with R retained as a clockwise alias.",
+      "category": 4,
+      "evidence": [
+        "D1:32: \"`Q` | Rotate **counter-clockwise**\"",
+        "D1:32: \"`E` | Rotate **clockwise**\"",
+        "D1:32: \"`R` | Also rotates CW\""
+      ]
+    },
+    {
+      "question": "How did counter-clockwise rotation transform a rug's cell offsets?",
+      "answer": "It mapped row and column offsets to width minus one minus column offset, and row offset.",
+      "category": 4,
+      "evidence": [
+        "D1:32: \"90° CCW: `(dr,dc)→(W-1-dc, dr)`\""
+      ]
+    },
+    {
+      "question": "How did the placement space expand after the 64-by-64-by-64 request?",
+      "answer": "The first 3D floor was 32 by 32; it was replaced by a cube with six independent 64-by-64 placement faces.",
+      "category": 2,
+      "evidence": [
+        "D1:20: \"32×32 alternating light/dark tile grid\"",
+        "D1:39: \"6 placeable faces\"",
+        "D1:39: \"independent **64×64 grid**\""
+      ]
+    },
+    {
+      "question": "How were cube-face shortcuts mapped?",
+      "answer": "Keys 1 through 6 selected Top, Bottom, Front, Back, Left, and Right respectively.",
+      "category": 4,
+      "evidence": [
+        "D1:39: \"**Top** / `1`\"",
+        "D1:39: \"**Bottom** / `2`\"",
+        "D1:39: \"**Front** / `3`\"",
+        "D1:39: \"**Back** / `4`\"",
+        "D1:39: \"**Left** / `5`\"",
+        "D1:39: \"**Right** / `6`\""
+      ]
+    },
+    {
+      "question": "How did the display distinguish the active cube face?",
+      "answer": "The active face used full-brightness tiles, other faces were dimmed, and a top-right indicator identified the current face.",
+      "category": 4,
+      "evidence": [
+        "D1:39: \"active face is highlighted** (full brightness tiles)\"",
+        "D1:39: \"all others are dimmed\"",
+        "D1:39: \"**face indicator** in the top-right corner\""
+      ]
+    },
+    {
+      "question": "Did Chaos teleportation move furniture between cube faces?",
+      "answer": "The described behavior kept pieces within their own face.",
+      "category": 5,
+      "evidence": [
+        "D1:39: \"Chaos mode teleports all pieces randomly (within their own face)\""
+      ]
+    },
+    {
+      "question": "What were the requested final heights for tables, sofas, L-sofas, and chairs?",
+      "answer": "Tables were one grid unit tall; straight sofas, L-sofas, and chairs were two units tall.",
+      "category": 1,
+      "evidence": [
+        "D1:42: \"`H_COUCH` and `H_LSOFA` are both now `2.0`\"",
+        "D1:44: \"`H_CHAIR` is now `2.0`\"",
+        "D1:46: \"`H_TABLE` is now `1.0`\""
+      ]
+    },
+    {
+      "question": "Which furniture did the agent redesign after the vague request that abnormal furniture be unique?",
+      "answer": "The agent redesigned the L-sofa, adding seats and backrests; the user's message did not explicitly identify that type.",
+      "category": 4,
+      "evidence": [
+        "D1:47: \"the abnormal furniture is going to be unique\"",
+        "D1:49: \"The L-sofa currently renders as a cluster of plain `BoxGeometry` cells\"",
+        "D1:54: \"Each cell has a **wide seat**\""
+      ]
+    },
+    {
+      "question": "How did the redesigned two-unit L-sofa divide its height?",
+      "answer": "The seat used 1.2 units and the backrest 0.8, totaling two.",
+      "category": 4,
+      "evidence": [
+        "D1:57: \"seat occupies 1.2 units (60%) and the backrest sits on top at 0.8 units (40%)\""
+      ]
+    },
+    {
+      "question": "What per-piece field tracked floating distance?",
+      "answer": "floatDepth tracked integer steps from the face surface and initialized to zero.",
+      "category": 4,
+      "evidence": [
+        "D1:61: \"Add `floatDepth=0` to every piece (integer grid steps along the normal)\""
+      ]
+    },
+    {
+      "question": "How did W and S control floating furniture?",
+      "answer": "W moved a selected piece one grid step outward along the face normal; S brought it back inward.",
+      "category": 4,
+      "evidence": [
+        "D1:62: \"press **`W`** to float it one grid step outward along the face normal\"",
+        "D1:62: \"**`S`** to bring it back in\""
+      ]
+    },
+    {
+      "question": "What range was reported for floatDepth and how did selection feedback follow it?",
+      "answer": "The field was clamped from zero to sixty-three, and the selection halo followed the piece's floating height.",
+      "category": 4,
+      "evidence": [
+        "D1:62: \"`floatDepth` is clamped to `[0, 63]`\"",
+        "D1:62: \"selection halo follows the piece at whatever height it's floating at\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "agent-reviewed-human-review-pending",
+  "canonical_annotations": "data/roompacker/annotations.json",
+  "canonical_combined": "data/roompacker/vibe_combined.json",
+  "candidate_items": 34,
+  "candidate_citations": 95,
+  "editorially_reviewed_items": 34,
+  "human_reviewed_items": 0,
+  "initial_draft_items": 109,
+  "intermediate_quality_draft_items": 72,
+  "review_details": "data/roompacker/annotations.md",
+  "semantic_review": "data/roompacker/annotation-semantic-review.json",
+  "reference": "data/focus_desk",
+  "note": "Earlier draft review records remain in revisions. Browser reviewer serves the archived 72-question version; annotations.md is the current review document."
+}

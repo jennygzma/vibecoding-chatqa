@@ -1,0 +1,11 @@
+{
+  "name": "roompacker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Roompacker 3D furniture sandbox and reviewed conversation dataset",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 3000 --bind 127.0.0.1",
+    "test:browser": "node tests/browser-smoke.mjs"
+  }
+}

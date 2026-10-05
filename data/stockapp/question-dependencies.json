@@ -1,0 +1,250 @@
+[
+  {
+    "question_id": "Q001",
+    "evidence_dia_ids": [
+      "D1:1"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q002",
+    "evidence_dia_ids": [
+      "D1:69"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q003",
+    "evidence_dia_ids": [
+      "D1:68"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q004",
+    "evidence_dia_ids": [
+      "D1:11",
+      "D1:97"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q005",
+    "evidence_dia_ids": [
+      "D1:68",
+      "D1:72"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q006",
+    "evidence_dia_ids": [
+      "D2:21"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q007",
+    "evidence_dia_ids": [
+      "D2:21"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q008",
+    "evidence_dia_ids": [
+      "D2:21",
+      "D2:239"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q009",
+    "evidence_dia_ids": [
+      "D2:262"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q010",
+    "evidence_dia_ids": [
+      "D2:21"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q011",
+    "evidence_dia_ids": [
+      "D3:25"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q012",
+    "evidence_dia_ids": [
+      "D3:38",
+      "D3:42"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q013",
+    "evidence_dia_ids": [
+      "D3:14"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q014",
+    "evidence_dia_ids": [
+      "D4:26",
+      "D4:31"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q015",
+    "evidence_dia_ids": [
+      "D4:58",
+      "D4:70"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q016",
+    "evidence_dia_ids": [
+      "D4:35"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q017",
+    "evidence_dia_ids": [
+      "D5:7"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q018",
+    "evidence_dia_ids": [
+      "D5:7"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q019",
+    "evidence_dia_ids": [
+      "D5:63"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q020",
+    "evidence_dia_ids": [
+      "D5:69"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q021",
+    "evidence_dia_ids": [
+      "D5:63"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q022",
+    "evidence_dia_ids": [
+      "D6:29",
+      "D6:30",
+      "D6:48"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q023",
+    "evidence_dia_ids": [
+      "D6:65"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q024",
+    "evidence_dia_ids": [
+      "D6:78"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q025",
+    "evidence_dia_ids": [
+      "D6:96"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q026",
+    "evidence_dia_ids": [
+      "D6:96"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q027",
+    "evidence_dia_ids": [
+      "D6:131"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q028",
+    "evidence_dia_ids": [
+      "D1:69",
+      "D3:14"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q029",
+    "evidence_dia_ids": [
+      "D2:21",
+      "D2:239",
+      "D3:14"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q030",
+    "evidence_dia_ids": [
+      "D4:58",
+      "D4:70",
+      "D5:7"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q031",
+    "evidence_dia_ids": [
+      "D1:68",
+      "D5:70"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q032",
+    "evidence_dia_ids": [
+      "D3:25",
+      "D6:96"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q033",
+    "evidence_dia_ids": [
+      "D2:1",
+      "D6:30",
+      "D6:131"
+    ],
+    "requires_answers": []
+  }
+]

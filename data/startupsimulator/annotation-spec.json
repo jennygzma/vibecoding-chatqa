@@ -1,0 +1,783 @@
+[
+  {
+    "question_id": "Q001",
+    "question": "What did I ask the first StartupSimulator prototype to let the player do?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_mu1o6ycq_1",
+        "excerpt": "We can start by just making an office space in which we navigate a founder character that moves around by clicking. Make it a local web app to run the game."
+      }
+    ],
+    "answer": "Move a founder around an office by clicking, in a local web game.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q002",
+    "question": "How did the reported game objective grow from the initial day-one experience?",
+    "category": [
+      "single-session",
+      "multihop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_8JMYy-4w",
+        "excerpt": "it's a short, chill \"day one\" experience, not a deep sim"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_TvZt63O0",
+        "excerpt": "### The core loop: 10-day sprint to launch"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_TvZt63O0",
+        "excerpt": "Every day you complete the same 4 tasks"
+      }
+    ],
+    "answer": "It became a ten-day sprint with repeated daily tasks advancing the prototype toward launch.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q003",
+    "question": "What did my final main-build feedback say about the floor, despite earlier visual revisions?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_mubmpmtm_em9",
+        "excerpt": "I can clearly still see a checkerboard pattern on the floor."
+      }
+    ],
+    "answer": "A checkerboard pattern was still visible.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q004",
+    "question": "Why does routing to a nearby walkable point help when the player clicks furniture?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_6pgxpYPe",
+        "excerpt": "Otherwise spirals outward in 0.25-tile steps"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_6pgxpYPe",
+        "excerpt": "returns the closest walkable point it finds (within 3 tiles)"
+      }
+    ],
+    "answer": "It gives the click a reachable destination without moving the character inside a solid object.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q005",
+    "question": "What passive base earnings did the hiring report assign to Engineer and Growth workers?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_RxkX9Oob",
+        "excerpt": "Rates: Engineer $3/s · Growth $4/s · Designer $2/s · Operations $2/s."
+      }
+    ],
+    "answer": "Engineer: $3 per second; Growth: $4 per second.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q006",
+    "question": "What would a level-three Engineer earn per second under the reported base-rate and upgrade rules?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_RxkX9Oob",
+        "excerpt": "Rates: Engineer $3/s · Growth $4/s · Designer $2/s · Operations $2/s."
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_c8SSmL26",
+        "excerpt": "level 1 = base rate, level 2 = 1.5×, level 3 = 2.25×; upgrade cost $500/$2000"
+      }
+    ],
+    "answer": "$6.75 per second: $3 × 2.25.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q007",
+    "question": "How did the cereal-restocking report distinguish workers who were about to strike from those already striking?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_5OskPCy8",
+        "excerpt": "Every non-striking worker's `strikeCountdown` gets **+60 seconds** added"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_5OskPCy8",
+        "excerpt": "Workers who are *already on strike* are unaffected"
+      }
+    ],
+    "answer": "Non-striking workers gained 60 seconds on their countdown; active strikes were unaffected.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q008",
+    "question": "What financial win condition did I request after adding workers and cereal?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_mug2bdwm_1g1h",
+        "excerpt": "if i make 1 million dollars i win the game"
+      }
+    ],
+    "answer": "Reach one million dollars.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q009",
+    "question": "How did the reported pills tradeoff change during the health-and-stamina conversation?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_v6qrO5NQ",
+        "excerpt": "**Restores up to +40 HP**"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_v6qrO5NQ",
+        "excerpt": "**Slows speed to `1.3`**"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_nWojRPHY",
+        "excerpt": "Pills 💊 | **−25** (floors at 1) | fast (4.5)"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_nWojRPHY",
+        "excerpt": "**−25** (floors at 1)"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_nWojRPHY",
+        "excerpt": "the guard prevents you from killing yourself to 0"
+      }
+    ],
+    "answer": "It changed from restoring up to 40 HP and slowing movement to costing 25 stamina, floored at one, and boosting speed to 4.5.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q010",
+    "question": "According to the health conversation, what did coffee do to the drain interval and when did that effect reset?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_PqXgTHoj",
+        "excerpt": "**Normal drain:** 1 HP every 3 seconds"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_PqXgTHoj",
+        "excerpt": "**1 HP every 1.5 seconds**"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_PqXgTHoj",
+        "excerpt": "The faster rate **resets at the start of each new day**"
+      }
+    ],
+    "answer": "It shortened the interval from three seconds to 1.5 seconds; the faster rate reset with the next day.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q011",
+    "question": "What mortality progression did the game’s peptide-shot report assign within one day?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_AuhXCAkD",
+        "excerpt": "| 1st | 20%"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_AuhXCAkD",
+        "excerpt": "| 2nd | 40%"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_AuhXCAkD",
+        "excerpt": "| 3rd | 60%"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_AuhXCAkD",
+        "excerpt": "| 4th | 80%"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_AuhXCAkD",
+        "excerpt": "| 5th | 100%"
+      }
+    ],
+    "answer": "20%, 40%, 60%, 80%, then 100% on the fifth shot.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q012",
+    "question": "What happened to the sofa by the end of the health-and-stamina conversation?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_BR5qiY9H",
+        "excerpt": "back in the room as pure decoration"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_BR5qiY9H",
+        "excerpt": "they block movement, render as before, but clicking or hovering them does nothing"
+      }
+    ],
+    "answer": "It returned with the coffee table as non-interactive decoration that still blocked movement.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q013",
+    "question": "Why would showing the stamina drain rate help players judge coffee’s tradeoff?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_13ZH8wdz",
+        "excerpt": "**The stamina drain rate is invisible.**"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_13ZH8wdz",
+        "excerpt": "1.5s drain vs. 3s"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_nWojRPHY",
+        "excerpt": "Coffee ☕ | → **100** | fast (4.5) | 1/1.5s (burns faster)"
+      }
+    ],
+    "answer": "It makes the cost of a full refill visible instead of hiding the faster subsequent depletion.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q014",
+    "question": "What replaced the continuous dash toggle after I clarified that I meant a short teleport?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_B28gcsvk",
+        "excerpt": "**Click to toggle on**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_mudm72au_k53",
+        "excerpt": "i mean more like a not an actual button but a button that like almost teleports you forward a little bit"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_morBeu_B",
+        "excerpt": "Press **Q** (or click the ⚡ **BLINK** button)"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_morBeu_B",
+        "excerpt": "Alex instantly teleports up to **3 tiles forward**"
+      }
+    ],
+    "answer": "Blink Dash: Q or the Blink button moves Alex up to three tiles forward.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q015",
+    "question": "How did the Blink Dash report prevent teleporting through solid objects?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_morBeu_B",
+        "excerpt": "steps forward in 24 increments and stops at the last walkable tile"
+      }
+    ],
+    "answer": "Sample the path in 24 increments and stop at the last walkable point.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q016",
+    "question": "What post-landing penalty did the free-hop report add to discourage repeated jumping?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_YmFwcasJ",
+        "excerpt": "movement speed drops to **40%** of normal for 0.6 seconds"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_YmFwcasJ",
+        "excerpt": "can't jump again until the stumble clears"
+      }
+    ],
+    "answer": "For 0.6 seconds, movement falls to 40% of normal and another jump is blocked.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q017",
+    "question": "What sofa control did I request in the lighting conversation?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_muervsvv_rl5",
+        "excerpt": "when on the sofa let me control recline with up/down arrows"
+      }
+    ],
+    "answer": "Use the up and down arrows to control recline while seated.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q018",
+    "question": "Using the reported electricity rates, what is the total passive draw with both overhead lights and the floor lamp on?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_Z0kN2qpM",
+        "excerpt": "Base idle draw: **0.04 ⚡/s**"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Z0kN2qpM",
+        "excerpt": "Ceiling lights **+0.10 ⚡/s**"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Z0kN2qpM",
+        "excerpt": "Floor lamp **+0.04 ⚡/s**"
+      }
+    ],
+    "answer": "0.18 electricity per second: 0.04 idle + 0.10 overhead + 0.04 lamp.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q019",
+    "question": "What bike behavior did I request for power above 100 in the final threshold revision?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_mufuyq6y_zdh",
+        "excerpt": "100+ breaks the bike for 5 seconds"
+      }
+    ],
+    "answer": "Break the bike for five seconds.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q020",
+    "question": "Why can a bike overload penalty make repeated Space presses more strategic?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_h_H6bCj0",
+        "excerpt": "Any `SPACE` press that carries power **over 100** triggers a **5-second breakdown**"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_h_H6bCj0",
+        "excerpt": "While broken: SPACE does nothing"
+      }
+    ],
+    "answer": "It rewards keeping power in a productive range instead of pressing as fast as possible.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q021",
+    "question": "What did I want food delivery to change about the player’s stats?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_mug33osv_1na0",
+        "excerpt": "let's make it so we can order food that doesnt do anything"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_xkW1VcLj",
+        "excerpt": "Purely cosmetic · No stats affected · Very filling emotionally"
+      }
+    ],
+    "answer": "Nothing; it was a cosmetic interaction.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q022",
+    "question": "What condition and cooldown did the ghost-jumpscare report use?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_KksSJ4AJ",
+        "excerpt": "if distance < 1.5 tiles AND cooldown == 0"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_KksSJ4AJ",
+        "excerpt": "prevents re-triggering for 8 seconds after each scare"
+      }
+    ],
+    "answer": "Within 1.5 tiles with no active cooldown; eight seconds before it can trigger again.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q023",
+    "question": "Did the reported double-jump level gate match my original “above level 5” request?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_mug3ml3c_1x4a",
+        "excerpt": "add a double jump if stamina level is above level 5."
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_mug3nzo0_1xxh",
+        "excerpt": "cap at it at 5"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "**Double jump** now requires `staminaLevel >= 2` as its first gate"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "The `energy > 50` check remains as the second gate."
+      }
+    ],
+    "answer": "No; the final report used level 2 or higher plus energy above 50, while the later level system capped at 5.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q024",
+    "question": "How many successful workouts did the final level report require to reach the cap from level 1?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "Lv 4 → 5 :  4 workouts  (10 total to max out)"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "Lv 5      :  already MAX, no more progress"
+      }
+    ],
+    "answer": "Ten total workouts to reach level 5.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q025",
+    "question": "Why should worker interactions look up the current desk assignment after a swap?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_YlRy6_Bj",
+        "excerpt": "`interactions.desk0` / `interactions.desk1` find workers by `deskIndex`"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_YlRy6_Bj",
+        "excerpt": "The hover label lookup (`state.workers.find(w => w.deskIndex === di)`) also resolves correctly"
+      }
+    ],
+    "answer": "It keeps the displayed worker, hover label and desk action aligned after the assignment changes.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q026",
+    "question": "How did the sofa’s reported role differ between the end of the health conversation and the lighting conversation?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_BR5qiY9H",
+        "excerpt": "back in the room as pure decoration"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_BR5qiY9H",
+        "excerpt": "they block movement, render as before, but clicking or hovering them does nothing"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_zWcLUTL4",
+        "excerpt": "movement is blocked entirely; energy recovers +2 per 2 seconds"
+      }
+    ],
+    "answer": "It changed from non-interactive decoration to a seat that blocks movement and restores two energy every two seconds.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q027",
+    "question": "Which two independent winning goals were described in the main-build and hiring conversations?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_TvZt63O0",
+        "excerpt": "Day 10 complete → toast fires immediately, then day-end screen with the full win message and \"Play again\" which full-resets to Day 1."
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_mug2bdwm_1g1h",
+        "excerpt": "if i make 1 million dollars i win the game"
+      }
+    ],
+    "answer": "Complete Day 10’s tasks to launch, or reach one million dollars.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q028",
+    "question": "For an Engineer at level 3 who is already on strike when a desk-swap timer expires, what income and swap behavior follow from the reports?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_Ig50c3X7",
+        "excerpt": "the worker earns $0/s"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_YlRy6_Bj",
+        "excerpt": "between **25–75 seconds**"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_YlRy6_Bj",
+        "excerpt": "when exactly 2 workers exist"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_YlRy6_Bj",
+        "excerpt": "if neither worker is on strike"
+      }
+    ],
+    "answer": "The worker earns $0 per second, and the swap does not occur while either worker is striking.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q029",
+    "question": "How do the bike and treadmill reports differ when power is high but below overload, such as 90?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_h_H6bCj0",
+        "excerpt": "| 75–100% | ⚡⚡⚡ TRIPLE CHARGE | +6 elec/s"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_niPjez8x",
+        "excerpt": "Zone 25–75: **restores +4 stamina/s**"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_niPjez8x",
+        "excerpt": "Zone 75+: **drains −6 stamina/s**"
+      }
+    ],
+    "answer": "The bike generates six electricity per second; the treadmill drains six stamina per second.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q030",
+    "question": "Which two reported actions provide full stamina in the health conversation, and what separate electricity cost was later attached to one?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_nWojRPHY",
+        "excerpt": "Coffee ☕ | → **100**"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_AuhXCAkD",
+        "excerpt": "**When it works:** full stamina instantly"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Z0kN2qpM",
+        "excerpt": "**Coffee machine** costs **−5 ⚡**"
+      }
+    ],
+    "answer": "Coffee and a successful peptide shot refill stamina; the lighting conversation charges five electricity for coffee.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q031",
+    "question": "What extra eligibility and cost did the later double jump add beyond the parkour conversation’s ordinary free hop?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_YmFwcasJ",
+        "excerpt": "**After:** −4 stamina, 0.28s arc"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_eQVc_329",
+        "excerpt": "not currently in a jump"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_eQVc_329",
+        "excerpt": "costs −5 energy"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "**Double jump** now requires `staminaLevel >= 2` as its first gate"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "The `energy > 50` check remains as the second gate."
+      }
+    ],
+    "answer": "An airborne double jump requires level 2 or higher and energy above 50, and costs five more energy after the four-cost free hop.",
+    "requires_answers": []
+  }
+]

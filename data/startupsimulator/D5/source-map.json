@@ -1,0 +1,2741 @@
+{
+  "original_session_id": "1790203740725_b8m2s",
+  "session_start_utc": "2026-09-23T22:49:01.361Z",
+  "session_start_source": "first recorded message timestamp; export has no explicit session-start metadata",
+  "first_message_utc": "2026-09-23T22:49:01.361Z",
+  "source_files_sha256": {
+    "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json": "b6d8bbbe5b3e5f7c5e76dab22e035f0c192dc25a086d5e5a16f169d97ff682a4"
+  },
+  "messages": [
+    {
+      "dia_id": "D5:1",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 0,
+      "original_block_index": 0,
+      "original_message_id": "msg_muep33ch_o1h",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203741361,
+      "timestamp_utc": "2026-09-23T22:49:01.361Z",
+      "role": "user",
+      "text_sha256": "99cb4c0be8f395e4d1086f16068f69de758aa2de0149ba45caaa6287527569f9",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:2",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 15,
+      "original_block_index": 0,
+      "original_message_id": "msg_lXrNUMGk",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203761894,
+      "timestamp_utc": "2026-09-23T22:49:21.894Z",
+      "role": "assistant",
+      "text_sha256": "19b908c981ef8eb109723400e51d5a9a32d0231336d9c0de7cdf203623c345a2",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:3",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 19,
+      "original_block_index": 0,
+      "original_message_id": "msg_j_dF6_ea",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203768719,
+      "timestamp_utc": "2026-09-23T22:49:28.719Z",
+      "role": "assistant",
+      "text_sha256": "91221670193094e2e2743eed3848d2b677155837985bb1e2e357041ca7f4e884",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:4",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 21,
+      "original_block_index": 0,
+      "original_message_id": "msg_zXjBybQZ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203773115,
+      "timestamp_utc": "2026-09-23T22:49:33.115Z",
+      "role": "assistant",
+      "text_sha256": "fa4bc75346220104f4935f5e13174532054472827a78a1cee8762fcba0e23354",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:5",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 27,
+      "original_block_index": 0,
+      "original_message_id": "msg_TNZb46a6",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203787472,
+      "timestamp_utc": "2026-09-23T22:49:47.472Z",
+      "role": "assistant",
+      "text_sha256": "b37a96d445adda6fa96a1d158b07516cb2591ebf1fbde419d7604fd2d1a0957a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:6",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 31,
+      "original_block_index": 0,
+      "original_message_id": "msg_pBBUmm7C",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203797804,
+      "timestamp_utc": "2026-09-23T22:49:57.804Z",
+      "role": "assistant",
+      "text_sha256": "c8d374ac7da20054e2163c47b6102162ef346cad40148ca1ffa6324a7f53fe37",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:7",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 33,
+      "original_block_index": 0,
+      "original_message_id": "msg_VWcTFNpI",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203804724,
+      "timestamp_utc": "2026-09-23T22:50:04.724Z",
+      "role": "assistant",
+      "text_sha256": "7c2571aafa572d1cbb7c512183e93382a8ecf3b0f749e74fbe0b97afba0dbdf3",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:8",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 35,
+      "original_block_index": 0,
+      "original_message_id": "msg_-ZjNmLAz",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203810708,
+      "timestamp_utc": "2026-09-23T22:50:10.708Z",
+      "role": "assistant",
+      "text_sha256": "3987b22fa638897ac4e573e9a6172fc1ef7a02b7be73946761c9948a944ba107",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:9",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 37,
+      "original_block_index": 0,
+      "original_message_id": "msg_ZUWCA2Xk",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203825443,
+      "timestamp_utc": "2026-09-23T22:50:25.443Z",
+      "role": "assistant",
+      "text_sha256": "28500b8c3de3d83b02123b688abdad3ffaad922503e7ada154a3c5ac3a3bf631",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:10",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 39,
+      "original_block_index": 0,
+      "original_message_id": "msg__yT_l2br",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203841433,
+      "timestamp_utc": "2026-09-23T22:50:41.433Z",
+      "role": "assistant",
+      "text_sha256": "bb37c3dde061ec4edf9f67574748506309b00549a1d43a54c3e4baedb3a7c5b1",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:11",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 45,
+      "original_block_index": 0,
+      "original_message_id": "msg_5hPfb1EV",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203857278,
+      "timestamp_utc": "2026-09-23T22:50:57.278Z",
+      "role": "assistant",
+      "text_sha256": "59ca928faf7f6bbbf9dd0f5ca759b3eae882ad532d3ef60896542e7d89a6e97c",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:12",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 47,
+      "original_block_index": 0,
+      "original_message_id": "msg_OLIbGQ9h",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203863984,
+      "timestamp_utc": "2026-09-23T22:51:03.984Z",
+      "role": "assistant",
+      "text_sha256": "2068121e1f26e7a15284b8b3f3b9a9b3f07e9dbfb0ee3eb4c790029d3566537a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:13",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 49,
+      "original_block_index": 0,
+      "original_message_id": "msg_5EhHy9Ei",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203868595,
+      "timestamp_utc": "2026-09-23T22:51:08.595Z",
+      "role": "assistant",
+      "text_sha256": "618f2b6cf89a5fa62391768d26be6cd637c8c71f1cd6d65edd69b2816cd43225",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:14",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 51,
+      "original_block_index": 0,
+      "original_message_id": "msg_7AnAUd19",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203871512,
+      "timestamp_utc": "2026-09-23T22:51:11.512Z",
+      "role": "assistant",
+      "text_sha256": "42e46f0f3326cdf577c2cd85e3988367298782590735689333d08a14753ecef3",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:15",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 53,
+      "original_block_index": 0,
+      "original_message_id": "msg_GwmYe5ac",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203879979,
+      "timestamp_utc": "2026-09-23T22:51:19.979Z",
+      "role": "assistant",
+      "text_sha256": "1d602783753073f4db7d0884e6ce334e11774ebfb75d0616800d23d6474e01fd",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:16",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 55,
+      "original_block_index": 0,
+      "original_message_id": "msg_tQ0JqV8s",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203887199,
+      "timestamp_utc": "2026-09-23T22:51:27.199Z",
+      "role": "assistant",
+      "text_sha256": "09feaa2f57e18dcede16aca773b256cbe471d63d9164c5ce2930e5fe8c096df4",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:17",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 57,
+      "original_block_index": 0,
+      "original_message_id": "msg_PyhnDKpI",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203892701,
+      "timestamp_utc": "2026-09-23T22:51:32.701Z",
+      "role": "assistant",
+      "text_sha256": "bafcf44ac0a1ccf8dba06df0b8845f516e3a61b8ab8cb2d7aba183fa59c02417",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:18",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 59,
+      "original_block_index": 0,
+      "original_message_id": "msg_-aoiznbx",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203896270,
+      "timestamp_utc": "2026-09-23T22:51:36.270Z",
+      "role": "assistant",
+      "text_sha256": "e268964531a6cc5bc0a6ad0104112df9482eed0fb8eae97cf71c9ac013c44c61",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:19",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 61,
+      "original_block_index": 0,
+      "original_message_id": "msg_CZH0m-NP",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790203906756,
+      "timestamp_utc": "2026-09-23T22:51:46.756Z",
+      "role": "assistant",
+      "text_sha256": "6adb09dd4bbe7a274db0aa8aa2764c376b0e21cbe1b7b0c23fcb2c1e7faf7e32",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:20",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 62,
+      "original_block_index": 0,
+      "original_message_id": "msg_mueqg3lx_os7",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206027845,
+      "timestamp_utc": "2026-09-23T23:27:07.845Z",
+      "role": "user",
+      "text_sha256": "682fbfd29a46387aa5a2eaa7ecec77d018f8ce522c2408c0db80732a2db2a9c5",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:21",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 65,
+      "original_block_index": 0,
+      "original_message_id": "msg_f5e2sLL8",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206038466,
+      "timestamp_utc": "2026-09-23T23:27:18.466Z",
+      "role": "assistant",
+      "text_sha256": "d13d5dcac03820d028db416b10ed1337941ea903895df4188a1f0f0fed954ec3",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:22",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 67,
+      "original_block_index": 0,
+      "original_message_id": "msg_Cki45YQJ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206045639,
+      "timestamp_utc": "2026-09-23T23:27:25.639Z",
+      "role": "assistant",
+      "text_sha256": "89c93e3831dbcf586da8215f57aed0a7e8a1d49c6dbcd7e50063663c221e23d1",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:23",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 69,
+      "original_block_index": 0,
+      "original_message_id": "msg_-sJaFsHa",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206050995,
+      "timestamp_utc": "2026-09-23T23:27:30.995Z",
+      "role": "assistant",
+      "text_sha256": "9908901e82a782e55f33ce4e9eca47c00d3590b36530d873b19da526dd43bd46",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:24",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 75,
+      "original_block_index": 0,
+      "original_message_id": "msg_HgAcD0oT",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206073183,
+      "timestamp_utc": "2026-09-23T23:27:53.183Z",
+      "role": "assistant",
+      "text_sha256": "923d0512c7e604c3a89d7ecb322844078195b098f164bbe90b2c99086d194df5",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:25",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 77,
+      "original_block_index": 0,
+      "original_message_id": "msg_HDQLl5I-",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206080548,
+      "timestamp_utc": "2026-09-23T23:28:00.548Z",
+      "role": "assistant",
+      "text_sha256": "f113050c9f890495eda5e856d8c7c3c5b4dc8cba10834aa94888edfb3ca44fe8",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:26",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 79,
+      "original_block_index": 0,
+      "original_message_id": "msg_qn5qOMpB",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206089419,
+      "timestamp_utc": "2026-09-23T23:28:09.419Z",
+      "role": "assistant",
+      "text_sha256": "e1336bb8cf8fefee97c0e3c6180c5d5841bd79610209c9e24f76b5ac3ca00c3b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:27",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 81,
+      "original_block_index": 0,
+      "original_message_id": "msg_GLbhtg6b",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206095910,
+      "timestamp_utc": "2026-09-23T23:28:15.910Z",
+      "role": "assistant",
+      "text_sha256": "a8978cbe484e912ca01c919db9b68e0d5c903a5a5f970ed6570e971bf9901634",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:28",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 83,
+      "original_block_index": 0,
+      "original_message_id": "msg_m0o-Mwb2",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206116491,
+      "timestamp_utc": "2026-09-23T23:28:36.491Z",
+      "role": "assistant",
+      "text_sha256": "3c3e7ff1fb05855f777dd7fcba69e67b3bbec034d24e221a9840d089e354f537",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:29",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 85,
+      "original_block_index": 0,
+      "original_message_id": "msg_Sn4DPjle",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206123414,
+      "timestamp_utc": "2026-09-23T23:28:43.414Z",
+      "role": "assistant",
+      "text_sha256": "4f6325f82c271c5aeb083f0f5267c4ed41b80fa7cccffb5047e05663663d30a0",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:30",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 87,
+      "original_block_index": 0,
+      "original_message_id": "msg_2wi-1-B0",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206136067,
+      "timestamp_utc": "2026-09-23T23:28:56.067Z",
+      "role": "assistant",
+      "text_sha256": "29869c94e71d4fd49f320ce228fe4ce4c0f067f8992002386ebce82378a14e6b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:31",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 89,
+      "original_block_index": 0,
+      "original_message_id": "msg_gLrV6FNn",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206142086,
+      "timestamp_utc": "2026-09-23T23:29:02.086Z",
+      "role": "assistant",
+      "text_sha256": "e539223415e22dc8a128766fffb092f6ef6d6f6d316b5e6c39cfab5c5700f897",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:32",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 91,
+      "original_block_index": 0,
+      "original_message_id": "msg_NjEbEnkB",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206148183,
+      "timestamp_utc": "2026-09-23T23:29:08.183Z",
+      "role": "assistant",
+      "text_sha256": "5fa6a2ad463c84fb3e1687af95fc30b8e1354512e82ae5059a7b57b69bc86958",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:33",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 95,
+      "original_block_index": 0,
+      "original_message_id": "msg_seldwgxq",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206189578,
+      "timestamp_utc": "2026-09-23T23:29:49.578Z",
+      "role": "assistant",
+      "text_sha256": "4e25cf0dac582970e16b5213476c530005da32897ffd5e9a6eff0dcd8b80aa1a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:34",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 97,
+      "original_block_index": 0,
+      "original_message_id": "msg_hTCm_eiX",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790206200859,
+      "timestamp_utc": "2026-09-23T23:30:00.859Z",
+      "role": "assistant",
+      "text_sha256": "892da3c2c4b94071a693deabb2e1619980d32af266b46a62ca3b03f5298ea8f8",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:35",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 98,
+      "original_block_index": 0,
+      "original_message_id": "msg_muer51kz_pw8",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207191619,
+      "timestamp_utc": "2026-09-23T23:46:31.619Z",
+      "role": "user",
+      "text_sha256": "1802577daee3b49e7cd24844d10fca462d1fa7df38527166ed29b79075f5495b",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:36",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 101,
+      "original_block_index": 0,
+      "original_message_id": "msg_E8Hy3kZd",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207199538,
+      "timestamp_utc": "2026-09-23T23:46:39.538Z",
+      "role": "assistant",
+      "text_sha256": "573f3c6b4dbc1da9347371f11f9fa3abcb0bd2548a65db1d7df24279e12d3f79",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:37",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 103,
+      "original_block_index": 0,
+      "original_message_id": "msg_1Q6wjfZf",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207203887,
+      "timestamp_utc": "2026-09-23T23:46:43.887Z",
+      "role": "assistant",
+      "text_sha256": "fb6a403755d0ae1e1f4d5db88db8a58a0ffba3c7bce1668abab43d7c78de2c81",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:38",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 105,
+      "original_block_index": 0,
+      "original_message_id": "msg_Wlxd4aX0",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207213591,
+      "timestamp_utc": "2026-09-23T23:46:53.591Z",
+      "role": "assistant",
+      "text_sha256": "ce3f57d255bc5207f74d6b138f9a26a0d11c744d5157cdbe2ce51e63b19b2c23",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:39",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 109,
+      "original_block_index": 0,
+      "original_message_id": "msg_kgraHbsI",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207224557,
+      "timestamp_utc": "2026-09-23T23:47:04.557Z",
+      "role": "assistant",
+      "text_sha256": "3f4665d0c5239c9e2d2ff5278f312156a77845e54d672f56ba33beba7e1277ca",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:40",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 111,
+      "original_block_index": 0,
+      "original_message_id": "msg_5J-XBfTl",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207235538,
+      "timestamp_utc": "2026-09-23T23:47:15.538Z",
+      "role": "assistant",
+      "text_sha256": "71191c74a8f827833ce555c6effb0e962814df18b85c549b8e47d4404e863853",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:41",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 113,
+      "original_block_index": 0,
+      "original_message_id": "msg_lt38zM5N",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207249799,
+      "timestamp_utc": "2026-09-23T23:47:29.799Z",
+      "role": "assistant",
+      "text_sha256": "48b38305c3d1061d6b9b64cde0947f3efd5c1010e92fe834fe2a3d4c9071eb95",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:42",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 115,
+      "original_block_index": 0,
+      "original_message_id": "msg_NnnDXpnj",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207253836,
+      "timestamp_utc": "2026-09-23T23:47:33.836Z",
+      "role": "assistant",
+      "text_sha256": "35814a21434b1565e258b5d25c85623cbb5f8f211d839527422da6565fe39616",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:43",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 117,
+      "original_block_index": 0,
+      "original_message_id": "msg_0VulDyqs",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207262355,
+      "timestamp_utc": "2026-09-23T23:47:42.355Z",
+      "role": "assistant",
+      "text_sha256": "302305794cd3614868c05e71ba189962383093c52aff2f05c106711799e3d8d2",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:44",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 119,
+      "original_block_index": 0,
+      "original_message_id": "msg_9a9QonlX",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207269103,
+      "timestamp_utc": "2026-09-23T23:47:49.103Z",
+      "role": "assistant",
+      "text_sha256": "a0c995f2e6e3d787f00cd236adbfdf993da4eebb3a4488318163a3e274755ca3",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:45",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 121,
+      "original_block_index": 0,
+      "original_message_id": "msg_cUFYBk4O",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207273992,
+      "timestamp_utc": "2026-09-23T23:47:53.992Z",
+      "role": "assistant",
+      "text_sha256": "fd3d85e9656545412201e6859d00dddaad7040718109d84ff960093ae7ac3e13",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:46",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 125,
+      "original_block_index": 0,
+      "original_message_id": "msg_CKexBO6v",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207280949,
+      "timestamp_utc": "2026-09-23T23:48:00.949Z",
+      "role": "assistant",
+      "text_sha256": "1b6d878f3bee1d0120f1c6118185b1b4787ab6cefd7ae0fbf54f0e3f1f4f5c33",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:47",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 127,
+      "original_block_index": 0,
+      "original_message_id": "msg__ig4N_fa",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207288236,
+      "timestamp_utc": "2026-09-23T23:48:08.236Z",
+      "role": "assistant",
+      "text_sha256": "a2170706912692c94efdec505edb7ce73ba7e31b20b5ee1db6b6c7b23a0e8cc0",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:48",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 129,
+      "original_block_index": 0,
+      "original_message_id": "msg_gzZDvAbo",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207294076,
+      "timestamp_utc": "2026-09-23T23:48:14.076Z",
+      "role": "assistant",
+      "text_sha256": "af3ea376bbde6d27627c53a60de0a3604f52ed6bae4983896a2186650fea395e",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:49",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 131,
+      "original_block_index": 0,
+      "original_message_id": "msg_Uv2VP7LV",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207300949,
+      "timestamp_utc": "2026-09-23T23:48:20.949Z",
+      "role": "assistant",
+      "text_sha256": "04985baa2188388065d2cde1c3640a9490989789afb5c549323d4f70e1f18ae5",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:50",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 133,
+      "original_block_index": 0,
+      "original_message_id": "msg_NGOAHqVs",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207306180,
+      "timestamp_utc": "2026-09-23T23:48:26.180Z",
+      "role": "assistant",
+      "text_sha256": "036eb1e620854ee9cee150329cb1566adb15314969bd45eaa56e95dc4617f88d",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:51",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 135,
+      "original_block_index": 0,
+      "original_message_id": "msg_ttJiCFiL",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207309385,
+      "timestamp_utc": "2026-09-23T23:48:29.385Z",
+      "role": "assistant",
+      "text_sha256": "565c50e7d653a8e7d9afd09bcc1b8a37d91447bc9b10d803ee05e49e7e45b568",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:52",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 137,
+      "original_block_index": 0,
+      "original_message_id": "msg_lk5HvRdB",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207314831,
+      "timestamp_utc": "2026-09-23T23:48:34.831Z",
+      "role": "assistant",
+      "text_sha256": "60836ba44ec80424dc065d9ff2de4674b2df73c72de9bea73431dfed71dc99b1",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:53",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 139,
+      "original_block_index": 0,
+      "original_message_id": "msg_ti-PS8jR",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207318995,
+      "timestamp_utc": "2026-09-23T23:48:38.995Z",
+      "role": "assistant",
+      "text_sha256": "6dc7046833d9e5cf59561b0fc770215d7141733849803bd306610102bd96b741",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:54",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 141,
+      "original_block_index": 0,
+      "original_message_id": "msg_K412a9Ml",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207347150,
+      "timestamp_utc": "2026-09-23T23:49:07.150Z",
+      "role": "assistant",
+      "text_sha256": "08f8e784e98c21cbf9203adf500df6d5e19fd1193dc817ef96d9e0ce19695c13",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:55",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 143,
+      "original_block_index": 0,
+      "original_message_id": "msg__ozShxHu",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207351879,
+      "timestamp_utc": "2026-09-23T23:49:11.879Z",
+      "role": "assistant",
+      "text_sha256": "16f93327a0be3ca26395bf941168f3058eae4916ffb1ad5e4fd43ab174c0eb94",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:56",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 145,
+      "original_block_index": 0,
+      "original_message_id": "msg_WDs0eqbA",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207356912,
+      "timestamp_utc": "2026-09-23T23:49:16.912Z",
+      "role": "assistant",
+      "text_sha256": "ffe448ae3356bae8f9ec7a7ef1a82f0c3014120206034d7c67d097349a76d094",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:57",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 147,
+      "original_block_index": 0,
+      "original_message_id": "msg_4_1Y4y4Y",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207362822,
+      "timestamp_utc": "2026-09-23T23:49:22.822Z",
+      "role": "assistant",
+      "text_sha256": "8a68c160031dd17acfcb502cb4c9dc8dca0a86fc96c96628a36ff55df9af57dd",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:58",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 151,
+      "original_block_index": 0,
+      "original_message_id": "msg_uTUczGBt",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207368188,
+      "timestamp_utc": "2026-09-23T23:49:28.188Z",
+      "role": "assistant",
+      "text_sha256": "97037c432e3af374f1e353874ceb088a0133713293759d35bf57788ca5c1c50b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:59",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 153,
+      "original_block_index": 0,
+      "original_message_id": "msg_X_9oP6RZ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207371984,
+      "timestamp_utc": "2026-09-23T23:49:31.984Z",
+      "role": "assistant",
+      "text_sha256": "414ed407ac3fc258120a2be871c530d219e995cb7108ecb0f2f61fcb7082c69b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:60",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 155,
+      "original_block_index": 0,
+      "original_message_id": "msg_VcDSZAch",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207375812,
+      "timestamp_utc": "2026-09-23T23:49:35.812Z",
+      "role": "assistant",
+      "text_sha256": "45c708623582f7bc36fdd20aacc8ca93c1ac871abc64a74b87652a7b357b1ffa",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:61",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 157,
+      "original_block_index": 0,
+      "original_message_id": "msg_eXkzdPCZ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207379757,
+      "timestamp_utc": "2026-09-23T23:49:39.757Z",
+      "role": "assistant",
+      "text_sha256": "9dbdd8493c43b497086b4249c8bab4c72fca6eff59af354132319f40fb96e75f",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:62",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 159,
+      "original_block_index": 0,
+      "original_message_id": "msg_YulXOh82",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207385765,
+      "timestamp_utc": "2026-09-23T23:49:45.765Z",
+      "role": "assistant",
+      "text_sha256": "955f3c8d43a9557c4d06dd10d3c8d442539e53d39541acd58044e57c70ac42e0",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:63",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 161,
+      "original_block_index": 0,
+      "original_message_id": "msg_LW3kdgjB",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207390865,
+      "timestamp_utc": "2026-09-23T23:49:50.865Z",
+      "role": "assistant",
+      "text_sha256": "3cb94869cd35a2935c8ab1e0a0b03d080b05362301fd4146aefd39aeb562abf4",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:64",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 163,
+      "original_block_index": 0,
+      "original_message_id": "msg_4ZAfqzXc",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207396069,
+      "timestamp_utc": "2026-09-23T23:49:56.069Z",
+      "role": "assistant",
+      "text_sha256": "f2718607598c37b83ce1e5d74215124e3a8f67ae73d398e090a9336ae0f35364",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:65",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 165,
+      "original_block_index": 0,
+      "original_message_id": "msg_JtylCvIh",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207399769,
+      "timestamp_utc": "2026-09-23T23:49:59.769Z",
+      "role": "assistant",
+      "text_sha256": "83ba15e35576373b21f239234d5cd01640af04e9403eaa9fb9fefe33b26d0ecd",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:66",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 167,
+      "original_block_index": 0,
+      "original_message_id": "msg_qTM1DOiS",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207403795,
+      "timestamp_utc": "2026-09-23T23:50:03.795Z",
+      "role": "assistant",
+      "text_sha256": "430afa379913d1686afcf5af91d5b2f840a599b805d9d79e055e3e929d9cc4f0",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:67",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 171,
+      "original_block_index": 0,
+      "original_message_id": "msg_Hf6qNHzQ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207413555,
+      "timestamp_utc": "2026-09-23T23:50:13.555Z",
+      "role": "assistant",
+      "text_sha256": "6ba46c31b42972ccae15fdb3c668ebd9d59ca7d6c2fe632f223e4f21c2e18267",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:68",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 173,
+      "original_block_index": 0,
+      "original_message_id": "msg_zWcLUTL4",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790207424961,
+      "timestamp_utc": "2026-09-23T23:50:24.961Z",
+      "role": "assistant",
+      "text_sha256": "6b9fa145644a8bb0c150b18acbcee72386b801d3a04fad70d841853ac496eb4a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:69",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 174,
+      "original_block_index": 0,
+      "original_message_id": "msg_muervsvv_rl5",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208440059,
+      "timestamp_utc": "2026-09-24T00:07:20.059Z",
+      "role": "user",
+      "text_sha256": "84801227fe6bbbb0cb64b79f6a7bd2dddadce33a752b2e9713bf3596e0a15adc",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:70",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 175,
+      "original_block_index": 0,
+      "original_message_id": "msg_FmRYrE2c",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208443656,
+      "timestamp_utc": "2026-09-24T00:07:23.656Z",
+      "role": "assistant",
+      "text_sha256": "7118d5ac2ebfd7fa6485e3546cd8ccc287d967c3edc3f1b0b26d20657433ade9",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:71",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 177,
+      "original_block_index": 0,
+      "original_message_id": "msg_rdO0Aw3e",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208453940,
+      "timestamp_utc": "2026-09-24T00:07:33.940Z",
+      "role": "assistant",
+      "text_sha256": "2f4e3f335df27c55bc98161f411c57214cd89dadda4db3a2a21ceddf7728e926",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:72",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 179,
+      "original_block_index": 0,
+      "original_message_id": "msg_gyabrN-J",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208460045,
+      "timestamp_utc": "2026-09-24T00:07:40.045Z",
+      "role": "assistant",
+      "text_sha256": "f84ccd1f33d92372202482ca59117f562328f8f38295c0e4a061044b702fc822",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:73",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 181,
+      "original_block_index": 0,
+      "original_message_id": "msg_Xn3jZXCK",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208467077,
+      "timestamp_utc": "2026-09-24T00:07:47.077Z",
+      "role": "assistant",
+      "text_sha256": "ed9007da661ff215731e48f4d9ee8d60083beb01b633c42649618bbae864bf7e",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:74",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 183,
+      "original_block_index": 0,
+      "original_message_id": "msg_b9cblvZn",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208474472,
+      "timestamp_utc": "2026-09-24T00:07:54.472Z",
+      "role": "assistant",
+      "text_sha256": "c25d190dee625f5cc944b3080451ed088cf26dd5d2b7a1f2582e0628cb0b2979",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:75",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 185,
+      "original_block_index": 0,
+      "original_message_id": "msg_N63YXiqw",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208486435,
+      "timestamp_utc": "2026-09-24T00:08:06.435Z",
+      "role": "assistant",
+      "text_sha256": "2cec69100c794e1396586dc59457bdeac1d9fd410201eeaeb95d438f2e67a2aa",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:76",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 187,
+      "original_block_index": 0,
+      "original_message_id": "msg_-wF45iLb",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208492805,
+      "timestamp_utc": "2026-09-24T00:08:12.805Z",
+      "role": "assistant",
+      "text_sha256": "d1aea311291557b294d0566b867d2ba8b7e4451c33f0a726a2c0fd32cd180f01",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:77",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 189,
+      "original_block_index": 0,
+      "original_message_id": "msg_48FTNyv2",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208500271,
+      "timestamp_utc": "2026-09-24T00:08:20.271Z",
+      "role": "assistant",
+      "text_sha256": "270b6c28440dc6850eff5396834a6fc69080965c4aca190fe9936105d7f38e6b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:78",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 191,
+      "original_block_index": 0,
+      "original_message_id": "msg_b32RyN8P",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208581541,
+      "timestamp_utc": "2026-09-24T00:09:41.541Z",
+      "role": "assistant",
+      "text_sha256": "f929b25fe30afcaa6a332b26f35cb8104e396bf66bb4fff24763869b151f001f",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:79",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 193,
+      "original_block_index": 0,
+      "original_message_id": "msg_AElpkrVj",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208586922,
+      "timestamp_utc": "2026-09-24T00:09:46.922Z",
+      "role": "assistant",
+      "text_sha256": "2e49ac9d4f128e5a22197a093a7b746c8eed20704c9dcdfbcb2940f4b77323c5",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:80",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 195,
+      "original_block_index": 0,
+      "original_message_id": "msg_ABRTEofI",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208637669,
+      "timestamp_utc": "2026-09-24T00:10:37.669Z",
+      "role": "assistant",
+      "text_sha256": "53515495cf946771684121b52addc2f4abbbccbc2e7328bd9dbc3bf8b98be983",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:81",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 197,
+      "original_block_index": 0,
+      "original_message_id": "msg_k5MHwTQO",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208642970,
+      "timestamp_utc": "2026-09-24T00:10:42.970Z",
+      "role": "assistant",
+      "text_sha256": "bb45e68af2c659e090c070a62e7f96e61651b7517a6998086c267f66f2f03bf4",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:82",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 199,
+      "original_block_index": 0,
+      "original_message_id": "msg_N8dARVim",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208647413,
+      "timestamp_utc": "2026-09-24T00:10:47.413Z",
+      "role": "assistant",
+      "text_sha256": "5b3ed518f165360b22ef692ae4e8bdc7576c2ef3c6ec7540d562a2afb6956f26",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:83",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 201,
+      "original_block_index": 0,
+      "original_message_id": "msg_CMWHGMWr",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790208660212,
+      "timestamp_utc": "2026-09-24T00:11:00.212Z",
+      "role": "assistant",
+      "text_sha256": "1db0b7a7e600bba28f7e3749ef2dcae02d74bdca2266be4a61c67d3bc3b12c06",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:84",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 202,
+      "original_block_index": 0,
+      "original_message_id": "msg_muesqwxr_sky",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209891647,
+      "timestamp_utc": "2026-09-24T00:31:31.647Z",
+      "role": "user",
+      "text_sha256": "920a932c35ce03592e3cee6559722b1eb521ed6deb506f4af1e9dcf7a8d4969d",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:85",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 203,
+      "original_block_index": 0,
+      "original_message_id": "msg_zsA3xa8q",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209895991,
+      "timestamp_utc": "2026-09-24T00:31:35.991Z",
+      "role": "assistant",
+      "text_sha256": "ea592ac2cd26a24e79c81be271d0f0fb5e3c35e741852d76a06195b86b4e980d",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:86",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 207,
+      "original_block_index": 0,
+      "original_message_id": "msg_Codaanrm",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209904761,
+      "timestamp_utc": "2026-09-24T00:31:44.761Z",
+      "role": "assistant",
+      "text_sha256": "47cacd7e3b8c862b211e36fb97f7f801fa99877ffa5ca540916430c8974d1874",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:87",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 211,
+      "original_block_index": 0,
+      "original_message_id": "msg_uertYu_m",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209921793,
+      "timestamp_utc": "2026-09-24T00:32:01.793Z",
+      "role": "assistant",
+      "text_sha256": "243af22da9f00a4ac8f6a1bde23fc55ab3eb4e26ea74067e018f1e7772ef6e1a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:88",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 215,
+      "original_block_index": 0,
+      "original_message_id": "msg_eBJIx-P-",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209938209,
+      "timestamp_utc": "2026-09-24T00:32:18.209Z",
+      "role": "assistant",
+      "text_sha256": "1e776d52233b7a76b5ae8ed9e02a4ec958736985baf04532f4fa2e604417ff28",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:89",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 217,
+      "original_block_index": 0,
+      "original_message_id": "msg_6sspG0Pg",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209961610,
+      "timestamp_utc": "2026-09-24T00:32:41.610Z",
+      "role": "assistant",
+      "text_sha256": "ad233dcbeff0511068a8f33c5e042bd672d847f7f2586e05765049b4e316e246",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:90",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 219,
+      "original_block_index": 0,
+      "original_message_id": "msg_OW6zSIf5",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209967785,
+      "timestamp_utc": "2026-09-24T00:32:47.785Z",
+      "role": "assistant",
+      "text_sha256": "387f070d5faf5c2e1e06e7042b7fde9a3011bc2787efcb4b5ac186aa178d5777",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:91",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 221,
+      "original_block_index": 0,
+      "original_message_id": "msg_HRRo08xE",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209972207,
+      "timestamp_utc": "2026-09-24T00:32:52.207Z",
+      "role": "assistant",
+      "text_sha256": "e0ab7cd9171dc041744d49197bca89a5011274edbde475147a7836691acc9473",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:92",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 223,
+      "original_block_index": 0,
+      "original_message_id": "msg_o4mHMtfz",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209975600,
+      "timestamp_utc": "2026-09-24T00:32:55.600Z",
+      "role": "assistant",
+      "text_sha256": "0c1d7dbdb7e3eef0d22a5f22c5f5a535586cd639bc36d027f4a7edb9ef9447ac",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:93",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 225,
+      "original_block_index": 0,
+      "original_message_id": "msg_9t0mMxsJ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209982427,
+      "timestamp_utc": "2026-09-24T00:33:02.427Z",
+      "role": "assistant",
+      "text_sha256": "2bccb8969574b9f4464e4afb68e4748b2e9639e8ba9b2bece827110c54528069",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:94",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 227,
+      "original_block_index": 0,
+      "original_message_id": "msg_8shqrImQ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790209986403,
+      "timestamp_utc": "2026-09-24T00:33:06.403Z",
+      "role": "assistant",
+      "text_sha256": "a993ef64c7c0143b1e85790fc69e1379b891aeff7f04da1edaace79b45801cc5",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:95",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 229,
+      "original_block_index": 0,
+      "original_message_id": "msg_TwynTEhh",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790210000228,
+      "timestamp_utc": "2026-09-24T00:33:20.228Z",
+      "role": "assistant",
+      "text_sha256": "13f36ffc6ad9a0b1464f13e81d420443150d5cc22b5c17faaf6602dfda93a4c3",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:96",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 230,
+      "original_block_index": 0,
+      "original_message_id": "msg_muez8nbm_szv",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220796690,
+      "timestamp_utc": "2026-09-24T03:33:16.690Z",
+      "role": "user",
+      "text_sha256": "7cd98dc47aadf642fa48ab43e42822d5600bda44ff1ec1c5e825f6911e10f99b",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:97",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 231,
+      "original_block_index": 0,
+      "original_message_id": "msg_QwXrrNGK",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220800410,
+      "timestamp_utc": "2026-09-24T03:33:20.410Z",
+      "role": "assistant",
+      "text_sha256": "30840c7075180461e5f961d32f103170caadb2474c6510dade9f76dbff1caba5",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:98",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 233,
+      "original_block_index": 0,
+      "original_message_id": "msg_ZmHYQSTn",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220803891,
+      "timestamp_utc": "2026-09-24T03:33:23.891Z",
+      "role": "assistant",
+      "text_sha256": "83f009fe1e76aca1823c2e3cd3be07c6b6545e04d88da9c38538adde4e3dbf92",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:99",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 235,
+      "original_block_index": 0,
+      "original_message_id": "msg_cITzJw0D",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220819295,
+      "timestamp_utc": "2026-09-24T03:33:39.295Z",
+      "role": "assistant",
+      "text_sha256": "038b7c5f632c82b3b9d57a1518fedea627866fdc4f294ce3db97ddbc5c0bbe3e",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:100",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 237,
+      "original_block_index": 0,
+      "original_message_id": "msg_cfoMWUQP",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220867225,
+      "timestamp_utc": "2026-09-24T03:34:27.225Z",
+      "role": "assistant",
+      "text_sha256": "31fc018b139ee54ff9a70bdf277461ef54aaf42f44d6938f99cea5b79f70cdeb",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:101",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 239,
+      "original_block_index": 0,
+      "original_message_id": "msg_VFkHVdNc",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220879164,
+      "timestamp_utc": "2026-09-24T03:34:39.164Z",
+      "role": "assistant",
+      "text_sha256": "33a1a098d635e219b3b90f3385be6d3c5be1f30d880aa9ed729953f58ecebe5b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:102",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 241,
+      "original_block_index": 0,
+      "original_message_id": "msg_QunxjmpS",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220884586,
+      "timestamp_utc": "2026-09-24T03:34:44.586Z",
+      "role": "assistant",
+      "text_sha256": "f5eb2f8621a07c4fb07a39c4c4307d1125ea1aceaa71db829f96b029b90c4e8a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:103",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 245,
+      "original_block_index": 0,
+      "original_message_id": "msg_n0IpPbBI",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220914245,
+      "timestamp_utc": "2026-09-24T03:35:14.245Z",
+      "role": "assistant",
+      "text_sha256": "3d9e65638b662651930f73420c644607846521501a2bafe01a48eabb23352854",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:104",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 247,
+      "original_block_index": 0,
+      "original_message_id": "msg_xAqLh_CW",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220917359,
+      "timestamp_utc": "2026-09-24T03:35:17.359Z",
+      "role": "assistant",
+      "text_sha256": "14fe363d08ec1a84acb37f1d804babfe69d24a60e3554829ffc8b642cb8b99ca",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:105",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 249,
+      "original_block_index": 0,
+      "original_message_id": "msg_vlQDOTk2",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790220934167,
+      "timestamp_utc": "2026-09-24T03:35:34.167Z",
+      "role": "assistant",
+      "text_sha256": "9173c52f4db2a8208dd557c87bb4e78fcf4280dcf78923893b8c74c0ea9d163c",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:106",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 250,
+      "original_block_index": 0,
+      "original_message_id": "msg_muf04mfu_tb0",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222288538,
+      "timestamp_utc": "2026-09-24T03:58:08.538Z",
+      "role": "user",
+      "text_sha256": "6c419d5dd10607d0f3f3fb911179b671a8c174fcc49c03f630c9a0419a824a1e",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:107",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 257,
+      "original_block_index": 0,
+      "original_message_id": "msg_94_TEi16",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222311800,
+      "timestamp_utc": "2026-09-24T03:58:31.800Z",
+      "role": "assistant",
+      "text_sha256": "4f5f058448cc050ff18b30e446255ccd4493565f8c113e04db1600d2dab29d86",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:108",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 259,
+      "original_block_index": 0,
+      "original_message_id": "msg_x_jazeRa",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222322641,
+      "timestamp_utc": "2026-09-24T03:58:42.641Z",
+      "role": "assistant",
+      "text_sha256": "770939adab5f2a581bae42ed7951042a5841da33e3eab2f311f7190001851898",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:109",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 263,
+      "original_block_index": 0,
+      "original_message_id": "msg_LRa8AeIQ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222339953,
+      "timestamp_utc": "2026-09-24T03:58:59.953Z",
+      "role": "assistant",
+      "text_sha256": "4db0797aed74ba1f842e3322bc4618fa3ca7db8a118eecd76df022e16f136cee",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:110",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 265,
+      "original_block_index": 0,
+      "original_message_id": "msg_iqXe4DzA",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222345010,
+      "timestamp_utc": "2026-09-24T03:59:05.010Z",
+      "role": "assistant",
+      "text_sha256": "89458cf87a2680e2c8b3b557ae5877413bd242043d41a2f0547fdd96fb48b90e",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:111",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 269,
+      "original_block_index": 0,
+      "original_message_id": "msg_yCIqqEfM",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222352854,
+      "timestamp_utc": "2026-09-24T03:59:12.854Z",
+      "role": "assistant",
+      "text_sha256": "e34773a85eadaaf1e0eba867598cbea96a77a26f3ee1d25f9e0520d72f5890c8",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:112",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 277,
+      "original_block_index": 0,
+      "original_message_id": "msg_sPyaWNx6",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222369390,
+      "timestamp_utc": "2026-09-24T03:59:29.390Z",
+      "role": "assistant",
+      "text_sha256": "b8ad601d276ab70c592d98f5e0b3e05eca57b2456b35092b0db94d48596214ac",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:113",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 279,
+      "original_block_index": 0,
+      "original_message_id": "msg_SetnDgyT",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222374369,
+      "timestamp_utc": "2026-09-24T03:59:34.369Z",
+      "role": "assistant",
+      "text_sha256": "f71049c50c895e85d332a9862a47c70a1616a6038b99c24a761974ce33a7642f",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:114",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 283,
+      "original_block_index": 0,
+      "original_message_id": "msg_tIdR5CgR",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222385262,
+      "timestamp_utc": "2026-09-24T03:59:45.262Z",
+      "role": "assistant",
+      "text_sha256": "4dae6c7450c60ae981c17dcabab390c50b30929257ee56c0d27c4670563f6fa6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:115",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 285,
+      "original_block_index": 0,
+      "original_message_id": "msg_Uf7-jRDb",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222426873,
+      "timestamp_utc": "2026-09-24T04:00:26.873Z",
+      "role": "assistant",
+      "text_sha256": "2cf1604139cf6743791e9b4b8338ad03fb1f7f6d5d15f04ec3cc18d8a6b565e1",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:116",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 289,
+      "original_block_index": 0,
+      "original_message_id": "msg_lJuAcaOe",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222435079,
+      "timestamp_utc": "2026-09-24T04:00:35.079Z",
+      "role": "assistant",
+      "text_sha256": "c14f7aa087e0dcbef60bebd87a174f569f1cc82dd72516c9e8537b2096d982e6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:117",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 295,
+      "original_block_index": 0,
+      "original_message_id": "msg_3pwqRyK-",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222452079,
+      "timestamp_utc": "2026-09-24T04:00:52.079Z",
+      "role": "assistant",
+      "text_sha256": "ba000feb0a209e10880908ce85f4315076281f0c8129b704fb1c1c7f4f349c34",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:118",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 299,
+      "original_block_index": 0,
+      "original_message_id": "msg_-iw3Eg3h",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222468360,
+      "timestamp_utc": "2026-09-24T04:01:08.360Z",
+      "role": "assistant",
+      "text_sha256": "50e07f52f23f9156e459cd9904ba3c7c69c72e7d06496a3e0fff4115b8b469c6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:119",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 303,
+      "original_block_index": 0,
+      "original_message_id": "msg_nr9pm6M2",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222478349,
+      "timestamp_utc": "2026-09-24T04:01:18.349Z",
+      "role": "assistant",
+      "text_sha256": "62bc810b8a18733aed3c33b8b36e81ac68849a93d7d44f125a8ddbc34d6d200c",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:120",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 307,
+      "original_block_index": 0,
+      "original_message_id": "msg_7tKIiJZU",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222490264,
+      "timestamp_utc": "2026-09-24T04:01:30.264Z",
+      "role": "assistant",
+      "text_sha256": "7c58b64c8bd1541de2856566dbc6ca609ca481c9920a59648fa000900858833d",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:121",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 309,
+      "original_block_index": 0,
+      "original_message_id": "msg_BP5eIHoT",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222496767,
+      "timestamp_utc": "2026-09-24T04:01:36.767Z",
+      "role": "assistant",
+      "text_sha256": "958b9a4aaaff6e59ccd7f5c9b36bc3bd36f6fb8aab5e30b2b9895a387eacb3b8",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:122",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 311,
+      "original_block_index": 0,
+      "original_message_id": "msg_MIe4XDym",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222560071,
+      "timestamp_utc": "2026-09-24T04:02:40.071Z",
+      "role": "assistant",
+      "text_sha256": "efa6848e2537c57b21fefe952367adefc1947c2618bc32a8af19d98448db5d4b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:123",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 313,
+      "original_block_index": 0,
+      "original_message_id": "msg_SWSF5_jE",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222572109,
+      "timestamp_utc": "2026-09-24T04:02:52.109Z",
+      "role": "assistant",
+      "text_sha256": "73f85b98ca660be89f436054b0231159253c738b15f1dc9f16817cca6c1ba571",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:124",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 315,
+      "original_block_index": 0,
+      "original_message_id": "msg_t5XbJ2m_",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222576539,
+      "timestamp_utc": "2026-09-24T04:02:56.539Z",
+      "role": "assistant",
+      "text_sha256": "1d59326a21316ce0366d49e3ffbb9aebf7627927ffe30e4cd258974428c4cc2b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:125",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 317,
+      "original_block_index": 0,
+      "original_message_id": "msg_4mCzy5yT",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222581331,
+      "timestamp_utc": "2026-09-24T04:03:01.331Z",
+      "role": "assistant",
+      "text_sha256": "5df17e1ed9eb308abbab8edf72202b294f9a723067ba3fc5cfa1bb25924f822a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:126",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 323,
+      "original_block_index": 0,
+      "original_message_id": "msg_Z0kN2qpM",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790222613886,
+      "timestamp_utc": "2026-09-24T04:03:33.886Z",
+      "role": "assistant",
+      "text_sha256": "1249bc7584bf2c1143d759a24ceeb739581794802397523cceb019369b83cd0d",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:127",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 324,
+      "original_block_index": 0,
+      "original_message_id": "msg_mufogtx0_vkg",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263168884,
+      "timestamp_utc": "2026-09-24T15:19:28.884Z",
+      "role": "user",
+      "text_sha256": "bf71fac2421b97a48b32a5f86f2da32e8031bf278660a098c07f62aa84148083",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:128",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 325,
+      "original_block_index": 0,
+      "original_message_id": "msg_l0V7bKxo",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263172055,
+      "timestamp_utc": "2026-09-24T15:19:32.055Z",
+      "role": "assistant",
+      "text_sha256": "eb9ec64d19b194803f394898869fd4b03a0f2dfe90cacd518c6652a3ed45223e",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:129",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 335,
+      "original_block_index": 0,
+      "original_message_id": "msg_xdTkh_2E",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263186035,
+      "timestamp_utc": "2026-09-24T15:19:46.035Z",
+      "role": "assistant",
+      "text_sha256": "1077bfe2cbb05b2275439f566ead0388378608503ef94e729e15233ec80f0014",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:130",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 337,
+      "original_block_index": 0,
+      "original_message_id": "msg_igp1NRDP",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263205852,
+      "timestamp_utc": "2026-09-24T15:20:05.852Z",
+      "role": "assistant",
+      "text_sha256": "726c72b3c96d6db571bc035298b6c010721627532f4400152c1697ee6093dc90",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:131",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 339,
+      "original_block_index": 0,
+      "original_message_id": "msg_8BojH-K3",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263215961,
+      "timestamp_utc": "2026-09-24T15:20:15.961Z",
+      "role": "assistant",
+      "text_sha256": "b52befa498c309197c65bc86d47513799de80747f47af16b4b4e45bf47ad2a4a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:132",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 341,
+      "original_block_index": 0,
+      "original_message_id": "msg_0D6-IKwc",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263224395,
+      "timestamp_utc": "2026-09-24T15:20:24.395Z",
+      "role": "assistant",
+      "text_sha256": "2eefa3dd21b6c558d83ca748fd56bb995c974964123b8b34acc7c83f9457061b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:133",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 345,
+      "original_block_index": 0,
+      "original_message_id": "msg_eS25A0ED",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263234005,
+      "timestamp_utc": "2026-09-24T15:20:34.005Z",
+      "role": "assistant",
+      "text_sha256": "412d2da8c64d605d34dc0361b344742e00a0a9a07ee46d5a5149168c6c6d8bca",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:134",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 351,
+      "original_block_index": 0,
+      "original_message_id": "msg_0r8jGy8H",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263302024,
+      "timestamp_utc": "2026-09-24T15:21:42.024Z",
+      "role": "assistant",
+      "text_sha256": "11a5a2b45b1486ed296c4bac0bd7f13639f3cd13de6196a57d344b48967cf19e",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:135",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 353,
+      "original_block_index": 0,
+      "original_message_id": "msg_T-fgoasD",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263306832,
+      "timestamp_utc": "2026-09-24T15:21:46.832Z",
+      "role": "assistant",
+      "text_sha256": "782c76e29202b2c7d70eb9bed00bfd7f9f552ff0bd957838e371ce40f0759540",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:136",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 359,
+      "original_block_index": 0,
+      "original_message_id": "msg_DgJ3O9mG",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263340834,
+      "timestamp_utc": "2026-09-24T15:22:20.834Z",
+      "role": "assistant",
+      "text_sha256": "26c3ab3618697f70a2c09c4050183817c9c3b589a0abf08d7f5bd08f6a188ded",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:137",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 361,
+      "original_block_index": 0,
+      "original_message_id": "msg_hd1heQF2",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263346166,
+      "timestamp_utc": "2026-09-24T15:22:26.166Z",
+      "role": "assistant",
+      "text_sha256": "6fcdb9211a80c9e26d0bc0265071231952b18cd059551821e8323d1aad3058a7",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:138",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 369,
+      "original_block_index": 0,
+      "original_message_id": "msg_FQtF-ZKP",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263384154,
+      "timestamp_utc": "2026-09-24T15:23:04.154Z",
+      "role": "assistant",
+      "text_sha256": "88772b76f8ac003f2e64a30997f2d47ba2fff48aaf6f7398a655ec8157ae3e4b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:139",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 373,
+      "original_block_index": 0,
+      "original_message_id": "msg_vQCf3PTk",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263393624,
+      "timestamp_utc": "2026-09-24T15:23:13.624Z",
+      "role": "assistant",
+      "text_sha256": "2ce1db87cb4a5bc330422ff3743d45c5017cebb669d9dce8b5032ab47a16a153",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:140",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 375,
+      "original_block_index": 0,
+      "original_message_id": "msg_kmX9Eu2z",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263397136,
+      "timestamp_utc": "2026-09-24T15:23:17.136Z",
+      "role": "assistant",
+      "text_sha256": "55b35de44c1e995289a555d1625010d52ba333be78cb7bd96cc0a55d678a45de",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:141",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 377,
+      "original_block_index": 0,
+      "original_message_id": "msg_4tnSbgyQ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263400729,
+      "timestamp_utc": "2026-09-24T15:23:20.729Z",
+      "role": "assistant",
+      "text_sha256": "5f88621b4d30b47997573d983035baa43e7fe8812d5975ff1e4829889ffb4105",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:142",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 381,
+      "original_block_index": 0,
+      "original_message_id": "msg_ta9CHZNC",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263409537,
+      "timestamp_utc": "2026-09-24T15:23:29.537Z",
+      "role": "assistant",
+      "text_sha256": "85df32cf1b5f489873626fcf35ee6dc195c6980f95896da2b6cfb321f8f5c1a2",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:143",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 383,
+      "original_block_index": 0,
+      "original_message_id": "msg_oUDN5gBz",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790263426252,
+      "timestamp_utc": "2026-09-24T15:23:46.252Z",
+      "role": "assistant",
+      "text_sha256": "d20ab20ce75cde9ac7dda6accdb78172f8cf82cc1edf5a90646303ef029cec22",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:144",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 384,
+      "original_block_index": 0,
+      "original_message_id": "msg_mufu0r45_y0t",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272496453,
+      "timestamp_utc": "2026-09-24T17:54:56.453Z",
+      "role": "user",
+      "text_sha256": "039b33fe20d0f1eee407d7e967cf6da247e5a3603a134dc2885c01c8a483caf6",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:145",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 385,
+      "original_block_index": 0,
+      "original_message_id": "msg_mQi35MUc",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272503027,
+      "timestamp_utc": "2026-09-24T17:55:03.027Z",
+      "role": "assistant",
+      "text_sha256": "bf7a8f1b7ce0c31e00d47e5f629cd18404c09fb6feae44011d86e5f72e99fc49",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:146",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 393,
+      "original_block_index": 0,
+      "original_message_id": "msg_Ojd76apU",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272539797,
+      "timestamp_utc": "2026-09-24T17:55:39.797Z",
+      "role": "assistant",
+      "text_sha256": "d3c9b690fd051b27eec22300640841754e31e3c862dd8c3e6c466bb085f4fbb6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:147",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 395,
+      "original_block_index": 0,
+      "original_message_id": "msg_itwTKvs-",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272543577,
+      "timestamp_utc": "2026-09-24T17:55:43.577Z",
+      "role": "assistant",
+      "text_sha256": "4054495bd7216acdfdf245e5b6a5331d417de8f0660367d3e9c6a910ecb4e5b2",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:148",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 399,
+      "original_block_index": 0,
+      "original_message_id": "msg_Qjd6t4ZE",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272563377,
+      "timestamp_utc": "2026-09-24T17:56:03.377Z",
+      "role": "assistant",
+      "text_sha256": "336a6dadd14d3f78dd5ee85b79c0937484161794d306695195a16e6854087faf",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:149",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 401,
+      "original_block_index": 0,
+      "original_message_id": "msg_5iTyiV2l",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272576680,
+      "timestamp_utc": "2026-09-24T17:56:16.680Z",
+      "role": "assistant",
+      "text_sha256": "a2aa3af72857f55951b7aa9dd168b3f8624a071edb811609d016942960a02a97",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:150",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 403,
+      "original_block_index": 0,
+      "original_message_id": "msg_kzpifLg9",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272583624,
+      "timestamp_utc": "2026-09-24T17:56:23.624Z",
+      "role": "assistant",
+      "text_sha256": "2e701aa22a98c725b94997360396aca1e107161ed4a5fb716bd1fe2ebdb24ed6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:151",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 405,
+      "original_block_index": 0,
+      "original_message_id": "msg_FDQVBb6B",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272593218,
+      "timestamp_utc": "2026-09-24T17:56:33.218Z",
+      "role": "assistant",
+      "text_sha256": "231c7b3d31f3dec3b87f4e1fb0fdf86d89ab3bb2aaa03d8c8a4e1c3aee32c9f0",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:152",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 407,
+      "original_block_index": 0,
+      "original_message_id": "msg_FrgIIctj",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272598154,
+      "timestamp_utc": "2026-09-24T17:56:38.154Z",
+      "role": "assistant",
+      "text_sha256": "f9d3de2e6989d0cb70d1e2dad87d3418ac84ef0dee54643d1085fa4f505bb046",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:153",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 411,
+      "original_block_index": 0,
+      "original_message_id": "msg_shI27jmK",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272607903,
+      "timestamp_utc": "2026-09-24T17:56:47.903Z",
+      "role": "assistant",
+      "text_sha256": "9c25c67db5171674edb8b154d916011736c81ecc99d87001b268f8448bcbcb96",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:154",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 417,
+      "original_block_index": 0,
+      "original_message_id": "msg_C4jr53sD",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272620010,
+      "timestamp_utc": "2026-09-24T17:57:00.010Z",
+      "role": "assistant",
+      "text_sha256": "9073dac84f51470caec0ee60b14e81e37c60b1d6f1c5dcfe33fc43a923fcc013",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:155",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 421,
+      "original_block_index": 0,
+      "original_message_id": "msg_yOdEVf77",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272630621,
+      "timestamp_utc": "2026-09-24T17:57:10.621Z",
+      "role": "assistant",
+      "text_sha256": "8de9356cb0eac105a6ef3f0d3999a64b8e9796c954e8f8a859d52df74e91f6e2",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:156",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 425,
+      "original_block_index": 0,
+      "original_message_id": "msg_7ahaf0fa",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272641810,
+      "timestamp_utc": "2026-09-24T17:57:21.810Z",
+      "role": "assistant",
+      "text_sha256": "920200bfca5af70752c9db145c8b6fbadb5ec1dac198fea3bf8c37e4f85f3a01",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:157",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 431,
+      "original_block_index": 0,
+      "original_message_id": "msg_y0BX-tsF",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272657478,
+      "timestamp_utc": "2026-09-24T17:57:37.478Z",
+      "role": "assistant",
+      "text_sha256": "83e62e02e99d650a04fdf4c438f26c6a94f6a1502a93d1497eebe65858f535df",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:158",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 433,
+      "original_block_index": 0,
+      "original_message_id": "msg_33bNRG_N",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272664615,
+      "timestamp_utc": "2026-09-24T17:57:44.615Z",
+      "role": "assistant",
+      "text_sha256": "b023005b7c0e17c9d7eaa499164a8644617ec3b016162f65ec28f984c4dcd0c4",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:159",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 435,
+      "original_block_index": 0,
+      "original_message_id": "msg_pilxMcA7",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272671659,
+      "timestamp_utc": "2026-09-24T17:57:51.659Z",
+      "role": "assistant",
+      "text_sha256": "744f1d4c91d3c7cc131f4235d0684189d238f04d80d4b609f25d464f848b1332",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:160",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 437,
+      "original_block_index": 0,
+      "original_message_id": "msg_I6f-6m8K",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272680884,
+      "timestamp_utc": "2026-09-24T17:58:00.884Z",
+      "role": "assistant",
+      "text_sha256": "63c8e9d92c8d852e625b29247fe56bf302469b3a91cd19b521c0a0ed69932025",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:161",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 439,
+      "original_block_index": 0,
+      "original_message_id": "msg_2O-qKLUe",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272685225,
+      "timestamp_utc": "2026-09-24T17:58:05.225Z",
+      "role": "assistant",
+      "text_sha256": "382804a017af71efb553f12aaedfcd1440c9ed97e8271dc5d806639e777d3de6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:162",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 443,
+      "original_block_index": 0,
+      "original_message_id": "msg__EMqpQbi",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272698840,
+      "timestamp_utc": "2026-09-24T17:58:18.840Z",
+      "role": "assistant",
+      "text_sha256": "a8670fe26529059e14b910001864d65eb4cd25dfaf702e77b53f0c8e3f6a5e8c",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:163",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 445,
+      "original_block_index": 0,
+      "original_message_id": "msg_huTQBN4x",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272703537,
+      "timestamp_utc": "2026-09-24T17:58:23.537Z",
+      "role": "assistant",
+      "text_sha256": "dda2029d4c45ef3a140191a87e8c2f6fc3a3df608f0d670bc9a42164edcd2585",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:164",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 447,
+      "original_block_index": 0,
+      "original_message_id": "msg_JiY9UGou",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790272714386,
+      "timestamp_utc": "2026-09-24T17:58:34.386Z",
+      "role": "assistant",
+      "text_sha256": "85eca85ead3e1ded1768c0387309be603e1fb3cfe80fb1bc8c2e539952e5a649",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:165",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 448,
+      "original_block_index": 0,
+      "original_message_id": "msg_mufuyq6y_zdh",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274081562,
+      "timestamp_utc": "2026-09-24T18:21:21.562Z",
+      "role": "user",
+      "text_sha256": "d6a214b3540a77e4be31e108cf63341085641786b466280cf221059be499f18f",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:166",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 449,
+      "original_block_index": 0,
+      "original_message_id": "msg_Qf_pQSN3",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274085528,
+      "timestamp_utc": "2026-09-24T18:21:25.528Z",
+      "role": "assistant",
+      "text_sha256": "7ca503547d8a83eba2b1915a605a18331e2026dc27d5973e77235f7a8109bbaf",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:167",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 451,
+      "original_block_index": 0,
+      "original_message_id": "msg_8T29PxGv",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274089640,
+      "timestamp_utc": "2026-09-24T18:21:29.640Z",
+      "role": "assistant",
+      "text_sha256": "b6e08a0ca0bf5485f51bb6fd0208c217f21e210456bc724efdf75b2798126d75",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:168",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 453,
+      "original_block_index": 0,
+      "original_message_id": "msg_aSMPPXFY",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274103144,
+      "timestamp_utc": "2026-09-24T18:21:43.144Z",
+      "role": "assistant",
+      "text_sha256": "a20b728814ae13d13508aeca33ae1cca008abb8482b5efbc9f86f2f04b15dc3f",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:169",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 455,
+      "original_block_index": 0,
+      "original_message_id": "msg_3bOTdgIS",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274110164,
+      "timestamp_utc": "2026-09-24T18:21:50.164Z",
+      "role": "assistant",
+      "text_sha256": "e6cde0e6d9285480e7ef94c2842d39348313fd99af9309bc0aa96c8a3e01d889",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:170",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 457,
+      "original_block_index": 0,
+      "original_message_id": "msg_2ew-9GQk",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274117169,
+      "timestamp_utc": "2026-09-24T18:21:57.169Z",
+      "role": "assistant",
+      "text_sha256": "d4ade11b988f84e840eb0654542dd01f231d356a0682f770fbbfffbd426abb7b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:171",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 459,
+      "original_block_index": 0,
+      "original_message_id": "msg_OW1NuakG",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274128741,
+      "timestamp_utc": "2026-09-24T18:22:08.741Z",
+      "role": "assistant",
+      "text_sha256": "1e7637f59a61115751bea7a4a9b5616a9bc24efa2cc41a3e4687571bde90ecfc",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:172",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 461,
+      "original_block_index": 0,
+      "original_message_id": "msg_Rj_-4qTD",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274140787,
+      "timestamp_utc": "2026-09-24T18:22:20.787Z",
+      "role": "assistant",
+      "text_sha256": "c7b33ba8fc079504afa387460363c24f4b008c87abd3a87b34ae76b30a9bf716",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:173",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 463,
+      "original_block_index": 0,
+      "original_message_id": "msg_msHhd3YF",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274149528,
+      "timestamp_utc": "2026-09-24T18:22:29.528Z",
+      "role": "assistant",
+      "text_sha256": "aa55290e8d258e0dccfe2ae646e80654095f7d0407e3c78c7482f5c29bcf8f17",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:174",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 465,
+      "original_block_index": 0,
+      "original_message_id": "msg_ywrg0x_o",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274156842,
+      "timestamp_utc": "2026-09-24T18:22:36.842Z",
+      "role": "assistant",
+      "text_sha256": "2899ceadab416ea1a910b5f9204b4e20e2c7be6b0fddc9b776d22a61d9b7dd93",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:175",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 467,
+      "original_block_index": 0,
+      "original_message_id": "msg_vVdIjeU6",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274179035,
+      "timestamp_utc": "2026-09-24T18:22:59.035Z",
+      "role": "assistant",
+      "text_sha256": "372d9de61ebbaae0425fe679e6b4b77ddee5b7077163f954051578ec768cdf3b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:176",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 469,
+      "original_block_index": 0,
+      "original_message_id": "msg_apX9jjkR",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274184567,
+      "timestamp_utc": "2026-09-24T18:23:04.567Z",
+      "role": "assistant",
+      "text_sha256": "50abcbf043216fc6d200043ee413164d53cca85a3c0300004b8fbb482031cb3d",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:177",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 471,
+      "original_block_index": 0,
+      "original_message_id": "msg_hG5Ece7i",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274191937,
+      "timestamp_utc": "2026-09-24T18:23:11.937Z",
+      "role": "assistant",
+      "text_sha256": "8b837ee1f65de204be7adbe40071ac6eacfad98be95e98e77a81717d2555ebc0",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:178",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 473,
+      "original_block_index": 0,
+      "original_message_id": "msg_6y8H6hZZ",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274200534,
+      "timestamp_utc": "2026-09-24T18:23:20.534Z",
+      "role": "assistant",
+      "text_sha256": "fcb2ee7c1f2f0587e114a47674a0b3eb2e624a78d90e2e615c5d75e01593c7d7",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:179",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 475,
+      "original_block_index": 0,
+      "original_message_id": "msg_Gt7eVmrk",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274210634,
+      "timestamp_utc": "2026-09-24T18:23:30.634Z",
+      "role": "assistant",
+      "text_sha256": "3bcc67fe74bf716cefc6fca811ee11dc08a261d6c75f9a70832fdcf5f9ca11b5",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:180",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 477,
+      "original_block_index": 0,
+      "original_message_id": "msg_cAmvjc-K",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274215222,
+      "timestamp_utc": "2026-09-24T18:23:35.222Z",
+      "role": "assistant",
+      "text_sha256": "aff48fae1a9b3c9e3d5a64783a672e43d0fb72f88da42766ae688e527a0865f2",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:181",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 479,
+      "original_block_index": 0,
+      "original_message_id": "msg_7PCGrV7V",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274219492,
+      "timestamp_utc": "2026-09-24T18:23:39.492Z",
+      "role": "assistant",
+      "text_sha256": "f8fa3975699f38fe825adb360c5973b29630d76c38bc092ef935e88b1fa417af",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D5:182",
+      "source_path": "projects/startupsimulator/evidence/raw/1790203740725_b8m2s.messages.json",
+      "original_position": 481,
+      "original_block_index": 0,
+      "original_message_id": "msg_h_H6bCj0",
+      "original_session_id": "1790203740725_b8m2s",
+      "original_timestamp": 1790274229890,
+      "timestamp_utc": "2026-09-24T18:23:49.890Z",
+      "role": "assistant",
+      "text_sha256": "fa4eb53deef445e477da6db546a20ad10ba5d0bb465129fe8b27ddd00226eb17",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    }
+  ]
+}

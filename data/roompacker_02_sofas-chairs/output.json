@@ -1,0 +1,98 @@
+{
+  "qa": [
+    {
+      "question": "What size and shape constraint did the user request for straight couches?",
+      "answer": "A minimum of one by two cells, restricted to a one-by-N strip.",
+      "category": 4,
+      "evidence": [
+        "D1:1: \"minimum 1x2 and is restricted to 1xn\""
+      ]
+    },
+    {
+      "question": "Why did furniture drops fail, and how did separating click cleanup from drag cleanup fix them?",
+      "answer": "Two mouseup listeners removed the same ghost; the correction lets the local listener clean up a click and leaves the global listener as the sole owner of a real drag commit.",
+      "category": 1,
+      "evidence": [
+        "D1:26: \"tried `overlay.removeChild(ghost)` again on a now-`null` ghost, throwing a JS error\"",
+        "D1:26: \"**Real drag** | Does nothing — leaves `ghost` and `movingTable` alive\""
+      ]
+    },
+    {
+      "question": "How did the first couch-extension handles work?",
+      "answer": "Selecting a couch exposed left and right purple handles that changed its length while retaining a one-by-N shape and at least two cells.",
+      "category": 4,
+      "evidence": [
+        "D1:37: \"two small **purple drag handles**\"",
+        "D1:37: \"always stays `1 × N` with a minimum width of `2` cells\""
+      ]
+    },
+    {
+      "question": "Did diagonal contact with a table satisfy the chair-placement rule in the sofas-and-chairs thread?",
+      "answer": "No. The rule checked only the four orthogonal neighboring cells and required an actual table, not a couch or chair.",
+      "category": 4,
+      "evidence": [
+        "D1:57: \"Checks the 4 orthogonal neighbours `(±1, 0)` and `(0, ±1)`\"",
+        "D1:57: \"Couches and other chairs don't count — only actual tables.\""
+      ]
+    },
+    {
+      "question": "How did the occupancy data model change to support chair stacking?",
+      "answer": "A cell changed from one ID to an array of IDs, allowing several chairs to share it while stamping adds an ID and erasing removes only the relevant ID.",
+      "category": 1,
+      "evidence": [
+        "D1:50: \"`tableGrid` stores the occupying piece's id at each cell\"",
+        "D1:71: \"Now it holds an **array of ids**\"",
+        "D1:71: \"`push(t.id)` (no duplicates)\""
+      ]
+    },
+    {
+      "question": "What distinguished chair conflicts from couch conflicts in this thread?",
+      "answer": "Chairs could share cells with other chairs but were blocked by non-chair pieces; couches were blocked by every occupied cell.",
+      "category": 4,
+      "evidence": [
+        "D1:79: \"**Couch** | `hasConflictForCouch` | Blocks on any occupied cell\"",
+        "D1:79: \"**Chair** | `hasConflictForChair` | Only blocks on non-chair pieces\""
+      ]
+    },
+    {
+      "question": "Did the L-sofa implementation initially match the requested three-cell L?",
+      "answer": "No. The user requested three cells, but the reported default used two length-three arms sharing one corner, which occupies five cells.",
+      "category": 1,
+      "evidence": [
+        "D1:138: \"**`cornerR, cornerC`**\"",
+        "D1:138: \"horizontal arm length (minimum 2, default 3)\"",
+        "D1:138: \"vertical arm length (minimum 2, default 3)\"",
+        "D1:138: \"`\"se\" | \"sw\" | \"ne\" | \"nw\"`\"",
+        "D1:94: \"starts as a basic 3-piece L\"",
+        "D1:96: \"occupying `lenA + lenB - 1` cells (corner shared)\""
+      ]
+    },
+    {
+      "question": "Why should an L-sofa's collision check use its occupied cells rather than its bounding rectangle?",
+      "answer": "It prevents the empty part of the L's bounding rectangle from being treated as furniture that blocks other pieces.",
+      "category": 3,
+      "evidence": [
+        "D1:138: \"conflict detection properly checks only the actual occupied cells (not the bounding box)\""
+      ]
+    },
+    {
+      "question": "What board-selection bug was fixed while adding the L-sofa?",
+      "answer": "The agent reported adding a missing if(cell) guard to prevent mouseup from throwing when the user released outside the board.",
+      "category": 4,
+      "evidence": [
+        "D1:138: \"missing `if (cell)` guard in the board selection `mouseup` handler\"",
+        "D1:138: \"would throw if the user released outside the board\""
+      ]
+    },
+    {
+      "question": "How did stacked chairs display their count?",
+      "answer": "Only the top chair showed ×N when more than one chair shared the cell; a single chair had no badge, and move or delete operations refreshed the count.",
+      "category": 4,
+      "evidence": [
+        "D1:153: \"**Topmost chair** (last in array): if count > 1, sets badge text to `×N`\"",
+        "D1:153: \"if count === 1, clears badge\"",
+        "D1:153: \"Drag top chair away | Old cell drops to **×2**\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,790 @@
+[
+  {
+    "question_id": "Q001",
+    "question": "What did I want the first StockApp to do, and where should it run?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_mtxc6aq5_j",
+        "excerpt": "Build a local web app that gives me the best stocks to buy."
+      }
+    ],
+    "answer": "Recommend stocks to buy in a local web app.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q002",
+    "question": "In the main-build conversation, what display changes did I want to make without refreshing stock data?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_mtz1gdfr_4c4",
+        "excerpt": "make it so that when i switch formats there's no data refresh. data refresh should only happen when i click the button."
+      }
+    ],
+    "answer": "Switch display formats; fetch fresh data only when I click the refresh button.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q003",
+    "question": "What caused the initial Top 20 bug, and what division of work fixed it?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_-m6AM9r_",
+        "excerpt": "The backend was slicing results to `n` before sending them — so `stockData` in the browser only ever contained **at most 10 items**"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_-m6AM9r_",
+        "excerpt": "the backend now always returns **all scored stocks**"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_-m6AM9r_",
+        "excerpt": "`reRender()` now reads `top-n` itself and does `.slice(0, n)` after sorting"
+      }
+    ],
+    "answer": "The backend returned at most ten stocks; the fix returned all scored stocks and let the frontend sort and slice Top-N.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q004",
+    "question": "How did the reported scoring-signal count change during the main build?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "Price Momentum"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "EPS Growth"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "Moving Averages"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "Valuation (P/E)"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "Profit Margin"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "Debt/Equity"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "RSI"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_8PmNVWtz",
+        "excerpt": "`\"short\"` added as the 8th signal"
+      }
+    ],
+    "answer": "It grew from seven to eight with the addition of short interest.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q005",
+    "question": "Why is it useful to sort and limit the already-loaded stock list locally?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_-m6AM9r_",
+        "excerpt": "the backend now always returns **all scored stocks**"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_-m6AM9r_",
+        "excerpt": "`reRender()` now reads `top-n` itself and does `.slice(0, n)` after sorting"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_uqUEhIlo",
+        "excerpt": "**Top 5 / 10 / 15 / 20** and **Sort** → instant, no network call (already in memory)"
+      }
+    ],
+    "answer": "It lets display choices respond immediately without waiting for another data request.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q006",
+    "question": "How did the portfolio report weight each holding in its AI-score average?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "value-weighted average of each holding's AI score"
+      }
+    ],
+    "answer": "By the holding’s value.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q007",
+    "question": "What time and size limits did the score-history report use to control repeated refresh entries?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "with a 5-minute dedup guard to prevent noise from rapid refreshes. Up to 60 data points are kept per ticker"
+      }
+    ],
+    "answer": "A five-minute deduplication guard and at most 60 points per ticker.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q008",
+    "question": "What happened to alert checking between the initial portfolio report and the later polling report?",
+    "category": [
+      "single-session",
+      "multihop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "On **every page load / refresh**, `checkAlerts()` compares live data against saved alerts and shows a persistent **gold alert banner**"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_PwvQEmtn",
+        "excerpt": "Every 30 seconds the app silently checks each alert — when triggered you get a browser notification + audio ping"
+      }
+    ],
+    "answer": "It moved from page-load/refresh checks with a gold banner to checks every 30 seconds with browser notifications and an audio ping.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q009",
+    "question": "What deadline did I request for the mute-alarm chase?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_muey0b4g_3986",
+        "excerpt": "make it so that if the user doesn't get it in 20 seconds the page \"explodes\""
+      }
+    ],
+    "answer": "Twenty seconds before the page “explodes.”",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q010",
+    "question": "Why is a five-minute guard useful when users repeatedly refresh the score history?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "with a 5-minute dedup guard to prevent noise from rapid refreshes. Up to 60 data points are kept per ticker"
+      }
+    ],
+    "answer": "It prevents rapid refreshes from filling the history with near-duplicate samples.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q011",
+    "question": "What stock-click rejection probability did I ask for?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_mud6biym_125",
+        "excerpt": "Make the stock app have a 50% chance of rejecting your attempt to click on a stock"
+      }
+    ],
+    "answer": "A 50% chance of rejecting a click.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q012",
+    "question": "How long did I ultimately want the red denial screen to last in the visuals conversation?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_mud7lk4y_268",
+        "excerpt": "Make the screen turn red upon denial"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_mudbl7w6_2lo",
+        "excerpt": "but only make it last a second"
+      }
+    ],
+    "answer": "One second.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q013",
+    "question": "What cadence and selection rule did the Live Feed implementation report describe?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_mg2_Izoo",
+        "excerpt": "**Every 9 seconds**, silently fetches a random sector + formula mode combination"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_mg2_Izoo",
+        "excerpt": "**Picks the highest-scored stock** from that batch that isn't already visible in the grid"
+      }
+    ],
+    "answer": "Every nine seconds, fetch a random sector/formula batch and choose its highest-scored stock not already visible.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q014",
+    "question": "What replaced the invisible five-click Random button in the random-ticker conversation?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg__MSApwEC",
+        "excerpt": "The button is now completely invisible"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_pRagwVO8",
+        "excerpt": "Restored the visible button colors"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_pRagwVO8",
+        "excerpt": "Replaced all the teleport/click-counter logic with a simple **physics loop**"
+      }
+    ],
+    "answer": "A visible, continuously floating button with the click-counter and click-teleport logic removed.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q015",
+    "question": "What failure did the random-ticker conversation diagnose, and how was it made JSON-safe?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_Fxdp0Dvc",
+        "excerpt": "`NaN` is **not valid JSON**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_Fxdp0Dvc",
+        "excerpt": "`JSON.parse()` / `res.json()` in the browser will throw a `SyntaxError`"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_ebPfk2cd",
+        "excerpt": "replaces any `float` that is `NaN`, `+Inf`, or `-Inf` with `None` (→ `null` in JSON)"
+      }
+    ],
+    "answer": "NaN values broke browser JSON parsing; a recursive sanitizer replaced NaN and infinities with null.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q016",
+    "question": "How long did the floating Random button pause, and how often did those pauses occur?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_XTo37HdF",
+        "excerpt": "Waits **4–10 seconds**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_XTo37HdF",
+        "excerpt": "After **0.8–2.5 seconds**"
+      }
+    ],
+    "answer": "Pauses lasted 0.8–2.5 seconds, after 4–10 seconds of movement.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q017",
+    "question": "What data-cleaning change did the retrieval conversation report for the trailing-NaN price-history bug?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_13utzmZn",
+        "excerpt": "`yfinance` now appends a **trailing NaN row** for today's (not-yet-closed) session"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_13utzmZn",
+        "excerpt": "prices = hist[\"Close\"].dropna()"
+      }
+    ],
+    "answer": "Use hist[\"Close\"].dropna() before the price calculations.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q018",
+    "question": "How did the retrieval report explain the 100-fold dividend-yield error?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_13utzmZn",
+        "excerpt": "`yfinance` already returns `dividendYield` as a **percentage**"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_13utzmZn",
+        "excerpt": "The code multiplies by 100 again"
+      }
+    ],
+    "answer": "The returned value was already a percentage, but the code multiplied it by 100 again.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q019",
+    "question": "What did the caching report say happens when the scoring mode changes?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_mkkRAsZO",
+        "excerpt": "just re-applies the new weights mathematically — instant, no network at all"
+      }
+    ],
+    "answer": "Reapply weights to cached subscores without another yfinance request.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q020",
+    "question": "What cache-eviction behavior was added when the plain dictionary became an OrderedDict?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_jhZPkcTr",
+        "excerpt": "When `len(_cache) > CACHE_MAXSIZE` (200), `_cache.popitem(last=False)` removes the front entry"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_jhZPkcTr",
+        "excerpt": "**`_cache: dict` → `_cache: OrderedDict`**"
+      }
+    ],
+    "answer": "A TTL-aware LRU cache removed the least recently used entry when the cache exceeded 200 entries.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q021",
+    "question": "Why should a mode change reweight cached subscores instead of refetching unchanged inputs?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_mkkRAsZO",
+        "excerpt": "just re-applies the new weights mathematically — instant, no network at all"
+      }
+    ],
+    "answer": "It avoids repeating data retrieval when only the scoring formula has changed.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q022",
+    "question": "How did I correct the first minigame concept?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_PRvXCCEd",
+        "excerpt": "Guess whether each stock will go **UP 📈** or **DOWN 📉**"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_muelsfzc_hfb",
+        "excerpt": "give u some numbers about the stock and u have to guess the ticker"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_obaA2StW",
+        "excerpt": "given stats/numbers about a stock, guess its ticker"
+      }
+    ],
+    "answer": "I wanted players to identify a ticker from stock numbers, rather than predict whether its price would go up or down.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q023",
+    "question": "What did the news-hint report do to avoid directly giving away the ticker?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_FBDuyCOr",
+        "excerpt": "**Scrubs the ticker symbol** from the title and summary"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_FBDuyCOr",
+        "excerpt": "Auto-scrubbed to `[?]` so it doesn't spoil the answer"
+      }
+    ],
+    "answer": "Scrub the ticker symbol from the article title and summary, replacing it with a placeholder.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q024",
+    "question": "In what order did the letter-hint report reveal a ticker’s letters?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_h7bWPIms",
+        "excerpt": "Priority order: **first → last → middle left-to-right**"
+      }
+    ],
+    "answer": "First, last, then the middle letters from left to right.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q025",
+    "question": "What letter-feedback rule did the minigame report use after a wrong guess?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_g4zJvh9w",
+        "excerpt": "exact position matches → `'correct'` (green)"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_g4zJvh9w",
+        "excerpt": "wrong position → `'present'` (yellow)"
+      }
+    ],
+    "answer": "Green for an exact position; yellow for a letter present elsewhere in the ticker.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q026",
+    "question": "Why consume target letters when assigning yellow feedback in a ticker-guessing game?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_g4zJvh9w",
+        "excerpt": "Standard Wordle two-pass algorithm"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_g4zJvh9w",
+        "excerpt": "consume from target pool to handle duplicates correctly"
+      }
+    ],
+    "answer": "It prevents repeated letters in a guess from receiving more matches than the target actually contains.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q027",
+    "question": "What place did I want the ticker minigame to have within StockApp?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_mueqvaq5_pko",
+        "excerpt": "verify that the ticker game is a sidebar thing and not the main focus."
+      }
+    ],
+    "answer": "A secondary sidebar-style feature, with stock analysis remaining the main focus.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q028",
+    "question": "How do the main-build refresh request and the later Live Feed report differ in when they fetch data?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_mtz1gdfr_4c4",
+        "excerpt": "data refresh should only happen when i click the button."
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_mg2_Izoo",
+        "excerpt": "**Every 9 seconds**, silently fetches a random sector + formula mode combination"
+      }
+    ],
+    "answer": "The main-build request makes refresh deliberate; Live Feed adds automatic fetches every nine seconds while enabled.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q029",
+    "question": "What different rate limits were reported for saving score history and polling alerts versus loading Live Feed stocks?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "with a 5-minute dedup guard to prevent noise from rapid refreshes. Up to 60 data points are kept per ticker"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_PwvQEmtn",
+        "excerpt": "Every 30 seconds the app silently checks each alert — when triggered you get a browser notification + audio ping"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_mg2_Izoo",
+        "excerpt": "**Every 9 seconds**, silently fetches a random sector + formula mode combination"
+      }
+    ],
+    "answer": "History uses a five-minute deduplication guard, alerts poll every 30 seconds, and Live Feed fetches every nine seconds.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q030",
+    "question": "How do the random-ticker sanitizer and the later price-history cleanup address different stages of the NaN problem?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_Fxdp0Dvc",
+        "excerpt": "`NaN` is **not valid JSON**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_Fxdp0Dvc",
+        "excerpt": "`JSON.parse()` / `res.json()` in the browser will throw a `SyntaxError`"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_ebPfk2cd",
+        "excerpt": "replaces any `float` that is `NaN`, `+Inf`, or `-Inf` with `None` (→ `null` in JSON)"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_13utzmZn",
+        "excerpt": "`yfinance` now appends a **trailing NaN row** for today's (not-yet-closed) session"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_13utzmZn",
+        "excerpt": "prices = hist[\"Close\"].dropna()"
+      }
+    ],
+    "answer": "The sanitizer makes the response parseable; dropping NaN price rows addresses the inputs to calculations.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q031",
+    "question": "Which earlier Top 20 fix supports the later request to show 20 stocks by default?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_-m6AM9r_",
+        "excerpt": "the backend now always returns **all scored stocks**"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_-m6AM9r_",
+        "excerpt": "`reRender()` now reads `top-n` itself and does `.slice(0, n)` after sorting"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_muel0ae7_ej5",
+        "excerpt": "Let's make it so that the default number of stocks displays 20"
+      }
+    ],
+    "answer": "Returning all scored stocks and slicing Top-N in the frontend supplies enough data for the later 20-stock default.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q032",
+    "question": "How do the stock-click rejection request and the final minigame wrong-guess report differ in allowing another attempt?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_mud6biym_125",
+        "excerpt": "Make the stock app have a 50% chance of rejecting your attempt to click on a stock"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_g4zJvh9w",
+        "excerpt": "**Wrong guess** → `answered` stays `false`"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_g4zJvh9w",
+        "excerpt": "player can keep guessing"
+      }
+    ],
+    "answer": "A stock click may be rejected with 50% probability; a wrong ticker guess keeps the round open so the player can keep guessing.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q033",
+    "question": "What distinct portfolio and minigame additions did I request without replacing the stock-analysis purpose?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_mu0mk3ba_8c4",
+        "excerpt": "Show a \"My Portfolio\" view with total value, daily P\\&L, and weighted average AI score across their holdings."
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_muelsfzc_hfb",
+        "excerpt": "give u some numbers about the stock and u have to guess the ticker"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_mueqvaq5_pko",
+        "excerpt": "verify that the ticker game is a sidebar thing and not the main focus."
+      }
+    ],
+    "answer": "A holdings view with total value, daily P&L and weighted AI score, plus a secondary ticker-guessing game.",
+    "requires_answers": []
+  }
+]

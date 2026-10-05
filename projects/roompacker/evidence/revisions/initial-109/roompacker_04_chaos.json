@@ -1,0 +1,164 @@
+{
+  "qa": [
+    {
+      "question": "What did the first Chaos toggle do and how often?",
+      "answer": "It shuffled and teleported all furniture every 1.2 seconds while enabled.",
+      "category": 4,
+      "evidence": [
+        "D1:12: \"all furniture pieces are randomly teleported\"",
+        "D1:12: \"every **1.2 seconds**\""
+      ]
+    },
+    {
+      "question": "What happened when the original teleport algorithm found no free position?",
+      "answer": "After up to 300 random attempts, it left the piece in place.",
+      "category": 4,
+      "evidence": [
+        "D1:12: \"Up to 300 random positions are tried per piece; if no free spot exists, the piece stays in place\""
+      ]
+    },
+    {
+      "question": "How was an out-of-bounds L-sofa teleport prevented?",
+      "answer": "The random corner was clamped before testing and stamping the L shape.",
+      "category": 4,
+      "evidence": [
+        "D1:20: \"Pass the random point through `clampLsofaCorner(r, c, lenA, lenB, variant)` first\""
+      ]
+    },
+    {
+      "question": "Why did a teleported chair leave an incorrect stack count behind?",
+      "answer": "Only the new cell's badge was refreshed; the fix remembered the old position and refreshed both cells.",
+      "category": 4,
+      "evidence": [
+        "D1:20: \"`refreshChairBadge` was only called for the **new** cell\"",
+        "D1:20: \"Save `oldR`/`oldC` before erasing\""
+      ]
+    },
+    {
+      "question": "How did teleport validity change after the user said adjustment was their job?",
+      "answer": "The original valid-position search became unconditional random relocation, allowing overlaps and chairs away from tables while retaining board bounds.",
+      "category": 2,
+      "evidence": [
+        "D1:12: \"valid, non-overlapping positions\"",
+        "D1:27: \"Pieces now **always teleport**\"",
+        "D1:27: \"The only thing still enforced is **board bounds**\""
+      ]
+    },
+    {
+      "question": "Could Chaos teleport a piece partly off the board after validity checks were removed?",
+      "answer": "No. Board bounds were still enforced to prevent invalid grid indexing.",
+      "category": 5,
+      "evidence": [
+        "D1:27: \"pieces can't be teleported partially off the edge\""
+      ]
+    },
+    {
+      "question": "What time limit was introduced for unresolved furniture conflicts?",
+      "answer": "Eight seconds per piece, checked every 100 milliseconds.",
+      "category": 4,
+      "evidence": [
+        "D1:40: \"Time limit per conflict | **8 seconds**\"",
+        "D1:40: \"Timer checks | Every 100 ms\""
+      ]
+    },
+    {
+      "question": "How did a conflict timer react to a new teleport?",
+      "answer": "Each new landing reset the timer to a fresh eight seconds.",
+      "category": 4,
+      "evidence": [
+        "D1:40: \"each new landing gives a fresh 8 s\""
+      ]
+    },
+    {
+      "question": "What happened when a furniture conflict deadline expired?",
+      "answer": "Teleporting and ticking stopped, the guilty piece glowed red, and a Game Over overlay named it and offered a page-reload retry.",
+      "category": 4,
+      "evidence": [
+        "D1:40: \"All teleporting and ticking stops instantly\"",
+        "D1:40: \"overlay appears, naming the piece that expired\"",
+        "D1:40: \"A **Try Again** button reloads the page\""
+      ]
+    },
+    {
+      "question": "How frequently did furniture break and how long did repair allow?",
+      "answer": "While Chaos was active, a random piece broke every three seconds and gave the player six seconds to repair it.",
+      "category": 4,
+      "evidence": [
+        "D1:52: \"every **3 seconds** one random piece\"",
+        "D1:52: \"shrinking over **6 seconds**\""
+      ]
+    },
+    {
+      "question": "How did the player repair broken furniture?",
+      "answer": "Clicking repaired it instantly and consumed the click so it did not also select the piece.",
+      "category": 4,
+      "evidence": [
+        "D1:52: \"**Click the piece** to repair it instantly\"",
+        "D1:52: \"it won't also select the piece\""
+      ]
+    },
+    {
+      "question": "Did repairing breakage replace the existing conflict-timeout mechanic?",
+      "answer": "No. Breakage and conflict game-over timers remained independent.",
+      "category": 5,
+      "evidence": [
+        "D1:52: \"The existing conflict-timeout game-over still works independently as before.\""
+      ]
+    },
+    {
+      "question": "What probability and cadence governed random rotation?",
+      "answer": "Each piece had a forty-percent chance to rotate ninety degrees clockwise every 1.8 seconds while Chaos was active.",
+      "category": 4,
+      "evidence": [
+        "D1:61: \"every **1.8 seconds** each piece independently has a **40% chance** of being rotated 90° clockwise\""
+      ]
+    },
+    {
+      "question": "Could automatic teleporting or rotation interrupt a furniture drag?",
+      "answer": "No. Both mechanics skipped the piece currently being dragged.",
+      "category": 1,
+      "evidence": [
+        "D1:12: \"A piece currently being dragged by the user is **skipped**\"",
+        "D1:61: \"A piece being dragged is never rotated.\""
+      ]
+    },
+    {
+      "question": "When was the one-percent fading easter-egg roll performed?",
+      "answer": "Once when Chaos mode was switched on; a failed roll left the fading mechanism dormant.",
+      "category": 4,
+      "evidence": [
+        "D1:72: \"a 1% roll that only happens when Chaos mode is switched **on**\"",
+        "D1:72: \"`fadeInterval` stays `null`\""
+      ]
+    },
+    {
+      "question": "Did the fading animation make furniture completely invisible or alter gameplay?",
+      "answer": "No. Opacity ranged from 0.12 to 1.0 and fading did not change gameplay, collision checks, or timers.",
+      "category": 5,
+      "evidence": [
+        "D1:69: \"`0.12 → 1.0`\"",
+        "D1:69: \"Fading is purely visual — it doesn't affect gameplay logic, conflict detection, or timers\""
+      ]
+    },
+    {
+      "question": "How was rainbow furniture triggered and animated?",
+      "answer": "A placement or donut punch had a one-percent chance to create rainbow furniture; its hue advanced about sixty degrees per second in a shared animation loop.",
+      "category": 4,
+      "evidence": [
+        "D1:91: \"there's a **1% chance** it becomes rainbow\"",
+        "D1:91: \"Every frame the hue advances **~60°/sec**\""
+      ]
+    },
+    {
+      "question": "How did the rug squiggle mechanic mutate shapes while preserving their area?",
+      "answer": "Every 700 milliseconds it ran three swaps, removing a safely removable boundary cell and adding an adjacent empty cell; connectivity, area, and board bounds were preserved.",
+      "category": 4,
+      "evidence": [
+        "D1:103: \"Every **700ms**\"",
+        "D1:103: \"**3 cell-swap steps** per rug\"",
+        "D1:103: \"exactly the **same cell count**\"",
+        "D1:103: \"connectivity checked before any removal\""
+      ]
+    }
+  ]
+}

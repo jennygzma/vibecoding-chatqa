@@ -1,0 +1,101 @@
+{
+  "status": "draft-needs-human-review",
+  "trajectories": {
+    "roompacker_01_main-build": {
+      "annotations": 10,
+      "citations": 22,
+      "cleaned_messages": 85,
+      "roles": {
+        "user": 13,
+        "assistant": 72
+      },
+      "categories": {
+        "1": 2,
+        "3": 1,
+        "4": 7
+      },
+      "errors": []
+    },
+    "roompacker_02_sofas-chairs": {
+      "annotations": 10,
+      "citations": 24,
+      "cleaned_messages": 153,
+      "roles": {
+        "user": 10,
+        "assistant": 143
+      },
+      "categories": {
+        "1": 3,
+        "3": 1,
+        "4": 6
+      },
+      "errors": []
+    },
+    "roompacker_03_shapes-overlaps": {
+      "annotations": 10,
+      "citations": 20,
+      "cleaned_messages": 129,
+      "roles": {
+        "user": 11,
+        "assistant": 118
+      },
+      "categories": {
+        "1": 1,
+        "3": 1,
+        "4": 8
+      },
+      "errors": []
+    },
+    "roompacker_04_chaos": {
+      "annotations": 10,
+      "citations": 22,
+      "cleaned_messages": 103,
+      "roles": {
+        "user": 10,
+        "assistant": 93
+      },
+      "categories": {
+        "1": 1,
+        "2": 7,
+        "3": 1,
+        "4": 1
+      },
+      "errors": []
+    },
+    "roompacker_05_3d-floating": {
+      "annotations": 10,
+      "citations": 27,
+      "cleaned_messages": 62,
+      "roles": {
+        "user": 11,
+        "assistant": 51
+      },
+      "categories": {
+        "1": 3,
+        "3": 1,
+        "4": 6
+      },
+      "errors": []
+    },
+    "roompacker_06_colors-merging": {
+      "annotations": 10,
+      "citations": 29,
+      "cleaned_messages": 115,
+      "roles": {
+        "user": 10,
+        "assistant": 105
+      },
+      "categories": {
+        "1": 2,
+        "4": 8
+      },
+      "errors": []
+    }
+  },
+  "totals": {
+    "trajectories": 6,
+    "annotations": 60,
+    "citations": 144
+  },
+  "errors": []
+}

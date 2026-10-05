@@ -2,8 +2,10 @@
 
 StockPicker AI is a local web application that ranks stocks using live Yahoo
 Finance data and a configurable eight-signal scoring model. This directory also
-contains 130 researcher-reviewed QA annotations from the six Cline trajectories
-used to develop it.
+contains [33 curated QA annotations](../../data/stockapp/annotations.json) from
+the six Cline trajectories used to develop it. The [canonical dataset](../../data/stockapp/README.md)
+follows Focus Desk's structure and overlapping categories. Earlier 130-question
+trajectory outputs remain preserved as history.
 
 The application is for educational and informational purposes only. It is not
 financial advice.
@@ -54,7 +56,20 @@ node --check frontend/app.js
 node --check frontend/minigame.js
 ```
 
-## Reviewed annotation datasets
+## Canonical annotation checks
+
+From the repository root:
+
+```sh
+python3 scripts/michael_dataset.py stockapp
+python3 scripts/michael_dataset.py stockapp --check
+```
+
+The current 33 questions have an agent editorial review and exact evidence checks;
+human approval is pending. Original researcher approval applies to the earlier
+130-question version below, not automatically to the rewritten questions.
+
+## Earlier reviewed trajectory datasets
 
 Automatic task-resumption messages remain in the transcripts but are excluded
 from the researcher-prompt counts.
@@ -80,7 +95,7 @@ Frozen original Cline files are under `evidence/raw`. Annotation generation is
 reproducible from `generate_draft_annotations.py`; transcript reconstruction
 does not change `output.json`.
 
-## Annotation checks
+## Earlier trajectory checks
 
 ```sh
 python3 build_annotations.py
@@ -94,14 +109,14 @@ quoted evidence, category constraints, and duplicate questions. The researcher
 also reviewed utility, answer completeness, evidence support, temporal
 interpretation, and category choice.
 
-## Local annotation reviewer
+## Earlier trajectory reviewer
 
 ```sh
 python3 build_review_bundle.py
 python3 -m http.server 4173 --bind 127.0.0.1 --directory reviewer
 ```
 
-Open <http://127.0.0.1:4173/> to audit the approved set. Review decisions are
-stored in the browser and can be exported as JSON. The current package was
-approved by the researcher on 2026-09-24 and is recorded as
-`reviewed-and-validated`.
+Open <http://127.0.0.1:4173/> to inspect the earlier 130-question trajectory set.
+Its 2026-09-24 approval remains recorded in its evidence files. Review the current
+33-question version in [annotations.md](../../data/stockapp/annotations.md), where
+each question includes its exact citations and category rationale.

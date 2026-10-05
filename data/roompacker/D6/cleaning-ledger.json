@@ -1,0 +1,3159 @@
+[
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 0,
+    "original_block_index": 0,
+    "original_message_id": "7929cbe3-9cdb-4067-9629-041a120e08b2",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 1,
+    "original_block_index": 0,
+    "original_message_id": "msg_iDLe5RIG",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 1,
+    "original_block_index": 1,
+    "original_message_id": "msg_iDLe5RIG",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 2,
+    "original_block_index": 0,
+    "original_message_id": "msg_sf0n2mBu",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 3,
+    "original_block_index": 0,
+    "original_message_id": "msg_gk0CHViB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 4,
+    "original_block_index": 0,
+    "original_message_id": "msg_kh3MfdJw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 5,
+    "original_block_index": 0,
+    "original_message_id": "msg_613xKh2l",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 6,
+    "original_block_index": 0,
+    "original_message_id": "msg_PhYbGMG_",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 7,
+    "original_block_index": 0,
+    "original_message_id": "msg_TzpILNX6",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 8,
+    "original_block_index": 0,
+    "original_message_id": "msg_Xipb1M5g",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 9,
+    "original_block_index": 0,
+    "original_message_id": "msg_CB7woK0O",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 10,
+    "original_block_index": 0,
+    "original_message_id": "msg_jg6FoAlU",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 11,
+    "original_block_index": 0,
+    "original_message_id": "msg_bLHW0doX",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 11,
+    "original_block_index": 1,
+    "original_message_id": "msg_bLHW0doX",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 12,
+    "original_block_index": 0,
+    "original_message_id": "msg_1R1gAcoc",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 13,
+    "original_block_index": 0,
+    "original_message_id": "msg_nRqFQc3L",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 13,
+    "original_block_index": 1,
+    "original_message_id": "msg_nRqFQc3L",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 14,
+    "original_block_index": 0,
+    "original_message_id": "msg_xrk3Nxjl",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 15,
+    "original_block_index": 0,
+    "original_message_id": "msg_-DgSm2Pp",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 15,
+    "original_block_index": 1,
+    "original_message_id": "msg_-DgSm2Pp",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 16,
+    "original_block_index": 0,
+    "original_message_id": "msg_EaC92lvT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 17,
+    "original_block_index": 0,
+    "original_message_id": "msg_5tLThAYm",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 18,
+    "original_block_index": 0,
+    "original_message_id": "msg_xXP8TC-1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 19,
+    "original_block_index": 0,
+    "original_message_id": "msg_-ZTq6xcY",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 20,
+    "original_block_index": 0,
+    "original_message_id": "msg_-jxC9eWQ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 21,
+    "original_block_index": 0,
+    "original_message_id": "msg_aHNt5wBB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 22,
+    "original_block_index": 0,
+    "original_message_id": "msg_0rOxRE02",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 23,
+    "original_block_index": 0,
+    "original_message_id": "msg_xoJ_g-c0",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 23,
+    "original_block_index": 1,
+    "original_message_id": "msg_xoJ_g-c0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 24,
+    "original_block_index": 0,
+    "original_message_id": "msg_5Ihghpzv",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 25,
+    "original_block_index": 0,
+    "original_message_id": "msg_ytQfwfr1",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 25,
+    "original_block_index": 1,
+    "original_message_id": "msg_ytQfwfr1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 26,
+    "original_block_index": 0,
+    "original_message_id": "msg_uMRb8mLY",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 27,
+    "original_block_index": 0,
+    "original_message_id": "msg_0hcLDTwn",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 27,
+    "original_block_index": 1,
+    "original_message_id": "msg_0hcLDTwn",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 28,
+    "original_block_index": 0,
+    "original_message_id": "msg_s0H8bftr",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 29,
+    "original_block_index": 0,
+    "original_message_id": "msg_3Sd61bNr",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 29,
+    "original_block_index": 1,
+    "original_message_id": "msg_3Sd61bNr",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 30,
+    "original_block_index": 0,
+    "original_message_id": "msg_3r__c-vz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 31,
+    "original_block_index": 0,
+    "original_message_id": "msg_Ufxx2uYS",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 32,
+    "original_block_index": 0,
+    "original_message_id": "msg_F449jcki",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 33,
+    "original_block_index": 0,
+    "original_message_id": "msg_oIKj0XBf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 34,
+    "original_block_index": 0,
+    "original_message_id": "msg_1vH0zp5j",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 35,
+    "original_block_index": 0,
+    "original_message_id": "msg_74y7x3Yy",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 35,
+    "original_block_index": 1,
+    "original_message_id": "msg_74y7x3Yy",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 36,
+    "original_block_index": 0,
+    "original_message_id": "msg_k5l7azFg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 37,
+    "original_block_index": 0,
+    "original_message_id": "msg_g0RjCE4P",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 38,
+    "original_block_index": 0,
+    "original_message_id": "msg_mUAfW2sm",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 39,
+    "original_block_index": 0,
+    "original_message_id": "msg_6JZX58_c",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 40,
+    "original_block_index": 0,
+    "original_message_id": "msg_HUT_X8Ep",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 41,
+    "original_block_index": 0,
+    "original_message_id": "msg_JTWE7vNG",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 42,
+    "original_block_index": 0,
+    "original_message_id": "msg_WyJ-PAss",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 43,
+    "original_block_index": 0,
+    "original_message_id": "msg_p2fZhMbr",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 43,
+    "original_block_index": 1,
+    "original_message_id": "msg_p2fZhMbr",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 44,
+    "original_block_index": 0,
+    "original_message_id": "msg_l0bYoOx7",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 45,
+    "original_block_index": 0,
+    "original_message_id": "msg_fdQZd7jj",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 46,
+    "original_block_index": 0,
+    "original_message_id": "msg_usAXDXCK",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 47,
+    "original_block_index": 0,
+    "original_message_id": "msg_Lo49mzOr",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 47,
+    "original_block_index": 1,
+    "original_message_id": "msg_Lo49mzOr",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 48,
+    "original_block_index": 0,
+    "original_message_id": "msg_o8sqS0WJ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 49,
+    "original_block_index": 0,
+    "original_message_id": "msg_zYT1PNis",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 50,
+    "original_block_index": 0,
+    "original_message_id": "msg_-XdPB9e0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 51,
+    "original_block_index": 0,
+    "original_message_id": "msg_409wzarP",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 51,
+    "original_block_index": 1,
+    "original_message_id": "msg_409wzarP",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 52,
+    "original_block_index": 0,
+    "original_message_id": "msg_V-X1ABkq",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 53,
+    "original_block_index": 0,
+    "original_message_id": "msg_KSmeI0e5",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 54,
+    "original_block_index": 0,
+    "original_message_id": "msg_zi_e2HgT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 55,
+    "original_block_index": 0,
+    "original_message_id": "msg_q-dTkZ7m",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 55,
+    "original_block_index": 1,
+    "original_message_id": "msg_q-dTkZ7m",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 56,
+    "original_block_index": 0,
+    "original_message_id": "msg_WGe94_UT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 57,
+    "original_block_index": 0,
+    "original_message_id": "msg_Euelyn1L",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 58,
+    "original_block_index": 0,
+    "original_message_id": "msg_qO86bT1g",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 59,
+    "original_block_index": 0,
+    "original_message_id": "msg_0vTQ11Qe",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 59,
+    "original_block_index": 1,
+    "original_message_id": "msg_0vTQ11Qe",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 60,
+    "original_block_index": 0,
+    "original_message_id": "msg_nuugjFWH",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 61,
+    "original_block_index": 0,
+    "original_message_id": "msg_9ljeHl1K",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 61,
+    "original_block_index": 1,
+    "original_message_id": "msg_9ljeHl1K",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 62,
+    "original_block_index": 0,
+    "original_message_id": "msg_7Qerf7Jg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 63,
+    "original_block_index": 0,
+    "original_message_id": "msg_sPr7V-ZF",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 63,
+    "original_block_index": 1,
+    "original_message_id": "msg_sPr7V-ZF",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 64,
+    "original_block_index": 0,
+    "original_message_id": "msg_7OIiMpV0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 65,
+    "original_block_index": 0,
+    "original_message_id": "msg_ZU7ysBsB",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 65,
+    "original_block_index": 1,
+    "original_message_id": "msg_ZU7ysBsB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 66,
+    "original_block_index": 0,
+    "original_message_id": "msg__8s5XULO",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 67,
+    "original_block_index": 0,
+    "original_message_id": "msg_lEJbS3DU",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 68,
+    "original_block_index": 0,
+    "original_message_id": "msg_uji1pdyK",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 69,
+    "original_block_index": 0,
+    "original_message_id": "msg_rdsBjl3u",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 69,
+    "original_block_index": 1,
+    "original_message_id": "msg_rdsBjl3u",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 70,
+    "original_block_index": 0,
+    "original_message_id": "msg_0ekNQtad",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 71,
+    "original_block_index": 0,
+    "original_message_id": "msg_2DTrF7UW",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 72,
+    "original_block_index": 0,
+    "original_message_id": "msg_tROzqRlg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 73,
+    "original_block_index": 0,
+    "original_message_id": "msg_EQePhflw",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 74,
+    "original_block_index": 0,
+    "original_message_id": "643633f0-3d2b-4f99-b895-25a3d713ec19",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 75,
+    "original_block_index": 0,
+    "original_message_id": "msg_r3403RDd",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 75,
+    "original_block_index": 1,
+    "original_message_id": "msg_r3403RDd",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 76,
+    "original_block_index": 0,
+    "original_message_id": "msg_CUySMkwg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 77,
+    "original_block_index": 0,
+    "original_message_id": "msg_LAlzairA",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 78,
+    "original_block_index": 0,
+    "original_message_id": "msg_yikeZx6C",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 79,
+    "original_block_index": 0,
+    "original_message_id": "msg__ZBB4v0S",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 80,
+    "original_block_index": 0,
+    "original_message_id": "msg_wlwPQd6Z",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 81,
+    "original_block_index": 0,
+    "original_message_id": "msg_ehSzM0Db",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 81,
+    "original_block_index": 1,
+    "original_message_id": "msg_ehSzM0Db",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 82,
+    "original_block_index": 0,
+    "original_message_id": "msg_7cyu5pFL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 83,
+    "original_block_index": 0,
+    "original_message_id": "msg_Yc47LH3J",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 83,
+    "original_block_index": 1,
+    "original_message_id": "msg_Yc47LH3J",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 84,
+    "original_block_index": 0,
+    "original_message_id": "msg_Xa5PPhtP",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 85,
+    "original_block_index": 0,
+    "original_message_id": "msg_BzX6NRbt",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 85,
+    "original_block_index": 1,
+    "original_message_id": "msg_BzX6NRbt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 86,
+    "original_block_index": 0,
+    "original_message_id": "msg_gFOWg3n0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 87,
+    "original_block_index": 0,
+    "original_message_id": "msg_dm27dyUf",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 87,
+    "original_block_index": 1,
+    "original_message_id": "msg_dm27dyUf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 88,
+    "original_block_index": 0,
+    "original_message_id": "msg_u0PXGxco",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 89,
+    "original_block_index": 0,
+    "original_message_id": "msg_kQbE-hZ3",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 89,
+    "original_block_index": 1,
+    "original_message_id": "msg_kQbE-hZ3",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 90,
+    "original_block_index": 0,
+    "original_message_id": "msg_F4S7z7O2",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 91,
+    "original_block_index": 0,
+    "original_message_id": "msg_pm6a2f4q",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 91,
+    "original_block_index": 1,
+    "original_message_id": "msg_pm6a2f4q",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 92,
+    "original_block_index": 0,
+    "original_message_id": "msg_f7vEImVS",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 93,
+    "original_block_index": 0,
+    "original_message_id": "msg_Yu-aZf6h",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 94,
+    "original_block_index": 0,
+    "original_message_id": "msg_j41dQSjf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 95,
+    "original_block_index": 0,
+    "original_message_id": "msg_QggqCbfj",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 95,
+    "original_block_index": 1,
+    "original_message_id": "msg_QggqCbfj",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 96,
+    "original_block_index": 0,
+    "original_message_id": "msg_nx0nBj6t",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 97,
+    "original_block_index": 0,
+    "original_message_id": "msg_zqNLtYuL",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 97,
+    "original_block_index": 1,
+    "original_message_id": "msg_zqNLtYuL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 98,
+    "original_block_index": 0,
+    "original_message_id": "msg_68HTuKbo",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 99,
+    "original_block_index": 0,
+    "original_message_id": "msg_iACUGmYH",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 100,
+    "original_block_index": 0,
+    "original_message_id": "c14de761-54f3-455d-abae-8676e772b64b",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 101,
+    "original_block_index": 0,
+    "original_message_id": "msg__YK6E14y",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 101,
+    "original_block_index": 1,
+    "original_message_id": "msg__YK6E14y",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 102,
+    "original_block_index": 0,
+    "original_message_id": "msg_G8gYKVEw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 103,
+    "original_block_index": 0,
+    "original_message_id": "msg_c3w9lJKt",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 103,
+    "original_block_index": 1,
+    "original_message_id": "msg_c3w9lJKt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 104,
+    "original_block_index": 0,
+    "original_message_id": "msg_vwx_Bv8x",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 105,
+    "original_block_index": 0,
+    "original_message_id": "msg_v3YkUciL",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 105,
+    "original_block_index": 1,
+    "original_message_id": "msg_v3YkUciL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 106,
+    "original_block_index": 0,
+    "original_message_id": "msg_UL0t934g",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 107,
+    "original_block_index": 0,
+    "original_message_id": "msg_SqVpMBwa",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 107,
+    "original_block_index": 1,
+    "original_message_id": "msg_SqVpMBwa",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 108,
+    "original_block_index": 0,
+    "original_message_id": "msg_B0uWchEQ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 109,
+    "original_block_index": 0,
+    "original_message_id": "msg_kQccXpof",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 110,
+    "original_block_index": 0,
+    "original_message_id": "msg_dR7ERoFw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 111,
+    "original_block_index": 0,
+    "original_message_id": "msg_DvITYQWg",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 111,
+    "original_block_index": 1,
+    "original_message_id": "msg_DvITYQWg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 112,
+    "original_block_index": 0,
+    "original_message_id": "msg_BDKgGOCn",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 113,
+    "original_block_index": 0,
+    "original_message_id": "msg_YjeL9NHk",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 113,
+    "original_block_index": 1,
+    "original_message_id": "msg_YjeL9NHk",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 114,
+    "original_block_index": 0,
+    "original_message_id": "msg_-vw61Mz5",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 115,
+    "original_block_index": 0,
+    "original_message_id": "msg_J7ejVcSB",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 115,
+    "original_block_index": 1,
+    "original_message_id": "msg_J7ejVcSB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 116,
+    "original_block_index": 0,
+    "original_message_id": "msg_uPIY9JiU",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 117,
+    "original_block_index": 0,
+    "original_message_id": "msg_Q7RdT1rg",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 118,
+    "original_block_index": 0,
+    "original_message_id": "436f0b83-67e9-4118-bed4-897820ab57b5",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 119,
+    "original_block_index": 0,
+    "original_message_id": "msg_0k8QrW78",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 119,
+    "original_block_index": 1,
+    "original_message_id": "msg_0k8QrW78",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 120,
+    "original_block_index": 0,
+    "original_message_id": "msg_nY7antb8",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 121,
+    "original_block_index": 0,
+    "original_message_id": "msg_0afyBWXt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 122,
+    "original_block_index": 0,
+    "original_message_id": "msg_u3LaowYz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 123,
+    "original_block_index": 0,
+    "original_message_id": "msg_n3TBQw14",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 123,
+    "original_block_index": 1,
+    "original_message_id": "msg_n3TBQw14",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 124,
+    "original_block_index": 0,
+    "original_message_id": "msg_mqPOo6Se",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 125,
+    "original_block_index": 0,
+    "original_message_id": "msg_FIeP9o17",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 125,
+    "original_block_index": 1,
+    "original_message_id": "msg_FIeP9o17",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 126,
+    "original_block_index": 0,
+    "original_message_id": "msg_I5NMIgCU",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 127,
+    "original_block_index": 0,
+    "original_message_id": "msg_XHx_9w4s",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 127,
+    "original_block_index": 1,
+    "original_message_id": "msg_XHx_9w4s",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 128,
+    "original_block_index": 0,
+    "original_message_id": "msg_cATBFgNu",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 129,
+    "original_block_index": 0,
+    "original_message_id": "msg_9eJHygpj",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 130,
+    "original_block_index": 0,
+    "original_message_id": "51f9d192-aecf-4c61-999e-69e79833987e",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 131,
+    "original_block_index": 0,
+    "original_message_id": "msg_gIKGVJaI",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 131,
+    "original_block_index": 1,
+    "original_message_id": "msg_gIKGVJaI",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 132,
+    "original_block_index": 0,
+    "original_message_id": "msg_PpTL879s",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 133,
+    "original_block_index": 0,
+    "original_message_id": "msg_-_N4-deP",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 133,
+    "original_block_index": 1,
+    "original_message_id": "msg_-_N4-deP",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 134,
+    "original_block_index": 0,
+    "original_message_id": "msg_izpYWkhE",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 135,
+    "original_block_index": 0,
+    "original_message_id": "msg_1we6gLqF",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 135,
+    "original_block_index": 1,
+    "original_message_id": "msg_1we6gLqF",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 136,
+    "original_block_index": 0,
+    "original_message_id": "msg_ApWqDyEp",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 137,
+    "original_block_index": 0,
+    "original_message_id": "msg_yEQ9pRaq",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 137,
+    "original_block_index": 1,
+    "original_message_id": "msg_yEQ9pRaq",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 138,
+    "original_block_index": 0,
+    "original_message_id": "msg_3G77MDDd",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 139,
+    "original_block_index": 0,
+    "original_message_id": "msg_uGXJOB7K",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 140,
+    "original_block_index": 0,
+    "original_message_id": "662f2591-78ea-400b-b168-93b9f45e279d",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 141,
+    "original_block_index": 0,
+    "original_message_id": "msg_phpmQKbM",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 142,
+    "original_block_index": 0,
+    "original_message_id": "msg_lmGxE-Bi",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 143,
+    "original_block_index": 0,
+    "original_message_id": "msg_doZJhPCr",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 144,
+    "original_block_index": 0,
+    "original_message_id": "msg_0SSuiAAv",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 145,
+    "original_block_index": 0,
+    "original_message_id": "msg_cwWC98qL",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 145,
+    "original_block_index": 1,
+    "original_message_id": "msg_cwWC98qL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 146,
+    "original_block_index": 0,
+    "original_message_id": "msg_VvuXOAuO",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 147,
+    "original_block_index": 0,
+    "original_message_id": "msg_Azqwo_4f",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 147,
+    "original_block_index": 1,
+    "original_message_id": "msg_Azqwo_4f",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 148,
+    "original_block_index": 0,
+    "original_message_id": "msg_x5Tx_dT7",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 149,
+    "original_block_index": 0,
+    "original_message_id": "msg_fbydQ5hw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 150,
+    "original_block_index": 0,
+    "original_message_id": "msg_UeZQakwA",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 151,
+    "original_block_index": 0,
+    "original_message_id": "msg_Z4iByI-G",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 152,
+    "original_block_index": 0,
+    "original_message_id": "msg_cDi_SSGy",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 153,
+    "original_block_index": 0,
+    "original_message_id": "msg_WH-7OurB",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 153,
+    "original_block_index": 1,
+    "original_message_id": "msg_WH-7OurB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 154,
+    "original_block_index": 0,
+    "original_message_id": "msg_CsMothip",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 155,
+    "original_block_index": 0,
+    "original_message_id": "msg_V2MShI23",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 155,
+    "original_block_index": 1,
+    "original_message_id": "msg_V2MShI23",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 156,
+    "original_block_index": 0,
+    "original_message_id": "msg_sr0rLy_4",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 157,
+    "original_block_index": 0,
+    "original_message_id": "msg_fgBM72Qo",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 157,
+    "original_block_index": 1,
+    "original_message_id": "msg_fgBM72Qo",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 158,
+    "original_block_index": 0,
+    "original_message_id": "msg_YkAry-MD",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 159,
+    "original_block_index": 0,
+    "original_message_id": "msg_poCoX7Mm",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 160,
+    "original_block_index": 0,
+    "original_message_id": "msg_beIR-5zT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 161,
+    "original_block_index": 0,
+    "original_message_id": "msg_GSjDO7MZ",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 161,
+    "original_block_index": 1,
+    "original_message_id": "msg_GSjDO7MZ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 162,
+    "original_block_index": 0,
+    "original_message_id": "msg_AfivbHTS",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 163,
+    "original_block_index": 0,
+    "original_message_id": "msg_GJ2bZc8S",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 164,
+    "original_block_index": 0,
+    "original_message_id": "msg_5PZHhVqA",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 165,
+    "original_block_index": 0,
+    "original_message_id": "msg_56iocml_",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 165,
+    "original_block_index": 1,
+    "original_message_id": "msg_56iocml_",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 166,
+    "original_block_index": 0,
+    "original_message_id": "msg_8-mxDlEj",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 167,
+    "original_block_index": 0,
+    "original_message_id": "msg_BCmmPLad",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 168,
+    "original_block_index": 0,
+    "original_message_id": "msg_Z2f8BlHP",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 169,
+    "original_block_index": 0,
+    "original_message_id": "msg_jFBhMgkr",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 170,
+    "original_block_index": 0,
+    "original_message_id": "msg_G_YBPvsz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 171,
+    "original_block_index": 0,
+    "original_message_id": "msg_bK_9lyvH",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 172,
+    "original_block_index": 0,
+    "original_message_id": "msg_XOfHVV46",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 173,
+    "original_block_index": 0,
+    "original_message_id": "msg_t4ZtevGt",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 173,
+    "original_block_index": 1,
+    "original_message_id": "msg_t4ZtevGt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 174,
+    "original_block_index": 0,
+    "original_message_id": "msg_WTcStJ_u",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 175,
+    "original_block_index": 0,
+    "original_message_id": "msg_BAq-_QoQ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 176,
+    "original_block_index": 0,
+    "original_message_id": "msg_bQdC4O_W",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 177,
+    "original_block_index": 0,
+    "original_message_id": "msg_Pa09mz8M",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 178,
+    "original_block_index": 0,
+    "original_message_id": "msg_UPeYq-6X",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 179,
+    "original_block_index": 0,
+    "original_message_id": "msg_TosiUtuj",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 179,
+    "original_block_index": 1,
+    "original_message_id": "msg_TosiUtuj",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 180,
+    "original_block_index": 0,
+    "original_message_id": "msg_VdKwuIA9",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 181,
+    "original_block_index": 0,
+    "original_message_id": "msg_M7OrjKbw",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 181,
+    "original_block_index": 1,
+    "original_message_id": "msg_M7OrjKbw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 182,
+    "original_block_index": 0,
+    "original_message_id": "msg_BjeNiO59",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 183,
+    "original_block_index": 0,
+    "original_message_id": "msg_Y2u9TayV",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 183,
+    "original_block_index": 1,
+    "original_message_id": "msg_Y2u9TayV",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 184,
+    "original_block_index": 0,
+    "original_message_id": "msg_-8MqU4i6",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 185,
+    "original_block_index": 0,
+    "original_message_id": "msg_CAntmzU5",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 185,
+    "original_block_index": 1,
+    "original_message_id": "msg_CAntmzU5",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 186,
+    "original_block_index": 0,
+    "original_message_id": "msg_1MiEUAtb",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 187,
+    "original_block_index": 0,
+    "original_message_id": "msg_raCP3fXA",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 188,
+    "original_block_index": 0,
+    "original_message_id": "msg_0NQQ_qdz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 189,
+    "original_block_index": 0,
+    "original_message_id": "msg_AQIS7Sv9",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 189,
+    "original_block_index": 1,
+    "original_message_id": "msg_AQIS7Sv9",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 190,
+    "original_block_index": 0,
+    "original_message_id": "msg_qry_WIXf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 191,
+    "original_block_index": 0,
+    "original_message_id": "msg_MSdwbmaa",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 191,
+    "original_block_index": 1,
+    "original_message_id": "msg_MSdwbmaa",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 192,
+    "original_block_index": 0,
+    "original_message_id": "msg_ZRAgMhl0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 193,
+    "original_block_index": 0,
+    "original_message_id": "msg_Mthy2TWw",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 193,
+    "original_block_index": 1,
+    "original_message_id": "msg_Mthy2TWw",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 194,
+    "original_block_index": 0,
+    "original_message_id": "msg_kCYmua2b",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 195,
+    "original_block_index": 0,
+    "original_message_id": "msg_zohi36D6",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 195,
+    "original_block_index": 1,
+    "original_message_id": "msg_zohi36D6",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 196,
+    "original_block_index": 0,
+    "original_message_id": "msg_EkB7EcNH",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 197,
+    "original_block_index": 0,
+    "original_message_id": "msg_qLhBXdRe",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 197,
+    "original_block_index": 1,
+    "original_message_id": "msg_qLhBXdRe",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 198,
+    "original_block_index": 0,
+    "original_message_id": "msg_2oGuXINT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 199,
+    "original_block_index": 0,
+    "original_message_id": "msg_5ai28XFD",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 200,
+    "original_block_index": 0,
+    "original_message_id": "462ead82-f6b5-4917-b1f5-8b035d001532",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 201,
+    "original_block_index": 0,
+    "original_message_id": "msg_fVlxuEEA",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 202,
+    "original_block_index": 0,
+    "original_message_id": "msg_AZU0pqgT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 203,
+    "original_block_index": 0,
+    "original_message_id": "msg_769-P1lc",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 204,
+    "original_block_index": 0,
+    "original_message_id": "msg_tkDsv-5Y",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 205,
+    "original_block_index": 0,
+    "original_message_id": "msg_6vUG4uWN",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 205,
+    "original_block_index": 1,
+    "original_message_id": "msg_6vUG4uWN",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 206,
+    "original_block_index": 0,
+    "original_message_id": "msg_wlS9m9DX",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 207,
+    "original_block_index": 0,
+    "original_message_id": "msg_Y3ld_MoO",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 207,
+    "original_block_index": 1,
+    "original_message_id": "msg_Y3ld_MoO",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 208,
+    "original_block_index": 0,
+    "original_message_id": "msg_QAs1lca_",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 209,
+    "original_block_index": 0,
+    "original_message_id": "msg_DYcICkM3",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 209,
+    "original_block_index": 1,
+    "original_message_id": "msg_DYcICkM3",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 210,
+    "original_block_index": 0,
+    "original_message_id": "msg_Yg61Z_i5",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 211,
+    "original_block_index": 0,
+    "original_message_id": "msg_qWBi_fJR",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 212,
+    "original_block_index": 0,
+    "original_message_id": "13eed13c-a6aa-48c2-80cc-2e033db7df8f",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 213,
+    "original_block_index": 0,
+    "original_message_id": "msg_6q-ahBc1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 214,
+    "original_block_index": 0,
+    "original_message_id": "msg_ek9hwn02",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 215,
+    "original_block_index": 0,
+    "original_message_id": "msg_S5OtQSyy",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 215,
+    "original_block_index": 1,
+    "original_message_id": "msg_S5OtQSyy",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 216,
+    "original_block_index": 0,
+    "original_message_id": "msg_WtXZmziz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 217,
+    "original_block_index": 0,
+    "original_message_id": "msg_EDs10IJB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 218,
+    "original_block_index": 0,
+    "original_message_id": "msg_duAIZMZf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 219,
+    "original_block_index": 0,
+    "original_message_id": "msg_wJW5MkH9",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 220,
+    "original_block_index": 0,
+    "original_message_id": "msg_UpcRfBHr",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 221,
+    "original_block_index": 0,
+    "original_message_id": "msg_ecb2bExv",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 222,
+    "original_block_index": 0,
+    "original_message_id": "msg_xTlZOgbI",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 223,
+    "original_block_index": 0,
+    "original_message_id": "msg_mxzsikwr",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 224,
+    "original_block_index": 0,
+    "original_message_id": "6931e892-6a09-4469-8e6d-0440e674de2f",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 225,
+    "original_block_index": 0,
+    "original_message_id": "msg_RD0f9RXn",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 225,
+    "original_block_index": 1,
+    "original_message_id": "msg_RD0f9RXn",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 226,
+    "original_block_index": 0,
+    "original_message_id": "msg_u2DgCbQB",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 227,
+    "original_block_index": 0,
+    "original_message_id": "msg_1eNDVW-D",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 228,
+    "original_block_index": 0,
+    "original_message_id": "msg_QwY-GRZd",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 229,
+    "original_block_index": 0,
+    "original_message_id": "msg_9DJ3JjfL",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 229,
+    "original_block_index": 1,
+    "original_message_id": "msg_9DJ3JjfL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 230,
+    "original_block_index": 0,
+    "original_message_id": "msg_0aDJjaTQ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 231,
+    "original_block_index": 0,
+    "original_message_id": "msg_Qdy7nBmk",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 232,
+    "original_block_index": 0,
+    "original_message_id": "msg_-8DwhPLT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 233,
+    "original_block_index": 0,
+    "original_message_id": "msg_3yQKhP8o",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 233,
+    "original_block_index": 1,
+    "original_message_id": "msg_3yQKhP8o",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 234,
+    "original_block_index": 0,
+    "original_message_id": "msg_9cAgauBI",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 235,
+    "original_block_index": 0,
+    "original_message_id": "msg_z5Iask2X",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 236,
+    "original_block_index": 0,
+    "original_message_id": "msg_Vyri6MJ-",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 237,
+    "original_block_index": 0,
+    "original_message_id": "msg_p--bVfVy",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 237,
+    "original_block_index": 1,
+    "original_message_id": "msg_p--bVfVy",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 238,
+    "original_block_index": 0,
+    "original_message_id": "msg_b-n68XLz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 239,
+    "original_block_index": 0,
+    "original_message_id": "msg_E11q4liS",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 239,
+    "original_block_index": 1,
+    "original_message_id": "msg_E11q4liS",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 240,
+    "original_block_index": 0,
+    "original_message_id": "msg_HANvSEpC",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 241,
+    "original_block_index": 0,
+    "original_message_id": "msg_8ZMQG-H-",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 242,
+    "original_block_index": 0,
+    "original_message_id": "msg_qnYdPzdb",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 243,
+    "original_block_index": 0,
+    "original_message_id": "msg_Yey7R3pf",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 243,
+    "original_block_index": 1,
+    "original_message_id": "msg_Yey7R3pf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 244,
+    "original_block_index": 0,
+    "original_message_id": "msg_2blViEP6",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 245,
+    "original_block_index": 0,
+    "original_message_id": "msg_VhPD8h1M",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 245,
+    "original_block_index": 1,
+    "original_message_id": "msg_VhPD8h1M",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 246,
+    "original_block_index": 0,
+    "original_message_id": "msg_EHEYuZK0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 247,
+    "original_block_index": 0,
+    "original_message_id": "msg_JNlSNns-",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 248,
+    "original_block_index": 0,
+    "original_message_id": "msg_8q6DtqMT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 249,
+    "original_block_index": 0,
+    "original_message_id": "msg__Vf8IXKY",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 250,
+    "original_block_index": 0,
+    "original_message_id": "msg_yQQtqvo7",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 251,
+    "original_block_index": 0,
+    "original_message_id": "msg_fkxcL-wq",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 251,
+    "original_block_index": 1,
+    "original_message_id": "msg_fkxcL-wq",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 252,
+    "original_block_index": 0,
+    "original_message_id": "msg_wUB6iGkv",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 253,
+    "original_block_index": 0,
+    "original_message_id": "msg_YBAk0wEn",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 254,
+    "original_block_index": 0,
+    "original_message_id": "msg_R9Lv3Ghz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 255,
+    "original_block_index": 0,
+    "original_message_id": "msg_LOYTsqVT",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 255,
+    "original_block_index": 1,
+    "original_message_id": "msg_LOYTsqVT",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 256,
+    "original_block_index": 0,
+    "original_message_id": "msg_BHdhiVn5",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 257,
+    "original_block_index": 0,
+    "original_message_id": "msg_M84jogO1",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 257,
+    "original_block_index": 1,
+    "original_message_id": "msg_M84jogO1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 258,
+    "original_block_index": 0,
+    "original_message_id": "msg_8GRiqDFn",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 259,
+    "original_block_index": 0,
+    "original_message_id": "msg_DpLUqZvu",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 260,
+    "original_block_index": 0,
+    "original_message_id": "msg_srErDmni",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 261,
+    "original_block_index": 0,
+    "original_message_id": "msg__2QrZWeO",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 262,
+    "original_block_index": 0,
+    "original_message_id": "msg_1wQL2vLd",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 263,
+    "original_block_index": 0,
+    "original_message_id": "msg_-5AsQimq",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 263,
+    "original_block_index": 1,
+    "original_message_id": "msg_-5AsQimq",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 264,
+    "original_block_index": 0,
+    "original_message_id": "msg_TPvxQGib",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 265,
+    "original_block_index": 0,
+    "original_message_id": "msg_jillTPEa",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 266,
+    "original_block_index": 0,
+    "original_message_id": "03ed851f-9603-4c78-8e81-c15e9eb986f4",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 267,
+    "original_block_index": 0,
+    "original_message_id": "msg_QXE2QA3o",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 267,
+    "original_block_index": 1,
+    "original_message_id": "msg_QXE2QA3o",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 268,
+    "original_block_index": 0,
+    "original_message_id": "msg_gdAftDg4",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 269,
+    "original_block_index": 0,
+    "original_message_id": "msg_-R9UcF0d",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 270,
+    "original_block_index": 0,
+    "original_message_id": "msg_l9byUlT8",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 271,
+    "original_block_index": 0,
+    "original_message_id": "msg_5A_9C0gh",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 272,
+    "original_block_index": 0,
+    "original_message_id": "msg_fVpcCpe2",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 273,
+    "original_block_index": 0,
+    "original_message_id": "msg_j6uW9ztU",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 274,
+    "original_block_index": 0,
+    "original_message_id": "msg_soakTqRD",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 275,
+    "original_block_index": 0,
+    "original_message_id": "msg_YGzuO_RP",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 275,
+    "original_block_index": 1,
+    "original_message_id": "msg_YGzuO_RP",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 276,
+    "original_block_index": 0,
+    "original_message_id": "msg_tzXJikCG",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 277,
+    "original_block_index": 0,
+    "original_message_id": "msg_9rMHIuAf",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 277,
+    "original_block_index": 1,
+    "original_message_id": "msg_9rMHIuAf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 278,
+    "original_block_index": 0,
+    "original_message_id": "msg_OmVEyFjk",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 279,
+    "original_block_index": 0,
+    "original_message_id": "msg_--0fTA66",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 280,
+    "original_block_index": 0,
+    "original_message_id": "msg_RbJqRLNf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 281,
+    "original_block_index": 0,
+    "original_message_id": "msg_SUVO2ECk",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 281,
+    "original_block_index": 1,
+    "original_message_id": "msg_SUVO2ECk",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 282,
+    "original_block_index": 0,
+    "original_message_id": "msg_95VoM05z",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 283,
+    "original_block_index": 0,
+    "original_message_id": "msg_fxeZ7LOv",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 283,
+    "original_block_index": 1,
+    "original_message_id": "msg_fxeZ7LOv",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 284,
+    "original_block_index": 0,
+    "original_message_id": "msg_pc8R6b1U",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 285,
+    "original_block_index": 0,
+    "original_message_id": "msg__CKOddlg",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 286,
+    "original_block_index": 0,
+    "original_message_id": "msg_FD2PI7Md",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 287,
+    "original_block_index": 0,
+    "original_message_id": "msg_MUMrHALW",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 287,
+    "original_block_index": 1,
+    "original_message_id": "msg_MUMrHALW",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 288,
+    "original_block_index": 0,
+    "original_message_id": "msg_BVW-TNxk",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 289,
+    "original_block_index": 0,
+    "original_message_id": "msg_gO-1hggd",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 289,
+    "original_block_index": 1,
+    "original_message_id": "msg_gO-1hggd",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 290,
+    "original_block_index": 0,
+    "original_message_id": "msg_osmuijah",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 291,
+    "original_block_index": 0,
+    "original_message_id": "msg_L2EXOiXN",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 292,
+    "original_block_index": 0,
+    "original_message_id": "msg_nto7NBax",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 293,
+    "original_block_index": 0,
+    "original_message_id": "msg_wZ09a7Nv",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 293,
+    "original_block_index": 1,
+    "original_message_id": "msg_wZ09a7Nv",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 294,
+    "original_block_index": 0,
+    "original_message_id": "msg_cWa1KXKq",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 295,
+    "original_block_index": 0,
+    "original_message_id": "msg_d4iyRZGK",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 296,
+    "original_block_index": 0,
+    "original_message_id": "msg_kShN60yL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 297,
+    "original_block_index": 0,
+    "original_message_id": "msg_SNa5kbvL",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 297,
+    "original_block_index": 1,
+    "original_message_id": "msg_SNa5kbvL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 298,
+    "original_block_index": 0,
+    "original_message_id": "msg_lzhPafam",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 299,
+    "original_block_index": 0,
+    "original_message_id": "msg_pBz3iQ75",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 300,
+    "original_block_index": 0,
+    "original_message_id": "msg_N0Cdc5Rs",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 301,
+    "original_block_index": 0,
+    "original_message_id": "msg_HbW93lkR",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 302,
+    "original_block_index": 0,
+    "original_message_id": "msg_I7C-K0Al",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 303,
+    "original_block_index": 0,
+    "original_message_id": "msg_zOQf87dA",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 303,
+    "original_block_index": 1,
+    "original_message_id": "msg_zOQf87dA",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 304,
+    "original_block_index": 0,
+    "original_message_id": "msg_kuuwTjIR",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 305,
+    "original_block_index": 0,
+    "original_message_id": "msg_FxroZyan",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 306,
+    "original_block_index": 0,
+    "original_message_id": "msg_ByWT5B7z",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 307,
+    "original_block_index": 0,
+    "original_message_id": "msg_n7V_rog0",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 308,
+    "original_block_index": 0,
+    "original_message_id": "msg_Jt5S6BVa",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 309,
+    "original_block_index": 0,
+    "original_message_id": "msg_mSTHAxFf",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 309,
+    "original_block_index": 1,
+    "original_message_id": "msg_mSTHAxFf",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 310,
+    "original_block_index": 0,
+    "original_message_id": "msg_czm_YB1k",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 311,
+    "original_block_index": 0,
+    "original_message_id": "msg_4z6Kfz30",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 312,
+    "original_block_index": 0,
+    "original_message_id": "msg_TfaaDycL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 313,
+    "original_block_index": 0,
+    "original_message_id": "msg_rl8Y-wzl",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 314,
+    "original_block_index": 0,
+    "original_message_id": "msg_k5lGwiGE",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 315,
+    "original_block_index": 0,
+    "original_message_id": "msg_3dQPx2vE",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 315,
+    "original_block_index": 1,
+    "original_message_id": "msg_3dQPx2vE",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 316,
+    "original_block_index": 0,
+    "original_message_id": "msg_vbxdNJYy",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 317,
+    "original_block_index": 0,
+    "original_message_id": "msg_is2TgDD_",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 318,
+    "original_block_index": 0,
+    "original_message_id": "msg_oTRHPOB8",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 319,
+    "original_block_index": 0,
+    "original_message_id": "msg_R8TgKOOL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 320,
+    "original_block_index": 0,
+    "original_message_id": "msg_vWDWQB-Q",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 321,
+    "original_block_index": 0,
+    "original_message_id": "msg_Y2qEHoCa",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 321,
+    "original_block_index": 1,
+    "original_message_id": "msg_Y2qEHoCa",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 322,
+    "original_block_index": 0,
+    "original_message_id": "msg_Mr85Evi1",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 323,
+    "original_block_index": 0,
+    "original_message_id": "msg_fnPXadQo",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 324,
+    "original_block_index": 0,
+    "original_message_id": "msg_tVh13LRi",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 325,
+    "original_block_index": 0,
+    "original_message_id": "msg_Nza82COG",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 326,
+    "original_block_index": 0,
+    "original_message_id": "msg_4wVYRkKh",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 327,
+    "original_block_index": 0,
+    "original_message_id": "msg_nia6sqKY",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 327,
+    "original_block_index": 1,
+    "original_message_id": "msg_nia6sqKY",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 328,
+    "original_block_index": 0,
+    "original_message_id": "msg_uq7imHNk",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 329,
+    "original_block_index": 0,
+    "original_message_id": "msg_DaVIMWll",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 330,
+    "original_block_index": 0,
+    "original_message_id": "msg_6AorsrNE",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 331,
+    "original_block_index": 0,
+    "original_message_id": "msg_mR6Kv-Qd",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 332,
+    "original_block_index": 0,
+    "original_message_id": "msg_65jilFnR",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 333,
+    "original_block_index": 0,
+    "original_message_id": "msg_H4D6nWer",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 333,
+    "original_block_index": 1,
+    "original_message_id": "msg_H4D6nWer",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 334,
+    "original_block_index": 0,
+    "original_message_id": "msg_O0P04IzY",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 335,
+    "original_block_index": 0,
+    "original_message_id": "msg_QvxDJ6ub",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 336,
+    "original_block_index": 0,
+    "original_message_id": "msg_0nprFPRm",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 337,
+    "original_block_index": 0,
+    "original_message_id": "msg_ZmIAgwmt",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 338,
+    "original_block_index": 0,
+    "original_message_id": "msg_Ca4a3X2r",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 339,
+    "original_block_index": 0,
+    "original_message_id": "msg_2TxjHfv_",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 339,
+    "original_block_index": 1,
+    "original_message_id": "msg_2TxjHfv_",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 340,
+    "original_block_index": 0,
+    "original_message_id": "msg_fh9hH0I6",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 341,
+    "original_block_index": 0,
+    "original_message_id": "msg_iLwMriyP",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 341,
+    "original_block_index": 1,
+    "original_message_id": "msg_iLwMriyP",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 342,
+    "original_block_index": 0,
+    "original_message_id": "msg_USiiCvx-",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 343,
+    "original_block_index": 0,
+    "original_message_id": "msg_BLEPqTil",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 344,
+    "original_block_index": 0,
+    "original_message_id": "msg_O350OEC5",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 345,
+    "original_block_index": 0,
+    "original_message_id": "msg_bVtGY7rz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 346,
+    "original_block_index": 0,
+    "original_message_id": "msg_om3mmJqz",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 347,
+    "original_block_index": 0,
+    "original_message_id": "msg_xwGhGNJL",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 347,
+    "original_block_index": 1,
+    "original_message_id": "msg_xwGhGNJL",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 348,
+    "original_block_index": 0,
+    "original_message_id": "msg_Lns3cHJ8",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 349,
+    "original_block_index": 0,
+    "original_message_id": "msg_wfSPlWc3",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 349,
+    "original_block_index": 1,
+    "original_message_id": "msg_wfSPlWc3",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 350,
+    "original_block_index": 0,
+    "original_message_id": "msg_dRNjry0H",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 351,
+    "original_block_index": 0,
+    "original_message_id": "msg_XwA36MgP",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 351,
+    "original_block_index": 1,
+    "original_message_id": "msg_XwA36MgP",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 352,
+    "original_block_index": 0,
+    "original_message_id": "msg_E7FZIgsu",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 353,
+    "original_block_index": 0,
+    "original_message_id": "msg_Qq0jkbwx",
+    "reason": "included public prose"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 353,
+    "original_block_index": 1,
+    "original_message_id": "msg_Qq0jkbwx",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 354,
+    "original_block_index": 0,
+    "original_message_id": "msg_qU0KuPVQ",
+    "reason": "tool/non-text payload"
+  },
+  {
+    "source_path": "projects/roompacker/evidence/raw/1791236522109_w8g1z.messages.json",
+    "original_position": 355,
+    "original_block_index": 0,
+    "original_message_id": "msg_8PzhtFab",
+    "reason": "included public prose"
+  }
+]

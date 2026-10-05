@@ -1,0 +1,1286 @@
+{
+  "original_session_id": "1790798320886_c7tn7",
+  "session_start_utc": "2026-09-30T19:58:41.136Z",
+  "session_start_source": "first recorded message timestamp; export has no explicit session-start metadata",
+  "first_message_utc": "2026-09-30T19:58:41.136Z",
+  "source_files_sha256": {
+    "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json": "006ce9eb7fdc4adb7b1d5f68c142233d6da4b3125bf95f907d7ce7e1b60885bc"
+  },
+  "messages": [
+    {
+      "dia_id": "D1:1",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 0,
+      "original_block_index": 0,
+      "original_message_id": "ca3e5afb-c869-4705-9105-3d28e3355243",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790798321136,
+      "timestamp_utc": "2026-09-30T19:58:41.136Z",
+      "role": "user",
+      "text_sha256": "4db1bd337de897e1e064a84380d324735272b08bacafdb423610245c91327dd6",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:2",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 3,
+      "original_block_index": 0,
+      "original_message_id": "msg_jEZ93M5W",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790798335179,
+      "timestamp_utc": "2026-09-30T19:58:55.179Z",
+      "role": "assistant",
+      "text_sha256": "b0033e9aa8d2500e48ec02b4c35cd8a6201bf39b8ee1aacc117e7d09ae07a64e",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:3",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 7,
+      "original_block_index": 0,
+      "original_message_id": "msg_k2ePsPgI",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790798343332,
+      "timestamp_utc": "2026-09-30T19:59:03.332Z",
+      "role": "assistant",
+      "text_sha256": "6626d5bb0317ed54856cd1dd0b5468219f15fc5eed96ae445d8b8e9c6ba0c559",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:4",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 9,
+      "original_block_index": 0,
+      "original_message_id": "msg_pYmKZHCe",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790798345935,
+      "timestamp_utc": "2026-09-30T19:59:05.935Z",
+      "role": "assistant",
+      "text_sha256": "23829da84bb38588d173f5e559be04fe5fc956a4bd99f0b6da7008542f40053b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:5",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 11,
+      "original_block_index": 0,
+      "original_message_id": "msg_JV_nL7qI",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790798348865,
+      "timestamp_utc": "2026-09-30T19:59:08.865Z",
+      "role": "assistant",
+      "text_sha256": "27d30f2b403793e09d3e691609e6d599070fe571e572ac596fb1c31578b6020c",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:6",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 13,
+      "original_block_index": 0,
+      "original_message_id": "msg_cNB5zlE_",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790798351461,
+      "timestamp_utc": "2026-09-30T19:59:11.461Z",
+      "role": "assistant",
+      "text_sha256": "d0b75d37473d3361b1a8f99a1c050482157a80517aab95b727cc2128d324aae6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:7",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 15,
+      "original_block_index": 0,
+      "original_message_id": "msg_7mromMsu",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790798355238,
+      "timestamp_utc": "2026-09-30T19:59:15.238Z",
+      "role": "assistant",
+      "text_sha256": "40d70f30daf25311b656a8be10f2ec2f2f9814427e1ff201fc763fb5233a6249",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:8",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 17,
+      "original_block_index": 0,
+      "original_message_id": "msg_C0-NH0PW",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790798360839,
+      "timestamp_utc": "2026-09-30T19:59:20.839Z",
+      "role": "assistant",
+      "text_sha256": "7ffdad9e8ed8d17fcc5f971e4e15e1157b5a148793705e3b62bf98df8ffe2a33",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:9",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 18,
+      "original_block_index": 0,
+      "original_message_id": "3668714b-2f3f-4d35-ab9b-3c96b00f248e",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799591590,
+      "timestamp_utc": "2026-09-30T20:19:51.590Z",
+      "role": "user",
+      "text_sha256": "6597f7fecbbd6e898a4328fa2a33a04c15cf31461f6e51d53b6c9f0f800c827d",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:10",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 21,
+      "original_block_index": 0,
+      "original_message_id": "msg_oeXaa1Mk",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799601096,
+      "timestamp_utc": "2026-09-30T20:20:01.096Z",
+      "role": "assistant",
+      "text_sha256": "85c9bb3ff9571c5358dcd3279dfdb69f9d91244fd066ae03cb82dc2de2f946a8",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:11",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 22,
+      "original_block_index": 0,
+      "original_message_id": "0f8ec3bf-39f8-4478-827d-e23b12c2b13d",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799601115,
+      "timestamp_utc": "2026-09-30T20:20:01.115Z",
+      "role": "user",
+      "text_sha256": "b6aa4309db746dacd93cb85f84b725bb3c7fc1a57456642f832cc87d0d34771e",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:12",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 25,
+      "original_block_index": 0,
+      "original_message_id": "msg_wI8gtc8y",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799610321,
+      "timestamp_utc": "2026-09-30T20:20:10.321Z",
+      "role": "assistant",
+      "text_sha256": "3bd205fc10411cbd7f6174eee2c59908dc8079b50fadaf61bce839a484bc5fcb",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:13",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 29,
+      "original_block_index": 0,
+      "original_message_id": "msg_dWUjRaoJ",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799617544,
+      "timestamp_utc": "2026-09-30T20:20:17.544Z",
+      "role": "assistant",
+      "text_sha256": "6959c6d567574463ddb9b5365b2a97b34c6948645949aa80636d5171c3eeddf1",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:14",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 31,
+      "original_block_index": 0,
+      "original_message_id": "msg_7Fukv7m4",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799624496,
+      "timestamp_utc": "2026-09-30T20:20:24.496Z",
+      "role": "assistant",
+      "text_sha256": "2c20ec0fa26023427210cf8289b3cb02f7e3c1d4f29575c82fe79d0fecdf689a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:15",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 33,
+      "original_block_index": 0,
+      "original_message_id": "msg_tCvN7bS0",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799628133,
+      "timestamp_utc": "2026-09-30T20:20:28.133Z",
+      "role": "assistant",
+      "text_sha256": "ca9dd8c79ae79266411b3edc333d089176c6cb32af76c714d806cbce47c5f748",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:16",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 34,
+      "original_block_index": 0,
+      "original_message_id": "1ba6230d-4691-4c8f-bdee-69d6a5df6acf",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799628156,
+      "timestamp_utc": "2026-09-30T20:20:28.156Z",
+      "role": "user",
+      "text_sha256": "4bc85afaeab0594d01ff7f51cdf3a00f4a56697da705bf00c387e51d667b9dcb",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:17",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 37,
+      "original_block_index": 0,
+      "original_message_id": "msg_Lqi7Pvds",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799639057,
+      "timestamp_utc": "2026-09-30T20:20:39.057Z",
+      "role": "assistant",
+      "text_sha256": "45f60a615a055e7b23b2eb99b9f6247c83da1a6f53cece87a433c753b5011f88",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:18",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 41,
+      "original_block_index": 0,
+      "original_message_id": "msg_cDnDib07",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799646915,
+      "timestamp_utc": "2026-09-30T20:20:46.915Z",
+      "role": "assistant",
+      "text_sha256": "081da6694fabf609b1e801cdfb6376b500f622c17673d7620158ae77ab076169",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:19",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 42,
+      "original_block_index": 0,
+      "original_message_id": "faaecfd9-e1f8-4e1b-bbe3-135222e2608a",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799646936,
+      "timestamp_utc": "2026-09-30T20:20:46.936Z",
+      "role": "user",
+      "text_sha256": "dbb859461866d675b74710d7efd7eb5b46b69d25f8c6972943e9e1f181663ccb",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:20",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 45,
+      "original_block_index": 0,
+      "original_message_id": "msg_agyB6b9V",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799674272,
+      "timestamp_utc": "2026-09-30T20:21:14.272Z",
+      "role": "assistant",
+      "text_sha256": "0dcc515b6e9cad999809c3265f314681d1d31804174b9db9eb5c2ed3f6a93fb1",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:21",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 47,
+      "original_block_index": 0,
+      "original_message_id": "msg_8jkTLx4-",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799676381,
+      "timestamp_utc": "2026-09-30T20:21:16.381Z",
+      "role": "assistant",
+      "text_sha256": "6730686b55d302e177b7bf352256a342c43f293c95cfbb8d5da0b8de0d387d6f",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:22",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 55,
+      "original_block_index": 0,
+      "original_message_id": "msg_ou1cncdT",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799704075,
+      "timestamp_utc": "2026-09-30T20:21:44.075Z",
+      "role": "assistant",
+      "text_sha256": "580415b37af6ba8876d7974d7a02ed1133efcebea5dd976627db14a7bfde0c1f",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:23",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 57,
+      "original_block_index": 0,
+      "original_message_id": "msg_sbMhf5Xo",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799708837,
+      "timestamp_utc": "2026-09-30T20:21:48.837Z",
+      "role": "assistant",
+      "text_sha256": "936353581a8f830dc9655cb6a0687037ec07d23040b30156286becdc6770b271",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:24",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 60,
+      "original_block_index": 0,
+      "original_message_id": "msg_tl0Qpl4N",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799717839,
+      "timestamp_utc": "2026-09-30T20:21:57.839Z",
+      "role": "assistant",
+      "text_sha256": "100183c5c01a7ea54ec82ed5c6f56d803058ecacd480f40bcf5c7229083f8f31",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:25",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 61,
+      "original_block_index": 0,
+      "original_message_id": "d628cbff-fcb0-405d-b447-f3dd03b2397c",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799717861,
+      "timestamp_utc": "2026-09-30T20:21:57.861Z",
+      "role": "user",
+      "text_sha256": "474209bdfe00bff81af909da4b64c306f2fdeda68bb7d8271b470ba2855a5091",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:26",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 64,
+      "original_block_index": 0,
+      "original_message_id": "msg_UUlWpC0J",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799743971,
+      "timestamp_utc": "2026-09-30T20:22:23.971Z",
+      "role": "assistant",
+      "text_sha256": "c8a5a595fa437c525f25f5542ee495b311286cbe0765e4c88f51af987f9b4c00",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:27",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 66,
+      "original_block_index": 0,
+      "original_message_id": "msg_lrqtenWf",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799748029,
+      "timestamp_utc": "2026-09-30T20:22:28.029Z",
+      "role": "assistant",
+      "text_sha256": "04b1969e2b5cae80f68c18581c588198ea699e3e6d0ed13893b7cd0026100d7b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:28",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 68,
+      "original_block_index": 0,
+      "original_message_id": "msg_Cbn5jBbm",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799751430,
+      "timestamp_utc": "2026-09-30T20:22:31.430Z",
+      "role": "assistant",
+      "text_sha256": "f2b83a9d753a6d4a3fbef26f61a466e3e7779d075e3a646872fdac874fa362da",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:29",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 70,
+      "original_block_index": 0,
+      "original_message_id": "msg_PXW0VEbk",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799758493,
+      "timestamp_utc": "2026-09-30T20:22:38.493Z",
+      "role": "assistant",
+      "text_sha256": "3dcc37dd2276cc8b1175fe85c8bddc0721dabb089c2a526aa274f56fcab5bb6a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:30",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 71,
+      "original_block_index": 0,
+      "original_message_id": "362de417-0953-4817-a2a5-9f303f534246",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799758506,
+      "timestamp_utc": "2026-09-30T20:22:38.506Z",
+      "role": "user",
+      "text_sha256": "a638bb5138ce604d65a83444d7356e2ac3e2810ee8e9f4839473d9eaf6b94b5a",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:31",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 74,
+      "original_block_index": 0,
+      "original_message_id": "msg_r_lmULqe",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799798265,
+      "timestamp_utc": "2026-09-30T20:23:18.265Z",
+      "role": "assistant",
+      "text_sha256": "323a6f1adde4dd85a30ffcfbc2c34debcdef96801dc4f1dca333a89421040583",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:32",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 86,
+      "original_block_index": 0,
+      "original_message_id": "msg_r7rscgJK",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799839249,
+      "timestamp_utc": "2026-09-30T20:23:59.249Z",
+      "role": "assistant",
+      "text_sha256": "2ae2113882d2014d7259d247ad36b04c6e5d31a3b40f727e1673f509d1a9ccd7",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:33",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 88,
+      "original_block_index": 0,
+      "original_message_id": "msg_bLw2mMDz",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799844613,
+      "timestamp_utc": "2026-09-30T20:24:04.613Z",
+      "role": "assistant",
+      "text_sha256": "847982d5aaf9b9435ad4c23676aba67578cc7b2875c8277c0e7c7c46b45aab62",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:34",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 89,
+      "original_block_index": 0,
+      "original_message_id": "72030283-0dc5-4e07-b542-07d274e70bd8",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799844633,
+      "timestamp_utc": "2026-09-30T20:24:04.633Z",
+      "role": "user",
+      "text_sha256": "8428d371098b8352fe10a9bf385ac7535971a1d5eee9a71de4310a761ebc2e02",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:35",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 92,
+      "original_block_index": 0,
+      "original_message_id": "msg_sSjw9h-8",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799860625,
+      "timestamp_utc": "2026-09-30T20:24:20.625Z",
+      "role": "assistant",
+      "text_sha256": "ce71c4cd0a4aa7fd5915660e6f6a736767fd9a4eb4aaeb1ea3ca2df757e23870",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:36",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 110,
+      "original_block_index": 0,
+      "original_message_id": "msg_BFU6Z561",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799953951,
+      "timestamp_utc": "2026-09-30T20:25:53.951Z",
+      "role": "assistant",
+      "text_sha256": "f9cbb39d891eee00b62b44ce793179d8b7498943e62064dffdd2227e77dde774",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:37",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 113,
+      "original_block_index": 0,
+      "original_message_id": "msg_PggJkPKz",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799963706,
+      "timestamp_utc": "2026-09-30T20:26:03.706Z",
+      "role": "assistant",
+      "text_sha256": "235ac2e63c3e2507cbe442b63e799b689b3261c912c00f2735227ca42a589a2b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:38",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 114,
+      "original_block_index": 0,
+      "original_message_id": "8b333e90-daf3-44f5-9ae7-a3a5d3f17567",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799963723,
+      "timestamp_utc": "2026-09-30T20:26:03.723Z",
+      "role": "user",
+      "text_sha256": "8cb03b864faf4e8f263c58daf581ab7f9f4dafb80bb6cdc897be66a734168155",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:39",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 117,
+      "original_block_index": 0,
+      "original_message_id": "msg_l9R86s-r",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799974715,
+      "timestamp_utc": "2026-09-30T20:26:14.715Z",
+      "role": "assistant",
+      "text_sha256": "b77a8708cd95a6cce970391bb987fd1117d4578ad34a3898ceea21ed8ee497e1",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:40",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 119,
+      "original_block_index": 0,
+      "original_message_id": "msg_iPd-Km3N",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799989238,
+      "timestamp_utc": "2026-09-30T20:26:29.238Z",
+      "role": "assistant",
+      "text_sha256": "70c04f1af5e8cab1674c9d91427e58e5b84370f7f701974bc303b64d74011021",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:41",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 121,
+      "original_block_index": 0,
+      "original_message_id": "msg_2hy45Rg_",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790799995952,
+      "timestamp_utc": "2026-09-30T20:26:35.952Z",
+      "role": "assistant",
+      "text_sha256": "95a28df92ab8af533e7e08bb0b56b57bc4e22af808478abc7df9b81d218a7722",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:42",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 123,
+      "original_block_index": 0,
+      "original_message_id": "msg_BuAGIRb0",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800000717,
+      "timestamp_utc": "2026-09-30T20:26:40.717Z",
+      "role": "assistant",
+      "text_sha256": "c8cbd825b0180a9dd683c0377d5302a66150fb2a0eda298b90a04f4b27c96da5",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:43",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 125,
+      "original_block_index": 0,
+      "original_message_id": "msg_p80TOB2d",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800006307,
+      "timestamp_utc": "2026-09-30T20:26:46.307Z",
+      "role": "assistant",
+      "text_sha256": "184f6fbccbe392869f062dcbef10636946316a2768f8a309c3627309664f99fe",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:44",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 126,
+      "original_block_index": 0,
+      "original_message_id": "45bc72ab-008f-451c-80e2-52e3a9604bd6",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800006329,
+      "timestamp_utc": "2026-09-30T20:26:46.329Z",
+      "role": "user",
+      "text_sha256": "93dcdc994c3ffd31c3eb496db1b7c54e460d1a93136f9d07fe2bade11f39406f",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:45",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 129,
+      "original_block_index": 0,
+      "original_message_id": "msg_7u-6Ohwm",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800017057,
+      "timestamp_utc": "2026-09-30T20:26:57.057Z",
+      "role": "assistant",
+      "text_sha256": "c2b9ebc5cc48f3c93985cdcf0827133cb3ec5d4cd3328191b5831c954260147b",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:46",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 131,
+      "original_block_index": 0,
+      "original_message_id": "msg_a_qZk2Yc",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800022563,
+      "timestamp_utc": "2026-09-30T20:27:02.563Z",
+      "role": "assistant",
+      "text_sha256": "a28699408280d5ad53491414b922f5285422fc111777451ddf317593f70ec020",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:47",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 133,
+      "original_block_index": 0,
+      "original_message_id": "msg_r9LZRBdI",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800026810,
+      "timestamp_utc": "2026-09-30T20:27:06.810Z",
+      "role": "assistant",
+      "text_sha256": "a40f40564bfdaaaf81c10bfca57084ed153c81e53d8fe6be14fbd5d66a26faa3",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:48",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 135,
+      "original_block_index": 0,
+      "original_message_id": "msg_Y5zJYQPT",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800033513,
+      "timestamp_utc": "2026-09-30T20:27:13.513Z",
+      "role": "assistant",
+      "text_sha256": "fe9ffcf49a358912c748a117a6be08fb4c06b722b79591e8a851cb97026a7903",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:49",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 137,
+      "original_block_index": 0,
+      "original_message_id": "msg_G-xlwNA-",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800041412,
+      "timestamp_utc": "2026-09-30T20:27:21.412Z",
+      "role": "assistant",
+      "text_sha256": "088a52267b770c09f5f77ad886256b476642bd6da9b4cf67b78a273816274476",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:50",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 141,
+      "original_block_index": 0,
+      "original_message_id": "msg_bNe4ux8r",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800050580,
+      "timestamp_utc": "2026-09-30T20:27:30.580Z",
+      "role": "assistant",
+      "text_sha256": "a1b4c5c0484dbd768ec85dbd89718e8ddd4c3ac6c5e709c3dc68edcdf9f660c7",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:51",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 143,
+      "original_block_index": 0,
+      "original_message_id": "msg_MBvNAWYr",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800056598,
+      "timestamp_utc": "2026-09-30T20:27:36.598Z",
+      "role": "assistant",
+      "text_sha256": "93670896b26a18de9e25fe23ced9e87f62ff1f2e580944f39f70d29b8289e051",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:52",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 144,
+      "original_block_index": 0,
+      "original_message_id": "f85e4ecf-3463-430e-95f4-966fc5de6408",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800056622,
+      "timestamp_utc": "2026-09-30T20:27:36.622Z",
+      "role": "user",
+      "text_sha256": "3edbfc2d3d1bdc00c90e6e7da154d9f67fcb178d10210f7da8d48080eabac5db",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:53",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 147,
+      "original_block_index": 0,
+      "original_message_id": "msg_27XBzYaN",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800071293,
+      "timestamp_utc": "2026-09-30T20:27:51.293Z",
+      "role": "assistant",
+      "text_sha256": "d90f5067c08f358c68173a958aa0c60af00c6dfdbca60f1394b20822b29cc083",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:54",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 149,
+      "original_block_index": 0,
+      "original_message_id": "msg_13Yp4Hub",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800088232,
+      "timestamp_utc": "2026-09-30T20:28:08.232Z",
+      "role": "assistant",
+      "text_sha256": "399665bbdab1d7d3eae25653e41d2137359a2733bb64f7e1e6b2e1d94bba7329",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:55",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 151,
+      "original_block_index": 0,
+      "original_message_id": "msg_7OZUc4mT",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800093133,
+      "timestamp_utc": "2026-09-30T20:28:13.133Z",
+      "role": "assistant",
+      "text_sha256": "74741e850e2e54cc3be2fdaae47570ef7e129ec2a2577d58b5292292bf4b7fb4",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:56",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 153,
+      "original_block_index": 0,
+      "original_message_id": "msg_O7OfE-68",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800098390,
+      "timestamp_utc": "2026-09-30T20:28:18.390Z",
+      "role": "assistant",
+      "text_sha256": "ca8461f26cc2937b2532d4ce62917089b3839444ed908af532267137ecdcb84a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:57",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 155,
+      "original_block_index": 0,
+      "original_message_id": "msg_9i-9SpLE",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800106971,
+      "timestamp_utc": "2026-09-30T20:28:26.971Z",
+      "role": "assistant",
+      "text_sha256": "f384003a0843c42a38660933329976cf5652cbc3b601ddd7ae0b17e281d95a6a",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:58",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 157,
+      "original_block_index": 0,
+      "original_message_id": "msg_RpgMBDzK",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800115631,
+      "timestamp_utc": "2026-09-30T20:28:35.631Z",
+      "role": "assistant",
+      "text_sha256": "c3660e2dd98ef36c1883cf49ffc0bc111c19879eea78910d2a5e6afcb5b4f9a4",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:59",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 159,
+      "original_block_index": 0,
+      "original_message_id": "msg_TCaf-wqR",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800123458,
+      "timestamp_utc": "2026-09-30T20:28:43.458Z",
+      "role": "assistant",
+      "text_sha256": "b810b504e5ab845cecb86974693b28efbb13373c271ff22d0b08dad9fd1fedfe",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:60",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 163,
+      "original_block_index": 0,
+      "original_message_id": "msg__tZ4-zvR",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800130853,
+      "timestamp_utc": "2026-09-30T20:28:50.853Z",
+      "role": "assistant",
+      "text_sha256": "61fe0443f037ffb60cbf270a4e8ad2fa59ebd02a999dc8ae2035b1231a9d89f6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:61",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 165,
+      "original_block_index": 0,
+      "original_message_id": "msg_fQsm7PKT",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800138408,
+      "timestamp_utc": "2026-09-30T20:28:58.408Z",
+      "role": "assistant",
+      "text_sha256": "78f0d1dd0a0fbdeb6690672a6d373395ad7c8771e4cacf879348e9170bb35246",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:62",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 167,
+      "original_block_index": 0,
+      "original_message_id": "msg_k4vrmKTs",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800142447,
+      "timestamp_utc": "2026-09-30T20:29:02.447Z",
+      "role": "assistant",
+      "text_sha256": "a443e45e4de1b80608a6a834b83985a5bc2dd2d225ce3646db36508b7b8d6141",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:63",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 169,
+      "original_block_index": 0,
+      "original_message_id": "msg_8_yQWyOj",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800147611,
+      "timestamp_utc": "2026-09-30T20:29:07.611Z",
+      "role": "assistant",
+      "text_sha256": "e8523297d5d3d27ac6cdf353109de969ab3b07576d8c2ccaf60c0633d0b21a39",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:64",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 170,
+      "original_block_index": 0,
+      "original_message_id": "664eed5b-90f2-4ebe-8228-a136d7486d11",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800147650,
+      "timestamp_utc": "2026-09-30T20:29:07.650Z",
+      "role": "user",
+      "text_sha256": "3a84575523594df4143828e4143a00fcde92d46c0bb7c425afd50a5bf5044dc8",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:65",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 173,
+      "original_block_index": 0,
+      "original_message_id": "msg_NyFYdr7c",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800160166,
+      "timestamp_utc": "2026-09-30T20:29:20.166Z",
+      "role": "assistant",
+      "text_sha256": "4cd14afcacc0724d881c94b0f72a27da6d0d12a93b2015af33df6b6ff77c1c4e",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:66",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 177,
+      "original_block_index": 0,
+      "original_message_id": "msg_xf6totje",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800172669,
+      "timestamp_utc": "2026-09-30T20:29:32.669Z",
+      "role": "assistant",
+      "text_sha256": "fe18ef21a54fcb7949a4d044fa09562cfb17800251a4372cd44533d73a6b73b6",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:67",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 183,
+      "original_block_index": 0,
+      "original_message_id": "msg_x1of5MFG",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800189644,
+      "timestamp_utc": "2026-09-30T20:29:49.644Z",
+      "role": "assistant",
+      "text_sha256": "0bcfed932ef00eb48d50e9369458570b9342b74aa6d18772282a5545ba09107c",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:68",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 187,
+      "original_block_index": 0,
+      "original_message_id": "msg_QfEnVCRL",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800204267,
+      "timestamp_utc": "2026-09-30T20:30:04.267Z",
+      "role": "assistant",
+      "text_sha256": "025efc35999734c2d0a09c143934d743abd63f03f8b4a024833cc9007e34c9de",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:69",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 189,
+      "original_block_index": 0,
+      "original_message_id": "msg_2aHb-0hV",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800213905,
+      "timestamp_utc": "2026-09-30T20:30:13.905Z",
+      "role": "assistant",
+      "text_sha256": "afc25dae0613b78ad256e0269ab6a0cb6eea05684d0de3403ac9d6ac870568f3",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:70",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 191,
+      "original_block_index": 0,
+      "original_message_id": "msg_E7Q01LMd",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800218772,
+      "timestamp_utc": "2026-09-30T20:30:18.772Z",
+      "role": "assistant",
+      "text_sha256": "53034a7137ae3a052d1a2f5ecd20f7e3d9c011ed3f29bcbb531930de3a74bd65",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:71",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 197,
+      "original_block_index": 0,
+      "original_message_id": "msg_ozitqgYg",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800237140,
+      "timestamp_utc": "2026-09-30T20:30:37.140Z",
+      "role": "assistant",
+      "text_sha256": "035bdff97572b28b25f0418043e25ffd9132e4e2db90df391f541cd03e5a0ce3",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:72",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 199,
+      "original_block_index": 0,
+      "original_message_id": "msg_AIggzQwj",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800243227,
+      "timestamp_utc": "2026-09-30T20:30:43.227Z",
+      "role": "assistant",
+      "text_sha256": "91c3ace044f8c08a09d4ecb763a4bdda01ec0d516dec3e5dfe9511e479d07c5f",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:73",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 201,
+      "original_block_index": 0,
+      "original_message_id": "msg_w0U6RqE1",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800263450,
+      "timestamp_utc": "2026-09-30T20:31:03.450Z",
+      "role": "assistant",
+      "text_sha256": "3f749adeab6f9bcb4e9e5d386cd4ee02dbdd2c16d5bf64acf7a0ff7e12ef6531",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:74",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 203,
+      "original_block_index": 0,
+      "original_message_id": "msg_MtRLFePk",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800271144,
+      "timestamp_utc": "2026-09-30T20:31:11.144Z",
+      "role": "assistant",
+      "text_sha256": "a589cd8b01bec3b797b9a3801c3a035aa59e9f2ed12572defeace9a68aa09da0",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:75",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 205,
+      "original_block_index": 0,
+      "original_message_id": "msg_gaRJuT2t",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800277173,
+      "timestamp_utc": "2026-09-30T20:31:17.173Z",
+      "role": "assistant",
+      "text_sha256": "a1b4c5c0484dbd768ec85dbd89718e8ddd4c3ac6c5e709c3dc68edcdf9f660c7",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:76",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 207,
+      "original_block_index": 0,
+      "original_message_id": "msg_8DETY755",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800281926,
+      "timestamp_utc": "2026-09-30T20:31:21.926Z",
+      "role": "assistant",
+      "text_sha256": "bd65a2b2aa3fdb500e8d6a03bd8bf3a02836d97b9be336b5ba8b6de7f08b2aba",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:77",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 209,
+      "original_block_index": 0,
+      "original_message_id": "msg_wwTBZuBH",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800288739,
+      "timestamp_utc": "2026-09-30T20:31:28.739Z",
+      "role": "assistant",
+      "text_sha256": "1f83306312f67e7eb14b8244020d1d51a9c1fe92eaacbb2023cb85bcebc66313",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:78",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 210,
+      "original_block_index": 0,
+      "original_message_id": "414846c8-b440-4d71-87c4-7894d84af942",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800288766,
+      "timestamp_utc": "2026-09-30T20:31:28.766Z",
+      "role": "user",
+      "text_sha256": "518ab1b4deb4048a192e2b1a1665e03d2201ed49d5e33c38dcab06bf334f4cb4",
+      "transformations": [
+        "removed user_input envelope; trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:79",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 213,
+      "original_block_index": 0,
+      "original_message_id": "msg_hgUTlwet",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800297368,
+      "timestamp_utc": "2026-09-30T20:31:37.368Z",
+      "role": "assistant",
+      "text_sha256": "0f65d0e94bdab70feb8fcc06365ef5dd52bcdaaffdfbb9537a03623065433cda",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:80",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 217,
+      "original_block_index": 0,
+      "original_message_id": "msg_02_DXPBj",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800309759,
+      "timestamp_utc": "2026-09-30T20:31:49.759Z",
+      "role": "assistant",
+      "text_sha256": "8487c2c5db65e5bc00c2fa7c6948b77714fe8baa76ce955e318df70cc105ee51",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:81",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 221,
+      "original_block_index": 0,
+      "original_message_id": "msg_Jx7C7Uzc",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800319443,
+      "timestamp_utc": "2026-09-30T20:31:59.443Z",
+      "role": "assistant",
+      "text_sha256": "69e2f9d6db7166e8ae9e332550bfab385c8c3c4d0a1c5c2331dea54d392c7c96",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:82",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 223,
+      "original_block_index": 0,
+      "original_message_id": "msg_him7_nFI",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800329684,
+      "timestamp_utc": "2026-09-30T20:32:09.684Z",
+      "role": "assistant",
+      "text_sha256": "6aadafa1dc606e70eeb4ee195185a08959c79a0a604106704db120a2797ba446",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:83",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 225,
+      "original_block_index": 0,
+      "original_message_id": "msg_TbDRBXDH",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800343122,
+      "timestamp_utc": "2026-09-30T20:32:23.122Z",
+      "role": "assistant",
+      "text_sha256": "bcdaaf63a94c80fd859c083c1b1616de30ac48a70712c0a69504630726303d78",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:84",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 227,
+      "original_block_index": 0,
+      "original_message_id": "msg_DLsqJ3Pu",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800350206,
+      "timestamp_utc": "2026-09-30T20:32:30.206Z",
+      "role": "assistant",
+      "text_sha256": "9f5583e8f78847114fbef95863fe263c46c22ea841c3493eeaa3b03783d12a95",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    },
+    {
+      "dia_id": "D1:85",
+      "source_path": "projects/roompacker/evidence/raw/1790798320886_c7tn7.messages.json",
+      "original_position": 229,
+      "original_block_index": 0,
+      "original_message_id": "msg_92rFJRtP",
+      "original_session_id": "1790798320886_c7tn7",
+      "original_timestamp": 1790800356050,
+      "timestamp_utc": "2026-09-30T20:32:36.050Z",
+      "role": "assistant",
+      "text_sha256": "fe2a1fc476cbe7465e707483cb49fc89ca613dbfaad4ae4d716ca54a86aa5fdc",
+      "transformations": [
+        "trimmed outer whitespace"
+      ]
+    }
+  ]
+}

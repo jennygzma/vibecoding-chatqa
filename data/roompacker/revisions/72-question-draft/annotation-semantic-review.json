@@ -1,0 +1,638 @@
+[
+  {
+    "question_id": "Q001",
+    "question": "What did the user want in the first RoomPacker prototype?",
+    "reviewed_sha256": "e8a53dff2bf5736d462968839ca0d85a1631f92696a0c902db0d37793effc852",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The user explicitly restricts the initial scope.",
+    "initial_draft_item": "roompacker_01_main-build:1"
+  },
+  {
+    "question_id": "Q002",
+    "question": "Why did the local launcher switch to Python's HTTP server?",
+    "reviewed_sha256": "5f24ec899a054a45e03c72a244480a3fb25949aefba4d0abad8ce806b1b8cd93",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Connect the npm failure to the available fallback and chosen launcher.",
+    "initial_draft_item": "roompacker_01_main-build:3"
+  },
+  {
+    "question_id": "Q003",
+    "question": "How did the initial drag-painting gesture choose whether to select or deselect cells?",
+    "reviewed_sha256": "7e31a7ead444ca3731e6235d102698f769ca9c5fcc77b6e3b16410b0b3f25b34",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Explain the single rule controlling an entire drag gesture.",
+    "initial_draft_item": "roompacker_01_main-build:6"
+  },
+  {
+    "question_id": "Q004",
+    "question": "How did the selection model change after the smallest-enclosing-rectangle request?",
+    "reviewed_sha256": "fd442df414e337692b086e48ae2aa1e4cc01579ba8c182f0366be9e3409f2490",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Compare the two stated selection models; revision ordering is not temporal.",
+    "initial_draft_item": "roompacker_01_main-build:7"
+  },
+  {
+    "question_id": "Q005",
+    "question": "How was a selected rectangle converted into a named table?",
+    "reviewed_sha256": "366ad07fc76902d46c18ebf0a0510415301e9b117644e81e7d4bf0f282c2ef85",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Retain the complete placement flow instead of individual color or button trivia.",
+    "initial_draft_item": "roompacker_01_main-build:9"
+  },
+  {
+    "question_id": "Q006",
+    "question": "Why does moving a table require both cell ownership tracking and restoring its old footprint?",
+    "reviewed_sha256": "4c6540668c894314933bd86ff54dcaaf421c8648c75c1e5328042f9c9d306eef",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Infer the reason for ownership bookkeeping from the described erase and restamp operations.",
+    "initial_draft_item": "roompacker_01_main-build:11"
+  },
+  {
+    "question_id": "Q007",
+    "question": "How did the main-build thread handle a new table that overlapped an existing table?",
+    "reviewed_sha256": "cce05870becacd09ef98bad8816ca78d6466ab1d38edefc56030f24e10d6e2df",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Scope the rejection policy explicitly to the early main-build thread.",
+    "initial_draft_item": "roompacker_01_main-build:12"
+  },
+  {
+    "question_id": "Q008",
+    "question": "How did the selection preview distinguish free cells from occupied cells?",
+    "reviewed_sha256": "0f8fd7ab5baeca93fe3fde99233626fcbc3355695c9ca65c2cef1b51e9893375",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Keep the occupied-versus-free feedback distinction as one usable interface rule.",
+    "initial_draft_item": "roompacker_01_main-build:14"
+  },
+  {
+    "question_id": "Q009",
+    "question": "How did table editing support both committing a resize and cancelling it?",
+    "reviewed_sha256": "a81f26214ec339aed64ba5e266beb9aa6f728c9e5c8c7af42452c96118f74e19",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The final response directly explains editing and identity preservation.",
+    "initial_draft_item": "roompacker_01_main-build:16"
+  },
+  {
+    "question_id": "Q010",
+    "question": "How does deletion behave for a selected table, a table being edited, and an empty selection?",
+    "reviewed_sha256": "af3b5f91d5d17d5018fb072312ca27540cc2802ef2703987af4543e6c145c084",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "A false-premise phrasing does not require an adversarial category in Edgar's schema.",
+    "initial_draft_item": "roompacker_01_main-build:18"
+  },
+  {
+    "question_id": "Q011",
+    "question": "What size and shape constraint did the user request for straight couches?",
+    "reviewed_sha256": "f96ad1e4ae32675d47eae4a444b13a0d5e10b822b7fcfea59d89bd99784bf6d7",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The user's dimensions and strip constraint are explicit.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:1"
+  },
+  {
+    "question_id": "Q012",
+    "question": "Why did furniture drops fail, and how did separating click cleanup from drag cleanup fix them?",
+    "reviewed_sha256": "1813cde9cd95c148ef586ea5e342b2d21ed6e1b31f4f413aed8efbe24aad85ae",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Connect two event owners, their failure interaction, and the corrected cleanup split.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:3"
+  },
+  {
+    "question_id": "Q013",
+    "question": "How did the first couch-extension handles work?",
+    "reviewed_sha256": "f2b133e3c6428d9716d49bbc2cf1017b4f1f5a0c1b38125d7d9eb84261fa5d97",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "One explanation supplies the constraint and the resizing affordance.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:5"
+  },
+  {
+    "question_id": "Q014",
+    "question": "Did diagonal contact with a table satisfy the chair-placement rule in the sofas-and-chairs thread?",
+    "reviewed_sha256": "d69a156bcda9cb7d17650091dfc781e6f68a93748fef806fc398ef821cf9b7ce",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Orthogonal adjacency and eligible neighbor type are stated together.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:9"
+  },
+  {
+    "question_id": "Q015",
+    "question": "How did the occupancy data model change to support chair stacking?",
+    "reviewed_sha256": "12fc546a16741e03b090802198ad8acd72092eff3c44e9750efef221ca09c791",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Compare scalar and array occupancy and explain how that supports stacking.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:11"
+  },
+  {
+    "question_id": "Q016",
+    "question": "What distinguished chair conflicts from couch conflicts in this thread?",
+    "reviewed_sha256": "fc810cb4e03387b653a68782f3415f857abc51bc947833563dbf81bba54526af",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The completed conflict table directly contrasts chair and sofa rules.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:12"
+  },
+  {
+    "question_id": "Q017",
+    "question": "Did the L-sofa implementation initially match the requested three-cell L?",
+    "reviewed_sha256": "2ac18e5e1de00763a6a5b6566b4255989a73e300ee93e7e7826bf501bf75834e",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Compare the user's requested three cells with the implemented two length-three arms sharing a corner.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:14"
+  },
+  {
+    "question_id": "Q018",
+    "question": "Why should an L-sofa's collision check use its occupied cells rather than its bounding rectangle?",
+    "reviewed_sha256": "d4ebb8cc43709f6ace0b8dc360445492a8fe998693b4a0af70c37c581fa8cbea",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Explain why the L's actual footprint must control collision rather than its full bounding rectangle.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:15"
+  },
+  {
+    "question_id": "Q019",
+    "question": "What board-selection bug was fixed while adding the L-sofa?",
+    "reviewed_sha256": "d6b9aeff3ff87cba1286bd4dd0d9f0370689e24691ca7ce6ade9d46c7a559469",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The final report identifies the missing guard without proving when it was introduced.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:17"
+  },
+  {
+    "question_id": "Q020",
+    "question": "How did stacked chairs display their count?",
+    "reviewed_sha256": "d5b4ece5c1dc22133ab81d049990c86e65942f6714356316b2125383e940c910",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The stack summary directly explains the badge and its updates.",
+    "initial_draft_item": "roompacker_02_sofas-chairs:18"
+  },
+  {
+    "question_id": "Q021",
+    "question": "What connected-shape rule did the user request for custom furniture?",
+    "reviewed_sha256": "a0bd81d5b231638afe8fb4581eb4a15fc7b3bad4b2cb654b4d10da814c518b96",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The user explicitly supplies connectivity and area requirements.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:1"
+  },
+  {
+    "question_id": "Q022",
+    "question": "What happened when removing a painted rug cell would disconnect its shape?",
+    "reviewed_sha256": "fc8bb9114cbb4c387493b2b2275573f23986e74a4ac25a3e065be1b2c61db50a",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Removal must preserve connectivity, not merely adjacency at insertion.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:2"
+  },
+  {
+    "question_id": "Q023",
+    "question": "What clockwise coordinate transform rotated a rug by ninety degrees?",
+    "reviewed_sha256": "13f99618ec2c57875d4ae29cc44498feff1206ca631a6e0e577252863210638c",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The rug's coordinate transform is explicitly defined.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:5"
+  },
+  {
+    "question_id": "Q024",
+    "question": "What table size limits did the user request?",
+    "reviewed_sha256": "0754ec77a46cb7c78eb1136e441692533a062d89359f03bc9f2956029c84116b",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The numerical size constraint is directly requested, not a time-related question.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:7"
+  },
+  {
+    "question_id": "Q025",
+    "question": "How did the donut-creation workflow change after the user's clarification?",
+    "reviewed_sha256": "73a9cfb2b25427aa2d55c7053cd5cbfd756c032d9f2815770a459d0ab6f88c9d",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Compare the initial dedicated mode, the user's replacement workflow, and the completed correction.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:10"
+  },
+  {
+    "question_id": "Q026",
+    "question": "What determined the size, position and validity of a punched donut hole?",
+    "reviewed_sha256": "3eaba0c6a1e109efef1df0f4da450166c2db278c7c35bfe15257feec7db992c1",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The border constraint establishes which interior selections are valid.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:11"
+  },
+  {
+    "question_id": "Q027",
+    "question": "How did the stored donut hole respond to movement and rotation?",
+    "reviewed_sha256": "75c6015ccee2580139293789a36b27ef493089f99b70dc053030f9114d13e46a",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Movement and rotation of the stored hole are explicitly described together.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:13"
+  },
+  {
+    "question_id": "Q028",
+    "question": "What became of collision blocking after free furniture overlap was implemented?",
+    "reviewed_sha256": "219e496d909e77eb9a7011db5bb07495d5dac7e24fe5d627bae897c1c654bd04",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "One final summary states the changed warning-versus-blocking policy.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:14"
+  },
+  {
+    "question_id": "Q029",
+    "question": "What separation of responsibilities addressed the furniture-color overwrite problem?",
+    "reviewed_sha256": "e8d2d6c69e157393f46fc49f6eca54b3180f95480a866362df11d2c22537a875",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Explain the division between occupancy bookkeeping and independent visual overlays.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:16"
+  },
+  {
+    "question_id": "Q030",
+    "question": "Does fracturing always divide an old table into exactly two pieces?",
+    "reviewed_sha256": "5844b2d83d006061f90570d059df4c8b080c8943c93bdb18bb2d02d1db0fc9a6",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The described split has up to four fragments; do not infer two from the request.",
+    "initial_draft_item": "roompacker_03_shapes-overlaps:17"
+  },
+  {
+    "question_id": "Q031",
+    "question": "How did teleport validity change after the user said adjustment was their job?",
+    "reviewed_sha256": "260a8ccdf3a7969ac97279af4fd976091b1acc603b7a560c79f0b43e523cec44",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The user's correction changes the validity policy; compare before and after.",
+    "initial_draft_item": "roompacker_04_chaos:5"
+  },
+  {
+    "question_id": "Q032",
+    "question": "What time limit was introduced for unresolved furniture conflicts?",
+    "reviewed_sha256": "f909b34ad96994b1d526c81f376ba6e2523008e8abec91ae5e6455761e71797a",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Eight seconds and the 100-ms checking interval are real time values.",
+    "initial_draft_item": "roompacker_04_chaos:7"
+  },
+  {
+    "question_id": "Q033",
+    "question": "Why could the reported teleport cadence undermine the eight-second conflict deadline?",
+    "reviewed_sha256": "faff0f9dd89e55dc531e157c644e51f0085fe4dc59a233c27b7b8728ecdd513f",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Combine the 1.2-second teleport cadence with reset-on-landing behavior to identify a potential deadline loophole.",
+    "initial_draft_item": "roompacker_04_chaos:8"
+  },
+  {
+    "question_id": "Q034",
+    "question": "How frequently did furniture break and how long did repair allow?",
+    "reviewed_sha256": "baf6df01168c345b1625618a56ac7518c02da8b4dd33a073a71f2da34a36f30e",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Break frequency and the repair window are explicitly reported durations.",
+    "initial_draft_item": "roompacker_04_chaos:10"
+  },
+  {
+    "question_id": "Q035",
+    "question": "How did the player repair broken furniture?",
+    "reviewed_sha256": "9c05224ec26e2a227a4eff3980b18eff798ffdaf5ad99abe7587be0b7a547e4d",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Repair click consumption is an explicit interaction rule.",
+    "initial_draft_item": "roompacker_04_chaos:11"
+  },
+  {
+    "question_id": "Q036",
+    "question": "What probability and cadence governed random rotation?",
+    "reviewed_sha256": "4f8723d76eeebcad7bd80ef4dab7cacb7d093e51c8f88271456ab6a8b2cad7e9",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Rotation probability is paired with a real 1.8-second interval.",
+    "initial_draft_item": "roompacker_04_chaos:13"
+  },
+  {
+    "question_id": "Q037",
+    "question": "Why is skipping a dragged piece useful in both teleportation and random rotation?",
+    "reviewed_sha256": "61e003f37c9e6f7dc4e06de790325d822bc6cf07aa054c3a98b7ad43c8e5721e",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Explain a shared design benefit of the two documented drag-exclusion guards.",
+    "initial_draft_item": "roompacker_04_chaos:14"
+  },
+  {
+    "question_id": "Q038",
+    "question": "When was the one-percent fading easter-egg roll performed?",
+    "reviewed_sha256": "426f26400ea5acc24017609a877b33351192ac5c64772224511287f6dd60a3a4",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The roll occurs at a specified event, not on each recurring tick.",
+    "initial_draft_item": "roompacker_04_chaos:15"
+  },
+  {
+    "question_id": "Q039",
+    "question": "How was rainbow furniture triggered and animated?",
+    "reviewed_sha256": "fd681f8f6f105caa01c80d3cf2c480e1cc12f18355188e02f9dc875eacbbf468",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The trigger and six-second color cycle are reported as cosmetic behavior.",
+    "initial_draft_item": "roompacker_04_chaos:17"
+  },
+  {
+    "question_id": "Q040",
+    "question": "How did the rug squiggle mechanic mutate shapes while preserving their area?",
+    "reviewed_sha256": "ee451d6d9c6e6c016da232f7d9018160f91a3cd693aebbab61421e6a6abae1ee",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The complete mutation report supplies cadence, swap count and invariants.",
+    "initial_draft_item": "roompacker_04_chaos:18"
+  },
+  {
+    "question_id": "Q041",
+    "question": "What camera and mouse controls accompanied the first 3D conversion?",
+    "reviewed_sha256": "a1bebef4aec4c83e2fcf44bfa647c310e4b5f6a07c89aea0843326ef6286594a",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Keep camera and interaction behavior together.",
+    "initial_draft_item": "roompacker_05_3d-floating:3"
+  },
+  {
+    "question_id": "Q042",
+    "question": "What did the arrow keys do after keyboard furniture control was added?",
+    "reviewed_sha256": "d3d760331a45d45faa3c023c9024fd40494c3eb8ebe807e19cf584d037a2f6ed",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The complete one-cell movement rule is directly reported.",
+    "initial_draft_item": "roompacker_05_3d-floating:5"
+  },
+  {
+    "question_id": "Q043",
+    "question": "Which keys controlled clockwise and counter-clockwise rotation in 3D?",
+    "reviewed_sha256": "e43e6990b52e66bd7881938557c8a70aeb6c02b6c3be8fac0ec6dba0d2391e46",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The custom-key request and resulting clockwise/counter-clockwise bindings are both cited.",
+    "initial_draft_item": "roompacker_05_3d-floating:7"
+  },
+  {
+    "question_id": "Q044",
+    "question": "How did the placement space expand after the 64-by-64-by-64 request?",
+    "reviewed_sha256": "6cae6d5110bb4118bdb952a22825e37b67544e9028e03034d348da807d1bbf16",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The user requests a larger space after a 32-square floor; compare it with the six-face implementation.",
+    "initial_draft_item": "roompacker_05_3d-floating:9"
+  },
+  {
+    "question_id": "Q045",
+    "question": "Did Chaos teleportation move furniture between cube faces?",
+    "reviewed_sha256": "3630ed5a6067b1360208e719482356173436ab417aaa031f1d67dde5c3c42136",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The final report limits teleports to the piece's own face.",
+    "initial_draft_item": "roompacker_05_3d-floating:12"
+  },
+  {
+    "question_id": "Q046",
+    "question": "What were the requested final heights for tables, sofas, L-sofas, and chairs?",
+    "reviewed_sha256": "4cfffb4c15717929a5260ca99c985e5120aef81d3cd62c6eaa4a6d3f3f3fcd39",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Combine three separate requests and their reported final height values.",
+    "initial_draft_item": "roompacker_05_3d-floating:13"
+  },
+  {
+    "question_id": "Q047",
+    "question": "Which furniture did the agent redesign after the vague request that abnormal furniture be unique?",
+    "reviewed_sha256": "9e37183d7bdc485756c5fc1393bb6404581f7109f572a87b2273f0deae9f3c49",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Distinguish the ambiguous user request from the agent's actual L-sofa interpretation.",
+    "initial_draft_item": "roompacker_05_3d-floating:14"
+  },
+  {
+    "question_id": "Q048",
+    "question": "How did the redesigned two-unit L-sofa divide its height?",
+    "reviewed_sha256": "f7159f602b15db853c57cf8db07f47c659820114f55c6aa171d055da040a6d20",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The final reply directly gives the seat/backrest height split.",
+    "initial_draft_item": "roompacker_05_3d-floating:15"
+  },
+  {
+    "question_id": "Q049",
+    "question": "How did W and S control floating furniture?",
+    "reviewed_sha256": "2ab40979d602d815cb4c8fcb66100debd0c3647d0eeb66930102951f3ef5df7f",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The two float controls are explicitly reported in the final reply.",
+    "initial_draft_item": "roompacker_05_3d-floating:17"
+  },
+  {
+    "question_id": "Q050",
+    "question": "Why does clamping floatDepth to 0–63 not by itself prove that furniture stays inside the cube?",
+    "reviewed_sha256": "7046380cf9e4a981f0836bf212344b3487649d88287e60c3294228d25a073156",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "A bounded offset alone is insufficient evidence of full geometric containment.",
+    "initial_draft_item": "roompacker_05_3d-floating:18"
+  },
+  {
+    "question_id": "Q051",
+    "question": "How were furniture edges kept visible when the bodies became transparent?",
+    "reviewed_sha256": "a6dda5f71752c67171224061786e5b8bbb3640a97e051e1211cb6c3dc2d76149",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The edge-line implementation directly explains how transparency left outlines visible.",
+    "initial_draft_item": "roompacker_06_colors-merging:3"
+  },
+  {
+    "question_id": "Q052",
+    "question": "How was the opacity control improved for exact input?",
+    "reviewed_sha256": "dd0d39c3a496cb5955e4d07d905c8c2bef1afd587c1c8100d74e6f46457e4319",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Keep exact input, synchronization and clamping as one control contract.",
+    "initial_draft_item": "roompacker_06_colors-merging:5"
+  },
+  {
+    "question_id": "Q053",
+    "question": "How did transparency support change by the end of the visual-refinements thread?",
+    "reviewed_sha256": "5510214f97d9207723317ce1334eb5eb8e706f2a2fbbebcc6d2560727e5ba958",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Compare implementation, explicit removal request and removal result.",
+    "initial_draft_item": "roompacker_06_colors-merging:6"
+  },
+  {
+    "question_id": "Q054",
+    "question": "Did removing furniture transparency also make placement previews opaque?",
+    "reviewed_sha256": "c5cedda026bcaca76a20feba11a87ab06556845a6e009db2ec316f1d2695b702",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The removal summary directly distinguishes piece materials from preview materials.",
+    "initial_draft_item": "roompacker_06_colors-merging:7"
+  },
+  {
+    "question_id": "Q055",
+    "question": "How did the selection effect change after the user requested a reddish glow?",
+    "reviewed_sha256": "2134ec03a68606d461bd9ccecd4adc8531696d4fa0a36dae29d305e0e3521986",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Compare the particle implementation with the requested and implemented replacement.",
+    "initial_draft_item": "roompacker_06_colors-merging:10"
+  },
+  {
+    "question_id": "Q056",
+    "question": "Which rendering settings were matched for the greenish room background?",
+    "reviewed_sha256": "36bc97335e6460a836507e7d53000a04521d717f7d27a5cf85b974c05fe2c3f8",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The room-color request and the completed three-setting change are both cited.",
+    "initial_draft_item": "roompacker_06_colors-merging:12"
+  },
+  {
+    "question_id": "Q057",
+    "question": "How did the furniture color picker behave with and without a selected piece?",
+    "reviewed_sha256": "963956b99a6802bf80b485572e5025ad84022b57c2166aec3419e1f8341fbc4c",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The final summary supplies both picker states.",
+    "initial_draft_item": "roompacker_06_colors-merging:13"
+  },
+  {
+    "question_id": "Q058",
+    "question": "What conditions enabled merging two furniture pieces?",
+    "reviewed_sha256": "989d8b0b2beceac7855de237f965718d71282b661997132ee6eee70e3459e39f",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Partner validity is directly stated; do not invent adjacency or connectivity constraints.",
+    "initial_draft_item": "roompacker_06_colors-merging:14"
+  },
+  {
+    "question_id": "Q059",
+    "question": "What state and capabilities did the resulting merged piece retain?",
+    "reviewed_sha256": "5771d9f1b6ff7d0727700cd95cf058ee3e14202211faa9dc7d4a12f490cadc2e",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "One result summary states replacement, selection, height and supported chaining.",
+    "initial_draft_item": "roompacker_06_colors-merging:16"
+  },
+  {
+    "question_id": "Q060",
+    "question": "Did merged furniture have to consist of two pieces of the same type?",
+    "reviewed_sha256": "30f6595f548a28943f8c5568ebf8c0df833d3ba46f78c7f9bc06da84ce8df4ce",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "The supported type combinations are directly listed.",
+    "initial_draft_item": "roompacker_06_colors-merging:17"
+  },
+  {
+    "question_id": "Q061",
+    "question": "How did handling furniture overlap evolve from the main build through the shapes thread?",
+    "reviewed_sha256": "03c6a3d1c49201cfa79cd43af473a1dae90cb92ac9028afb60d89fd448036ccd",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Combine the early rejection policy, later permissive policy and final destructive table behavior."
+  },
+  {
+    "question_id": "Q062",
+    "question": "Which occupancy-model change made the later free-overlap policy possible?",
+    "reviewed_sha256": "dfa07fa1aa361666ba2af721159684de73ce7998a21315a919ec49e53e90e373",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Relate the earlier data representation to the later policy that uses it."
+  },
+  {
+    "question_id": "Q063",
+    "question": "How did the chair rule in the sofas thread differ from the final shapes-thread rule?",
+    "reviewed_sha256": "277448a576e83cee0beae3f72fdd1666c464cadeeda92a1d3d29f96df5e75360",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Compare the rules at two explicit checkpoints without treating an early rule as final."
+  },
+  {
+    "question_id": "Q064",
+    "question": "What shared geometric principle underlies the L-sofa and donut collision checks?",
+    "reviewed_sha256": "934a5703bad7a6feb6ddc5580ae7b64dcb9d858a3e6cd1bc9cafbcecabf18b5f",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Combine two independent shape representations to identify the common collision rule."
+  },
+  {
+    "question_id": "Q065",
+    "question": "How does ordinary table editing differ from the later fracture operation in preserving the original piece?",
+    "reviewed_sha256": "40d7704070c3f280bedffbbf0566a27da2bdc7d058f44cf1911dadcad04275e2",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Distinguish mutation of one existing object from replacement by new objects."
+  },
+  {
+    "question_id": "Q066",
+    "question": "Why are board bounds still enforced when overlaps are allowed as part of Chaos gameplay?",
+    "reviewed_sha256": "d31a9d026e28c182aa5eb7cbeee69f726ae2f3ecd6ba94da5881e4856751ba7e",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Use the occupancy representation and the stated indexing failure to distinguish game conflicts from structural validity."
+  },
+  {
+    "question_id": "Q067",
+    "question": "What manipulation choices did the 3D conversion add alongside the earlier mouse dragging?",
+    "reviewed_sha256": "7d59cb7f033f59e978154bb8331e10833e064eba90de87f57d52597732e7cb0b",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Combine earlier planar mouse movement with the later discrete and depth controls."
+  },
+  {
+    "question_id": "Q068",
+    "question": "Which furniture was called abnormal in the Chaos discussion, and which piece was actually redesigned after the later vague request?",
+    "reviewed_sha256": "06f579f3d9a9a8ba9ffcc7e677b3758ec17ab8bfafdacac54b7c8e15aa2c268c",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Identify an interpretation mismatch instead of asserting the vague request named the L-sofa."
+  },
+  {
+    "question_id": "Q069",
+    "question": "How did the final 3D color picker differ from the earlier rainbow-furniture easter egg?",
+    "reviewed_sha256": "c9cc58f70ad60bfcc86d093a89c3d41c81db7e8497de335c77313e3b38375b09",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Contrast stochastic cosmetic behavior with the explicit later user control request; do not claim the rainbow feature survived the rewrite."
+  },
+  {
+    "question_id": "Q070",
+    "question": "What shape restrictions should a reviewer avoid carrying from the rug feature into the later merge feature?",
+    "reviewed_sha256": "0803f867d4eac14a4343c727b6c0cb7daf903e18417cb200345f948a3b8cf5ab",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Contrast an explicitly constrained original type with a different operation whose reported conditions do not impose that cap."
+  },
+  {
+    "question_id": "Q071",
+    "question": "What caution should guide a runtime review of furniture stacking after the 3D rewrite?",
+    "reviewed_sha256": "5d4b44ddc37c30a75092dd69e8e3442697d78db37961c7f1bca3d7bd42403116",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Infer a verification need from an earlier capability and the documented full rewrite; do not declare the feature lost without runtime proof."
+  },
+  {
+    "question_id": "Q072",
+    "question": "How do the early drag ghost and final merge preview help the player assess a furniture change?",
+    "reviewed_sha256": "0c7611b54b7fcf0cd6bf443eab76577ca3136237d67f6d4693e86c81c1a361b8",
+    "editorial_status": "source-and-reasoning-checked",
+    "researcher_approval": "pending",
+    "category_reason": "Infer the shared usability benefit from two distinct preview workflows."
+  }
+]
