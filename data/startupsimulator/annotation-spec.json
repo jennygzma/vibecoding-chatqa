@@ -1,7 +1,7 @@
 [
   {
     "question_id": "Q001",
-    "question": "What did I ask the first StartupSimulator prototype to let the player do?",
+    "question": "What did the user ask the first StartupSimulator prototype to let the player do?",
     "category": [
       "single-session",
       "singlehop",
@@ -47,7 +47,7 @@
   },
   {
     "question_id": "Q003",
-    "question": "What did my final main-build feedback say about the floor, despite earlier visual revisions?",
+    "question": "What did the user's final main-build feedback say about the floor, despite earlier visual revisions?",
     "category": [
       "single-session",
       "singlehop"
@@ -104,7 +104,7 @@
   },
   {
     "question_id": "Q006",
-    "question": "What would a level-three Engineer earn per second under the reported base-rate and upgrade rules?",
+    "question": "Before rounding, what level-three Engineer rate follows from the reported base rate and upgrade multiplier?",
     "category": [
       "single-session",
       "multihop",
@@ -122,7 +122,7 @@
         "excerpt": "level 1 = base rate, level 2 = 1.5×, level 3 = 2.25×; upgrade cost $500/$2000"
       }
     ],
-    "answer": "$6.75 per second: $3 × 2.25.",
+    "answer": "$6.75 per second before rounding: $3 × 2.25. This is arithmetic on the reported rules, not a verified runtime payout.",
     "requires_answers": []
   },
   {
@@ -150,7 +150,7 @@
   },
   {
     "question_id": "Q008",
-    "question": "What financial win condition did I request after adding workers and cereal?",
+    "question": "What financial win condition did the user request after adding workers and cereal?",
     "category": [
       "single-session",
       "singlehop",
@@ -321,7 +321,7 @@
   },
   {
     "question_id": "Q014",
-    "question": "What replaced the continuous dash toggle after I clarified that I meant a short teleport?",
+    "question": "What replaced the continuous dash toggle after the user clarified that the user meant a short teleport?",
     "category": [
       "single-session",
       "multihop",
@@ -395,7 +395,7 @@
   },
   {
     "question_id": "Q017",
-    "question": "What sofa control did I request in the lighting conversation?",
+    "question": "What sofa control did the user request in the lighting conversation?",
     "category": [
       "single-session",
       "singlehop",
@@ -441,7 +441,7 @@
   },
   {
     "question_id": "Q019",
-    "question": "What bike behavior did I request for power above 100 in the final threshold revision?",
+    "question": "What bike behavior did the user request for power above 100 in the final threshold revision?",
     "category": [
       "single-session",
       "singlehop",
@@ -482,7 +482,7 @@
   },
   {
     "question_id": "Q021",
-    "question": "What did I want food delivery to change about the player’s stats?",
+    "question": "What did the user want food delivery to change about the player’s stats?",
     "category": [
       "single-session",
       "singlehop",
@@ -528,7 +528,7 @@
   },
   {
     "question_id": "Q023",
-    "question": "Did the reported double-jump level gate match my original “above level 5” request?",
+    "question": "Did the reported double-jump level gate match the user's original “above level 5” request?",
     "category": [
       "single-session",
       "multihop",
@@ -633,7 +633,7 @@
   },
   {
     "question_id": "Q027",
-    "question": "Which two independent winning goals were described in the main-build and hiring conversations?",
+    "question": "What different win goals were described in the main-build report and the later hiring request?",
     "category": [
       "multi-session",
       "multihop"
@@ -650,12 +650,12 @@
         "excerpt": "if i make 1 million dollars i win the game"
       }
     ],
-    "answer": "Complete Day 10’s tasks to launch, or reach one million dollars.",
+    "answer": "The main-build report described launching after completing Day 10; the later hiring request asked to win at one million dollars. These citations alone do not establish that both triggers coexist in the final build.",
     "requires_answers": []
   },
   {
     "question_id": "Q028",
-    "question": "For an Engineer at level 3 who is already on strike when a desk-swap timer expires, what income and swap behavior follow from the reports?",
+    "question": "How does a worker strike affect both passive earnings and eligibility for the later desk swap?",
     "category": [
       "multi-session",
       "multihop",
@@ -744,7 +744,7 @@
   },
   {
     "question_id": "Q031",
-    "question": "What extra eligibility and cost did the later double jump add beyond the parkour conversation’s ordinary free hop?",
+    "question": "How do the parkour free-hop report and later double-jump report differ in cost and eligibility?",
     "category": [
       "multi-session",
       "multihop",
@@ -777,7 +777,835 @@
         "excerpt": "The `energy > 50` check remains as the second gate."
       }
     ],
-    "answer": "An airborne double jump requires level 2 or higher and energy above 50, and costs five more energy after the four-cost free hop.",
+    "answer": "The parkour report assigns a free hop a four-stamina cost. The later double-jump report assigns an airborne jump a five-energy cost, gated by level 2 or higher and energy above 50. The reports do not prove a combined nine-energy cost in the final build.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q032",
+    "question": "Which business systems were explicitly absent from the first playable prototype?",
+    "answer": "Hiring, revenue, and broader business simulation.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_nDEO_19q",
+        "excerpt": "This first version focuses on exploring the office; hiring, revenue, and broader business simulation aren’t implemented yet."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q033",
+    "question": "What coordinate-system change did the Pokémon-style conversion report?",
+    "answer": "From isometric to top-down orthographic, with 32-pixel tiles and a 16 × 12-tile room.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_qi8yugM-",
+        "excerpt": "- Changed from isometric projection to **top-down orthographic**"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_qi8yugM-",
+        "excerpt": "- Introduced `TILE_SIZE = 32` for Pokemon-style 32px tiles"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_qi8yugM-",
+        "excerpt": "- Expanded room size from 12x10 to **16x12 tiles**"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q034",
+    "question": "How did the later pixel-art reboot differ from the temporary smooth-rendering revision?",
+    "answer": "It disabled image smoothing and used integer scaling and rounded drawing coordinates instead of fractional scaling and smooth shapes.",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_sr1sKwb7",
+        "excerpt": "- `imageSmoothingEnabled = true` + `imageSmoothingQuality = 'high'` (was `false`)"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_sr1sKwb7",
+        "excerpt": "- Fractional scale (`Math.max(0.5, raw)` — can be 2.3×, 1.8×, etc.) instead of integer-floor"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_COusR459",
+        "excerpt": "- `imageSmoothingEnabled = false` — crisp pixel art"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_COusR459",
+        "excerpt": "- Scale is `Math.floor(raw)` (always an integer: 3×, 4×, etc.) so every \"pixel\" is a perfectly sharp square"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_COusR459",
+        "excerpt": "- All drawing uses `px(ctx, color, x, y, w, h)` which calls `fillRect` with `Math.round()` coords — no sub-pixel blurring anywhere"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q035",
+    "question": "What separate collision measurements did the walking-precision fix introduce?",
+    "answer": "Founder radius 0.18 tiles and fixed object padding 0.05 tiles, instead of coupling both to the old 0.4 radius.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_3_h9QIDW",
+        "excerpt": "### 2. Walking precision — **`FOUNDER_RADIUS` cut from 0.4 → 0.18`**"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_3_h9QIDW",
+        "excerpt": "Previously `isWalkable` used `FOUNDER_RADIUS` (0.4) as the padding around *every object*, meaning no matter how small the radius got, the furniture force fields scaled with it. Now object padding is a fixed constant `0.05` — literally one-twentieth of a tile — just enough to prevent z-fighting at the edge pixels."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q036",
+    "question": "How did founder work earnings scale from Day 1 to Day 10 in the money report?",
+    "answer": "From $50 per work session on Day 1 to $5,000 on Day 10.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_rIYK3A21",
+        "excerpt": "- Added `workEarnings` to every entry in `DAY_PROGRESS` — scaling from **$50 on Day 1** up to **$5,000 on Day 10** (reflecting the product going from prototype to launch-ready):"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q037",
+    "question": "How many workers could be hired, and when were their candidates chosen?",
+    "answer": "Two workers, one per desk; candidates were deterministic within a day and changed on a new day.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_RxkX9Oob",
+        "excerpt": "- Up to **2 workers** can be hired (one per desk). Their earnings stack."
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_RxkX9Oob",
+        "excerpt": "- Candidates are deterministic per day (same candidates all day, different each day)."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q038",
+    "question": "Which founder upgrade replaced work’s energy cost with an energy gain?",
+    "answer": "Deep Work Protocol, priced at $2,000, doubled work earnings and restored five energy instead of charging energy.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_c8SSmL26",
+        "excerpt": "- 🧠 **Deep Work Protocol** ($2000) — Work earns 2× money AND restores +5 energy instead of costing any"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q039",
+    "question": "How did the worker-firing report restore an occupied desk to the hiring flow?",
+    "answer": "Remove the worker, save the change and update the HUD; the desk’s action reverted to Make the offer.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_4JtApp5_",
+        "excerpt": "1. Removes the worker from `state.workers`"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_4JtApp5_",
+        "excerpt": "3. Saves to localStorage"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_4JtApp5_",
+        "excerpt": "4. Updates the HUD (worker passive income disappears)"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_4JtApp5_",
+        "excerpt": "The desk immediately resets to \"Room for someone great.\" / \"Another desk.\" and the action button reverts to \"Make the offer 🤝\" so you can re-hire a new candidate."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q040",
+    "question": "How did paying off a strike differ from granting a wage raise?",
+    "answer": "A payoff charged 40 times the worker’s current per-second earnings once; a raise permanently added $1 per second. Both ended the strike and restarted its countdown.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_Ig50c3X7",
+        "excerpt": "| **Action button** (blue) | **\"Pay them off – $X\"** — one-time flat payment (40× their current $/s), strike ends, new countdown starts |"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_Ig50c3X7",
+        "excerpt": "| **Cancel button** (ghost) | **\"Raise wages (+$1/s)\"** — permanently bumps `earningsPerTick` by 1, strike ends, new countdown starts |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q041",
+    "question": "What timing change made baseline stamina depletion faster during the health thread?",
+    "answer": "The reported interval changed from one point every eight seconds to one point every three seconds.",
+    "category": [
+      "single-session",
+      "multihop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_Cst9R4HL",
+        "excerpt": "A new **`energyDrainAccumulator`** runs inside `tick()` every frame. Every **8 real-seconds**, if the player hasn't slept yet today, 1 energy is drained. At a full bar of 80, that gives roughly **640 seconds (~10 minutes)** before collapse — but the real clock is tighter because:"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_Qp19ubWW",
+        "excerpt": "Done. Energy now drains **1 HP every 3 seconds** instead of every 8 — so from a full bar of 80, you'll hit zero in about **4 minutes** of doing nothing. With work costing −12 on top of that, the pressure to grab coffee, use the couch, and get to bed is much more real. Hit `Cmd+Shift+R` to pick up the change."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q042",
+    "question": "Why did the save-loading fix remove sleep from restored completed tasks?",
+    "answer": "Restoring a previously completed sleep task made the game treat the player as already asleep, permanently blocking the drain condition. Excluding it reactivated depletion on reload.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_qKaHRpY6",
+        "excerpt": "**Root cause:** `'sleep'` was added to the `TASKS` array, which means `parseSave()` was loading it from `localStorage`. If you had previously slept (ending the day) in a prior session, the save file still had `'sleep'` in `completed`. On reload, `parseSave` restored it — so `state.completed.includes('sleep')` was `true` from the very start, and the drain condition was permanently blocked."
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_qKaHRpY6",
+        "excerpt": "**Fix:** In `parseSave()`, `'sleep'` is now explicitly excluded from the loaded `completed` list — it's a \"end of day\" action that should never carry over into a new session. Every time you load the game, the day starts fresh with sleep not yet done, so the energy drain will always be active."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q043",
+    "question": "How did the peptide report distinguish recovery after a death from ordinary burnout recovery?",
+    "answer": "A peptide death advanced the day with 30 stamina, compared with 50 for ordinary burnout.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_AuhXCAkD",
+        "excerpt": "**When it kills you:** dedicated `💉 You overdid it.` day-end screen, wakes up at **30 stamina** (harsher than burnout's 50). The button text and day-end body copy escalate with each shot count."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q044",
+    "question": "What did the continuous-dash revision report for stamina cost before Blink replaced it?",
+    "answer": "One stamina every 0.25 seconds, or four per second—12 times the one-per-three-second passive rate.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_MG-1b8gV",
+        "excerpt": "**After:** 1 HP drained every **0.25 seconds** while dashing (4 HP/sec)"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_MG-1b8gV",
+        "excerpt": "For reference, the passive drain is 1 HP every 3 seconds (~0.33 HP/sec), so dashing now costs **~12× the passive rate**. A full tank of 100 HP will last about **25 seconds** of sustained dashing before you're in the danger zone — so it's a meaningful burst tool, not something you can just leave on."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q045",
+    "question": "What cost and cooldown did the Blink report attach to its three-tile move?",
+    "answer": "Eight stamina and a 1.2-second cooldown.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_morBeu_B",
+        "excerpt": "- **Costs 8 stamina** — more than a free hop (4), less than a vault (10)"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_morBeu_B",
+        "excerpt": "- **1.2 second cooldown** — button dims and ⚡ pulses while recharging, re-enables automatically when ready"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q046",
+    "question": "How did sprinting change the reported vault reach and duration?",
+    "answer": "Reach increased from two to 3.2 tiles, and the vault became 20% faster.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_Ce2-k5EY",
+        "excerpt": "| **Vault reach** | 2.0 tiles | 3.2 tiles (catches far objects) |"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_Ce2-k5EY",
+        "excerpt": "| **Arc duration** | standard | 20% faster/snappier |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q047",
+    "question": "Were the overhead lights and floor lamp tied to one shared toggle?",
+    "answer": "No; they had independent states and could be used separately.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_hTCm_eiX",
+        "excerpt": "Added a **floor lamp** to the office that works independently from the wall light switch. Here's everything that changed:"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q048",
+    "question": "What controls adjusted recline versus leaving the sofa?",
+    "answer": "Up/W and down/S adjusted recline; left/right movement or E stood the player up.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_CMWHGMWr",
+        "excerpt": "| **↑ / W** | Recline further back (hold to animate smoothly) |"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_CMWHGMWr",
+        "excerpt": "| **↓ / S** | Sit back upright |"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_CMWHGMWr",
+        "excerpt": "| **← / →, A, D** | Stand up immediately |"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_CMWHGMWr",
+        "excerpt": "| **E** | Stand up immediately |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q049",
+    "question": "What happened to the lighting and usable appliances at zero electricity?",
+    "answer": "Both lights were forced off. Coffee and desk work also required at least five and eight electricity respectively.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_Z0kN2qpM",
+        "excerpt": "- **Blackout at 0**: forces `lightOn` and `lampOn` to `false`, shows `\"🔌 Blackout!\"`"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Z0kN2qpM",
+        "excerpt": "- **Coffee machine** costs **−5 ⚡** (refuses if < 5 ⚡)"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Z0kN2qpM",
+        "excerpt": "- **Work at desk** costs **−8 ⚡** (refuses if < 8 ⚡)"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q050",
+    "question": "What happened to bike power during and after a five-second overload?",
+    "answer": "Space was ignored, power drained at 30 per second, and recovery reset power to zero.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_h_H6bCj0",
+        "excerpt": "- While broken: SPACE does nothing, the bar flashes red, power drains fast (30/s), and the overlay **shakes** with a CSS animation"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_h_H6bCj0",
+        "excerpt": "- After 5 seconds: power resets to 0, toast fires \"✅ Bike recovered\", normal riding resumes"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q051",
+    "question": "What caused game.js to need full reconstruction in the treadmill report?",
+    "answer": "A Python write was interrupted by a UnicodeEncodeError and had zeroed the file; the agent reported reconstructing it from scratch.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_niPjez8x",
+        "excerpt": "A Python script accidentally zeroed out `game.js` when a `UnicodeEncodeError` interrupted a write mid-operation. The file was fully reconstructed from scratch and all planned treadmill mini-game features were added simultaneously."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q052",
+    "question": "How did a clean treadmill dismount differ from overexertion for workout credit?",
+    "answer": "A clean dismount incremented the session count; an overexerted dismount gave no session credit.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_niPjez8x",
+        "excerpt": "- Clean dismount → increments `treadmillSessions`, shows session toast, plays 'complete' sound"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_niPjez8x",
+        "excerpt": "- Overexerted dismount → no session credit, damage toast"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q053",
+    "question": "During which in-game hours was food delivery available?",
+    "answer": "From 10 AM until before 10 PM; it was closed before 10 AM and at or after 10 PM.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_xkW1VcLj",
+        "excerpt": "- Title, description and action text dynamically reflect time-of-day — too early (<10 AM), open hours, or kitchen closed (≥10 PM)"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q054",
+    "question": "What did the emoji-fix report establish versus merely hypothesize about the “only ramen” complaint?",
+    "answer": "It reported correcting several food emoji codepoints. Its explanation that these visual mistakes caused the complaint was a hypothesis, not demonstrated evidence that menu randomization worked.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_bX0l0VO4",
+        "excerpt": "Three wrong emoji codepoints in the original `menu` array — all caused by mixing up Unicode surrogate pairs:"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_bX0l0VO4",
+        "excerpt": "The \"only ramen\" experience was almost certainly because the label text said *\"Ramen inbound\"* but displayed 🍣 (sushi), making every order *look like* sushi/ramen to the user — and since the text always said \"Ramen,\" they believed that's all they got. The randomization itself was working fine the whole time."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q055",
+    "question": "How did D serve both dancing and ordinary movement?",
+    "answer": "When idle, D toggled dancing; with movement active it remained right-walk. Walking or clicking a destination cancelled dancing.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_Ao7q4BTX",
+        "excerpt": "- **Tap `d` while standing still** (no movement keys held, no path, not on bike/treadmill/sofa) → toggles dance on/off, clears `d` from the keys set so movement doesn't also fire, shows a toast"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_Ao7q4BTX",
+        "excerpt": "- **Hold `d` while moving / press while another movement key is held** → normal right-walk, immediately cancels dance if it was on"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_Ao7q4BTX",
+        "excerpt": "- **Cancel dance** in `goTo()` when the player clicks to walk somewhere"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q056",
+    "question": "What guarded against repeatedly double-jumping during one airborne jump?",
+    "answer": "A doubleJumpUsed flag allowed only one, and a jump already in its landing phase was too late.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_eQVc_329",
+        "excerpt": "- double jump already used this jump  → one per jump"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_eQVc_329",
+        "excerpt": "- already past the landing phase      → too late"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q057",
+    "question": "How did business scope grow from the first prototype to the workers feature?",
+    "answer": "The prototype explicitly lacked hiring and revenue; the later thread introduced founder work earnings and up to two passive-income workers.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_nDEO_19q",
+        "excerpt": "This first version focuses on exploring the office; hiring, revenue, and broader business simulation aren’t implemented yet."
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_rIYK3A21",
+        "excerpt": "- Added `workEarnings` to every entry in `DAY_PROGRESS` — scaling from **$50 on Day 1** up to **$5,000 on Day 10** (reflecting the product going from prototype to launch-ready):"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_RxkX9Oob",
+        "excerpt": "- Up to **2 workers** can be hired (one per desk). Their earnings stack."
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_RxkX9Oob",
+        "excerpt": "- Once hired, workers **passively earn money every second** in the game tick loop — no action required from you. The money counter in the HUD ticks up in real time."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q058",
+    "question": "How did the daily completion rule change after the main-build loop gained a bed?",
+    "answer": "The main-build loop advanced after four completed tasks; the later bed became a fifth, final sleep task gated on the other four.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_TvZt63O0",
+        "excerpt": "Every day you complete the same 4 tasks — walk around, brew coffee, pin an idea, do the work. When all 4 are checked off, a 1.8-second delay fires `advanceDay()`, which:"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_RXcXR29D",
+        "excerpt": "- **`'sleep'` added to `TASKS`** — it's now the 5th and final daily task: `['walk', 'coffee', 'plan', 'work', 'sleep']`."
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_RXcXR29D",
+        "excerpt": "- **`sleep` interaction object** — fully dynamic. The title, description, detail, and button text all change based on whether the other 4 tasks are done:"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q059",
+    "question": "How did the coffee reward change from the day-one prototype to the health thread?",
+    "answer": "The prototype gave 20 energy; the later report filled stamina to 100 and increased subsequent drain to one point per 1.5 seconds.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_8JMYy-4w",
+        "excerpt": "2. **Brew a coffee** — click the cabinet/coffee machine in the top-left corner (+20 energy, costs 5 min)"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_nWojRPHY",
+        "excerpt": "| Coffee ☕ | → **100** | fast (4.5) | 1/1.5s (burns faster) |"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_PqXgTHoj",
+        "excerpt": "- **After coffee:** fills to **100 HP**, but drain doubles to **1 HP every 1.5 seconds** (~2.5 min from full to zero) — the caffeine spike is real but it burns off twice as fast"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q060",
+    "question": "How did the later electricity rules qualify the earlier Deep Work energy benefit?",
+    "answer": "Deep Work replaced work’s stamina charge with a five-energy gain, but the later lighting report still charged eight electricity for desk work. Stamina and electricity are separate resources in those reports.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_c8SSmL26",
+        "excerpt": "- 🧠 **Deep Work Protocol** ($2000) — Work earns 2× money AND restores +5 energy instead of costing any"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Z0kN2qpM",
+        "excerpt": "- **Work at desk** costs **−8 ⚡** (refuses if < 8 ⚡)"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q061",
+    "question": "How did the bike and treadmill reports differ in handling overload?",
+    "answer": "The bike broke for five seconds and resumed at zero power; three consecutive treadmill overloads forced a dismount, with no credit for an overexerted dismount.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_h_H6bCj0",
+        "excerpt": "- Any `SPACE` press that carries power **over 100** triggers a **5-second breakdown**"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_h_H6bCj0",
+        "excerpt": "- After 5 seconds: power resets to 0, toast fires \"✅ Bike recovered\", normal riding resumes"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_niPjez8x",
+        "excerpt": "- **`SPACE` key handler:** treadmill gets first priority, adds +16–22 run power per tap, plays 'run' sound; 3 consecutive overloads force dismount"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_niPjez8x",
+        "excerpt": "- Overexerted dismount → no session credit, damage toast"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q062",
+    "question": "How do cereal restocking and the later desk-swap mechanic respond differently to workers already on strike?",
+    "answer": "Restocking leaves active strikes unchanged and delays only non-striking workers’ countdowns; desk swaps require that neither worker be striking.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_5OskPCy8",
+        "excerpt": "- Every non-striking worker's `strikeCountdown` gets **+60 seconds** added to whatever they have left. So a worker who had 30 seconds until they walked out now has 90. A worker who was calmly at 2 minutes now has 3."
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_5OskPCy8",
+        "excerpt": "- Workers who are *already on strike* are unaffected — free cereal doesn't fix a broken relationship, it just prevents the next one."
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_YlRy6_Bj",
+        "excerpt": "if neither worker is on strike:"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q063",
+    "question": "How did the reported set of vaultable furniture expand from parkour tables to the final features thread?",
+    "answer": "Parkour added vaultable tables; the later change also made the founder and both worker desks vaultable while keeping them solid for ordinary walking.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_nSjQ8cch",
+        "excerpt": "`table` and `table-vault` were both added to `VAULTABLE_TYPES` so the original coffee table is also jump-able."
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_jEcOBwtu",
+        "excerpt": "`'desk'` = your founder workstation (3×2). `'desk-small'` = both worker desks (3×2 each). They were already solid collision walls — now they're also vaultable."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q064",
+    "question": "What gives a successful workout a longer-term benefit beyond the treadmill’s immediate stamina effect?",
+    "answer": "The treadmill can restore four stamina per second in its middle power zone; later successful dismounts also advance saved stamina levels, with level 2 opening double-jump eligibility if energy exceeds 50.",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_niPjez8x",
+        "excerpt": "- Zone 25–75: **restores +4 stamina/s** (the reward for staying in range)"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "**`dismountTreadmill()` success branch** — level-up logic:"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "**Double jump** now requires `staminaLevel >= 2` as its first gate — one treadmill session unlocks it. The `energy > 50` check remains as the second gate."
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_RtYb59Uk",
+        "excerpt": "**`parseSave()`** validates and clamps both on load:"
+      }
+    ],
     "requires_answers": []
   }
 ]

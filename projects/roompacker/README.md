@@ -1,7 +1,7 @@
 # Roompacker
 
 A local WebGL furniture sandbox on six 64-by-64 cube faces, packaged with
-[34 curated questions](../../data/roompacker/annotations.json) from six original
+[60 human-approved questions](../../data/roompacker/annotations.json) from six original
 development conversations. The [dataset guide](../../data/roompacker/README.md)
 uses Focus Desk's conversation and annotation format.
 
@@ -60,5 +60,12 @@ The earlier 72-question quality draft is preserved in
 available as `build_quality_dataset.py` and `validate_quality_dataset.py`.
 The initial 109-question draft is retained under `evidence/revisions/initial-109`.
 Per-trajectory output files and those earlier versions are historical, and the
-master excludes them. The revised canonical questions have an editorial review;
-human approval remains pending.
+master excludes them. The 60 current canonical questions have an editorial review
+and validated human approval in the [saved review](../../data/michael-annotation-review.json).
+Run `python3 scripts/michael_approval.py` from the repository root to verify the
+current revisions, row checksums, decisions and combined exports.
+
+Use the [unified reviewer](http://127.0.0.1:4473/projects/annotation-review/) for
+this full re-evaluation; launch instructions are in the repository README.
+The preceding 34-question curated set is preserved in
+`data/roompacker/revisions/before-full-reevaluation/`.

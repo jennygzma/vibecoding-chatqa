@@ -1,8 +1,8 @@
 # Roompacker dataset
 
-Editorial status: agent-reviewed. Human approval of this revised set: pending.
+Editorial status: agent-reviewed. Human approval: approved for all 60 current questions. The [saved human review](../michael-annotation-review.json), exported at 2026-10-06T06:07:48.555Z, matches this revision, every row checksum and the complete combined export.
 
-The canonical set contains 34 questions, 95 exact
+The canonical set contains 60 questions, 143 exact
 evidence excerpts and 647 public messages across six original Cline
 sessions. Its structure follows [Focus Desk](../focus_desk/README.md).
 
@@ -29,6 +29,9 @@ python3 -m unittest discover -s scripts -p test_michael_dataset.py
 The specification and semantic review are authored inputs. Building resolves
 original message IDs into citations and creates derived exports; it never
 updates a review's checksum to bless an edited question automatically.
+Saved human approval is validated separately by `scripts/michael_approval.py`.
+A stale or incomplete saved review fails the build; editorial review records
+retain the status recorded when they were authored.
 
 Earlier per-trajectory output.json files are preserved for traceability and are
 excluded from the master in favor of this annotations.json. Their prior researcher

@@ -1,7 +1,7 @@
 [
   {
     "question_id": "Q001",
-    "question": "What did I want in the first Roompacker prototype?",
+    "question": "What did the user want in the first Roompacker prototype?",
     "category": [
       "single-session",
       "singlehop",
@@ -19,7 +19,7 @@
   },
   {
     "question_id": "Q002",
-    "question": "What rectangle should clicking a non-adjacent square select under my revised selection request?",
+    "question": "What rectangle should clicking a non-adjacent square select under the user's revised selection request?",
     "category": [
       "single-session",
       "singlehop",
@@ -59,7 +59,7 @@
   },
   {
     "question_id": "Q004",
-    "question": "What size and shape did I request for a straight couch?",
+    "question": "What size and shape did the user request for a straight couch?",
     "category": [
       "single-session",
       "singlehop",
@@ -128,7 +128,7 @@
   },
   {
     "question_id": "Q007",
-    "question": "Did the reported default L-sofa occupy the three cells I originally requested?",
+    "question": "Did the reported default L-sofa occupy the three cells the user originally requested?",
     "category": [
       "single-session",
       "multihop",
@@ -183,7 +183,7 @@
   },
   {
     "question_id": "Q009",
-    "question": "What constraints did I set for custom-shaped furniture?",
+    "question": "What constraints did the user set for custom-shaped furniture?",
     "category": [
       "single-session",
       "singlehop",
@@ -201,7 +201,7 @@
   },
   {
     "question_id": "Q010",
-    "question": "What table size limits did I request in the shapes conversation?",
+    "question": "What table size limits did the user request in the shapes conversation?",
     "category": [
       "single-session",
       "singlehop",
@@ -280,7 +280,7 @@
   },
   {
     "question_id": "Q013",
-    "question": "What did the Chaos reports change after I said adjusting invalid teleports was my job?",
+    "question": "What did the Chaos reports change after the user said adjusting invalid teleports was the user's job?",
     "category": [
       "single-session",
       "multihop",
@@ -553,12 +553,12 @@
         "excerpt": "`opacity:` field removed from all piece data objects"
       }
     ],
-    "answer": "It was added, then removed at my request along with the opacity controls and piece fields.",
+    "answer": "It was added, then removed at the user's request along with the opacity controls and piece fields.",
     "requires_answers": []
   },
   {
     "question_id": "Q023",
-    "question": "What selection effect did I request in place of sparkles?",
+    "question": "What selection effect did the user request in place of sparkles?",
     "category": [
       "single-session",
       "singlehop",
@@ -905,6 +905,579 @@
       }
     ],
     "answer": "Chaos treated the under-16-cell custom shape as a rug; the later vague request was interpreted as an L-sofa redesign.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q035",
+    "question": "What board dimensions and cell size did the first implementation report?",
+    "answer": "64 × 64 cells at 12 × 12 pixels each, for a 768 × 768-pixel board.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_C0-NH0PW",
+        "excerpt": "- Each cell is **12×12 px**, making the full board **768×768 px**"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_C0-NH0PW",
+        "excerpt": "- A **64×64 grid** of alternating **light** (`#f0d9b5`) and **dark** (`#b58863`) squares — classic chess colors"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q036",
+    "question": "How did the initial drag-selection system decide whether a stroke selected or cleared cells?",
+    "answer": "The first cell locked the entire stroke to selecting or deselecting.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_cDnDib07",
+        "excerpt": "- **Drag direction is consistent**: the action (select or deselect) is locked in based on the first cell you click. So if you start on an unselected square, the whole drag selects; if you start on a selected one, the whole drag deselects. No accidental flickering mid-stroke"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q037",
+    "question": "Which border styles distinguished a selection, a placed table, and a moving table?",
+    "answer": "Dotted for the active selection, solid for a placed table, and dashed for a table being moved.",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_8_yQWyOj",
+        "excerpt": "| **Active selection** (drawing, not yet placed) | **Dotted** black outline via `#selection-overlay` div, live during drag |"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_8_yQWyOj",
+        "excerpt": "| **Placed table** (at rest) | **Solid** border in its table colour |"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_8_yQWyOj",
+        "excerpt": "| **Table being dragged** (mid-move, \"un-placed\") | **Dashed** border via `.table-rect.moving` CSS class |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q038",
+    "question": "What did Escape preserve when cancelling a table edit?",
+    "answer": "The original position and shape; committing with T instead retained the same table, color, and label.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_wwTBZuBH",
+        "excerpt": "| **Press `Escape`** | Cancels the edit — table snaps back to its original position and shape |"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_wwTBZuBH",
+        "excerpt": "| **Press `T`** or **🪑 Place Table** | Commits the new shape — same table, same colour, same label |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q039",
+    "question": "What event-handling bug prevented table and couch drag commits?",
+    "answer": "Both mouseup handlers attempted to remove the ghost. The second removal operated on null and threw, stopping the commit.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_PsjjZXbj",
+        "excerpt": "The original `onUp` (the capture-phase listener added per-drag) **always** called `overlay.removeChild(ghost)` and set `ghost = null` — even for real drags. Then the global `mouseup` handler fired on the **same mouse event** and tried `overlay.removeChild(ghost)` again on a now-`null` ghost, throwing a JS error and stopping the drop from committing. This silently broke placement *and* movement for both tables and couches."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q040",
+    "question": "Why is assigning one mouseup handler ownership of real drag commits useful?",
+    "answer": "It prevents competing handlers from deleting the same temporary object or leaving the drag state only partly updated.",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_PsjjZXbj",
+        "excerpt": "| **Real drag** | Does nothing — leaves `ghost` and `movingTable` alive | Owns the entire commit: erases old cells, updates coords, re-stamps, repositions element, removes ghost, clears state |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q041",
+    "question": "Around which pivot did the straight-couch rotation report swap dimensions?",
+    "answer": "The top-left corner; its resize handles changed orientation with the couch.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_g9NmL9X5",
+        "excerpt": "| `rotateCouch(t)` | Swaps height ↔ width around the top-left corner, conflict-checks, commits, and calls `applyHandleClasses` |"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_g9NmL9X5",
+        "excerpt": "| `applyHandleClasses(t)` | Sets `handleA`/`handleB` CSS class based on `t.orientation` — left/right for `\"h\"`, top/bottom for `\"v\"` |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q042",
+    "question": "What key selected rug-placement mode in the shapes conversation?",
+    "answer": "P.",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_G64ADhhp",
+        "excerpt": "Done! The Rug button shortcut is now **[P]** — both the toolbar label and the keydown handler updated."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q043",
+    "question": "What was the reported role of grid stamping after overlaps were permitted?",
+    "answer": "Bookkeeping rather than rendering; piece overlays rendered furniture independently.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_S3hifr-1",
+        "excerpt": "**Fix:** Every stamp function now **only** updates the `tableGrid[r][c]` bookkeeping array. Every erase function now **only** removes from that array and calls `resetCell` when the stack empties. Zero cell background painting."
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_S3hifr-1",
+        "excerpt": "**Why this works:** Every furniture piece is already drawn by its own absolutely-positioned overlay element (`div.table-rect`, `div.couch-rect`, `canvas.lsofa-rect`, `canvas.rug-canvas`, `canvas.donut-canvas`, `div.chair-rect`) stacked above the grid. These elements are independent and never overwrite each other — they simply stack by CSS `z-index`. The grid cells are now purely a coordinate/hit-testing layer with their checkerboard colors intact."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q044",
+    "question": "At what cadence and probability did the chaos rotation report attempt a clockwise turn?",
+    "answer": "Every 1.8 seconds, with a 40% chance for each piece to turn 90° clockwise; dragging pieces were skipped.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_7qdTOP-D",
+        "excerpt": "While Chaos mode is active, every **1.8 seconds** each piece independently has a **40% chance** of being rotated 90° clockwise. Each piece type uses exactly the same rotation logic as the existing interactive rotate key:"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_7qdTOP-D",
+        "excerpt": "Rotations are unconditional (like teleports) — they can create or worsen conflicts, and it's the player's job to sort them out. A piece being dragged is never rotated. Rotations stop immediately when Chaos mode is toggled off or the game ends."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q045",
+    "question": "When was the final fading easter-egg probability rolled?",
+    "answer": "Once when Chaos mode was switched on, with a 1% chance to enable the fading mechanic.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_9PdCZlvN",
+        "excerpt": "Done. The one-line change gates the entire fading mechanic behind `Math.random() < 0.01` — a 1% roll that only happens when Chaos mode is switched **on**. If it misses (99/100 times), `fadeInterval` stays `null` and none of the fade code ever runs: `randomFadeEvent` is never called, and the `t.fading` branch in `conflictTick` is never entered. All the existing cleanup (`clearInterval(fadeInterval)`, `unfadePiece`) is harmlessly no-op when `fadeInterval` is `null`. Nothing else needed to change."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q046",
+    "question": "What opacity floor kept chaos-fading pieces from disappearing completely?",
+    "answer": "0.12; fading was visual only and Chaos-off restored full opacity.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_ejlVwM2D",
+        "excerpt": "| Opacity range | `0.12 → 1.0` — fades deeply but never fully disappears |"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_ejlVwM2D",
+        "excerpt": "- Turning Chaos mode **off** instantly clears all fading and restores full opacity on all pieces"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_ejlVwM2D",
+        "excerpt": "- Fading is purely visual — it doesn't affect gameplay logic, conflict detection, or timers"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q047",
+    "question": "How long did the reported rainbow animation take to complete a color cycle?",
+    "answer": "Six seconds, at roughly 60° of hue per second.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_Z2W6y13n",
+        "excerpt": "- Every frame the hue advances **~60°/sec** — one full colour cycle every 6 seconds"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q048",
+    "question": "Which camera interactions did the initial 3D rewrite report?",
+    "answer": "Right-drag to orbit and the scroll wheel to zoom, using an orthographic isometric camera.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_t3QArQdk",
+        "excerpt": "| **Camera** | Orthographic isometric view — right-drag or scroll to orbit/zoom |"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_t3QArQdk",
+        "excerpt": "- **Right-drag** → orbit camera"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_t3QArQdk",
+        "excerpt": "- **Scroll wheel** → zoom in/out"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q049",
+    "question": "How far did one arrow-key press move a selected 3D piece?",
+    "answer": "One grid cell; movement clamped to the board and prevented the page from scrolling.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_BNBvm5Cd",
+        "excerpt": "**How it works:** Click any placed piece to select it (it gets a pulsing white halo), then use the arrow keys to nudge it one grid cell at a time:"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_BNBvm5Cd",
+        "excerpt": "- Pieces are **clamped to the grid boundary** so they can't be pushed off the edge"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_BNBvm5Cd",
+        "excerpt": "- `e.preventDefault()` is called so arrow keys don't also scroll the page"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q050",
+    "question": "How did the 3D L-sofa report divide its two-unit height?",
+    "answer": "A 1.2-unit seat and a 0.8-unit backrest, or 60% and 40%.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_L_dxMhXG",
+        "excerpt": "`H_LSOFA` is already `2.0` — the L-sofa total height is 2 blocks. The seat occupies 1.2 units (60%) and the backrest sits on top at 0.8 units (40%), for a combined 2.0."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q051",
+    "question": "How did the temporary opacity implementation keep edges visible at zero body opacity?",
+    "answer": "Opaque LineSegments were excluded from mesh-opacity changes, leaving outlines visible.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_iACUGmYH",
+        "excerpt": "- **`addEdgeLines(parent, geo, edgeColor)`** — a new helper function that builds a `THREE.EdgesGeometry` from any geometry, attaches it as a `THREE.LineSegments` child, with a `LineBasicMaterial` that is **always fully opaque** (`transparent: false, opacity: 1`). Since `LineSegments` are not `Mesh` objects, `setMeshOpacity` already skips them, so the body can fade to invisible while the edges remain crisp."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q052",
+    "question": "What did the temporary opacity number input do with 150 and −5?",
+    "answer": "Clamp them to 100 and 0 respectively on blur or Enter.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_Q7RdT1rg",
+        "excerpt": "- The number input **clamps on blur/Enter** — so typing `150` snaps back to `100`, typing `-5` snaps to `0`"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q053",
+    "question": "Why did matching the page, WebGL clear color, and fog color help the green-background change?",
+    "answer": "It avoided visible boundaries between the page, canvas background, and distant geometry.",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_mxzsikwr",
+        "excerpt": "All three had to match — the CSS covers the page behind the canvas, `setClearColor` is the WebGL clear colour filling the canvas, and the fog colour blends distant geometry into the background. Using the same `#0a1a0f` (a deep dark green) across all three keeps them seamless."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q054",
+    "question": "What actions cancelled merge mode without replacing any pieces?",
+    "answer": "Clicking elsewhere or pressing Escape.",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "6. **Click anywhere else** or press **`Escape`** — cancels merge mode with no changes."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q055",
+    "question": "How did the initial board renderer differ from the first 3D renderer?",
+    "answer": "The first used CSS Grid with Python’s built-in local server; the rewrite used a Three.js WebGL scene.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_C0-NH0PW",
+        "excerpt": "| `index.html` | The entire app — a 64×64 chessboard rendered with CSS Grid |"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_C0-NH0PW",
+        "excerpt": "- Zero dependencies — the server is Python's built-in `http.server`, so no `npm install` needed"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_t3QArQdk",
+        "excerpt": "The entire 2D CSS-grid board has been replaced with a **Three.js WebGL 3D scene**. The original `index.html` was completely rewritten (~656 lines) with:"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q056",
+    "question": "What rug-placement connectivity constraint was reported, and which furniture types could later be merged?",
+    "answer": "Standalone rugs were constrained to a connected footprint; merging later allowed any same-color, same-face furniture types, without stating that the combined footprint must be connected.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_HK4CaAai",
+        "excerpt": "- **Connectivity** — removing a cell that would split the shape is rejected"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "- Any furniture type (table, sofa, chair, L-sofa, rug, previously-merged) can be merged with any other"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q057",
+    "question": "How did rotation shortcuts change from the couch system to the cube system?",
+    "answer": "The couch system used R for orientation changes; the cube system added Q for counterclockwise and E/R for clockwise rotation.",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_g9NmL9X5",
+        "excerpt": "- **While in Couch mode** (`C`): press **`R`** to toggle the ghost between horizontal and vertical before placing"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Kb3zlDmL",
+        "excerpt": "- `Q` / `E`/`R` rotate CCW / CW"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q058",
+    "question": "What new ownership condition did merging add beyond the early chair-stacking exception?",
+    "answer": "Chair stacking distinguished furniture types at occupied cells; merging instead required distinct compatible pieces on the same face with exactly the same color.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_-HNN_e2-",
+        "excerpt": "| **Chair** | `hasConflictForChair` | Only blocks on non-chair pieces — **can stack on other chairs** |"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "- Both pieces must be on the **same face**"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "- Both pieces must have the **exact same color** (use the color picker to match them)"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "4. **Click the target piece** — both originals are deleted and replaced by a single `merged` piece containing all their cells. The new piece is automatically selected, still showing the same color."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q059",
+    "question": "How did the scope of collision tracking change when the board became a cube?",
+    "answer": "The original tableGrid tracked cell owners on one board; the cube gave each of six faces its own independent occupancy tracking.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_PggJkPKz",
+        "excerpt": "- `tableGrid[row][col]` tracks which table (by id) owns each cell — enables clean erase/restamp on move"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Kb3zlDmL",
+        "excerpt": "Each face has its own independent **64×64 grid** with its own occupancy tracking and piece set:"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q060",
+    "question": "How did editing and merging differ in whether they kept the original piece identity?",
+    "answer": "Table editing committed the same table, color, and label; merging deleted both originals and created a new merged piece.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_wwTBZuBH",
+        "excerpt": "| **Press `T`** or **🪑 Place Table** | Commits the new shape — same table, same colour, same label |"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "4. **Click the target piece** — both originals are deleted and replaced by a single `merged` piece containing all their cells. The new piece is automatically selected, still showing the same color."
+      }
+    ],
     "requires_answers": []
   }
 ]

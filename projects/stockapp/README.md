@@ -2,7 +2,7 @@
 
 StockPicker AI is a local web application that ranks stocks using live Yahoo
 Finance data and a configurable eight-signal scoring model. This directory also
-contains [33 curated QA annotations](../../data/stockapp/annotations.json) from
+contains [65 human-approved QA annotations](../../data/stockapp/annotations.json) from
 the six Cline trajectories used to develop it. The [canonical dataset](../../data/stockapp/README.md)
 follows Focus Desk's structure and overlapping categories. Earlier 130-question
 trajectory outputs remain preserved as history.
@@ -65,9 +65,16 @@ python3 scripts/michael_dataset.py stockapp
 python3 scripts/michael_dataset.py stockapp --check
 ```
 
-The current 33 questions have an agent editorial review and exact evidence checks;
-human approval is pending. Original researcher approval applies to the earlier
-130-question version below, not automatically to the rewritten questions.
+The current 65 questions have an agent editorial review, exact evidence checks
+and validated human approval in the [saved review](../../data/michael-annotation-review.json).
+Run `python3 scripts/michael_approval.py` from the repository root to verify the
+current revisions, row checksums, decisions and combined exports. Earlier
+researcher approval remains attached to the 130-question version below.
+
+Use the [unified reviewer](http://127.0.0.1:4473/projects/annotation-review/) for
+this full re-evaluation; launch instructions are in the repository README.
+The preceding 33-question curated set is preserved in
+`data/stockapp/revisions/before-full-reevaluation/`.
 
 ## Earlier reviewed trajectory datasets
 
@@ -118,5 +125,5 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory reviewer
 
 Open <http://127.0.0.1:4173/> to inspect the earlier 130-question trajectory set.
 Its 2026-09-24 approval remains recorded in its evidence files. Review the current
-33-question version in [annotations.md](../../data/stockapp/annotations.md), where
+65-question version in [annotations.md](../../data/stockapp/annotations.md), where
 each question includes its exact citations and category rationale.

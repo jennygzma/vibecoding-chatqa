@@ -1,23 +1,23 @@
 {
-  "question_count": 34,
+  "question_count": 60,
   "counts": {
-    "knowledge-facts": 14,
-    "multi-session": 7,
-    "multihop": 14,
-    "open-domain": 3,
+    "knowledge-facts": 32,
+    "multi-session": 13,
+    "multihop": 20,
+    "open-domain": 5,
     "preference": 8,
-    "single-session": 27,
-    "singlehop": 17,
-    "temporal": 3
+    "single-session": 47,
+    "singlehop": 35,
+    "temporal": 6
   },
   "percentages": {
-    "knowledge-facts": 41.2,
-    "multi-session": 20.6,
-    "multihop": 41.2,
-    "open-domain": 8.8,
-    "preference": 23.5,
-    "single-session": 79.4,
-    "singlehop": 50.0,
-    "temporal": 8.8
+    "knowledge-facts": 53.3,
+    "multi-session": 21.7,
+    "multihop": 33.3,
+    "open-domain": 8.3,
+    "preference": 13.3,
+    "single-session": 78.3,
+    "singlehop": 58.3,
+    "temporal": 10.0
   }
 }

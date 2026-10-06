@@ -1,0 +1,370 @@
+{
+  "status": "agent-reviewed-human-review-pending",
+  "reference": "https://github.com/jennygzma/vibecoding-chatqa/blob/Edgar/pantry-lane/data/focus_desk/vibe_combined.json",
+  "previous_count": 34,
+  "question_count": 60,
+  "prior_revision": "revisions/before-full-reevaluation",
+  "audit_limits": "Citations substantiate requests and assistant reports; they do not independently prove final runtime behavior. Open-domain answers are explanatory inferences.",
+  "questions": [
+    {
+      "question_id": "Q001",
+      "disposition": "revised",
+      "category_reason": "Direct user scope and size preference; does not conflate grid squares with pixels.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q002",
+      "disposition": "revised",
+      "category_reason": "The requested enclosing-rectangle rule is directly confirmed in the report; combining confirmation with a requirement does not itself make the answer multihop.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q003",
+      "disposition": "retained",
+      "category_reason": "Direct retrieval scoped to D1; later conversations deliberately permit overlaps.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q004",
+      "disposition": "revised",
+      "category_reason": "Direct geometric preference; no inferred height, which is introduced later in 3D.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q005",
+      "disposition": "retained",
+      "category_reason": "One reported neighborhood rule; a negative answer alone is not adversarial.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q006",
+      "disposition": "retained",
+      "category_reason": "Compares the explicit pre-stacking representation with the replacement data model; it is not temporal solely because one came later.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q007",
+      "disposition": "revised",
+      "category_reason": "Retains the newer draft’s requested-versus-reported geometry check: 3 + 3 − 1 = 5 occupied cells. This is a calculation and comparison, not a direct lookup.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q008",
+      "disposition": "retained",
+      "category_reason": "One-sentence geometric rationale inferred from the explicit occupied-cell collision rule.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q009",
+      "disposition": "revised",
+      "category_reason": "Direct connectivity and area constraints from one request; multiple constraints do not make a multihop question.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q010",
+      "disposition": "revised",
+      "category_reason": "Direct dimensions from the user, not a calculated area.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q011",
+      "disposition": "retained",
+      "category_reason": "Compares the old O mode and its U replacement, including the explicit border invariant; preserves the clarified workflow.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q012",
+      "disposition": "retained",
+      "category_reason": "Both facts are explicit in D3:129; avoids claiming every cut creates exactly two pieces.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q013",
+      "disposition": "revised",
+      "category_reason": "Connects the earlier valid-position behavior, the user’s intended responsibility, and the reported revision.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q014",
+      "disposition": "retained",
+      "category_reason": "Direct timer-reset behavior; does not claim a piece necessarily stays still for the full interval.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q015",
+      "disposition": "retained",
+      "category_reason": "Both duration and click consumption are stated in D4:52.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q016",
+      "disposition": "retained",
+      "category_reason": "Retains the newer draft’s timing interaction: combine teleport cadence with reset-on-landing to identify a possible deadline loophole in the reported early design, not a verified current-app defect.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q017",
+      "disposition": "retained",
+      "category_reason": "Retrieves explicitly reported shape invariants; the question does not ask for the unrelated animation cadence.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q018",
+      "disposition": "retained",
+      "category_reason": "Compares the first 3D conversion with the later six-face report; keeps the temporary 32-square floor distinct from D1’s original 64-square board.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q019",
+      "disposition": "retained",
+      "category_reason": "Direct shortcut mapping from one report; not a claim that E still performs the earlier table-edit action.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q020",
+      "disposition": "retained",
+      "category_reason": "All three facts are explicitly in D5:62; outward is relative to the active face, not always world-up.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q021",
+      "disposition": "retained",
+      "category_reason": "Retains the newer draft’s one-sentence geometric caution: the report defines an outward offset and its range, not a complete containment test.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q022",
+      "disposition": "revised",
+      "category_reason": "Combines the temporary implementation, explicit reversal, and removal report; development order is not temporal.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q023",
+      "disposition": "revised",
+      "category_reason": "Direct replacement preference; does not need the discarded particle implementation to answer.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q024",
+      "disposition": "retained",
+      "category_reason": "Two branches from a single reported control behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q025",
+      "disposition": "retained",
+      "category_reason": "The complete eligibility rule is directly stated in D6:97 and its exact-color wording is confirmed later; two citations do not automatically make multihop.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q026",
+      "disposition": "retained",
+      "category_reason": "The replacement and max-height rule are explicitly stated in one final report; no calculation is requested.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q027",
+      "disposition": "retained",
+      "category_reason": "One-sentence rationale grounded in the preview and replacement behavior; does not claim there is an undo feature.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q028",
+      "disposition": "retained",
+      "category_reason": "Explicitly contrasts superseded and revised policies without presenting both as simultaneous final behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q029",
+      "disposition": "retained",
+      "category_reason": "Compares the original neighborhood requirement with its removal.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q030",
+      "disposition": "retained",
+      "category_reason": "Compares the same key’s documented meanings at two stages without assuming the original shortcut remains valid.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q031",
+      "disposition": "retained",
+      "category_reason": "Applies D6’s maximum-height rule to the separately recorded D5 heights; conditions are stated rather than inventing cross-face eligibility.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q032",
+      "disposition": "retained",
+      "category_reason": "Contrasts splitting and joining as separate operations while tracking ownership of the retained color.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q033",
+      "disposition": "retained",
+      "category_reason": "Connects the initial geometric constraints to the invariants of a later mutation; does not infer a new shape size.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q034",
+      "disposition": "retained",
+      "category_reason": "Retains the newer draft’s cross-session interpretation mismatch; the later vague request is not silently treated as explicitly naming the L-sofa.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q035",
+      "disposition": "added",
+      "category_reason": "Direct retrieval of grid and pixel dimensions.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q036",
+      "disposition": "added",
+      "category_reason": "One reported interaction rule, not a multi-step inference.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q037",
+      "disposition": "added",
+      "category_reason": "Retrieve the three states from one border-style table.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q038",
+      "disposition": "added",
+      "category_reason": "Retrieve the documented cancellation and commit rules.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q039",
+      "disposition": "added",
+      "category_reason": "The cause is explicitly reported, rather than inferred from multiple sessions.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q040",
+      "disposition": "added",
+      "category_reason": "Grounded engineering explanation, not an independently observed outcome.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q041",
+      "disposition": "added",
+      "category_reason": "One directly reported rotation implementation.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q042",
+      "disposition": "added",
+      "category_reason": "Retrieve a distinct placement shortcut.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q043",
+      "disposition": "added",
+      "category_reason": "Retrieve the distinction between occupancy and visual representation.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q044",
+      "disposition": "added",
+      "category_reason": "Explicit timer and probability, not merely feature chronology.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q045",
+      "disposition": "added",
+      "category_reason": "Retrieve the timing of the random gate; not a per-frame probability.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q046",
+      "disposition": "added",
+      "category_reason": "Direct retrieval of visual bounds and cleanup.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q047",
+      "disposition": "added",
+      "category_reason": "The source explicitly gives the cycle duration.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q048",
+      "disposition": "added",
+      "category_reason": "Retrieve rendering and camera controls.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q049",
+      "disposition": "added",
+      "category_reason": "One directly reported keyboard behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q050",
+      "disposition": "added",
+      "category_reason": "The decomposition is explicitly stated; no calculation is required.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q051",
+      "disposition": "added",
+      "category_reason": "Retrieve a historical implementation that was later removed, without claiming it remains final.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q052",
+      "disposition": "added",
+      "category_reason": "Source explicitly supplies both examples.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q053",
+      "disposition": "added",
+      "category_reason": "Explain the visual rationale anchored to the three rendering layers.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q054",
+      "disposition": "added",
+      "category_reason": "Direct retrieval of merge cancellation.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q055",
+      "disposition": "added",
+      "category_reason": "D1 supplies the original rendering/serving stack; D5 supplies the replacement renderer.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q056",
+      "disposition": "added",
+      "category_reason": "D3 establishes connected rug placement; D6 describes broader merging. The answer does not invent a final connectivity check.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q057",
+      "disposition": "added",
+      "category_reason": "D2 provides the earlier couch shortcut; D5 provides the later directional shortcuts.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q058",
+      "disposition": "added",
+      "category_reason": "D2 defines the occupancy exception; D6 defines a separate replacement operation, not mere stacking.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q059",
+      "disposition": "added",
+      "category_reason": "D1 describes single-board cell ownership; D5 describes per-face isolation.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q060",
+      "disposition": "added",
+      "category_reason": "D1 establishes identity-preserving edits; D6 establishes replacement on merge.",
+      "human_review": "pending"
+    }
+  ]
+}

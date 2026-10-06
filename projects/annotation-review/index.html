@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Michael · annotation review</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><div><h1>Annotation review</h1><p id="publication-status">Loading saved review status…</p><a id="saved-review" hidden>Saved human review</a></div><div class="actions"><button id="import">Import review</button><button id="export">Export review</button><input id="import-file" type="file" accept="application/json" hidden></div></header>
+<nav id="projects" aria-label="Projects"></nav>
+<main>
+<aside><label>Question group<select id="group"><option value="all">All sessions</option><option value="cross">Multi-session</option></select></label><label>Revision<select id="revision"><option value="all">All questions</option><option value="added">Added</option><option value="revised">Revised</option><option value="retained">Retained</option></select></label><label>Decision<select id="decision-filter"><option value="all">All decisions</option><option value="unreviewed">Unreviewed</option><option value="approved">Approved</option><option value="needs-edit">Needs edit</option><option value="rejected">Rejected</option></select></label><p id="progress"></p><div id="queue"></div></aside>
+<section id="editor"><div class="item-heading"><strong id="item-id"></strong><span id="status"></span></div><p id="empty" hidden>No questions match this filter.</p><div id="fields"><label>Question<textarea id="question" rows="3"></textarea></label><label>Answer<textarea id="answer" rows="4"></textarea></label><fieldset><legend>Edgar category labels</legend><div id="categories"></div></fieldset><details id="audit"><summary>Re-evaluation notes and previous version</summary><p id="reason"></p><p id="necessity"></p><pre id="previous"></pre></details><label>Review notes<textarea id="notes" rows="2" placeholder="Optional correction or reason"></textarea></label><p id="error" role="alert"></p><div class="actions decisions"><button id="prev">← Previous</button><button id="approve" class="primary">Approve & next (A)</button><button id="edit">Needs edit (E)</button><button id="reject">Reject (R)</button><button id="next">Next →</button></div></div></section>
+<section id="sources"><h2>Evidence</h2><p class="hint">Exact excerpts below. Expand a card to read the entire original message. These are user requests and agent reports—not independent runtime verification.</p><div id="evidence"></div></section>
+</main>
+<footer>Working decisions save in this browser. Import the saved review to inspect its decisions; older revisions do not carry approval forward. Export review JSON as a portable backup. <a id="reference" target="_blank" rel="noopener">Edgar’s exact reference</a></footer>
+<script src="app.js"></script>
+</body></html>

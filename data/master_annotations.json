@@ -3,18 +3,18 @@
   "summary": {
     "projects": 9,
     "sources": 14,
-    "annotations": 507,
-    "citations": 845,
+    "annotations": 598,
+    "citations": 1034,
     "category_assignments": {
       "adversarial": 8,
-      "knowledge-facts": 93,
-      "multi-hop": 128,
-      "multi-session": 62,
-      "open-domain": 28,
+      "knowledge-facts": 169,
+      "multi-hop": 152,
+      "multi-session": 83,
+      "open-domain": 32,
       "preference": 57,
-      "single-hop": 331,
-      "single-session": 246,
-      "temporal": 69
+      "single-hop": 394,
+      "single-session": 316,
+      "temporal": 89
     }
   },
   "category_normalization": {
@@ -38,7 +38,7 @@
       "data/stockapp/annotations.json"
     ],
     "excluded": "Superseded Michael per-trajectory outputs, earlier Roompacker drafts, revisions, and duplicate combined representations.",
-    "review_scope": "Michael's current sets were re-curated against Focus Desk; earlier researcher approvals apply only to the preserved prior versions. Other contributors' annotations retain their recorded status."
+    "review_scope": "Michael's human approval is derived only from a validated saved review matching current revisions, complete unique question coverage, row checksums, approved decisions and combined exports. Earlier researcher approvals apply only to the preserved prior versions. Other contributors' annotations retain their recorded status."
   },
   "projects": [
     {
@@ -84,10 +84,10 @@
     {
       "id": "roompacker",
       "name": "Roompacker",
-      "review_status": "agent-reviewed-human-review-pending",
+      "review_status": "human-approved",
       "sources": 1,
-      "annotations": 34,
-      "citations": 95
+      "annotations": 60,
+      "citations": 143
     },
     {
       "id": "snakegame",
@@ -100,18 +100,18 @@
     {
       "id": "startupsimulator",
       "name": "StartupSimulator",
-      "review_status": "agent-reviewed-human-review-pending",
+      "review_status": "human-approved",
       "sources": 1,
-      "annotations": 31,
-      "citations": 77
+      "annotations": 64,
+      "citations": 155
     },
     {
       "id": "stockapp",
       "name": "StockApp",
-      "review_status": "agent-reviewed-human-review-pending",
+      "review_status": "human-approved",
       "sources": 1,
-      "annotations": 33,
-      "citations": 73
+      "annotations": 65,
+      "citations": 136
     }
   ],
   "sources": [
@@ -240,15 +240,18 @@
       "project": "roompacker",
       "project_name": "Roompacker",
       "trajectory": "combined",
-      "review_status": "agent-reviewed-human-review-pending",
+      "review_status": "human-approved",
       "path": "data/roompacker/annotations.json",
-      "sha256": "78f8b95d200426e40bd34a27537d3b82920430c8a787f837238f430a20726387",
-      "annotations": 34,
-      "citations": 95,
+      "sha256": "810a03aedeadca95b53a5587617bdfd82747f6254745f609d2933889c75da9f8",
+      "annotations": 60,
+      "citations": 143,
+      "human_review_path": "data/michael-annotation-review.json",
+      "human_review_sha256": "a40591509bbfbf0bb4158e4d1b5ae212d8f46e11990f7a2163dcfc00d3a84644",
+      "human_review_exported_at": "2026-10-06T06:07:48.555Z",
       "semantic_review_path": "data/roompacker/annotation-semantic-review.json",
-      "semantic_review_sha256": "f590c63027186573f9e872e84fd282dabd9cee5718c331b417cd7db2b0a0d8a8",
+      "semantic_review_sha256": "d679c08d4cb8cd2bbf1d761e32e7325b743f5559cf5c5b6d7b423b25cb794289",
       "combined_path": "data/roompacker/vibe_combined.json",
-      "combined_sha256": "42d4bc88834256f67a5e78db9defe204c11ab081457813e30e7e7ade5c123ee9"
+      "combined_sha256": "2bd7e6a75797851529301ffcf96868522b657cd8aff315bb9a35c2acf426c45e"
     },
     {
       "id": "snakegame_01_settings-and-theme",
@@ -266,30 +269,36 @@
       "project": "startupsimulator",
       "project_name": "StartupSimulator",
       "trajectory": "combined",
-      "review_status": "agent-reviewed-human-review-pending",
+      "review_status": "human-approved",
       "path": "data/startupsimulator/annotations.json",
-      "sha256": "2bc1c22d34a5b1c78fb5f7ec3b99c9c898036d9f5616c6e4aa207a182ec21024",
-      "annotations": 31,
-      "citations": 77,
+      "sha256": "19ef73382c70ec39db633880bc8f2e72f5f1905bb16b4d72b4cb0dc2f08ad236",
+      "annotations": 64,
+      "citations": 155,
+      "human_review_path": "data/michael-annotation-review.json",
+      "human_review_sha256": "a40591509bbfbf0bb4158e4d1b5ae212d8f46e11990f7a2163dcfc00d3a84644",
+      "human_review_exported_at": "2026-10-06T06:07:48.555Z",
       "semantic_review_path": "data/startupsimulator/annotation-semantic-review.json",
-      "semantic_review_sha256": "382216260f9142f54120a87d10bd6672a37f5932e8dd308190596f4caa49b389",
+      "semantic_review_sha256": "fdef1ef4dddad091b2188c91ac9468c6cbc92b2a4c2aa79806e3acc81d304a4b",
       "combined_path": "data/startupsimulator/vibe_combined.json",
-      "combined_sha256": "0ff4caaba3d05b5255ad5d4553855857968c5c33809f94db8f2650346fc1b554"
+      "combined_sha256": "40701b2b08125202c94475f6d4f1670056cdfe8710d8c18d2295123be1706ebc"
     },
     {
       "id": "stockapp",
       "project": "stockapp",
       "project_name": "StockApp",
       "trajectory": "combined",
-      "review_status": "agent-reviewed-human-review-pending",
+      "review_status": "human-approved",
       "path": "data/stockapp/annotations.json",
-      "sha256": "36ff46fd11d731c19dad84826fffc1165f02d9b9a6e13bd91c4ba43b7434fca2",
-      "annotations": 33,
-      "citations": 73,
+      "sha256": "fcea6884594a9ba2b077c77349b84c2ffa444a69a4b9b3003cf457f28ce81cac",
+      "annotations": 65,
+      "citations": 136,
+      "human_review_path": "data/michael-annotation-review.json",
+      "human_review_sha256": "a40591509bbfbf0bb4158e4d1b5ae212d8f46e11990f7a2163dcfc00d3a84644",
+      "human_review_exported_at": "2026-10-06T06:07:48.555Z",
       "semantic_review_path": "data/stockapp/annotation-semantic-review.json",
-      "semantic_review_sha256": "fb19ef64047bb58e6465810788c3c7efa6681a42e63dbcb4919f87e4831bc059",
+      "semantic_review_sha256": "207edaf9627911899531527dfbc02405db9477dbf14b0b48649cef5e6066caef",
       "combined_path": "data/stockapp/vibe_combined.json",
-      "combined_sha256": "e775b11314c35983755e202093e42d1185625271992e86fafde12e9972ff8fe2"
+      "combined_sha256": "864d95934e9be12c3c0f76511c6dbea7b3c9ba38a8c81d3cf1fc2e5cb9d0a83e"
     }
   ],
   "annotations": [
@@ -7871,7 +7880,7 @@
       "trajectory": "combined",
       "source_file": "data/roompacker/annotations.json",
       "source_index": 1,
-      "question": "What did I want in the first Roompacker prototype?",
+      "question": "What did the user want in the first Roompacker prototype?",
       "answer": "Only a 64-by-64 chessboard running as a local web app.",
       "evidence": [
         "D1:1: \"First make a 64x64 chessboard that I can launch to a local web app. Literally just a 64x64 chess board and nothing else.\""
@@ -7893,7 +7902,7 @@
       "trajectory": "combined",
       "source_file": "data/roompacker/annotations.json",
       "source_index": 2,
-      "question": "What rectangle should clicking a non-adjacent square select under my revised selection request?",
+      "question": "What rectangle should clicking a non-adjacent square select under the user's revised selection request?",
       "answer": "The smallest rectangle enclosing the selection and the newly clicked square.",
       "evidence": [
         "D1:25: \"If they are not adjacent highlight the smallest rectangle between them\"",
@@ -7936,7 +7945,7 @@
       "trajectory": "combined",
       "source_file": "data/roompacker/annotations.json",
       "source_index": 4,
-      "question": "What size and shape did I request for a straight couch?",
+      "question": "What size and shape did the user request for a straight couch?",
       "answer": "A one-by-N strip with a minimum size of one by two cells.",
       "evidence": [
         "D2:1: \"A couch must have a minimum 1x2 and is restricted to 1xn.\""
@@ -8005,7 +8014,7 @@
       "trajectory": "combined",
       "source_file": "data/roompacker/annotations.json",
       "source_index": 7,
-      "question": "Did the reported default L-sofa occupy the three cells I originally requested?",
+      "question": "Did the reported default L-sofa occupy the three cells the user originally requested?",
       "answer": "No; two length-three arms sharing one corner occupy five cells, rather than the requested three.",
       "evidence": [
         "D2:94: \"a basic 3-piece L\"",
@@ -8051,7 +8060,7 @@
       "trajectory": "combined",
       "source_file": "data/roompacker/annotations.json",
       "source_index": 9,
-      "question": "What constraints did I set for custom-shaped furniture?",
+      "question": "What constraints did the user set for custom-shaped furniture?",
       "answer": "All selected cells must connect through adjacent cells, with at most 16 grid squares.",
       "evidence": [
         "D3:1: \"we can select multiple adjacent cells given that each cell can go to another if we walk only through adjacent cells, but the furniture is capped at 16 grid squares.\""
@@ -8073,7 +8082,7 @@
       "trajectory": "combined",
       "source_file": "data/roompacker/annotations.json",
       "source_index": 10,
-      "question": "What table size limits did I request in the shapes conversation?",
+      "question": "What table size limits did the user request in the shapes conversation?",
       "answer": "Minimum 2 by 3 cells; maximum 16 by 24 cells.",
       "evidence": [
         "D3:38: \"make tables minimum 2x3 max 16x24\""
@@ -8144,7 +8153,7 @@
       "trajectory": "combined",
       "source_file": "data/roompacker/annotations.json",
       "source_index": 13,
-      "question": "What did the Chaos reports change after I said adjusting invalid teleports was my job?",
+      "question": "What did the Chaos reports change after the user said adjusting invalid teleports was the user's job?",
       "answer": "They replaced a non-overlapping position search with unconditional random relocation, keeping only board bounds.",
       "evidence": [
         "D4:12: \"valid, non-overlapping positions\"",
@@ -8357,7 +8366,7 @@
       "source_file": "data/roompacker/annotations.json",
       "source_index": 22,
       "question": "What became of adjustable furniture transparency in the colors-and-merging conversation?",
-      "answer": "It was added, then removed at my request along with the opacity controls and piece fields.",
+      "answer": "It was added, then removed at the user's request along with the opacity controls and piece fields.",
       "evidence": [
         "D6:20: \"furniture pieces in Room Packer 3D can now be made transparent\"",
         "D6:53: \"Remove the transparency feature\"",
@@ -8380,7 +8389,7 @@
       "trajectory": "combined",
       "source_file": "data/roompacker/annotations.json",
       "source_index": 23,
-      "question": "What selection effect did I request in place of sparkles?",
+      "question": "What selection effect did the user request in place of sparkles?",
       "answer": "A reddish glow.",
       "evidence": [
         "D6:72: \"Replace the sparkle glow with a reddish glow.\""
@@ -8657,6 +8666,590 @@
       ]
     },
     {
+      "id": "roompacker:035",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 35,
+      "question": "What board dimensions and cell size did the first implementation report?",
+      "answer": "64 × 64 cells at 12 × 12 pixels each, for a 768 × 768-pixel board.",
+      "evidence": [
+        "D1:8: \"- Each cell is **12×12 px**, making the full board **768×768 px**\"",
+        "D1:8: \"- A **64×64 grid** of alternating **light** (`#f0d9b5`) and **dark** (`#b58863`) squares — classic chess colors\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:036",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 36,
+      "question": "How did the initial drag-selection system decide whether a stroke selected or cleared cells?",
+      "answer": "The first cell locked the entire stroke to selecting or deselecting.",
+      "evidence": [
+        "D1:18: \"- **Drag direction is consistent**: the action (select or deselect) is locked in based on the first cell you click. So if you start on an unselected square, the whole drag selects; if you start on a selected one, the whole drag deselects. No accidental flickering mid-stroke\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:037",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 37,
+      "question": "Which border styles distinguished a selection, a placed table, and a moving table?",
+      "answer": "Dotted for the active selection, solid for a placed table, and dashed for a table being moved.",
+      "evidence": [
+        "D1:63: \"| **Active selection** (drawing, not yet placed) | **Dotted** black outline via `#selection-overlay` div, live during drag |\"",
+        "D1:63: \"| **Placed table** (at rest) | **Solid** border in its table colour |\"",
+        "D1:63: \"| **Table being dragged** (mid-move, \"un-placed\") | **Dashed** border via `.table-rect.moving` CSS class |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop"
+      ]
+    },
+    {
+      "id": "roompacker:038",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 38,
+      "question": "What did Escape preserve when cancelling a table edit?",
+      "answer": "The original position and shape; committing with T instead retained the same table, color, and label.",
+      "evidence": [
+        "D1:77: \"| **Press `Escape`** | Cancels the edit — table snaps back to its original position and shape |\"",
+        "D1:77: \"| **Press `T`** or **🪑 Place Table** | Commits the new shape — same table, same colour, same label |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:039",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 39,
+      "question": "What event-handling bug prevented table and couch drag commits?",
+      "answer": "Both mouseup handlers attempted to remove the ghost. The second removal operated on null and threw, stopping the commit.",
+      "evidence": [
+        "D2:26: \"The original `onUp` (the capture-phase listener added per-drag) **always** called `overlay.removeChild(ghost)` and set `ghost = null` — even for real drags. Then the global `mouseup` handler fired on the **same mouse event** and tried `overlay.removeChild(ghost)` again on a now-`null` ghost, throwing a JS error and stopping the drop from committing. This silently broke placement *and* movement for both tables and couches.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:040",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 40,
+      "question": "Why is assigning one mouseup handler ownership of real drag commits useful?",
+      "answer": "It prevents competing handlers from deleting the same temporary object or leaving the drag state only partly updated.",
+      "evidence": [
+        "D2:26: \"| **Real drag** | Does nothing — leaves `ghost` and `movingTable` alive | Owns the entire commit: erases old cells, updates coords, re-stamps, repositions element, removes ghost, clears state |\""
+      ],
+      "categories": [
+        "single-session",
+        "open-domain"
+      ],
+      "source_category": [
+        "single-session",
+        "open-domain"
+      ]
+    },
+    {
+      "id": "roompacker:041",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 41,
+      "question": "Around which pivot did the straight-couch rotation report swap dimensions?",
+      "answer": "The top-left corner; its resize handles changed orientation with the couch.",
+      "evidence": [
+        "D2:93: \"| `rotateCouch(t)` | Swaps height ↔ width around the top-left corner, conflict-checks, commits, and calls `applyHandleClasses` |\"",
+        "D2:93: \"| `applyHandleClasses(t)` | Sets `handleA`/`handleB` CSS class based on `t.orientation` — left/right for `\"h\"`, top/bottom for `\"v\"` |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:042",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 42,
+      "question": "What key selected rug-placement mode in the shapes conversation?",
+      "answer": "P.",
+      "evidence": [
+        "D3:27: \"Done! The Rug button shortcut is now **[P]** — both the toolbar label and the keydown handler updated.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop"
+      ]
+    },
+    {
+      "id": "roompacker:043",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 43,
+      "question": "What was the reported role of grid stamping after overlaps were permitted?",
+      "answer": "Bookkeeping rather than rendering; piece overlays rendered furniture independently.",
+      "evidence": [
+        "D3:120: \"**Fix:** Every stamp function now **only** updates the `tableGrid[r][c]` bookkeeping array. Every erase function now **only** removes from that array and calls `resetCell` when the stack empties. Zero cell background painting.\"",
+        "D3:120: \"**Why this works:** Every furniture piece is already drawn by its own absolutely-positioned overlay element (`div.table-rect`, `div.couch-rect`, `canvas.lsofa-rect`, `canvas.rug-canvas`, `canvas.donut-canvas`, `div.chair-rect`) stacked above the grid. These elements are independent and never overwrite each other — they simply stack by CSS `z-index`. The grid cells are now purely a coordinate/hit-testing layer with their checkerboard colors intact.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:044",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 44,
+      "question": "At what cadence and probability did the chaos rotation report attempt a clockwise turn?",
+      "answer": "Every 1.8 seconds, with a 40% chance for each piece to turn 90° clockwise; dragging pieces were skipped.",
+      "evidence": [
+        "D4:61: \"While Chaos mode is active, every **1.8 seconds** each piece independently has a **40% chance** of being rotated 90° clockwise. Each piece type uses exactly the same rotation logic as the existing interactive rotate key:\"",
+        "D4:61: \"Rotations are unconditional (like teleports) — they can create or worsen conflicts, and it's the player's job to sort them out. A piece being dragged is never rotated. Rotations stop immediately when Chaos mode is toggled off or the game ends.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ]
+    },
+    {
+      "id": "roompacker:045",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 45,
+      "question": "When was the final fading easter-egg probability rolled?",
+      "answer": "Once when Chaos mode was switched on, with a 1% chance to enable the fading mechanic.",
+      "evidence": [
+        "D4:72: \"Done. The one-line change gates the entire fading mechanic behind `Math.random() < 0.01` — a 1% roll that only happens when Chaos mode is switched **on**. If it misses (99/100 times), `fadeInterval` stays `null` and none of the fade code ever runs: `randomFadeEvent` is never called, and the `t.fading` branch in `conflictTick` is never entered. All the existing cleanup (`clearInterval(fadeInterval)`, `unfadePiece`) is harmlessly no-op when `fadeInterval` is `null`. Nothing else needed to change.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:046",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 46,
+      "question": "What opacity floor kept chaos-fading pieces from disappearing completely?",
+      "answer": "0.12; fading was visual only and Chaos-off restored full opacity.",
+      "evidence": [
+        "D4:69: \"| Opacity range | `0.12 → 1.0` — fades deeply but never fully disappears |\"",
+        "D4:69: \"- Turning Chaos mode **off** instantly clears all fading and restores full opacity on all pieces\"",
+        "D4:69: \"- Fading is purely visual — it doesn't affect gameplay logic, conflict detection, or timers\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:047",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 47,
+      "question": "How long did the reported rainbow animation take to complete a color cycle?",
+      "answer": "Six seconds, at roughly 60° of hue per second.",
+      "evidence": [
+        "D4:91: \"- Every frame the hue advances **~60°/sec** — one full colour cycle every 6 seconds\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ]
+    },
+    {
+      "id": "roompacker:048",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 48,
+      "question": "Which camera interactions did the initial 3D rewrite report?",
+      "answer": "Right-drag to orbit and the scroll wheel to zoom, using an orthographic isometric camera.",
+      "evidence": [
+        "D5:20: \"| **Camera** | Orthographic isometric view — right-drag or scroll to orbit/zoom |\"",
+        "D5:20: \"- **Right-drag** → orbit camera\"",
+        "D5:20: \"- **Scroll wheel** → zoom in/out\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:049",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 49,
+      "question": "How far did one arrow-key press move a selected 3D piece?",
+      "answer": "One grid cell; movement clamped to the board and prevented the page from scrolling.",
+      "evidence": [
+        "D5:25: \"**How it works:** Click any placed piece to select it (it gets a pulsing white halo), then use the arrow keys to nudge it one grid cell at a time:\"",
+        "D5:25: \"- Pieces are **clamped to the grid boundary** so they can't be pushed off the edge\"",
+        "D5:25: \"- `e.preventDefault()` is called so arrow keys don't also scroll the page\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:050",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 50,
+      "question": "How did the 3D L-sofa report divide its two-unit height?",
+      "answer": "A 1.2-unit seat and a 0.8-unit backrest, or 60% and 40%.",
+      "evidence": [
+        "D5:57: \"`H_LSOFA` is already `2.0` — the L-sofa total height is 2 blocks. The seat occupies 1.2 units (60%) and the backrest sits on top at 0.8 units (40%), for a combined 2.0.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:051",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 51,
+      "question": "How did the temporary opacity implementation keep edges visible at zero body opacity?",
+      "answer": "Opaque LineSegments were excluded from mesh-opacity changes, leaving outlines visible.",
+      "evidence": [
+        "D6:31: \"- **`addEdgeLines(parent, geo, edgeColor)`** — a new helper function that builds a `THREE.EdgesGeometry` from any geometry, attaches it as a `THREE.LineSegments` child, with a `LineBasicMaterial` that is **always fully opaque** (`transparent: false, opacity: 1`). Since `LineSegments` are not `Mesh` objects, `setMeshOpacity` already skips them, so the body can fade to invisible while the edges remain crisp.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:052",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 52,
+      "question": "What did the temporary opacity number input do with 150 and −5?",
+      "answer": "Clamp them to 100 and 0 respectively on blur or Enter.",
+      "evidence": [
+        "D6:40: \"- The number input **clamps on blur/Enter** — so typing `150` snaps back to `100`, typing `-5` snaps to `0`\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:053",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 53,
+      "question": "Why did matching the page, WebGL clear color, and fog color help the green-background change?",
+      "answer": "It avoided visible boundaries between the page, canvas background, and distant geometry.",
+      "evidence": [
+        "D6:79: \"All three had to match — the CSS covers the page behind the canvas, `setClearColor` is the WebGL clear colour filling the canvas, and the fog colour blends distant geometry into the background. Using the same `#0a1a0f` (a deep dark green) across all three keeps them seamless.\""
+      ],
+      "categories": [
+        "single-session",
+        "open-domain"
+      ],
+      "source_category": [
+        "single-session",
+        "open-domain"
+      ]
+    },
+    {
+      "id": "roompacker:054",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 54,
+      "question": "What actions cancelled merge mode without replacing any pieces?",
+      "answer": "Clicking elsewhere or pressing Escape.",
+      "evidence": [
+        "D6:115: \"6. **Click anywhere else** or press **`Escape`** — cancels merge mode with no changes.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop"
+      ]
+    },
+    {
+      "id": "roompacker:055",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 55,
+      "question": "How did the initial board renderer differ from the first 3D renderer?",
+      "answer": "The first used CSS Grid with Python’s built-in local server; the rewrite used a Three.js WebGL scene.",
+      "evidence": [
+        "D1:8: \"| `index.html` | The entire app — a 64×64 chessboard rendered with CSS Grid |\"",
+        "D1:8: \"- Zero dependencies — the server is Python's built-in `http.server`, so no `npm install` needed\"",
+        "D5:20: \"The entire 2D CSS-grid board has been replaced with a **Three.js WebGL 3D scene**. The original `index.html` was completely rewritten (~656 lines) with:\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:056",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 56,
+      "question": "What rug-placement connectivity constraint was reported, and which furniture types could later be merged?",
+      "answer": "Standalone rugs were constrained to a connected footprint; merging later allowed any same-color, same-face furniture types, without stating that the combined footprint must be connected.",
+      "evidence": [
+        "D3:25: \"- **Connectivity** — removing a cell that would split the shape is rejected\"",
+        "D6:115: \"- Any furniture type (table, sofa, chair, L-sofa, rug, previously-merged) can be merged with any other\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:057",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 57,
+      "question": "How did rotation shortcuts change from the couch system to the cube system?",
+      "answer": "The couch system used R for orientation changes; the cube system added Q for counterclockwise and E/R for clockwise rotation.",
+      "evidence": [
+        "D2:93: \"- **While in Couch mode** (`C`): press **`R`** to toggle the ghost between horizontal and vertical before placing\"",
+        "D5:39: \"- `Q` / `E`/`R` rotate CCW / CW\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop"
+      ]
+    },
+    {
+      "id": "roompacker:058",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 58,
+      "question": "What new ownership condition did merging add beyond the early chair-stacking exception?",
+      "answer": "Chair stacking distinguished furniture types at occupied cells; merging instead required distinct compatible pieces on the same face with exactly the same color.",
+      "evidence": [
+        "D2:79: \"| **Chair** | `hasConflictForChair` | Only blocks on non-chair pieces — **can stack on other chairs** |\"",
+        "D6:115: \"- Both pieces must be on the **same face**\"",
+        "D6:115: \"- Both pieces must have the **exact same color** (use the color picker to match them)\"",
+        "D6:115: \"4. **Click the target piece** — both originals are deleted and replaced by a single `merged` piece containing all their cells. The new piece is automatically selected, still showing the same color.\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:059",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 59,
+      "question": "How did the scope of collision tracking change when the board became a cube?",
+      "answer": "The original tableGrid tracked cell owners on one board; the cube gave each of six faces its own independent occupancy tracking.",
+      "evidence": [
+        "D1:37: \"- `tableGrid[row][col]` tracks which table (by id) owns each cell — enables clean erase/restamp on move\"",
+        "D5:39: \"Each face has its own independent **64×64 grid** with its own occupancy tracking and piece set:\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "roompacker:060",
+      "project": "roompacker",
+      "trajectory": "combined",
+      "source_file": "data/roompacker/annotations.json",
+      "source_index": 60,
+      "question": "How did editing and merging differ in whether they kept the original piece identity?",
+      "answer": "Table editing committed the same table, color, and label; merging deleted both originals and created a new merged piece.",
+      "evidence": [
+        "D1:77: \"| **Press `T`** or **🪑 Place Table** | Commits the new shape — same table, same colour, same label |\"",
+        "D6:115: \"4. **Click the target piece** — both originals are deleted and replaced by a single `merged` piece containing all their cells. The new piece is automatically selected, still showing the same color.\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
       "id": "snakegame_01_settings-and-theme:001",
       "project": "snakegame",
       "trajectory": "snakegame_01_settings-and-theme",
@@ -8927,7 +9520,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 1,
-      "question": "What did I ask the first StartupSimulator prototype to let the player do?",
+      "question": "What did the user ask the first StartupSimulator prototype to let the player do?",
       "answer": "Move a founder around an office by clicking, in a local web game.",
       "evidence": [
         "D1:1: \"We can start by just making an office space in which we navigate a founder character that moves around by clicking. Make it a local web app to run the game.\""
@@ -8973,7 +9566,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 3,
-      "question": "What did my final main-build feedback say about the floor, despite earlier visual revisions?",
+      "question": "What did the user's final main-build feedback say about the floor, despite earlier visual revisions?",
       "answer": "A checkerboard pattern was still visible.",
       "evidence": [
         "D1:193: \"I can clearly still see a checkerboard pattern on the floor.\""
@@ -9036,8 +9629,8 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 6,
-      "question": "What would a level-three Engineer earn per second under the reported base-rate and upgrade rules?",
-      "answer": "$6.75 per second: $3 × 2.25.",
+      "question": "Before rounding, what level-three Engineer rate follows from the reported base rate and upgrade multiplier?",
+      "answer": "$6.75 per second before rounding: $3 × 2.25. This is arithmetic on the reported rules, not a verified runtime payout.",
       "evidence": [
         "D2:52: \"Rates: Engineer $3/s · Growth $4/s · Designer $2/s · Operations $2/s.\"",
         "D2:92: \"level 1 = base rate, level 2 = 1.5×, level 3 = 2.25×; upgrade cost $500/$2000\""
@@ -9082,7 +9675,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 8,
-      "question": "What financial win condition did I request after adding workers and cereal?",
+      "question": "What financial win condition did the user request after adding workers and cereal?",
       "answer": "Reach one million dollars.",
       "evidence": [
         "D2:154: \"if i make 1 million dollars i win the game\""
@@ -9223,7 +9816,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 14,
-      "question": "What replaced the continuous dash toggle after I clarified that I meant a short teleport?",
+      "question": "What replaced the continuous dash toggle after the user clarified that the user meant a short teleport?",
       "answer": "Blink Dash: Q or the Blink button moves Alex up to three tiles forward.",
       "evidence": [
         "D4:75: \"**Click to toggle on**\"",
@@ -9293,7 +9886,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 17,
-      "question": "What sofa control did I request in the lighting conversation?",
+      "question": "What sofa control did the user request in the lighting conversation?",
       "answer": "Use the up and down arrows to control recline while seated.",
       "evidence": [
         "D5:69: \"when on the sofa let me control recline with up/down arrows\""
@@ -9339,7 +9932,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 19,
-      "question": "What bike behavior did I request for power above 100 in the final threshold revision?",
+      "question": "What bike behavior did the user request for power above 100 in the final threshold revision?",
       "answer": "Break the bike for five seconds.",
       "evidence": [
         "D5:165: \"100+ breaks the bike for 5 seconds\""
@@ -9384,7 +9977,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 21,
-      "question": "What did I want food delivery to change about the player’s stats?",
+      "question": "What did the user want food delivery to change about the player’s stats?",
       "answer": "Nothing; it was a cosmetic interaction.",
       "evidence": [
         "D6:54: \"let's make it so we can order food that doesnt do anything\"",
@@ -9430,7 +10023,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 23,
-      "question": "Did the reported double-jump level gate match my original “above level 5” request?",
+      "question": "Did the reported double-jump level gate match the user's original “above level 5” request?",
       "answer": "No; the final report used level 2 or higher plus energy above 50, while the later level system capped at 5.",
       "evidence": [
         "D6:154: \"add a double jump if stamina level is above level 5.\"",
@@ -9521,8 +10114,8 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 27,
-      "question": "Which two independent winning goals were described in the main-build and hiring conversations?",
-      "answer": "Complete Day 10’s tasks to launch, or reach one million dollars.",
+      "question": "What different win goals were described in the main-build report and the later hiring request?",
+      "answer": "The main-build report described launching after completing Day 10; the later hiring request asked to win at one million dollars. These citations alone do not establish that both triggers coexist in the final build.",
       "evidence": [
         "D1:180: \"Day 10 complete → toast fires immediately, then day-end screen with the full win message and \"Play again\" which full-resets to Day 1.\"",
         "D2:154: \"if i make 1 million dollars i win the game\""
@@ -9542,7 +10135,7 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 28,
-      "question": "For an Engineer at level 3 who is already on strike when a desk-swap timer expires, what income and swap behavior follow from the reports?",
+      "question": "How does a worker strike affect both passive earnings and eligibility for the later desk swap?",
       "answer": "The worker earns $0 per second, and the swap does not occur while either worker is striking.",
       "evidence": [
         "D2:126: \"the worker earns $0/s\"",
@@ -9615,8 +10208,8 @@
       "trajectory": "combined",
       "source_file": "data/startupsimulator/annotations.json",
       "source_index": 31,
-      "question": "What extra eligibility and cost did the later double jump add beyond the parkour conversation’s ordinary free hop?",
-      "answer": "An airborne double jump requires level 2 or higher and energy above 50, and costs five more energy after the four-cost free hop.",
+      "question": "How do the parkour free-hop report and later double-jump report differ in cost and eligibility?",
+      "answer": "The parkour report assigns a free hop a four-stamina cost. The later double-jump report assigns an airborne jump a five-energy cost, gated by level 2 or higher and energy above 50. The reports do not prove a combined nine-energy cost in the final build.",
       "evidence": [
         "D4:86: \"**After:** −4 stamina, 0.28s arc\"",
         "D6:161: \"not currently in a jump\"",
@@ -9636,12 +10229,801 @@
       ]
     },
     {
+      "id": "startupsimulator:032",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 32,
+      "question": "Which business systems were explicitly absent from the first playable prototype?",
+      "answer": "Hiring, revenue, and broader business simulation.",
+      "evidence": [
+        "D1:9: \"This first version focuses on exploring the office; hiring, revenue, and broader business simulation aren’t implemented yet.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:033",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 33,
+      "question": "What coordinate-system change did the Pokémon-style conversion report?",
+      "answer": "From isometric to top-down orthographic, with 32-pixel tiles and a 16 × 12-tile room.",
+      "evidence": [
+        "D1:45: \"- Changed from isometric projection to **top-down orthographic**\"",
+        "D1:45: \"- Introduced `TILE_SIZE = 32` for Pokemon-style 32px tiles\"",
+        "D1:45: \"- Expanded room size from 12x10 to **16x12 tiles**\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:034",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 34,
+      "question": "How did the later pixel-art reboot differ from the temporary smooth-rendering revision?",
+      "answer": "It disabled image smoothing and used integer scaling and rounded drawing coordinates instead of fractional scaling and smooth shapes.",
+      "evidence": [
+        "D1:125: \"- `imageSmoothingEnabled = true` + `imageSmoothingQuality = 'high'` (was `false`)\"",
+        "D1:125: \"- Fractional scale (`Math.max(0.5, raw)` — can be 2.3×, 1.8×, etc.) instead of integer-floor\"",
+        "D1:141: \"- `imageSmoothingEnabled = false` — crisp pixel art\"",
+        "D1:141: \"- Scale is `Math.floor(raw)` (always an integer: 3×, 4×, etc.) so every \"pixel\" is a perfectly sharp square\"",
+        "D1:141: \"- All drawing uses `px(ctx, color, x, y, w, h)` which calls `fillRect` with `Math.round()` coords — no sub-pixel blurring anywhere\""
+      ],
+      "categories": [
+        "single-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:035",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 35,
+      "question": "What separate collision measurements did the walking-precision fix introduce?",
+      "answer": "Founder radius 0.18 tiles and fixed object padding 0.05 tiles, instead of coupling both to the old 0.4 radius.",
+      "evidence": [
+        "D1:188: \"### 2. Walking precision — **`FOUNDER_RADIUS` cut from 0.4 → 0.18`**\"",
+        "D1:188: \"Previously `isWalkable` used `FOUNDER_RADIUS` (0.4) as the padding around *every object*, meaning no matter how small the radius got, the furniture force fields scaled with it. Now object padding is a fixed constant `0.05` — literally one-twentieth of a tile — just enough to prevent z-fighting at the edge pixels.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:036",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 36,
+      "question": "How did founder work earnings scale from Day 1 to Day 10 in the money report?",
+      "answer": "From $50 per work session on Day 1 to $5,000 on Day 10.",
+      "evidence": [
+        "D2:29: \"- Added `workEarnings` to every entry in `DAY_PROGRESS` — scaling from **$50 on Day 1** up to **$5,000 on Day 10** (reflecting the product going from prototype to launch-ready):\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:037",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 37,
+      "question": "How many workers could be hired, and when were their candidates chosen?",
+      "answer": "Two workers, one per desk; candidates were deterministic within a day and changed on a new day.",
+      "evidence": [
+        "D2:52: \"- Up to **2 workers** can be hired (one per desk). Their earnings stack.\"",
+        "D2:52: \"- Candidates are deterministic per day (same candidates all day, different each day).\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:038",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 38,
+      "question": "Which founder upgrade replaced work’s energy cost with an energy gain?",
+      "answer": "Deep Work Protocol, priced at $2,000, doubled work earnings and restored five energy instead of charging energy.",
+      "evidence": [
+        "D2:92: \"- 🧠 **Deep Work Protocol** ($2000) — Work earns 2× money AND restores +5 energy instead of costing any\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:039",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 39,
+      "question": "How did the worker-firing report restore an occupied desk to the hiring flow?",
+      "answer": "Remove the worker, save the change and update the HUD; the desk’s action reverted to Make the offer.",
+      "evidence": [
+        "D2:100: \"1. Removes the worker from `state.workers`\"",
+        "D2:100: \"3. Saves to localStorage\"",
+        "D2:100: \"4. Updates the HUD (worker passive income disappears)\"",
+        "D2:100: \"The desk immediately resets to \"Room for someone great.\" / \"Another desk.\" and the action button reverts to \"Make the offer 🤝\" so you can re-hire a new candidate.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:040",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 40,
+      "question": "How did paying off a strike differ from granting a wage raise?",
+      "answer": "A payoff charged 40 times the worker’s current per-second earnings once; a raise permanently added $1 per second. Both ended the strike and restarted its countdown.",
+      "evidence": [
+        "D2:126: \"| **Action button** (blue) | **\"Pay them off – $X\"** — one-time flat payment (40× their current $/s), strike ends, new countdown starts |\"",
+        "D2:126: \"| **Cancel button** (ghost) | **\"Raise wages (+$1/s)\"** — permanently bumps `earningsPerTick` by 1, strike ends, new countdown starts |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:041",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 41,
+      "question": "What timing change made baseline stamina depletion faster during the health thread?",
+      "answer": "The reported interval changed from one point every eight seconds to one point every three seconds.",
+      "evidence": [
+        "D3:42: \"A new **`energyDrainAccumulator`** runs inside `tick()` every frame. Every **8 real-seconds**, if the player hasn't slept yet today, 1 energy is drained. At a full bar of 80, that gives roughly **640 seconds (~10 minutes)** before collapse — but the real clock is tighter because:\"",
+        "D3:55: \"Done. Energy now drains **1 HP every 3 seconds** instead of every 8 — so from a full bar of 80, you'll hit zero in about **4 minutes** of doing nothing. With work costing −12 on top of that, the pressure to grab coffee, use the couch, and get to bed is much more real. Hit `Cmd+Shift+R` to pick up the change.\""
+      ],
+      "categories": [
+        "single-session",
+        "multi-hop",
+        "temporal"
+      ],
+      "source_category": [
+        "single-session",
+        "multihop",
+        "temporal"
+      ]
+    },
+    {
+      "id": "startupsimulator:042",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 42,
+      "question": "Why did the save-loading fix remove sleep from restored completed tasks?",
+      "answer": "Restoring a previously completed sleep task made the game treat the player as already asleep, permanently blocking the drain condition. Excluding it reactivated depletion on reload.",
+      "evidence": [
+        "D3:51: \"**Root cause:** `'sleep'` was added to the `TASKS` array, which means `parseSave()` was loading it from `localStorage`. If you had previously slept (ending the day) in a prior session, the save file still had `'sleep'` in `completed`. On reload, `parseSave` restored it — so `state.completed.includes('sleep')` was `true` from the very start, and the drain condition was permanently blocked.\"",
+        "D3:51: \"**Fix:** In `parseSave()`, `'sleep'` is now explicitly excluded from the loaded `completed` list — it's a \"end of day\" action that should never carry over into a new session. Every time you load the game, the day starts fresh with sleep not yet done, so the energy drain will always be active.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:043",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 43,
+      "question": "How did the peptide report distinguish recovery after a death from ordinary burnout recovery?",
+      "answer": "A peptide death advanced the day with 30 stamina, compared with 50 for ordinary burnout.",
+      "evidence": [
+        "D3:129: \"**When it kills you:** dedicated `💉 You overdid it.` day-end screen, wakes up at **30 stamina** (harsher than burnout's 50). The button text and day-end body copy escalate with each shot count.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:044",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 44,
+      "question": "What did the continuous-dash revision report for stamina cost before Blink replaced it?",
+      "answer": "One stamina every 0.25 seconds, or four per second—12 times the one-per-three-second passive rate.",
+      "evidence": [
+        "D4:78: \"**After:** 1 HP drained every **0.25 seconds** while dashing (4 HP/sec)\"",
+        "D4:78: \"For reference, the passive drain is 1 HP every 3 seconds (~0.33 HP/sec), so dashing now costs **~12× the passive rate**. A full tank of 100 HP will last about **25 seconds** of sustained dashing before you're in the danger zone — so it's a meaningful burst tool, not something you can just leave on.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:045",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 45,
+      "question": "What cost and cooldown did the Blink report attach to its three-tile move?",
+      "answer": "Eight stamina and a 1.2-second cooldown.",
+      "evidence": [
+        "D4:109: \"- **Costs 8 stamina** — more than a free hop (4), less than a vault (10)\"",
+        "D4:109: \"- **1.2 second cooldown** — button dims and ⚡ pulses while recharging, re-enables automatically when ready\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:046",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 46,
+      "question": "How did sprinting change the reported vault reach and duration?",
+      "answer": "Reach increased from two to 3.2 tiles, and the vault became 20% faster.",
+      "evidence": [
+        "D4:126: \"| **Vault reach** | 2.0 tiles | 3.2 tiles (catches far objects) |\"",
+        "D4:126: \"| **Arc duration** | standard | 20% faster/snappier |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:047",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 47,
+      "question": "Were the overhead lights and floor lamp tied to one shared toggle?",
+      "answer": "No; they had independent states and could be used separately.",
+      "evidence": [
+        "D5:34: \"Added a **floor lamp** to the office that works independently from the wall light switch. Here's everything that changed:\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:048",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 48,
+      "question": "What controls adjusted recline versus leaving the sofa?",
+      "answer": "Up/W and down/S adjusted recline; left/right movement or E stood the player up.",
+      "evidence": [
+        "D5:83: \"| **↑ / W** | Recline further back (hold to animate smoothly) |\"",
+        "D5:83: \"| **↓ / S** | Sit back upright |\"",
+        "D5:83: \"| **← / →, A, D** | Stand up immediately |\"",
+        "D5:83: \"| **E** | Stand up immediately |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:049",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 49,
+      "question": "What happened to the lighting and usable appliances at zero electricity?",
+      "answer": "Both lights were forced off. Coffee and desk work also required at least five and eight electricity respectively.",
+      "evidence": [
+        "D5:126: \"- **Blackout at 0**: forces `lightOn` and `lampOn` to `false`, shows `\"🔌 Blackout!\"`\"",
+        "D5:126: \"- **Coffee machine** costs **−5 ⚡** (refuses if < 5 ⚡)\"",
+        "D5:126: \"- **Work at desk** costs **−8 ⚡** (refuses if < 8 ⚡)\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:050",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 50,
+      "question": "What happened to bike power during and after a five-second overload?",
+      "answer": "Space was ignored, power drained at 30 per second, and recovery reset power to zero.",
+      "evidence": [
+        "D5:182: \"- While broken: SPACE does nothing, the bar flashes red, power drains fast (30/s), and the overlay **shakes** with a CSS animation\"",
+        "D5:182: \"- After 5 seconds: power resets to 0, toast fires \"✅ Bike recovered\", normal riding resumes\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:051",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 51,
+      "question": "What caused game.js to need full reconstruction in the treadmill report?",
+      "answer": "A Python write was interrupted by a UnicodeEncodeError and had zeroed the file; the agent reported reconstructing it from scratch.",
+      "evidence": [
+        "D6:53: \"A Python script accidentally zeroed out `game.js` when a `UnicodeEncodeError` interrupted a write mid-operation. The file was fully reconstructed from scratch and all planned treadmill mini-game features were added simultaneously.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:052",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 52,
+      "question": "How did a clean treadmill dismount differ from overexertion for workout credit?",
+      "answer": "A clean dismount incremented the session count; an overexerted dismount gave no session credit.",
+      "evidence": [
+        "D6:53: \"- Clean dismount → increments `treadmillSessions`, shows session toast, plays 'complete' sound\"",
+        "D6:53: \"- Overexerted dismount → no session credit, damage toast\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:053",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 53,
+      "question": "During which in-game hours was food delivery available?",
+      "answer": "From 10 AM until before 10 PM; it was closed before 10 AM and at or after 10 PM.",
+      "evidence": [
+        "D6:71: \"- Title, description and action text dynamically reflect time-of-day — too early (<10 AM), open hours, or kitchen closed (≥10 PM)\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ]
+    },
+    {
+      "id": "startupsimulator:054",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 54,
+      "question": "What did the emoji-fix report establish versus merely hypothesize about the “only ramen” complaint?",
+      "answer": "It reported correcting several food emoji codepoints. Its explanation that these visual mistakes caused the complaint was a hypothesis, not demonstrated evidence that menu randomization worked.",
+      "evidence": [
+        "D6:89: \"Three wrong emoji codepoints in the original `menu` array — all caused by mixing up Unicode surrogate pairs:\"",
+        "D6:89: \"The \"only ramen\" experience was almost certainly because the label text said *\"Ramen inbound\"* but displayed 🍣 (sushi), making every order *look like* sushi/ramen to the user — and since the text always said \"Ramen,\" they believed that's all they got. The randomization itself was working fine the whole time.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:055",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 55,
+      "question": "How did D serve both dancing and ordinary movement?",
+      "answer": "When idle, D toggled dancing; with movement active it remained right-walk. Walking or clicking a destination cancelled dancing.",
+      "evidence": [
+        "D6:111: \"- **Tap `d` while standing still** (no movement keys held, no path, not on bike/treadmill/sofa) → toggles dance on/off, clears `d` from the keys set so movement doesn't also fire, shows a toast\"",
+        "D6:111: \"- **Hold `d` while moving / press while another movement key is held** → normal right-walk, immediately cancels dance if it was on\"",
+        "D6:111: \"- **Cancel dance** in `goTo()` when the player clicks to walk somewhere\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:056",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 56,
+      "question": "What guarded against repeatedly double-jumping during one airborne jump?",
+      "answer": "A doubleJumpUsed flag allowed only one, and a jump already in its landing phase was too late.",
+      "evidence": [
+        "D6:161: \"- double jump already used this jump  → one per jump\"",
+        "D6:161: \"- already past the landing phase      → too late\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:057",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 57,
+      "question": "How did business scope grow from the first prototype to the workers feature?",
+      "answer": "The prototype explicitly lacked hiring and revenue; the later thread introduced founder work earnings and up to two passive-income workers.",
+      "evidence": [
+        "D1:9: \"This first version focuses on exploring the office; hiring, revenue, and broader business simulation aren’t implemented yet.\"",
+        "D2:29: \"- Added `workEarnings` to every entry in `DAY_PROGRESS` — scaling from **$50 on Day 1** up to **$5,000 on Day 10** (reflecting the product going from prototype to launch-ready):\"",
+        "D2:52: \"- Up to **2 workers** can be hired (one per desk). Their earnings stack.\"",
+        "D2:52: \"- Once hired, workers **passively earn money every second** in the game tick loop — no action required from you. The money counter in the HUD ticks up in real time.\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:058",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 58,
+      "question": "How did the daily completion rule change after the main-build loop gained a bed?",
+      "answer": "The main-build loop advanced after four completed tasks; the later bed became a fifth, final sleep task gated on the other four.",
+      "evidence": [
+        "D1:180: \"Every day you complete the same 4 tasks — walk around, brew coffee, pin an idea, do the work. When all 4 are checked off, a 1.8-second delay fires `advanceDay()`, which:\"",
+        "D3:27: \"- **`'sleep'` added to `TASKS`** — it's now the 5th and final daily task: `['walk', 'coffee', 'plan', 'work', 'sleep']`.\"",
+        "D3:27: \"- **`sleep` interaction object** — fully dynamic. The title, description, detail, and button text all change based on whether the other 4 tasks are done:\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:059",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 59,
+      "question": "How did the coffee reward change from the day-one prototype to the health thread?",
+      "answer": "The prototype gave 20 energy; the later report filled stamina to 100 and increased subsequent drain to one point per 1.5 seconds.",
+      "evidence": [
+        "D1:158: \"2. **Brew a coffee** — click the cabinet/coffee machine in the top-left corner (+20 energy, costs 5 min)\"",
+        "D3:111: \"| Coffee ☕ | → **100** | fast (4.5) | 1/1.5s (burns faster) |\"",
+        "D3:63: \"- **After coffee:** fills to **100 HP**, but drain doubles to **1 HP every 1.5 seconds** (~2.5 min from full to zero) — the caffeine spike is real but it burns off twice as fast\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:060",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 60,
+      "question": "How did the later electricity rules qualify the earlier Deep Work energy benefit?",
+      "answer": "Deep Work replaced work’s stamina charge with a five-energy gain, but the later lighting report still charged eight electricity for desk work. Stamina and electricity are separate resources in those reports.",
+      "evidence": [
+        "D2:92: \"- 🧠 **Deep Work Protocol** ($2000) — Work earns 2× money AND restores +5 energy instead of costing any\"",
+        "D5:126: \"- **Work at desk** costs **−8 ⚡** (refuses if < 8 ⚡)\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:061",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 61,
+      "question": "How did the bike and treadmill reports differ in handling overload?",
+      "answer": "The bike broke for five seconds and resumed at zero power; three consecutive treadmill overloads forced a dismount, with no credit for an overexerted dismount.",
+      "evidence": [
+        "D5:182: \"- Any `SPACE` press that carries power **over 100** triggers a **5-second breakdown**\"",
+        "D5:182: \"- After 5 seconds: power resets to 0, toast fires \"✅ Bike recovered\", normal riding resumes\"",
+        "D6:53: \"- **`SPACE` key handler:** treadmill gets first priority, adds +16–22 run power per tap, plays 'run' sound; 3 consecutive overloads force dismount\"",
+        "D6:53: \"- Overexerted dismount → no session credit, damage toast\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:062",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 62,
+      "question": "How do cereal restocking and the later desk-swap mechanic respond differently to workers already on strike?",
+      "answer": "Restocking leaves active strikes unchanged and delays only non-striking workers’ countdowns; desk swaps require that neither worker be striking.",
+      "evidence": [
+        "D2:153: \"- Every non-striking worker's `strikeCountdown` gets **+60 seconds** added to whatever they have left. So a worker who had 30 seconds until they walked out now has 90. A worker who was calmly at 2 minutes now has 3.\"",
+        "D2:153: \"- Workers who are *already on strike* are unaffected — free cereal doesn't fix a broken relationship, it just prevents the next one.\"",
+        "D6:145: \"if neither worker is on strike:\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:063",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 63,
+      "question": "How did the reported set of vaultable furniture expand from parkour tables to the final features thread?",
+      "answer": "Parkour added vaultable tables; the later change also made the founder and both worker desks vaultable while keeping them solid for ordinary walking.",
+      "evidence": [
+        "D4:54: \"`table` and `table-vault` were both added to `VAULTABLE_TYPES` so the original coffee table is also jump-able.\"",
+        "D6:153: \"`'desk'` = your founder workstation (3×2). `'desk-small'` = both worker desks (3×2 each). They were already solid collision walls — now they're also vaultable.\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "startupsimulator:064",
+      "project": "startupsimulator",
+      "trajectory": "combined",
+      "source_file": "data/startupsimulator/annotations.json",
+      "source_index": 64,
+      "question": "What gives a successful workout a longer-term benefit beyond the treadmill’s immediate stamina effect?",
+      "answer": "The treadmill can restore four stamina per second in its middle power zone; later successful dismounts also advance saved stamina levels, with level 2 opening double-jump eligibility if energy exceeds 50.",
+      "evidence": [
+        "D6:53: \"- Zone 25–75: **restores +4 stamina/s** (the reward for staying in range)\"",
+        "D6:172: \"**`dismountTreadmill()` success branch** — level-up logic:\"",
+        "D6:172: \"**Double jump** now requires `staminaLevel >= 2` as its first gate — one treadmill session unlocks it. The `energy > 50` check remains as the second gate.\"",
+        "D6:172: \"**`parseSave()`** validates and clamps both on load:\""
+      ],
+      "categories": [
+        "single-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
       "id": "stockapp:001",
       "project": "stockapp",
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 1,
-      "question": "What did I want the first StockApp to do, and where should it run?",
+      "question": "What did the user want the first StockApp to do, and where should it run?",
       "answer": "Recommend stocks to buy in a local web app.",
       "evidence": [
         "D1:1: \"Build a local web app that gives me the best stocks to buy.\""
@@ -9663,8 +11045,8 @@
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 2,
-      "question": "In the main-build conversation, what display changes did I want to make without refreshing stock data?",
-      "answer": "Switch display formats; fetch fresh data only when I click the refresh button.",
+      "question": "In the main-build conversation, what display changes did the user want to make without refreshing stock data?",
+      "answer": "Switch display formats; fetch fresh data only when the user clicks the refresh button.",
       "evidence": [
         "D1:69: \"make it so that when i switch formats there's no data refresh. data refresh should only happen when i click the button.\""
       ],
@@ -9827,7 +11209,7 @@
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 9,
-      "question": "What deadline did I request for the mute-alarm chase?",
+      "question": "What deadline did the user request for the mute-alarm chase?",
       "answer": "Twenty seconds before the page “explodes.”",
       "evidence": [
         "D2:262: \"make it so that if the user doesn't get it in 20 seconds the page \"explodes\"\""
@@ -9871,7 +11253,7 @@
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 11,
-      "question": "What stock-click rejection probability did I ask for?",
+      "question": "What stock-click rejection probability did the user ask for?",
       "answer": "A 50% chance of rejecting a click.",
       "evidence": [
         "D3:25: \"Make the stock app have a 50% chance of rejecting your attempt to click on a stock\""
@@ -9893,7 +11275,7 @@
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 12,
-      "question": "How long did I ultimately want the red denial screen to last in the visuals conversation?",
+      "question": "How long did the user ultimately want the red denial screen to last in the visuals conversation?",
       "answer": "One second.",
       "evidence": [
         "D3:38: \"Make the screen turn red upon denial\"",
@@ -10121,8 +11503,8 @@
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 22,
-      "question": "How did I correct the first minigame concept?",
-      "answer": "I wanted players to identify a ticker from stock numbers, rather than predict whether its price would go up or down.",
+      "question": "How did the user correct the first minigame concept?",
+      "answer": "The user wanted players to identify a ticker from stock numbers, rather than predict whether its price would go up or down.",
       "evidence": [
         "D6:29: \"Guess whether each stock will go **UP 📈** or **DOWN 📉**\"",
         "D6:30: \"give u some numbers about the stock and u have to guess the ticker\"",
@@ -10232,7 +11614,7 @@
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 27,
-      "question": "What place did I want the ticker minigame to have within StockApp?",
+      "question": "What place did the user want the ticker minigame to have within StockApp?",
       "answer": "A secondary sidebar-style feature, with stock analysis remaining the main focus.",
       "evidence": [
         "D6:131: \"verify that the ticker game is a sidebar thing and not the main focus.\""
@@ -10349,20 +11731,21 @@
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 32,
-      "question": "How do the stock-click rejection request and the final minigame wrong-guess report differ in allowing another attempt?",
-      "answer": "A stock click may be rejected with 50% probability; a wrong ticker guess keeps the round open so the player can keep guessing.",
+      "question": "Which earlier ticker-link rule should keep link navigation separate from the later stock-row rejection?",
+      "answer": "Stopping click propagation lets the ticker link open Yahoo Finance without invoking the row handler; the later rejection report applies to clicks that reach the stock-row interaction.",
       "evidence": [
-        "D3:25: \"Make the stock app have a 50% chance of rejecting your attempt to click on a stock\"",
-        "D6:96: \"**Wrong guess** → `answered` stays `false`\"",
-        "D6:96: \"player can keep guessing\""
+        "D1:31: \"- **Row (table view):** The ticker symbol (e.g. `NVDA`) is now an `<a>` tag linking to `https://finance.yahoo.com/quote/NVDA` that opens in a new tab. `onclick=\"event.stopPropagation()\"` prevents the link click from also triggering the row's modal — so clicking the ticker = Yahoo Finance, clicking anywhere else on the row = modal.\"",
+        "D3:29: \"### On a **lucky** click (50%)\""
       ],
       "categories": [
         "multi-session",
-        "multi-hop"
+        "multi-hop",
+        "knowledge-facts"
       ],
       "source_category": [
         "multi-session",
-        "multihop"
+        "multihop",
+        "knowledge-facts"
       ]
     },
     {
@@ -10371,22 +11754,758 @@
       "trajectory": "combined",
       "source_file": "data/stockapp/annotations.json",
       "source_index": 33,
-      "question": "What distinct portfolio and minigame additions did I request without replacing the stock-analysis purpose?",
-      "answer": "A holdings view with total value, daily P&L and weighted AI score, plus a secondary ticker-guessing game.",
+      "question": "How do formula weights and portfolio weights operate at different levels?",
+      "answer": "Formula weights combine signals into a stock score; portfolio weighting combines holdings’ stock scores according to the value of each holding.",
       "evidence": [
-        "D2:1: \"Show a \"My Portfolio\" view with total value, daily P\\&L, and weighted average AI score across their holdings.\"",
-        "D6:30: \"give u some numbers about the stock and u have to guess the ticker\"",
-        "D6:131: \"verify that the ticker game is a sidebar thing and not the main focus.\""
+        "D1:49: \"- `openModal()` — each subscore row now shows `×15%` (etc.) in accent blue next to the signal name, showing exactly how much that signal contributed to this particular run's score\"",
+        "D2:21: \"- **Weighted AI Score** — value-weighted average of each holding's AI score\""
       ],
       "categories": [
         "multi-session",
         "multi-hop",
-        "preference"
+        "knowledge-facts"
       ],
       "source_category": [
         "multi-session",
         "multihop",
-        "preference"
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:034",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 34,
+      "question": "How did the compact-layout report reduce each stock card’s height?",
+      "answer": "From roughly 420 pixels to a 44-pixel row, while retaining detail in the modal.",
+      "evidence": [
+        "D1:25: \"| Each stock card | ~420px tall (3-column grid) | **44px tall row** |\"",
+        "D1:25: \"**Click a row** to open the full detail modal — all the rich info (score breakdown bars, rationale, metrics, 52-week range) is still there, just out of the way on the main view.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:035",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 35,
+      "question": "What happened when a user clicked a ticker link rather than the rest of its row?",
+      "answer": "The ticker opened Yahoo Finance in a new tab; stopping propagation prevented that click from also opening the stock modal.",
+      "evidence": [
+        "D1:31: \"- **Row (table view):** The ticker symbol (e.g. `NVDA`) is now an `<a>` tag linking to `https://finance.yahoo.com/quote/NVDA` that opens in a new tab. `onclick=\"event.stopPropagation()\"` prevents the link click from also triggering the row's modal — so clicking the ticker = Yahoo Finance, clicking anywhere else on the row = modal.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:036",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 36,
+      "question": "How did the random-formula report produce bounded weights summing to one?",
+      "answer": "Sample a symmetric Dirichlet distribution with α = 2, clamp weights to signal bounds, then renormalize.",
+      "evidence": [
+        "D1:49: \"- `generate_random_weights()` — samples from a symmetric Dirichlet(α=2) distribution, clamps each weight to its bounds, then renormalises to guarantee sum = 1.0 exactly\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:037",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 37,
+      "question": "What kept the chosen light or dark theme after a reload?",
+      "answer": "Saving the choice in localStorage and applying it before rendering on page load.",
+      "evidence": [
+        "D1:81: \"- `toggleTheme()` — toggles `body.light`, flips the button icon between `☾` (dark) and `☀` (light), saves the choice to `localStorage`\"",
+        "D1:81: \"- `applyStoredTheme()` — runs on page load before anything renders, restores the saved preference so the chosen mode persists across sessions and refreshes\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:038",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 38,
+      "question": "What short-interest score did the report assign above 30%, and what interpretation accompanied it?",
+      "answer": "40, interpreted as an extreme level that could indicate a value trap.",
+      "evidence": [
+        "D1:97: \"| > 30% | 40 | Extreme — possible value trap |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:039",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 39,
+      "question": "When did the initial portfolio implementation save a holding’s share count?",
+      "answer": "Immediately when the share count was typed, to the sp_portfolio localStorage key.",
+      "evidence": [
+        "D2:21: \"- Typing a share count **auto-saves to `localStorage`** (key: `sp_portfolio`) and instantly updates the per-row value\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:040",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 40,
+      "question": "What did the score-history chart show before it had two data points?",
+      "answer": "A placeholder asking the user to refresh a few more times.",
+      "evidence": [
+        "D2:21: \"- If fewer than 2 data points exist, a friendly \"refresh a few more times\" placeholder is shown instead\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop"
+      ]
+    },
+    {
+      "id": "stockapp:041",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 41,
+      "question": "Which additional sector groups did the expanded-universe report introduce?",
+      "answer": "International ADRs, ETFs, and Crypto-Adjacent.",
+      "evidence": [
+        "D2:21: \"- **New sector — International ADRs:** ASML, SAP, NVO, AZN, SHEL, BABA, TSM, SE, MELI, PDD, SONY, TM, HMC, BIDU, JD\"",
+        "D2:21: \"- **New sector — ETFs:** SPY, QQQ, IWM, DIA, VTI, XLK, XLF, XLV, XLE, ARKK, GLD, SLV, TLT, HYG, VNQ\"",
+        "D2:21: \"- **New sector — Crypto-Adjacent:** COIN, MSTR, MARA, RIOT, CLSK, HUT, BTBT + others\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop"
+      ]
+    },
+    {
+      "id": "stockapp:042",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 42,
+      "question": "What code path did a custom ticker reuse, and which extra records did the result update?",
+      "answer": "The existing /api/stock/<ticker> endpoint; it also saved score history and checked alerts.",
+      "evidence": [
+        "D2:21: \"- It calls the existing `/api/stock/<ticker>` endpoint, shows an info banner while loading, then opens the full detail modal — including score breakdown, history chart, and alert setting\"",
+        "D2:21: \"- The result is also saved to score history and checked against existing alerts\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:043",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 43,
+      "question": "Which feature did the agent flag as lacking end-to-end testing?",
+      "answer": "The Recommendations tab.",
+      "evidence": [
+        "D2:193: \"The shell has been dead this entire session, which means **Feature 8 (Recommendations tab) has never been tested end-to-end**. Before building anything new, the single most valuable thing to do is:\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:044",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 44,
+      "question": "What finally stopped the mute-chase alarm when its moving button was caught?",
+      "answer": "Closing its AudioContext cut the sound, then the overlay and animation timers were torn down.",
+      "evidence": [
+        "D2:261: \"**Click handler:** calls `audioCtx.close()` which immediately destroys the Web Audio graph and cuts all sound mid-note, then calls `_hideMuteChase()` to tear down the UI.\"",
+        "D2:261: \"| `_hideMuteChase()` | Cancels the rAF fade loop, clears the teleport timeout, removes the overlay element from the DOM |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:045",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 45,
+      "question": "How did the mute-chase countdown escalate its warnings before the deadline?",
+      "answer": "Gold at ten seconds or less; flashing red at five seconds or less, with a 20-second deadline.",
+      "evidence": [
+        "D2:269: \"- **≤ 10s** → turns **gold** (`.warn` class)\"",
+        "D2:269: \"- **≤ 5s** → turns **red and flashes** rapidly (`.panic` class, `@keyframes countdown-flash`)\"",
+        "D2:269: \"A `setTimeout(..., 20_000)` fires `_explodePage(audioCtx)` if `_muteChaseMuted` is still `false`. Clicking the button sets that flag first, so a last-millisecond catch still saves you.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ]
+    },
+    {
+      "id": "stockapp:046",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 46,
+      "question": "What did Pause Feed stop in the live-feed report?",
+      "answer": "The feed engine and associated live UI state; the report said it stopped everything cleanly and reset that state.",
+      "evidence": [
+        "D3:14: \"- Clicking **`⏸ Pause Feed`** stops everything cleanly and resets all UI state\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop"
+      ]
+    },
+    {
+      "id": "stockapp:047",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 47,
+      "question": "What final duration did the user-driven rejection-flash revision report?",
+      "answer": "Exactly one second from flashing in to being fully gone.",
+      "evidence": [
+        "D3:43: \"Done — the red screen now flashes in fast and is fully gone within exactly **1 second**.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "temporal"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "temporal"
+      ]
+    },
+    {
+      "id": "stockapp:048",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 48,
+      "question": "Where did the Random button obtain a ticker if no stock data had loaded?",
+      "answer": "A hardcoded fallback list of 30 tickers, then the existing custom-ticker lookup.",
+      "evidence": [
+        "D4:8: \"2. **Falls back to a hardcoded list** of 30 well-known tickers if data hasn't loaded yet\"",
+        "D4:8: \"3. **Fills the ticker input** and calls the existing `lookupCustomTicker()` function, which fetches a full AI score and opens the detail modal — no duplicate code\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:049",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 49,
+      "question": "What changed about the floating Random button’s direction when a pause ended?",
+      "answer": "It chose a new angle anywhere around 360° and new velocity components before resuming.",
+      "evidence": [
+        "D4:38: \"Looks perfect. It was a one-line answer really — the old code never touched `_floatVX`/`_floatVY` on resume. Now when the pause ends, it calculates a fresh `angle` (full 360° random) and sets new velocity components before unfreezing, so it drifts off in a completely different direction each time.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:050",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 50,
+      "question": "How did the floating button’s spin behave while paused?",
+      "answer": "Its angle froze; resuming chose a new spin of 1–3 degrees per frame in either direction.",
+      "evidence": [
+        "D4:43: \"- In **`_floatLoop`**: `_floatAngle += _floatSpin` every frame, applied as `btn.style.transform = rotate(${_floatAngle}deg)`. Spin stops (angle freezes) while paused, resumes right where it left off\"",
+        "D4:43: \"- In **`_scheduleNextPause`** on resume: picks a new `_floatSpin` between **1–3 deg/frame** with a **random clockwise or counter-clockwise direction**, so each stretch of movement has its own spin personality\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:051",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 51,
+      "question": "Why was removing position transitions sensible once the button moved on every animation frame?",
+      "answer": "Otherwise CSS interpolation would compete with the frame-driven position updates, adding lag or conflicting motion.",
+      "evidence": [
+        "D4:31: \"- Removed `top`/`left` from the `transition` list — the position is now driven by `requestAnimationFrame` every frame, so CSS transitions on those properties would only fight the animation\""
+      ],
+      "categories": [
+        "single-session",
+        "open-domain"
+      ],
+      "source_category": [
+        "single-session",
+        "open-domain"
+      ]
+    },
+    {
+      "id": "stockapp:052",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 52,
+      "question": "Which daily-change heuristic did the data-bug diagnosis identify as wrong?",
+      "answer": "Multiplying a percentage by 100 whenever its absolute value was below one; the report said the input was already a full percentage.",
+      "evidence": [
+        "D5:7: \"**Root cause:** `regularMarketChangePercent` from yfinance is already a **full percentage** (e.g. `0.227` = 0.227%, not a decimal fraction). The code's heuristic — \"if `abs(val) < 1`, multiply by 100\" — is wrong: a 0.23% move gets multiplied to `22.7%`, while a -3.42% move is correctly left alone.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:053",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 53,
+      "question": "What happened to existing card nodes and sparklines during FLIP reordering?",
+      "answer": "The existing DOM nodes were moved rather than destroyed, preserving their sparklines.",
+      "evidence": [
+        "D5:19: \"This means the card DOM nodes are **reused** (never destroyed/recreated on resort), so sparklines stay intact too.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:054",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 54,
+      "question": "How did the rainbow list assign and update a card’s hue?",
+      "answer": "Hue was index / total × 360; resorting reassigned hues by the new position rather than keeping a permanent ticker color.",
+      "evidence": [
+        "D5:43: \"- A `--card-hue` CSS custom property is set directly on each card element via `card.style.setProperty('--card-hue', hue)`, where `hue = (index / total) * 360`\"",
+        "D5:43: \"**When you re-sort** (e.g. switch from Score → RSI), cards move to their new positions *and* their hues update to match the new order — so the rainbow always runs top to bottom regardless of sort.\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:055",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 55,
+      "question": "How could the user force fresh external data instead of reusing the five-minute cache?",
+      "answer": "Ctrl-click or Command-click Refresh to call DELETE /api/cache before fetching again.",
+      "evidence": [
+        "D5:63: \"Each ticker is cached individually with a Unix timestamp. TTL is **5 minutes**. This is the right granularity because:\"",
+        "D5:63: \"- **Ctrl+click (or ⌘+click) the Refresh button** → calls `DELETE /api/cache` first, then re-fetches — guaranteed fresh data from yfinance\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts",
+        "temporal"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts",
+        "temporal"
+      ]
+    },
+    {
+      "id": "stockapp:056",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 56,
+      "question": "What happened to a News Hint’s point penalty when no news was available?",
+      "answer": "The game showed an error card but still deducted 75 points.",
+      "evidence": [
+        "D6:65: \"| No news available | Graceful error card shown, 75 pts still deducted |\""
+      ],
+      "categories": [
+        "single-session",
+        "single-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "single-session",
+        "singlehop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:057",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 57,
+      "question": "Why was placing Penny outside the minigame card’s DOM useful?",
+      "answer": "It let the mascot persist while the card rerendered after clues and guesses.",
+      "evidence": [
+        "D6:116: \"**Penny** is a cute mascot character who lives in the bottom-right corner of the minigame overlay, outside the card's DOM so she **persists across all re-renders**. She has a speech bubble with a CSS triangle tail pointing down to her face emoji.\""
+      ],
+      "categories": [
+        "single-session",
+        "open-domain"
+      ],
+      "source_category": [
+        "single-session",
+        "open-domain"
+      ]
+    },
+    {
+      "id": "stockapp:058",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 58,
+      "question": "How do score-history deduplication and the later ticker cache use the same five-minute interval for different purposes?",
+      "answer": "History suppresses repeated recorded samples; the cache avoids external refetches for fresh ticker data. One does not substitute for the other.",
+      "evidence": [
+        "D2:21: \"- Every time `loadStocks()` or a custom ticker lookup runs, **each ticker's score is stored with a UTC timestamp** in `localStorage` (key: `sp_score_history`), with a 5-minute dedup guard to prevent noise from rapid refreshes. Up to 60 data points are kept per ticker\"",
+        "D5:63: \"Each ticker is cached individually with a Unix timestamp. TTL is **5 minutes**. This is the right granularity because:\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:059",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 59,
+      "question": "How does the later force-refresh shortcut differ from the original manual-refresh preference?",
+      "answer": "The user originally wanted display changes not to refresh data; later ordinary Refresh could reuse fresh cache entries, while modifier-click explicitly evicted the cache first.",
+      "evidence": [
+        "D1:69: \"make it so that when i switch formats there's no data refresh. data refresh should only happen when i click the button.\"",
+        "D5:63: \"- A **Refresh** reuses everything still fresh, only re-fetches tickers whose 5 minutes have expired\"",
+        "D5:63: \"- **Ctrl+click (or ⌘+click) the Refresh button** → calls `DELETE /api/cache` first, then re-fetches — guaranteed fresh data from yfinance\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "preference",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "preference",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:060",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 60,
+      "question": "How did stock-card animation change between staggered entry and the later sort animation?",
+      "answer": "Initial cards entered 55 ms apart; later sorts moved existing cards with FLIP rather than recreating them, while initial loads still staggered.",
+      "evidence": [
+        "D3:14: \"Every time stocks load or filters change, each card **slides in from the left** with a springy cubic-bezier easing (`cardSlideIn` keyframe). Cards are staggered **55ms apart** — so card #1 enters first, then #2, then #3... creating a satisfying cascade waterfall effect on every data load or sort change.\"",
+        "D5:25: \"- **Initial load** still uses the original staggered `card-enter` slide-in (the `grid.children.length === 0` branch)\"",
+        "D5:25: \"2. **Last** — reorder the DOM nodes by `appendChild`-ing them in the new sort order (they teleport instantly)\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:061",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 61,
+      "question": "How did the alert mute button’s motion differ from the later Random button’s motion?",
+      "answer": "The mute button teleported at randomized intervals, later accelerating toward a deadline; the Random button followed continuous velocity and bounced at viewport edges.",
+      "evidence": [
+        "D2:261: \"**Teleport loop:** recursive `setTimeout` with a random 600–1200ms delay each time, so the rhythm is unpredictable — you can't learn the pattern.\"",
+        "D2:269: \"The button teleport interval is no longer fixed at 600–1200ms. It now computes a `frac` (0→1 over 20 seconds) and shrinks the interval linearly:\"",
+        "D4:31: \"- **`_floatLoop()`** — runs every animation frame via `requestAnimationFrame`. Moves the button by its velocity each frame, then checks all 4 viewport edges and **flips the velocity** on contact (classic billiard-ball bounce). Keeps the button fully on-screen at all times.\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "temporal",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "temporal",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:062",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 62,
+      "question": "What shared browser facility produced both the alert alarm and the stock-rejection laugh?",
+      "answer": "Web Audio synthesis: the alarm layered oscillators and an LFO, while the laugh used six synthesized voices without external sound files.",
+      "evidence": [
+        "D2:252: \"Three layers play simultaneously, scheduled ahead of time on the Web Audio clock so timing is sample-accurate:\"",
+        "D2:252: \"| **20 Hz square LFO** into the sawtooth gain | Amplitude tremolo at 20 Hz chops the sound on/off fast enough to sound like a rattle or buzz rather than a smooth tone. |\"",
+        "D3:37: \"**Zero files, zero CDN, zero permissions.** It's entirely synthesized live using the browser's built-in **Web Audio API**.\"",
+        "D3:37: \"Each \"laugh\" is built from **6 overlapping voices**, all playing simultaneously with staggered offsets so it sounds like a *crowd* not one person:\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:063",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 63,
+      "question": "Which main-build stock measures later became ordered clues in the ticker game?",
+      "answer": "Examples include sector, P/E, RSI, 52-week range, EPS growth, profit margin, debt/equity, and the sparkline. The game reused analysis measures as identification clues.",
+      "evidence": [
+        "D1:11: \"| EPS Growth | 20% | Earnings growth YoY |\"",
+        "D1:11: \"| Profit Margin | 10% | Net profit margin |\"",
+        "D1:11: \"| Debt/Equity | 10% | Balance sheet strength |\"",
+        "D1:11: \"- 📏 **52-week range bar** showing where price sits today\"",
+        "D1:11: \"- 🕯 **Sparkline charts** (90-day, no library — pure Canvas)\"",
+        "D1:11: \"- 🔽 **Filters**: sector, top N (5/10/15/20), sort by score / daily change / P/E / RSI\"",
+        "D6:48: \"- Sector → Market Cap → P/E Ratio → RSI → 52-Week Range → EPS Growth → Profit Margin → Debt/Equity → Sparkline chart → Dividend Yield\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:064",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 64,
+      "question": "How did the custom-ticker path support both a user-specified symbol and a later random choice?",
+      "answer": "The portfolio/features thread exposed an arbitrary-ticker input using /api/stock/<ticker>; the Random button filled that input and called lookupCustomTicker rather than duplicating scoring logic.",
+      "evidence": [
+        "D2:21: \"- Type any ticker symbol (e.g., `ABNB`, `BTC-USD`, `ARM`) and press Enter or click the button\"",
+        "D2:21: \"- It calls the existing `/api/stock/<ticker>` endpoint, shows an info banner while loading, then opens the full detail modal — including score breakdown, history chart, and alert setting\"",
+        "D4:8: \"3. **Fills the ticker input** and calls the existing `lookupCustomTicker()` function, which fetches a full AI score and opens the detail modal — no duplicate code\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
+      ]
+    },
+    {
+      "id": "stockapp:065",
+      "project": "stockapp",
+      "trajectory": "combined",
+      "source_file": "data/stockapp/annotations.json",
+      "source_index": 65,
+      "question": "How did card-color assignment differ from the earlier light/dark theme implementation?",
+      "answer": "The theme replaced shared UI color tokens and persisted a user choice; the later rainbow feature assigned hues by each card’s current sorted position and adapted them for light mode.",
+      "evidence": [
+        "D1:81: \"- Added a `body.light { }` block that overrides just the 11 colour tokens — every other rule already uses `var(--*)` so the entire UI flips automatically\"",
+        "D1:81: \"- `toggleTheme()` — toggles `body.light`, flips the button icon between `☾` (dark) and `☀` (light), saves the choice to `localStorage`\"",
+        "D5:43: \"- A `--card-hue` CSS custom property is set directly on each card element via `card.style.setProperty('--card-hue', hue)`, where `hue = (index / total) * 360`\"",
+        "D5:43: \"Light mode is also handled with adjusted saturation/lightness values that work on the white background.\""
+      ],
+      "categories": [
+        "multi-session",
+        "multi-hop",
+        "knowledge-facts"
+      ],
+      "source_category": [
+        "multi-session",
+        "multihop",
+        "knowledge-facts"
       ]
     }
   ]

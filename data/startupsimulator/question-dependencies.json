@@ -232,5 +232,248 @@
       "D6:172"
     ],
     "requires_answers": []
+  },
+  {
+    "question_id": "Q032",
+    "evidence_dia_ids": [
+      "D1:9"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q033",
+    "evidence_dia_ids": [
+      "D1:45"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q034",
+    "evidence_dia_ids": [
+      "D1:125",
+      "D1:141"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q035",
+    "evidence_dia_ids": [
+      "D1:188"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q036",
+    "evidence_dia_ids": [
+      "D2:29"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q037",
+    "evidence_dia_ids": [
+      "D2:52"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q038",
+    "evidence_dia_ids": [
+      "D2:92"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q039",
+    "evidence_dia_ids": [
+      "D2:100"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q040",
+    "evidence_dia_ids": [
+      "D2:126"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q041",
+    "evidence_dia_ids": [
+      "D3:42",
+      "D3:55"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q042",
+    "evidence_dia_ids": [
+      "D3:51"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q043",
+    "evidence_dia_ids": [
+      "D3:129"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q044",
+    "evidence_dia_ids": [
+      "D4:78"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q045",
+    "evidence_dia_ids": [
+      "D4:109"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q046",
+    "evidence_dia_ids": [
+      "D4:126"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q047",
+    "evidence_dia_ids": [
+      "D5:34"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q048",
+    "evidence_dia_ids": [
+      "D5:83"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q049",
+    "evidence_dia_ids": [
+      "D5:126"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q050",
+    "evidence_dia_ids": [
+      "D5:182"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q051",
+    "evidence_dia_ids": [
+      "D6:53"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q052",
+    "evidence_dia_ids": [
+      "D6:53"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q053",
+    "evidence_dia_ids": [
+      "D6:71"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q054",
+    "evidence_dia_ids": [
+      "D6:89"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q055",
+    "evidence_dia_ids": [
+      "D6:111"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q056",
+    "evidence_dia_ids": [
+      "D6:161"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q057",
+    "evidence_dia_ids": [
+      "D1:9",
+      "D2:29",
+      "D2:52"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q058",
+    "evidence_dia_ids": [
+      "D1:180",
+      "D3:27"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q059",
+    "evidence_dia_ids": [
+      "D1:158",
+      "D3:111",
+      "D3:63"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q060",
+    "evidence_dia_ids": [
+      "D2:92",
+      "D5:126"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q061",
+    "evidence_dia_ids": [
+      "D5:182",
+      "D6:53"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q062",
+    "evidence_dia_ids": [
+      "D2:153",
+      "D6:145"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q063",
+    "evidence_dia_ids": [
+      "D4:54",
+      "D6:153"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q064",
+    "evidence_dia_ids": [
+      "D6:53",
+      "D6:172"
+    ],
+    "requires_answers": []
   }
 ]

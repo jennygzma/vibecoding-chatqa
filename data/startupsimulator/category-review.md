@@ -4,14 +4,14 @@ Reference: [Focus Desk](../focus_desk/category-review.md). Labels overlap and ar
 
 | Category | Focus Desk | StartupSimulator |
 |---|---:|---:|
-| knowledge-facts | 17 / 60 | 11 / 31 |
-| multi-session | 12 / 60 | 6 / 31 |
-| multihop | 17 / 60 | 12 / 31 |
-| open-domain | 5 / 60 | 4 / 31 |
-| preference | 9 / 60 | 6 / 31 |
-| single-session | 48 / 60 | 25 / 31 |
-| singlehop | 38 / 60 | 15 / 31 |
-| temporal | 15 / 60 | 7 / 31 |
+| knowledge-facts | 17 / 60 | 42 / 64 |
+| multi-session | 12 / 60 | 13 / 64 |
+| multihop | 17 / 60 | 22 / 64 |
+| open-domain | 5 / 60 | 4 / 64 |
+| preference | 9 / 60 | 6 / 64 |
+| single-session | 48 / 60 | 51 / 64 |
+| singlehop | 38 / 60 | 38 / 64 |
+| temporal | 15 / 60 | 18 / 64 |
 
 Each question has a source-support and category rationale in
 `annotation-semantic-review.json`, bound to the exact answer, question, labels

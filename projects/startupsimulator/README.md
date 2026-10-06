@@ -2,7 +2,7 @@
 
 StartupSimulator, titled **Zero to One** in the application, is a local
 top-down startup-office game. This directory contains the runnable project and
-[31 curated QA annotations](../../data/startupsimulator/annotations.json) from the
+[64 human-approved QA annotations](../../data/startupsimulator/annotations.json) from the
 six Cline trajectories used to develop it. The [canonical dataset](../../data/startupsimulator/README.md)
 follows Focus Desk's structure and overlapping categories. Earlier 136-question
 trajectory outputs remain preserved as history.
@@ -64,9 +64,16 @@ python3 scripts/michael_dataset.py startupsimulator
 python3 scripts/michael_dataset.py startupsimulator --check
 ```
 
-The current 31 questions have an agent editorial review and exact evidence checks;
-human approval is pending. Original researcher approval applies to the earlier
-136-question version below, not automatically to the rewritten questions.
+The current 64 questions have an agent editorial review, exact evidence checks
+and validated human approval in the [saved review](../../data/michael-annotation-review.json).
+Run `python3 scripts/michael_approval.py` from the repository root to verify the
+current revisions, row checksums, decisions and combined exports. Earlier
+researcher approval remains attached to the 136-question version below.
+
+Use the [unified reviewer](http://127.0.0.1:4473/projects/annotation-review/) for
+this full re-evaluation; launch instructions are in the repository README.
+The preceding 31-question curated set is preserved in
+`data/startupsimulator/revisions/before-full-reevaluation/`.
 
 ## Earlier reviewed trajectory datasets
 
@@ -117,5 +124,5 @@ python3 -m http.server 4273 --bind 127.0.0.1 --directory reviewer
 
 Open <http://127.0.0.1:4273/> to inspect the earlier 136-question trajectory set.
 Its 2026-09-24 approval remains recorded in its evidence files. Review the current
-31-question version in [annotations.md](../../data/startupsimulator/annotations.md),
+64-question version in [annotations.md](../../data/startupsimulator/annotations.md),
 where each question includes its exact citations and category rationale.

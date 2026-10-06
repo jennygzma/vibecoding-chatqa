@@ -1,15 +1,15 @@
 [
   {
     "question_id": "Q001",
-    "reviewed_question": "What did I want the first StockApp to do, and where should it run?",
-    "reviewed_sha256": "547eb3fbc477697cc34283469dc508bc5d8e69f2967533def9f6429cec475f94",
+    "reviewed_question": "What did the user want the first StockApp to do, and where should it run?",
+    "reviewed_sha256": "2607bfabda4be999575dc1ba536f42a64144ce7eda72e2f7c2496739f93a0539",
     "source_support": "reviewed",
     "category_reason": "Directly retrieves the user’s requested purpose and local delivery; it does not endorse the recommendations."
   },
   {
     "question_id": "Q002",
-    "reviewed_question": "In the main-build conversation, what display changes did I want to make without refreshing stock data?",
-    "reviewed_sha256": "3516dbd5d49c349822abb13714ef040171a942ebe3f13f3eb611881b9a9722c2",
+    "reviewed_question": "In the main-build conversation, what display changes did the user want to make without refreshing stock data?",
+    "reviewed_sha256": "db32305d243b19b4e5c44166a1c593cfaccda97df04a8339912380d75281cd12",
     "source_support": "reviewed",
     "category_reason": "Explicit interaction preference from one user message; scoped to the main-build request because later features add polling."
   },
@@ -57,8 +57,8 @@
   },
   {
     "question_id": "Q009",
-    "reviewed_question": "What deadline did I request for the mute-alarm chase?",
-    "reviewed_sha256": "b5abc2ab20ba5f89df617e2f658f57f366ad4b8cf29908b48eeee5df6b08da5f",
+    "reviewed_question": "What deadline did the user request for the mute-alarm chase?",
+    "reviewed_sha256": "9d5b1e5f8459c0df2ce9af74ba284a6bdd73a55f7dba0257c0de4ffea3f08b78",
     "source_support": "reviewed",
     "category_reason": "One explicit user timing preference; describes the requested playful page effect, not a system failure."
   },
@@ -71,15 +71,15 @@
   },
   {
     "question_id": "Q011",
-    "reviewed_question": "What stock-click rejection probability did I ask for?",
-    "reviewed_sha256": "105615ae62b6e1237955c799cd653b4f367e819f56c94e916775aad40d01ee14",
+    "reviewed_question": "What stock-click rejection probability did the user ask for?",
+    "reviewed_sha256": "bb2216324bcc1eab778fbc62f6a88728909c12743ab3b5a1e520971ae99dfcd3",
     "source_support": "reviewed",
     "category_reason": "Direct numerical preference in the visual-effects conversation."
   },
   {
     "question_id": "Q012",
-    "reviewed_question": "How long did I ultimately want the red denial screen to last in the visuals conversation?",
-    "reviewed_sha256": "8687e0c74e34233d3c79c3076b1248747e9bb6f3973e0af3cc9af346a702d0c4",
+    "reviewed_question": "How long did the user ultimately want the red denial screen to last in the visuals conversation?",
+    "reviewed_sha256": "a5ffa5477c726d702b2cd1aeea322543ea920fa965de242abda44de63f583724",
     "source_support": "reviewed",
     "category_reason": "The later request directly supplies the duration; the earlier message resolves what “it” refers to, without requiring a calculation."
   },
@@ -148,8 +148,8 @@
   },
   {
     "question_id": "Q022",
-    "reviewed_question": "How did I correct the first minigame concept?",
-    "reviewed_sha256": "3c8a2c07786f5c9d74c6f2c1147cc5ed10710aff6f02b08c8fa243eb694a390a",
+    "reviewed_question": "How did the user correct the first minigame concept?",
+    "reviewed_sha256": "fe810d64fa41ff90500df189a6ee90c186a440e3018539f6b45ded4541fa9265",
     "source_support": "reviewed",
     "category_reason": "Combines the agent’s first concept, the user correction, and the revised description; chronology is not independently temporal."
   },
@@ -183,8 +183,8 @@
   },
   {
     "question_id": "Q027",
-    "reviewed_question": "What place did I want the ticker minigame to have within StockApp?",
-    "reviewed_sha256": "cb8d95ed97a08c8b53acd92e9aefcbd11a1773722c9a058931775c70481885f9",
+    "reviewed_question": "What place did the user want the ticker minigame to have within StockApp?",
+    "reviewed_sha256": "0d81ef07c6fcf0c196ccb28e6d95d2b8198fe763a88f88a0876079c511def0b1",
     "source_support": "reviewed",
     "category_reason": "Direct user priority; “sidebar-style” describes the request and does not falsely identify the implementation as a literal sidebar."
   },
@@ -222,18 +222,250 @@
   },
   {
     "question_id": "Q032",
-    "reviewed_question": "How do the stock-click rejection request and the final minigame wrong-guess report differ in allowing another attempt?",
-    "reviewed_sha256": "ac3f9a491d5d124da671d31362dedd074224b99fc3d35ff91cfe10f6347eb168",
+    "reviewed_question": "Which earlier ticker-link rule should keep link navigation separate from the later stock-row rejection?",
+    "reviewed_sha256": "88dd1763835673ba3d8274391f6f71ef033f02c5f2ed5cd07e66cca38f8bf329",
     "source_support": "reviewed",
-    "category_reason": "Compares failure handling in two distinct interactions without inventing a shared probability for minigame guesses.",
-    "cross_session_necessity": "D3 defines rejected dashboard clicks; D6 defines continued guessing after an incorrect ticker."
+    "category_reason": "D1 supplies the event-propagation boundary; D3 supplies the later stock-click rejection. This is an integration of reported routing, not a final-browser verification.",
+    "cross_session_necessity": "D1 supplies the event-propagation boundary; D3 supplies the later stock-click rejection. This is an integration of reported routing, not a final-browser verification."
   },
   {
     "question_id": "Q033",
-    "reviewed_question": "What distinct portfolio and minigame additions did I request without replacing the stock-analysis purpose?",
-    "reviewed_sha256": "b5782fb76db13cee63aac6dd0e343f583d3257dd2cbc183fc1d66ccc85fa2260",
+    "reviewed_question": "How do formula weights and portfolio weights operate at different levels?",
+    "reviewed_sha256": "301f46120ff0c933d4b4f70717556b16abcb294645fcec8b828cbd7bb1930a98",
     "source_support": "reviewed",
-    "category_reason": "Integrates explicit requirements from the portfolio and game conversations, with the later priority statement limiting the game’s role.",
-    "cross_session_necessity": "D2 supplies the portfolio metrics; D6 supplies the guessing mechanic and secondary placement."
+    "category_reason": "D1 supplies within-stock signal weighting; D2 supplies between-holding value weighting. Both sessions are necessary to distinguish the two levels.",
+    "cross_session_necessity": "D1 supplies within-stock signal weighting; D2 supplies between-holding value weighting. Both sessions are necessary to distinguish the two levels."
+  },
+  {
+    "question_id": "Q034",
+    "reviewed_question": "How did the compact-layout report reduce each stock card’s height?",
+    "reviewed_sha256": "b2c2f7ffb8d47ecfe84bcb0fe4739709de5ef2fb023d8065fc517acc10cbae2a",
+    "source_support": "reviewed",
+    "category_reason": "Direct retrieval of a reported UI sizing change."
+  },
+  {
+    "question_id": "Q035",
+    "reviewed_question": "What happened when a user clicked a ticker link rather than the rest of its row?",
+    "reviewed_sha256": "2fc1bbc7d1aed84fd0a8fe3e788b497644297e4941106672245e0cdb18a0ba25",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve explicit event-routing behavior."
+  },
+  {
+    "question_id": "Q036",
+    "reviewed_question": "How did the random-formula report produce bounded weights summing to one?",
+    "reviewed_sha256": "c84feb4926f81e141b821c7b118f065db9e0d156595e187f1699df2ff6490013",
+    "source_support": "reviewed",
+    "category_reason": "The ordered algorithm is directly described, not inferred."
+  },
+  {
+    "question_id": "Q037",
+    "reviewed_question": "What kept the chosen light or dark theme after a reload?",
+    "reviewed_sha256": "b08a630d33e19d9ab28603f584bf9a72674dc913ec29a8829fe18138a1a5c77a",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the persistence mechanism without attributing an assistant choice to the user."
+  },
+  {
+    "question_id": "Q038",
+    "reviewed_question": "What short-interest score did the report assign above 30%, and what interpretation accompanied it?",
+    "reviewed_sha256": "9a7e4c06963fc4f8e00b92cb90bc3ce7cbae69e5ee282f1c8319d472ecd33786",
+    "source_support": "reviewed",
+    "category_reason": "Source-specific scoring rule, not financial advice."
+  },
+  {
+    "question_id": "Q039",
+    "reviewed_question": "When did the initial portfolio implementation save a holding’s share count?",
+    "reviewed_sha256": "36e6f629e6b32e2b17e5a8b4ce1024d0a3c680b268e028704d35a63a3a254a48",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve autosave timing and storage identity."
+  },
+  {
+    "question_id": "Q040",
+    "reviewed_question": "What did the score-history chart show before it had two data points?",
+    "reviewed_sha256": "4de6cd9a45317c0a128518a62042d1b7fc5329c2f48379084a431d71bee4bb47",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve a data-sufficiency empty state."
+  },
+  {
+    "question_id": "Q041",
+    "reviewed_question": "Which additional sector groups did the expanded-universe report introduce?",
+    "reviewed_sha256": "6555e90e99ad73cc73b651ede197eef2fa7eecfca8caac46c1edb689a84b653a",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the explicitly named new groups."
+  },
+  {
+    "question_id": "Q042",
+    "reviewed_question": "What code path did a custom ticker reuse, and which extra records did the result update?",
+    "reviewed_sha256": "c6049fc1e836718a18ea9276d4cb9b8bf6c3672cd929b79a2da5c5e76216db2a",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve documented reuse and side effects."
+  },
+  {
+    "question_id": "Q043",
+    "reviewed_question": "Which feature did the agent flag as lacking end-to-end testing?",
+    "reviewed_sha256": "98794962e1e78f6316b9a2ca22a3cce8176b48b239f76c25e12bd3dd4dd35840",
+    "source_support": "reviewed",
+    "category_reason": "Record a verification limit, not an unsupported claim that the feature was verified."
+  },
+  {
+    "question_id": "Q044",
+    "reviewed_question": "What finally stopped the mute-chase alarm when its moving button was caught?",
+    "reviewed_sha256": "b5e6e285d3701ffba92229f74111fe3a693056730b42dee30413761354acabac",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the explicitly reported audio/UI cleanup."
+  },
+  {
+    "question_id": "Q045",
+    "reviewed_question": "How did the mute-chase countdown escalate its warnings before the deadline?",
+    "reviewed_sha256": "9e876ef93f38b39037b800c91fca89b6ddea11fb4bbf8f24a3c2b26e81085c29",
+    "source_support": "reviewed",
+    "category_reason": "Explicit countdown thresholds and duration."
+  },
+  {
+    "question_id": "Q046",
+    "reviewed_question": "What did Pause Feed stop in the live-feed report?",
+    "reviewed_sha256": "7259365dafa8a297c0ea4fe0bc684cac5b69ba7b1f573a26a64f2cf43b4d0845",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the documented stop action without claiming all unrelated app timers stop."
+  },
+  {
+    "question_id": "Q047",
+    "reviewed_question": "What final duration did the user-driven rejection-flash revision report?",
+    "reviewed_sha256": "d52487689018b0eab3402aa52ebcb7e919ef40aa7db788eab65cb207c9c8c1ec",
+    "source_support": "reviewed",
+    "category_reason": "Final explicit duration, not the earlier 1.1- or 1.4-second variants."
+  },
+  {
+    "question_id": "Q048",
+    "reviewed_question": "Where did the Random button obtain a ticker if no stock data had loaded?",
+    "reviewed_sha256": "d5ff217fc9b006f801805344ef19002ccc07f0d785f85c1999a0f703089cb24e",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve fallback and code reuse."
+  },
+  {
+    "question_id": "Q049",
+    "reviewed_question": "What changed about the floating Random button’s direction when a pause ended?",
+    "reviewed_sha256": "23b21da998a4ac24aa3572d8836e767f58153948f7aa15d60add1cf82f6792a9",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve one explicit motion-state revision."
+  },
+  {
+    "question_id": "Q050",
+    "reviewed_question": "How did the floating button’s spin behave while paused?",
+    "reviewed_sha256": "1cbb10747c3c8495be6f552a3d9818eded08255a1e119ac6f0d9463eecb4a8c1",
+    "source_support": "reviewed",
+    "category_reason": "One directly reported pause/resume rule, not a time-duration category."
+  },
+  {
+    "question_id": "Q051",
+    "reviewed_question": "Why was removing position transitions sensible once the button moved on every animation frame?",
+    "reviewed_sha256": "09be2c51c163d7126f0765e38017f2d85d69e67090275ec6e22f74b547a93bb7",
+    "source_support": "reviewed",
+    "category_reason": "Engineering rationale grounded in the reported competing animation mechanisms."
+  },
+  {
+    "question_id": "Q052",
+    "reviewed_question": "Which daily-change heuristic did the data-bug diagnosis identify as wrong?",
+    "reviewed_sha256": "61abf19e4caf79008e9b154570f70c943f26fafea066f5f398b55936292af4de",
+    "source_support": "reviewed",
+    "category_reason": "Scope the claim to this diagnosis rather than asserting a universal current Yahoo API contract."
+  },
+  {
+    "question_id": "Q053",
+    "reviewed_question": "What happened to existing card nodes and sparklines during FLIP reordering?",
+    "reviewed_sha256": "f0dbbfe13aeec16f7d1f5a486cca117d564d2837126367936a4a3d5ba85ae991",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve a reported rendering property."
+  },
+  {
+    "question_id": "Q054",
+    "reviewed_question": "How did the rainbow list assign and update a card’s hue?",
+    "reviewed_sha256": "e7fcb061368854753bfb83e1e3b1795f45743fbff8e0def91e0d8ef42e2542eb",
+    "source_support": "reviewed",
+    "category_reason": "One explicitly documented position-based color rule."
+  },
+  {
+    "question_id": "Q055",
+    "reviewed_question": "How could the user force fresh external data instead of reusing the five-minute cache?",
+    "reviewed_sha256": "b24d51ca9f1726d1d7e75084cd1800090252706523bf77ce87ee5c18937f529d",
+    "source_support": "reviewed",
+    "category_reason": "Direct retrieval of a cache-expiry override and its duration."
+  },
+  {
+    "question_id": "Q056",
+    "reviewed_question": "What happened to a News Hint’s point penalty when no news was available?",
+    "reviewed_sha256": "bdea8c3ef1c5a3f9c9ab994b931d3143b0c201f537d12806ad5c14dc11d0caa3",
+    "source_support": "reviewed",
+    "category_reason": "Directly reported failure-path behavior."
+  },
+  {
+    "question_id": "Q057",
+    "reviewed_question": "Why was placing Penny outside the minigame card’s DOM useful?",
+    "reviewed_sha256": "f46de087f28efcccd102139537e7d9fb947e01ab5f0caf280d8a3c90730cdfff",
+    "source_support": "reviewed",
+    "category_reason": "Grounded explanation of the mascot lifecycle, not an extra implementation claim."
+  },
+  {
+    "question_id": "Q058",
+    "reviewed_question": "How do score-history deduplication and the later ticker cache use the same five-minute interval for different purposes?",
+    "reviewed_sha256": "ca6bad742c69328a9ccf8c3ea6d66343dd31bdc9d82920d22bdb75d665db82f1",
+    "source_support": "reviewed",
+    "category_reason": "D2 provides history deduplication; D5 provides server-side cache freshness.",
+    "cross_session_necessity": "D2 provides history deduplication; D5 provides server-side cache freshness."
+  },
+  {
+    "question_id": "Q059",
+    "reviewed_question": "How does the later force-refresh shortcut differ from the original manual-refresh preference?",
+    "reviewed_sha256": "7a9666c15a2b2558205e0292005651df78038efe0f8746097f9fd9110f0ad8ce",
+    "source_support": "reviewed",
+    "category_reason": "D1 supplies the user’s refresh preference; D5 supplies ordinary versus forced cache behavior.",
+    "cross_session_necessity": "D1 supplies the user’s refresh preference; D5 supplies ordinary versus forced cache behavior."
+  },
+  {
+    "question_id": "Q060",
+    "reviewed_question": "How did stock-card animation change between staggered entry and the later sort animation?",
+    "reviewed_sha256": "8319c10d8682140040f5d0e43ccda232997f016256fa953fb558d1bda074295f",
+    "source_support": "reviewed",
+    "category_reason": "D3 provides entry timing; D5 provides the different reorder path and retained initial-load behavior.",
+    "cross_session_necessity": "D3 provides entry timing; D5 provides the different reorder path and retained initial-load behavior."
+  },
+  {
+    "question_id": "Q061",
+    "reviewed_question": "How did the alert mute button’s motion differ from the later Random button’s motion?",
+    "reviewed_sha256": "cae1787fe19e39578e68395572d337bc41bb00652dddce415ce458b94673133a",
+    "source_support": "reviewed",
+    "category_reason": "D2 provides discrete timed teleports; D4 provides frame-driven physics motion.",
+    "cross_session_necessity": "D2 provides discrete timed teleports; D4 provides frame-driven physics motion."
+  },
+  {
+    "question_id": "Q062",
+    "reviewed_question": "What shared browser facility produced both the alert alarm and the stock-rejection laugh?",
+    "reviewed_sha256": "e2527f0c0eac518e3bc8e404c1da87c3748539a00d6e2e0585aee6e2da941f41",
+    "source_support": "reviewed",
+    "category_reason": "D2 supplies alarm synthesis details; D3 supplies the distinct synthesized laugh and no-file property.",
+    "cross_session_necessity": "D2 supplies alarm synthesis details; D3 supplies the distinct synthesized laugh and no-file property."
+  },
+  {
+    "question_id": "Q063",
+    "reviewed_question": "Which main-build stock measures later became ordered clues in the ticker game?",
+    "reviewed_sha256": "2772ef74c9184cb3fedc21b85636b2b1ebe0a46f8b6bd5002576b15919babb63",
+    "source_support": "reviewed",
+    "category_reason": "D1 establishes analysis measures; D6 establishes their later use as clues, not a separate data-provider claim.",
+    "cross_session_necessity": "D1 establishes analysis measures; D6 establishes their later use as clues, not a separate data-provider claim."
+  },
+  {
+    "question_id": "Q064",
+    "reviewed_question": "How did the custom-ticker path support both a user-specified symbol and a later random choice?",
+    "reviewed_sha256": "e245d9dafc73eaf1a36877d5e6701f83496516050baa5acdfdfe01d5c10e05a8",
+    "source_support": "reviewed",
+    "category_reason": "D2 supplies the arbitrary-ticker feature; D4 supplies the Random button’s reuse of it.",
+    "cross_session_necessity": "D2 supplies the arbitrary-ticker feature; D4 supplies the Random button’s reuse of it."
+  },
+  {
+    "question_id": "Q065",
+    "reviewed_question": "How did card-color assignment differ from the earlier light/dark theme implementation?",
+    "reviewed_sha256": "b6cb3aad07d4b182d63165a82ee1e55fcd090469399cac8bf5810daccb6539a7",
+    "source_support": "reviewed",
+    "category_reason": "D1 supplies global token-based theme persistence; D5 supplies per-card positional hues and light-mode adaptation.",
+    "cross_session_necessity": "D1 supplies global token-based theme persistence; D5 supplies per-card positional hues and light-mode adaptation."
   }
 ]

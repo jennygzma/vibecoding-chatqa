@@ -92,6 +92,35 @@ class DatasetIntegrityTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'semantic review is stale'):
             build(self.root, 'stockapp')
 
+    def test_changed_authored_content_cannot_inherit_saved_human_approval(self):
+        # Even a fresh editorial checksum cannot bless a change to human-approved QA.
+        from michael_approval import PROJECTS, REVIEW_PATH
+        projects = []
+        annotations = (self.folder / 'annotations.json').read_bytes()
+        combined = read(self.folder / 'vibe_combined.json')
+        for project in PROJECTS:
+            folder = self.root / 'data' / project
+            folder.mkdir(exist_ok=True)
+            (folder / 'annotations.json').write_bytes(annotations)
+            self.write(folder / 'vibe_combined.json', combined)
+            projects.append({'project': project, 'sourceRevision': digest(annotations),
+                             'complete': True, 'approvedCombined': combined,
+                             'rows': [{'questionId': f'Q{i:03d}', 'id': f'{project}:Q{i:03d}:{row_digest(qa)}',
+                                       'qa': qa, 'decision': 'approved', 'updatedAt': '2026-10-06T06:07:12.930Z'}
+                                      for i, qa in enumerate(read(folder / 'annotations.json'), 1)]})
+        self.write(self.root / REVIEW_PATH, {'format': 'michael-review-v3',
+                   'exportedAt': '2026-10-06T06:07:48.555Z', 'projects': projects})
+        build(self.root, 'stockapp')
+        before = (self.folder / 'README.md').read_bytes()
+        self.change('annotation-spec.json', lambda rows: rows[0].update(answer='Changed answer.'))
+        qa = read(self.folder / 'annotations.json')[0]
+        qa['answer'] = 'Changed answer.'
+        self.change('annotation-semantic-review.json', lambda rows: rows[0].update(reviewed_sha256=row_digest(qa)))
+        with self.assertRaisesRegex(ValueError, 'stale source revision'):
+            build(self.root, 'stockapp')
+        self.assertEqual((self.folder / 'annotations.json').read_bytes(), annotations)
+        self.assertEqual((self.folder / 'README.md').read_bytes(), before)
+
     def test_cross_session_misclassification_is_rejected(self):
         self.change('annotation-spec.json', lambda rows: rows[1].update(category=['single-session', 'multihop']))
         self.rejects('session category mismatch')

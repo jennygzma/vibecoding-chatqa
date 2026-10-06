@@ -258,5 +258,193 @@
       "D5:54"
     ],
     "requires_answers": []
+  },
+  {
+    "question_id": "Q035",
+    "evidence_dia_ids": [
+      "D1:8"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q036",
+    "evidence_dia_ids": [
+      "D1:18"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q037",
+    "evidence_dia_ids": [
+      "D1:63"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q038",
+    "evidence_dia_ids": [
+      "D1:77"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q039",
+    "evidence_dia_ids": [
+      "D2:26"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q040",
+    "evidence_dia_ids": [
+      "D2:26"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q041",
+    "evidence_dia_ids": [
+      "D2:93"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q042",
+    "evidence_dia_ids": [
+      "D3:27"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q043",
+    "evidence_dia_ids": [
+      "D3:120"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q044",
+    "evidence_dia_ids": [
+      "D4:61"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q045",
+    "evidence_dia_ids": [
+      "D4:72"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q046",
+    "evidence_dia_ids": [
+      "D4:69"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q047",
+    "evidence_dia_ids": [
+      "D4:91"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q048",
+    "evidence_dia_ids": [
+      "D5:20"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q049",
+    "evidence_dia_ids": [
+      "D5:25"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q050",
+    "evidence_dia_ids": [
+      "D5:57"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q051",
+    "evidence_dia_ids": [
+      "D6:31"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q052",
+    "evidence_dia_ids": [
+      "D6:40"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q053",
+    "evidence_dia_ids": [
+      "D6:79"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q054",
+    "evidence_dia_ids": [
+      "D6:115"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q055",
+    "evidence_dia_ids": [
+      "D1:8",
+      "D5:20"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q056",
+    "evidence_dia_ids": [
+      "D3:25",
+      "D6:115"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q057",
+    "evidence_dia_ids": [
+      "D2:93",
+      "D5:39"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q058",
+    "evidence_dia_ids": [
+      "D2:79",
+      "D6:115"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q059",
+    "evidence_dia_ids": [
+      "D1:37",
+      "D5:39"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q060",
+    "evidence_dia_ids": [
+      "D1:77",
+      "D6:115"
+    ],
+    "requires_answers": []
   }
 ]

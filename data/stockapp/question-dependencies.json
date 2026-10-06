@@ -233,17 +233,249 @@
   {
     "question_id": "Q032",
     "evidence_dia_ids": [
-      "D3:25",
-      "D6:96"
+      "D1:31",
+      "D3:29"
     ],
     "requires_answers": []
   },
   {
     "question_id": "Q033",
     "evidence_dia_ids": [
-      "D2:1",
-      "D6:30",
-      "D6:131"
+      "D1:49",
+      "D2:21"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q034",
+    "evidence_dia_ids": [
+      "D1:25"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q035",
+    "evidence_dia_ids": [
+      "D1:31"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q036",
+    "evidence_dia_ids": [
+      "D1:49"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q037",
+    "evidence_dia_ids": [
+      "D1:81"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q038",
+    "evidence_dia_ids": [
+      "D1:97"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q039",
+    "evidence_dia_ids": [
+      "D2:21"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q040",
+    "evidence_dia_ids": [
+      "D2:21"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q041",
+    "evidence_dia_ids": [
+      "D2:21"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q042",
+    "evidence_dia_ids": [
+      "D2:21"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q043",
+    "evidence_dia_ids": [
+      "D2:193"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q044",
+    "evidence_dia_ids": [
+      "D2:261"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q045",
+    "evidence_dia_ids": [
+      "D2:269"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q046",
+    "evidence_dia_ids": [
+      "D3:14"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q047",
+    "evidence_dia_ids": [
+      "D3:43"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q048",
+    "evidence_dia_ids": [
+      "D4:8"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q049",
+    "evidence_dia_ids": [
+      "D4:38"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q050",
+    "evidence_dia_ids": [
+      "D4:43"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q051",
+    "evidence_dia_ids": [
+      "D4:31"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q052",
+    "evidence_dia_ids": [
+      "D5:7"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q053",
+    "evidence_dia_ids": [
+      "D5:19"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q054",
+    "evidence_dia_ids": [
+      "D5:43"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q055",
+    "evidence_dia_ids": [
+      "D5:63"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q056",
+    "evidence_dia_ids": [
+      "D6:65"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q057",
+    "evidence_dia_ids": [
+      "D6:116"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q058",
+    "evidence_dia_ids": [
+      "D2:21",
+      "D5:63"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q059",
+    "evidence_dia_ids": [
+      "D1:69",
+      "D5:63"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q060",
+    "evidence_dia_ids": [
+      "D3:14",
+      "D5:25"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q061",
+    "evidence_dia_ids": [
+      "D2:261",
+      "D2:269",
+      "D4:31"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q062",
+    "evidence_dia_ids": [
+      "D2:252",
+      "D3:37"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q063",
+    "evidence_dia_ids": [
+      "D1:11",
+      "D6:48"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q064",
+    "evidence_dia_ids": [
+      "D2:21",
+      "D4:8"
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q065",
+    "evidence_dia_ids": [
+      "D1:81",
+      "D5:43"
     ],
     "requires_answers": []
   }

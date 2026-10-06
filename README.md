@@ -92,12 +92,12 @@ chatqa status
 ## Master annotations
 
 [The master annotation file](data/master_annotations.json) combines the current
-canonical annotation outputs for every project in this repository: 507 QA items
-and 845 evidence citations from 14 sources across nine projects. Each item
+canonical annotation outputs for every project in this repository: 598 QA items
+and 1,034 evidence citations from 14 sources across nine projects. Each item
 retains its source file, source index, trajectory, original category value, and
 a normalized category list. Source review status and SHA-256 hashes are included
 so review states remain distinguishable. Michael's canonical sets now contain
-33 StockApp, 31 StartupSimulator and 34 Roompacker questions, curated against
+65 StockApp, 64 StartupSimulator and 60 Roompacker questions, curated against
 [Focus Desk's structure and conventions](data/focus_desk/README.md). Earlier
 per-trajectory outputs and duplicate combined exports are excluded from the master.
 Edgar's Pantry Lane is included alongside Focus Desk, Cedar Table and Mahjong;
@@ -123,12 +123,35 @@ python3 scripts/michael_dataset.py stockapp startupsimulator roompacker
 python3 scripts/michael_dataset.py stockapp startupsimulator roompacker --check
 python3 -m unittest discover -s scripts -p 'test_*annotations.py'
 python3 -m unittest discover -s scripts -p test_michael_dataset.py
+python3 -m unittest discover -s scripts -p test_michael_approval.py
+python3 scripts/michael_approval.py
 ```
 
-The 98 revised Michael questions have an agent editorial review; human approval
-is pending. Earlier researcher approvals remain attached to the historical
-versions. Categories overlap and describe the reasoning required; they are not
-quantity quotas. See the [integration review](data/michael-annotation-review.md).
+All 189 revised Michael questions are human-approved in the
+[saved review](data/michael-annotation-review.json), exported at
+2026-10-06T06:07:48.555Z. Shared validation binds approval to the current project
+revisions, complete unique question coverage, row checksums, approved decisions,
+and identical combined exports. An invalid saved review stops regeneration.
+Editorial records retain their original status separately. Earlier researcher
+approvals remain attached to historical versions. Categories overlap and describe
+the reasoning required; they are not quantity quotas. See the
+[integration review](data/michael-annotation-review.md).
+
+Review all three projects together:
+
+```sh
+python3 scripts/build_michael_review.py --check
+node scripts/test_michael_review.js
+python3 -m http.server 4473 --bind 127.0.0.1
+```
+
+Open [the unified reviewer](http://127.0.0.1:4473/projects/annotation-review/).
+It includes exact excerpts, full source messages, all eight editable labels,
+previous-version comparisons and multi-session filters. Approvals are bound to
+the current QA checksum. Its published approval status comes from the validated
+saved review; working decisions remain in browser storage. Import the saved review
+to inspect its decisions. Export review JSON as a portable backup; exporting does
+not change canonical annotations or push to GitHub.
 
 
 ## Mahjong
@@ -138,19 +161,19 @@ quantity quotas. See the [integration review](data/michael-annotation-review.md)
 ## StockApp annotations
 
 [StockApp](projects/stockapp/README.md) contains the runnable StockPicker AI
-project plus [33 curated questions](data/stockapp/README.md) across six Cline
+project plus [65 curated questions](data/stockapp/README.md) across six Cline
 trajectories, with the earlier 130-question version preserved.
 
 ## StartupSimulator annotations
 
 [StartupSimulator](projects/startupsimulator/README.md) contains the runnable
-Zero to One project plus [31 curated questions](data/startupsimulator/README.md)
+Zero to One project plus [64 curated questions](data/startupsimulator/README.md)
 across six Cline trajectories, with the earlier 136-question version preserved.
 
 ## Roompacker
 
 [Roompacker](projects/roompacker/README.md) contains the runnable 3D furniture
-sandbox and [34 curated questions](data/roompacker/README.md) across six original
+sandbox and [60 curated questions](data/roompacker/README.md) across six original
 conversations. The 72-question quality draft and original 109-question draft
 remain available as history. Packaging fixes a lighting initialization crash;
 desktop browser checks cover placement, movement, floating, coloring and merging.

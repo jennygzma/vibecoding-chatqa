@@ -1,0 +1,225 @@
+[
+  {
+    "question_id": "Q001",
+    "reviewed_question": "What did I ask the first StartupSimulator prototype to let the player do?",
+    "reviewed_sha256": "02ebdff833ca2c047cf8c207bb1e24c23b55e4dbb78973ed3dee9ba7229e3f04",
+    "source_support": "reviewed",
+    "category_reason": "Direct user scope and interaction preference; does not imply hiring or revenue existed in the first version."
+  },
+  {
+    "question_id": "Q002",
+    "reviewed_question": "How did the reported game objective grow from the initial day-one experience?",
+    "reviewed_sha256": "8e30019483caf62375b0296f4f6d2f863988f9a2d9334f9611dd8d7cc63db567",
+    "source_support": "reviewed",
+    "category_reason": "Compares distinct objective reports; the number of in-game days makes temporal meaningful, unlike a generic implementation sequence."
+  },
+  {
+    "question_id": "Q003",
+    "reviewed_question": "What did my final main-build feedback say about the floor, despite earlier visual revisions?",
+    "reviewed_sha256": "a9850afb14e817381ec54b4a9e4dfd14f029b4eb3bf012adae1c804e3fbd8e37",
+    "source_support": "reviewed",
+    "category_reason": "Direct user observation; intentionally does not accept earlier completion claims as proof that the visual issue was fixed."
+  },
+  {
+    "question_id": "Q004",
+    "reviewed_question": "Why does routing to a nearby walkable point help when the player clicks furniture?",
+    "reviewed_sha256": "156a470aa3bde48690db72e8899c0015c4ba546a326c2707ea4d1d6d402fc4bf",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence rationale for the described nearest-walkable search; does not claim every destination was tested."
+  },
+  {
+    "question_id": "Q005",
+    "reviewed_question": "What passive base earnings did the hiring report assign to Engineer and Growth workers?",
+    "reviewed_sha256": "59deac11cbe1cbcc5dfefd8e549df6828acf97fd4ad89889b823486e2719a102",
+    "source_support": "reviewed",
+    "category_reason": "Directly retrieves two game-economy rates from one report; these are fictional earnings."
+  },
+  {
+    "question_id": "Q006",
+    "reviewed_question": "What would a level-three Engineer earn per second under the reported base-rate and upgrade rules?",
+    "reviewed_sha256": "1a24f5ea1e00b21be88b115cd34fee7c9b17445276c0f1f10df3281b840a0a41",
+    "source_support": "reviewed",
+    "category_reason": "Combines the Engineer base rate from D2:52 with the level-three multiplier in D2:92; the computed answer is not directly retrieved."
+  },
+  {
+    "question_id": "Q007",
+    "reviewed_question": "How did the cereal-restocking report distinguish workers who were about to strike from those already striking?",
+    "reviewed_sha256": "b9bc14d7056bbfe88e8af1b329e1f23ad73d06aba2e232b7eecb6c227718c172",
+    "source_support": "reviewed",
+    "category_reason": "Both branches are explicitly described in D2:153; time relates to the countdown extension."
+  },
+  {
+    "question_id": "Q008",
+    "reviewed_question": "What financial win condition did I request after adding workers and cereal?",
+    "reviewed_sha256": "c885b8708ff47c7cb7ea967379e0fbd27247e4f0ead9e0211359b65389ec0501",
+    "source_support": "reviewed",
+    "category_reason": "Direct game-design preference; does not merge this trigger with the separate Day 10 completion condition."
+  },
+  {
+    "question_id": "Q009",
+    "reviewed_question": "How did the reported pills tradeoff change during the health-and-stamina conversation?",
+    "reviewed_sha256": "b7278bc87e84b1f48f189d4155330d0d5a97a4e8f95cee8c2a883bc8c59dcef5",
+    "source_support": "reviewed",
+    "category_reason": "Compares the early healing/slowing implementation with the later stamina-cost/speed implementation; no temporal label for revision order alone."
+  },
+  {
+    "question_id": "Q010",
+    "reviewed_question": "According to the health conversation, what did coffee do to the drain interval and when did that effect reset?",
+    "reviewed_sha256": "fbfc710d8934284ac5d042a77f4ec4ce293b9c6e8dde5ba3f97107ed1b6fe24a",
+    "source_support": "reviewed",
+    "category_reason": "All interval and reset facts are explicitly in D3:63; excludes that message’s inconsistent approximate full-bar lifetime estimates."
+  },
+  {
+    "question_id": "Q011",
+    "reviewed_question": "What mortality progression did the game’s peptide-shot report assign within one day?",
+    "reviewed_sha256": "5538532ba7c13f069985c2a62cadf349949fba52eda8c321e7209bda8b289cdf",
+    "source_support": "reviewed",
+    "category_reason": "Direct lookup of a fictional game mechanic, not a claim about real substances; ordinal shot count is not a time calculation."
+  },
+  {
+    "question_id": "Q012",
+    "reviewed_question": "What happened to the sofa by the end of the health-and-stamina conversation?",
+    "reviewed_sha256": "87ea339540b19926f7795812bd760ca7794f89ef8239109e14ec088ffc5da9c8",
+    "source_support": "reviewed",
+    "category_reason": "The final D3:95 report supplies the complete answer; scoped to D3 because D5 later adds sofa interaction."
+  },
+  {
+    "question_id": "Q013",
+    "reviewed_question": "Why would showing the stamina drain rate help players judge coffee’s tradeoff?",
+    "reviewed_sha256": "58bdac5e40370f3452e4fbb95a42d082a9940d5f0dd2d49560c2b1489b3af96d",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence explanation based on the report’s invisible-rate problem and explicit coffee tradeoff; no new game behavior is asserted."
+  },
+  {
+    "question_id": "Q014",
+    "reviewed_question": "What replaced the continuous dash toggle after I clarified that I meant a short teleport?",
+    "reviewed_sha256": "b35b991153c280d91aaea0c898e7f01fa02bca048beed7b76597ab9fbb570b0b",
+    "source_support": "reviewed",
+    "category_reason": "Connects the original toggle, the user correction, and the implemented blink; does not label ordinary revision chronology temporal."
+  },
+  {
+    "question_id": "Q015",
+    "reviewed_question": "How did the Blink Dash report prevent teleporting through solid objects?",
+    "reviewed_sha256": "ebadf1411294407be67aa78b370db4c4fcd22ec5c7afe236e5454008fc12b410",
+    "source_support": "reviewed",
+    "category_reason": "Direct algorithm description from D4:109; phrased as a report rather than independently verified collision behavior."
+  },
+  {
+    "question_id": "Q016",
+    "reviewed_question": "What post-landing penalty did the free-hop report add to discourage repeated jumping?",
+    "reviewed_sha256": "2e9dccaeb1d2381b421847d88151158de07a0e88592e95d5c80b66ce1af8856c",
+    "source_support": "reviewed",
+    "category_reason": "Explicit duration and lockout in one report; avoids repeating its inconsistent sprint-speed arithmetic."
+  },
+  {
+    "question_id": "Q017",
+    "reviewed_question": "What sofa control did I request in the lighting conversation?",
+    "reviewed_sha256": "35b08c1cb959d5e37f34a82d9a610f11f595b3b11d442a731ac7876d6bae3dfe",
+    "source_support": "reviewed",
+    "category_reason": "Direct control preference; no inference from the implemented key aliases."
+  },
+  {
+    "question_id": "Q018",
+    "reviewed_question": "Using the reported electricity rates, what is the total passive draw with both overhead lights and the floor lamp on?",
+    "reviewed_sha256": "e610e16847461071a9ac62a6fb6423ded9aa6578916bbd3717e7c5b1c7a51565",
+    "source_support": "reviewed",
+    "category_reason": "Requires summing three distinct terms even though one source message supplies them; message count is not the hop criterion."
+  },
+  {
+    "question_id": "Q019",
+    "reviewed_question": "What bike behavior did I request for power above 100 in the final threshold revision?",
+    "reviewed_sha256": "bb78bb39126b506fb01395465a82d9bbe33ccc88cd35d3ed9e7bd899ac889a64",
+    "source_support": "reviewed",
+    "category_reason": "Direct timing preference from the final user revision; the question avoids ambiguous zone endpoints."
+  },
+  {
+    "question_id": "Q020",
+    "reviewed_question": "Why can a bike overload penalty make repeated Space presses more strategic?",
+    "reviewed_sha256": "d9323918892d30ece5e3168fd9b9f13d5a6b1c9f1035e723c07b751a482316ae",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence general rationale for an explicit overload and ignored-input penalty; not a claim about measured player behavior."
+  },
+  {
+    "question_id": "Q021",
+    "reviewed_question": "What did I want food delivery to change about the player’s stats?",
+    "reviewed_sha256": "2ae9c06e4b9f43b970b4a81808ff11f4d21ea2b06a0ab394499f51b0e9998bb2",
+    "source_support": "reviewed",
+    "category_reason": "The report confirms the user’s no-effect request; the answer is directly stated, so this is not multihop."
+  },
+  {
+    "question_id": "Q022",
+    "reviewed_question": "What condition and cooldown did the ghost-jumpscare report use?",
+    "reviewed_sha256": "07cb9ea7059e23e62889b926d32b2968b47661e13e30f131f2fe5e56bfd35060",
+    "source_support": "reviewed",
+    "category_reason": "Direct trigger and duration from one report; no inference about how often a player will encounter the ghost."
+  },
+  {
+    "question_id": "Q023",
+    "reviewed_question": "Did the reported double-jump level gate match my original “above level 5” request?",
+    "reviewed_sha256": "19c847bd9f439b3617af20a592c2fe791f3ff2fe71b5a4b912fdbf67cae11e8a",
+    "source_support": "reviewed",
+    "category_reason": "Explicitly distinguishes the user’s original request, later cap, and the agent’s different reported gate; does not misrepresent the change as user-approved."
+  },
+  {
+    "question_id": "Q024",
+    "reviewed_question": "How many successful workouts did the final level report require to reach the cap from level 1?",
+    "reviewed_sha256": "22dd5aa53a9fe9459ab5912cbfd1dbdbe9004c77410f9e3e07fea132c8629a77",
+    "source_support": "reviewed",
+    "category_reason": "The total is directly stated in D6:172; it would be artificial to label this a multihop sum."
+  },
+  {
+    "question_id": "Q025",
+    "reviewed_question": "Why should worker interactions look up the current desk assignment after a swap?",
+    "reviewed_sha256": "82ebf93febd23cb940cfd33f5a49028416ef23a1fc0096b5a4fe4e46d7e8ceff",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence rationale for resolving current deskIndex rather than assuming a worker remains at the original desk."
+  },
+  {
+    "question_id": "Q026",
+    "reviewed_question": "How did the sofa’s reported role differ between the end of the health conversation and the lighting conversation?",
+    "reviewed_sha256": "8a6e68bd9e4abcfdd19855de59e01b3a44b2577a23ab2cf0f82e59627a706d60",
+    "source_support": "reviewed",
+    "category_reason": "Contrasts two explicitly scoped states; temporal is justified by the recovery interval, not the fact of a later revision.",
+    "cross_session_necessity": "D3 supplies the decorative-only role; D5 supplies the newly interactive recovery behavior."
+  },
+  {
+    "question_id": "Q027",
+    "reviewed_question": "Which two independent winning goals were described in the main-build and hiring conversations?",
+    "reviewed_sha256": "e467a67caed04b2cc14f526d731b87b0208553456afe760161688a64aef70ddf",
+    "source_support": "reviewed",
+    "category_reason": "Combines the launch completion condition with a separately requested money milestone; does not claim both must be satisfied.",
+    "cross_session_necessity": "D1 describes Day 10 completion; D2 introduces the money trigger."
+  },
+  {
+    "question_id": "Q028",
+    "reviewed_question": "For an Engineer at level 3 who is already on strike when a desk-swap timer expires, what income and swap behavior follow from the reports?",
+    "reviewed_sha256": "d6bbd1f37ee9494fab08755c224e15ea119b8d0c957752174941f0c37725f362",
+    "source_support": "reviewed",
+    "category_reason": "Applies the strike income override and the separate swap guard; the higher level does not restore income during a strike.",
+    "cross_session_necessity": "D2 provides zero income during strikes; D6 provides the neither-worker-striking condition for swaps."
+  },
+  {
+    "question_id": "Q029",
+    "reviewed_question": "How do the bike and treadmill reports differ when power is high but below overload, such as 90?",
+    "reviewed_sha256": "451928e9095789adf0021bffabf4a93d2e429e3a1ebebb616f6b89d4f1b911de",
+    "source_support": "reviewed",
+    "category_reason": "Compares distinct resources and applies both reported ranges to 90, avoiding the ambiguous shared endpoint at 75.",
+    "cross_session_necessity": "D5 supplies the bike’s electricity output; D6 supplies the treadmill’s stamina drain."
+  },
+  {
+    "question_id": "Q030",
+    "reviewed_question": "Which two reported actions provide full stamina in the health conversation, and what separate electricity cost was later attached to one?",
+    "reviewed_sha256": "41adaf2a9c28019e0262a3ba637e2de16bc2ddc2dfdd22b8e2e5540112eac709",
+    "source_support": "reviewed",
+    "category_reason": "Combines the refill effects with a later, separately introduced resource cost; the peptide effect is conditional on survival.",
+    "cross_session_necessity": "D3 supplies both refill outcomes; D5 supplies the coffee-machine electricity cost."
+  },
+  {
+    "question_id": "Q031",
+    "reviewed_question": "What extra eligibility and cost did the later double jump add beyond the parkour conversation’s ordinary free hop?",
+    "reviewed_sha256": "5244a119b16c1255ae61b847bf58e398b3658cd4866f2860891cbcb6c4a62f7a",
+    "source_support": "reviewed",
+    "category_reason": "Combines the cost of the earlier ordinary hop with the later airborne action and its gates; states an incremental cost rather than ignoring other drains.",
+    "cross_session_necessity": "D4 supplies the regular hop’s four-point cost; D6 supplies the added five-point action and level/energy eligibility."
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "question": "What did I want in the first Roompacker prototype?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Only a 64-by-64 chessboard running as a local web app.",
+    "evidence": [
+      "D1:1: \"First make a 64x64 chessboard that I can launch to a local web app. Literally just a 64x64 chess board and nothing else.\""
+    ]
+  },
+  {
+    "question": "What rectangle should clicking a non-adjacent square select under my revised selection request?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "The smallest rectangle enclosing the selection and the newly clicked square.",
+    "evidence": [
+      "D1:25: \"If they are not adjacent highlight the smallest rectangle between them\"",
+      "D1:29: \"smallest bounding box containing the existing selection **and** the new cell\""
+    ]
+  },
+  {
+    "question": "In the main-build report, what happened when a dragged table was released on an occupied position?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "It snapped back to its original position.",
+    "evidence": [
+      "D1:43: \"the table **snaps back** to its original position\""
+    ]
+  },
+  {
+    "question": "What size and shape did I request for a straight couch?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "A one-by-N strip with a minimum size of one by two cells.",
+    "evidence": [
+      "D2:1: \"A couch must have a minimum 1x2 and is restricted to 1xn.\""
+    ]
+  },
+  {
+    "question": "Under the original chair-adjacency report, did a diagonal table neighbor qualify?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "No; only the four orthogonal neighbors were checked, and the neighbor had to be a table.",
+    "evidence": [
+      "D2:57: \"Checks the 4 orthogonal neighbours `(±1, 0)` and `(0, ±1)`\"",
+      "D2:57: \"Couches and other chairs don't count — only actual tables.\""
+    ]
+  },
+  {
+    "question": "How did the occupancy representation change to support chair stacking?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "It changed from one piece ID per cell to an array of IDs.",
+    "evidence": [
+      "D2:50: \"`tableGrid` stores the occupying piece's id at each cell\"",
+      "D2:71: \"Now it holds an **array of ids**\"",
+      "D2:71: \"`push(t.id)` (no duplicates)\""
+    ]
+  },
+  {
+    "question": "Did the reported default L-sofa occupy the three cells I originally requested?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "No; two length-three arms sharing one corner occupy five cells, rather than the requested three.",
+    "evidence": [
+      "D2:94: \"a basic 3-piece L\"",
+      "D2:138: \"**`cornerR, cornerC`**\"",
+      "D2:138: \"horizontal arm length (minimum 2, default 3)\"",
+      "D2:138: \"vertical arm length (minimum 2, default 3)\"",
+      "D2:138: \"`\"se\" | \"sw\" | \"ne\" | \"nw\"`\""
+    ]
+  },
+  {
+    "question": "Why should an L-sofa collision check use occupied cells rather than its full bounding box?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It avoids treating the empty inside of the L as solid furniture.",
+    "evidence": [
+      "D2:138: \"conflict detection properly checks only the actual occupied cells (not the bounding box)\""
+    ]
+  },
+  {
+    "question": "What constraints did I set for custom-shaped furniture?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "All selected cells must connect through adjacent cells, with at most 16 grid squares.",
+    "evidence": [
+      "D3:1: \"we can select multiple adjacent cells given that each cell can go to another if we walk only through adjacent cells, but the furniture is capped at 16 grid squares.\""
+    ]
+  },
+  {
+    "question": "What table size limits did I request in the shapes conversation?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "Minimum 2 by 3 cells; maximum 16 by 24 cells.",
+    "evidence": [
+      "D3:38: \"make tables minimum 2x3 max 16x24\""
+    ]
+  },
+  {
+    "question": "What workflow replaced the separate donut-placement mode?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Select an interior rectangle in an existing table and press U to punch a hole, leaving at least one border cell on every side.",
+    "evidence": [
+      "D3:63: \"Click **🍩 Donut [O]** or press **O**\"",
+      "D3:89: \"**punching a hole through an existing table**\"",
+      "D3:89: \"Press **`U`** → the table converts to a donut\"",
+      "D3:89: \"leaving at least **1 cell of border** on all four sides\""
+    ]
+  },
+  {
+    "question": "What did the final shapes-thread report say remained after table fracturing?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Up to four nonempty rectangular shards, retaining the victim table’s color.",
+    "evidence": [
+      "D3:129: \"Spawns up to 4 replacement shards\"",
+      "D3:129: \"Any shard with zero area is silently skipped\"",
+      "D3:129: \"**Shards keep the victim's color**\""
+    ]
+  },
+  {
+    "question": "What did the Chaos reports change after I said adjusting invalid teleports was my job?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "answer": "They replaced a non-overlapping position search with unconditional random relocation, keeping only board bounds.",
+    "evidence": [
+      "D4:12: \"valid, non-overlapping positions\"",
+      "D4:27: \"Pieces now **always teleport**\"",
+      "D4:27: \"The only thing still enforced is **board bounds**\"",
+      "D4:21: \"its the users job to adjust the teleportations\""
+    ]
+  },
+  {
+    "question": "How did the Chaos report treat the conflict deadline after a new landing?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "Each landing reset that piece’s deadline to eight seconds.",
+    "evidence": [
+      "D4:40: \"each new landing gives a fresh 8 s\""
+    ]
+  },
+  {
+    "question": "What deadline and interaction did the breakage report give the player?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "answer": "Six seconds to click the broken piece and repair it; that click does not also select it.",
+    "evidence": [
+      "D4:52: \"shrinking over **6 seconds**\"",
+      "D4:52: \"**Click the piece** to repair it instantly\"",
+      "D4:52: \"it won't also select the piece\""
+    ]
+  },
+  {
+    "question": "Why could the early Chaos teleport timing keep an unresolved conflict from reaching its deadline?",
+    "category": [
+      "single-session",
+      "multihop",
+      "temporal"
+    ],
+    "answer": "Repeated 1.2-second teleports could renew the eight-second deadline before it expired.",
+    "evidence": [
+      "D4:12: \"all furniture pieces are randomly teleported\"",
+      "D4:12: \"every **1.2 seconds**\"",
+      "D4:40: \"each new landing gives a fresh 8 s\""
+    ]
+  },
+  {
+    "question": "What invariants did the rug-squiggle report preserve while moving cells?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Cell count, connectivity and board bounds.",
+    "evidence": [
+      "D4:103: \"Shape is **always connected** (connectivity checked before any removal)\"",
+      "D4:103: \"Shape stays at exactly the **same cell count** (one removed, one added per step)\"",
+      "D4:103: \"Shape stays **on the board** (bounds checked before adding to growable list)\""
+    ]
+  },
+  {
+    "question": "How did the placement space change during the 3D conversation?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "answer": "A 32-by-32 floor became six independent 64-by-64 cube faces.",
+    "evidence": [
+      "D5:20: \"32×32 alternating light/dark tile grid\"",
+      "D5:39: \"6 placeable faces\"",
+      "D5:39: \"independent **64×64 grid**\""
+    ]
+  },
+  {
+    "question": "What rotation shortcuts did the 3D report assign?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "Q counter-clockwise; E clockwise, with R retained as a clockwise alias.",
+    "evidence": [
+      "D5:32: \"`Q` | Rotate **counter-clockwise**\"",
+      "D5:32: \"`E` | Rotate **clockwise**\"",
+      "D5:32: \"`R` | Also rotates CW\""
+    ]
+  },
+  {
+    "question": "Which floating controls and range did the 3D report describe?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "W moves outward and S inward along the face normal; floatDepth is clamped from 0 to 63.",
+    "evidence": [
+      "D5:62: \"press **`W`** to float it one grid step outward along the face normal\"",
+      "D5:62: \"**`S`** to bring it back in\"",
+      "D5:62: \"`floatDepth` is clamped to `[0, 63]`\""
+    ]
+  },
+  {
+    "question": "Why does a floatDepth clamp of 0–63 alone fail to prove furniture stays inside the cube?",
+    "category": [
+      "single-session",
+      "open-domain",
+      "knowledge-facts"
+    ],
+    "answer": "It bounds an offset, while containment also depends on the face-normal direction, the starting surface and the furniture’s height.",
+    "evidence": [
+      "D5:62: \"press **`W`** to float it one grid step outward along the face normal\"",
+      "D5:62: \"**`S`** to bring it back in\"",
+      "D5:62: \"`floatDepth` is clamped to `[0, 63]`\"",
+      "D5:62: \"selection halo follows the piece at whatever height it's floating at\""
+    ]
+  },
+  {
+    "question": "What became of adjustable furniture transparency in the colors-and-merging conversation?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "answer": "It was added, then removed at my request along with the opacity controls and piece fields.",
+    "evidence": [
+      "D6:20: \"furniture pieces in Room Packer 3D can now be made transparent\"",
+      "D6:53: \"Remove the transparency feature\"",
+      "D6:71: \"`opacity:` field removed from all piece data objects\""
+    ]
+  },
+  {
+    "question": "What selection effect did I request in place of sparkles?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "answer": "A reddish glow.",
+    "evidence": [
+      "D6:72: \"Replace the sparkle glow with a reddish glow.\""
+    ]
+  },
+  {
+    "question": "How did the final color-picker report distinguish recoloring from choosing the next placement color?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "answer": "With a piece selected, recolor it immediately; with none selected, save the color for the next piece.",
+    "evidence": [
+      "D6:92: \"**Piece selected** | Immediately recolours the selected piece live\"",
+      "D6:92: \"**Nothing selected** | Stores the colour as `nextColor`\""
+    ]
+  },
+  {
+    "question": "What eligibility checks did the merge report require?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Two distinct pieces on the same cube face with exactly the same color.",
+    "evidence": [
+      "D6:97: \"same face, same color (close enough, ±0), not same piece\"",
+      "D6:115: \"**exact same color**\""
+    ]
+  },
+  {
+    "question": "What replacement and height rules did the completed merge report describe?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "answer": "Replace both originals with one selected piece containing their combined cells and shared color, using the taller source height.",
+    "evidence": [
+      "D6:115: \"both originals are deleted and replaced by a single `merged` piece containing all their cells\"",
+      "D6:115: \"new piece is automatically selected, still showing the same color\"",
+      "D6:115: \"The merged piece inherits the **taller** of the two heights\""
+    ]
+  },
+  {
+    "question": "Why show the combined footprint before committing a furniture merge?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "answer": "It lets the user inspect the resulting occupied area before the two original pieces are replaced.",
+    "evidence": [
+      "D6:115: \"a semi-transparent ghost preview shows the **combined footprint** of both pieces together in their shared color\"",
+      "D6:115: \"both originals are deleted and replaced by a single `merged` piece containing all their cells\"",
+      "D6:115: \"new piece is automatically selected, still showing the same color\""
+    ]
+  },
+  {
+    "question": "How did the overlap policy differ between the main build and the later shapes conversation?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "D1 blocked overlapping placement or snapped a drag back; D3 allowed overlaps and used conflicts only as visual warnings.",
+    "evidence": [
+      "D1:43: \"placement is **blocked**\"",
+      "D1:43: \"button **flashes red** briefly\"",
+      "D1:43: \"the table **snaps back** to its original position\"",
+      "D3:105: \"Every conflict check that previously blocked an action now only drives the **visual warning**\"",
+      "D3:105: \"the action always goes through\""
+    ]
+  },
+  {
+    "question": "How did the chair-placement rule change between the sofas-and-chairs and shapes conversations?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Chairs initially needed an orthogonally adjacent table; later they could be placed anywhere on the board.",
+    "evidence": [
+      "D2:57: \"Checks the 4 orthogonal neighbours `(±1, 0)` and `(0, ±1)`\"",
+      "D2:57: \"Couches and other chairs don't count — only actual tables.\"",
+      "D3:112: \"Chairs can now be placed anywhere on the board\""
+    ]
+  },
+  {
+    "question": "What does E do in the main-build editing report versus the 3D control report?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "D1 uses E to lift a table into editing; D5 uses E to rotate a piece clockwise.",
+    "evidence": [
+      "D1:77: \"**Press `E`** or click **✏️ Edit** | Lifts the table off the board\"",
+      "D5:32: \"`E` | Rotate **clockwise**\""
+    ]
+  },
+  {
+    "question": "If a one-unit table and a two-unit chair meet the final merge conditions, what height should the reported rule give their merged piece?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Two units, the taller of the source heights.",
+    "evidence": [
+      "D5:44: \"`H_CHAIR` is now `2.0`\"",
+      "D5:46: \"`H_TABLE` is now `1.0`\"",
+      "D6:115: \"The merged piece inherits the **taller** of the two heights\""
+    ]
+  },
+  {
+    "question": "How do table fracturing and same-color merging treat the original pieces and their colors?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "Fracturing replaces a victim table with shards of its own color; merging replaces both same-color sources with one piece retaining that shared color.",
+    "evidence": [
+      "D3:129: \"Spawns up to 4 replacement shards\"",
+      "D3:129: \"Any shard with zero area is silently skipped\"",
+      "D3:129: \"**Shards keep the victim's color**\"",
+      "D6:115: \"both originals are deleted and replaced by a single `merged` piece containing all their cells\"",
+      "D6:115: \"new piece is automatically selected, still showing the same color\""
+    ]
+  },
+  {
+    "question": "How do the Chaos rug-squiggle report and the original custom-shape request relate?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "answer": "The request caps a connected shape at 16 cells; squiggling preserves its cell count and connectivity while changing its outline.",
+    "evidence": [
+      "D3:1: \"each cell can go to another if we walk only through adjacent cells\"",
+      "D3:1: \"capped at 16 grid squares\"",
+      "D4:103: \"Every **700ms**\"",
+      "D4:103: \"**3 cell-swap steps** per rug\"",
+      "D4:103: \"exactly the **same cell count**\"",
+      "D4:103: \"connectivity checked before any removal\""
+    ]
+  },
+  {
+    "question": "Which furniture did the Chaos conversation call abnormal, and which did the later 3D response redesign?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "answer": "Chaos treated the under-16-cell custom shape as a rug; the later vague request was interpreted as an L-sofa redesign.",
+    "evidence": [
+      "D4:92: \"the abnormal furniture(the any shape as long as the area is bounded under 16)\"",
+      "D4:103: \"every placed **rug** writhes\"",
+      "D5:47: \"the abnormal furniture is going to be unique\"",
+      "D5:49: \"The L-sofa currently renders as a cluster of plain `BoxGeometry` cells\"",
+      "D5:54: \"Each cell has a **wide seat**\""
+    ]
+  }
+]

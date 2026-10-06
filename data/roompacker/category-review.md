@@ -4,14 +4,14 @@ Reference: [Focus Desk](../focus_desk/category-review.md). Labels overlap and ar
 
 | Category | Focus Desk | Roompacker |
 |---|---:|---:|
-| knowledge-facts | 17 / 60 | 14 / 34 |
-| multi-session | 12 / 60 | 7 / 34 |
-| multihop | 17 / 60 | 14 / 34 |
-| open-domain | 5 / 60 | 3 / 34 |
-| preference | 9 / 60 | 8 / 34 |
-| single-session | 48 / 60 | 27 / 34 |
-| singlehop | 38 / 60 | 17 / 34 |
-| temporal | 15 / 60 | 3 / 34 |
+| knowledge-facts | 17 / 60 | 32 / 60 |
+| multi-session | 12 / 60 | 13 / 60 |
+| multihop | 17 / 60 | 20 / 60 |
+| open-domain | 5 / 60 | 5 / 60 |
+| preference | 9 / 60 | 8 / 60 |
+| single-session | 48 / 60 | 47 / 60 |
+| singlehop | 38 / 60 | 35 / 60 |
+| temporal | 15 / 60 | 6 / 60 |
 
 Each question has a source-support and category rationale in
 `annotation-semantic-review.json`, bound to the exact answer, question, labels

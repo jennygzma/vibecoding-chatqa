@@ -1,6 +1,6 @@
 # Roompacker annotations
 
-## Q001 — What did I want in the first Roompacker prototype?
+## Q001 — What did the user want in the first Roompacker prototype?
 
 Only a 64-by-64 chessboard running as a local web app.
 
@@ -10,7 +10,7 @@ Categories: single-session, singlehop, preference.
 
 Review: Direct user scope and size preference; does not conflate grid squares with pixels.
 
-## Q002 — What rectangle should clicking a non-adjacent square select under my revised selection request?
+## Q002 — What rectangle should clicking a non-adjacent square select under the user's revised selection request?
 
 The smallest rectangle enclosing the selection and the newly clicked square.
 
@@ -31,7 +31,7 @@ Categories: single-session, singlehop.
 
 Review: Direct retrieval scoped to D1; later conversations deliberately permit overlaps.
 
-## Q004 — What size and shape did I request for a straight couch?
+## Q004 — What size and shape did the user request for a straight couch?
 
 A one-by-N strip with a minimum size of one by two cells.
 
@@ -64,7 +64,7 @@ Categories: single-session, multihop, knowledge-facts.
 
 Review: Compares the explicit pre-stacking representation with the replacement data model; it is not temporal solely because one came later.
 
-## Q007 — Did the reported default L-sofa occupy the three cells I originally requested?
+## Q007 — Did the reported default L-sofa occupy the three cells the user originally requested?
 
 No; two length-three arms sharing one corner occupy five cells, rather than the requested three.
 
@@ -88,7 +88,7 @@ Categories: single-session, open-domain.
 
 Review: One-sentence geometric rationale inferred from the explicit occupied-cell collision rule.
 
-## Q009 — What constraints did I set for custom-shaped furniture?
+## Q009 — What constraints did the user set for custom-shaped furniture?
 
 All selected cells must connect through adjacent cells, with at most 16 grid squares.
 
@@ -98,7 +98,7 @@ Categories: single-session, singlehop, preference.
 
 Review: Direct connectivity and area constraints from one request; multiple constraints do not make a multihop question.
 
-## Q010 — What table size limits did I request in the shapes conversation?
+## Q010 — What table size limits did the user request in the shapes conversation?
 
 Minimum 2 by 3 cells; maximum 16 by 24 cells.
 
@@ -133,7 +133,7 @@ Categories: single-session, singlehop, knowledge-facts.
 
 Review: Both facts are explicit in D3:129; avoids claiming every cut creates exactly two pieces.
 
-## Q013 — What did the Chaos reports change after I said adjusting invalid teleports was my job?
+## Q013 — What did the Chaos reports change after the user said adjusting invalid teleports was the user's job?
 
 They replaced a non-overlapping position search with unconditional random relocation, keeping only board bounds.
 
@@ -243,7 +243,7 @@ Review: Retains the newer draft’s one-sentence geometric caution: the report d
 
 ## Q022 — What became of adjustable furniture transparency in the colors-and-merging conversation?
 
-It was added, then removed at my request along with the opacity controls and piece fields.
+It was added, then removed at the user's request along with the opacity controls and piece fields.
 
 Categories: single-session, multihop, preference.
 
@@ -253,7 +253,7 @@ Categories: single-session, multihop, preference.
 
 Review: Combines the temporary implementation, explicit reversal, and removal report; development order is not temporal.
 
-## Q023 — What selection effect did I request in place of sparkles?
+## Q023 — What selection effect did the user request in place of sparkles?
 
 A reddish glow.
 
@@ -414,3 +414,297 @@ Categories: multi-session, multihop.
 Review: Retains the newer draft’s cross-session interpretation mismatch; the later vague request is not silently treated as explicitly naming the L-sofa.
 
 Session necessity: D4 identifies the earlier referent as a custom rug; D5 supplies the vague request and the agent’s different L-sofa interpretation.
+
+## Q035 — What board dimensions and cell size did the first implementation report?
+
+64 × 64 cells at 12 × 12 pixels each, for a 768 × 768-pixel board.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D1:8: "- Each cell is **12×12 px**, making the full board **768×768 px**"
+- D1:8: "- A **64×64 grid** of alternating **light** (`#f0d9b5`) and **dark** (`#b58863`) squares — classic chess colors"
+
+Review: Direct retrieval of grid and pixel dimensions.
+
+## Q036 — How did the initial drag-selection system decide whether a stroke selected or cleared cells?
+
+The first cell locked the entire stroke to selecting or deselecting.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D1:18: "- **Drag direction is consistent**: the action (select or deselect) is locked in based on the first cell you click. So if you start on an unselected square, the whole drag selects; if you start on a selected one, the whole drag deselects. No accidental flickering mid-stroke"
+
+Review: One reported interaction rule, not a multi-step inference.
+
+## Q037 — Which border styles distinguished a selection, a placed table, and a moving table?
+
+Dotted for the active selection, solid for a placed table, and dashed for a table being moved.
+
+Categories: single-session, singlehop.
+
+- D1:63: "| **Active selection** (drawing, not yet placed) | **Dotted** black outline via `#selection-overlay` div, live during drag |"
+- D1:63: "| **Placed table** (at rest) | **Solid** border in its table colour |"
+- D1:63: "| **Table being dragged** (mid-move, "un-placed") | **Dashed** border via `.table-rect.moving` CSS class |"
+
+Review: Retrieve the three states from one border-style table.
+
+## Q038 — What did Escape preserve when cancelling a table edit?
+
+The original position and shape; committing with T instead retained the same table, color, and label.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D1:77: "| **Press `Escape`** | Cancels the edit — table snaps back to its original position and shape |"
+- D1:77: "| **Press `T`** or **🪑 Place Table** | Commits the new shape — same table, same colour, same label |"
+
+Review: Retrieve the documented cancellation and commit rules.
+
+## Q039 — What event-handling bug prevented table and couch drag commits?
+
+Both mouseup handlers attempted to remove the ghost. The second removal operated on null and threw, stopping the commit.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D2:26: "The original `onUp` (the capture-phase listener added per-drag) **always** called `overlay.removeChild(ghost)` and set `ghost = null` — even for real drags. Then the global `mouseup` handler fired on the **same mouse event** and tried `overlay.removeChild(ghost)` again on a now-`null` ghost, throwing a JS error and stopping the drop from committing. This silently broke placement *and* movement for both tables and couches."
+
+Review: The cause is explicitly reported, rather than inferred from multiple sessions.
+
+## Q040 — Why is assigning one mouseup handler ownership of real drag commits useful?
+
+It prevents competing handlers from deleting the same temporary object or leaving the drag state only partly updated.
+
+Categories: single-session, open-domain.
+
+- D2:26: "| **Real drag** | Does nothing — leaves `ghost` and `movingTable` alive | Owns the entire commit: erases old cells, updates coords, re-stamps, repositions element, removes ghost, clears state |"
+
+Review: Grounded engineering explanation, not an independently observed outcome.
+
+## Q041 — Around which pivot did the straight-couch rotation report swap dimensions?
+
+The top-left corner; its resize handles changed orientation with the couch.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D2:93: "| `rotateCouch(t)` | Swaps height ↔ width around the top-left corner, conflict-checks, commits, and calls `applyHandleClasses` |"
+- D2:93: "| `applyHandleClasses(t)` | Sets `handleA`/`handleB` CSS class based on `t.orientation` — left/right for `"h"`, top/bottom for `"v"` |"
+
+Review: One directly reported rotation implementation.
+
+## Q042 — What key selected rug-placement mode in the shapes conversation?
+
+P.
+
+Categories: single-session, singlehop.
+
+- D3:27: "Done! The Rug button shortcut is now **[P]** — both the toolbar label and the keydown handler updated."
+
+Review: Retrieve a distinct placement shortcut.
+
+## Q043 — What was the reported role of grid stamping after overlaps were permitted?
+
+Bookkeeping rather than rendering; piece overlays rendered furniture independently.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D3:120: "**Fix:** Every stamp function now **only** updates the `tableGrid[r][c]` bookkeeping array. Every erase function now **only** removes from that array and calls `resetCell` when the stack empties. Zero cell background painting."
+- D3:120: "**Why this works:** Every furniture piece is already drawn by its own absolutely-positioned overlay element (`div.table-rect`, `div.couch-rect`, `canvas.lsofa-rect`, `canvas.rug-canvas`, `canvas.donut-canvas`, `div.chair-rect`) stacked above the grid. These elements are independent and never overwrite each other — they simply stack by CSS `z-index`. The grid cells are now purely a coordinate/hit-testing layer with their checkerboard colors intact."
+
+Review: Retrieve the distinction between occupancy and visual representation.
+
+## Q044 — At what cadence and probability did the chaos rotation report attempt a clockwise turn?
+
+Every 1.8 seconds, with a 40% chance for each piece to turn 90° clockwise; dragging pieces were skipped.
+
+Categories: single-session, singlehop, temporal.
+
+- D4:61: "While Chaos mode is active, every **1.8 seconds** each piece independently has a **40% chance** of being rotated 90° clockwise. Each piece type uses exactly the same rotation logic as the existing interactive rotate key:"
+- D4:61: "Rotations are unconditional (like teleports) — they can create or worsen conflicts, and it's the player's job to sort them out. A piece being dragged is never rotated. Rotations stop immediately when Chaos mode is toggled off or the game ends."
+
+Review: Explicit timer and probability, not merely feature chronology.
+
+## Q045 — When was the final fading easter-egg probability rolled?
+
+Once when Chaos mode was switched on, with a 1% chance to enable the fading mechanic.
+
+Categories: single-session, singlehop, temporal, knowledge-facts.
+
+- D4:72: "Done. The one-line change gates the entire fading mechanic behind `Math.random() < 0.01` — a 1% roll that only happens when Chaos mode is switched **on**. If it misses (99/100 times), `fadeInterval` stays `null` and none of the fade code ever runs: `randomFadeEvent` is never called, and the `t.fading` branch in `conflictTick` is never entered. All the existing cleanup (`clearInterval(fadeInterval)`, `unfadePiece`) is harmlessly no-op when `fadeInterval` is `null`. Nothing else needed to change."
+
+Review: Retrieve the timing of the random gate; not a per-frame probability.
+
+## Q046 — What opacity floor kept chaos-fading pieces from disappearing completely?
+
+0.12; fading was visual only and Chaos-off restored full opacity.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D4:69: "| Opacity range | `0.12 → 1.0` — fades deeply but never fully disappears |"
+- D4:69: "- Turning Chaos mode **off** instantly clears all fading and restores full opacity on all pieces"
+- D4:69: "- Fading is purely visual — it doesn't affect gameplay logic, conflict detection, or timers"
+
+Review: Direct retrieval of visual bounds and cleanup.
+
+## Q047 — How long did the reported rainbow animation take to complete a color cycle?
+
+Six seconds, at roughly 60° of hue per second.
+
+Categories: single-session, singlehop, temporal.
+
+- D4:91: "- Every frame the hue advances **~60°/sec** — one full colour cycle every 6 seconds"
+
+Review: The source explicitly gives the cycle duration.
+
+## Q048 — Which camera interactions did the initial 3D rewrite report?
+
+Right-drag to orbit and the scroll wheel to zoom, using an orthographic isometric camera.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D5:20: "| **Camera** | Orthographic isometric view — right-drag or scroll to orbit/zoom |"
+- D5:20: "- **Right-drag** → orbit camera"
+- D5:20: "- **Scroll wheel** → zoom in/out"
+
+Review: Retrieve rendering and camera controls.
+
+## Q049 — How far did one arrow-key press move a selected 3D piece?
+
+One grid cell; movement clamped to the board and prevented the page from scrolling.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D5:25: "**How it works:** Click any placed piece to select it (it gets a pulsing white halo), then use the arrow keys to nudge it one grid cell at a time:"
+- D5:25: "- Pieces are **clamped to the grid boundary** so they can't be pushed off the edge"
+- D5:25: "- `e.preventDefault()` is called so arrow keys don't also scroll the page"
+
+Review: One directly reported keyboard behavior.
+
+## Q050 — How did the 3D L-sofa report divide its two-unit height?
+
+A 1.2-unit seat and a 0.8-unit backrest, or 60% and 40%.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D5:57: "`H_LSOFA` is already `2.0` — the L-sofa total height is 2 blocks. The seat occupies 1.2 units (60%) and the backrest sits on top at 0.8 units (40%), for a combined 2.0."
+
+Review: The decomposition is explicitly stated; no calculation is required.
+
+## Q051 — How did the temporary opacity implementation keep edges visible at zero body opacity?
+
+Opaque LineSegments were excluded from mesh-opacity changes, leaving outlines visible.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D6:31: "- **`addEdgeLines(parent, geo, edgeColor)`** — a new helper function that builds a `THREE.EdgesGeometry` from any geometry, attaches it as a `THREE.LineSegments` child, with a `LineBasicMaterial` that is **always fully opaque** (`transparent: false, opacity: 1`). Since `LineSegments` are not `Mesh` objects, `setMeshOpacity` already skips them, so the body can fade to invisible while the edges remain crisp."
+
+Review: Retrieve a historical implementation that was later removed, without claiming it remains final.
+
+## Q052 — What did the temporary opacity number input do with 150 and −5?
+
+Clamp them to 100 and 0 respectively on blur or Enter.
+
+Categories: single-session, singlehop, knowledge-facts.
+
+- D6:40: "- The number input **clamps on blur/Enter** — so typing `150` snaps back to `100`, typing `-5` snaps to `0`"
+
+Review: Source explicitly supplies both examples.
+
+## Q053 — Why did matching the page, WebGL clear color, and fog color help the green-background change?
+
+It avoided visible boundaries between the page, canvas background, and distant geometry.
+
+Categories: single-session, open-domain.
+
+- D6:79: "All three had to match — the CSS covers the page behind the canvas, `setClearColor` is the WebGL clear colour filling the canvas, and the fog colour blends distant geometry into the background. Using the same `#0a1a0f` (a deep dark green) across all three keeps them seamless."
+
+Review: Explain the visual rationale anchored to the three rendering layers.
+
+## Q054 — What actions cancelled merge mode without replacing any pieces?
+
+Clicking elsewhere or pressing Escape.
+
+Categories: single-session, singlehop.
+
+- D6:115: "6. **Click anywhere else** or press **`Escape`** — cancels merge mode with no changes."
+
+Review: Direct retrieval of merge cancellation.
+
+## Q055 — How did the initial board renderer differ from the first 3D renderer?
+
+The first used CSS Grid with Python’s built-in local server; the rewrite used a Three.js WebGL scene.
+
+Categories: multi-session, multihop, knowledge-facts.
+
+- D1:8: "| `index.html` | The entire app — a 64×64 chessboard rendered with CSS Grid |"
+- D1:8: "- Zero dependencies — the server is Python's built-in `http.server`, so no `npm install` needed"
+- D5:20: "The entire 2D CSS-grid board has been replaced with a **Three.js WebGL 3D scene**. The original `index.html` was completely rewritten (~656 lines) with:"
+
+Review: D1 supplies the original rendering/serving stack; D5 supplies the replacement renderer.
+
+Session necessity: D1 supplies the original rendering/serving stack; D5 supplies the replacement renderer.
+
+## Q056 — What rug-placement connectivity constraint was reported, and which furniture types could later be merged?
+
+Standalone rugs were constrained to a connected footprint; merging later allowed any same-color, same-face furniture types, without stating that the combined footprint must be connected.
+
+Categories: multi-session, multihop, knowledge-facts.
+
+- D3:25: "- **Connectivity** — removing a cell that would split the shape is rejected"
+- D6:115: "- Any furniture type (table, sofa, chair, L-sofa, rug, previously-merged) can be merged with any other"
+
+Review: D3 establishes connected rug placement; D6 describes broader merging. The answer does not invent a final connectivity check.
+
+Session necessity: D3 establishes connected rug placement; D6 describes broader merging. The answer does not invent a final connectivity check.
+
+## Q057 — How did rotation shortcuts change from the couch system to the cube system?
+
+The couch system used R for orientation changes; the cube system added Q for counterclockwise and E/R for clockwise rotation.
+
+Categories: multi-session, multihop.
+
+- D2:93: "- **While in Couch mode** (`C`): press **`R`** to toggle the ghost between horizontal and vertical before placing"
+- D5:39: "- `Q` / `E`/`R` rotate CCW / CW"
+
+Review: D2 provides the earlier couch shortcut; D5 provides the later directional shortcuts.
+
+Session necessity: D2 provides the earlier couch shortcut; D5 provides the later directional shortcuts.
+
+## Q058 — What new ownership condition did merging add beyond the early chair-stacking exception?
+
+Chair stacking distinguished furniture types at occupied cells; merging instead required distinct compatible pieces on the same face with exactly the same color.
+
+Categories: multi-session, multihop, knowledge-facts.
+
+- D2:79: "| **Chair** | `hasConflictForChair` | Only blocks on non-chair pieces — **can stack on other chairs** |"
+- D6:115: "- Both pieces must be on the **same face**"
+- D6:115: "- Both pieces must have the **exact same color** (use the color picker to match them)"
+- D6:115: "4. **Click the target piece** — both originals are deleted and replaced by a single `merged` piece containing all their cells. The new piece is automatically selected, still showing the same color."
+
+Review: D2 defines the occupancy exception; D6 defines a separate replacement operation, not mere stacking.
+
+Session necessity: D2 defines the occupancy exception; D6 defines a separate replacement operation, not mere stacking.
+
+## Q059 — How did the scope of collision tracking change when the board became a cube?
+
+The original tableGrid tracked cell owners on one board; the cube gave each of six faces its own independent occupancy tracking.
+
+Categories: multi-session, multihop, knowledge-facts.
+
+- D1:37: "- `tableGrid[row][col]` tracks which table (by id) owns each cell — enables clean erase/restamp on move"
+- D5:39: "Each face has its own independent **64×64 grid** with its own occupancy tracking and piece set:"
+
+Review: D1 describes single-board cell ownership; D5 describes per-face isolation.
+
+Session necessity: D1 describes single-board cell ownership; D5 describes per-face isolation.
+
+## Q060 — How did editing and merging differ in whether they kept the original piece identity?
+
+Table editing committed the same table, color, and label; merging deleted both originals and created a new merged piece.
+
+Categories: multi-session, multihop, knowledge-facts.
+
+- D1:77: "| **Press `T`** or **🪑 Place Table** | Commits the new shape — same table, same colour, same label |"
+- D6:115: "4. **Click the target piece** — both originals are deleted and replaced by a single `merged` piece containing all their cells. The new piece is automatically selected, still showing the same color."
+
+Review: D1 establishes identity-preserving edits; D6 establishes replacement on merge.
+
+Session necessity: D1 establishes identity-preserving edits; D6 establishes replacement on merge.

@@ -1,0 +1,400 @@
+{
+  "status": "agent-reviewed-human-review-pending",
+  "reference": "https://github.com/jennygzma/vibecoding-chatqa/blob/Edgar/pantry-lane/data/focus_desk/vibe_combined.json",
+  "previous_count": 33,
+  "question_count": 65,
+  "prior_revision": "revisions/before-full-reevaluation",
+  "audit_limits": "Citations substantiate requests and assistant reports; they do not independently prove final runtime behavior. Open-domain answers are explanatory inferences.",
+  "questions": [
+    {
+      "question_id": "Q001",
+      "disposition": "revised",
+      "category_reason": "Directly retrieves the user’s requested purpose and local delivery; it does not endorse the recommendations.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q002",
+      "disposition": "revised",
+      "category_reason": "Explicit interaction preference from one user message; scoped to the main-build request because later features add polling.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q003",
+      "disposition": "retained",
+      "category_reason": "The cause and repair are both explicitly stated in D1:68; multiple excerpts from one report do not make this multihop.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q004",
+      "disposition": "retained",
+      "category_reason": "Counts the seven initially listed signals and combines that baseline with the later eighth-signal report; feature order alone is not temporal.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q005",
+      "disposition": "retained",
+      "category_reason": "One-sentence general rationale grounded in frontend sorting/slicing and the reported absence of network calls; no claim about current response speed.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q006",
+      "disposition": "retained",
+      "category_reason": "Direct formula definition from one implementation report, not an assessment of investment quality.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q007",
+      "disposition": "retained",
+      "category_reason": "The history interval and retention cap are explicit; temporal refers to the five-minute interval, not development order.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q008",
+      "disposition": "retained",
+      "category_reason": "Compares two reported alert mechanisms; the explicit 30-second cadence warrants temporal.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q009",
+      "disposition": "revised",
+      "category_reason": "One explicit user timing preference; describes the requested playful page effect, not a system failure.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q010",
+      "disposition": "retained",
+      "category_reason": "One-sentence explanation of the documented deduplication guard; no unsupported promise about statistical accuracy.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q011",
+      "disposition": "revised",
+      "category_reason": "Direct numerical preference in the visual-effects conversation.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q012",
+      "disposition": "revised",
+      "category_reason": "The later request directly supplies the duration; the earlier message resolves what “it” refers to, without requiring a calculation.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q013",
+      "disposition": "retained",
+      "category_reason": "Both rules are stated together in D3:14; retrieving them is singlehop despite two excerpts.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q014",
+      "disposition": "retained",
+      "category_reason": "Compares the invisible gated version with the subsequent floating version; avoids treating the obsolete five-click gate as current.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q015",
+      "disposition": "retained",
+      "category_reason": "Links the D4:58 failure diagnosis to the D4:70 repair; these are historical reports, not a new runtime verification.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q016",
+      "disposition": "retained",
+      "category_reason": "Both timing ranges are directly reported in D4:35.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q017",
+      "disposition": "retained",
+      "category_reason": "Diagnosis and repair appear in D5:7; answer is scoped to this recorded bug rather than claiming a permanent provider API contract.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q018",
+      "disposition": "retained",
+      "category_reason": "Direct retrieval of a recorded units error; no current financial-data claim.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q019",
+      "disposition": "retained",
+      "category_reason": "Explicit distinction between cached raw/subscore data and derived scoring weights.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q020",
+      "disposition": "retained",
+      "category_reason": "The final structure and eviction rule are both stated in D5:69; no multihop label is earned just by describing a replacement.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q021",
+      "disposition": "retained",
+      "category_reason": "One-sentence design rationale based on the reported reweighting behavior, without a measured latency claim.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q022",
+      "disposition": "revised",
+      "category_reason": "Combines the agent’s first concept, the user correction, and the revised description; chronology is not independently temporal.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q023",
+      "disposition": "retained",
+      "category_reason": "Directly reported redaction behavior; does not claim that the remaining news cannot indirectly reveal the company.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q024",
+      "disposition": "retained",
+      "category_reason": "Direct positional ordering, not temporal reasoning; does not preserve the superseded one-hint-per-round claim.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q025",
+      "disposition": "retained",
+      "category_reason": "Two feedback outcomes explicitly defined in one source message.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q026",
+      "disposition": "retained",
+      "category_reason": "One-sentence inference from the stated two-pass algorithm and target-pool consumption; no additional implementation guarantee.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q027",
+      "disposition": "revised",
+      "category_reason": "Direct user priority; “sidebar-style” describes the request and does not falsely identify the implementation as a literal sidebar.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q028",
+      "disposition": "retained",
+      "category_reason": "Compares an earlier interaction requirement with a later reported feature; neither is silently declared the universal final rule.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q029",
+      "disposition": "retained",
+      "category_reason": "Separates three clocks with different purposes; the answer does not confuse storage deduplication with network polling.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q030",
+      "disposition": "retained",
+      "category_reason": "Distinguishes transport validity from calculation inputs using both recorded diagnoses and repairs.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q031",
+      "disposition": "retained",
+      "category_reason": "Connects the earlier data-supply fix with a separate later default-setting request.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q032",
+      "disposition": "revised",
+      "category_reason": "D1 supplies the event-propagation boundary; D3 supplies the later stock-click rejection. This is an integration of reported routing, not a final-browser verification.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q033",
+      "disposition": "revised",
+      "category_reason": "D1 supplies within-stock signal weighting; D2 supplies between-holding value weighting. Both sessions are necessary to distinguish the two levels.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q034",
+      "disposition": "added",
+      "category_reason": "Direct retrieval of a reported UI sizing change.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q035",
+      "disposition": "added",
+      "category_reason": "Retrieve explicit event-routing behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q036",
+      "disposition": "added",
+      "category_reason": "The ordered algorithm is directly described, not inferred.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q037",
+      "disposition": "added",
+      "category_reason": "Retrieve the persistence mechanism without attributing an assistant choice to the user.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q038",
+      "disposition": "added",
+      "category_reason": "Source-specific scoring rule, not financial advice.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q039",
+      "disposition": "added",
+      "category_reason": "Retrieve autosave timing and storage identity.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q040",
+      "disposition": "added",
+      "category_reason": "Retrieve a data-sufficiency empty state.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q041",
+      "disposition": "added",
+      "category_reason": "Retrieve the explicitly named new groups.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q042",
+      "disposition": "added",
+      "category_reason": "Retrieve documented reuse and side effects.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q043",
+      "disposition": "added",
+      "category_reason": "Record a verification limit, not an unsupported claim that the feature was verified.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q044",
+      "disposition": "added",
+      "category_reason": "Retrieve the explicitly reported audio/UI cleanup.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q045",
+      "disposition": "added",
+      "category_reason": "Explicit countdown thresholds and duration.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q046",
+      "disposition": "added",
+      "category_reason": "Retrieve the documented stop action without claiming all unrelated app timers stop.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q047",
+      "disposition": "added",
+      "category_reason": "Final explicit duration, not the earlier 1.1- or 1.4-second variants.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q048",
+      "disposition": "added",
+      "category_reason": "Retrieve fallback and code reuse.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q049",
+      "disposition": "added",
+      "category_reason": "Retrieve one explicit motion-state revision.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q050",
+      "disposition": "added",
+      "category_reason": "One directly reported pause/resume rule, not a time-duration category.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q051",
+      "disposition": "added",
+      "category_reason": "Engineering rationale grounded in the reported competing animation mechanisms.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q052",
+      "disposition": "added",
+      "category_reason": "Scope the claim to this diagnosis rather than asserting a universal current Yahoo API contract.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q053",
+      "disposition": "added",
+      "category_reason": "Retrieve a reported rendering property.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q054",
+      "disposition": "added",
+      "category_reason": "One explicitly documented position-based color rule.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q055",
+      "disposition": "added",
+      "category_reason": "Direct retrieval of a cache-expiry override and its duration.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q056",
+      "disposition": "added",
+      "category_reason": "Directly reported failure-path behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q057",
+      "disposition": "added",
+      "category_reason": "Grounded explanation of the mascot lifecycle, not an extra implementation claim.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q058",
+      "disposition": "added",
+      "category_reason": "D2 provides history deduplication; D5 provides server-side cache freshness.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q059",
+      "disposition": "added",
+      "category_reason": "D1 supplies the user’s refresh preference; D5 supplies ordinary versus forced cache behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q060",
+      "disposition": "added",
+      "category_reason": "D3 provides entry timing; D5 provides the different reorder path and retained initial-load behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q061",
+      "disposition": "added",
+      "category_reason": "D2 provides discrete timed teleports; D4 provides frame-driven physics motion.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q062",
+      "disposition": "added",
+      "category_reason": "D2 supplies alarm synthesis details; D3 supplies the distinct synthesized laugh and no-file property.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q063",
+      "disposition": "added",
+      "category_reason": "D1 establishes analysis measures; D6 establishes their later use as clues, not a separate data-provider claim.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q064",
+      "disposition": "added",
+      "category_reason": "D2 supplies the arbitrary-ticker feature; D4 supplies the Random button’s reuse of it.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q065",
+      "disposition": "added",
+      "category_reason": "D1 supplies global token-based theme persistence; D5 supplies per-card positional hues and light-mode adaptation.",
+      "human_review": "pending"
+    }
+  ]
+}

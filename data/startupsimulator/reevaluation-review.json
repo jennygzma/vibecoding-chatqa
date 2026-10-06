@@ -1,0 +1,394 @@
+{
+  "status": "agent-reviewed-human-review-pending",
+  "reference": "https://github.com/jennygzma/vibecoding-chatqa/blob/Edgar/pantry-lane/data/focus_desk/vibe_combined.json",
+  "previous_count": 31,
+  "question_count": 64,
+  "prior_revision": "revisions/before-full-reevaluation",
+  "audit_limits": "Citations substantiate requests and assistant reports; they do not independently prove final runtime behavior. Open-domain answers are explanatory inferences.",
+  "questions": [
+    {
+      "question_id": "Q001",
+      "disposition": "revised",
+      "category_reason": "Direct user scope and interaction preference; does not imply hiring or revenue existed in the first version.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q002",
+      "disposition": "retained",
+      "category_reason": "Compares distinct objective reports; the number of in-game days makes temporal meaningful, unlike a generic implementation sequence.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q003",
+      "disposition": "revised",
+      "category_reason": "Direct user observation; intentionally does not accept earlier completion claims as proof that the visual issue was fixed.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q004",
+      "disposition": "retained",
+      "category_reason": "One-sentence rationale for the described nearest-walkable search; does not claim every destination was tested.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q005",
+      "disposition": "retained",
+      "category_reason": "Directly retrieves two game-economy rates from one report; these are fictional earnings.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q006",
+      "disposition": "revised",
+      "category_reason": "Arithmetic on the reported base rate and multiplier; explicitly before rounding and not a runtime payout claim.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q007",
+      "disposition": "retained",
+      "category_reason": "Both branches are explicitly described in D2:153; time relates to the countdown extension.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q008",
+      "disposition": "revised",
+      "category_reason": "Direct game-design preference; does not merge this trigger with the separate Day 10 completion condition.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q009",
+      "disposition": "retained",
+      "category_reason": "Compares the early healing/slowing implementation with the later stamina-cost/speed implementation; no temporal label for revision order alone.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q010",
+      "disposition": "retained",
+      "category_reason": "All interval and reset facts are explicitly in D3:63; excludes that message’s inconsistent approximate full-bar lifetime estimates.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q011",
+      "disposition": "retained",
+      "category_reason": "Direct lookup of a fictional game mechanic, not a claim about real substances; ordinal shot count is not a time calculation.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q012",
+      "disposition": "retained",
+      "category_reason": "The final D3:95 report supplies the complete answer; scoped to D3 because D5 later adds sofa interaction.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q013",
+      "disposition": "retained",
+      "category_reason": "One-sentence explanation based on the report’s invisible-rate problem and explicit coffee tradeoff; no new game behavior is asserted.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q014",
+      "disposition": "revised",
+      "category_reason": "Connects the original toggle, the user correction, and the implemented blink; does not label ordinary revision chronology temporal.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q015",
+      "disposition": "retained",
+      "category_reason": "Direct algorithm description from D4:109; phrased as a report rather than independently verified collision behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q016",
+      "disposition": "retained",
+      "category_reason": "Explicit duration and lockout in one report; avoids repeating its inconsistent sprint-speed arithmetic.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q017",
+      "disposition": "revised",
+      "category_reason": "Direct control preference; no inference from the implemented key aliases.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q018",
+      "disposition": "retained",
+      "category_reason": "Requires summing three distinct terms even though one source message supplies them; message count is not the hop criterion.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q019",
+      "disposition": "revised",
+      "category_reason": "Direct timing preference from the final user revision; the question avoids ambiguous zone endpoints.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q020",
+      "disposition": "retained",
+      "category_reason": "One-sentence general rationale for an explicit overload and ignored-input penalty; not a claim about measured player behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q021",
+      "disposition": "revised",
+      "category_reason": "The report confirms the user’s no-effect request; the answer is directly stated, so this is not multihop.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q022",
+      "disposition": "retained",
+      "category_reason": "Direct trigger and duration from one report; no inference about how often a player will encounter the ghost.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q023",
+      "disposition": "revised",
+      "category_reason": "Explicitly distinguishes the user’s original request, later cap, and the agent’s different reported gate; does not misrepresent the change as user-approved.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q024",
+      "disposition": "retained",
+      "category_reason": "The total is directly stated in D6:172; it would be artificial to label this a multihop sum.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q025",
+      "disposition": "retained",
+      "category_reason": "One-sentence rationale for resolving current deskIndex rather than assuming a worker remains at the original desk.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q026",
+      "disposition": "retained",
+      "category_reason": "Contrasts two explicitly scoped states; temporal is justified by the recovery interval, not the fact of a later revision.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q027",
+      "disposition": "revised",
+      "category_reason": "Compare the main-build win report with the later user request; do not assert that both goals coexist in the final implementation.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q028",
+      "disposition": "revised",
+      "category_reason": "Integrate the earnings effect of a strike with a later desk-swap gate; remove the irrelevant Engineer-level scenario.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q029",
+      "disposition": "retained",
+      "category_reason": "Compares distinct resources and applies both reported ranges to 90, avoiding the ambiguous shared endpoint at 75.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q030",
+      "disposition": "retained",
+      "category_reason": "Combines the refill effects with a later, separately introduced resource cost; the peptide effect is conditional on survival.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q031",
+      "disposition": "revised",
+      "category_reason": "Compare separately reported hop and double-jump rules without assuming that an earlier four-cost rule survived reconstruction.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q032",
+      "disposition": "added",
+      "category_reason": "Retrieve an explicit initial scope limit.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q033",
+      "disposition": "added",
+      "category_reason": "Retrieve the reported projection and grid change; do not imply all renderer migration was finished at this point.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q034",
+      "disposition": "added",
+      "category_reason": "Compare two separate revision reports within D1.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q035",
+      "disposition": "added",
+      "category_reason": "Direct retrieval of distinct collision bounds.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q036",
+      "disposition": "added",
+      "category_reason": "Explicit day-indexed earnings rule.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q037",
+      "disposition": "added",
+      "category_reason": "Retrieve capacity and day-based candidate selection.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q038",
+      "disposition": "added",
+      "category_reason": "Retrieve one clearly described upgrade tradeoff.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q039",
+      "disposition": "added",
+      "category_reason": "Retrieve the documented lifecycle; not independently verified final behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q040",
+      "disposition": "added",
+      "category_reason": "The resolution alternatives are directly described in one report.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q041",
+      "disposition": "added",
+      "category_reason": "Compare explicit old and revised drain intervals within D3.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q042",
+      "disposition": "added",
+      "category_reason": "Retrieve the actual reported save regression; completed sleep suppressed drain, rather than causing extra drain.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q043",
+      "disposition": "added",
+      "category_reason": "Directly reported recovery values, not a temporal label merely because a day advances.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q044",
+      "disposition": "added",
+      "category_reason": "Explicit historical drain rule and reported comparison.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q045",
+      "disposition": "added",
+      "category_reason": "Retrieve the action’s cost and timer.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q046",
+      "disposition": "added",
+      "category_reason": "The source directly reports reach and timing multipliers.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q047",
+      "disposition": "added",
+      "category_reason": "Retrieve independent lighting controls.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q048",
+      "disposition": "added",
+      "category_reason": "Retrieve distinct seated controls without confusing recline and standing.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q049",
+      "disposition": "added",
+      "category_reason": "Retrieve blackout state and appliance eligibility from one report.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q050",
+      "disposition": "added",
+      "category_reason": "Retrieve the full explicit timed failure rule.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q051",
+      "disposition": "added",
+      "category_reason": "Record a source-reported failure/recovery, not proof that reconstruction preserved every prior feature.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q052",
+      "disposition": "added",
+      "category_reason": "Retrieve the success/failure credit rule.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q053",
+      "disposition": "added",
+      "category_reason": "Directly stated time-of-day availability.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q054",
+      "disposition": "added",
+      "category_reason": "Respect the report’s “almost certainly” qualification rather than upgrading a diagnosis to proof.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q055",
+      "disposition": "added",
+      "category_reason": "Retrieve explicit context-dependent key routing.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q056",
+      "disposition": "added",
+      "category_reason": "Retrieve per-jump and phase guards, distinct from the level/energy eligibility question.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q057",
+      "disposition": "added",
+      "category_reason": "D1 establishes absent systems; D2 establishes the added revenue and hiring mechanisms.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q058",
+      "disposition": "added",
+      "category_reason": "D1 supplies the original automatic four-task completion; D3 supplies the later explicit sleep gate.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q059",
+      "disposition": "added",
+      "category_reason": "D1 supplies the initial partial refill; D3 supplies the later full refill and timed cost. No claim that the early rule survives.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q060",
+      "disposition": "added",
+      "category_reason": "D2 provides an energy upgrade; D5 provides an independent electricity cost, without claiming a verified final combination.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q061",
+      "disposition": "added",
+      "category_reason": "D5 supplies bike recovery; D6 supplies the three-overload threshold and treadmill credit loss.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q062",
+      "disposition": "added",
+      "category_reason": "D2 provides strike-countdown extension versus active strikes; D6 provides the separate swap gate.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q063",
+      "disposition": "added",
+      "category_reason": "D4 supplies table vaulting; D6 supplies the new desk types and their ordinary collision behavior.",
+      "human_review": "pending"
+    },
+    {
+      "question_id": "Q064",
+      "disposition": "added",
+      "category_reason": "Integrate treadmill operation and a later progression addition within D6. This is not multi-session merely because it spans two prompts.",
+      "human_review": "pending"
+    }
+  ]
+}

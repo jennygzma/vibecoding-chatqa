@@ -1,0 +1,239 @@
+[
+  {
+    "question_id": "Q001",
+    "reviewed_question": "What did I want the first StockApp to do, and where should it run?",
+    "reviewed_sha256": "547eb3fbc477697cc34283469dc508bc5d8e69f2967533def9f6429cec475f94",
+    "source_support": "reviewed",
+    "category_reason": "Directly retrieves the user’s requested purpose and local delivery; it does not endorse the recommendations."
+  },
+  {
+    "question_id": "Q002",
+    "reviewed_question": "In the main-build conversation, what display changes did I want to make without refreshing stock data?",
+    "reviewed_sha256": "3516dbd5d49c349822abb13714ef040171a942ebe3f13f3eb611881b9a9722c2",
+    "source_support": "reviewed",
+    "category_reason": "Explicit interaction preference from one user message; scoped to the main-build request because later features add polling."
+  },
+  {
+    "question_id": "Q003",
+    "reviewed_question": "What caused the initial Top 20 bug, and what division of work fixed it?",
+    "reviewed_sha256": "8e78ca0b4e3b768359fe20df1511f5c308dfcf416ccbd170cb2d03d0ce051bf7",
+    "source_support": "reviewed",
+    "category_reason": "The cause and repair are both explicitly stated in D1:68; multiple excerpts from one report do not make this multihop."
+  },
+  {
+    "question_id": "Q004",
+    "reviewed_question": "How did the reported scoring-signal count change during the main build?",
+    "reviewed_sha256": "14f1a2588b4e90e6f202c410d69fcf181a2f81fe194862fcdf02362e847b7321",
+    "source_support": "reviewed",
+    "category_reason": "Counts the seven initially listed signals and combines that baseline with the later eighth-signal report; feature order alone is not temporal."
+  },
+  {
+    "question_id": "Q005",
+    "reviewed_question": "Why is it useful to sort and limit the already-loaded stock list locally?",
+    "reviewed_sha256": "14ffe5d4e7d52e24cbbbdc62e683da38d2ccf753ac71338d4db5eaa71c889699",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence general rationale grounded in frontend sorting/slicing and the reported absence of network calls; no claim about current response speed."
+  },
+  {
+    "question_id": "Q006",
+    "reviewed_question": "How did the portfolio report weight each holding in its AI-score average?",
+    "reviewed_sha256": "6226fc5a1cb4a61f40436f03f8fd8653e0fdda9e7f1b053d56d6c31e8a18ca4c",
+    "source_support": "reviewed",
+    "category_reason": "Direct formula definition from one implementation report, not an assessment of investment quality."
+  },
+  {
+    "question_id": "Q007",
+    "reviewed_question": "What time and size limits did the score-history report use to control repeated refresh entries?",
+    "reviewed_sha256": "4dcad12862e5f7abf366d534221e0a75959dcefe2fa64d3f1d35b30d43c2d444",
+    "source_support": "reviewed",
+    "category_reason": "The history interval and retention cap are explicit; temporal refers to the five-minute interval, not development order."
+  },
+  {
+    "question_id": "Q008",
+    "reviewed_question": "What happened to alert checking between the initial portfolio report and the later polling report?",
+    "reviewed_sha256": "e1af80c05ab9df4796a10c2a060d2d6969cbd00a4ef00f661c1a6babfbfa5155",
+    "source_support": "reviewed",
+    "category_reason": "Compares two reported alert mechanisms; the explicit 30-second cadence warrants temporal."
+  },
+  {
+    "question_id": "Q009",
+    "reviewed_question": "What deadline did I request for the mute-alarm chase?",
+    "reviewed_sha256": "b5abc2ab20ba5f89df617e2f658f57f366ad4b8cf29908b48eeee5df6b08da5f",
+    "source_support": "reviewed",
+    "category_reason": "One explicit user timing preference; describes the requested playful page effect, not a system failure."
+  },
+  {
+    "question_id": "Q010",
+    "reviewed_question": "Why is a five-minute guard useful when users repeatedly refresh the score history?",
+    "reviewed_sha256": "e587ceb186a33c52a87266ebfbd158ba272bd8659658b00053373c0e105c7889",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence explanation of the documented deduplication guard; no unsupported promise about statistical accuracy."
+  },
+  {
+    "question_id": "Q011",
+    "reviewed_question": "What stock-click rejection probability did I ask for?",
+    "reviewed_sha256": "105615ae62b6e1237955c799cd653b4f367e819f56c94e916775aad40d01ee14",
+    "source_support": "reviewed",
+    "category_reason": "Direct numerical preference in the visual-effects conversation."
+  },
+  {
+    "question_id": "Q012",
+    "reviewed_question": "How long did I ultimately want the red denial screen to last in the visuals conversation?",
+    "reviewed_sha256": "8687e0c74e34233d3c79c3076b1248747e9bb6f3973e0af3cc9af346a702d0c4",
+    "source_support": "reviewed",
+    "category_reason": "The later request directly supplies the duration; the earlier message resolves what “it” refers to, without requiring a calculation."
+  },
+  {
+    "question_id": "Q013",
+    "reviewed_question": "What cadence and selection rule did the Live Feed implementation report describe?",
+    "reviewed_sha256": "ca74a7c0a4ba2e7de0649b8f09ea01bd2b04511f0b3624558699076a0c5d0929",
+    "source_support": "reviewed",
+    "category_reason": "Both rules are stated together in D3:14; retrieving them is singlehop despite two excerpts."
+  },
+  {
+    "question_id": "Q014",
+    "reviewed_question": "What replaced the invisible five-click Random button in the random-ticker conversation?",
+    "reviewed_sha256": "d3ea15c9544c5c73d348e7e87334747bc73ff281527836c1785c3ef3a2f08640",
+    "source_support": "reviewed",
+    "category_reason": "Compares the invisible gated version with the subsequent floating version; avoids treating the obsolete five-click gate as current."
+  },
+  {
+    "question_id": "Q015",
+    "reviewed_question": "What failure did the random-ticker conversation diagnose, and how was it made JSON-safe?",
+    "reviewed_sha256": "8c824074c8e0dc4c4ca69e06edd608e0c03db6df547d6b10e77f408d2ac3a3de",
+    "source_support": "reviewed",
+    "category_reason": "Links the D4:58 failure diagnosis to the D4:70 repair; these are historical reports, not a new runtime verification."
+  },
+  {
+    "question_id": "Q016",
+    "reviewed_question": "How long did the floating Random button pause, and how often did those pauses occur?",
+    "reviewed_sha256": "262dab3ac57dae363339738d727ae40feed151851b5ad46e877083542ce70c9e",
+    "source_support": "reviewed",
+    "category_reason": "Both timing ranges are directly reported in D4:35."
+  },
+  {
+    "question_id": "Q017",
+    "reviewed_question": "What data-cleaning change did the retrieval conversation report for the trailing-NaN price-history bug?",
+    "reviewed_sha256": "6b94cbb33eb3e0f19a4450e45eef2bd40e2d0bd22e8d1b61d2c11d0dc794a14f",
+    "source_support": "reviewed",
+    "category_reason": "Diagnosis and repair appear in D5:7; answer is scoped to this recorded bug rather than claiming a permanent provider API contract."
+  },
+  {
+    "question_id": "Q018",
+    "reviewed_question": "How did the retrieval report explain the 100-fold dividend-yield error?",
+    "reviewed_sha256": "d1bb9990502ad0f053919d2d56629829a4a3f8817b37efd93f727b5580724958",
+    "source_support": "reviewed",
+    "category_reason": "Direct retrieval of a recorded units error; no current financial-data claim."
+  },
+  {
+    "question_id": "Q019",
+    "reviewed_question": "What did the caching report say happens when the scoring mode changes?",
+    "reviewed_sha256": "c072a18a66ee8c87c3131a0f3950f251e574836c8d07c4fcda77b29408633c95",
+    "source_support": "reviewed",
+    "category_reason": "Explicit distinction between cached raw/subscore data and derived scoring weights."
+  },
+  {
+    "question_id": "Q020",
+    "reviewed_question": "What cache-eviction behavior was added when the plain dictionary became an OrderedDict?",
+    "reviewed_sha256": "d56902f7c6cb7e8f3d3de3647d8e0fce0b8c6f1a0f83f7dc25a81ae1d4368a3d",
+    "source_support": "reviewed",
+    "category_reason": "The final structure and eviction rule are both stated in D5:69; no multihop label is earned just by describing a replacement."
+  },
+  {
+    "question_id": "Q021",
+    "reviewed_question": "Why should a mode change reweight cached subscores instead of refetching unchanged inputs?",
+    "reviewed_sha256": "d5dd7d50222365ebc49d9761958d1d7ba0bffeadcde1f6256bd2ce4042bf1e94",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence design rationale based on the reported reweighting behavior, without a measured latency claim."
+  },
+  {
+    "question_id": "Q022",
+    "reviewed_question": "How did I correct the first minigame concept?",
+    "reviewed_sha256": "3c8a2c07786f5c9d74c6f2c1147cc5ed10710aff6f02b08c8fa243eb694a390a",
+    "source_support": "reviewed",
+    "category_reason": "Combines the agent’s first concept, the user correction, and the revised description; chronology is not independently temporal."
+  },
+  {
+    "question_id": "Q023",
+    "reviewed_question": "What did the news-hint report do to avoid directly giving away the ticker?",
+    "reviewed_sha256": "86fe952f574ea2a0c783582566f43dd3217ae8be0b6a1dfcc4f752753fd11b8a",
+    "source_support": "reviewed",
+    "category_reason": "Directly reported redaction behavior; does not claim that the remaining news cannot indirectly reveal the company."
+  },
+  {
+    "question_id": "Q024",
+    "reviewed_question": "In what order did the letter-hint report reveal a ticker’s letters?",
+    "reviewed_sha256": "39cdc1d4c0c7b810456be10f7e676350cc69e898336a816e3fea10be8fa9ced0",
+    "source_support": "reviewed",
+    "category_reason": "Direct positional ordering, not temporal reasoning; does not preserve the superseded one-hint-per-round claim."
+  },
+  {
+    "question_id": "Q025",
+    "reviewed_question": "What letter-feedback rule did the minigame report use after a wrong guess?",
+    "reviewed_sha256": "6249361806aadd3b7d20afc2311b0bfdf851a8502691da510fe44874b75535da",
+    "source_support": "reviewed",
+    "category_reason": "Two feedback outcomes explicitly defined in one source message."
+  },
+  {
+    "question_id": "Q026",
+    "reviewed_question": "Why consume target letters when assigning yellow feedback in a ticker-guessing game?",
+    "reviewed_sha256": "29d4ab49f5b1f39e7d7c49537ade5d8f29be8e0e4b982b9c347fbe925e8e3a2b",
+    "source_support": "reviewed",
+    "category_reason": "One-sentence inference from the stated two-pass algorithm and target-pool consumption; no additional implementation guarantee."
+  },
+  {
+    "question_id": "Q027",
+    "reviewed_question": "What place did I want the ticker minigame to have within StockApp?",
+    "reviewed_sha256": "cb8d95ed97a08c8b53acd92e9aefcbd11a1773722c9a058931775c70481885f9",
+    "source_support": "reviewed",
+    "category_reason": "Direct user priority; “sidebar-style” describes the request and does not falsely identify the implementation as a literal sidebar."
+  },
+  {
+    "question_id": "Q028",
+    "reviewed_question": "How do the main-build refresh request and the later Live Feed report differ in when they fetch data?",
+    "reviewed_sha256": "bef7c8d9a30f0b917fdf04abcfd13e1e04fed0cdf01cbc7f11d923adf4617156",
+    "source_support": "reviewed",
+    "category_reason": "Compares an earlier interaction requirement with a later reported feature; neither is silently declared the universal final rule.",
+    "cross_session_necessity": "D1 supplies the explicit-refresh preference; D3 supplies the automatic nine-second feed, which D1 does not describe."
+  },
+  {
+    "question_id": "Q029",
+    "reviewed_question": "What different rate limits were reported for saving score history and polling alerts versus loading Live Feed stocks?",
+    "reviewed_sha256": "8a8240ea6479585fb5c4b233cd70e52b3cc7397bef5604b9f59440f7d80e0ef0",
+    "source_support": "reviewed",
+    "category_reason": "Separates three clocks with different purposes; the answer does not confuse storage deduplication with network polling.",
+    "cross_session_necessity": "D2 contains the history and alert timing; D3 contains the separate feed cadence."
+  },
+  {
+    "question_id": "Q030",
+    "reviewed_question": "How do the random-ticker sanitizer and the later price-history cleanup address different stages of the NaN problem?",
+    "reviewed_sha256": "ddd91cd61b093afa7b99652290783482c8a813305f804032fea4759cce36fb30",
+    "source_support": "reviewed",
+    "category_reason": "Distinguishes transport validity from calculation inputs using both recorded diagnoses and repairs.",
+    "cross_session_necessity": "D4 gives response sanitization; D5 gives price-series cleanup. Neither quoted repair alone establishes both stages."
+  },
+  {
+    "question_id": "Q031",
+    "reviewed_question": "Which earlier Top 20 fix supports the later request to show 20 stocks by default?",
+    "reviewed_sha256": "ecf8bd50d2e6597a9e938d8f6736b199ba8bf7ceef13430e74f256bbb2895627",
+    "source_support": "reviewed",
+    "category_reason": "Connects the earlier data-supply fix with a separate later default-setting request.",
+    "cross_session_necessity": "D1 explains why 20 results can be displayed; D5 supplies the user’s desired default."
+  },
+  {
+    "question_id": "Q032",
+    "reviewed_question": "How do the stock-click rejection request and the final minigame wrong-guess report differ in allowing another attempt?",
+    "reviewed_sha256": "ac3f9a491d5d124da671d31362dedd074224b99fc3d35ff91cfe10f6347eb168",
+    "source_support": "reviewed",
+    "category_reason": "Compares failure handling in two distinct interactions without inventing a shared probability for minigame guesses.",
+    "cross_session_necessity": "D3 defines rejected dashboard clicks; D6 defines continued guessing after an incorrect ticker."
+  },
+  {
+    "question_id": "Q033",
+    "reviewed_question": "What distinct portfolio and minigame additions did I request without replacing the stock-analysis purpose?",
+    "reviewed_sha256": "b5782fb76db13cee63aac6dd0e343f583d3257dd2cbc183fc1d66ccc85fa2260",
+    "source_support": "reviewed",
+    "category_reason": "Integrates explicit requirements from the portfolio and game conversations, with the later priority statement limiting the game’s role.",
+    "cross_session_necessity": "D2 supplies the portfolio metrics; D6 supplies the guessing mechanic and secondary placement."
+  }
+]

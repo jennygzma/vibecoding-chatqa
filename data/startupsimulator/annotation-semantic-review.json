@@ -1,8 +1,8 @@
 [
   {
     "question_id": "Q001",
-    "reviewed_question": "What did I ask the first StartupSimulator prototype to let the player do?",
-    "reviewed_sha256": "02ebdff833ca2c047cf8c207bb1e24c23b55e4dbb78973ed3dee9ba7229e3f04",
+    "reviewed_question": "What did the user ask the first StartupSimulator prototype to let the player do?",
+    "reviewed_sha256": "fb48d5d97534614e151cee96641e3baa341cd699789780894423e73863293be2",
     "source_support": "reviewed",
     "category_reason": "Direct user scope and interaction preference; does not imply hiring or revenue existed in the first version."
   },
@@ -15,8 +15,8 @@
   },
   {
     "question_id": "Q003",
-    "reviewed_question": "What did my final main-build feedback say about the floor, despite earlier visual revisions?",
-    "reviewed_sha256": "a9850afb14e817381ec54b4a9e4dfd14f029b4eb3bf012adae1c804e3fbd8e37",
+    "reviewed_question": "What did the user's final main-build feedback say about the floor, despite earlier visual revisions?",
+    "reviewed_sha256": "d54cc2202599bb2cf561a63123229bc1394634cf7dddddc26578cb70ed68cb89",
     "source_support": "reviewed",
     "category_reason": "Direct user observation; intentionally does not accept earlier completion claims as proof that the visual issue was fixed."
   },
@@ -36,10 +36,10 @@
   },
   {
     "question_id": "Q006",
-    "reviewed_question": "What would a level-three Engineer earn per second under the reported base-rate and upgrade rules?",
-    "reviewed_sha256": "1a24f5ea1e00b21be88b115cd34fee7c9b17445276c0f1f10df3281b840a0a41",
+    "reviewed_question": "Before rounding, what level-three Engineer rate follows from the reported base rate and upgrade multiplier?",
+    "reviewed_sha256": "26fe0ddfaa0872840f341f126c84e985a321a1c245a17d8744d594bdbc2e1645",
     "source_support": "reviewed",
-    "category_reason": "Combines the Engineer base rate from D2:52 with the level-three multiplier in D2:92; the computed answer is not directly retrieved."
+    "category_reason": "Arithmetic on the reported base rate and multiplier; explicitly before rounding and not a runtime payout claim."
   },
   {
     "question_id": "Q007",
@@ -50,8 +50,8 @@
   },
   {
     "question_id": "Q008",
-    "reviewed_question": "What financial win condition did I request after adding workers and cereal?",
-    "reviewed_sha256": "c885b8708ff47c7cb7ea967379e0fbd27247e4f0ead9e0211359b65389ec0501",
+    "reviewed_question": "What financial win condition did the user request after adding workers and cereal?",
+    "reviewed_sha256": "55080ffd9bf29dda7d9dd7bc4749e98c483d3a799d789b493c041500111fd997",
     "source_support": "reviewed",
     "category_reason": "Direct game-design preference; does not merge this trigger with the separate Day 10 completion condition."
   },
@@ -92,8 +92,8 @@
   },
   {
     "question_id": "Q014",
-    "reviewed_question": "What replaced the continuous dash toggle after I clarified that I meant a short teleport?",
-    "reviewed_sha256": "b35b991153c280d91aaea0c898e7f01fa02bca048beed7b76597ab9fbb570b0b",
+    "reviewed_question": "What replaced the continuous dash toggle after the user clarified that the user meant a short teleport?",
+    "reviewed_sha256": "eec42f282a62eb6bd3718f4db182183bf241ab68e2995da999fccdfe5093c1f6",
     "source_support": "reviewed",
     "category_reason": "Connects the original toggle, the user correction, and the implemented blink; does not label ordinary revision chronology temporal."
   },
@@ -113,8 +113,8 @@
   },
   {
     "question_id": "Q017",
-    "reviewed_question": "What sofa control did I request in the lighting conversation?",
-    "reviewed_sha256": "35b08c1cb959d5e37f34a82d9a610f11f595b3b11d442a731ac7876d6bae3dfe",
+    "reviewed_question": "What sofa control did the user request in the lighting conversation?",
+    "reviewed_sha256": "76b3f95a6ead0ee95fa0773b8ae6d9a9b45241f94fcea5b92f6e1c9ecf8da304",
     "source_support": "reviewed",
     "category_reason": "Direct control preference; no inference from the implemented key aliases."
   },
@@ -127,8 +127,8 @@
   },
   {
     "question_id": "Q019",
-    "reviewed_question": "What bike behavior did I request for power above 100 in the final threshold revision?",
-    "reviewed_sha256": "bb78bb39126b506fb01395465a82d9bbe33ccc88cd35d3ed9e7bd899ac889a64",
+    "reviewed_question": "What bike behavior did the user request for power above 100 in the final threshold revision?",
+    "reviewed_sha256": "c938c55c44fd0f49d950f6430eb91a2e4f17ed50d84b8fec841a4f8a20f7505e",
     "source_support": "reviewed",
     "category_reason": "Direct timing preference from the final user revision; the question avoids ambiguous zone endpoints."
   },
@@ -141,8 +141,8 @@
   },
   {
     "question_id": "Q021",
-    "reviewed_question": "What did I want food delivery to change about the player’s stats?",
-    "reviewed_sha256": "2ae9c06e4b9f43b970b4a81808ff11f4d21ea2b06a0ab394499f51b0e9998bb2",
+    "reviewed_question": "What did the user want food delivery to change about the player’s stats?",
+    "reviewed_sha256": "6ca615aa3b2af15d1c8c35ba6e3b5b17a618eafcb6b0b755f70fae0dd646668f",
     "source_support": "reviewed",
     "category_reason": "The report confirms the user’s no-effect request; the answer is directly stated, so this is not multihop."
   },
@@ -155,8 +155,8 @@
   },
   {
     "question_id": "Q023",
-    "reviewed_question": "Did the reported double-jump level gate match my original “above level 5” request?",
-    "reviewed_sha256": "19c847bd9f439b3617af20a592c2fe791f3ff2fe71b5a4b912fdbf67cae11e8a",
+    "reviewed_question": "Did the reported double-jump level gate match the user's original “above level 5” request?",
+    "reviewed_sha256": "32ed7856752cc7da78f96332ffc2f4da10d2840628ad2ac7f542d60bf335e831",
     "source_support": "reviewed",
     "category_reason": "Explicitly distinguishes the user’s original request, later cap, and the agent’s different reported gate; does not misrepresent the change as user-approved."
   },
@@ -184,19 +184,19 @@
   },
   {
     "question_id": "Q027",
-    "reviewed_question": "Which two independent winning goals were described in the main-build and hiring conversations?",
-    "reviewed_sha256": "e467a67caed04b2cc14f526d731b87b0208553456afe760161688a64aef70ddf",
+    "reviewed_question": "What different win goals were described in the main-build report and the later hiring request?",
+    "reviewed_sha256": "501799dd3b36a0d3a16d21958741092d1ebf82ed49f065c0226c550374baa134",
     "source_support": "reviewed",
-    "category_reason": "Combines the launch completion condition with a separately requested money milestone; does not claim both must be satisfied.",
-    "cross_session_necessity": "D1 describes Day 10 completion; D2 introduces the money trigger."
+    "category_reason": "Compare the main-build win report with the later user request; do not assert that both goals coexist in the final implementation.",
+    "cross_session_necessity": "Compare the main-build win report with the later user request; do not assert that both goals coexist in the final implementation."
   },
   {
     "question_id": "Q028",
-    "reviewed_question": "For an Engineer at level 3 who is already on strike when a desk-swap timer expires, what income and swap behavior follow from the reports?",
-    "reviewed_sha256": "d6bbd1f37ee9494fab08755c224e15ea119b8d0c957752174941f0c37725f362",
+    "reviewed_question": "How does a worker strike affect both passive earnings and eligibility for the later desk swap?",
+    "reviewed_sha256": "6e49ce7f4e5a36bb32d779ce64ffee7151886c273d5fde0157ee3f6da32ce7ee",
     "source_support": "reviewed",
-    "category_reason": "Applies the strike income override and the separate swap guard; the higher level does not restore income during a strike.",
-    "cross_session_necessity": "D2 provides zero income during strikes; D6 provides the neither-worker-striking condition for swaps."
+    "category_reason": "Integrate the earnings effect of a strike with a later desk-swap gate; remove the irrelevant Engineer-level scenario.",
+    "cross_session_necessity": "Integrate the earnings effect of a strike with a later desk-swap gate; remove the irrelevant Engineer-level scenario."
   },
   {
     "question_id": "Q029",
@@ -216,10 +216,248 @@
   },
   {
     "question_id": "Q031",
-    "reviewed_question": "What extra eligibility and cost did the later double jump add beyond the parkour conversation’s ordinary free hop?",
-    "reviewed_sha256": "5244a119b16c1255ae61b847bf58e398b3658cd4866f2860891cbcb6c4a62f7a",
+    "reviewed_question": "How do the parkour free-hop report and later double-jump report differ in cost and eligibility?",
+    "reviewed_sha256": "931e2ccbfd2fbc9cbf9e8e50d5b714e884b2712085ec476c1b5ad681e933e341",
     "source_support": "reviewed",
-    "category_reason": "Combines the cost of the earlier ordinary hop with the later airborne action and its gates; states an incremental cost rather than ignoring other drains.",
-    "cross_session_necessity": "D4 supplies the regular hop’s four-point cost; D6 supplies the added five-point action and level/energy eligibility."
+    "category_reason": "Compare separately reported hop and double-jump rules without assuming that an earlier four-cost rule survived reconstruction.",
+    "cross_session_necessity": "Compare separately reported hop and double-jump rules without assuming that an earlier four-cost rule survived reconstruction."
+  },
+  {
+    "question_id": "Q032",
+    "reviewed_question": "Which business systems were explicitly absent from the first playable prototype?",
+    "reviewed_sha256": "72ada5a48d4ebea2254bfdc9f53e1ff913d31cb9fdf7cc49d0e369b77c592878",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve an explicit initial scope limit."
+  },
+  {
+    "question_id": "Q033",
+    "reviewed_question": "What coordinate-system change did the Pokémon-style conversion report?",
+    "reviewed_sha256": "826d46fba2de20057aa124dcfc5f4f2d01998148db93409fabdf0fd175b8a33a",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the reported projection and grid change; do not imply all renderer migration was finished at this point."
+  },
+  {
+    "question_id": "Q034",
+    "reviewed_question": "How did the later pixel-art reboot differ from the temporary smooth-rendering revision?",
+    "reviewed_sha256": "73516c7531a13ea9bb7dcd3309c55351e173460c6c94ea80f79c04157871076d",
+    "source_support": "reviewed",
+    "category_reason": "Compare two separate revision reports within D1."
+  },
+  {
+    "question_id": "Q035",
+    "reviewed_question": "What separate collision measurements did the walking-precision fix introduce?",
+    "reviewed_sha256": "892592e22cb175b3e79a95832e891e1ffea5dcc7351d1f3d1ea73c56acdb8851",
+    "source_support": "reviewed",
+    "category_reason": "Direct retrieval of distinct collision bounds."
+  },
+  {
+    "question_id": "Q036",
+    "reviewed_question": "How did founder work earnings scale from Day 1 to Day 10 in the money report?",
+    "reviewed_sha256": "c8d8d9e43b3af7e7c70bf3115f24b714826725aec7519dcbc1beea32ca2692de",
+    "source_support": "reviewed",
+    "category_reason": "Explicit day-indexed earnings rule."
+  },
+  {
+    "question_id": "Q037",
+    "reviewed_question": "How many workers could be hired, and when were their candidates chosen?",
+    "reviewed_sha256": "a0996382f6f4c23639aad6a2f3191b3a79a68fe07a8d32c7a4fe8723b96523be",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve capacity and day-based candidate selection."
+  },
+  {
+    "question_id": "Q038",
+    "reviewed_question": "Which founder upgrade replaced work’s energy cost with an energy gain?",
+    "reviewed_sha256": "0751dc7eec1837341edcecd5797092a5a105c1d18d85d8f3d5611a793f8c2cd4",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve one clearly described upgrade tradeoff."
+  },
+  {
+    "question_id": "Q039",
+    "reviewed_question": "How did the worker-firing report restore an occupied desk to the hiring flow?",
+    "reviewed_sha256": "19461d715d4e42ca4c142ee8be8e2bbb7a8a18b227e908b1dad215165f9bd3c9",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the documented lifecycle; not independently verified final behavior."
+  },
+  {
+    "question_id": "Q040",
+    "reviewed_question": "How did paying off a strike differ from granting a wage raise?",
+    "reviewed_sha256": "4881e936f89d649c6f562c9bac524dcf579f6fca975b72550e87357ac1b025c9",
+    "source_support": "reviewed",
+    "category_reason": "The resolution alternatives are directly described in one report."
+  },
+  {
+    "question_id": "Q041",
+    "reviewed_question": "What timing change made baseline stamina depletion faster during the health thread?",
+    "reviewed_sha256": "5bd4ddfe0ca90a61a267a72c5263f32f38ed9c9a458149991ff8e8300a2820aa",
+    "source_support": "reviewed",
+    "category_reason": "Compare explicit old and revised drain intervals within D3."
+  },
+  {
+    "question_id": "Q042",
+    "reviewed_question": "Why did the save-loading fix remove sleep from restored completed tasks?",
+    "reviewed_sha256": "3de33602c5eecf9f3c205471a1f886eb855598a14aaaa32120406d709e375868",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the actual reported save regression; completed sleep suppressed drain, rather than causing extra drain."
+  },
+  {
+    "question_id": "Q043",
+    "reviewed_question": "How did the peptide report distinguish recovery after a death from ordinary burnout recovery?",
+    "reviewed_sha256": "393389c8d6365aab902013a6d437be8515c2a731aeff4cfa352b446d0bb3db5b",
+    "source_support": "reviewed",
+    "category_reason": "Directly reported recovery values, not a temporal label merely because a day advances."
+  },
+  {
+    "question_id": "Q044",
+    "reviewed_question": "What did the continuous-dash revision report for stamina cost before Blink replaced it?",
+    "reviewed_sha256": "f213f83a35191460307aa59d8042610c62ec63d7f0a06cfede122e4170850ca7",
+    "source_support": "reviewed",
+    "category_reason": "Explicit historical drain rule and reported comparison."
+  },
+  {
+    "question_id": "Q045",
+    "reviewed_question": "What cost and cooldown did the Blink report attach to its three-tile move?",
+    "reviewed_sha256": "ca91f065c0658f4b8b0d3551ff37f4d3f0b05a104899df2bda02d43c2369efe7",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the action’s cost and timer."
+  },
+  {
+    "question_id": "Q046",
+    "reviewed_question": "How did sprinting change the reported vault reach and duration?",
+    "reviewed_sha256": "177615c5c298288988240a815f0c3bc5bbe30b4bd8b41c09f86bd9692b5df28c",
+    "source_support": "reviewed",
+    "category_reason": "The source directly reports reach and timing multipliers."
+  },
+  {
+    "question_id": "Q047",
+    "reviewed_question": "Were the overhead lights and floor lamp tied to one shared toggle?",
+    "reviewed_sha256": "88f496837fd6810b7dc8d4e1cdf5fc61365f3447edc38a61b4f75c9a8914c4c7",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve independent lighting controls."
+  },
+  {
+    "question_id": "Q048",
+    "reviewed_question": "What controls adjusted recline versus leaving the sofa?",
+    "reviewed_sha256": "9c66cca0b7699209afc9358b53fe8464c077a0fc309a07a6fa71fcd6fa8128e4",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve distinct seated controls without confusing recline and standing."
+  },
+  {
+    "question_id": "Q049",
+    "reviewed_question": "What happened to the lighting and usable appliances at zero electricity?",
+    "reviewed_sha256": "2833d254bb762308330348e8aae70929a7dc68bc1977a7b0ffd9c76c14bb9114",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve blackout state and appliance eligibility from one report."
+  },
+  {
+    "question_id": "Q050",
+    "reviewed_question": "What happened to bike power during and after a five-second overload?",
+    "reviewed_sha256": "566f99d8dfd785317096c20fba1f916374a22df0a2a5f2e23ac73e81d519a995",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the full explicit timed failure rule."
+  },
+  {
+    "question_id": "Q051",
+    "reviewed_question": "What caused game.js to need full reconstruction in the treadmill report?",
+    "reviewed_sha256": "0ffb893c4d912353df89d3f4d15c0a539332fac124f95abb19795bbb2b34b9fc",
+    "source_support": "reviewed",
+    "category_reason": "Record a source-reported failure/recovery, not proof that reconstruction preserved every prior feature."
+  },
+  {
+    "question_id": "Q052",
+    "reviewed_question": "How did a clean treadmill dismount differ from overexertion for workout credit?",
+    "reviewed_sha256": "1e7c8b976bf67377b8d9e07e10384654e4a2a1c04a84d13b599adb5b96c0c28a",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve the success/failure credit rule."
+  },
+  {
+    "question_id": "Q053",
+    "reviewed_question": "During which in-game hours was food delivery available?",
+    "reviewed_sha256": "6a21b71ee89984885d0bb4b086519148e92dde5b55b4ea36aeb17a1effdae3f7",
+    "source_support": "reviewed",
+    "category_reason": "Directly stated time-of-day availability."
+  },
+  {
+    "question_id": "Q054",
+    "reviewed_question": "What did the emoji-fix report establish versus merely hypothesize about the “only ramen” complaint?",
+    "reviewed_sha256": "89538a8850924036a43aff1a3558c413aa15e23adab849490a850c058df9cf60",
+    "source_support": "reviewed",
+    "category_reason": "Respect the report’s “almost certainly” qualification rather than upgrading a diagnosis to proof."
+  },
+  {
+    "question_id": "Q055",
+    "reviewed_question": "How did D serve both dancing and ordinary movement?",
+    "reviewed_sha256": "be64f6603181bdbc08cb70c93b540c9f061b726e3e4796045a681b2ce2c1e3a8",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve explicit context-dependent key routing."
+  },
+  {
+    "question_id": "Q056",
+    "reviewed_question": "What guarded against repeatedly double-jumping during one airborne jump?",
+    "reviewed_sha256": "8a2df2036ff3be90a951fbe4af20a810ffdeeb037a21f56fc6832ae83ce50f04",
+    "source_support": "reviewed",
+    "category_reason": "Retrieve per-jump and phase guards, distinct from the level/energy eligibility question."
+  },
+  {
+    "question_id": "Q057",
+    "reviewed_question": "How did business scope grow from the first prototype to the workers feature?",
+    "reviewed_sha256": "fa25b47bf6450774901143e18e3d46b5c26fb8976c416c66051f31e523fc6782",
+    "source_support": "reviewed",
+    "category_reason": "D1 establishes absent systems; D2 establishes the added revenue and hiring mechanisms.",
+    "cross_session_necessity": "D1 establishes absent systems; D2 establishes the added revenue and hiring mechanisms."
+  },
+  {
+    "question_id": "Q058",
+    "reviewed_question": "How did the daily completion rule change after the main-build loop gained a bed?",
+    "reviewed_sha256": "03ff3b0243938048c004e7cb71cfed6f5e90a80ebedc5682049a8958ffa87eb0",
+    "source_support": "reviewed",
+    "category_reason": "D1 supplies the original automatic four-task completion; D3 supplies the later explicit sleep gate.",
+    "cross_session_necessity": "D1 supplies the original automatic four-task completion; D3 supplies the later explicit sleep gate."
+  },
+  {
+    "question_id": "Q059",
+    "reviewed_question": "How did the coffee reward change from the day-one prototype to the health thread?",
+    "reviewed_sha256": "623cb84b93db2ab987f418bb4fd4e273523b03d757be20a43d9e1153d2efca49",
+    "source_support": "reviewed",
+    "category_reason": "D1 supplies the initial partial refill; D3 supplies the later full refill and timed cost. No claim that the early rule survives.",
+    "cross_session_necessity": "D1 supplies the initial partial refill; D3 supplies the later full refill and timed cost. No claim that the early rule survives."
+  },
+  {
+    "question_id": "Q060",
+    "reviewed_question": "How did the later electricity rules qualify the earlier Deep Work energy benefit?",
+    "reviewed_sha256": "938fbaf4b64e62ec60d60ae32661c773b1dee1c8f4a373eae0194bf436b6a2a7",
+    "source_support": "reviewed",
+    "category_reason": "D2 provides an energy upgrade; D5 provides an independent electricity cost, without claiming a verified final combination.",
+    "cross_session_necessity": "D2 provides an energy upgrade; D5 provides an independent electricity cost, without claiming a verified final combination."
+  },
+  {
+    "question_id": "Q061",
+    "reviewed_question": "How did the bike and treadmill reports differ in handling overload?",
+    "reviewed_sha256": "b4b353b5665f6a33f06156246fcfd407c31e37ac892862e9752b353a3050b2d8",
+    "source_support": "reviewed",
+    "category_reason": "D5 supplies bike recovery; D6 supplies the three-overload threshold and treadmill credit loss.",
+    "cross_session_necessity": "D5 supplies bike recovery; D6 supplies the three-overload threshold and treadmill credit loss."
+  },
+  {
+    "question_id": "Q062",
+    "reviewed_question": "How do cereal restocking and the later desk-swap mechanic respond differently to workers already on strike?",
+    "reviewed_sha256": "8db6c4fae6812af254364143bf611676bb49a147a93836fca209d67babd5002f",
+    "source_support": "reviewed",
+    "category_reason": "D2 provides strike-countdown extension versus active strikes; D6 provides the separate swap gate.",
+    "cross_session_necessity": "D2 provides strike-countdown extension versus active strikes; D6 provides the separate swap gate."
+  },
+  {
+    "question_id": "Q063",
+    "reviewed_question": "How did the reported set of vaultable furniture expand from parkour tables to the final features thread?",
+    "reviewed_sha256": "144acd87f8d98d86af31a9d48a77c86beccaff1c5c78df6d59e4d0f9fe69616e",
+    "source_support": "reviewed",
+    "category_reason": "D4 supplies table vaulting; D6 supplies the new desk types and their ordinary collision behavior.",
+    "cross_session_necessity": "D4 supplies table vaulting; D6 supplies the new desk types and their ordinary collision behavior."
+  },
+  {
+    "question_id": "Q064",
+    "reviewed_question": "What gives a successful workout a longer-term benefit beyond the treadmill’s immediate stamina effect?",
+    "reviewed_sha256": "ece8b860a3ba322b6a6b870a280299732b8d2678edc1f6faa4e62292758329fb",
+    "source_support": "reviewed",
+    "category_reason": "Integrate treadmill operation and a later progression addition within D6. This is not multi-session merely because it spans two prompts."
   }
 ]

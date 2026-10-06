@@ -18,6 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from app.cline_export import source_prose
+from michael_approval import validate_saved_review
 
 PROJECTS = {'stockapp': 'StockApp', 'startupsimulator': 'StartupSimulator', 'roompacker': 'Roompacker'}
 LABELS = {'single-session', 'multi-session', 'singlehop', 'multihop',
@@ -226,9 +227,17 @@ All eight Focus Desk labels have grounded examples. The smaller set removes
 repetitive control, color and implementation-detail lookups. No count or category
 percentage was used as a target.
 '''
+    approval = validate_saved_review(root, {project: (
+        (json.dumps(questions, indent=2, ensure_ascii=False) + '\n').encode(),
+        files['vibe_combined.json'])})
+    approval_text = (f"Human approval: approved for all {len(questions)} current questions. "
+                     f"The [saved human review](../michael-annotation-review.json), exported "
+                     f"at {approval['exported_at']}, matches this revision, every row checksum "
+                     "and the complete combined export."
+                     if approval else "Human approval of this revised set: pending.")
     files['README.md'] = f'''# {PROJECTS[project]} dataset
 
-Editorial status: agent-reviewed. Human approval of this revised set: pending.
+Editorial status: agent-reviewed. {approval_text}
 
 The canonical set contains {len(questions)} questions, {summary['citations']} exact
 evidence excerpts and {len(all_messages)} public messages across six original Cline
@@ -257,6 +266,9 @@ python3 -m unittest discover -s scripts -p test_michael_dataset.py
 The specification and semantic review are authored inputs. Building resolves
 original message IDs into citations and creates derived exports; it never
 updates a review's checksum to bless an edited question automatically.
+Saved human approval is validated separately by `scripts/michael_approval.py`.
+A stale or incomplete saved review fails the build; editorial review records
+retain the status recorded when they were authored.
 
 Earlier per-trajectory output.json files are preserved for traceability and are
 excluded from the master in favor of this annotations.json. Their prior researcher

@@ -1,7 +1,7 @@
 [
   {
     "question_id": "Q001",
-    "question": "What did I want the first StockApp to do, and where should it run?",
+    "question": "What did the user want the first StockApp to do, and where should it run?",
     "category": [
       "single-session",
       "singlehop",
@@ -19,7 +19,7 @@
   },
   {
     "question_id": "Q002",
-    "question": "In the main-build conversation, what display changes did I want to make without refreshing stock data?",
+    "question": "In the main-build conversation, what display changes did the user want to make without refreshing stock data?",
     "category": [
       "single-session",
       "singlehop",
@@ -32,7 +32,7 @@
         "excerpt": "make it so that when i switch formats there's no data refresh. data refresh should only happen when i click the button."
       }
     ],
-    "answer": "Switch display formats; fetch fresh data only when I click the refresh button.",
+    "answer": "Switch display formats; fetch fresh data only when the user clicks the refresh button.",
     "requires_answers": []
   },
   {
@@ -204,7 +204,7 @@
   },
   {
     "question_id": "Q009",
-    "question": "What deadline did I request for the mute-alarm chase?",
+    "question": "What deadline did the user request for the mute-alarm chase?",
     "category": [
       "single-session",
       "singlehop",
@@ -240,7 +240,7 @@
   },
   {
     "question_id": "Q011",
-    "question": "What stock-click rejection probability did I ask for?",
+    "question": "What stock-click rejection probability did the user ask for?",
     "category": [
       "single-session",
       "singlehop",
@@ -258,7 +258,7 @@
   },
   {
     "question_id": "Q012",
-    "question": "How long did I ultimately want the red denial screen to last in the visuals conversation?",
+    "question": "How long did the user ultimately want the red denial screen to last in the visuals conversation?",
     "category": [
       "single-session",
       "singlehop",
@@ -487,7 +487,7 @@
   },
   {
     "question_id": "Q022",
-    "question": "How did I correct the first minigame concept?",
+    "question": "How did the user correct the first minigame concept?",
     "category": [
       "single-session",
       "multihop",
@@ -510,7 +510,7 @@
         "excerpt": "given stats/numbers about a stock, guess its ticker"
       }
     ],
-    "answer": "I wanted players to identify a ticker from stock numbers, rather than predict whether its price would go up or down.",
+    "answer": "The user wanted players to identify a ticker from stock numbers, rather than predict whether its price would go up or down.",
     "requires_answers": []
   },
   {
@@ -600,7 +600,7 @@
   },
   {
     "question_id": "Q027",
-    "question": "What place did I want the ticker minigame to have within StockApp?",
+    "question": "What place did the user want the ticker minigame to have within StockApp?",
     "category": [
       "single-session",
       "singlehop",
@@ -734,57 +734,789 @@
   },
   {
     "question_id": "Q032",
-    "question": "How do the stock-click rejection request and the final minigame wrong-guess report differ in allowing another attempt?",
+    "question": "Which earlier ticker-link rule should keep link navigation separate from the later stock-row rejection?",
     "category": [
       "multi-session",
-      "multihop"
+      "multihop",
+      "knowledge-facts"
     ],
     "citations": [
       {
+        "session": "D1",
+        "original_message_id": "msg_UYgwHHXW",
+        "excerpt": "- **Row (table view):** The ticker symbol (e.g. `NVDA`) is now an `<a>` tag linking to `https://finance.yahoo.com/quote/NVDA` that opens in a new tab. `onclick=\"event.stopPropagation()\"` prevents the link click from also triggering the row's modal — so clicking the ticker = Yahoo Finance, clicking anywhere else on the row = modal."
+      },
+      {
         "session": "D3",
-        "original_message_id": "msg_mud6biym_125",
-        "excerpt": "Make the stock app have a 50% chance of rejecting your attempt to click on a stock"
-      },
-      {
-        "session": "D6",
-        "original_message_id": "msg_g4zJvh9w",
-        "excerpt": "**Wrong guess** → `answered` stays `false`"
-      },
-      {
-        "session": "D6",
-        "original_message_id": "msg_g4zJvh9w",
-        "excerpt": "player can keep guessing"
+        "original_message_id": "msg_uxhpLeiS",
+        "excerpt": "### On a **lucky** click (50%)"
       }
     ],
-    "answer": "A stock click may be rejected with 50% probability; a wrong ticker guess keeps the round open so the player can keep guessing.",
+    "answer": "Stopping click propagation lets the ticker link open Yahoo Finance without invoking the row handler; the later rejection report applies to clicks that reach the stock-row interaction.",
     "requires_answers": []
   },
   {
     "question_id": "Q033",
-    "question": "What distinct portfolio and minigame additions did I request without replacing the stock-analysis purpose?",
+    "question": "How do formula weights and portfolio weights operate at different levels?",
     "category": [
       "multi-session",
       "multihop",
-      "preference"
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_M9fIdj86",
+        "excerpt": "- `openModal()` — each subscore row now shows `×15%` (etc.) in accent blue next to the signal name, showing exactly how much that signal contributed to this particular run's score"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- **Weighted AI Score** — value-weighted average of each holding's AI score"
+      }
+    ],
+    "answer": "Formula weights combine signals into a stock score; portfolio weighting combines holdings’ stock scores according to the value of each holding.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q034",
+    "question": "How did the compact-layout report reduce each stock card’s height?",
+    "answer": "From roughly 420 pixels to a 44-pixel row, while retaining detail in the modal.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_-igj4AqH",
+        "excerpt": "| Each stock card | ~420px tall (3-column grid) | **44px tall row** |"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_-igj4AqH",
+        "excerpt": "**Click a row** to open the full detail modal — all the rich info (score breakdown bars, rationale, metrics, 52-week range) is still there, just out of the way on the main view."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q035",
+    "question": "What happened when a user clicked a ticker link rather than the rest of its row?",
+    "answer": "The ticker opened Yahoo Finance in a new tab; stopping propagation prevented that click from also opening the stock modal.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_UYgwHHXW",
+        "excerpt": "- **Row (table view):** The ticker symbol (e.g. `NVDA`) is now an `<a>` tag linking to `https://finance.yahoo.com/quote/NVDA` that opens in a new tab. `onclick=\"event.stopPropagation()\"` prevents the link click from also triggering the row's modal — so clicking the ticker = Yahoo Finance, clicking anywhere else on the row = modal."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q036",
+    "question": "How did the random-formula report produce bounded weights summing to one?",
+    "answer": "Sample a symmetric Dirichlet distribution with α = 2, clamp weights to signal bounds, then renormalize.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_M9fIdj86",
+        "excerpt": "- `generate_random_weights()` — samples from a symmetric Dirichlet(α=2) distribution, clamps each weight to its bounds, then renormalises to guarantee sum = 1.0 exactly"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q037",
+    "question": "What kept the chosen light or dark theme after a reload?",
+    "answer": "Saving the choice in localStorage and applying it before rendering on page load.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_nVbQUHt1",
+        "excerpt": "- `toggleTheme()` — toggles `body.light`, flips the button icon between `☾` (dark) and `☀` (light), saves the choice to `localStorage`"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_nVbQUHt1",
+        "excerpt": "- `applyStoredTheme()` — runs on page load before anything renders, restores the saved preference so the chosen mode persists across sessions and refreshes"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q038",
+    "question": "What short-interest score did the report assign above 30%, and what interpretation accompanied it?",
+    "answer": "40, interpreted as an extreme level that could indicate a value trap.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_8PmNVWtz",
+        "excerpt": "| > 30% | 40 | Extreme — possible value trap |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q039",
+    "question": "When did the initial portfolio implementation save a holding’s share count?",
+    "answer": "Immediately when the share count was typed, to the sp_portfolio localStorage key.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
     ],
     "citations": [
       {
         "session": "D2",
-        "original_message_id": "msg_mu0mk3ba_8c4",
-        "excerpt": "Show a \"My Portfolio\" view with total value, daily P\\&L, and weighted average AI score across their holdings."
-      },
-      {
-        "session": "D6",
-        "original_message_id": "msg_muelsfzc_hfb",
-        "excerpt": "give u some numbers about the stock and u have to guess the ticker"
-      },
-      {
-        "session": "D6",
-        "original_message_id": "msg_mueqvaq5_pko",
-        "excerpt": "verify that the ticker game is a sidebar thing and not the main focus."
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- Typing a share count **auto-saves to `localStorage`** (key: `sp_portfolio`) and instantly updates the per-row value"
       }
     ],
-    "answer": "A holdings view with total value, daily P&L and weighted AI score, plus a secondary ticker-guessing game.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q040",
+    "question": "What did the score-history chart show before it had two data points?",
+    "answer": "A placeholder asking the user to refresh a few more times.",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- If fewer than 2 data points exist, a friendly \"refresh a few more times\" placeholder is shown instead"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q041",
+    "question": "Which additional sector groups did the expanded-universe report introduce?",
+    "answer": "International ADRs, ETFs, and Crypto-Adjacent.",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- **New sector — International ADRs:** ASML, SAP, NVO, AZN, SHEL, BABA, TSM, SE, MELI, PDD, SONY, TM, HMC, BIDU, JD"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- **New sector — ETFs:** SPY, QQQ, IWM, DIA, VTI, XLK, XLF, XLV, XLE, ARKK, GLD, SLV, TLT, HYG, VNQ"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- **New sector — Crypto-Adjacent:** COIN, MSTR, MARA, RIOT, CLSK, HUT, BTBT + others"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q042",
+    "question": "What code path did a custom ticker reuse, and which extra records did the result update?",
+    "answer": "The existing /api/stock/<ticker> endpoint; it also saved score history and checked alerts.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- It calls the existing `/api/stock/<ticker>` endpoint, shows an info banner while loading, then opens the full detail modal — including score breakdown, history chart, and alert setting"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- The result is also saved to score history and checked against existing alerts"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q043",
+    "question": "Which feature did the agent flag as lacking end-to-end testing?",
+    "answer": "The Recommendations tab.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_yyisbEQh",
+        "excerpt": "The shell has been dead this entire session, which means **Feature 8 (Recommendations tab) has never been tested end-to-end**. Before building anything new, the single most valuable thing to do is:"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q044",
+    "question": "What finally stopped the mute-chase alarm when its moving button was caught?",
+    "answer": "Closing its AudioContext cut the sound, then the overlay and animation timers were torn down.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_IHHaF2Hq",
+        "excerpt": "**Click handler:** calls `audioCtx.close()` which immediately destroys the Web Audio graph and cuts all sound mid-note, then calls `_hideMuteChase()` to tear down the UI."
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_IHHaF2Hq",
+        "excerpt": "| `_hideMuteChase()` | Cancels the rAF fade loop, clears the teleport timeout, removes the overlay element from the DOM |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q045",
+    "question": "How did the mute-chase countdown escalate its warnings before the deadline?",
+    "answer": "Gold at ten seconds or less; flashing red at five seconds or less, with a 20-second deadline.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_p805XuDs",
+        "excerpt": "- **≤ 10s** → turns **gold** (`.warn` class)"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_p805XuDs",
+        "excerpt": "- **≤ 5s** → turns **red and flashes** rapidly (`.panic` class, `@keyframes countdown-flash`)"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_p805XuDs",
+        "excerpt": "A `setTimeout(..., 20_000)` fires `_explodePage(audioCtx)` if `_muteChaseMuted` is still `false`. Clicking the button sets that flag first, so a last-millisecond catch still saves you."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q046",
+    "question": "What did Pause Feed stop in the live-feed report?",
+    "answer": "The feed engine and associated live UI state; the report said it stopped everything cleanly and reset that state.",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_mg2_Izoo",
+        "excerpt": "- Clicking **`⏸ Pause Feed`** stops everything cleanly and resets all UI state"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q047",
+    "question": "What final duration did the user-driven rejection-flash revision report?",
+    "answer": "Exactly one second from flashing in to being fully gone.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_IAbE9BX2",
+        "excerpt": "Done — the red screen now flashes in fast and is fully gone within exactly **1 second**."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q048",
+    "question": "Where did the Random button obtain a ticker if no stock data had loaded?",
+    "answer": "A hardcoded fallback list of 30 tickers, then the existing custom-ticker lookup.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_G-whlCf2",
+        "excerpt": "2. **Falls back to a hardcoded list** of 30 well-known tickers if data hasn't loaded yet"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_G-whlCf2",
+        "excerpt": "3. **Fills the ticker input** and calls the existing `lookupCustomTicker()` function, which fetches a full AI score and opens the detail modal — no duplicate code"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q049",
+    "question": "What changed about the floating Random button’s direction when a pause ended?",
+    "answer": "It chose a new angle anywhere around 360° and new velocity components before resuming.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_nNUUhEsB",
+        "excerpt": "Looks perfect. It was a one-line answer really — the old code never touched `_floatVX`/`_floatVY` on resume. Now when the pause ends, it calculates a fresh `angle` (full 360° random) and sets new velocity components before unfreezing, so it drifts off in a completely different direction each time."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q050",
+    "question": "How did the floating button’s spin behave while paused?",
+    "answer": "Its angle froze; resuming chose a new spin of 1–3 degrees per frame in either direction.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_CyGG4HmY",
+        "excerpt": "- In **`_floatLoop`**: `_floatAngle += _floatSpin` every frame, applied as `btn.style.transform = rotate(${_floatAngle}deg)`. Spin stops (angle freezes) while paused, resumes right where it left off"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_CyGG4HmY",
+        "excerpt": "- In **`_scheduleNextPause`** on resume: picks a new `_floatSpin` between **1–3 deg/frame** with a **random clockwise or counter-clockwise direction**, so each stretch of movement has its own spin personality"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q051",
+    "question": "Why was removing position transitions sensible once the button moved on every animation frame?",
+    "answer": "Otherwise CSS interpolation would compete with the frame-driven position updates, adding lag or conflicting motion.",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_pRagwVO8",
+        "excerpt": "- Removed `top`/`left` from the `transition` list — the position is now driven by `requestAnimationFrame` every frame, so CSS transitions on those properties would only fight the animation"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q052",
+    "question": "Which daily-change heuristic did the data-bug diagnosis identify as wrong?",
+    "answer": "Multiplying a percentage by 100 whenever its absolute value was below one; the report said the input was already a full percentage.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_13utzmZn",
+        "excerpt": "**Root cause:** `regularMarketChangePercent` from yfinance is already a **full percentage** (e.g. `0.227` = 0.227%, not a decimal fraction). The code's heuristic — \"if `abs(val) < 1`, multiply by 100\" — is wrong: a 0.23% move gets multiplied to `22.7%`, while a -3.42% move is correctly left alone."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q053",
+    "question": "What happened to existing card nodes and sparklines during FLIP reordering?",
+    "answer": "The existing DOM nodes were moved rather than destroyed, preserving their sparklines.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_CVk-oDG9",
+        "excerpt": "This means the card DOM nodes are **reused** (never destroyed/recreated on resort), so sparklines stay intact too."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q054",
+    "question": "How did the rainbow list assign and update a card’s hue?",
+    "answer": "Hue was index / total × 360; resorting reassigned hues by the new position rather than keeping a permanent ticker color.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_htpwmKB5",
+        "excerpt": "- A `--card-hue` CSS custom property is set directly on each card element via `card.style.setProperty('--card-hue', hue)`, where `hue = (index / total) * 360`"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_htpwmKB5",
+        "excerpt": "**When you re-sort** (e.g. switch from Score → RSI), cards move to their new positions *and* their hues update to match the new order — so the rainbow always runs top to bottom regardless of sort."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q055",
+    "question": "How could the user force fresh external data instead of reusing the five-minute cache?",
+    "answer": "Ctrl-click or Command-click Refresh to call DELETE /api/cache before fetching again.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_mkkRAsZO",
+        "excerpt": "Each ticker is cached individually with a Unix timestamp. TTL is **5 minutes**. This is the right granularity because:"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_mkkRAsZO",
+        "excerpt": "- **Ctrl+click (or ⌘+click) the Refresh button** → calls `DELETE /api/cache` first, then re-fetches — guaranteed fresh data from yfinance"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q056",
+    "question": "What happened to a News Hint’s point penalty when no news was available?",
+    "answer": "The game showed an error card but still deducted 75 points.",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_FBDuyCOr",
+        "excerpt": "| No news available | Graceful error card shown, 75 pts still deducted |"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q057",
+    "question": "Why was placing Penny outside the minigame card’s DOM useful?",
+    "answer": "It let the mascot persist while the card rerendered after clues and guesses.",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_F7uudoCP",
+        "excerpt": "**Penny** is a cute mascot character who lives in the bottom-right corner of the minigame overlay, outside the card's DOM so she **persists across all re-renders**. She has a speech bubble with a CSS triangle tail pointing down to her face emoji."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q058",
+    "question": "How do score-history deduplication and the later ticker cache use the same five-minute interval for different purposes?",
+    "answer": "History suppresses repeated recorded samples; the cache avoids external refetches for fresh ticker data. One does not substitute for the other.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- Every time `loadStocks()` or a custom ticker lookup runs, **each ticker's score is stored with a UTC timestamp** in `localStorage` (key: `sp_score_history`), with a 5-minute dedup guard to prevent noise from rapid refreshes. Up to 60 data points are kept per ticker"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_mkkRAsZO",
+        "excerpt": "Each ticker is cached individually with a Unix timestamp. TTL is **5 minutes**. This is the right granularity because:"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q059",
+    "question": "How does the later force-refresh shortcut differ from the original manual-refresh preference?",
+    "answer": "The user originally wanted display changes not to refresh data; later ordinary Refresh could reuse fresh cache entries, while modifier-click explicitly evicted the cache first.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "preference",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_mtz1gdfr_4c4",
+        "excerpt": "make it so that when i switch formats there's no data refresh. data refresh should only happen when i click the button."
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_mkkRAsZO",
+        "excerpt": "- A **Refresh** reuses everything still fresh, only re-fetches tickers whose 5 minutes have expired"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_mkkRAsZO",
+        "excerpt": "- **Ctrl+click (or ⌘+click) the Refresh button** → calls `DELETE /api/cache` first, then re-fetches — guaranteed fresh data from yfinance"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q060",
+    "question": "How did stock-card animation change between staggered entry and the later sort animation?",
+    "answer": "Initial cards entered 55 ms apart; later sorts moved existing cards with FLIP rather than recreating them, while initial loads still staggered.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_mg2_Izoo",
+        "excerpt": "Every time stocks load or filters change, each card **slides in from the left** with a springy cubic-bezier easing (`cardSlideIn` keyframe). Cards are staggered **55ms apart** — so card #1 enters first, then #2, then #3... creating a satisfying cascade waterfall effect on every data load or sort change."
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_ZgaSdGCp",
+        "excerpt": "- **Initial load** still uses the original staggered `card-enter` slide-in (the `grid.children.length === 0` branch)"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_ZgaSdGCp",
+        "excerpt": "2. **Last** — reorder the DOM nodes by `appendChild`-ing them in the new sort order (they teleport instantly)"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q061",
+    "question": "How did the alert mute button’s motion differ from the later Random button’s motion?",
+    "answer": "The mute button teleported at randomized intervals, later accelerating toward a deadline; the Random button followed continuous velocity and bounced at viewport edges.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "temporal",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_IHHaF2Hq",
+        "excerpt": "**Teleport loop:** recursive `setTimeout` with a random 600–1200ms delay each time, so the rhythm is unpredictable — you can't learn the pattern."
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_p805XuDs",
+        "excerpt": "The button teleport interval is no longer fixed at 600–1200ms. It now computes a `frac` (0→1 over 20 seconds) and shrinks the interval linearly:"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_pRagwVO8",
+        "excerpt": "- **`_floatLoop()`** — runs every animation frame via `requestAnimationFrame`. Moves the button by its velocity each frame, then checks all 4 viewport edges and **flips the velocity** on contact (classic billiard-ball bounce). Keeps the button fully on-screen at all times."
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q062",
+    "question": "What shared browser facility produced both the alert alarm and the stock-rejection laugh?",
+    "answer": "Web Audio synthesis: the alarm layered oscillators and an LFO, while the laugh used six synthesized voices without external sound files.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_3mQqxrTR",
+        "excerpt": "Three layers play simultaneously, scheduled ahead of time on the Web Audio clock so timing is sample-accurate:"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_3mQqxrTR",
+        "excerpt": "| **20 Hz square LFO** into the sawtooth gain | Amplitude tremolo at 20 Hz chops the sound on/off fast enough to sound like a rattle or buzz rather than a smooth tone. |"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_P6YZ5Pvu",
+        "excerpt": "**Zero files, zero CDN, zero permissions.** It's entirely synthesized live using the browser's built-in **Web Audio API**."
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_P6YZ5Pvu",
+        "excerpt": "Each \"laugh\" is built from **6 overlapping voices**, all playing simultaneously with staggered offsets so it sounds like a *crowd* not one person:"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q063",
+    "question": "Which main-build stock measures later became ordered clues in the ticker game?",
+    "answer": "Examples include sector, P/E, RSI, 52-week range, EPS growth, profit margin, debt/equity, and the sparkline. The game reused analysis measures as identification clues.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "| EPS Growth | 20% | Earnings growth YoY |"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "| Profit Margin | 10% | Net profit margin |"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "| Debt/Equity | 10% | Balance sheet strength |"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "- 📏 **52-week range bar** showing where price sits today"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "- 🕯 **Sparkline charts** (90-day, no library — pure Canvas)"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_fYZci8yi",
+        "excerpt": "- 🔽 **Filters**: sector, top N (5/10/15/20), sort by score / daily change / P/E / RSI"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_obaA2StW",
+        "excerpt": "- Sector → Market Cap → P/E Ratio → RSI → 52-Week Range → EPS Growth → Profit Margin → Debt/Equity → Sparkline chart → Dividend Yield"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q064",
+    "question": "How did the custom-ticker path support both a user-specified symbol and a later random choice?",
+    "answer": "The portfolio/features thread exposed an arbitrary-ticker input using /api/stock/<ticker>; the Random button filled that input and called lookupCustomTicker rather than duplicating scoring logic.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- Type any ticker symbol (e.g., `ABNB`, `BTC-USD`, `ARM`) and press Enter or click the button"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_ZkZDb6UU",
+        "excerpt": "- It calls the existing `/api/stock/<ticker>` endpoint, shows an info banner while loading, then opens the full detail modal — including score breakdown, history chart, and alert setting"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_G-whlCf2",
+        "excerpt": "3. **Fills the ticker input** and calls the existing `lookupCustomTicker()` function, which fetches a full AI score and opens the detail modal — no duplicate code"
+      }
+    ],
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q065",
+    "question": "How did card-color assignment differ from the earlier light/dark theme implementation?",
+    "answer": "The theme replaced shared UI color tokens and persisted a user choice; the later rainbow feature assigned hues by each card’s current sorted position and adapted them for light mode.",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_nVbQUHt1",
+        "excerpt": "- Added a `body.light { }` block that overrides just the 11 colour tokens — every other rule already uses `var(--*)` so the entire UI flips automatically"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_nVbQUHt1",
+        "excerpt": "- `toggleTheme()` — toggles `body.light`, flips the button icon between `☾` (dark) and `☀` (light), saves the choice to `localStorage`"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_htpwmKB5",
+        "excerpt": "- A `--card-hue` CSS custom property is set directly on each card element via `card.style.setProperty('--card-hue', hue)`, where `hue = (index / total) * 360`"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_htpwmKB5",
+        "excerpt": "Light mode is also handled with adjusted saturation/lightness values that work on the white background."
+      }
+    ],
     "requires_answers": []
   }
 ]

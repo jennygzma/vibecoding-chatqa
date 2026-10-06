@@ -7,6 +7,7 @@ import argparse
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
+from michael_approval import APPROVED, PENDING, validate_saved_review
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -27,12 +28,12 @@ PROJECTS = {
     "cedar_table": ("cedar-table", "Cedar Table", "reviewed-pending-approval"),
     "focus_desk": ("focus-desk", "Focus Desk", "reviewed-pending-approval"),
     "pantry_lane": ("pantry-lane", "Pantry Lane", "reviewed-pending-approval"),
-    "roompacker": ("roompacker", "Roompacker", "agent-reviewed-human-review-pending"),
+    "roompacker": ("roompacker", "Roompacker", PENDING),
     "mahjong": ("mahjong", "Mahjong", "reviewed-pending-approval"),
     "notesense": ("notesense", "NoteSense", "status-not-recorded"),
     "snakegame": ("snakegame", "Snake Game", "status-not-recorded"),
-    "startupsimulator": ("startupsimulator", "StartupSimulator", "agent-reviewed-human-review-pending"),
-    "stockapp": ("stockapp", "StockApp", "agent-reviewed-human-review-pending"),
+    "startupsimulator": ("startupsimulator", "StartupSimulator", PENDING),
+    "stockapp": ("stockapp", "StockApp", PENDING),
 }
 CURATED = {"stockapp", "startupsimulator", "roompacker"}
 COMBINED = CURATED | {"cedar_table", "focus_desk", "pantry_lane", "mahjong"}
@@ -84,6 +85,7 @@ def load_annotations(path: Path) -> list[dict]:
 
 
 def build() -> dict:
+    approval = validate_saved_review(ROOT)
     annotations = []
     sources = []
     project_counts: dict[str, Counter] = defaultdict(Counter)
@@ -94,6 +96,8 @@ def build() -> dict:
         relative = path.relative_to(ROOT).as_posix()
         folder = path.parent.name
         project, project_name, review_status = project_info(folder)
+        if folder in CURATED and approval:
+            review_status = APPROVED
         rows = load_annotations(path)
         source_id = folder
         trajectory = "combined" if folder in COMBINED else folder
@@ -148,6 +152,10 @@ def build() -> dict:
             }
         )
         semantic_review = path.parent / "annotation-semantic-review.json"
+        if folder in CURATED and approval:
+            sources[-1]["human_review_path"] = approval["path"]
+            sources[-1]["human_review_sha256"] = approval["sha256"]
+            sources[-1]["human_review_exported_at"] = approval["exported_at"]
         if semantic_review.is_file():
             sources[-1]["semantic_review_path"] = semantic_review.relative_to(ROOT).as_posix()
             sources[-1]["semantic_review_sha256"] = hashlib.sha256(semantic_review.read_bytes()).hexdigest()
@@ -192,7 +200,7 @@ def build() -> dict:
         "selection_policy": {
             "canonical_michael_sets": [f"data/{project}/annotations.json" for project in sorted(CURATED)],
             "excluded": "Superseded Michael per-trajectory outputs, earlier Roompacker drafts, revisions, and duplicate combined representations.",
-            "review_scope": "Michael's current sets were re-curated against Focus Desk; earlier researcher approvals apply only to the preserved prior versions. Other contributors' annotations retain their recorded status.",
+            "review_scope": "Michael's human approval is derived only from a validated saved review matching current revisions, complete unique question coverage, row checksums, approved decisions and combined exports. Earlier researcher approvals apply only to the preserved prior versions. Other contributors' annotations retain their recorded status.",
         },
         "projects": projects,
         "sources": sources,

@@ -1,0 +1,910 @@
+[
+  {
+    "question_id": "Q001",
+    "question": "What did I want in the first Roompacker prototype?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "ca3e5afb-c869-4705-9105-3d28e3355243",
+        "excerpt": "First make a 64x64 chessboard that I can launch to a local web app. Literally just a 64x64 chess board and nothing else."
+      }
+    ],
+    "answer": "Only a 64-by-64 chessboard running as a local web app.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q002",
+    "question": "What rectangle should clicking a non-adjacent square select under my revised selection request?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "d628cbff-fcb0-405d-b447-f3dd03b2397c",
+        "excerpt": "If they are not adjacent highlight the smallest rectangle between them"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_PXW0VEbk",
+        "excerpt": "smallest bounding box containing the existing selection **and** the new cell"
+      }
+    ],
+    "answer": "The smallest rectangle enclosing the selection and the newly clicked square.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q003",
+    "question": "In the main-build report, what happened when a dragged table was released on an occupied position?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_p80TOB2d",
+        "excerpt": "the table **snaps back** to its original position"
+      }
+    ],
+    "answer": "It snapped back to its original position.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q004",
+    "question": "What size and shape did I request for a straight couch?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "0146dd37-9aac-45b7-910c-f9df976562ac",
+        "excerpt": "A couch must have a minimum 1x2 and is restricted to 1xn."
+      }
+    ],
+    "answer": "A one-by-N strip with a minimum size of one by two cells.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q005",
+    "question": "Under the original chair-adjacency report, did a diagonal table neighbor qualify?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_wOdjI5bl",
+        "excerpt": "Checks the 4 orthogonal neighbours `(±1, 0)` and `(0, ±1)`"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_wOdjI5bl",
+        "excerpt": "Couches and other chairs don't count — only actual tables."
+      }
+    ],
+    "answer": "No; only the four orthogonal neighbors were checked, and the neighbor had to be a table.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q006",
+    "question": "How did the occupancy representation change to support chair stacking?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_xMNAxHzs",
+        "excerpt": "`tableGrid` stores the occupying piece's id at each cell"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_AgfEpQwR",
+        "excerpt": "Now it holds an **array of ids**"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_AgfEpQwR",
+        "excerpt": "`push(t.id)` (no duplicates)"
+      }
+    ],
+    "answer": "It changed from one piece ID per cell to an array of IDs.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q007",
+    "question": "Did the reported default L-sofa occupy the three cells I originally requested?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "a7929ebf-6570-46b2-bd10-9bf21079168d",
+        "excerpt": "a basic 3-piece L"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_RQGtb1OJ",
+        "excerpt": "**`cornerR, cornerC`**"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_RQGtb1OJ",
+        "excerpt": "horizontal arm length (minimum 2, default 3)"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_RQGtb1OJ",
+        "excerpt": "vertical arm length (minimum 2, default 3)"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_RQGtb1OJ",
+        "excerpt": "`\"se\" | \"sw\" | \"ne\" | \"nw\"`"
+      }
+    ],
+    "answer": "No; two length-three arms sharing one corner occupy five cells, rather than the requested three.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q008",
+    "question": "Why should an L-sofa collision check use occupied cells rather than its full bounding box?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_RQGtb1OJ",
+        "excerpt": "conflict detection properly checks only the actual occupied cells (not the bounding box)"
+      }
+    ],
+    "answer": "It avoids treating the empty inside of the L as solid furniture.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q009",
+    "question": "What constraints did I set for custom-shaped furniture?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "c31871b8-6341-4bd7-91f2-2a6ae7607bf1",
+        "excerpt": "we can select multiple adjacent cells given that each cell can go to another if we walk only through adjacent cells, but the furniture is capped at 16 grid squares."
+      }
+    ],
+    "answer": "All selected cells must connect through adjacent cells, with at most 16 grid squares.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q010",
+    "question": "What table size limits did I request in the shapes conversation?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "2dbc6014-4a23-4b04-b09c-15e6e8056285",
+        "excerpt": "make tables minimum 2x3 max 16x24"
+      }
+    ],
+    "answer": "Minimum 2 by 3 cells; maximum 16 by 24 cells.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q011",
+    "question": "What workflow replaced the separate donut-placement mode?",
+    "category": [
+      "single-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_iQj445IN",
+        "excerpt": "Click **🍩 Donut [O]** or press **O**"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_e8Ppw0Nw",
+        "excerpt": "**punching a hole through an existing table**"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_e8Ppw0Nw",
+        "excerpt": "Press **`U`** → the table converts to a donut"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_e8Ppw0Nw",
+        "excerpt": "leaving at least **1 cell of border** on all four sides"
+      }
+    ],
+    "answer": "Select an interior rectangle in an existing table and press U to punch a hole, leaving at least one border cell on every side.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q012",
+    "question": "What did the final shapes-thread report say remained after table fracturing?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_Rj31PJq0",
+        "excerpt": "Spawns up to 4 replacement shards"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_Rj31PJq0",
+        "excerpt": "Any shard with zero area is silently skipped"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_Rj31PJq0",
+        "excerpt": "**Shards keep the victim's color**"
+      }
+    ],
+    "answer": "Up to four nonempty rectangular shards, retaining the victim table’s color.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q013",
+    "question": "What did the Chaos reports change after I said adjusting invalid teleports was my job?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_5XXNP5f8",
+        "excerpt": "valid, non-overlapping positions"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_RvNUYrqp",
+        "excerpt": "Pieces now **always teleport**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_RvNUYrqp",
+        "excerpt": "The only thing still enforced is **board bounds**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "21cd3864-50af-4649-b616-6c36a802ae4c",
+        "excerpt": "its the users job to adjust the teleportations"
+      }
+    ],
+    "answer": "They replaced a non-overlapping position search with unconditional random relocation, keeping only board bounds.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q014",
+    "question": "How did the Chaos report treat the conflict deadline after a new landing?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_iGaerUXl",
+        "excerpt": "each new landing gives a fresh 8 s"
+      }
+    ],
+    "answer": "Each landing reset that piece’s deadline to eight seconds.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q015",
+    "question": "What deadline and interaction did the breakage report give the player?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_3-thhiMX",
+        "excerpt": "shrinking over **6 seconds**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_3-thhiMX",
+        "excerpt": "**Click the piece** to repair it instantly"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_3-thhiMX",
+        "excerpt": "it won't also select the piece"
+      }
+    ],
+    "answer": "Six seconds to click the broken piece and repair it; that click does not also select it.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q016",
+    "question": "Why could the early Chaos teleport timing keep an unresolved conflict from reaching its deadline?",
+    "category": [
+      "single-session",
+      "multihop",
+      "temporal"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_5XXNP5f8",
+        "excerpt": "all furniture pieces are randomly teleported"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_5XXNP5f8",
+        "excerpt": "every **1.2 seconds**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_iGaerUXl",
+        "excerpt": "each new landing gives a fresh 8 s"
+      }
+    ],
+    "answer": "Repeated 1.2-second teleports could renew the eight-second deadline before it expired.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q017",
+    "question": "What invariants did the rug-squiggle report preserve while moving cells?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "msg_BTM4S42U",
+        "excerpt": "Shape is **always connected** (connectivity checked before any removal)"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_BTM4S42U",
+        "excerpt": "Shape stays at exactly the **same cell count** (one removed, one added per step)"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_BTM4S42U",
+        "excerpt": "Shape stays **on the board** (bounds checked before adding to growable list)"
+      }
+    ],
+    "answer": "Cell count, connectivity and board bounds.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q018",
+    "question": "How did the placement space change during the 3D conversation?",
+    "category": [
+      "single-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_t3QArQdk",
+        "excerpt": "32×32 alternating light/dark tile grid"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Kb3zlDmL",
+        "excerpt": "6 placeable faces"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_Kb3zlDmL",
+        "excerpt": "independent **64×64 grid**"
+      }
+    ],
+    "answer": "A 32-by-32 floor became six independent 64-by-64 cube faces.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q019",
+    "question": "What rotation shortcuts did the 3D report assign?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_r5gNCXDN",
+        "excerpt": "`Q` | Rotate **counter-clockwise**"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_r5gNCXDN",
+        "excerpt": "`E` | Rotate **clockwise**"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_r5gNCXDN",
+        "excerpt": "`R` | Also rotates CW"
+      }
+    ],
+    "answer": "Q counter-clockwise; E clockwise, with R retained as a clockwise alias.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q020",
+    "question": "Which floating controls and range did the 3D report describe?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_vjyKY6ij",
+        "excerpt": "press **`W`** to float it one grid step outward along the face normal"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_vjyKY6ij",
+        "excerpt": "**`S`** to bring it back in"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_vjyKY6ij",
+        "excerpt": "`floatDepth` is clamped to `[0, 63]`"
+      }
+    ],
+    "answer": "W moves outward and S inward along the face normal; floatDepth is clamped from 0 to 63.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q021",
+    "question": "Why does a floatDepth clamp of 0–63 alone fail to prove furniture stays inside the cube?",
+    "category": [
+      "single-session",
+      "open-domain",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_vjyKY6ij",
+        "excerpt": "press **`W`** to float it one grid step outward along the face normal"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_vjyKY6ij",
+        "excerpt": "**`S`** to bring it back in"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_vjyKY6ij",
+        "excerpt": "`floatDepth` is clamped to `[0, 63]`"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_vjyKY6ij",
+        "excerpt": "selection halo follows the piece at whatever height it's floating at"
+      }
+    ],
+    "answer": "It bounds an offset, while containment also depends on the face-normal direction, the starting surface and the furniture’s height.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q022",
+    "question": "What became of adjustable furniture transparency in the colors-and-merging conversation?",
+    "category": [
+      "single-session",
+      "multihop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_EQePhflw",
+        "excerpt": "furniture pieces in Room Packer 3D can now be made transparent"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "662f2591-78ea-400b-b168-93b9f45e279d",
+        "excerpt": "Remove the transparency feature"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_5ai28XFD",
+        "excerpt": "`opacity:` field removed from all piece data objects"
+      }
+    ],
+    "answer": "It was added, then removed at my request along with the opacity controls and piece fields.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q023",
+    "question": "What selection effect did I request in place of sparkles?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "preference"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "462ead82-f6b5-4917-b1f5-8b035d001532",
+        "excerpt": "Replace the sparkle glow with a reddish glow."
+      }
+    ],
+    "answer": "A reddish glow.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q024",
+    "question": "How did the final color-picker report distinguish recoloring from choosing the next placement color?",
+    "category": [
+      "single-session",
+      "singlehop"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_jillTPEa",
+        "excerpt": "**Piece selected** | Immediately recolours the selected piece live"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_jillTPEa",
+        "excerpt": "**Nothing selected** | Stores the colour as `nextColor`"
+      }
+    ],
+    "answer": "With a piece selected, recolor it immediately; with none selected, save the color for the next piece.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q025",
+    "question": "What eligibility checks did the merge report require?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_SUVO2ECk",
+        "excerpt": "same face, same color (close enough, ±0), not same piece"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "**exact same color**"
+      }
+    ],
+    "answer": "Two distinct pieces on the same cube face with exactly the same color.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q026",
+    "question": "What replacement and height rules did the completed merge report describe?",
+    "category": [
+      "single-session",
+      "singlehop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "both originals are deleted and replaced by a single `merged` piece containing all their cells"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "new piece is automatically selected, still showing the same color"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "The merged piece inherits the **taller** of the two heights"
+      }
+    ],
+    "answer": "Replace both originals with one selected piece containing their combined cells and shared color, using the taller source height.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q027",
+    "question": "Why show the combined footprint before committing a furniture merge?",
+    "category": [
+      "single-session",
+      "open-domain"
+    ],
+    "citations": [
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "a semi-transparent ghost preview shows the **combined footprint** of both pieces together in their shared color"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "both originals are deleted and replaced by a single `merged` piece containing all their cells"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "new piece is automatically selected, still showing the same color"
+      }
+    ],
+    "answer": "It lets the user inspect the resulting occupied area before the two original pieces are replaced.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q028",
+    "question": "How did the overlap policy differ between the main build and the later shapes conversation?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_p80TOB2d",
+        "excerpt": "placement is **blocked**"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_p80TOB2d",
+        "excerpt": "button **flashes red** briefly"
+      },
+      {
+        "session": "D1",
+        "original_message_id": "msg_p80TOB2d",
+        "excerpt": "the table **snaps back** to its original position"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_uu8o_bfz",
+        "excerpt": "Every conflict check that previously blocked an action now only drives the **visual warning**"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_uu8o_bfz",
+        "excerpt": "the action always goes through"
+      }
+    ],
+    "answer": "D1 blocked overlapping placement or snapped a drag back; D3 allowed overlaps and used conflicts only as visual warnings.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q029",
+    "question": "How did the chair-placement rule change between the sofas-and-chairs and shapes conversations?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D2",
+        "original_message_id": "msg_wOdjI5bl",
+        "excerpt": "Checks the 4 orthogonal neighbours `(±1, 0)` and `(0, ±1)`"
+      },
+      {
+        "session": "D2",
+        "original_message_id": "msg_wOdjI5bl",
+        "excerpt": "Couches and other chairs don't count — only actual tables."
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_fArmh8G1",
+        "excerpt": "Chairs can now be placed anywhere on the board"
+      }
+    ],
+    "answer": "Chairs initially needed an orthogonally adjacent table; later they could be placed anywhere on the board.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q030",
+    "question": "What does E do in the main-build editing report versus the 3D control report?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D1",
+        "original_message_id": "msg_wwTBZuBH",
+        "excerpt": "**Press `E`** or click **✏️ Edit** | Lifts the table off the board"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_r5gNCXDN",
+        "excerpt": "`E` | Rotate **clockwise**"
+      }
+    ],
+    "answer": "D1 uses E to lift a table into editing; D5 uses E to rotate a piece clockwise.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q031",
+    "question": "If a one-unit table and a two-unit chair meet the final merge conditions, what height should the reported rule give their merged piece?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D5",
+        "original_message_id": "msg_sn1AX4-P",
+        "excerpt": "`H_CHAIR` is now `2.0`"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_ga-gTmTv",
+        "excerpt": "`H_TABLE` is now `1.0`"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "The merged piece inherits the **taller** of the two heights"
+      }
+    ],
+    "answer": "Two units, the taller of the source heights.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q032",
+    "question": "How do table fracturing and same-color merging treat the original pieces and their colors?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "msg_Rj31PJq0",
+        "excerpt": "Spawns up to 4 replacement shards"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_Rj31PJq0",
+        "excerpt": "Any shard with zero area is silently skipped"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "msg_Rj31PJq0",
+        "excerpt": "**Shards keep the victim's color**"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "both originals are deleted and replaced by a single `merged` piece containing all their cells"
+      },
+      {
+        "session": "D6",
+        "original_message_id": "msg_8PzhtFab",
+        "excerpt": "new piece is automatically selected, still showing the same color"
+      }
+    ],
+    "answer": "Fracturing replaces a victim table with shards of its own color; merging replaces both same-color sources with one piece retaining that shared color.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q033",
+    "question": "How do the Chaos rug-squiggle report and the original custom-shape request relate?",
+    "category": [
+      "multi-session",
+      "multihop",
+      "knowledge-facts"
+    ],
+    "citations": [
+      {
+        "session": "D3",
+        "original_message_id": "c31871b8-6341-4bd7-91f2-2a6ae7607bf1",
+        "excerpt": "each cell can go to another if we walk only through adjacent cells"
+      },
+      {
+        "session": "D3",
+        "original_message_id": "c31871b8-6341-4bd7-91f2-2a6ae7607bf1",
+        "excerpt": "capped at 16 grid squares"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_BTM4S42U",
+        "excerpt": "Every **700ms**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_BTM4S42U",
+        "excerpt": "**3 cell-swap steps** per rug"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_BTM4S42U",
+        "excerpt": "exactly the **same cell count**"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_BTM4S42U",
+        "excerpt": "connectivity checked before any removal"
+      }
+    ],
+    "answer": "The request caps a connected shape at 16 cells; squiggling preserves its cell count and connectivity while changing its outline.",
+    "requires_answers": []
+  },
+  {
+    "question_id": "Q034",
+    "question": "Which furniture did the Chaos conversation call abnormal, and which did the later 3D response redesign?",
+    "category": [
+      "multi-session",
+      "multihop"
+    ],
+    "citations": [
+      {
+        "session": "D4",
+        "original_message_id": "2c9f76d1-40f7-4ade-ad09-6b7f63763f25",
+        "excerpt": "the abnormal furniture(the any shape as long as the area is bounded under 16)"
+      },
+      {
+        "session": "D4",
+        "original_message_id": "msg_BTM4S42U",
+        "excerpt": "every placed **rug** writhes"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "63266ea1-3795-48e9-a8e9-4c7dd3d158b6",
+        "excerpt": "the abnormal furniture is going to be unique"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg_0NoSP4O7",
+        "excerpt": "The L-sofa currently renders as a cluster of plain `BoxGeometry` cells"
+      },
+      {
+        "session": "D5",
+        "original_message_id": "msg__mhj8XKg",
+        "excerpt": "Each cell has a **wide seat**"
+      }
+    ],
+    "answer": "Chaos treated the under-16-cell custom shape as a rug; the later vague request was interpreted as an L-sofa redesign.",
+    "requires_answers": []
+  }
+]
